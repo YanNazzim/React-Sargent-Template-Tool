@@ -1,0 +1,29 @@
+/* HeaderFooter.css */
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    padding: 20px;
+    background-color: #aeaeae;
+}
+
+/* Style for the image */
+.SargentLogo {
+    height: 200px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Adds space between the logo and the heading */
+}
+
+/* Style for the heading */
+.header h1 {
+    font-size: 4vw;
+    margin: auto;
+    color: white;
+    width: 90%;
+    background-color: #1565c0;
+    text-align: center;
+    border: solid black 10px;
+    border-radius: 50px;
+}

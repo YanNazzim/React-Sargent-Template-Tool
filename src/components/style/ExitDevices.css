@@ -1,0 +1,13 @@
+/* ExitDevices.css */
+
+.exit-devices-page {
+    padding: 20px;
+    background-color: #f5f5f5; /* Example background color */
+    text-align: center; /* Centers the content */
+  }
+  
+  .exit-devices-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
