@@ -22,7 +22,7 @@ function Narrow8300() {
           59- 8300 Delayed Egress Mounting Template
         </button>
         <button className="btn" onClick={handleButtonClickNarrow}>
-          8300 Mounting Template
+          8300 Electromechanical Template
         </button>
         <button className="btn" onClick={handleButtonClickNarrow}>
           8300 Mounting Template
