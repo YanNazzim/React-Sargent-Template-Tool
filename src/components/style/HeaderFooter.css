@@ -27,3 +27,9 @@
     border: solid black 10px;
     border-radius: 50px;
 }
+
+/* Style for Footer */
+.footer p {
+    text-align: center;
+    font-weight: bold;
+}

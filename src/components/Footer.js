@@ -5,7 +5,7 @@ import "./style/HeaderFooter.css"
 function Footer() {
   return (
     <footer className='footer'>
-      <p>© 2024 My App</p>
+      <p>© 2024 Yan Gonzalez -- Sargent Template Tool</p>
     </footer>
   );
 }

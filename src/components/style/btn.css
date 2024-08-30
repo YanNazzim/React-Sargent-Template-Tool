@@ -1,0 +1,32 @@
+.btn {
+    display: flex;
+    flex-direction: row;     /* Aligns image and text horizontally */
+    align-items: center;     /* Centers text vertically with the image */
+    background-color: #007bff; /* Button background color */
+    width: 80vw;             /* Adjust width as needed */
+    height: 200px;           /* Adjust height as needed */
+    color: white;            /* Button text color */
+    border: none;            /* Removes default border */
+    border-radius: 15px;     /* Rounds the button corners */
+    padding: 10px;           /* Adds padding inside the button */
+    font-size: 5vw;          /* Adjusts font size */
+    cursor: pointer;         /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions for background color and scaling */
+    text-align: center;      /* Centers text horizontally within the button */
+    overflow: hidden;        /* Ensures content fits within the button */
+    user-select: none;       /* Prevents text from being selectable */
+  }
+  
+  .btn:hover {
+    background-color: #1565c0; /* Changes background color on hover */
+    border: solid black 3px;   /* Reduces border thickness for a cleaner look */
+    border-radius: 20px;       /* Adjusts border radius for a more subtle effect */
+    transform: scale(1.05);    /* Slightly scales up the button on hover */
+  }
+  
+  .btn-image {
+    width: 200px;             /* Adjust size as needed */
+    height: auto;             /* Maintains aspect ratio */
+    margin-right: 10px;       /* Space between image and text */
+    margin-left: 20px;
+  }
