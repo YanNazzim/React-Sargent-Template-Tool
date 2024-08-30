@@ -41,5 +41,6 @@
     height: auto;             /* Maintains aspect ratio */
     margin-right: 10px;       /* Space between image and text */
     margin-left: 20px;
+    border-radius: 5%;
   }
   

@@ -11,31 +11,28 @@ import narrowCVR9400 from '../images/narrowCVR 9400.png'
 function Narrow() {
     const navigate = useNavigate();
 
-    const handleButtonClickNarrow = () => {
-      navigate('/'); // Navigate to component
+    const Click8300 = () => {
+      navigate('/Narrow8300'); // Navigate to component
     };
-    
-    const handleButtonClickWide = () => {
-        navigate('/'); // Navigate to component
-      };
+
   return (
     <>
       <Header />
       <div className="stile-page">
-        <button className="btn">
-            <img src={narrowMortise} alt='Narrow Rim Exit 8300' className='btn-image' onClick={handleButtonClickNarrow}/>
+        <button className="btn" onClick={Click8300}>
+            <img src={narrowMortise} alt='Narrow Rim Exit 8300' className='btn-image' />
             8300 Mortise Exit
         </button>
         <button className="btn">
-            <img src={narrowCVR} alt='Narrow Rim Exit 8400' className='btn-image' onClick={handleButtonClickWide}/>
+            <img src={narrowCVR} alt='Narrow Rim Exit 8400' className='btn-image'/>
             8400 CVR Exit
             </button>
             <button className="btn">
-            <img src={narrowRim} alt='Narrow Rim Exit 8300' className='btn-image' onClick={handleButtonClickNarrow}/>
+            <img src={narrowRim} alt='Narrow Rim Exit 8300' className='btn-image' />
             8500 Rim Exit
             </button>
             <button className="btn">
-            <img src={narrowCVR9400} alt='Narrow Rim Exit 8300' className='btn-image' onClick={handleButtonClickNarrow}/>
+            <img src={narrowCVR9400} alt='Narrow Rim Exit 8300' className='btn-image'/>
             9400 Surface Exit
             </button>
       </div>

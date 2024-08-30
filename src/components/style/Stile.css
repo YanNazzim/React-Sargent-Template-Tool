@@ -36,8 +36,10 @@
   }
 
   .btn-image {
-    width: 200px;             /* Adjust size as needed */
-    height: auto;             /* Maintains aspect ratio */
+    width: auto;             /* Adjust size as needed */
+    height: 150px;             /* Maintains aspect ratio */
     margin-right: 10px;       /* Space between image and text */
     margin-left: 20px;
+    border-radius: 5%;
+    border: solid black 5px;
   }
