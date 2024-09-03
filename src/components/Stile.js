@@ -29,8 +29,8 @@ function Stile() {
                     <img src={wideStileRim} alt='Wide Rim Exit 8800' className='btn-image' />
                     Wide
                 </button>
-            </div>
             <Footer />
+            </div>
         </>
     );
 }

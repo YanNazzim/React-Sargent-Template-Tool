@@ -11,56 +11,54 @@ import wideMortise from '../images/WideMortise.png'
 import crossWideRim from '../images/crossWideRim.png'
 import crossWideSVR from '../images/crossWideSVR.png'
 import crossWideMortise from '../images/crossWideMortise.png'
+import { exitDeviceTemplates } from '../data/templateData';
+
 
 function Wide() {
     const navigate = useNavigate();
 
-    const handleButtonClickNarrow = () => {
-      navigate('/NarrowExits'); // Navigate to component
-    };
-    
-    const handleButtonClickWide = () => {
-        navigate('/WideExits'); // Navigate to component
-      };
+    const handleButtonClick = (series) => {
+      navigate('/display-templates', { state: { category: 'Exit Devices', series, templates: exitDeviceTemplates[series] } });
+  };
   return (
     <>
       <Header />
       <div className="stile-page">
-        <button className="btn">
-            <img src={wideCVR} alt='Narrow Rim Exit 8500' className='btn-image' onClick={handleButtonClickNarrow}/>
-            8600 CVR Exit
+        <button className="btn" onClick={() => handleButtonClick("8600")}>
+            <img src={wideCVR} alt='Narrow Rim Exit 8500' className='btn-image' />
+            8600 W CVR Exit
         </button>
-        <button className="btn">
-            <img src={wideSVR} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            8700 SVR Exit
+        <button className="btn" onClick={() => handleButtonClick("8300")}>
+        <img src={wideSVR} alt='Wide Rim Exit 8500' className='btn-image' />
+            8700 W SVR Exit
             </button>
-            <button className="btn">
-            <img src={wideNBSVR} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            NB-8700 SVR Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={wideNBSVR} alt='Wide Rim Exit 8500' className='btn-image' />
+            NB-8700 W SVR Exit
             </button>
-            <button className="btn">
-            <img src={wideStileRim} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            8800 Rim Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={wideStileRim} alt='Wide Rim Exit 8500' className='btn-image' />
+            8800 W Rim Exit
             </button>
-            <button className="btn">
-            <img src={wideMortise} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            8900 Mortise Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={wideMortise} alt='Wide Rim Exit 8500' className='btn-image' />
+            8900 W Mortise Exit
             </button>
-            <button className="btn">
-            <img src={crossWideSVR} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            9700 SVR Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={crossWideSVR} alt='Wide Rim Exit 8500' className='btn-image' />
+            9700 W SVR Exit
             </button>
-            <button className="btn">
-            <img src={crossWideRim} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            9800 Rim Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={crossWideRim} alt='Wide Rim Exit 8500' className='btn-image' />
+            9800 W Rim Exit
             </button>
-            <button className="btn">
-            <img src={crossWideRim} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            9898 Reversible Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={crossWideRim} alt='Wide Rim Exit 8500' className='btn-image' />
+            9898 W Reversible Exit
             </button>
-            <button className="btn">
-            <img src={crossWideMortise} alt='Wide Rim Exit 8500' className='btn-image' onClick={handleButtonClickWide}/>
-            9900 Mortise Exit
+            <button className="btn" onClick={() => handleButtonClick("8300")}>
+            <img src={crossWideMortise} alt='Wide Rim Exit 8500' className='btn-image' />
+            9900 W Mortise Exit
             </button>
       </div>
       <Footer />

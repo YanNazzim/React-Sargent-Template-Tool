@@ -3,9 +3,10 @@
     justify-content: center; /* Centers buttons horizontally */
     align-items: center;     /* Centers buttons vertically (if the container has a height) */
     gap: 20px;               /* Space between buttons, adjust as needed */
-    flex-wrap: wrap;         /* Allows buttons to wrap to the next line if needed */
+    flex-wrap: wrap;  
+    height: 100%;       /* Allows buttons to wrap to the next line if needed */
     padding: 20px;           /* Adds padding around the container */
-    background-color: #aeaeae;
+    background-color: #aaaaaa;
   
 }
 
