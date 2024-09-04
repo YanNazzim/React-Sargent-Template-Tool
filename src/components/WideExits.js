@@ -28,7 +28,7 @@ function Wide() {
             <img src={wideCVR} alt='Narrow Rim Exit 8500' className='btn-image' />
             8600 W CVR Exit
         </button>
-        <button className="btn" onClick={() => handleButtonClick("8300")}>
+        <button className="btn" onClick={() => handleButtonClick("8700")}>
         <img src={wideSVR} alt='Wide Rim Exit 8500' className='btn-image' />
             8700 W SVR Exit
             </button>

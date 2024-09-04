@@ -21,7 +21,7 @@
     border: none;            /* Removes default border */
     border-radius: 15px;     /* Rounds the button corners */
     padding: 10px;           /* Adds padding inside the button */
-    font-size: 5vw;          /* Adjusts font size */
+    font-size: 60px;          /* Adjusts font size */
     cursor: pointer;         /* Changes cursor to pointer on hover */
     transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions for background color and scaling */
     text-align: center;      /* Centers text horizontally within the button */

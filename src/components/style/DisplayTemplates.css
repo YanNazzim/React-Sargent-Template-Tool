@@ -10,7 +10,7 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 5vw;
+    font-size: 60px;
     max-width: 90%;
 }
 
@@ -37,13 +37,13 @@
 
 .template-card h2 {
     color: white;
-    font-size: 4vw;
+    font-size: 48px;
     text-align: center;
 }
 
 .template-card a {
     color: white;
-    font-size: 2vw;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 25px;
 }

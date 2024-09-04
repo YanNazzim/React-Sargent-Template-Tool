@@ -35,8 +35,8 @@ function ProductLine() {
           <img src={cylindersImg} alt="Cylinders" className="btn-image" />
           Cylinders
         </button>
-      <Footer />
       </div>
+      <Footer />
     </>
   );
 }

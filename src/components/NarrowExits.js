@@ -52,8 +52,8 @@ function Narrow() {
           />
           9400 N CVR Exit
         </button>
-        <Footer />
       </div>
+        <Footer />
     </>
   );
 }

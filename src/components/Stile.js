@@ -23,11 +23,11 @@ function Stile() {
             <div className="stile-page">
                 <button className="btn" onClick={handleButtonClickNarrow}>
                     <img src={narrowStileRim} alt='Narrow Rim Exit 8500' className='btn-image' />
-                    Narrow
+                    Narrow (8300,8400,8500...)
                 </button>
                 <button className="btn" onClick={handleButtonClickWide}>
                     <img src={wideStileRim} alt='Wide Rim Exit 8800' className='btn-image' />
-                    Wide
+                    Wide (8600, 8700, 8800, 8900...)
                 </button>
             <Footer />
             </div>

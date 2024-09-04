@@ -21,10 +21,10 @@
 
 /* Style for the heading */
 .Home {
-    font-size: 4vw;
+    font-size: 48px;
     margin: auto;
     color: white;
-    width: 40%;
+    width: fit-content;
     background-color: #1565c0;
     text-align: center;
     border: solid black 3px;
