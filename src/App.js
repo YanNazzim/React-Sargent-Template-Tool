@@ -5,8 +5,8 @@ import ProductLine from './components/ProductLine';
 import Stile from './components/Stile.js';
 import Narrow from './components/NarrowExits.js';
 import Wide from './components/WideExits.js';
-import DisplayTemplates from './components/DsiplayTemplates.js'; // Import DisplayTemplates component
-
+import ExitSeries from './components/ExitSeries.js'
+import DisplayTemplates from './components/DsiplayTemplates.js';
 function App() {
   return (
     <Router>
@@ -16,6 +16,8 @@ function App() {
         <Route path="/stile" element={<Stile />} />
         <Route path="/narrow" element={<Narrow />} />
         <Route path="/wide" element={<Wide />} />
+        <Route path="/exitSeries" element={<ExitSeries />} />
+
       </Routes>
     </Router>
   );

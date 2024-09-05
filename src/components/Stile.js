@@ -1,20 +1,22 @@
+// Stile.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate, useLocation } from 'react-router-dom'; // Import useLocation
 import './style/Stile.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import narrowStileRim from '../images/Narrow Rim Exit (8500).png';
-import wideStileRim from '../images/Wide Rim Exit (8800).png';
 
 function Stile() {
     const navigate = useNavigate();
+    const location = useLocation(); // Get state from the previous page (ExitSeries.js)
+    const { series } = location.state || {}; // Destructure series from state
 
+    // Handle navigation to Narrow or Wide exits with the series
     const handleButtonClickNarrow = () => {
-        navigate('/narrow'); // Navigate to Narrow component route
+        navigate('/narrow', { state: { series } }); // Pass series to Narrow page
     };
 
     const handleButtonClickWide = () => {
-        navigate('/wide'); // Navigate to Wide component route
+        navigate('/wide', { state: { series } }); // Pass series to Wide page
     };
 
     return (
@@ -22,15 +24,13 @@ function Stile() {
             <Header />
             <div className="stile-page">
                 <button className="btn" onClick={handleButtonClickNarrow}>
-                    <img src={narrowStileRim} alt='Narrow Rim Exit 8500' className='btn-image' />
-                    Narrow (8300,8400,8500...)
+                    Narrow
                 </button>
                 <button className="btn" onClick={handleButtonClickWide}>
-                    <img src={wideStileRim} alt='Wide Rim Exit 8800' className='btn-image' />
-                    Wide (8600, 8700, 8800, 8900...)
+                    Wide
                 </button>
-            <Footer />
             </div>
+            <Footer />
         </>
     );
 }

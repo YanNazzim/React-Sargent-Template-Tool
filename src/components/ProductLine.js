@@ -12,7 +12,7 @@ function ProductLine() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/stile'); // Navigate to Stile component
+    navigate('/exitSeries'); // Navigate to Stile component
   };
 
   return (
