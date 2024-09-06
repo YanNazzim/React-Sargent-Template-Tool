@@ -317,22 +317,32 @@ export const ExitDevices = {
     {
       device: "8800",
 
-      title: "8800",
-      functions: "(8804, 8810, 8840, 8844)",
+      title: "8800 (8804, 8810, 8840, 8844)",
       image: wideStileRim,
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055914',
       text: 'View Mounting Template (Any Material) Doc# 4415-H',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text2: "View Trim Template (700 ET) Doc# 4277-18",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text3: "View 649 Strike Template  Doc# 4277-18",
+      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text3: "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text4: "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "8800",
 
-      title: "8800",
-      functions: "(8806, 8813, 8815, 8843, 8846, 8873, 8874, 8875, 8876)",
+      title: "8800 (8806, 8813, 8815, 8843, 8846)",
+      image: wideStileRim,
+    },
+    {
+      device: "8800",
+
+      title: "8800 (8873, 8874, 8875, 8876)",
       image: wideStileRim,
     },
     {
