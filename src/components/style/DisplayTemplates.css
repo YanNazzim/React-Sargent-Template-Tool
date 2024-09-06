@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-evenly; /* This spaces the cards evenly */
     flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
-    gap: 20px; /* Adds consistent spacing between the cards */
+    gap: 10px; /* Adds consistent spacing between the cards */
     padding: 20px;
 }
 
@@ -30,8 +30,8 @@
     justify-content: center; /* Centers children vertically */
     border: solid black 5px;
     border-radius: 25px;
-    width: 600px; /* Adjust width based on your design */
-    padding: 20px;
+    width: 605px; /* Adjust width based on your design */
+    padding: 10px;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
@@ -51,5 +51,5 @@
 
 .template-image {
     margin-top: 30px;
-    width: 200px;
+    width: 300px;
 }

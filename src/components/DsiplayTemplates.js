@@ -31,6 +31,7 @@ function DisplayTemplates() {
             <a href={template.link} target="_blank" rel="noopener noreferrer">
               {template.text}
             </a>
+            {template.link1 && <a href={template.link1} target="_blank" rel="noopener noreferrer">{template.text1}</a>}
             {template.link2 && <a href={template.link2} target="_blank" rel="noopener noreferrer">{template.text2}</a>}
             {template.link3 && <a href={template.link3} target="_blank" rel="noopener noreferrer">{template.text3}</a>}
             {template.link4 && <a href={template.link4} target="_blank" rel="noopener noreferrer">{template.text4}</a>}

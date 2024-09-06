@@ -254,17 +254,85 @@ export const ExitDevices = {
     {
       device: "NB-8700",
 
-      title: "NB-8700",
-      functions: "(8706, 8713, 8715, 8743, 8746, 8773, 8774)",
-      functions2: "(8710, 8740)",
+      title: "(12-)NB-8700 (8706, 8713, 8715, 8743, 8746)",
+      functions: "(8706, 8713, 8715, 8743, 8746)",
       image: wideNBSVR,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
+      text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
+      text1: "View Double Door Mounting Template (Any Material) Doc# 4559-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text2: "View Trim Template (700-8 ET) Doc# 4414-H",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
+      text3:
+        "View 653/654/659/655 Standard Top&Bottom Strike Template Doc# 4296-G",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
+      text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+    {
+      device: "NB-8700",
+
+      title: "(12-)NB-8700 (8710, 8740)",
+      functions: "(8710, 8740)",
+      image: wideNBSVR,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
+      text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
+      text1: "View Double Door Mounting Template (Any Material) Doc# 4559-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text2: "View Trim Template (700 ET) Doc# 4277-18",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
+      text3:
+        "View 653/654/659/655 Standard Top&Bottom Strike Template Doc# 4296-G",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
+      text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+    {
+      device: "NB-8700",
+
+      title: "(12-)NB-8700 (8773 & 8774)",
+      functions: "(8773, 8774)",
+      image: wideNBSVR,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
+      text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
+      text1: "View Double Door Mounting Template (Any Material) Doc# 4559-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055968",
+      text2: "View Trim Template [(54-)700-8] Doc# 4714-A",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
+      text3:
+        "View 653/654/659/655 Standard Top&Bottom Strike Template Doc# 4296-G",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
+      text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "8800",
 
       title: "8800",
       functions: "(8804, 8810, 8840, 8844)",
-      functions2: "(8806, 8813, 8815, 8843, 8846, 8873, 8874, 8875, 8876)",
+      image: wideStileRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055914',
+      text: 'View Mounting Template (Any Material) Doc# 4415-H',
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text2: "View Trim Template (700 ET) Doc# 4277-18",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text3: "View 649 Strike Template  Doc# 4277-18",
+    },
+    {
+      device: "8800",
+
+      title: "8800",
+      functions: "(8806, 8813, 8815, 8843, 8846, 8873, 8874, 8875, 8876)",
       image: wideStileRim,
     },
     {
