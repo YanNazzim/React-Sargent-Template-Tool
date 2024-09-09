@@ -17,11 +17,11 @@ import widePE80Mortise from '../images/widePE80Mortise.png';
 
 // Define Wide80, Wide90, and PE80 devices
 const wide80Devices = [
-  { id: "LP8600", name: "LP8600 & LR8600", img: wideCVR },
-  { id: "LS8600", name: "LS8600", img: wideCVR },
   { id: "WD8600", name: "WD8600", img: wideCVR },
   { id: "MD8600", name: "MD8600", img: wideCVR },
   { id: "AD8600", name: "AD8600", img: wideCVR },
+  { id: "LP8600", name: "LP8600 & LR8600", img: wideCVR },
+  { id: "LS8600", name: "LS8600", img: wideCVR },
   { id: "8700", name: "8700", img: wideSVR },
   { id: "NB-8700", name: "NB-8700", img: wideNBSVR },
   { id: "8800", name: "8800", img: wideStileRim },

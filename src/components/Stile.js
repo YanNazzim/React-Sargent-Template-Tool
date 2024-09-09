@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from 'react-router-dom'; // Import useLocati
 import './style/Stile.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WideExit from '../images/Rim Exit (8800).png'
+import NarrowExit from '../images/Narrow Rim Exit (8500).png'
 
 function Stile() {
     const navigate = useNavigate();
@@ -24,10 +26,12 @@ function Stile() {
             <Header />
             <div className="stile-page">
                 <button className="btn" onClick={handleButtonClickNarrow}>
-                    Narrow
+                    <img src={NarrowExit} className='btn-image' alt='NarrowExits'/>
+                    Narrow (8300, 8400, 8500, 9400)
                 </button>
                 <button className="btn" onClick={handleButtonClickWide}>
-                    Wide
+                <img src={WideExit} className='btn-image' alt='WideExits'/>
+                    Wide (8600, 8700, 8800, 8900, 9700, 9800)
                 </button>
             </div>
             <Footer />
