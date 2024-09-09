@@ -5,7 +5,7 @@ The **Sargent Template Tool** is your go-to solution for simplifying and enhanci
 ## Features
 
 ### 🔍 **Streamlined Search**
-- Effortlessly filter and find templates by **Device Style** and **Function** to locate the exact documentation you need.
+- Effortlessly filter and find templates by **Device Stile** and **Function** to locate the exact documentation you need.
 
 ### 🗂 **Comprehensive Template Database**
 - Access a complete and stylized database featuring all templates for **Exit Devices**, **Mortise Locks**, and **Bored Locks**.
