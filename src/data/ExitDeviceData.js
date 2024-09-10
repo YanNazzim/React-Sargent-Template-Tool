@@ -25,35 +25,14 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
       text: "View Mounting Template Doc# 4310-E",
-
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text2: "View Trim Template (700 ET) Doc# 4277-18",
-
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
-      text4: "View 908/C908 Strike Standard Template Doc# 3908-Y",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
-      text5: "View 815 Open Back Strike Template Doc# 4192-H",
-
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Raceway Template Doc# 4568-C",
-    },
-    {
-      device: "8300",
-
-      title:
-        "(12-)59-8300 Delayed Egress Mortise Exit (04, 10, 15, 40, 43, 44)",
-      image: narrowMortise,
-      functions: "(8304, 8310, 8315, 8340, 8343, 8344)",
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055932",
-      text: "View Mounting Template Doc# 4458-C",
-
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055932",
+      text1: "View (59-) Mounting Template Doc# 4458-C",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text2: "View Trim Template (700 ET) Doc# 4277-18",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
       text4: "View 908/C908 Strike Standard Template Doc# 3908-Y",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
-
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text6: "View Narrow Raceway Template Doc# 4568-C",
     },
@@ -62,99 +41,266 @@ export const ExitDevices = {
 
       title: "(12-)8300 Mortise Exit (73, 74, 75, 76)",
       image: narrowMortise,
-      functions: "(8304, 8310, 8315, 8340, 8343, 8344)",
+      functions: "(8373, 8374, 8375, 8376)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
       text: "View Mounting Template Doc# 4310-E",
-
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055932",
+      text1: "View (59-) Mounting Template Doc# 4458-C",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
-      text2: "View Trim Template (54-)(700 ET) Doc# 4277-18",
-
+      text2: "View Trim Template (54-)(700 ET) Doc# 4314-T",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
       text4: "View 908/C908 Strike Standard Template Doc# 3908-Y",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
-
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text6: "View Narrow Raceway Template Doc# 4568-C",
     },
     {
-      device: "8300",
+      device: "MD8400",
 
-      title: "(12-)59-8300 Mortise Exit (73, 74, 75, 76)",
-      image: narrowMortise,
-      functions: "(8304, 8310, 8315, 8340, 8343, 8344)",
-
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text2: "View Trim Template (700 ET) Doc# 4277-18",
-
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
-      text3: "View Trim Template (54-)(700 ET) Doc# 4277-18",
-
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
-      text4: "View 908/C908 Strike Standard Template Doc# 3908-Y",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
-      text5: "View 815 Open Back Strike Template Doc# 4192-H",
-
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Raceway Template Doc# 4568-C",
-    },
-    {
-      device: "8400",
-
-      title: "8400 CVR Exit",
-      functions: "(ALL Functions)",
+      title: "(12-)(NB-)MD8400 (06, 10, 13, 40, 43, 46)",
+      functions: "(8406, 8410, 8413, 8440, 8443, 8446)",
       image: narrowCVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055945',
+      text: 'View Mounting Template (Metal Door) Doc# 4447-J',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055940',
+      text1: 'View Trim Template (700-4 ET) Doc# 4448-J',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055943',
+      text2: 'View 650/652/606 Standard Strike Template Doc# 4449-G',
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text4: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "MD8400",
+
+      title: "(12-)(NB-)MD8400 (73, 74)",
+      functions: "(8473, 8474)",
+      image: narrowCVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055945',
+      text: 'View Mounting Template (Metal Door) Doc# 4447-J',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055936',
+      text1: 'View Trim Template (54-)(700-4 ET) Doc# 4467-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055943',
+      text2: 'View 650/652/606 Standard Strike Template Doc# 4449-G',
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text4: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "AD8400",
+
+      title: "(12-)(NB-)AD8400 (06, 10, 13, 40, 43, 46)",
+      functions: "(8406, 8410, 8413, 8440, 8443, 8446)",
+      image: narrowCVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055941',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4312-K',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055940',
+      text1: 'View Trim Template (700-4 ET) Doc# 4448-J',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055939',
+      text2: 'View 640 Standard Strike Template Doc# 4649-A',
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text4: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "AD8400",
+
+      title: "(12-)(NB-)AD8400 (73, 74)",
+      functions: "(8473, 8474)",
+      image: narrowCVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055941',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4312-K',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055936',
+      text1: 'View Trim Template (54-)(700-4 ET) Doc# 4467-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055939',
+      text2: 'View 640 Standard Strike Template Doc# 4649-A',
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text4: "View Narrow Raceway Template Doc# 4568-C",
     },
     {
       device: "8500",
 
-      title: "8500 Rim Exit",
+      title: "(12-)8500 Rim Exit (04, 10, 40, 44)",
       functions: "(8504, 8510, 8540, 8544)",
       functions1: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
       image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055909',
+      text: 'View 04 Cylinder/Exit Only Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055922',
+      text1: 'View Trim Template (700 ET) Doc# 4277-18',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "8500",
+
+      title: "(12-)8500 Rim Exit (06, 13, 15, 43, 46)",
+      functions1: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
+      image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055910',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055900',
+      text1: 'View Trim Template (700-8 ET) Doc# 4414-H',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "8500",
+
+      title: "(12-)8500 Rim Exit (73, 74)",
+      functions1: "(8573, 8574)",
+      image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055910',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055899',
+      text1: 'View Trim Template (700-8 ET) Doc# 4529-C',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "AD8500",
+
+      title: "(12-)(WS-)AD8500 Rim Exit (04, 10, 40, 44)",
+      functions: "(8504, 8510, 8540, 8544)",
+      image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055909',
+      text: 'View 04 Cylinder/Exit Only Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055922',
+      text1: 'View Trim Template (700 ET) Doc# 4277-18',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "AD8500",
+
+      title: "(12-)(WS-)AD8500 Rim Exit (06, 13, 15, 43, 46)",
+      functions: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
+      image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055910',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055900',
+      text1: 'View Trim Template (700-8 ET) Doc# 4414-H',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "AD8500",
+
+      title: "(12-)(WS-)AD8500 Rim Exit (73, 74)",
+      functions: "(8573, 8574)",
+      image: narrowRim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055910',
+      text: 'View Mounting Template (Aluminum Door) Doc# 4645-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055899',
+      text1: 'View Trim Template (54-)(700-8 ET) Doc# 4529-C',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055911',
+      text2: 'View 657 Standard Strike Template Doc# 4308-B',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056012',
+      text3: 'View 656 Mullion Strike Template Doc# 4715-B',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text4: 'View 649 Standard (12-) Strike Template Doc# 4004-K',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
+      text5: "View Narrow Raceway Template Doc# 4568-C",
     },
   ],
   Wide80: [
     {
       device: "WD8600",
 
-      title: "WD8600  (8606, 8610, 8613, 8615, 8640, 8643, 8646)",
+      title: "WD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: wideCVR,
+      functions: '(8606, 8610, 8613, 8615, 8640, 8643, 8646)',
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text1:
+        "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055953",
       text2: "View Trim Template (700-4 ET) Doc# 4436-E",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text3: "View 650/606 Strike Template Doc# 4449-G",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4433-A",
+      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "WD8600",
 
-      title: "WD8600 (8673,8674)",
+      title: "WD8600 CVR Exit (73,74)",
       image: wideCVR,
+      functions: '(8673, 8674)',
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text1:
+        "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
       text2: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text3: "View 650/606 Strike Template Doc# 4449-G",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4433-A",
+      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "MD8600",
 
-      title: "(12-)MD8600 CVR Exit (8606, 8610, 8613, 8615, 8640, 8643, 8646)",
+      title: "(12-)MD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: wideCVR,
+      functions: '(8606, 8610, 8613, 8615, 8640, 8643, 8646)',
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -173,8 +319,9 @@ export const ExitDevices = {
     {
       device: "MD8600",
 
-      title: "(12-)MD8600 CVR Exit (8673,8674)",
+      title: "(12-)MD8600 CVR Exit (73,74)",
       image: wideCVR,
+      functions: '(8673,8674)',
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -199,6 +346,9 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text1:
+        "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055953",
       text2: "View Trim Template (700-4 ET) Doc# 4448-J",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
@@ -219,6 +369,9 @@ export const ExitDevices = {
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
       text2: "View ET Trim Template (54-)(700-4) Doc# 4467-F",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text1:
+        "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text3: "View 650/606 Strike Template Doc# 4449-G",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
@@ -243,8 +396,10 @@ export const ExitDevices = {
     {
       device: "8700",
 
-      title: "8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
+      title: "8700 SVR Exit (All Functions)",
       image: wideSVR,
+      functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
       text: "View 8700 Mounting Template (Any Door) Doc# 4289-H",
@@ -266,7 +421,7 @@ export const ExitDevices = {
     {
       device: "8700",
 
-      title: "12-8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
+      title: "12-8700 SVR Exit (All Functions)",
       image: wideSVR,
       functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
@@ -291,7 +446,7 @@ export const ExitDevices = {
       device: "8700",
 
       title:
-        "(12-)(HC, HC4, FM)8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
+        "(12-)(HC, HC4, FM)8700 SVR Exit (All Functions)",
       image: wideSVR,
       functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
@@ -450,7 +605,7 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055929",
       text1: "View Mortise Case Template (Any Metarial) Doc# 4709-3",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055932",
-      text2: "View (59-)Mortise Case Template (Any Metarial) Doc# 4709-3",
+      text2: "View (59-)Mortise Case Template (Any Metarial) Doc# 4458-C",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text3: "View Trim Template (700 ET) Doc# 4277-18",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
@@ -472,7 +627,7 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055929",
       text1: "View Mortise Case Template (Any Metarial) Doc# 4709-3",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055932",
-      text2: "View (59-)Mortise Case Template (Any Metarial) Doc# 4709-3",
+      text2: "View (59-)Mortise Case Template (Any Metarial) Doc# 4458-C",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
       text3: "View Trim Template (54-)(700 ET) Doc# 4314-T",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
