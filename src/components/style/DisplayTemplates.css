@@ -30,7 +30,7 @@
     justify-content: center; /* Centers children vertically */
     border: solid black 5px;
     border-radius: 25px;
-    width: 605px; /* Adjust width based on your design */
+    width: 600px; /* Adjust width based on your design */
     padding: 10px;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
@@ -43,13 +43,28 @@
 
 .template-card a {
     color: white;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    background-color: #01579b;
+    width: 400px;
+    border: solid white 3px;
+    text-decoration: none;
+    border-radius: 25px;
+    transform: scale(1.15) ;    /* Slightly scales up the button on hover */
+    transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.2s; /* Adds smooth transitions for background color and scaling */
+
+
+}
+.template-card a:hover {
+    background-color: #0288d1;
+    border: solid black 3px;
+    color: black;
 }
 
 
 .template-image {
     margin-top: 30px;
     width: 300px;
+    border-radius: 25px;
 }

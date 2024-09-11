@@ -35,7 +35,7 @@ function NarrowExits() {
 
   // Determine the correct set of devices to display based on the series
   const devices = series === "90" ? narrow90Devices 
-                : series === "PE80" ? narrowPE80Devices 
+                : series === "PE" ? narrowPE80Devices 
                 : narrow80Devices;
 
   const handleButtonClick = (id) => {

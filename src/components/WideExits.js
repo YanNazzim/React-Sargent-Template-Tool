@@ -35,7 +35,7 @@ const wide90Devices = [
 ];
 
 const widePE80Devices = [
-  { id: "PE8300", name: "PE8300 Wide Mortise Exit", img: widePE80Mortise }
+  { id: "PE8900", name: "PE8900 Wide Mortise Exit", img: widePE80Mortise }
 ];
 
 function WideExits() {
@@ -45,7 +45,7 @@ function WideExits() {
 
   // Determine the correct set of devices to display based on the series
   const devices = series === "90" ? wide90Devices 
-                : series === "PE80" ? widePE80Devices 
+                : series === "PE" ? widePE80Devices 
                 : wide80Devices;
 
   const handleButtonClick = (id) => {

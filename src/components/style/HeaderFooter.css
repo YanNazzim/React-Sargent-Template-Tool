@@ -28,7 +28,7 @@
     background-color: #1565c0;
     text-align: center;
     border: solid black 3px;
-    transition: background-color 0.5s, transform 0.3s, border 0.5s, border-radius 0.5s; /* Adds smooth transitions for background color and scaling */
+    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s; /* Adds smooth transitions for background color and scaling */
 }
 
 .Home:hover {
