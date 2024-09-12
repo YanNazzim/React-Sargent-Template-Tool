@@ -2,8 +2,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './style/Stile.css'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import crossWideRim from '../images/crossWideRim.png';
 import wideStileRim from '../images/Wide Rim Exit (8800).png';
 import PEwideRim from '../images/PE80 Wide Rim Exit.png';
@@ -25,7 +23,6 @@ function ExitSeries() {
 
     return (
         <>
-            <Header />
             <div className="stile-page">
                 <button className="btn" onClick={handleButtonClick80Series}>
                     <img src={wideStileRim} alt="Wide Rim Exit 8800" className="btn-image" />
@@ -40,7 +37,6 @@ function ExitSeries() {
                     90 Series
                 </button>
             </div>
-            <Footer />
         </>
     );
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 // Device images
 import wideCVR from "../images/WideCVR.png";
@@ -54,7 +52,6 @@ function WideExits() {
 
   return (
     <>
-      <Header />
       <div className="stile-page">
         {devices.map(device => (
           <button key={device.id} className="btn" onClick={() => handleButtonClick(device.id)}>
@@ -63,7 +60,6 @@ function WideExits() {
           </button>
         ))}
       </div>
-      <Footer />
     </>
   );
 }

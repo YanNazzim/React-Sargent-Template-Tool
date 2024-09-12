@@ -1,4 +1,3 @@
-// Header.js
 import React from 'react';
 import './style/HeaderFooter.css';
 import logo from '../images/Sargent Logo.jpg'; // Import image

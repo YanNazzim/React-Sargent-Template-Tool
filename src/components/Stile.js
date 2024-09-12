@@ -2,8 +2,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom'; // Import useLocation
 import './style/Stile.css';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import WideExit from '../images/Rim Exit (8800).png'
 import NarrowExit from '../images/Narrow Rim Exit (8500).png'
 import crossWideRim from '../images/crossWideRim.png';
@@ -59,7 +57,6 @@ function Stile() {
 
     return (
         <>
-            <Header />
             <div className="stile-page">
                 <button className="btn" onClick={handleButtonClickNarrow}>
                     <img src={deviceImageNarrow} className='btn-image' alt='NarrowExits'/>
@@ -70,7 +67,6 @@ function Stile() {
                     Wide {series} Series {deviceListWide}
                 </button>
             </div>
-            <Footer />
         </>
     );
 }

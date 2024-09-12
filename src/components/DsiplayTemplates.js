@@ -1,8 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import { ExitDevices } from '../data/ExitDeviceData';
 
 function DisplayTemplates() {
@@ -17,7 +15,6 @@ function DisplayTemplates() {
 
   return (
     <div className="display-templates">
-      <Header />
       <h1>{category} - {series} - {id}</h1>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
@@ -41,7 +38,6 @@ function DisplayTemplates() {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 }
