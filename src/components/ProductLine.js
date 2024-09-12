@@ -5,6 +5,7 @@ import exitDevicesImg from '../images/Rim Exit (8800).png';
 import mortiseImg from '../images/Mortise Lock.png'; 
 import boredLocksImg from '../images/Bored Lock.png'; 
 import cylindersImg from '../images/Cylinders.png'; 
+import auxLocksImg from '../images/AuxiliaryLocks.png'
 
 function ProductLine() {
   const navigate = useNavigate();
@@ -31,6 +32,10 @@ function ProductLine() {
         <button className="btn">
           <img src={cylindersImg} alt="Cylinders" className="btn-image" />
           Cylinders
+        </button>
+        <button className="btn">
+          <img src={auxLocksImg} alt="Cylinders" className="btn-image" />
+          Auxiliary Locks
         </button>
       </div>
     </>
