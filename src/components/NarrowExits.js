@@ -8,6 +8,8 @@ import narrowCVR from "../images/NarrowCVR.png";
 import narrowRim from "../images/Narrow Rim Exit (8500).png";
 import narrowCVR9400 from "../images/narrowCVR 9400.png";
 import narrowPE80Mortise from '../images/narrowPE80Mortise.png';
+import narrowPECVR from '../images/narrowPECVR.png'
+import narrowPERim from '../images/narrowPERim (PE8500).png'
 
 // Define Narrow80, Narrow90, and PE80 devices
 const narrow80Devices = [
@@ -19,7 +21,9 @@ const narrow80Devices = [
 ];
 
 const narrowPE80Devices = [
-  { id: "PE8300", name: "PE8300 Narrow Mortise Exit", img: narrowPE80Mortise }
+  { id: "PE8300", name: "PE8300 Narrow Mortise Exit", img: narrowPE80Mortise },
+  { id: "PE8400", name: "PE8400 Narrow CVR Exit", img: narrowPECVR },
+  { id: "PE8500", name: "PE8500 Narrow Mortise Exit", img: narrowPERim },
 ];
 
 const narrow90Devices = [

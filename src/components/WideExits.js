@@ -12,17 +12,20 @@ import crossWideRim from "../images/crossWideRim.png";
 import crossWideSVR from "../images/crossWideSVR.png";
 import crossWideMortise from "../images/crossWideMortise.png";
 import widePE80Mortise from '../images/widePE80Mortise.png';
+import widePECVR from '../images/widePECVR.png'
+import widePESVR from '../images/widePESVR.png'
+import widePERim from '../images/PE80 Wide Rim Exit.png'
 
 // Define Wide80, Wide90, and PE80 devices
 const wide80Devices = [
-  { id: "WD8600", name: "WD8600", img: wideCVR },
-  { id: "MD8600", name: "MD8600", img: wideCVR },
-  { id: "AD8600", name: "AD8600", img: wideCVR },
-  { id: "LP8600", name: "LP/LR/LS8600", img: wideCVR },
-  { id: "8700", name: "8700", img: wideSVR },
-  { id: "NB-8700", name: "NB-8700", img: wideNBSVR },
-  { id: "8800", name: "8800", img: wideStileRim },
-  { id: "8900", name: "8900", img: wideMortise },
+  { id: "WD8600", name: "WD8600 Wide CVR Exit", img: wideCVR },
+  { id: "MD8600", name: "MD8600 Wide CVR Exit", img: wideCVR },
+  { id: "AD8600", name: "AD8600 Wide CVR Exit", img: wideCVR },
+  { id: "LP8600", name: "LP/LR/LS8600 Wide CVR/Mortise Exit", img: wideCVR },
+  { id: "8700", name: "8700 Wide SVR Exit", img: wideSVR },
+  { id: "NB-8700", name: "NB-8700 Wide SVR Exit", img: wideNBSVR },
+  { id: "8800", name: "8800 Wide Rim Exit", img: wideStileRim },
+  { id: "8900", name: "8900 Wide Mortise Exit", img: wideMortise },
 ];
 
 const wide90Devices = [
@@ -32,6 +35,9 @@ const wide90Devices = [
 ];
 
 const widePE80Devices = [
+  { id: "PE8600", name: "PE8600 Wide CVR Exit", img: widePECVR },
+  { id: "PE8700", name: "PE8700 Wide SVR Exit", img: widePESVR },
+  { id: "PE8800", name: "PE8800 Wide Rim Exit", img: widePERim },
   { id: "PE8900", name: "PE8900 Wide Mortise Exit", img: widePE80Mortise }
 ];
 

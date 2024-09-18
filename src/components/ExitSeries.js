@@ -14,7 +14,7 @@ function ExitSeries() {
     };
 
     const handleButtonClickPE80Series = () => {
-        navigate('/stile', { state: { series: 'PE' } }); // Pass series 'PE80'
+        navigate('/stile', { state: { series: 'PE' } }); // Pass series 'PE'
     };
 
     const handleButtonClick90Series = () => {

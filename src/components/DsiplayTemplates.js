@@ -25,6 +25,7 @@ function DisplayTemplates() {
               className="template-image"
             />
             <h2>{template.title}</h2>
+            <h3>{template.warning}</h3>
             <a href={template.link} target="_blank" rel="noopener noreferrer">
               {template.text}
             </a>

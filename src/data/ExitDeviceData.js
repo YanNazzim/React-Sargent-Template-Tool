@@ -13,6 +13,8 @@ import narrowCVR from "../images/NarrowCVR.png";
 import narrowRim from "../images/Narrow Rim Exit (8500).png";
 import narrowCVR9400 from "../images/narrowCVR 9400.png";
 import thumbpieceTrims from "../images/thumbpieceTrims1.png";
+import narrowPE80Mortise from '../images/narrowPE80Mortise.png'
+import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
 
 export const ExitDevices = {
   Narrow80: [
@@ -55,6 +57,22 @@ export const ExitDevices = {
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text6: "View Narrow Raceway Template Doc# 4568-C",
+    },
+    {
+      device: "8300",
+
+      title: "Thumbpeice Trims (04, 10, 28, 63)",
+      functions: "(8304, 8310, 8328, 8363)",
+      image: thumbpieceTrims,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text1: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
+      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
     },
     {
       device: "MD8400",
@@ -586,24 +604,6 @@ export const ExitDevices = {
     {
       device: "8800",
 
-      title: "(12-)(WS-)8800 (10, 16, 28, 63, 66)",
-      image: thumbpieceTrims,
-      functions: "8810, 8816, 8828, 8863, 8866",
-
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055921",
-      text: "View Mounting Template Doc# 4285-11",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
-      text1: "View MAL Trim Template (810, 814, 828, 863, 866) Doc# 4024-L",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
-      text2: "View FLL/FLW Trim Template (810, 814, 828, 863, 866) Doc# 4257-D",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
-      text3: "View PTB/PSB Trim Template (810, 814, 828, 863, 866) Doc# 4221-E",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
-      text4: "View STS Trim Template (810, 814, 828, 863, 866) Doc# 4021-G",
-    },
-    {
-      device: "8800",
-
       title: "(12-)(WS-)8800 (73, 74, 75, 76)",
       image: wideStileRim,
       functions: "(8873, 8874, 8875, 8876)",
@@ -622,6 +622,23 @@ export const ExitDevices = {
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+    {
+      device: '8800',
+
+      title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
+      functions: "(8804, 8810, 8828, 8863, 8866)",
+      image: thumbpieceTrims,
+
+      warning: '**FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower**',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text: "View FLL/FLW/FSL/FSW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text1: "View MAL/MSL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB/PSB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
+      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
     },
     {
       device: "8900",
@@ -648,30 +665,6 @@ export const ExitDevices = {
     {
       device: "8900",
 
-      title: "(12-)(WS-)8900 (10, 16, 28, 63, 66)",
-      image: thumbpieceTrims,
-      functions: "8810, 8816, 8828, 8863, 8866",
-
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055929",
-      text: "View Mounting Template Doc# 4709-3",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
-      text1: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
-      text2: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
-      text3: "View PTB/PSB Trim Template (810, 814, 828, 866) Doc# 4221-E",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
-      text4: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055931",
-      text5: "View 908/C908 Strike Standard Template Doc# 3908-Y",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
-      text6: "View 815 Open Back Strike Template Doc# 4192-H",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text7: "View Wide EM Raceway Template Doc# 4569-C",
-    },
-    {
-      device: "8900",
-
       title: "(12-)(WS-)8900 (73, 74, 75, 76)",
       image: wideMortise,
       functions: "(8973, 8974, 8975, 8976)",
@@ -691,15 +684,53 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6: "View Wide EM Raceway Template Doc# 4569-C",
     },
+    {
+      device: '8900',
+
+      title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
+      functions: "(8904, 8910, 8928, 8963, 8966)",
+      image: thumbpieceTrims,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text1: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
+      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
+    },
   ],
-  NarrowPE80: [
+  NarrowPE: [
+    {
+      device: "PE8300",
+
+      title: '(12-)PE8300 Narrow Mortise (04, 06, 10, 13, 15, 16, 40, 43, 44, 46, 73, 74, 75, 76)',
+      functions: 'PE8304, PE8306, PE8310, PE8313, PE8315, PE8316, PE8340, PE8343, PE8344, PE8346, PE8373, PE8374, PE8375, PE8376',
+      image: narrowPE80Mortise,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238416',
+      text: 'View Wood Door Mounting Template Doc# MEDT46',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238415',
+      text1: 'View Metal/Aluminum Door Mounting Template Doc# MEDT45',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238390',
+      text2: 'View Trim Template (700 ET) Doc# MEDT20',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055928',
+      text3: 'View Electrified Trim Template Doc# 4314-T',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238420',
+      text4: 'View C908/908 Strike Template Doc# MEDT50',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238419',
+      text5: 'View 815 Strike Template Doc# MEDT49',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238383',
+      text6: 'View Narrow EM Raceway Template Doc# MEDT8',
+    },
     {
       device: "PE8500",
 
       title: "PE8500 Narrow Rim",
       functions: "(8804, 8810, 8840, 8844)",
       functions2: "(8806, 8813, 8815, 8843, 8846, 8873, 8874, 8875, 8876)",
-      image: wideStileRim,
+      image: narrowPE80Rim,
     },
   ],
   Narrow90: [
@@ -772,7 +803,7 @@ export const ExitDevices = {
     {
       device: "9700",
 
-      title: "Thumbpiece Trims (FLL, FLW, MAL, PTB, STS)",
+      title: "Thumbpiece Trims (10, 28, 63)",
       functions: "9710, 9728, 9763",
       image: thumbpieceTrims,
 
@@ -807,6 +838,22 @@ export const ExitDevices = {
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1234418",
       text7: "View 644 Alternate Strike Template Doc# 3996-C",
     },
+    {
+      device: "9800",
+
+      title: "Thumbpiece Trims (04, 10, 28, 63)",
+      functions: "9804, 9810, 9828, 9863",
+      image: thumbpieceTrims,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text1: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
+      text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
+    },
 
     {
       device: "9900",
@@ -833,18 +880,18 @@ export const ExitDevices = {
     {
       device: "9900",
 
-      title: "Thumbpiece Trims (FLL, FLW, MAL, PTB, STS)",
+      title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions: "9904, 9910, 9928, 9963",
       image: thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
-      text: "View MAL Trim Template (810, 814, 841, 828, 866) Doc# 4024-L",
+      text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
-      text1: "View FLL/FLW Trim Template (810, 814, 841, 828, 866) Doc# 4257-D",
+      text1: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
-      text2: "View PTB/PSB Trim Template (810, 814, 841, 828, 866) Doc# 4221-E",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
-      text3: "View STS Trim Template (810, 814, 841, 828, 866) Doc# 4021-G",
+      text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
     },
   ],
 };
