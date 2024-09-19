@@ -16,7 +16,8 @@ import thumbpieceTrims from "../images/thumbpieceTrims1.png";
 import narrowPE80Mortise from '../images/narrowPE80Mortise.png'
 import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
 import Series20Rim from '../images/20 Series Rim (2828).png'
-import Series30SVR from '../images/30 Series SVR.png'
+import Series30SVR from '../images/30 Series SVR.png';
+import strikes2828 from '../images/2828 Strikes.png'
 
 export const ExitDevices = {
   Narrow80: [
@@ -900,10 +901,31 @@ export const ExitDevices = {
     {
       device: '2828',
 
-      title: '(12-)2828 Rim Exit With GTB/HTB/Thumbpiece Trims',
+      title: '(12-)2828 Rim Exit',
       functions: "2828",
       image: Series20Rim,
-    }
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056003',
+      text: 'View Mounting Template with HTB or GTB pull Doc# 4302-D',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056002',
+      text1: 'View Knob or Lever Trim Template Doc# 4304-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
+      text2: 'View LL Lever Trim Template Doc# 4485-D',
+    },
+    {
+      device: '2828',
+
+      title: 'Strikes',
+      functions: "2828",
+      image: strikes2828,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056003',
+      text: 'View Mounting Template with HTB or GTB pull Doc# 4302-D',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056002',
+      text1: 'View Knob or Lever Trim Template Doc# 4304-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
+      text2: 'View LL Lever Trim Template Doc# 4485-D',
+    },
   ],
   Wide30: [
     {
