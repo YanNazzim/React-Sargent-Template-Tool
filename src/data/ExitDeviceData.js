@@ -15,6 +15,7 @@ import narrowCVR9400 from "../images/narrowCVR 9400.png";
 import thumbpieceTrims from "../images/thumbpieceTrims1.png";
 import narrowPE80Mortise from '../images/narrowPE80Mortise.png'
 import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
+import Series20Rim from '../images/20 Series Rim (2828).png'
 
 export const ExitDevices = {
   Narrow80: [
@@ -893,6 +894,15 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
       text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
     },
+  ],
+  Wide20 : [
+    {
+      device: '2828',
+
+      title: '(12-)2828 Rim Exit With GTB/HTB/Thumbpiece Trims',
+      functions: "2828",
+      image: Series20Rim,
+    }
   ],
 };
 

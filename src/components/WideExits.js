@@ -15,6 +15,10 @@ import widePE80Mortise from '../images/widePE80Mortise.png';
 import widePECVR from '../images/widePECVR.png'
 import widePESVR from '../images/widePESVR.png'
 import widePERim from '../images/PE80 Wide Rim Exit.png'
+import Series20SVR from '../images/20 Series SVR (2727).png'
+import Series20Rim from '../images/20 Series Rim (2828).png'
+import Series30SVR from '../images/30 Series SVR.png'
+import Series30Rim from '../images/30 Series Rim (3828).png'
 
 // Define Wide80, Wide90, and PE80 devices
 const wide80Devices = [
@@ -40,6 +44,14 @@ const widePE80Devices = [
   { id: "PE8800", name: "PE8800 Wide Rim Exit", img: widePERim },
   { id: "PE8900", name: "PE8900 Wide Mortise Exit", img: widePE80Mortise }
 ];
+const Series20Devices = [
+  { id: "2727", name: '2727 SVR Exit', img: Series20SVR },
+  { id: "2828", name: '2828 Rim Exit', img: Series20Rim }
+];
+const Series30Devices = [
+  { id: "3727", name: '3727/NB-3727 SVR Exit', img: Series30SVR },
+  { id: "3828", name: '3828 Rim Exit', img: Series30Rim }
+];
 
 function WideExits() {
   const navigate = useNavigate();
@@ -49,6 +61,8 @@ function WideExits() {
   // Determine the correct set of devices to display based on the series
   const devices = series === "90" ? wide90Devices 
                 : series === "PE" ? widePE80Devices 
+                : series === "20" ? Series20Devices
+                : series === "30" ? Series30Devices
                 : wide80Devices;
 
   const handleButtonClick = (id) => {

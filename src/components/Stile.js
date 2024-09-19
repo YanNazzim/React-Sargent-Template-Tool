@@ -58,11 +58,11 @@ function Stile() {
     return (
         <>
             <div className="stile-page">
-                <button className="btn" onClick={handleButtonClickNarrow}>
+                <button id="Narrow" className="btn" onClick={handleButtonClickNarrow}>
                     <img src={deviceImageNarrow} className='btn-image' alt='NarrowExits'/>
                     Narrow {series} Series {deviceListNarrow}
                 </button>
-                <button className="btn" onClick={handleButtonClickWide}>
+                <button id="Wide" className="btn" onClick={handleButtonClickWide}>
                 <img src={deviceImageWide} className='btn-image' alt='WideExits'/>
                     Wide {series} Series {deviceListWide}
                 </button>
