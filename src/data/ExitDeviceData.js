@@ -16,6 +16,7 @@ import thumbpieceTrims from "../images/thumbpieceTrims1.png";
 import narrowPE80Mortise from '../images/narrowPE80Mortise.png'
 import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
 import Series20Rim from '../images/20 Series Rim (2828).png'
+import Series30SVR from '../images/30 Series SVR.png'
 
 export const ExitDevices = {
   Narrow80: [
@@ -902,6 +903,14 @@ export const ExitDevices = {
       title: '(12-)2828 Rim Exit With GTB/HTB/Thumbpiece Trims',
       functions: "2828",
       image: Series20Rim,
+    }
+  ],
+  Wide30: [
+    {
+      device: '3727',
+
+      title: '3727',
+      image: Series30SVR,
     }
   ],
 };
