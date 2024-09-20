@@ -919,12 +919,14 @@ export const ExitDevices = {
       functions: "2828",
       image: strikes2828,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056003',
-      text: 'View Mounting Template with HTB or GTB pull Doc# 4302-D',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056002',
-      text1: 'View Knob or Lever Trim Template Doc# 4304-F',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
-      text2: 'View LL Lever Trim Template Doc# 4485-D',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text: 'View 649 Standard Strike Template Doc# 4004-K',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055985',
+      text1: 'View 613 Alternative Strike Template Doc# 3995-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055986',
+      text2: 'View 644 Alternative Strike Template Doc# 3996-C',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056005',
+      text3: 'View 642 Alternative Strike Template Doc# 4007-E',
     },
   ],
   Wide30: [
@@ -933,6 +935,13 @@ export const ExitDevices = {
 
       title: '3727',
       image: Series30SVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055991',
+      text: 'View Mounting Template with Knob or Lever Trim Doc# 4301-G',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
+      text1: 'View LL Lever Trim Template Doc# 4485-D',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055965',
+      text2: 'View 646/653/655 Strike Template Doc# 4413-B',
     }
   ],
 };
