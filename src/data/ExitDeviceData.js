@@ -18,6 +18,7 @@ import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
 import Series20Rim from '../images/20 Series Rim (2828).png'
 import Series30SVR from '../images/30 Series SVR.png';
 import strikes2828 from '../images/2828 Strikes.png'
+import strikes3828 from '../images/strikes3828.png'
 
 export const ExitDevices = {
   Narrow80: [
@@ -942,7 +943,40 @@ export const ExitDevices = {
       text1: 'View LL Lever Trim Template Doc# 4485-D',
       link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055965',
       text2: 'View 646/653/655 Strike Template Doc# 4413-B',
-    }
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055956',
+      text3: 'View 624 Alternative Strike Template Doc# 4009-H',
+    },
+    {
+      device: '3828',
+
+      title: '(12-)3828',
+      functions: '3828',
+      image: Series30SVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056004',
+      text: 'View Mounting Template with HTB/GTB Trim Doc# 4287-E',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056002',
+      text1: 'View Mounting Template with Knob or Lever trim Doc# 4304-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
+      text2: 'View LL Lever Trim Template Doc# 4485-D',
+
+    },
+    {
+      device: '3828',
+
+      title: 'Strikes',
+      functions: "3838",
+      image: strikes3828,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055896',
+      text: 'View 649 Standard Strike Template Doc# 4004-K',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055985',
+      text1: 'View 613 Alternative Strike Template Doc# 3995-F',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055986',
+      text2: 'View 644 Alternative Strike Template Doc# 3996-C',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056005',
+      text3: 'View 642 Alternative Strike Template Doc# 4007-E',
+    },
   ],
 };
 
