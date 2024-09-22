@@ -14,8 +14,10 @@ import narrowRim from "../images/Narrow Rim Exit (8500).png";
 import narrowCVR9400 from "../images/narrowCVR 9400.png";
 import thumbpieceTrims from "../images/thumbpieceTrims1.png";
 import narrowPE80Mortise from '../images/narrowPE80Mortise.png'
+import narrowPE80CVR from '../images/narrowPECVR.png'
 import narrowPE80Rim from '../images/narrowPERim (PE8500).png'
 import Series20Rim from '../images/20 Series Rim (2828).png'
+import Series20SVR from '../images/20 Series SVR (2727).png'
 import Series30SVR from '../images/30 Series SVR.png';
 import strikes2828 from '../images/2828 Strikes.png'
 import strikes3828 from '../images/strikes3828.png'
@@ -709,7 +711,7 @@ export const ExitDevices = {
     {
       device: "PE8300",
 
-      title: '(12-)PE8300 Narrow Mortise (04, 06, 10, 13, 15, 16, 40, 43, 44, 46, 73, 74, 75, 76)',
+      title: '(12-)PE8300 Narrow Mortise (All Functions)',
       functions: 'PE8304, PE8306, PE8310, PE8313, PE8315, PE8316, PE8340, PE8343, PE8344, PE8346, PE8373, PE8374, PE8375, PE8376',
       image: narrowPE80Mortise,
 
@@ -727,6 +729,28 @@ export const ExitDevices = {
       text5: 'View 815 Strike Template Doc# MEDT49',
       link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238383',
       text6: 'View Narrow EM Raceway Template Doc# MEDT8',
+    },
+    {
+      device: 'PE8400',
+
+      title: '(12-) PE8400',
+      functions: '',
+      image: narrowPE80CVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238403',
+      text: 'View Wood Door Mounting Template Doc# MEDT33',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238376',
+      text1: 'View Aluminum Door Mounting Template Doc# MEDT1',
+      link2:'https://storage.googleapis.com/aa-americas/dam/AADSS1238378',
+      text2: 'View Metal Door Mounting Template Doc# MEDT3',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238418',
+      text3: 'View Trim Template Doc# MEDT48',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238381',
+      text4: 'View 640 Standard Strike Template Doc# MEDT6',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238384',
+      text5: 'View 652 Standard Strike Template Doc# MEDT9',
+      
+
     },
     {
       device: "PE8500",
@@ -899,6 +923,20 @@ export const ExitDevices = {
     },
   ],
   Wide20 : [
+    {
+      device: '2727',
+
+      title: '(12-) 2727 SVR Exit',
+      functions: '2727',
+      image: Series20SVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055991',
+      text: 'View Mounting Template with Knob or Lever Trim Doc# 4301-G',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056001',
+      text1: 'View LL Lever Trim Template Doc# 4485-D',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055965',
+      text2: 'View 646/653/655 Strike Template Doc# 4413-B',
+    },
     {
       device: '2828',
 
