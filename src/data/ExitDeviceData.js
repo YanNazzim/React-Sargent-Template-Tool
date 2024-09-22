@@ -749,7 +749,9 @@ export const ExitDevices = {
       text4: 'View 640 Standard Strike Template Doc# MEDT6',
       link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238384',
       text5: 'View 652 Standard Strike Template Doc# MEDT9',
-      
+      link6: '',
+      text6: '',
+
 
     },
     {
