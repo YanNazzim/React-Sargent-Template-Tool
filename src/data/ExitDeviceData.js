@@ -8,6 +8,7 @@ import wideLP8600 from "../images/LP8600 CVR Mortise.png";
 import crossWideRim from "../images/crossWideRim.png";
 import crossWideSVR from "../images/crossWideSVR.png";
 import crossWideMortise from "../images/crossWideMortise.png";
+import widePE80CVR from '../images/widePECVR.png'
 import narrowMortise from "../images/NarrowMortiseExit (8300).png";
 import narrowCVR from "../images/NarrowCVR.png";
 import narrowRim from "../images/Narrow Rim Exit (8500).png";
@@ -636,7 +637,7 @@ export const ExitDevices = {
       functions: "(8804, 8810, 8828, 8863, 8866)",
       image: thumbpieceTrims,
 
-      warning: '**FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower**',
+      warning: 'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW/FSL/FSW Trim Template (810, 814, 828, 866) Doc# 4257-D",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -734,7 +735,7 @@ export const ExitDevices = {
       device: 'PE8400',
 
       title: '(12-) PE8400',
-      functions: '',
+      functions: 'PE8406, PE8410, PE8413, PE8415, PE8440, PE8443, PE8446, PE8473, PE8474',
       image: narrowPE80CVR,
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238403',
@@ -749,26 +750,87 @@ export const ExitDevices = {
       text4: 'View 640 Standard Strike Template Doc# MEDT6',
       link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238384',
       text5: 'View 652 Standard Strike Template Doc# MEDT9',
-      link6: '',
-      text6: '',
-
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238383',
+      text6: 'View Narrow EM Raceway Template Doc# MEDT8',
 
     },
     {
       device: "PE8500",
 
-      title: "PE8500 Narrow Rim",
-      functions: "(8804, 8810, 8840, 8844)",
-      functions2: "(8806, 8813, 8815, 8843, 8846, 8873, 8874, 8875, 8876)",
+      title: "(12-)PE8500 Narrow Rim (04, 10, 40, 44 Functions)",
+      functions: "PE8504, PE8510, PE8540, PE8544",
       image: narrowPE80Rim,
+
+      warning: 'NOTE: For 10 Function Just OMIT Cylinder hole from 2nd Template',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238405',
+      text: 'View (04 Function) Cylinder only Inside Mounting Template Doc# MEDT35',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238406',
+      text1: 'View (04 Function) with ET Trim Inside Mounting Template Doc# MEDT41 ',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238383',
+      text6: 'View Narrow EM Raceway Template Doc# MEDT8',
+
     },
+    {
+      device: "PE8500",
+
+      title: "(12-)PE8500 Narrow Rim (06, 13, 15, 43, 46, 73, 74 Functions)",
+      functions: "PE8506, PE8513, PE8515, PE8543, PE8546, PE8573, PE8574",
+      image: narrowPE80Rim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238392',
+      text: 'View Inside Mounting Template Doc# MEDT22',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238391',
+      text1: 'View Outside Trim Template Doc# MEDT20',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238411',
+      text2: 'View (54-)(P773-8/P774-8) Electrified Trim Template Doc# MEDT41',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238383',
+      text6: 'View Narrow EM Raceway Template Doc# MEDT8',
+
+    },
+    {
+      device: 'PE8500',
+
+      title: 'Strikes',
+      image: narrowPE80Rim,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246741',
+      text: 'View 656 Standard Strike Template (Double Door/Mullion) Doc# MEDT74',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238407',
+      text1: 'View 657 Standard Strike Template Doc# MEDT37',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238408',
+      text2: 'View 649 Standard (12-) Strike Template (Single Door) Doc# MEDT38',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238410',
+      text3: 'View 658 Standard Strike (650A Mullions) Template Doc# MEDT40',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246740',
+      text4: 'View 613 Optional Strike Template Doc# MEDT73',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246738',
+      text5: 'View 642 Optional Strike Template Doc# MEDT71',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246739',
+      text6: 'View 644 Optional Strike Template (Double Door Without Mullion) Doc# MEDT72',
+      link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055897',
+      text7: 'View 649 Optional Strike Template (Double Door With Mullion) Doc# 4300-E',
+    },
+  ],
+  WidePE: [
+    {
+      device: 'PE8600',
+
+      title: '(12-) PE8600 (Wood Door)',
+      functions: 'PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674',
+      image: widePE80CVR,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238403',
+      text: 'View Mounting Template (Wood Door) Doc# MEDT33',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238418',
+      text1: 'View Trim Template (Any Material) Doc# MEDT48',
+    }
   ],
   Narrow90: [
     {
       device: "9400",
 
       title: "(12-) 9400 (04, 10)",
-      functions: "(9404, 9410)",
+      functions: "9404, 9410",
       image: narrowCVR9400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055977",
