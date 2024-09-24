@@ -14,6 +14,7 @@ import crossWideMortise from "../images/crossWideMortise.png";
 import widePE80Mortise from '../images/widePE80Mortise.png';
 import widePECVR from '../images/widePECVR.png'
 import widePESVR from '../images/widePESVR.png'
+import widePENBSVR from '../images/widePENBSVR.png'
 import widePERim from '../images/PE80 Wide Rim Exit.png'
 import Series20SVR from '../images/20 Series SVR (2727).png'
 import Series20Rim from '../images/20 Series Rim (2828).png'
@@ -41,6 +42,7 @@ const wide90Devices = [
 const widePE80Devices = [
   { id: "PE8600", name: "PE8600 Wide CVR Exit", img: widePECVR },
   { id: "PE8700", name: "PE8700 Wide SVR Exit", img: widePESVR },
+  { id: "NB-PE8700", name: "NB-PE8700 Wide SVR Exit", img: widePENBSVR },
   { id: "PE8800", name: "PE8800 Wide Rim Exit", img: widePERim },
   { id: "PE8900", name: "PE8900 Wide Mortise Exit", img: widePE80Mortise }
 ];

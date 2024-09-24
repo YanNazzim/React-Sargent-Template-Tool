@@ -55,9 +55,15 @@
 }
 
 .template-card h3 {
-    color: black;
+    background-color: white;
+    color: black; /* Text color */
     font-size: 36px;
     text-align: center;
+    border-radius: 25px;
+    border: solid red 5px;
+
+    /* Black outline effect using text-shadow */
+
 }
 
 .template-card a:hover {
@@ -69,7 +75,7 @@
 
 .template-image {
     margin-top: 30px;
-    width: 30vw;
+    width: 350px;
     border-radius: 25px;
     border: solid black 3px;
 }
