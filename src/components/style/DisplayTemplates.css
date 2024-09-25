@@ -54,17 +54,18 @@
     transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.2s; /* Adds smooth transitions for background color and scaling */
 }
 
+/* Styles for the h3 element when a warning is displayed */
 .template-card h3 {
     background-color: white;
-    color: black; /* Text color */
-    font-size: 36px;
+    color: red; /* Text color for the warning */
+    font-size: 24px;
     text-align: center;
     border-radius: 25px;
     border: solid red 5px;
-
-    /* Black outline effect using text-shadow */
-
-}
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
 
 .template-card a:hover {
     background-color: #0288d1;

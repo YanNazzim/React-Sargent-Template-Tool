@@ -11,6 +11,7 @@ import crossWideMortise from "../images/crossWideMortise.png";
 import widePE80CVR from "../images/widePECVR.png";
 import widePE80SVR from "../images/widePESVR.png";
 import widePENBSVR from "../images/widePENBSVR.png";
+import widePERim from "../images/PE80 Wide Rim Exit.png";
 import narrowMortise from "../images/NarrowMortiseExit (8300).png";
 import narrowCVR from "../images/NarrowCVR.png";
 import narrowRim from "../images/Narrow Rim Exit (8500).png";
@@ -957,8 +958,88 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
       text: "View Mounting Template Doc# MEDT13",
-      link1: "",
-      text1: "",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
+      text1: "View Trim Template Doc# MEDT19",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238402",
+      text2: "View (54-) Electrified ET Trim Template (73 & 74) Doc# MEDT32",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1234418",
+      text3: "View 646 Standard Top Strike Template Doc# MEDT21",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
+      text4: "View 306/313 Auxiliary Control Template Doc# 4214",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
+      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+    },
+    {
+      device: "NB-PE8700",
+
+      title: "Thumbpiece Trims (10, 28, 62, 63)",
+      functions: "PE8710, PE8728, PE8762, PE8763",
+      image: thumbpieceTrims,
+
+      warning:
+        'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text: "View MAL Trim Template (810, 828, 866) Doc# 4024-L",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text1: "View FLL/FLW Trim Template (810, 828, 866) Doc# 4257-D",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
+      text3: "View STS Trim Template (810, 828, 866) Doc# 4021-G",
+    },
+    {
+      device: "PE8800",
+
+      title: "(12-) PE8800 Rim Exit (04, 10, 40, 44)",
+      functions: "PE8804, PE8810, PE8840, PE8844",
+      image: widePERim,
+
+      warning: 'For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
+      text: "View Mounting Template Doc# MEDT44",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
+      text1: "View 04 Cylinder Only Template Doc# 4307-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
+      text2: "View Trim Template Doc# MEDT19",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
+      text3: "View 649 Standard Strike Template Doc# MEDT38",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
+      text4: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
+      text5: "View 613 Optional Strike Template Doc# MEDT73",
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246738',
+      text6: 'View 642 Optional Strike Template Doc# MEDT71',
+      link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246739',
+      text7: 'View 644 Strike Template (Double Door No Mullion) Doc# MEDT72',
+      link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246741',
+      text8: 'View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74',
+    },
+    {
+      device: "PE8800",
+
+      title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
+      functions: "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876",
+      image: widePERim,
+
+      warning: 'ET with Cross Spindle + Electrified Trims ',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
+      text: "View Mounting Template Doc# MEDT44",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238391",
+      text1: "View P700-8 Trim Template Doc# MEDT20",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
+      text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
+      text3: "View 649 Standard Strike Template Doc# MEDT38",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
+      text4: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
+      text5: "View 613 Optional Strike Template Doc# MEDT73",
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246738',
+      text6: 'View 642 Optional Strike Template Doc# MEDT71',
+      link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246739',
+      text7: 'View 644 Strike Template (Double Door No Mullion) Doc# MEDT72',
+      link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246741',
+      text8: 'View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74',
     },
   ],
   Narrow90: [
