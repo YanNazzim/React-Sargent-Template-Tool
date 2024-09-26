@@ -10,18 +10,21 @@ import auxLocksImg from '../images/AuxiliaryLocks.png'
 function ProductLine() {
   const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    navigate('/exitSeries'); // Navigate to Stile component
+  const handleButtonClickExits = () => {
+    navigate('/exitSeries'); // Navigate to exitSeries component
+  };
+  const handleButtonClickMortise = () => {
+    navigate('/mortiseSeries'); // Navigate to exitSeries component
   };
 
   return (
     <>
       <div className="product-line">
-        <button className="btn" onClick={handleButtonClick}>
+        <button className="btn" onClick={handleButtonClickExits}>
           <img src={exitDevicesImg} alt="Exit Devices" className="btn-image" />
           Exit Devices
         </button>
-        <button className="btn">
+        <button className="btn" onClick={handleButtonClickMortise}>
           <img src={mortiseImg} alt="Mortise" className="btn-image" />
           Mortise
         </button>

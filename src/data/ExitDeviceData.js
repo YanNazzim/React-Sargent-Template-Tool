@@ -12,6 +12,7 @@ import widePE80CVR from "../images/widePECVR.png";
 import widePE80SVR from "../images/widePESVR.png";
 import widePENBSVR from "../images/widePENBSVR.png";
 import widePERim from "../images/PE80 Wide Rim Exit.png";
+import widePEMortise from '../images/widePE80Mortise.png'
 import narrowMortise from "../images/NarrowMortiseExit (8300).png";
 import narrowCVR from "../images/NarrowCVR.png";
 import narrowRim from "../images/Narrow Rim Exit (8500).png";
@@ -994,52 +995,112 @@ export const ExitDevices = {
       functions: "PE8804, PE8810, PE8840, PE8844",
       image: widePERim,
 
-      warning: 'For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ',
+      warning:
+        "For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
       text: "View Mounting Template Doc# MEDT44",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
       text1: "View 04 Cylinder Only Template Doc# 4307-G",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template Doc# MEDT19",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
-      text3: "View 649 Standard Strike Template Doc# MEDT38",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
-      text4: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
-      text5: "View 613 Optional Strike Template Doc# MEDT73",
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246738',
-      text6: 'View 642 Optional Strike Template Doc# MEDT71',
-      link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246739',
-      text7: 'View 644 Strike Template (Double Door No Mullion) Doc# MEDT72',
-      link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246741',
-      text8: 'View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74',
     },
     {
       device: "PE8800",
 
       title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
-      functions: "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876",
+      functions:
+        "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876",
       image: widePERim,
 
-      warning: 'ET with Cross Spindle + Electrified Trims ',
+      warning: "ET with Cross Spindle + Electrified Trims ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
       text: "View Mounting Template Doc# MEDT44",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238391",
       text1: "View P700-8 Trim Template Doc# MEDT20",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
       text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
+    },
+    {
+      device: "PE8800",
+
+      title: "(12-)(HC-)(WS-) PE8800 Rim Exit (16, 28, 63, 66)",
+      functions: "PE8816, PE8828, PE8863, PE8866",
+      image: widePERim,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238413",
+      text: "View Mounting Template (16, 28, 63, 66 Bell Housing) Doc# MEDT43",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
+      text1: "View Trim Template (716) Doc# MEDT19",
+    },
+    {
+      device: "PE8800",
+
+      title: "Thumbpiece Trims",
+      functions: "PE8804, PE8810, PE8828, PE8863, PE8866",
+      image: thumbpieceTrims,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text1: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
+      text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
+    },
+    {
+      device: 'PE8800',
+
+      title: 'Strikes',
+      image: widePERim,
+
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
       text3: "View 649 Standard Strike Template Doc# MEDT38",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
       text4: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
       text5: "View 613 Optional Strike Template Doc# MEDT73",
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246738',
-      text6: 'View 642 Optional Strike Template Doc# MEDT71',
-      link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246739',
-      text7: 'View 644 Strike Template (Double Door No Mullion) Doc# MEDT72',
-      link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246741',
-      text8: 'View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74',
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1246738",
+      text6: "View 642 Optional Strike Template Doc# MEDT71",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1246739",
+      text7: "View 644 Strike Template (Double Door No Mullion) Doc# MEDT72",
+      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
+      text8:
+        "View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74",
+    },
+    {
+      device: 'PE8900',
+
+      title: '(12-)(WS-) PE8900 Mortise Exit',
+      functions: '',
+      image: widePEMortise,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
+      text: 'View Mounting Template Doc# MEDT42',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238390',
+      text1: 'View Trim Template Doc# MEDT19',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238402',
+      text2: 'View (54-) Electrified ET Trim Template Doc# MEDT32',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238420',
+      text3: 'View 908/C908 Standard Strike Template Doc# MEDT50',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238419',
+      text4: 'View 815 Optional Strike Template Doc# MEDT49',
+    },
+    {
+      device: "PE8900",
+
+      title: "Thumbpiece Trims",
+      functions: "PE8904, PE8910, PE8928, PE8963, PE8966",
+      image: thumbpieceTrims,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text1: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
+      text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
     },
   ],
   Narrow90: [
@@ -1295,16 +1356,5 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
-  ],
-};
-
-export const mortiseLockTemplates = {
-  8210: [
-    {
-      title: "8210 Mortise Lock",
-      image: "/images/8210.png",
-      link: "/templates/8210.pdf",
-    },
-    // Add more templates for 8210 series
   ],
 };

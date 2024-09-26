@@ -5,7 +5,7 @@ import { ExitDevices } from "../data/ExitDeviceData";
 
 function DisplayTemplates() {
   const location = useLocation();
-  const { category, series, id } = location.state;
+  const { category, series, id, electrified } = location.state;
 
   // Get the list of templates based on series
   const templates = ExitDevices[series] || [];
@@ -18,7 +18,7 @@ function DisplayTemplates() {
   return (
     <div className="display-templates">
       <h1>
-        {category} - {series} - {id}
+        {category} - {series} - {id}{electrified}
       </h1>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
