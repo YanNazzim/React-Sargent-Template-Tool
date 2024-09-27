@@ -17,7 +17,6 @@ function MortiseTypes() {
   let electrifiedDeviceImage = null;
   
   const { series } = location.state || {};
-  let electrified = ""; // Default is empty string for standard devices
 
   if (series === "8200") {
     standardDeviceImage = Mortise8200;
@@ -33,15 +32,26 @@ function MortiseTypes() {
   }
 
   // Define button click handlers for each series
-  const handleButtonClick = (series, isElectrified) => {
-    // If it's an electrified version, set electrified to "Electrified"
-    if (isElectrified) {
-      electrified = "Electrified";
+// Define button click handlers for each series
+const handleButtonClick = (series, isElectrified) => {
+  let electrified = ""; // Default to standard
+
+  // Set electrified to a string if the device is electrified
+  if (isElectrified) {
+    electrified = "Electrified";
+  }
+
+  // Navigate to DisplayTemplates page with the correct state
+  navigate('/display-templates', { 
+    state: { 
+      category: 'Mortise Locks', 
+      series, 
+      electrified, 
+      id: series // This helps in filtering
     }
-    
-    // Navigate with the correct state
-    navigate('/display-templates', { state: { category: 'Mortise Locks', series: `${series}`, electrified } });
-  };
+  });
+};
+
 
   return (
     <div className="stile-page">

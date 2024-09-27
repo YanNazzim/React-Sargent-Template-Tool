@@ -1,24 +1,40 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
-import { ExitDevices } from "../data/ExitDeviceData";
+import { MortiseLocks } from "../data/MortiseLocksData";  // Import MortiseLocks data
+import { ExitDevices } from "../data/ExitDeviceData";  // Import ExitDevices data
 
 function DisplayTemplates() {
   const location = useLocation();
   const { category, series, id, electrified } = location.state;
 
-  // Get the list of templates based on series
-  const templates = ExitDevices[series] || [];
+  // Initialize templates array
+  let templates = [];
 
-  // Filter templates to match the selected device id
-  const filteredTemplates = templates.filter(
-    (template) => template.device === id
-  );
+  // Choose the correct data source based on the category
+  if (category === "Mortise Locks") {
+    templates = MortiseLocks[series] || [];
+  } else if (category === "Exit Devices") {
+    templates = ExitDevices[series] || [];
+  }
+
+  // Filter templates based on electrified/standard for Mortise Locks and the id for Exit Devices
+  let filteredTemplates = [];
+
+  if (category === "Mortise Locks") {
+    const isElectrified = electrified === "Electrified";
+    filteredTemplates = templates.filter(template =>
+      isElectrified ? template.device === "Electrified" : template.device === "Standard"
+    );
+  } else if (category === "Exit Devices") {
+    // Exit Devices do not have the "electrified" distinction, so filter purely by id
+    filteredTemplates = templates.filter(template => template.device === id);
+  }
 
   return (
     <div className="display-templates">
       <h1>
-        {category} - {series} - {id}{electrified}
+        {category} - {series} - {id} {electrified || "Standard"}
       </h1>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
@@ -33,82 +49,28 @@ function DisplayTemplates() {
             {/* Conditionally render the h3 if warning is not empty */}
             {template.warning && <h3>{template.warning}</h3>}
 
+            {/* Primary link */}
             <a href={template.link} target="_blank" rel="noopener noreferrer">
               {template.text}
             </a>
 
-            {template.link1 && (
-              <a
-                href={template.link1}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text1}
-              </a>
-            )}
-            {template.link2 && (
-              <a
-                href={template.link2}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text2}
-              </a>
-            )}
-            {template.link3 && (
-              <a
-                href={template.link3}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text3}
-              </a>
-            )}
-            {template.link4 && (
-              <a
-                href={template.link4}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text4}
-              </a>
-            )}
-            {template.link5 && (
-              <a
-                href={template.link5}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text5}
-              </a>
-            )}
-            {template.link6 && (
-              <a
-                href={template.link6}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text6}
-              </a>
-            )}
-            {template.link7 && (
-              <a
-                href={template.link7}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text7}
-              </a>
-            )}
-            {template.link8 && (
-              <a
-                href={template.link8}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {template.text8}
-              </a>
-            )}
+            {/* Render up to 10 additional links dynamically */}
+            {[...Array(10)].map((_, i) => {
+              const linkKey = `link${i + 1}`;  // Generates link1, link2, ... link10
+              const textKey = `text${i + 1}`;  // Generates text1, text2, ... text10
+              return (
+                template[linkKey] && (
+                  <a
+                    key={linkKey}
+                    href={template[linkKey]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {template[textKey]}
+                  </a>
+                )
+              );
+            })}
           </div>
         ))}
       </div>
