@@ -33,12 +33,12 @@ function ProductLine() {
           Bored Locks
         </button>
         <button className="btn">
-          <img src={cylindersImg} alt="Cylinders" className="btn-image" />
-          Cylinders
-        </button>
-        <button className="btn">
           <img src={auxLocksImg} alt="Cylinders" className="btn-image" />
           Auxiliary Locks
+        </button>
+        <button className="btn">
+          <img src={cylindersImg} alt="Cylinders" className="btn-image" />
+          Cylinders
         </button>
       </div>
     </>
