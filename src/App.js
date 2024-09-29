@@ -12,6 +12,9 @@ import Header from "./components/Header"; // Import Header
 import Footer from "./components/Footer.js";
 import MortiseSeries from "./components/MortiseSeries.js";
 import MortiseTypes from './components/MortiseTypes.js'
+import BoredSeries from './components/BoredSeries.js'
+import AuxLockSeries from './components/AuxLockSeries.js'
+import Cylinders from './components/Cylinders.js'
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
         <Route path="/exitSeries" element={<ExitSeries />} />
         <Route path="/mortiseSeries" element={<MortiseSeries />} />
         <Route path="/mortiseTypes" element={<MortiseTypes />} />
+        <Route path="/boredSeries" element={<BoredSeries />} />
+        <Route path="/auxiliaryLocksSeries" element={<AuxLockSeries />} />
+        <Route path="/Cylinders" element={<Cylinders />} />
+
       </Routes>
       <Footer /> {/* Ensure Footer is part of every page */}
     </Router>

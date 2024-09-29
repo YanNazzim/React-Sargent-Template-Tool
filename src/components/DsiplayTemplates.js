@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";  // Import MortiseLocks data
 import { ExitDevices } from "../data/ExitDeviceData";  // Import ExitDevices data
+import { BoredLocks } from "../data/BoredLocksData";
 
 function DisplayTemplates() {
   const location = useLocation();
@@ -16,7 +17,10 @@ function DisplayTemplates() {
     templates = MortiseLocks[series] || [];
   } else if (category === "Exit Devices") {
     templates = ExitDevices[series] || [];
+  } else if (category === "Bored Locks") {
+    templates = BoredLocks[series] || [];
   }
+
 
   // Filter templates based on electrified/standard for Mortise Locks and the id for Exit Devices
   let filteredTemplates = [];
@@ -29,8 +33,10 @@ function DisplayTemplates() {
   } else if (category === "Exit Devices") {
     // Exit Devices do not have the "electrified" distinction, so filter purely by id
     filteredTemplates = templates.filter(template => template.device === id);
+  } else if (category === "Bored Locks") {
+    filteredTemplates = templates.filter(template => template.device === id);  // Filter by device
   }
-
+  
   return (
     <div className="display-templates">
       <h1>

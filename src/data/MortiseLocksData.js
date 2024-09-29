@@ -1,4 +1,5 @@
 /* Device Images */
+import Mortise7800 from '../images/MortiseLock7800.png'
 import Mortise8200 from "../images/Mortise Lock.png";
 import Mortise8200Electric from '../images/MortiseElectrified8200.png'
 import Roseless from '../images/MortiseRoselessTrim.png'
@@ -92,7 +93,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "7800 Mortise Lock - Standard",
-      image: "/images/7800Standard.png",
+      image: Mortise7800,
       text: "Download Template",
       link: "/templates/7800-standard-template.pdf",
       warning: "",

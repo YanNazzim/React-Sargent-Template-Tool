@@ -5,17 +5,17 @@ import "./style/Stile.css";
 
 /* Mortise Images */
 import Mortise8200 from "../images/MortiseLock.png";
-import MortiseElectrified8200 from '../images/MortiseElectrified8200.png';
-import Mortise9200 from '../images/MortiseLock9200.png';
-import MortiseLock7800 from '../images/MortiseLock7800.png';
-import ElectricHinge from '../images/ElectricHinge.png';
+import MortiseElectrified8200 from "../images/MortiseElectrified8200.png";
+import Mortise9200 from "../images/MortiseLock9200.png";
+import MortiseLock7800 from "../images/MortiseLock7800.png";
+import ElectricHinge from "../images/ElectricHinge.png";
 
 function MortiseTypes() {
   const navigate = useNavigate();
   const location = useLocation(); // Initialize location using the hook
   let standardDeviceImage = null;
   let electrifiedDeviceImage = null;
-  
+
   const { series } = location.state || {};
 
   if (series === "8200") {
@@ -28,30 +28,28 @@ function MortiseTypes() {
   }
   if (series === "7800") {
     standardDeviceImage = MortiseLock7800;
-    electrifiedDeviceImage = MortiseLock7800;
   }
 
   // Define button click handlers for each series
-// Define button click handlers for each series
-const handleButtonClick = (series, isElectrified) => {
-  let electrified = ""; // Default to standard
+  // Define button click handlers for each series
+  const handleButtonClick = (series, isElectrified) => {
+    let electrified = ""; // Default to standard
 
-  // Set electrified to a string if the device is electrified
-  if (isElectrified) {
-    electrified = "Electrified";
-  }
-
-  // Navigate to DisplayTemplates page with the correct state
-  navigate('/display-templates', { 
-    state: { 
-      category: 'Mortise Locks', 
-      series, 
-      electrified, 
-      id: series // This helps in filtering
+    // Set electrified to a string if the device is electrified
+    if (isElectrified) {
+      electrified = "Electrified";
     }
-  });
-};
 
+    // Navigate to DisplayTemplates page with the correct state
+    navigate("/display-templates", {
+      state: {
+        category: "Mortise Locks",
+        series,
+        electrified,
+        id: series, // This helps in filtering
+      },
+    });
+  };
 
   return (
     <div className="stile-page">
@@ -67,7 +65,11 @@ const handleButtonClick = (series, isElectrified) => {
 
       {/* Conditionally render Electrified button */}
       {series !== "7800" && (
-        <button id="electrified" className="btn" onClick={() => handleButtonClick(series, true)}>
+        <button
+          id="electrified"
+          className="btn"
+          onClick={() => handleButtonClick(series, true)}
+        >
           <img
             src={electrifiedDeviceImage}
             alt="Electrified Mortise Device"
