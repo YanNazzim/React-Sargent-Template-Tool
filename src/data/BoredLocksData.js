@@ -9,49 +9,49 @@ import BoredDL from '../images/Bored DL Series.png';
 export const BoredLocks = {
     "11 Line": [
         {
-            device: 'Standard',
+            device: '11 Line',
             image: Bored11,
             // Add more attributes as needed
         },
     ],
     "10X Line": [
         {
-            device: 'Standard',
+            device: '10X Line',
             image: Bored10,
             // Add more attributes as needed
         },
     ],
     "8X Line": [
         {
-            device: 'Standard',
+            device: '8X Line',
             image: Bored8X,
             // Add more attributes as needed
         },
     ],
     "7 Line": [
         {
-            device: 'Standard',
+            device: '7 Line',
             image: Bored7Line,
             // Add more attributes as needed
         },
     ],
     "6500 Series": [
         {
-            device: 'Standard',
+            device: '6500 Series',
             image: Bored6500,
             // Add more attributes as needed
         },
     ],
     "6 Line": [
         {
-            device: 'Standard',
+            device: '6 Line',
             image: Bored6Line,
             // Add more attributes as needed
         },
     ],
     "DL Series": [
         {
-            device: 'Standard',
+            device: 'DL Series',
             image: BoredDL,
             // Add more attributes as needed
         },

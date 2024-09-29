@@ -27,18 +27,18 @@ function DisplayTemplates() {
   // Filter templates based on electrified/standard for Mortise Locks and Bored Locks, and the id for Exit Devices
   let filteredTemplates = [];
 
-  if (category === "Mortise Locks" || category === "Bored Locks") {
+  if (category === "Mortise Locks") {
     const isElectrified = electrified === "Electrified";
     filteredTemplates = templates.filter(template =>
       isElectrified ? template.device === "Electrified" : template.device === "Standard"
     );
-  } else if (category === "Exit Devices" || category === "Auxiliary Locks") {
+  } else if (category === "Exit Devices" || category === "Auxiliary Locks" || category === "Bored Locks") {
     // Exit Devices and Auxiliary Locks do not have the "electrified" distinction, so filter purely by id
     filteredTemplates = templates.filter(template => template.device === id);
   }
 
   // Determine if "Electrified" or "Standard" should be shown
-  const showElectrifiedLabel = category === "Mortise Locks" || category === "Bored Locks";
+  const showElectrifiedLabel = category === "Mortise Locks";
   
   // Construct the header label
   const headerLabel = category === "Exit Devices"
