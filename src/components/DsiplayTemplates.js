@@ -3,7 +3,8 @@ import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";  // Import MortiseLocks data
 import { ExitDevices } from "../data/ExitDeviceData";  // Import ExitDevices data
-import { BoredLocks } from "../data/BoredLocksData";
+import { BoredLocks } from "../data/BoredLocksData";   // Import BoredLocks data
+import { AuxLocks } from "../data/AuxLocksData";   // Import AuxLocks data
 
 function DisplayTemplates() {
   const location = useLocation();
@@ -19,29 +20,34 @@ function DisplayTemplates() {
     templates = ExitDevices[series] || [];
   } else if (category === "Bored Locks") {
     templates = BoredLocks[series] || [];
+  } else if (category === "Auxiliary Locks") {
+    templates = AuxLocks[series] || [];
   }
 
-
-  // Filter templates based on electrified/standard for Mortise Locks and the id for Exit Devices
+  // Filter templates based on electrified/standard for Mortise Locks and Bored Locks, and the id for Exit Devices
   let filteredTemplates = [];
 
-  if (category === "Mortise Locks") {
+  if (category === "Mortise Locks" || category === "Bored Locks") {
     const isElectrified = electrified === "Electrified";
     filteredTemplates = templates.filter(template =>
       isElectrified ? template.device === "Electrified" : template.device === "Standard"
     );
-  } else if (category === "Exit Devices") {
-    // Exit Devices do not have the "electrified" distinction, so filter purely by id
+  } else if (category === "Exit Devices" || category === "Auxiliary Locks") {
+    // Exit Devices and Auxiliary Locks do not have the "electrified" distinction, so filter purely by id
     filteredTemplates = templates.filter(template => template.device === id);
-  } else if (category === "Bored Locks") {
-    filteredTemplates = templates.filter(template => template.device === id);  // Filter by device
   }
+
+  // Determine if "Electrified" or "Standard" should be shown
+  const showElectrifiedLabel = category === "Mortise Locks" || category === "Bored Locks";
   
+  // Construct the header label
+  const headerLabel = category === "Exit Devices"
+    ? `${category} - ${series} - ${id}` // Display id for Exit Devices
+    : `${category} - ${series} ${showElectrifiedLabel ? (electrified || "Standard") : ""}`; // Display electrified/standard for others
+
   return (
     <div className="display-templates">
-      <h1>
-        {category} - {series} - {id} {electrified || "Standard"}
-      </h1>
+      <h1>{headerLabel}</h1>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
           <div key={index} className="template-card">

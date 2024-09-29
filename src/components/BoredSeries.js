@@ -20,18 +20,23 @@ function BoredSeries() {
     { id: "10X Line", name: "10X Line", image: Bored10X, series: "10X Line" },
     { id: "8X Line", name: "8X Line", image: Bored8X, series: "8X Line" },
     { id: "7 Line", name: "7 Line", image: Bored7Line, series: "7 Line" },
-    { id: "6500 Series", name: "6500 Series", image: Bored6500, series: "6500 Series" },
+    {
+      id: "6500 Series",
+      name: "6500 Series",
+      image: Bored6500,
+      series: "6500 Series",
+    },
     { id: "6 Line", name: "6 Line", image: Bored6Line, series: "6 Line" },
     { id: "DL Series", name: "DL Series", image: BoredDL, series: "DL Series" },
   ];
 
   function handleButtonClick(series, id) {
-    navigate('/display-templates', { 
-      state: { 
-        category: 'Bored Locks', 
-        series, 
-        id // Passing the correct series id
-      }
+    navigate("/display-templates", {
+      state: {
+        category: "Bored Locks",
+        series,
+        id, // Passing the correct series id
+      },
     });
   }
 
@@ -44,7 +49,11 @@ function BoredSeries() {
             className="btn"
             onClick={() => handleButtonClick(item.series, item.id)}
           >
-            <img className="btn-image" src={item.image} alt={`${item.name} lock`} />
+            <img
+              className="btn-image"
+              src={item.image}
+              alt={`${item.name} lock`}
+            />
             {item.name}
           </button>
         ))
