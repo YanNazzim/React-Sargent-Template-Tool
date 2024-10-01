@@ -2,34 +2,30 @@
 html, body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    width: 100%; /* Ensure body takes full width */
+    width: 100%; /* Allow body to take full width of viewport */
     height: 100%; /* Allow body to occupy full height */
     display: flex; /* Enable flexbox layout */
     flex-direction: column; /* Stack children vertically */
 }
 
+
 /* Header */
-.header {
-    display: flex;
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center; /* Centers children horizontally */
-    justify-content: center; /* Centers children vertically */
+.header, .footer {
+    display: flex; /* Change to flex for better control */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     padding: 20px;
     background-color: #aaaaaa;
-    min-width: 1024px; /* Minimum width to maintain layout */
-    width: 100%; /* Allow it to scale with the screen */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    min-width: 1024px; /* Minimum width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
-.header button {
-    margin-top: 15px;
-}
+
 
 /* Style for the image */
 .SargentLogo {
     height: auto; /* Set height to auto for better responsiveness */
-    max-height: 200px; /* Limit max height */
-    max-width: 100%; /* Ensure it doesn't exceed the container */
     width: auto; /* Set width to auto for better responsiveness */
     margin-bottom: 20px; /* Adds space between the logo and the heading */
 }
@@ -44,6 +40,8 @@ html, body {
     text-align: center;
     border: solid black 3px;
     transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s; /* Adds smooth transitions */
+    padding: 5px;
+    margin-bottom: 20px;
 }
 
 .Home:hover {
@@ -53,35 +51,17 @@ html, body {
     transform: scale(1.05); /* Slightly scales up the button on hover */
 }
 
-/* Style for Footer */
-.footer {
-    display: flex; /* Ensure footer uses flexbox */
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center; /* Centers children horizontally */
-    justify-content: center; /* Centers children vertically */
-    text-align: center;
-    margin-top: 0; /* Reset margin for cleaner look */
-    background-color: #aaaaaa;
-    font-weight: bold;
-    width: 100%; /* Use full width */
-    min-width: 1024px; /* Minimum width for footer */
-    height: auto; /* Allow footer height to adjust with content */
-    padding: 20px; /* Add some padding to the footer */
-    box-sizing: border-box; /* Include padding in width */
-    flex-grow: 1; /* Allow footer to grow and take remaining space */
-}
 
 .footer p {
     margin: 0; /* Reset margin for paragraphs in footer */
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (max-height: 1024px) {
     .header,
     .footer {
-        min-width: 1024px; /* Keep minimum width for desktop view */
-        width: auto; /* Center align */
-        margin: auto; /* Center align */
+        width: 1024px; /* Center align */
+        height: auto;
     }
 
     .header {
@@ -94,25 +74,30 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    .header {
+    .header, .footer {
         padding: 10px; /* Further adjust padding for smaller screens */
+        flex-direction: column; /* Ensure elements stack vertically */
+        align-items: center; /* Center elements */
     }
 
     .Home {
-        font-size: 2rem; /* Smaller font size for better fit */
+        font-size: 2.5rem; /* Adjusted font size */
     }
 
     .SargentLogo {
         max-height: 150px; /* Limit logo height for smaller screens */
+        width: auto; /* Maintain aspect ratio */
     }
 }
+
 
 @media (max-width: 390px) {
     .Home {
-        font-size: 1.5rem; /* Further decrease font size for very small screens */
+        font-size: 3rem; /* Adjust font size for very small screens */
     }
 
     .SargentLogo {
-        max-height: 120px; /* Further limit logo height for very small screens */
+        max-height: 200px; /* Adjust logo height for very small screens */
     }
 }
+

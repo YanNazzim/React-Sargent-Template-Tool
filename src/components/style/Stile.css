@@ -1,48 +1,91 @@
 /* Stile.css */
 
 .stile-page {
-        display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-    align-items: center;     /* Centers buttons vertically (if the container has a height) */
-    gap: 20px;               /* Space between buttons, adjust as needed */
-    flex-wrap: wrap;  
-    height: 100%;       /* Allows buttons to wrap to the next line if needed */
-    padding: 20px;           /* Adds padding around the container */
-    background-color: #aaaaaa;
-  
+/* ProductLine.css */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically */
+  gap: 20px; /* Space between buttons */
+  padding: 20px; /* Adds padding around the container */
+  background-color: #aaaaaa; /* Background color for the container */
+  margin: 0; /* Remove any default margin */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  min-width: 1024px; /* Set a minimum width for the product line */
 }
 
+/* Button styling */
 .btn {
-    display: flex;
-    flex-direction: row;     /* Aligns image and text horizontally */
-    align-items: center;     /* Centers text vertically with the image */
-    background-color: #007bff; /* Button background color */
-    width: 80vw;             /* Adjust width as needed */
-    height: 200px;           /* Adjust height as needed */
-    color: white;            /* Button text color */
-    border: none;            /* Removes default border */
-    border-radius: 15px;     /* Rounds the button corners */
-    padding: 10px;           /* Adds padding inside the button */
-    font-size: 60px;          /* Adjusts font size */
-    cursor: pointer;         /* Changes cursor to pointer on hover */
-    transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions for background color and scaling */
-    text-align: center;      /* Centers text horizontally within the button */
-    overflow: hidden;        /* Ensures content fits within the button */
-    user-select: none;       /* Prevents text from being selectable */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align image and text */
+  background-color: #007bff; /* Button background color */
+  min-width: 800px; /* Set a minimum width for buttons */
+  color: white; /* Button text color */
+  margin: auto;
+  border: none; /* Removes default border */
+  border-radius: 15px; /* Rounds the button corners */
+  padding: 15px; /* Adds padding inside the button for a more spacious look */
+  font-size: 20px; /* Larger font size for better readability */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions */
+  text-align: center; /* Centers text below the image */
+  overflow: hidden; /* Ensures content fits within the button */
+  user-select: none; /* Prevents text from being selectable */
+}
+
+/* Image styling */
+.btn-image {
+  width: 40%; /* Set a reasonable width for images */
+  height: auto; /* Ensure the height adjusts properly */
+  margin-bottom: 10px; /* Space between image and text */
+  border-radius: 5%; /* Adds rounded corners to the image */
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #1565c0; /* Changes background color on hover */
+  border: solid black 3px; /* Adds a border on hover */
+  transform: scale(1.05); /* Slightly scales up the button on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
   }
-  
-  .btn:hover {
-    background-color: #1565c0; /* Changes background color on hover */
-    border: solid black 3px;   /* Reduces border thickness for a cleaner look */
-    border-radius: 20px;       /* Adjusts border radius for a more subtle effect */
-    transform: scale(1.05);    /* Slightly scales up the button on hover */
+
+  .product-line {
+    padding: 10px; /* Less padding on smaller screens */
+    width: 1024px; /* Lock width to 1024px */
+  }
+
+  .btn {
+    width: 90%; /* Adjust button width for smaller screens */
+    font-size: 48px; /* Slightly smaller font size for better readability */
+    padding: 12px; /* Adjust padding */
   }
 
   .btn-image {
-    width: auto;             /* Adjust size as needed */
-    height: 150px;             /* Maintains aspect ratio */
-    margin-right: 10px;       /* Space between image and text */
-    margin-left: 20px;
-    border-radius: 5%;
-    border: solid black 5px;
+    width: 30%; /* Adjusted image width for better fit on smaller screens */
   }
+}
+
+@media (max-width: 390px) {
+  /* Target mobile screens like iPhone XR */
+  .product-line {
+    padding: 5px; /* Reduce padding for small screens */
+  }
+
+  .btn {
+    width: 95vw; /* Make buttons nearly full width for mobile */
+    font-size: 48px; /* Smaller font size for better readability */
+    padding: 8px; /* Adjust padding for mobile */
+  }
+
+  .btn-image {
+    width: 40%; /* Adjusted image width for mobile */
+    margin-top: 35px;
+    margin-bottom: 5px; /* Space between image and text */
+  }
+}

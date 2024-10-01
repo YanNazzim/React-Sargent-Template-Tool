@@ -19,7 +19,8 @@
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center align image and text */
   background-color: #007bff; /* Button background color */
-  min-width: 800px; /* Set a minimum width for buttons */
+  width: 100%; /* Allow buttons to take full width of the container */
+  max-width: 800px; /* Limit maximum width for buttons */
   color: white; /* Button text color */
   margin: auto;
   border: none; /* Removes default border */
@@ -49,19 +50,20 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   body {
     overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
+    min-width: 1024px;
   }
 
   .product-line {
     padding: 10px; /* Less padding on smaller screens */
-    width: 1024px; /* Lock width to 1024px */
+    width: 1024px; /* Make width responsive */
   }
 
   .btn {
     width: 90%; /* Adjust button width for smaller screens */
-    font-size: 18px; /* Slightly smaller font size for better readability */
+    font-size: 20px; /* Adjust font size */
     padding: 12px; /* Adjust padding */
   }
 
@@ -73,13 +75,14 @@
 @media (max-width: 390px) {
   /* Target mobile screens like iPhone XR */
   .product-line {
+    width: 1024px; /* Make width responsive */
+
     padding: 5px; /* Reduce padding for small screens */
   }
 
   .btn {
-    width: 95vw; /* Make buttons nearly full width for mobile */
-    font-size: 16px; /* Smaller font size for better readability */
-    padding: 8px; /* Adjust padding for mobile */
+    width: 95%; /* Make buttons nearly full width for mobile */
+    font-size: 18px; /* Smaller font size for better readability */
   }
 
   .btn-image {

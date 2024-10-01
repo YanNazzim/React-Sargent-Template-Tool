@@ -1,5 +1,11 @@
+/* DisplayTemplates.css */
+
 .display-templates {
     background-color: #aaaaaa;
+    width: 100vw; /* Ensure full viewport width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
 }
 
 .display-templates h1 {
@@ -7,20 +13,24 @@
     border-radius: 25px;
     color: white;
     text-align: center;
-    margin: auto;
-    margin-bottom: 50px;
-    font-size: 60px;
-    max-width: 90%;
+    margin: 0 auto 50px; /* Center align and space below */
+    font-size: 3rem; /* Use rem for scalability */
+    max-width: 90%; /* Limit the width */
 }
 
+/* Card container */
 .template-cards {
     display: flex;
-    justify-content: space-evenly; /* This spaces the cards evenly */
+    justify-content: center; /* Center cards for better alignment */
     flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
     gap: 10px; /* Adds consistent spacing between the cards */
-    padding: 20px;
+    padding: 20px; /* Padding around cards */
+    width: calc(100% - 40px); /* Full width minus padding */
+    max-width: 100%; /* Ensure it does not exceed the viewport */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
+/* Individual template card */
 .template-card {
     background-color: #1565c0;
     display: flex;
@@ -29,28 +39,33 @@
     justify-content: center; /* Centers children vertically */
     border: solid black 5px;
     border-radius: 25px;
-    width: 600px; /* Adjust width based on your design */
+    width: calc(100% - 20px); /* Full width minus some space for gaps */
+    max-width: 600px; /* Maximum width for larger screens */
     padding: 10px;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
+/* Header for individual template cards */
 .template-card h2 {
     color: white;
-    font-size: 48px;
+    font-size: 3rem; /* Use rem for better scalability */
     text-align: center;
 }
 
+/* Links within template cards */
 .template-card a {
     color: white;
-    font-size: 32px;
+    font-size: 1.5rem; /* Use rem for scalability */
     text-align: center;
     margin-bottom: 35px;
     background-color: #01579b;
-    width: 400px;
+    width: 80%; /* Adjust width for better fit on smaller screens */
+    max-width: 400px; /* Set a maximum width */
+    padding: 10px;
     border: solid white 3px;
     text-decoration: none;
     border-radius: 25px;
-    transform: scale(1.15) ;    /* Slightly scales up the button on hover */
+    transform: scale(1.15); /* Slightly scales up the button on hover */
     transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.2s; /* Adds smooth transitions for background color and scaling */
 }
 
@@ -58,14 +73,13 @@
 .template-card h3 {
     background-color: white;
     color: red; /* Text color for the warning */
-    font-size: 24px;
+    font-size: 1.5rem; /* Use rem for better scalability */
     text-align: center;
     border-radius: 25px;
     border: solid red 5px;
     padding: 10px;
     margin: 20px 0;
-  }
-  
+}
 
 .template-card a:hover {
     background-color: #0288d1;
@@ -73,18 +87,71 @@
     color: black;
 }
 
-
+/* Image within template cards */
 .template-image {
     margin-top: 30px;
-    width: 300px;
+    width: 80%; /* Make it responsive */
+    max-width: 300px; /* Set a maximum width */
     border-radius: 25px;
     border: solid black 3px;
 }
 
+/* Error message for no templates */
 .NoTemplatesError {
     display: block;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3vw; /* Use vw for responsive font size */
     background-color: #aaaaaa;
     margin: auto;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+.display-templates {
+    min-width: 1024px;
+}
+
+    .display-templates h1 {
+        font-size: 4rem; /* Adjust heading font size for smaller screens */
+    }
+
+    .template-card {
+        width: calc(100% - 20px); /* Full width minus gap for smaller screens */
+        max-width: none; /* Remove max-width for better fit */
+    }
+
+    .template-card h2 {
+        font-size: 3rem; /* Adjust font size for headings */
+    }
+
+    .template-card a {
+        font-size: 2rem; /* Smaller font size for links */
+        width: 100%; /* Full width for links on mobile */
+    }
+
+    .template-image {
+        width: 90%; /* Responsive image width */
+    }
+}
+
+@media (max-width: 390px) {
+    .display-templates {
+        width: 100%;
+    }
+
+    .display-templates h1 {
+        font-size: 3rem; /* Further adjust heading font size */
+    }
+
+    .template-card h2 {
+        font-size: 1.5rem; /* Further adjust font size for headings */
+    }
+
+    .template-card a {
+        font-size: 1rem; /* Further adjust font size for links */
+    }
+
+    .template-image {
+        width: 100%; /* Full width for images on very small screens */
+    }
 }
