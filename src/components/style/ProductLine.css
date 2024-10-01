@@ -41,13 +41,13 @@
 }
 
 .btn-image {
-  width: 150px;               /* Maintains aspect ratio */
+  width: 1vw;               /* Maintains aspect ratio */
   height: auto;              /* Ensures the height adjusts properly */
   margin-right: 10px;        /* Space between image and text */
   border-radius: 5%;         /* Adds rounded corners to the image */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1344px) {
   .product-line {
     width: 1024px;           /* Fixed width for desktop view */
     overflow-x: auto;        /* Allow horizontal scrolling within product line */
