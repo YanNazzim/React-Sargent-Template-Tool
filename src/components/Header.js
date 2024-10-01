@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className='header'>
       <img src={logo} alt='Sargent Logo' className='SargentLogo'/>
-      <button className="Home" onClick={handleButtonClickHome}>Templates Home Button</button>
+      <button className="Home" onClick={handleButtonClickHome}>Testing change on netlify app</button>
       <button className="Home" onClick={handleButtonClickBack}>Previous Page</button>
     </header>
   );
