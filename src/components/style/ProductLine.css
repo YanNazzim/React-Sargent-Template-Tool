@@ -58,3 +58,18 @@
     font-size: 16px;         /* Fixed font size for better readability */
   }
 }
+@media (max-width: 375px) { /* Target iPhone SE, iPhone 12 mini, etc. */
+  .product-line {
+    width: 100vw;          /* Full width of the viewport */
+    min-width: 320px;      /* Minimum width to match a small iPhone */
+  }
+
+  .btn {
+    width: 80vw;           /* Adjust button width to fit smaller screens */
+  }
+
+  .btn-image {
+    width: 8vw;            /* Adjust image width to scale with smaller buttons */
+  }
+}
+
