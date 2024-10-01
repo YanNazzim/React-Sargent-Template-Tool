@@ -7,6 +7,7 @@ import Mortise9200 from "../images/MortiseLock9200.png";
 import IndicatorSA190 from "../images/MortiseIndicatorSA190.png";
 import IndicatorVN1 from "../images/MortiseIndicatorVN1.png";
 import Strike9200 from '../images/Strikes 9200.png'
+import Strike8200 from '../images/Strike 8200 7800.png'
 
 export const MortiseLocks = {
   8200: [
@@ -23,7 +24,7 @@ export const MortiseLocks = {
       text2:
         "View 78-0034 Deadbolt Strike Template (03, 20, 21, 22, 23 Functions) Doc# 7064-C",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
-      text3: "View THumbturn Template Doc# 7059-B",
+      text3: "View Thumbturn Template Doc# 7059-B",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
     },
     {
@@ -44,6 +45,18 @@ export const MortiseLocks = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056043",
       text4: "View WT Trim Template Doc# 7055-B",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056027",
+    },
+    {
+      device: 'Standard',
+      title: 'Strikes',
+      image: Strike8200,
+
+      warning:
+      "Right Click on picture -> Open image in new tab to see more details",
+      text: 'Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055593',
+      text1: '78-0034 Deadbolt Strike (M-)9200 03, 20, 21, 22, and 23 Functions Template',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055661',
     },
     {
       device: "Standard",
@@ -69,11 +82,9 @@ export const MortiseLocks = {
         "8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
       title: "8200 Mortise Lock - Electrified",
       image: Mortise8200Electric,
-      text: "Download Electrified Template",
-      link: "/templates/8200-electrified-template.pdf",
       warning: "Ensure proper wiring setup.",
-      text1: "View Mounting Template (Functions 70, 71, 72, 73) Doc# 7065-10",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
+      text: "View Mounting Template (Functions 70, 71, 72, 73) Doc# 7065-10",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
     },
     {
       device: "Indicator",
@@ -93,7 +104,7 @@ export const MortiseLocks = {
       functions: "8212, 8230, PHR-NAC-82285",
       title: "VN1 Escutcheon Indicator",
       image: IndicatorVN1,
-      text: "View Mounting Template for SA197 Indicator",
+      text: "View Mounting Template for VN1 Escutcheon Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
   ],
@@ -123,6 +134,8 @@ export const MortiseLocks = {
       title: 'Strikes',
       image: Strike9200,
 
+      warning:
+      "Right Click on picture -> Open image in new tab to see more details",
       text: 'Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063',
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055593',
       text1: '78-0034 Deadbolt Strike (M-)9200 03, 20, 21, 22, and 23 Functions Template',

@@ -41,8 +41,7 @@
 }
 
 .btn-image {
-  max-width: 120px;          /* Ensure the image doesn’t exceed this width */
-  width: auto;               /* Maintains aspect ratio */
+  width: 150px;               /* Maintains aspect ratio */
   height: auto;              /* Ensures the height adjusts properly */
   margin-right: 10px;        /* Space between image and text */
   border-radius: 5%;         /* Adds rounded corners to the image */
