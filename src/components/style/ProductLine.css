@@ -10,6 +10,7 @@
   background-color: #aaaaaa;
   width: 100vw;              /* Ensure the container takes up the full viewport width */
   margin: 0;                 /* Remove any default margin */
+  overflow-x: auto;          /* Allow horizontal scrolling */
 }
 
 .btn {
@@ -17,14 +18,14 @@
   flex-direction: row;       /* Aligns image and text horizontally */
   align-items: center;       /* Centers text vertically with the image */
   background-color: #007bff; /* Button background color */
-  width: 100%;                /* Adjust width to fit more buttons in smaller screens */
+  width: 200px;              /* Fixed width for desktop layout */
   height: auto;              /* Allow height to adjust based on content */
   max-height: 200px;         /* Set a maximum height for consistency */
   color: white;              /* Button text color */
   border: none;              /* Removes default border */
   border-radius: 15px;       /* Rounds the button corners */
   padding: 10px;             /* Adds padding inside the button */
-  font-size: 4vw;            /* Responsive font size */
+  font-size: 16px;           /* Set a fixed font size for better readability */
   cursor: pointer;           /* Changes cursor to pointer on hover */
   transition: background-color 0.3s, transform 0.3s, border 0.5s, border-radius 0.5s; /* Adds smooth transitions */
   text-align: left;          /* Aligns text to the left of the image */
@@ -41,16 +42,20 @@
 
 .btn-image {
   max-width: 120px;          /* Ensure the image doesn’t exceed this width */
-  width: 100%;               /* Makes the image responsive within its container */
-  height: auto;              /* Maintains aspect ratio */
+  width: auto;               /* Maintains aspect ratio */
+  height: auto;              /* Ensures the height adjusts properly */
   margin-right: 10px;        /* Space between image and text */
   border-radius: 5%;         /* Adds rounded corners to the image */
 }
 
 @media (max-width: 768px) {
-  body {
-    width: 1024px; /* Set a fixed width */
-    overflow-x: auto; /* Allow horizontal scrolling */
+  .product-line {
+    width: 1024px;           /* Fixed width for desktop view */
+    overflow-x: auto;        /* Allow horizontal scrolling within product line */
+  }
+
+  .btn {
+    width: 200px;            /* Keep fixed width for buttons on mobile */
+    font-size: 16px;         /* Fixed font size for better readability */
   }
 }
-
