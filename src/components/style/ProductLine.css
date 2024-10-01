@@ -39,7 +39,7 @@
   width: 40%; /* Set a reasonable width for images */
   height: auto; /* Ensure the height adjusts properly */
   margin-bottom: 10px; /* Space between image and text */
-  border-radius: 5%; /* Adds rounded corners to the image */
+  border-radius: 35px; /* Adds rounded corners to the image */
 }
 
 /* Button hover effect */
