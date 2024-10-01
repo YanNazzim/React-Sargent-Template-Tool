@@ -579,7 +579,7 @@ export const ExitDevices = {
       text1: "View Cylinder Only Template Doc# 4307-G",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text2: "View Trim Template (700 ET) Doc# 4277-18",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text3: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text4:
@@ -601,7 +601,7 @@ export const ExitDevices = {
       text: "View Mounting Template (Any Material) Doc# 4415-H",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
       text1: "View Trim Template (700-8 ET) Doc# 4414-H",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
@@ -621,9 +621,9 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055968",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
       text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4714",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
