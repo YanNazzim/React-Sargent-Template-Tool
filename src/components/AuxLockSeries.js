@@ -14,6 +14,7 @@ function AuxLockSeries() {
   const seriesList = [
     { id: "SSL1", name: "SSL1 Spring Latch", image: SSL1, series: "SSL1" },
     { id: "8200 Deadbolt", name: "8200 Deadbolt", image: DB8200, series: "8200" },
+    { id: "9200 Deadbolt", name: "9200 Deadbolt", image: DB8200, series: "9200" },
     { id: "4870 Deadbolt", name: "4870 Deadbolt", image: DB4870, series: "4870" },
     { id: "480 Deadbolt", name: "480 Deadbolt (Grade 1)", image: DB480, series: "480" },
     { id: "460 Deadbolt", name: "460 Deadbolt (Grade 2)", image: DB460, series: "460" },

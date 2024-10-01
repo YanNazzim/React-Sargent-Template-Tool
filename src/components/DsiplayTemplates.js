@@ -42,7 +42,7 @@ function DisplayTemplates() {
   // Construct the header label
   const headerLabel = category === "Exit Devices"
   ? `${category} - ${series} - ${id}` // Show '?' and id for Exit Devices
-  : category === "Bored Locks"
+  : category === "Bored Locks" || category === "Auxiliary Locks"
   ? `${category} - ${id}` // Show category and id for Bored Locks
   : `${category} - ${series} ${type || "Standard"}`; // Display type for Mortise Locks
 
