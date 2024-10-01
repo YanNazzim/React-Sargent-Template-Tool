@@ -1,4 +1,12 @@
-/* HeaderFooter.css */
+/* Global Styles */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure body takes full width */
+    height: 100%; /* Allow body to occupy full height */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+}
 
 /* Header */
 .header {
@@ -8,46 +16,103 @@
     justify-content: center; /* Centers children vertically */
     padding: 20px;
     background-color: #aaaaaa;
+    min-width: 1024px; /* Minimum width to maintain layout */
+    width: 100%; /* Allow it to scale with the screen */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
+
 .header button {
     margin-top: 15px;
 }
 
 /* Style for the image */
 .SargentLogo {
-    height: 200px; /* Adjust size as needed */
+    height: auto; /* Set height to auto for better responsiveness */
+    max-height: 200px; /* Limit max height */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    width: auto; /* Set width to auto for better responsiveness */
     margin-bottom: 20px; /* Adds space between the logo and the heading */
 }
 
 /* Style for the heading */
 .Home {
-    font-size: 48px;
+    font-size: 3rem; /* Use rem for better scalability */
     margin: auto;
     color: white;
     width: fit-content;
     background-color: #1565c0;
     text-align: center;
     border: solid black 3px;
-    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s; /* Adds smooth transitions for background color and scaling */
+    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s; /* Adds smooth transitions */
 }
 
 .Home:hover {
     background-color: green; /* Changes background color on hover */
-    border: solid black 9px;   /* Reduces border thickness for a cleaner look */
-    border-radius: 20px;       /* Adjusts border radius for a more subtle effect */
-    transform: scale(1.05);    /* Slightly scales up the button on hover */
-  }
+    border: solid black 9px; /* Reduces border thickness for a cleaner look */
+    border-radius: 20px; /* Adjusts border radius for a more subtle effect */
+    transform: scale(1.05); /* Slightly scales up the button on hover */
+}
 
 /* Style for Footer */
-.footer p {
-    display: flex;
+.footer {
+    display: flex; /* Ensure footer uses flexbox */
     flex-direction: column; /* Stacks children vertically */
     align-items: center; /* Centers children horizontally */
-    justify-content: center;
+    justify-content: center; /* Centers children vertically */
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0; /* Reset margin for cleaner look */
     background-color: #aaaaaa;
-    width: 100%;
-    height: 300px;
     font-weight: bold;
+    width: 100%; /* Use full width */
+    min-width: 1024px; /* Minimum width for footer */
+    height: auto; /* Allow footer height to adjust with content */
+    padding: 20px; /* Add some padding to the footer */
+    box-sizing: border-box; /* Include padding in width */
+    flex-grow: 1; /* Allow footer to grow and take remaining space */
+}
+
+.footer p {
+    margin: 0; /* Reset margin for paragraphs in footer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .header,
+    .footer {
+        min-width: 1024px; /* Keep minimum width for desktop view */
+        width: auto; /* Center align */
+        margin: auto; /* Center align */
+    }
+
+    .header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .Home {
+        font-size: 2.5rem; /* Smaller font size for better fit */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Further adjust padding for smaller screens */
+    }
+
+    .Home {
+        font-size: 2rem; /* Smaller font size for better fit */
+    }
+
+    .SargentLogo {
+        max-height: 150px; /* Limit logo height for smaller screens */
+    }
+}
+
+@media (max-width: 390px) {
+    .Home {
+        font-size: 1.5rem; /* Further decrease font size for very small screens */
+    }
+
+    .SargentLogo {
+        max-height: 120px; /* Further limit logo height for very small screens */
+    }
 }

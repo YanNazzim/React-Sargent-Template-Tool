@@ -19,18 +19,18 @@ function MortiseSeries() {
             <div className="stile-page">
                 {/* Button for 8200 series */}
                 <button className="btn" onClick={() => handleButtonClick('8200')}>
-                    <img className="btn-image" src={MortiseLock8200} Alt="Mortise Lock"/>
+                    <img className="btn-image" src={MortiseLock8200} alt="Mortise Lock"/>
                     8200
                 </button>
                 {/* Button for 9200 series */}
                 <button className="btn" onClick={() => handleButtonClick('9200')}>
-                <img className="btn-image" src={MortiseLock9200} Alt="Mortise Lock"/>
+                <img className="btn-image" src={MortiseLock9200} alt="Mortise Lock"/>
 
                     9200
                 </button>
                 {/* Button for 7800 series */}
                 <button className="btn" onClick={() => handleButtonClick('7800')}>
-                <img className="btn-image" src={MortiseLock7800} Alt="Mortise Lock"/>
+                <img className="btn-image" src={MortiseLock7800} alt="Mortise Lock"/>
 
                     7800
                 </button>

@@ -19,23 +19,23 @@ function ProductLine() {
     <div className="product-line">
       <button className="btn" onClick={() => handleButtonClick('/exitSeries')}>
         <img src={exitDevicesImg} alt="Exit Devices" className="btn-image" />
-        Exit Devices
+        <span>Exit Devices</span>  {/* Added span to clarify the text */}
       </button>
       <button className="btn" onClick={() => handleButtonClick('/mortiseSeries')}>
         <img src={mortiseImg} alt="Mortise" className="btn-image" />
-        Mortise
+        <span>Mortise</span>
       </button>
       <button className="btn" onClick={() => handleButtonClick('/boredSeries')}>
         <img src={boredLocksImg} alt="Bored Locks" className="btn-image" />
-        Bored Locks
+        <span>Bored Locks</span>
       </button>
       <button className="btn" onClick={() => handleButtonClick('/auxiliaryLocksSeries')}>
         <img src={auxLocksImg} alt="Auxiliary Locks" className="btn-image" />
-        Auxiliary Locks
+        <span>Auxiliary Locks</span>
       </button>
       <button className="btn" onClick={() => handleButtonClick('/cylinders')}>
         <img src={cylindersImg} alt="Cylinders" className="btn-image" />
-        Cylinders
+        <span>Cylinders</span>
       </button>
     </div>
   );
