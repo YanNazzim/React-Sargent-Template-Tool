@@ -18,7 +18,7 @@
   flex-direction: row;       /* Aligns image and text horizontally */
   align-items: center;       /* Centers text vertically with the image */
   background-color: #007bff; /* Button background color */
-  width: 200px;              /* Fixed width for desktop layout */
+  width: 45%;              /* Fixed width for desktop layout */
   height: auto;              /* Allow height to adjust based on content */
   max-height: 200px;         /* Set a maximum height for consistency */
   color: white;              /* Button text color */
