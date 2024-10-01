@@ -67,15 +67,7 @@ export const MortiseLocks = {
       text: "View Roseless Mortise Template Doc# 4647-B",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056034",
     },
-    {
-      device: "Standard",
-      functions:
-        "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
-      title: "Roseless (R8200)",
-      image: Roseless,
-      text: "View Roseless Mortise Template Doc# 4647-B",
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056034",
-    },
+
     {
       device: "Electrified",
       functions:
