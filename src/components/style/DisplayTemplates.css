@@ -80,3 +80,11 @@
     border-radius: 25px;
     border: solid black 3px;
 }
+
+.NoTemplatesError {
+    display: block;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #aaaaaa;
+    margin: auto;
+}

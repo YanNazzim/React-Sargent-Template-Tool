@@ -8,7 +8,7 @@ import { AuxLocks } from "../data/AuxLocksData";   // Import AuxLocks data
 
 function DisplayTemplates() {
   const location = useLocation();
-  const { category, series, id, electrified } = location.state;
+  const { category, series, id, type } = location.state;
 
   // Initialize templates array
   let templates = [];
@@ -24,26 +24,30 @@ function DisplayTemplates() {
     templates = AuxLocks[series] || [];
   }
 
-  // Filter templates based on electrified/standard for Mortise Locks and Bored Locks, and the id for Exit Devices
+  // Filter templates based on type for Mortise Locks, and the id for Exit Devices, Bored Locks, and Auxiliary Locks
   let filteredTemplates = [];
 
   if (category === "Mortise Locks") {
-    const isElectrified = electrified === "Electrified";
+    // Filter by type (Standard, Electrified, or Indicator) for Mortise Locks
     filteredTemplates = templates.filter(template =>
-      isElectrified ? template.device === "Electrified" : template.device === "Standard"
+      template.device === type
     );
   } else if (category === "Exit Devices" || category === "Auxiliary Locks" || category === "Bored Locks") {
-    // Exit Devices and Auxiliary Locks do not have the "electrified" distinction, so filter purely by id
+    // Exit Devices, Auxiliary Locks, and Bored Locks do not have the "type" distinction, so filter purely by id
     filteredTemplates = templates.filter(template => template.device === id);
   }
 
-  // Determine if "Electrified" or "Standard" should be shown
-  const showElectrifiedLabel = category === "Mortise Locks";
+  // Determine if "Electrified" or "Standard" or "Indicator" should be shown for Mortise Locks
   
   // Construct the header label
   const headerLabel = category === "Exit Devices"
     ? `${category} - ${series} - ${id}` // Display id for Exit Devices
-    : `${category} - ${series} ${showElectrifiedLabel ? (electrified || "Standard") : ""}`; // Display electrified/standard for others
+    : `${category} - ${series} ${type || "Standard"}`; // Display type (Standard, Electrified, or Indicator) for Mortise Locks
+
+  // If no templates are found, display a message
+  if (filteredTemplates.length === 0) {
+    return <h2 className="NoTemplatesError">Error: No templates available for {series} {type} </h2>;
+  }
 
   return (
     <div className="display-templates">

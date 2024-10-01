@@ -3,6 +3,8 @@ import Mortise7800 from '../images/MortiseLock7800.png'
 import Mortise8200 from "../images/Mortise Lock.png";
 import Mortise8200Electric from '../images/MortiseElectrified8200.png'
 import Roseless from '../images/MortiseRoselessTrim.png'
+import Mortise9200 from '../images/MortiseLock9200.png'
+import IndicatorSA190 from '../images/MortiseIndicatorSA190.png'
 
 export const MortiseLocks = {
   8200: [
@@ -66,12 +68,61 @@ export const MortiseLocks = {
       text1: "View Mounting Template (Functions 70, 71, 72, 73) Doc# 7065-10",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
     },
+    {
+      device: 'Indicator',
+      functions: "8220, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8239, 8240, 8241, 8243, 8245, 8246, 8247, 8250, 8251, 8252, PHR-NAC-82281",
+      title: 'SA190 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA190 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    {
+      device: 'Indicator',
+      functions: "8236, 8237, 8238, 8242, 8249, 8265, 8266, 8267, 8268",
+      title: 'SA191 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA191 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    {
+      device: 'Indicator',
+      functions: "8204, 8215, 8226, 8228, 8239, 8240, 8241, 8247, PHR-NAC-82285",
+      title: 'SA197 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA197 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    {
+      device: 'Indicator',
+      functions: "8217, 8229, 8250, 8251, 8255, 8256",
+      title: 'SA194 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA194 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    {
+      device: 'Indicator',
+      functions: "8206, 8213, 8216, 8224, 8231, 8237, 8249, 8257, 8265",
+      title: 'SA196 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA196 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    {
+      device: 'Indicator',
+      functions: "8220, 8221, 8224, 8225, 8229, 8240, 8245, 8246",
+      title: 'SA198 - Indicator',
+      image: IndicatorSA190,
+      text: 'View Mounting Template for SA198 Indicator',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1081720',
+    },
+    
   ],
   9200: [
     {
       device: "Standard",
       title: "9200 Mortise Lock - Standard",
-      image: "/images/9200Standard.png",
+      image: Mortise9200,
       text: "Download Template",
       link: "/templates/9200-standard-template.pdf",
       warning: "",
@@ -81,7 +132,7 @@ export const MortiseLocks = {
     {
       device: "Electrified",
       title: "9200 Mortise Lock - Electrified",
-      image: "/images/9200Electrified.png",
+      image: Mortise9200,
       text: "Download Electrified Template",
       link: "/templates/9200-electrified-template.pdf",
       warning: "",
