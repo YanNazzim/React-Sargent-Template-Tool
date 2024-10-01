@@ -47,10 +47,10 @@
   border-radius: 5%;         /* Adds rounded corners to the image */
 }
 
-/* Media queries for smaller screens */
 @media (max-width: 768px) {
-  .btn {
-    width: 100%;             /* Full width on smaller screens */
-    font-size: 5vw;          /* Adjust font size for smaller screens */
+  body {
+    width: 1024px; /* Set a fixed width */
+    overflow-x: auto; /* Allow horizontal scrolling */
   }
 }
+
