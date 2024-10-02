@@ -3,7 +3,7 @@
 /* Page container */
 .stile-page {
   display: flex;
-  flex-wrap: wrap; /* Allow buttons to wrap when necessary */
+  flex-direction: column ; /* Allow buttons to wrap when necessary */
   justify-content: center; /* Centers the buttons horizontally */
   align-items: center; /* Centers the content vertically */
   gap: 10px; /* Space between buttons */
@@ -101,3 +101,19 @@
     width: 50%;
   }
 }
+
+/* Mobile devices (max-width: 440px) */
+@media (max-width: 440px) {
+  .btn {
+    max-width: 300px;
+    min-width: 300px;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .btn-image {
+    width: 50%;
+  }
+}
+
+

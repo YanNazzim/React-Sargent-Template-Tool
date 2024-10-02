@@ -64,7 +64,7 @@ function Stile() {
                 </button>
                 <button id="Wide" className="btn" onClick={handleButtonClickWide}>
                 <img src={deviceImageWide} className='btn-image' alt='WideExits'/>
-                    Wide {series} Series {deviceListWide}
+                    Wide {series} Series <br></br> {deviceListWide}
                 </button>
             </div>
         </>
