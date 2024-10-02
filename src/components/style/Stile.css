@@ -20,7 +20,7 @@
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center align image and text */
   background-color: #007bff; /* Button background color */
-  min-width: 800px; /* Set a minimum width for buttons */
+  min-width: 550px; /* Set a minimum width for buttons */
   color: white; /* Button text color */
   margin: 50px;
   border: solid black 3px; /* Removes default border */
@@ -72,15 +72,36 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
+  body {
+    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
+  }
+
+  .product-line {
+    padding: 10px; /* Less padding on smaller screens */
+    width: 1024px; /* Lock width to 1024px */
+  }
+
+  .btn {
+    width: 90%; /* Adjust button width for smaller screens */
+    font-size: 48px; /* Slightly smaller font size for better readability */
+    padding: 12px; /* Adjust padding */
+  }
+
+  .btn-image {
+    width: 30%; /* Adjusted image width for better fit on smaller screens */
+  }
+}
+
+@media (max-width: 440px) {
   /* Target mobile screens like iPhone XR */
   .product-line {
     padding: 5px; /* Reduce padding for small screens */
   }
 
   .btn {
-    width: 95vw; /* Make buttons nearly full width for mobile */
-    font-size: 48px; /* Smaller font size for better readability */
+    min-width: 300px;
+    font-size: 24px; /* Smaller font size for better readability */
     padding: 8px; /* Adjust padding for mobile */
   }
 

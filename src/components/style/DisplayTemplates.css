@@ -39,7 +39,7 @@
     justify-content: center; /* Centers children vertically */
     border: solid black 5px;
     border-radius: 25px;
-    width: calc(100% - 20px); /* Full width minus some space for gaps */
+    width: 100%; /* Full width for smaller screens */
     max-width: 600px; /* Maximum width for larger screens */
     padding: 10px;
     box-sizing: border-box; /* Ensures padding is included in the width */
@@ -107,25 +107,27 @@
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-.display-templates {
-    min-width: 1024px;
-}
+    .display-templates {
+        width: 100%; /* Remove min-width to avoid horizontal scrolling */
+    }
 
     .display-templates h1 {
-        font-size: 4rem; /* Adjust heading font size for smaller screens */
+        max-width: 90%; /* Keep it responsive */
+        font-size: 2.5rem; /* Adjust heading font size for smaller screens */
     }
 
     .template-card {
-        width: calc(100% - 20px); /* Full width minus gap for smaller screens */
-        max-width: none; /* Remove max-width for better fit */
+        max-width: 100%; /* Remove max-width for better fit */
+        width: 100%; /* Ensure cards are full width */
+        padding: 15px; /* Adjust padding for smaller screens */
     }
 
     .template-card h2 {
-        font-size: 4rem; /* Adjust font size for headings */
+        font-size: 2rem; /* Adjust font size for headings */
     }
 
     .template-card a {
-        font-size: 2rem; /* Smaller font size for links */
+        font-size: 1.5rem; /* Smaller font size for links */
         width: 100%; /* Full width for links on mobile */
     }
 
@@ -134,24 +136,60 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
     .display-templates {
-        width: 100%;
+        width: 100%; /* Ensure full width */
     }
 
     .display-templates h1 {
-        font-size: 3rem; /* Further adjust heading font size */
+        max-width: 90%; /* Ensure it doesn't exceed the screen */
+        font-size: 1.5rem; /* Further adjust heading font size */
+    }
+
+    .template-card {
+        max-width: 100%; /* Ensure full width */
+        padding: 10px; /* Adjust padding */
     }
 
     .template-card h2 {
-        font-size: 1.5rem; /* Further adjust font size for headings */
+        font-size: 1.55rem; /* Further adjust font size for headings */
     }
 
     .template-card a {
-        font-size: 2rem; /* Further adjust font size for links */
+        font-size: 1rem; /* Further adjust font size for links */
+        max-width: 240px; /* Ensure it fits within the container */
     }
 
     .template-image {
-        width: 100%; /* Full width for images on very small screens */
+        width: 80%; /* Full width for images on very small screens */
+    }
+}
+
+@media (max-width: 3600px) {
+    .display-templates {
+        width: 100%; /* Ensure full width */
+    }
+
+    .display-templates h1 {
+        max-width: 95%; /* Ensure it doesn't exceed the screen */
+        font-size: 1.4rem; /* Further adjust heading font size */
+    }
+
+    .template-card {
+        max-width: 100%; /* Ensure full width */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .template-card h2 {
+        font-size: 1.55rem; /* Further adjust font size for headings */
+    }
+
+    .template-card a {
+        font-size: 1rem; /* Further adjust font size for links */
+        max-width: 200px; /* Ensure it fits within the container */
+    }
+
+    .template-image {
+        width: 80%; /* Full width for images on very small screens */
     }
 }
