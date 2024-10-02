@@ -16,7 +16,7 @@ function ProductLine() {
   };
 
   return (
-    <div className="product-line">
+    <div className="stile-page">
       <button className="btn" onClick={() => handleButtonClick('/exitSeries')}>
         <img src={exitDevicesImg} alt="Exit Devices" className="btn-image" />
         <span>Exit Devices</span>  {/* Added span to clarify the text */}
