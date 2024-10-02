@@ -45,7 +45,7 @@ export const BoredLocks = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055642",
       text5: "View 800 Strike Template Doc# 4131",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
-      text6: "View 808 Strike Template Doc# 4049",
+      text6: "View 808 Strike Template Doc# 4049 ",
       // Add more attributes as needed
     },
   ],
