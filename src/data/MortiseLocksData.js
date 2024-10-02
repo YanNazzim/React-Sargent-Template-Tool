@@ -8,6 +8,7 @@ import IndicatorSA190 from "../images/MortiseIndicatorSA190.png";
 import IndicatorVN1 from "../images/MortiseIndicatorVN1.png";
 import Strike9200 from '../images/Strikes 9200.png'
 import Strike8200 from '../images/Strike 8200 7800.png'
+import BHW8200 from '../images/Mortise8200BHW.png'
 
 export const MortiseLocks = {
   8200: [
@@ -75,7 +76,7 @@ export const MortiseLocks = {
       title: "8200 Mortise Lock - Electrified",
       image: Mortise8200Electric,
       warning: "Ensure proper wiring setup.",
-      text: "View Mounting Template (Functions 70, 71, 72, 73) Doc# 7065-10",
+      text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
     },
     {
@@ -99,6 +100,15 @@ export const MortiseLocks = {
       text: "View Mounting Template for VN1 Escutcheon Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
+    {
+      device: 'BHW',
+      image: BHW8200,
+
+      title: '8200 W/ BHW Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056030',
+      text: 'View BHW Trim (Metal & Wood Doors) Doc# 4711',
+    }
   ],
   9200: [
     {
@@ -137,25 +147,70 @@ export const MortiseLocks = {
       device: "Electrified",
       title: "9200 Mortise Lock - Electrified",
       image: Mortise9200,
-      text: "Download Electrified Template",
-      link: "/templates/9200-electrified-template.pdf",
+      text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
       warning: "",
-      text1: "Wiring Diagram",
-      link1: "/templates/9200-wiring-diagram.pdf",
     },
+    {
+      device: 'BHW',
+      image: BHW8200,
+
+      title: '9200 W/ BHW Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056030',
+      text: 'View BHW Trim (Metal & Wood Doors) Doc# 4711',
+    }
   ],
   7800: [
     {
       device: "Standard",
-      title: "7800 Mortise Lock - Standard",
+      title: "W/ Sectional",
       image: Mortise7800,
-      text: "Download Template",
-      link: "/templates/7800-standard-template.pdf",
-      warning: "",
-      text1: "Installation Guide",
-      link1: "/templates/7800-installation-guide.pdf",
-    },
 
+      warning: "",
+      text: 'View Metal and Wood Doors Mounting Template Doc# 7057',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
+      text1: "View (50-) Mounting Template Doc# 7682-A",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
+      text2:
+        "View 78-0034 Deadbolt Strike Template (03, 20, 21, 22, 23 Functions) Doc# 7064-C",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
+      text3: "View Thumbturn Template Doc# 7059-B",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
+    },
+    {
+      device: 'Standard',
+      title: 'W/ Escutcheon',
+      image: Mortise7800,
+
+      text: 'View Metal and Wood Doors Mounting Template Doc# 7057',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055660',
+      text1: "Escutcheon Trim (CE, LE1, TE) Exposed Screws Template Doc# 4556",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056042",
+      text2: "Escutcheon Trim (LE2) Concealed Screws Template Doc# 4557",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056023",
+      text3: "Escutcheon Trim (WT) AV Anti-Vandal Trim Option Surface Applied Template Doc# 4558",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056021",
+      text4: "Escutcheon Trim (LE1, LE3, LW1, CE, TE, KE1, KE3, KW1) Exposed Screws Template Doc# 7052",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056024",
+      text5: 'Escutcheon Trim (LE2, LE4, KE2, KE4) Concealed Screws Template Doc# 7053',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056025',
+      text6: 'Security Escutcheon Trim (LS and KS) (Security Screws) Spanner Head Template',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056043',
+
+    },
+    {
+      device: 'Standard',
+      title: 'Strikes',
+      image: Strike8200,
+
+      warning:
+      "Right Click on picture -> Open image in new tab to see more details",
+      text: 'Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055593',
+      text1: '78-0034 Deadbolt Strike (M-)9200 03, 20, 21, 22, and 23 Functions Template',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055661',
+    },
     {
       device: "Indicator",
       warning:

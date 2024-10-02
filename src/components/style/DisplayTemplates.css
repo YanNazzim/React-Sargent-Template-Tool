@@ -121,7 +121,7 @@
     }
 
     .template-card h2 {
-        font-size: 3rem; /* Adjust font size for headings */
+        font-size: 4rem; /* Adjust font size for headings */
     }
 
     .template-card a {
@@ -148,7 +148,7 @@
     }
 
     .template-card a {
-        font-size: 1rem; /* Further adjust font size for links */
+        font-size: 2rem; /* Further adjust font size for links */
     }
 
     .template-image {

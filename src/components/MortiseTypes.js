@@ -9,6 +9,7 @@ import MortiseElectrified8200 from "../images/MortiseElectrified8200.png";
 import Mortise8200Indicator from '../images/Mortise8200Indicator.png'
 import Mortise9200 from "../images/MortiseLock9200.png";
 import MortiseLock7800 from "../images/MortiseLock7800.png";
+import BHW8200 from '../images/Mortise8200BHW.png'
 
 function MortiseTypes() {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ function MortiseTypes() {
 )}
 
 {/* Button for Indicator series */}
-{
+{series !== "9200" && (
   <button className="btn" onClick={() => handleButtonClick(series, "Indicator")}>
     <img
       src={indicatorDeviceImage}
@@ -88,7 +89,19 @@ function MortiseTypes() {
     />
     {series} Indicator
   </button>
-}
+)}
+
+{/* Button for BHW series */}
+{series !== "7800" && (
+  <button className="btn" onClick={() => handleButtonClick(series, "BHW")}>
+    <img
+      src={BHW8200}
+      alt="BHW Mortise Device"
+      className="btn-image"
+    />
+    {series} BHW
+  </button>
+)}
 
     </div>
   );

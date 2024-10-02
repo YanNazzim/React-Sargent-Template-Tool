@@ -23,13 +23,13 @@
   min-width: 800px; /* Set a minimum width for buttons */
   color: white; /* Button text color */
   margin: 50px;
-  border: none; /* Removes default border */
+  border: solid black 3px; /* Removes default border */
   border-radius: 15px; /* Rounds the button corners */
   padding: 15px; /* Adds padding inside the button for a more spacious look */
   font-size: 48px; /* Larger font size for better readability */
   font-weight: bold;
   cursor: pointer; /* Changes cursor to pointer on hover */
-  transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions */
+  transition: background-color 0.3s, transform 0.3s, border 0.3s; /* Adds smooth transitions */
   text-align: center; /* Centers text below the image */
   overflow: hidden; /* Ensures content fits within the button */
   user-select: none; /* Prevents text from being selectable */
@@ -46,7 +46,7 @@
 /* Button hover effect */
 .btn:hover {
   background-color: #1565c0; /* Changes background color on hover */
-  border: solid black 3px; /* Adds a border on hover */
+  border: solid black 6px; /* Adds a border on hover */
   transform: scale(1.05); /* Slightly scales up the button on hover */
 }
 
