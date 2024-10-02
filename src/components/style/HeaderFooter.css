@@ -6,66 +6,70 @@ html, body {
     height: 100%; /* Allow body to occupy full height */
     display: flex; /* Enable flexbox layout */
     flex-direction: column; /* Stack children vertically */
+    box-sizing: border-box; /* Include padding/border in element width/height */
+    font-size: 16px; /* Base font size */
 }
 
 
-/* Header */
+/* Header and Footer */
 .header, .footer {
-    display: flex; /* Change to flex for better control */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: #aaaaaa;
-    min-width: 1024px; /* Minimum width */
+    width: 100%; /* Flexibly take full width */
+    max-width: 2560px; /* Cap the max width for large screens */
     box-sizing: border-box; /* Include padding in width */
 }
 
-
-
 /* Style for the image */
 .SargentLogo {
-    height: auto; /* Set height to auto for better responsiveness */
-    width: auto; /* Set width to auto for better responsiveness */
-    margin-bottom: 20px; /* Adds space between the logo and the heading */
+    height: auto; /* Responsive height */
+    max-width: 100%; /* Ensure it scales within container */
+    margin-bottom: 20px;
 }
 
 /* Style for the heading */
 .Home {
-    font-size: 3rem; /* Use rem for better scalability */
+    font-size: clamp(2rem, 5vw, 4rem); /* Use clamp for fluid typography */
     margin: auto;
     color: white;
     width: fit-content;
     background-color: #1565c0;
     text-align: center;
     border: solid black 3px;
-    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s; /* Adds smooth transitions */
+    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s;
     padding: 5px;
     margin-bottom: 20px;
 }
 
 .Home:hover {
-    background-color: green; /* Changes background color on hover */
-    border: solid black 9px; /* Reduces border thickness for a cleaner look */
-    border-radius: 20px; /* Adjusts border radius for a more subtle effect */
-    transform: scale(1.05); /* Slightly scales up the button on hover */
+    background-color: green;
+    border: solid black 9px;
+    border-radius: 20px;
+    transform: scale(1.05);
 }
 
-
+/* Footer paragraph */
 .footer p {
-    margin: 0; /* Reset margin for paragraphs in footer */
+    margin: 0;
 }
 
 /* Media Queries for Responsiveness */
-@media (max-height: 1024px) {
-    .header,
-    .footer {
-        width: 1024px; /* Center align */
-        height: auto;
-    }
 
-    .header {
-        padding: 10px; /* Adjust padding for smaller screens */
+/* Medium screens */
+@media (max-width: 1440px) {
+    .Home {
+        font-size: 3rem; /* Slightly smaller font for medium-large screens */
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 1024px) {
+    .header, .footer {
+        padding: 10px;
     }
 
     .Home {
@@ -73,31 +77,42 @@ html, body {
     }
 }
 
+/* Mobile screens */
 @media (max-width: 768px) {
     .header, .footer {
-        padding: 10px; /* Further adjust padding for smaller screens */
+        padding: 10px;
         flex-direction: column; /* Ensure elements stack vertically */
-        align-items: center; /* Center elements */
+        align-items: center;
     }
 
     .Home {
-        font-size: 3.5rem; /* Adjusted font size */
+        font-size: 2rem; /* Adjusted font size */
     }
 
     .SargentLogo {
-        max-height: 150px; /* Limit logo height for smaller screens */
+        max-height: 150px; /* Limit logo height */
         width: auto; /* Maintain aspect ratio */
     }
 }
 
-
+/* Very small screens */
 @media (max-width: 390px) {
     .Home {
-        font-size: 3rem; /* Adjust font size for very small screens */
+        font-size: 1.5rem; /* Adjust font size for very small screens */
     }
 
     .SargentLogo {
-        max-height: 200px; /* Adjust logo height for very small screens */
+        max-height: 100px; /* Adjust logo size */
     }
 }
 
+/* Ultra-wide and large screens */
+@media (min-width: 2560px) {
+    .header, .footer {
+        max-width: 2560px; /* Cap the width to avoid excessive stretching */
+    }
+
+    .Home {
+        font-size: 4rem; /* Increase font size for larger screens */
+    }
+}
