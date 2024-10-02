@@ -5,6 +5,7 @@ import Bored7Line from "../images/Bored 7 Line.png";
 import Bored6500 from "../images/Bored 6500 Series.png";
 import Bored6Line from "../images/Bored 6 Line.png";
 import BoredDL from "../images/Bored DL Series.png";
+import BHW10X from '../images/BHW10X.png'
 
 export const BoredLocks = {
   "11 Line": [
@@ -49,6 +50,19 @@ export const BoredLocks = {
       // Add more attributes as needed
     },
   ],
+  "10X BHW": [
+    {
+      device: "10X BHW",
+      image: BHW10X,
+
+      title: "10X W/ BHW Trim",
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1205071",
+      text: "View BHW Mounting Template (All Functions) Doc# 4753",
+
+      // Add more attributes as needed
+    },
+  ],
   "8X Line": [
     {
       device: "8X Line",
@@ -74,7 +88,7 @@ export const BoredLocks = {
       device: "7 Line",
       image: Bored7Line,
 
-      title: 'Standard',
+      title: "Standard",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055645",
       text: "View Mounting Template (Metal & Wood)Doc# 4481",
@@ -92,7 +106,7 @@ export const BoredLocks = {
       device: "6500 Series",
       image: Bored6500,
 
-      title: 'Standard',
+      title: "Standard",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055649",
       text: "View Mounting Template (Metal & Wood)Doc# 4430",
@@ -110,7 +124,7 @@ export const BoredLocks = {
       device: "6 Line",
       image: Bored6Line,
 
-      title: 'Standard',
+      title: "Standard",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055652",
       text: "View Mounting Template Doc# 4252",
@@ -129,13 +143,14 @@ export const BoredLocks = {
     {
       device: "DL Series",
       image: BoredDL,
-      
-      title: 'DL',
+
+      title: "DL",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055646",
       text: "View DL Mounting Template Doc# 4584",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1066578",
-      text1: "View DL Mounting Template (93, TB-93, and 94 Function) Doc# A7931 ",
+      text1:
+        "View DL Mounting Template (93, TB-93, and 94 Function) Doc# A7931 ",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055647",
       text2: "View 505 Full Lip Strike Template Doc# 4421",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055642",
@@ -145,23 +160,23 @@ export const BoredLocks = {
       // Add more attributes as needed
     },
     {
-        device: "DL Series",
-        image: BoredDL,
-        
-        title: 'RDL',
-  
-        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1058560",
-        text: "View RDL Mounting Template Doc# 4646",
-        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055648",
-        text1: "View RDL Mounting Template (93 & 94 Function) Doc# 4666 ",
-        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055647",
-        text2: "View 505 Full Lip Strike Template Doc# 4421",
-        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055642",
-        text4: "View 800 Strike Template Doc# 4131",
-        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
-        text5: "View 808 Strike Template Doc# 4049",
-        // Add more attributes as needed
-      },
+      device: "DL Series",
+      image: BoredDL,
+
+      title: "RDL",
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1058560",
+      text: "View RDL Mounting Template Doc# 4646",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055648",
+      text1: "View RDL Mounting Template (93 & 94 Function) Doc# 4666 ",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055647",
+      text2: "View 505 Full Lip Strike Template Doc# 4421",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055642",
+      text4: "View 800 Strike Template Doc# 4131",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
+      text5: "View 808 Strike Template Doc# 4049",
+      // Add more attributes as needed
+    },
   ],
   // Add more series and devices as needed
 };
