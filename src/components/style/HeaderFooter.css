@@ -4,12 +4,13 @@ html, body {
     padding: 0; /* Remove default padding */
     width: 100%; /* Allow body to take full width of viewport */
     height: 100%; /* Allow body to occupy full height */
-    display: flex; /* Enable flexbox layout */
+    display: flex;
     flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
     box-sizing: border-box; /* Include padding/border in element width/height */
     font-size: 16px; /* Base font size */
+    background-color: #aaaaaa; /* Background color matching layout */
 }
-
 
 /* Header and Footer */
 .header, .footer {
@@ -19,9 +20,28 @@ html, body {
     justify-content: center;
     padding: 20px;
     background-color: #aaaaaa;
-    width: 100%; /* Flexibly take full width */
-    max-width: 2560px; /* Cap the max width for large screens */
+    width: 100%; /* Make header and footer span full width */
     box-sizing: border-box; /* Include padding in width */
+}
+
+/* Inner container to limit width and keep centered */
+.header-inner, .footer-inner {
+    max-width: 1280px; /* Adjust max width for medium to large screens */
+    width: 100%; /* Take full width of the viewport */
+    padding: 0 20px; /* Side padding for smaller screens */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center inner content */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    width: 100%;
+    max-width: 1280px; /* Adjust max width based on screen size */
+    margin: 0 auto; /* Center the main content */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Style for the image */
@@ -31,88 +51,79 @@ html, body {
     margin-bottom: 20px;
 }
 
-/* Style for the heading */
-.Home {
-    font-size: clamp(2rem, 5vw, 4rem); /* Use clamp for fluid typography */
-    margin: auto;
-    color: white;
-    width: fit-content;
+/* Buttons (e.g., 'Templates Home Page', 'Previous Page') */
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
     background-color: #1565c0;
-    text-align: center;
-    border: solid black 3px;
-    transition: background-color 0.3s, transform 0.3s, border 0.3s, border-radius 0.3s;
-    padding: 5px;
-    margin-bottom: 20px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px; /* Ensure buttons have a max width */
 }
 
-.Home:hover {
+button:hover {
     background-color: green;
-    border: solid black 9px;
-    border-radius: 20px;
-    transform: scale(1.05);
 }
 
-/* Footer paragraph */
-.footer p {
-    margin: 0;
+/* Box elements (Exit Devices, Mortise, Bored Locks) */
+.box {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 400px; /* Ensure boxes have a max width */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.box img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+}
+
+.box-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 /* Media Queries for Responsiveness */
 
 /* Medium screens */
 @media (max-width: 1440px) {
-    .Home {
-        font-size: 3rem; /* Slightly smaller font for medium-large screens */
+    .box-title {
+        font-size: 1.25rem;
     }
 }
 
 /* Smaller screens */
 @media (max-width: 1024px) {
-    .header, .footer {
-        padding: 10px;
+    button {
+        font-size: 1.2rem;
+        max-width: 100%; /* Ensure button spans full width */
     }
 
-    .Home {
-        font-size: 2.5rem; /* Smaller font size for better fit */
+    .box-title {
+        font-size: 1.25rem;
     }
 }
 
 /* Mobile screens */
 @media (max-width: 768px) {
-    .header, .footer {
+    .header-inner, .footer-inner {
         padding: 10px;
-        flex-direction: column; /* Ensure elements stack vertically */
-        align-items: center;
     }
 
-    .Home {
-        font-size: 2rem; /* Adjusted font size */
+    .box {
+        max-width: 300px;
     }
 
-    .SargentLogo {
-        max-height: 150px; /* Limit logo height */
-        width: auto; /* Maintain aspect ratio */
-    }
-}
-
-/* Very small screens */
-@media (max-width: 390px) {
-    .Home {
-        font-size: 1.5rem; /* Adjust font size for very small screens */
-    }
-
-    .SargentLogo {
-        max-height: 100px; /* Adjust logo size */
-    }
-}
-
-/* Ultra-wide and large screens */
-@media (min-width: 2560px) {
-    .header, .footer {
-        max-width: 2560px; /* Cap the width to avoid excessive stretching */
-    }
-
-    .Home {
-        font-size: 4rem; /* Increase font size for larger screens */
+    .box-title {
+        font-size: 1rem;
     }
 }
