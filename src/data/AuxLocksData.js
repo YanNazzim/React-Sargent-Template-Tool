@@ -15,6 +15,8 @@ export const AuxLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086890", // Primary link
       text: "View Mounting Template Doc# 4263", // Link text
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
+      text1: "View Curved & Straight Lip Strike Template Doc# 7063",
     },
     // Add more locks if needed
   ],
