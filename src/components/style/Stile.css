@@ -60,7 +60,7 @@
   }
 
   .btn-image {
-    max-width: 50%; /* Use max-width instead of fixed width */
+    max-width: 40%; /* Use max-width instead of fixed width */
   }
 }
 
@@ -78,12 +78,14 @@
 
 @media (max-width: 440px) {
   .btn {
-    font-size: 20px; /* Smaller font size for mobile */
+    max-width: 300px;
+    min-width: 300px;
+    font-size: 24px; /* Smaller font size for mobile */
     padding: 6px;
   }
 
   .btn-image {
-    width: 60%; /* Allow a bit more space for images */
+    width: 50%; /* Allow a bit more space for images */
   }
 }
 
