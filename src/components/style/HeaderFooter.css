@@ -63,10 +63,14 @@ button {
     margin-bottom: 10px;
     width: 100%;
     max-width: 400px; /* Ensure buttons have a max width */
+    transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions */
+
 }
 
 button:hover {
     background-color: green;
+    transform: scale(1.05); /* Slightly scales up the button on hover */
+    
 }
 
 /* Box elements (Exit Devices, Mortise, Bored Locks) */
