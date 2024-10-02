@@ -51,63 +51,39 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-  body {
-    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
-  }
 
-  .product-line {
-    padding: 10px; /* Less padding on smaller screens */
-    width: 1024px; /* Lock width to 1024px */
-  }
-
+@media (max-width: 1344px) {
   .btn {
-    width: 90%; /* Adjust button width for smaller screens */
-    font-size: 48px; /* Slightly smaller font size for better readability */
-    padding: 12px; /* Adjust padding */
+    width: 450px; /* Increase to 90% for better fill */
+    font-size: 36px;
+    padding: 12px;
   }
 
   .btn-image {
-    width: 30%; /* Adjusted image width for better fit on smaller screens */
+    max-width: 50%; /* Use max-width instead of fixed width */
   }
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
-  }
-
-  .product-line {
-    padding: 10px; /* Less padding on smaller screens */
-    width: 1024px; /* Lock width to 1024px */
-  }
-
   .btn {
-    width: 90%; /* Adjust button width for smaller screens */
-    font-size: 48px; /* Slightly smaller font size for better readability */
-    padding: 12px; /* Adjust padding */
+    width: 95%; /* Nearly full width on smaller devices */
+    font-size: 28px; /* Further reduce font size for readability */
+    padding: 10px;
   }
 
   .btn-image {
-    width: 30%; /* Adjusted image width for better fit on smaller screens */
+    max-width: 60%; /* Allow images to scale better */
   }
 }
 
 @media (max-width: 440px) {
-  /* Target mobile screens like iPhone XR */
-  .product-line {
-    padding: 5px; /* Reduce padding for small screens */
-  }
-
   .btn {
-    min-width: 300px;
-    font-size: 24px; /* Smaller font size for better readability */
-    padding: 8px; /* Adjust padding for mobile */
+    font-size: 20px; /* Smaller font size for mobile */
+    padding: 6px;
   }
 
   .btn-image {
-    width: 40%; /* Adjusted image width for mobile */
-    margin-top: 35px;
-    margin-bottom: 5px; /* Space between image and text */
+    width: 60%; /* Allow a bit more space for images */
   }
 }
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import  './style/ProductLine.css'
+import  './style/Stile.css'
 import exitDevicesImg from '../images/Rim Exit (8800).png'; 
 import mortiseImg from '../images/Mortise Lock.png'; 
 import boredLocksImg from '../images/Bored Lock.png'; 
