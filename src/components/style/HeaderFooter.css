@@ -1,15 +1,16 @@
 /* Global Styles */
 html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    width: 100%; /* Allow body to take full width of viewport */
-    height: 100%; /* Allow body to occupy full height */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center content horizontally */
-    box-sizing: border-box; /* Include padding/border in element width/height */
-    font-size: 16px; /* Base font size */
-    background-color: #aaaaaa; /* Background color matching layout */
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #aaaaaa;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header and Footer */
@@ -20,39 +21,32 @@ html, body {
     justify-content: center;
     padding: 20px;
     background-color: #aaaaaa;
-    width: 100%; /* Make header and footer span full width */
-    box-sizing: border-box; /* Include padding in width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Inner container to limit width and keep centered */
 .header-inner, .footer-inner {
-    max-width: 1280px; /* Adjust max width for medium to large screens */
-    width: 100%; /* Take full width of the viewport */
-    padding: 0 20px; /* Side padding for smaller screens */
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
     box-sizing: border-box;
-    margin: 0 auto; /* Center inner content */
+    margin: 0 auto;
 }
 
 /* Content Wrapper */
-.content-wrapper {
-    width: 100%;
-    max-width: 1280px; /* Adjust max width based on screen size */
-    margin: 0 auto; /* Center the main content */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /* Style for the image */
 .SargentLogo {
-    height: auto; /* Responsive height */
-    max-width: 100%; /* Ensure it scales within container */
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
     margin-bottom: 20px;
 }
 
-/* Buttons (e.g., 'Templates Home Page', 'Previous Page') */
-button {
+/* Buttons */
+.Home {
     font-size: 1.5rem;
     padding: 10px 20px;
     background-color: #1565c0;
@@ -62,18 +56,16 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 400px; /* Ensure buttons have a max width */
-    transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions */
-
+    max-width: 400px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: green;
-    transform: scale(1.05); /* Slightly scales up the button on hover */
-    
+    transform: scale(1.05);
 }
 
-/* Box elements (Exit Devices, Mortise, Bored Locks) */
+/* Box elements */
 .box {
     background-color: blue;
     color: white;
@@ -81,13 +73,13 @@ button:hover {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    max-width: 400px; /* Ensure boxes have a max width */
+    max-width: 400px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .box img {
-    max-width: 100%; /* Responsive images */
+    max-width: 100%;
     height: auto;
 }
 
@@ -96,7 +88,7 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries */
 
 /* Medium screens */
 @media (max-width: 1440px) {
@@ -105,7 +97,7 @@ button:hover {
     }
 }
 
-/* Smaller screens */
+/* Smaller screens (1024px or below) */
 @media (max-width: 1024px) {
     button {
         font-size: 1.2rem;
@@ -117,14 +109,20 @@ button:hover {
     }
 }
 
-/* Mobile screens */
+/* Mobile screens (768px or below) */
 @media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* Prevent content from being cut off */
+    }
+
     .header-inner, .footer-inner {
         padding: 10px;
     }
 
     .box {
-        max-width: 300px;
+        min-width: 768px;
+        max-width: 1024px; /* Ensure boxes take full width */
     }
 
     .box-title {

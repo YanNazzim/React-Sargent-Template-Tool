@@ -3,14 +3,15 @@
 .product-line {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  justify-content: center; /* Centers buttons horizontally */
-  align-items: center; /* Centers buttons vertically */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
   gap: 20px; /* Space between buttons */
   padding: 20px; /* Adds padding around the container */
   background-color: #aaaaaa; /* Background color for the container */
   margin: 0; /* Remove any default margin */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  min-width: 1024px; /* Set a minimum width for the product line */
+  width: 1024px; /* Full width for the product line */
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 /* Button styling */
@@ -20,19 +21,18 @@
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center align image and text */
   background-color: #007bff; /* Button background color */
-  width: 100%; /* Allow buttons to take full width of the container */
-  max-width: 800px; /* Limit maximum width for buttons */
+  width: 4vw; /* Set button width to 4% of the viewport width */
+  max-width: 150px; /* Add a max-width to prevent stretching */
   color: white; /* Button text color */
   margin: auto;
   border-radius: 15px; /* Rounds the button corners */
-  padding: 15px; /* Adds padding inside the button for a more spacious look */
-  font-size: 20px; /* Larger font size for better readability */
+  padding: 15px; /* Adds padding inside the button */
+  font-size: 20px; /* Larger font size for readability */
   cursor: pointer; /* Changes cursor to pointer on hover */
   transition: background-color 0.3s, transform 0.3s; /* Adds smooth transitions */
-  text-align: center; /* Centers text below the image */
-  overflow: hidden; /* Ensures content fits within the button */
+  text-align: center; /* Center text */
+  overflow: hidden; /* Ensure content fits within the button */
   user-select: none; /* Prevents text from being selectable */
-
 }
 
 /* Image styling */
@@ -48,47 +48,52 @@
 .btn:hover {
   background-color: #1565c0; /* Changes background color on hover */
   border: solid black 6px; /* Adds a border on hover */
-  transform: scale(1.05); /* Slightly scales up the button on hover */
+  transform: scale(1.05); /* Slightly scale up the button */
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  body {
-    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
-    min-width: 1024px;
-  }
 
-  .product-line {
-    padding: 10px; /* Less padding on smaller screens */
-    width: 1024px; /* Make width responsive */
-  }
-
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
   .btn {
-    width: 90%; /* Adjust button width for smaller screens */
-    font-size: 20px; /* Adjust font size */
-    padding: 12px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size for medium screens */
+    padding: 12px; /* Adjust padding for medium screens */
   }
 
   .btn-image {
-    width: 30%; /* Adjusted image width for better fit on smaller screens */
+    width: 35%; /* Adjust image size for medium screens */
   }
 }
 
-@media (max-width: 390px) {
-  /* Target mobile screens like iPhone XR */
+/* For smaller screens like phones */
+@media (max-width: 768px) {
   .product-line {
-    width: 1024px; /* Make width responsive */
-
-    padding: 5px; /* Reduce padding for small screens */
+    padding: 10px; /* Reduce padding */
   }
 
   .btn {
-    width: 95%; /* Make buttons nearly full width for mobile */
-    font-size: 18px; /* Smaller font size for better readability */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px; /* Reduce padding */
+    width: 4vw; /* Keep button width responsive */
   }
 
   .btn-image {
-    width: 40%; /* Adjusted image width for mobile */
-    margin-bottom: 5px; /* Space between image and text */
+    width: 30%; /* Adjust image size */
+  }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+  .product-line {
+    padding: 5px; /* Reduce padding more */
+  }
+
+  .btn {
+    font-size: 16px; /* Smaller font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .btn-image {
+    width: 25%; /* Further reduce image size */
   }
 }
