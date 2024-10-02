@@ -45,9 +45,17 @@ html, body {
 .SargentLogo {
     height: auto;
     max-width: 100%;
-    max-height: 150px;
+    max-height: 175px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease, border-radius 0.3s ease, border 0.3s ease; /* Add transition */
 }
+
+.SargentLogo:hover {
+    transform: scale(1.05);
+    border-radius: 25px;
+    border: solid black 3px;
+}
+
 
 /* Buttons */
 .Home {
