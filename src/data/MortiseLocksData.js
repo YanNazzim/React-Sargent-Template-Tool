@@ -9,6 +9,10 @@ import IndicatorVN1 from "../images/MortiseIndicatorVN1.png";
 import Strike9200 from '../images/Strikes 9200.png'
 import Strike8200 from '../images/Strike 8200 7800.png'
 import BHW8200 from '../images/Mortise8200BHW.png'
+import BHL8200 from '../images/BHL8200.png'
+import ALP8200 from '../images/ALP8200.png'
+import BHD9200 from '../images/BHD9200.png'
+import PT7800 from '../images/PT7800.png'
 
 export const MortiseLocks = {
   8200: [
@@ -101,14 +105,32 @@ export const MortiseLocks = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
     {
-      device: 'BHW',
+      device: 'Behavioral Health',
       image: BHW8200,
 
       title: '8200 W/ BHW Trim',
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056030',
-      text: 'View BHW Trim (Metal & Wood Doors) Doc# 4711',
-    }
+      text: 'View BHW 8200 Template (Metal & Wood) Doc# 4711',
+    },
+    {
+      device: 'Behavioral Health',
+      image: BHL8200,
+
+      title: '8200 W/ BHL Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056029',
+      text: 'View BHL 8200 Template (Metal & Wood) Doc# 4745',
+    },
+    {
+      device: 'Behavioral Health',
+      image: ALP8200,
+
+      title: '8200 W/ ALP Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056029',
+      text: 'View ALP 8200 Template (Metal & Wood) Doc# 4745',
+    },
   ],
   9200: [
     {
@@ -152,14 +174,23 @@ export const MortiseLocks = {
       warning: "",
     },
     {
-      device: 'BHW',
+      device: 'Behavioral Health',
       image: BHW8200,
 
       title: '9200 W/ BHW Trim',
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056030',
-      text: 'View BHW Trim (Metal & Wood Doors) Doc# 4711',
-    }
+      text: 'View BHW 9200 Template (Metal & Wood) Doc# 4711',
+    },
+    {
+      device: 'Behavioral Health',
+      image: BHD9200,
+
+      title: '9200 W/ BHD Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056029',
+      text: 'View BHD 9200 Template (Metal & Wood) Doc# 4745',
+    },
   ],
   7800: [
     {
@@ -231,6 +262,17 @@ export const MortiseLocks = {
       image: IndicatorVN1,
       text: "View Mounting Template for SA197 Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
+    },
+    {
+      device: 'Behavioral Health',
+      image: PT7800,
+
+      title: '7800 W/ PT Trim',
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055660',
+      text: 'View Mounting Template (Metal & Wood) Doc# 4512',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055660',
+      text1: 'View PT Trim Template Doc# 7057',
     },
     // No Electrified option for 7800
   ],

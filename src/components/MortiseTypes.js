@@ -92,16 +92,16 @@ function MortiseTypes() {
 )}
 
 {/* Button for BHW series */}
-{series !== "7800" && (
-  <button className="btn" onClick={() => handleButtonClick(series, "BHW")}>
+{
+  <button className="btn" onClick={() => handleButtonClick(series, "Behavioral Health")}>
     <img
       src={BHW8200}
       alt="BHW Mortise Device"
       className="btn-image"
     />
-    {series} BHW
+    {series} Behavioral Health
   </button>
-)}
+}
 
     </div>
   );
