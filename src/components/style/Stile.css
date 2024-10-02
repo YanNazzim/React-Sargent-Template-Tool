@@ -1,91 +1,103 @@
 /* Stile.css */
 
+/* Page container */
 .stile-page {
-/* ProductLine.css */
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  justify-content: center; /* Centers buttons horizontally */
-  align-items: center; /* Centers buttons vertically */
-  gap: 20px; /* Space between buttons */
-  padding: 20px; /* Adds padding around the container */
-  background-color: #aaaaaa; /* Background color for the container */
-  margin: 0; /* Remove any default margin */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  min-width: 1024px; /* Set a minimum width for the product line */
+  flex-wrap: wrap; /* Allow buttons to wrap when necessary */
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Centers the content vertically */
+  gap: 10px; /* Space between buttons */
+  padding: 20px;
+  background-color: #aaaaaa; /* Background color */
+  margin: 0;
+  min-height: 100vh; /* Ensure full height to avoid the page being cut off */
 }
 
 /* Button styling */
 .btn {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center align image and text */
-  background-color: #007bff; /* Button background color */
-  min-width: 550px; /* Set a minimum width for buttons */
-  color: white; /* Button text color */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  background-color: #007bff;
+  width: 100%; /* Ensure button takes full width of its container */
+  max-width: 600px; /* Set a max-width to prevent oversized buttons */
+  color: white;
   margin: 50px;
-  border: solid black 3px; /* Removes default border */
-  border-radius: 15px; /* Rounds the button corners */
-  padding: 15px; /* Adds padding inside the button for a more spacious look */
-  font-size: 48px; /* Larger font size for better readability */
+  border: solid black 3px;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 48px;
   font-weight: bold;
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  transition: background-color 0.3s, transform 0.3s, border 0.3s; /* Adds smooth transitions */
-  text-align: center; /* Centers text below the image */
-  overflow: hidden; /* Ensures content fits within the button */
-  user-select: none; /* Prevents text from being selectable */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, border 0.3s;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
 }
 
 /* Image styling */
 .btn-image {
-  width: 40%; /* Set a reasonable width for images */
-  height: auto; /* Ensure the height adjusts properly */
-  margin-bottom: 10px; /* Space between image and text */
-  border-radius: 35px; /* Adds rounded corners to the image */
+  max-width: 40%; /* Ensure images are responsive */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 35px;
 }
 
 /* Button hover effect */
 .btn:hover {
-  background-color: #1565c0; /* Changes background color on hover */
-  border: solid black 6px; /* Adds a border on hover */
-  transform: scale(1.05); /* Slightly scales up the button on hover */
+  background-color: #1565c0;
+  border: solid black 6px;
+  transform: scale(1.05);
 }
 
 /* Media Queries for Responsiveness */
 
+/* For screens wider than 1344px */
+@media (min-width: 1344px) {
+  .btn {
+    max-width: 550px; /* Ensure buttons stay reasonable in size */
+    font-size: 42px;
+    padding: 18px;
+  }
+}
+
+/* Medium screens (max-width: 1344px) */
 @media (max-width: 1344px) {
   .btn {
-    width: 450px; /* Increase to 90% for better fill */
+    width: 450px;
     font-size: 36px;
+    padding: 16px;
+  }
+
+  .btn-image {
+    max-width: 35%;
+  }
+}
+
+/* Smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn {
+    width: 95%;
+    font-size: 28px;
     padding: 12px;
   }
 
   .btn-image {
-    max-width: 40%; /* Use max-width instead of fixed width */
+    max-width: 50%;
   }
 }
 
-@media (max-width: 768px) {
-  .btn {
-    width: 95%; /* Nearly full width on smaller devices */
-    font-size: 28px; /* Further reduce font size for readability */
-    padding: 10px;
-  }
-
-  .btn-image {
-    max-width: 60%; /* Allow images to scale better */
-  }
-}
-
+/* Mobile devices (max-width: 440px) */
 @media (max-width: 440px) {
   .btn {
     max-width: 300px;
     min-width: 300px;
-    font-size: 24px; /* Smaller font size for mobile */
-    padding: 6px;
+    font-size: 24px;
+    padding: 10px;
   }
 
   .btn-image {
-    width: 50%; /* Allow a bit more space for images */
+    width: 50%;
   }
 }
-
