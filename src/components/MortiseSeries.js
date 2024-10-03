@@ -5,6 +5,7 @@ import './style/Stile.css';
 import MortiseLock8200 from '../images/MortiseLock.png'
 import MortiseLock9200 from '../images/MortiseLock9200.png'
 import MortiseLock7800 from '../images/MortiseLock7800.png'
+import M9200 from '../images/MortiseM9200.png'
 
 function MortiseSeries() {
     const navigate = useNavigate();
@@ -13,6 +14,7 @@ function MortiseSeries() {
     const handleButtonClick = (series) => {
         navigate('/mortiseTypes', { state: { series } }); // Pass the series dynamically
     };
+
 
     return (
         <>
@@ -27,6 +29,11 @@ function MortiseSeries() {
                 <img className="btn-image" src={MortiseLock9200} alt="Mortise Lock"/>
 
                     9200
+                </button>
+                <button className="btn" onClick={() => handleButtonClick('M9200')}>
+                <img className="btn-image" src={M9200} alt="Mortise Lock"/>
+
+                    M-9200
                 </button>
                 {/* Button for 7800 series */}
                 <button className="btn" onClick={() => handleButtonClick('7800')}>
