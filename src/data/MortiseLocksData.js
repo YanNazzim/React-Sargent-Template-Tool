@@ -13,7 +13,8 @@ import BHL8200 from "../images/BHL8200.png";
 import ALP8200 from "../images/ALP8200.png";
 import BHD9200 from "../images/BHD9200.png";
 import PT7800 from "../images/PT7800.png";
-import M9200 from '../images/MortiseM9200.png'
+import M9200 from "../images/MortiseM9200.png";
+import Esc9200 from "../images/MortiseEscutch9200.png";
 
 export const MortiseLocks = {
   8200: [
@@ -137,8 +138,19 @@ export const MortiseLocks = {
   9200: [
     {
       device: "Standard",
-      title: "9200 W/ Escutcheon Trims",
       image: Mortise9200,
+
+      title: "9200 W/ Rose",
+
+      text: "View Lockbody Mounting Template Doc# 4482",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056041",
+      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056022",
+    },
+    {
+      device: "Standard",
+      title: "9200 W/ Escutcheon Trims",
+      image: Esc9200,
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1: "Escutcheon Trim (CE, LE1, TE) Exposed Screws Template Doc# 4556",
@@ -177,6 +189,11 @@ export const MortiseLocks = {
       image: Mortise9200,
       text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
+      text1: "Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
+      text2:
+        "78-0034 Deadbolt Strike (M-)9200 03, 20, 21, 22, and 23 Functions Template Doc# 7064",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
       warning: "",
     },
     {
@@ -203,12 +220,12 @@ export const MortiseLocks = {
       device: "Standard",
       image: M9200,
 
-      title: 'M9200',
+      title: "M9200",
 
-      text: 'View Mounting Template Doc# 4483',
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056039',
-      text1: 'View Rose Trim Template (L, LN, SN, and SL) Doc# 4513',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056040',
+      text: "View Mounting Template Doc# 4483",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056039",
+      text1: "View Rose Trim Template (L, LN, SN, and SL) Doc# 4513",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056040",
       text2: "Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
       text3:
