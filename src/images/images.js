@@ -1,10 +1,11 @@
 // images.js
 export const Images = {
   // Exits
+  thumbpieceTrims: require('./Exits/thumbpieceTrims1.png'),
   wideCVR: require("./Exits/WideCVR.png"),
   wideStileRim: require("./Exits/Wide Rim Exit (8800).png"),
   wideSVR: require("./Exits/WideSVR.png"),
-  widNBSVR: require('./Exits/WideNBSVR.png'),
+  wideNBSVR: require('./Exits/WideNBSVR.png'),
   wideMortise: require("./Exits/WideMortise.png"),
   narrowRimExit8500: require("./Exits/Narrow Rim Exit (8500).png"),
   narrowCVR9400: require("./Exits/narrowCVR 9400.png"),

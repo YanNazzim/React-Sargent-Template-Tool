@@ -1,42 +1,43 @@
-import { Images } from '../images/images'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Images } from '../images/images';
 
 function Cylinders() {
+  const navigate = useNavigate();
 
+  // Function to handle navigation to CylindersInfo with type
+  const handleCylinderClick = (type) => {
+    navigate(`/cylinders-info/${type}`);
+  };
 
-
-    return (
-        <>
-        <div className="stile-page">
-        <button className="btn">
-            <img src={Images.CylRim} className="btn-image" alt="Rim Cylinder"></img>
+  return (
+    <div className="stile-page">
+      <button className="btn" onClick={() => handleCylinderClick('Rim')}>
+        <img src={Images.CylRim} className="btn-image" alt="Rim Cylinder" />
         Rim Cylinders (#34)
-        </button>
-        <button className="btn">
-            <img src={Images.CylMortise} className="btn-image" alt="Mortise Cylinder"></img>
-        Mortise Cylinders <br></br>(41, 42, 43, 44, 45, 46, 48, 50, 52, 54, 56)
-        </button>
-        <button className="btn">
-            <img src={Images.CylSFIC} className="btn-image" alt="SFIC Cylinder"></img>
+      </button>
+      <button className="btn" onClick={() => handleCylinderClick('Mortise')}>
+        <img src={Images.CylMortise} className="btn-image" alt="Mortise Cylinder" />
+        Mortise Cylinders <br />(41, 42, 43, 44, 45, 46, 48, 50, 52, 54, 56)
+      </button>
+      <button className="btn" onClick={() => handleCylinderClick('SFIC')}>
+        <img src={Images.CylSFIC} className="btn-image" alt="SFIC Cylinder" />
         SFIC (70-)
-        </button>
-        <button className="btn">
-        <img src={Images.CylLFIC} className="btn-image" alt="LFIC Cylinder"></img>
-
+      </button>
+      <button className="btn" onClick={() => handleCylinderClick('LFIC')}>
+        <img src={Images.CylLFIC} className="btn-image" alt="LFIC Cylinder" />
         LFIC (60-)
-        </button>
-        <button className="btn">
-        <img src={Images.CylDegree} className="btn-image" alt="Degree Cylinder"></img>
-
-        DG1-, DG2- & DG3- Series Mortise Cylinders <br></br>(Degree)
-        </button>
-        <button className="btn">
-        <img src={Images.CylKESOF1} className="btn-image" alt="SFIC Cylinder"></img>
-
+      </button>
+      <button className="btn" onClick={() => handleCylinderClick('Degree')}>
+        <img src={Images.CylDegree} className="btn-image" alt="Degree Cylinder" />
+        DG1-, DG2- & DG3- Series Mortise Cylinders <br />(Degree)
+      </button>
+      <button className="btn" onClick={() => handleCylinderClick('KESO')}>
+        <img src={Images.CylKESOF1} className="btn-image" alt="KESO Cylinder" />
         KESO F1/KESO (Old Style)
-        </button>
-        </div>
-        </>
-    )
+      </button>
+    </div>
+  );
 }
 
-export default Cylinders
+export default Cylinders;

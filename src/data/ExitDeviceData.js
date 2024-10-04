@@ -723,7 +723,7 @@ export const ExitDevices = {
       title: "(12-) PE8400 CVR Exit",
       functions:
         "PE8406, PE8410, PE8413, PE8415, PE8440, PE8443, PE8446, PE8473, PE8474",
-      image: Images.narrowPE80CVR,
+      image: Images.narrowPECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
       text: "View Wood Door Mounting Template Doc# MEDT33",
@@ -745,7 +745,7 @@ export const ExitDevices = {
 
       title: "(12-)PE8500 Narrow Rim Exit (04, 10, 40, 44 Functions)",
       functions: "PE8504, PE8510, PE8540, PE8544",
-      image: Images.narrowPE80Rim,
+      image: Images.narrowPE8500,
 
       warning:
         "NOTE: For 10 Function Just OMIT Cylinder hole from 2nd Template",
@@ -763,7 +763,7 @@ export const ExitDevices = {
       title:
         "(12-)PE8500 Narrow Rim Exit (06, 13, 15, 43, 46, 73, 74 Functions)",
       functions: "PE8506, PE8513, PE8515, PE8543, PE8546, PE8573, PE8574",
-      image: Images.narrowPE80Rim,
+      image: Images.narrowPE8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238392",
       text: "View Inside Mounting Template Doc# MEDT22",
@@ -778,7 +778,7 @@ export const ExitDevices = {
       device: "PE8500",
 
       title: "Strikes",
-      image: Images.narrowPE80Rim,
+      image: Images.narrowPE8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
       text: "View 656 Standard Strike Template (Double Door/Mullion) Doc# MEDT74",
@@ -808,7 +808,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit  (Wood Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: Images.widePE80CVR,
+      image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
       text: "View Mounting Template (Wood Door) Doc# MEDT33",
@@ -829,7 +829,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit  (Metal Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: Images.widePE80CVR,
+        image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
       text: "View Mounting Template (Metal Door) Doc# MEDT4",
@@ -850,7 +850,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit (Aluminum Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: Images.widePE80CVR,
+        image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238377",
       text: "View Mounting Template (Aluminum Door) Doc# MEDT4",
@@ -873,7 +873,7 @@ export const ExitDevices = {
       title: "(12-) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-      image: Images.widePE80SVR,
+      image: Images.widePESVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238386",
       text: "View Mounting Template Doc# MEDT12",
@@ -891,10 +891,10 @@ export const ExitDevices = {
     {
       device: "PE8700",
 
-      title: "(12-)(HC)(FM) NB-PE8700 SVR Exit",
+      title: "(12-)(HC)(FM) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-      image: Images.widePE80SVR,
+        image: Images.widePESVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238388",
       text: "View Mountting Template Doc# MEDT14",
@@ -983,6 +983,8 @@ export const ExitDevices = {
       text1: "View 04 Cylinder Only Template Doc# 4307-G",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template Doc# MEDT19",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
+      text3: "View Wide EM Wiring Raceway Template Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -999,6 +1001,8 @@ export const ExitDevices = {
       text1: "View P700-8 Trim Template Doc# MEDT20",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
       text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
+      text3: "View Wide EM Wiring Raceway Template Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1011,6 +1015,8 @@ export const ExitDevices = {
       text: "View Mounting Template (16, 28, 63, 66 Bell Housing) Doc# MEDT43",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text1: "View Trim Template (716) Doc# MEDT19",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
+      text2: "View Wide EM Wiring Raceway Template Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1034,18 +1040,18 @@ export const ExitDevices = {
       title: 'Strikes',
       image: Images.widePERim,
 
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
-      text3: "View 649 Standard Strike Template Doc# MEDT38",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
-      text4: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
-      text5: "View 613 Optional Strike Template Doc# MEDT73",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1246738",
-      text6: "View 642 Optional Strike Template Doc# MEDT71",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1246739",
-      text7: "View 644 Strike Template (Double Door No Mullion) Doc# MEDT72",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
-      text8:
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
+      text: "View 649 Standard Strike Template Doc# MEDT38",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
+      text1: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
+      text2: "View 613 Optional Strike Template Doc# MEDT73",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1246738",
+      text3: "View 642 Optional Strike Template Doc# MEDT71",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1246739",
+      text4: "View 644 Strike Template (Double Door No Mullion) Doc# MEDT72",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
+      text5:
         "View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74",
     },
     {
@@ -1053,7 +1059,7 @@ export const ExitDevices = {
 
       title: '(12-)(WS-) PE8900 Mortise Exit',
       functions: '',
-      image: Images.widePEMortise,
+      image: Images.widePE80Mortise,
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
       text: 'View Mounting Template Doc# MEDT42',
@@ -1065,6 +1071,8 @@ export const ExitDevices = {
       text3: 'View 908/C908 Standard Strike Template Doc# MEDT50',
       link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238419',
       text4: 'View 815 Optional Strike Template Doc# MEDT49',
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
+      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
     },
     {
       device: "PE8900",

@@ -15,6 +15,7 @@ import MortiseTypes from './components/MortiseTypes.js'
 import BoredSeries from './components/BoredSeries.js'
 import AuxLockSeries from './components/AuxLockSeries.js'
 import Cylinders from './components/Cylinders.js'
+import CylindersInfo from "./components/CylindersInfo.js";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/boredSeries" element={<BoredSeries />} />
         <Route path="/auxiliaryLocksSeries" element={<AuxLockSeries />} />
         <Route path="/Cylinders" element={<Cylinders />} />
+        <Route path="/cylinders-info/:type" element={<CylindersInfo />} />
 
       </Routes>
       <Footer /> {/* Ensure Footer is part of every page */}
