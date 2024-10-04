@@ -1,20 +1,5 @@
 /* Device Images */
-import Mortise7800 from "../images/Mortise/MortiseLock7800.png";
-import Mortise8200 from "../images/Mortise/Mortise Lock.png";
-import Mortise8200Electric from "../images/Mortise/MortiseElectrified8200.png";
-import Roseless from "../images/Mortise/MortiseRoselessTrim.png";
-import Mortise9200 from "../images/Mortise/MortiseLock9200.png";
-import IndicatorSA190 from "../images/Mortise/MortiseIndicatorSA190.png";
-import IndicatorVN1 from "../images/Mortise/MortiseIndicatorVN1.png";
-import Strike9200 from "../images/Mortise/Strikes 9200.png";
-import Strike8200 from "../images/Mortise/Strike 8200 7800.png";
-import BHW8200 from "../images/Mortise/Mortise8200BHW.png";
-import BHL8200 from "../images/Mortise/BHL8200.png";
-import ALP8200 from "../images/Mortise/ALP8200.png";
-import BHD9200 from "../images/Mortise/BHD9200.png";
-import PT7800 from "../images/Mortise/PT7800.png";
-import M9200 from "../images/Mortise/MortiseM9200.png";
-import Esc9200 from "../images/Mortise/MortiseEscutch9200.png";
+import { Images } from '../images/images'
 
 
 export const MortiseLocks = {
@@ -24,7 +9,7 @@ export const MortiseLocks = {
       functions:
         "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "W/ Sectional Trims",
-      image: Mortise8200,
+      image: Images.Mortise8200,
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1: "View (50-) Mounting Template Doc# 7682-A",
@@ -40,7 +25,7 @@ export const MortiseLocks = {
       functions:
         "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "W/ Escutcheon Trims",
-      image: Mortise8200,
+      image: Images.Mortise8200,
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1:
@@ -57,7 +42,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "Strikes",
-      image: Strike8200,
+      image: Images.Strike82007800,
 
       warning:
         "Right Click on picture -> Open image in new tab to see more details",
@@ -72,7 +57,7 @@ export const MortiseLocks = {
       functions:
         "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "Roseless (R8200)",
-      image: Roseless,
+      image: Images.MortiseRoselessTrim,
       text: "View Roseless Mortise Template Doc# 4647-B",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056034",
     },
@@ -82,7 +67,7 @@ export const MortiseLocks = {
       functions:
         "8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
       title: "8200 Mortise Lock - Electrified",
-      image: Mortise8200Electric,
+      image: Images.MortiseElectrified8200,
       warning: "Ensure proper wiring setup.",
       text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
@@ -95,7 +80,7 @@ export const MortiseLocks = {
         "8220, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8239, 8240, 8241, 8243, 8245, 8246, 8247, 8250, 8251, 8252, PHR-NAC-82281",
       title:
         "Sectional Indicator SA190, SA191, SA192, SA193, SA194, SA196, SA197, SA198",
-      image: IndicatorSA190,
+      image: Images.MortiseIndicatorSA190,
       text: "View Mounting Template for SA190 Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081720",
     },
@@ -104,13 +89,13 @@ export const MortiseLocks = {
       device: "Indicator",
       functions: "8212, 8230, PHR-NAC-82285",
       title: "VN1 Escutcheon Indicator",
-      image: IndicatorVN1,
+      image: Images.MortiseIndicatorVN1,
       text: "View Mounting Template for VN1 Escutcheon Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
     {
       device: "Behavioral Health",
-      image: BHW8200,
+      image: Images.Mortise8200BHW,
 
       title: "8200 W/ BHW Trim",
 
@@ -119,7 +104,7 @@ export const MortiseLocks = {
     },
     {
       device: "Behavioral Health",
-      image: BHL8200,
+      image: Images.Mortise8200BHL,
 
       title: "8200 W/ BHL Trim",
 
@@ -128,7 +113,7 @@ export const MortiseLocks = {
     },
     {
       device: "Behavioral Health",
-      image: ALP8200,
+      image: Images.ALP8200,
 
       title: "8200 W/ ALP Trim",
 
@@ -139,7 +124,7 @@ export const MortiseLocks = {
   9200: [
     {
       device: "Standard",
-      image: Mortise9200,
+      image: Images.Mortise9200,
 
       title: "9200 W/ Rose",
 
@@ -151,7 +136,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "9200 W/ Escutcheon Trims",
-      image: Esc9200,
+      image: Images.MortiseEscutcheon9200,
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1: "Escutcheon Trim (CE, LE1, TE) Exposed Screws Template Doc# 4556",
@@ -174,7 +159,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "Strikes",
-      image: Strike9200,
+      image: Images.Strikes9200,
 
       warning:
         "Right Click on picture -> Open image in new tab to see more details",
@@ -187,7 +172,7 @@ export const MortiseLocks = {
     {
       device: "Electrified",
       title: "9200 Mortise Lock - Electrified",
-      image: Mortise9200,
+      image: Images.Mortise9200,
       text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
       text1: "Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063",
@@ -199,7 +184,7 @@ export const MortiseLocks = {
     },
     {
       device: "Behavioral Health",
-      image: BHW8200,
+      image: Images.Mortise8200BHW,
 
       title: "9200 W/ BHW Trim",
 
@@ -208,7 +193,7 @@ export const MortiseLocks = {
     },
     {
       device: "Behavioral Health",
-      image: BHD9200,
+      image: Images.BHD9200,
 
       title: "9200 W/ BHD Trim",
 
@@ -219,7 +204,7 @@ export const MortiseLocks = {
   M9200: [
     {
       device: "Standard",
-      image: M9200,
+      image: Images.MortiseM9200,
 
       title: "M9200",
 
@@ -238,7 +223,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "W/ Sectional",
-      image: Mortise7800,
+      image: Images.Mortise7800,
 
       warning: "",
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
@@ -254,7 +239,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "W/ Escutcheon",
-      image: Mortise7800,
+      image: Images.Mortise7800,
 
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
@@ -278,7 +263,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       title: "Strikes",
-      image: Strike8200,
+      image: Images.Strike82007800,
 
       warning:
         "Right Click on picture -> Open image in new tab to see more details",
@@ -296,8 +281,8 @@ export const MortiseLocks = {
         "7800, 7801, 7802, 7804, 7805, 7806, 7828, 7809, 7810, 7819, 7840, 7841, 7843, 7845, 7846, 7847, 7850, 7851, 7852",
       title:
         "Sectional Indicator SA190, SA191, SA192, SA193, SA194, SA196, SA197, SA198",
-      image: IndicatorSA190,
-      text: "View Mounting Template for SA190 Indicator",
+        image: Images.MortiseIndicatorSA190,
+        text: "View Mounting Template for SA190 Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081720",
     },
 
@@ -305,13 +290,13 @@ export const MortiseLocks = {
       device: "Indicator",
       functions: "8212, 8230, PHR-NAC-82285",
       title: "VN1 Escutcheon Indicator",
-      image: IndicatorVN1,
+      image: Images.MortiseIndicatorVN1,
       text: "View Mounting Template for SA197 Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
     {
       device: "Behavioral Health",
-      image: PT7800,
+      image: Images.PT7800,
 
       title: "7800 W/ PT Trim",
 

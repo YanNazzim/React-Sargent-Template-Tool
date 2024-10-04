@@ -1,31 +1,6 @@
 // ExitDeviceData.js
-import wideCVR from "../images/Exits/WideCVR.png";
-import wideStileRim from "../images/Exits/Wide Rim Exit (8800).png";
-import wideSVR from "../images/Exits/WideSVR.png";
-import wideNBSVR from "../images/Exits/WideNBSVR.png";
-import wideMortise from "../images/Exits/WideMortise.png";
-import wideLP8600 from "../images/Exits/LP8600 CVR Mortise.png";
-import crossWideRim from "../images/Exits/crossWideRim.png";
-import crossWideSVR from "../images/Exits/crossWideSVR.png";
-import crossWideMortise from "../images/Exits/crossWideMortise.png";
-import widePE80CVR from "../images/Exits/widePECVR.png";
-import widePE80SVR from "../images/Exits/widePESVR.png";
-import widePENBSVR from "../images/Exits/widePENBSVR.png";
-import widePERim from "../images/Exits/PE80 Wide Rim Exit.png";
-import widePEMortise from "../images/Exits/widePE80Mortise.png";
-import narrowMortise from "../images/Exits/NarrowMortiseExit (8300).png";
-import narrowCVR from "../images/Exits/NarrowCVR.png";
-import narrowRim from "../images/Exits/Narrow Rim Exit (8500).png";
-import narrowCVR9400 from "../images/Exits/narrowCVR 9400.png";
-import thumbpieceTrims from "../images/Exits/thumbpieceTrims1.png";
-import narrowPE80Mortise from "../images/Exits/narrowPE80Mortise.png";
-import narrowPE80CVR from "../images/Exits/narrowPECVR.png";
-import narrowPE80Rim from "../images/Exits/narrowPERim (PE8500).png";
-import Series20Rim from "../images/Exits/20 Series Rim (2828).png";
-import Series20SVR from "../images/Exits/20 Series SVR (2727).png";
-import Series30SVR from "../images/Exits/30 Series SVR.png";
-import strikes2828 from "../images/Exits/2828 Strikes.png";
-import strikes3828 from "../images/Exits/strikes3828.png";
+import { Images } from '../images/images'; // Import the Images object
+
 
 
 export const ExitDevices = {
@@ -34,7 +9,7 @@ export const ExitDevices = {
       device: "8300",
 
       title: "(12-)8300 Mortise Exit (04, 10, 15, 40, 43, 44)",
-      image: narrowMortise,
+      image: Images.narrowMortise8300, // Use Images object reference
       functions: "(8304, 8310, 8315, 8340, 8343, 8344)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -54,7 +29,7 @@ export const ExitDevices = {
       device: "8300",
 
       title: "(12-)8300 Mortise Exit (73, 74, 75, 76)",
-      image: narrowMortise,
+      image: Images.narrowMortise8300, // Use Images object reference
       functions: "(8373, 8374, 8375, 8376)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -75,7 +50,7 @@ export const ExitDevices = {
 
       title: "Thumbpeice Trims (04, 10, 28, 63)",
       functions: "(8304, 8310, 8328, 8363)",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
@@ -91,7 +66,7 @@ export const ExitDevices = {
 
       title: "(12-)(NB-)MD8400 (06, 10, 13, 40, 43, 46)",
       functions: "(8406, 8410, 8413, 8440, 8443, 8446)",
-      image: narrowCVR,
+      image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
       text: "View Mounting Template (Metal Door) Doc# 4447-J",
@@ -109,7 +84,7 @@ export const ExitDevices = {
 
       title: "(12-)(NB-)MD8400 (73, 74)",
       functions: "(8473, 8474)",
-      image: narrowCVR,
+      image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
       text: "View Mounting Template (Metal Door) Doc# 4447-J",
@@ -127,7 +102,7 @@ export const ExitDevices = {
 
       title: "(12-)(NB-)AD8400 (06, 10, 13, 40, 43, 46)",
       functions: "(8406, 8410, 8413, 8440, 8443, 8446)",
-      image: narrowCVR,
+      image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
       text: "View Mounting Template (Aluminum Door) Doc# 4312-K",
@@ -145,7 +120,7 @@ export const ExitDevices = {
 
       title: "(12-)(NB-)AD8400 (73, 74)",
       functions: "(8473, 8474)",
-      image: narrowCVR,
+      image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
       text: "View Mounting Template (Aluminum Door) Doc# 4312-K",
@@ -164,7 +139,7 @@ export const ExitDevices = {
       title: "(12-)8500 Rim Exit (04, 10, 40, 44)",
       functions: "(8504, 8510, 8540, 8544)",
       functions1: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
       text: "View 04 Cylinder/Exit Only Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -184,7 +159,7 @@ export const ExitDevices = {
 
       title: "(12-)8500 Rim Exit (06, 13, 15, 43, 46)",
       functions1: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
       text: "View Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -204,7 +179,7 @@ export const ExitDevices = {
 
       title: "(12-)8500 Rim Exit (73, 74)",
       functions1: "(8573, 8574)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
       text: "View Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -224,7 +199,7 @@ export const ExitDevices = {
 
       title: "(12-)(WS-)AD8500 Rim Exit (04, 10, 40, 44)",
       functions: "(8504, 8510, 8540, 8544)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
       text: "View 04 Cylinder/Exit Only Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -244,7 +219,7 @@ export const ExitDevices = {
 
       title: "(12-)(WS-)AD8500 Rim Exit (06, 13, 15, 43, 46)",
       functions: "(8506, 8513, 8515, 8543, 8546, 8573, 8574)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
       text: "View Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -264,7 +239,7 @@ export const ExitDevices = {
 
       title: "(12-)(WS-)AD8500 Rim Exit (73, 74)",
       functions: "(8573, 8574)",
-      image: narrowRim,
+      image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
       text: "View Mounting Template (Aluminum Door) Doc# 4645-E",
@@ -285,7 +260,7 @@ export const ExitDevices = {
       device: "WD8600",
 
       title: "WD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8606, 8610, 8613, 8615, 8640, 8643, 8646)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -306,7 +281,7 @@ export const ExitDevices = {
       device: "WD8600",
 
       title: "WD8600 CVR Exit (73,74)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8673, 8674)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -327,7 +302,7 @@ export const ExitDevices = {
       device: "MD8600",
 
       title: "(12-)MD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8606, 8610, 8613, 8615, 8640, 8643, 8646)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -348,7 +323,7 @@ export const ExitDevices = {
       device: "MD8600",
 
       title: "(12-)MD8600 CVR Exit (73,74)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8673,8674)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -369,7 +344,7 @@ export const ExitDevices = {
       device: "AD8600",
 
       title: "AD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8606, 8610, 8613, 8615, 8640, 8643, 8646)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
@@ -390,7 +365,7 @@ export const ExitDevices = {
       device: "AD8600",
 
       title: "AD8600 CVR Exit (73,74)",
-      image: wideCVR,
+      image: Images.wideCVR,
       functions: "(8673,8674)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
@@ -413,7 +388,7 @@ export const ExitDevices = {
       title: "LP/LR/LS 8600 Template Form",
       functions:
         "LP8606, LR8606, LS8606, LP8610, LR8610, LS8610, LP8613, LR8613, LS8613, LP8615, LR8615, LS8615, LP8640, LR8640, LS8640, LP8643, LR8643, LS8643, LP8646, LR8646, LS8646, LP8673, LR8673, LS8673, LP8674, LR8674, LS8674",
-      image: wideLP8600,
+        image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
       text: "View Template Request Form (Door Manufacturers Only)",
@@ -422,7 +397,7 @@ export const ExitDevices = {
       device: "8700",
 
       title: "8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
-      image: wideSVR,
+      image: Images.wideSVR,
       functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -446,7 +421,7 @@ export const ExitDevices = {
       device: "8700",
 
       title: "12-8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
-      image: wideSVR,
+      image: Images.wideSVR,
       functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -471,8 +446,8 @@ export const ExitDevices = {
 
       title:
         "(12-)(HC, HC4, FM)8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
-      image: wideSVR,
-      functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
+        image: Images.wideSVR,
+        functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
       link: "https://www.sargentlock.com/en/view-pdf?url=https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970&page=1&data=%7B%22account%22%3A%7B%22raw%22%3A%5B%22Shared+%3E+Marketing+%3E+US+%3E+Sargent%22%2C%22Shared+%3E+Marketing+%3E+US%22%2C%22Shared+%3E+Marketing%22%2C%22Shared%22%5D%7D%2C%22asset_type%22%3A%7B%22raw%22%3A%22Document%22%7D%2C%22asset_sub_type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22title%22%3A%7B%22raw%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-8700%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%2C%22snippet%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-%3Cem%3E8700%3C%2Fem%3E%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%7D%2C%22body_content%22%3A%7B%22raw%22%3A%2213%2F32%5C%22%5Cn1+19%2F32%5C%22%5Cn1+3%2F8%5C%22%5Cn2+63%2F64%5C%22%5Cn15%2F16%5C%22%5Cn1+17%2F32%5C%22%5Cn5+25%2F32%5C%22%5Cn1+1%2F2%5C%22%5Cn1+1%2F4%5C%22%5Cn6+11%2F16%5C%22%5CnCUT-OUT+1%5Cn3%2F8%5C%22+TOP+MOUNTING%5CnHOLE+FOR+ET+TRIM%5CnIF+USED%5CnWIDER%2C+VERTICAL+C%5CnL+IS+2+3%2F4%5C%22+FROM%5CnCENTER+OF+BEVEL%22%2C%22snippet%22%3A%2213%2F32%26quot%3B%5Cn1+19%2F32%26quot%3B%5Cn1+3%2F8%26quot%3B%5Cn2+63%2F64%26quot%3B%5Cn15%2F16%26quot%3B%5Cn1+17%2F32%26quot%3B%5Cn5+25%2F32%26quot%3B%5Cn1+1%2F2%26quot%3B%5Cn1+1%2F4%26quot%3B%5Cn6+11%2F16%26quot%3B%5CnCUT-OUT+1%5Cn3%2F8%26quot%3B+TOP%22%7D%2C%22image%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fik.imagekit.io%2Ftwr9df4sfpl%2Fdam%2Fdam%2FAADSS1055970-web%22%7D%2C%22url%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970%22%7D%2C%22discontinued%22%3A%7B%22raw%22%3A%5B%22All%22%2C%22No%22%5D%7D%2C%22tags_pim%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22title_dam%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22extension%22%3A%7B%22raw%22%3A%22application%2Fpdf%22%7D%2C%22type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22document_profile%22%3A%7B%22raw%22%3A%22PIMAsset%22%7D%2C%22pim_path_id%22%3A%7B%22raw%22%3A%224462%22%2C%22snippet%22%3A%224462%22%7D%2C%22product_brand%22%3A%7B%22raw%22%3A%5B%22SARGENT%22%5D%7D%2C%22product_category%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22product_type%22%3A%7B%22raw%22%3A%5B%22Exit+Devices%22%5D%7D%2C%22product_subtype%22%3A%7B%22raw%22%3A%22Push+Pad%22%7D%2C%22product_series%22%3A%7B%22raw%22%3A%5B%2280+Series%22%5D%7D%2C%22author%22%3A%7B%22raw%22%3A%22kparadis%22%7D%2C%22revision%22%3A%7B%22raw%22%3A%221%22%7D%2C%22created_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22updated_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22brand_document_revision%22%3A%7B%22raw%22%3A%2204%2F2017%22%7D%2C%22processed_at%22%3A%7B%22raw%22%3A%222024-08-09T16%3A16%3A41-04%3A00%22%7D%2C%22exclude_from_aem_search%22%3A%7B%22raw%22%3A%5B%22All%22%5D%7D%2C%22country%22%3A%7B%22raw%22%3A%22United+States%3BCanada%22%7D%2C%22language%22%3A%7B%22raw%22%3A%22English%22%7D%2C%22sort_order%22%3A%7B%22raw%22%3A%2200000%22%7D%2C%22id%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22_meta%22%3A%7B%22id%22%3A%22AADSS1055970%22%2C%22engine%22%3A%22americas-marketing-dam%22%2C%22score%22%3A20.71886%7D%7D",
       text: "View (12-)(HC, HC4, FM)8700 Mounting Template (Any Door) Doc# 4462-G",
@@ -493,7 +468,7 @@ export const ExitDevices = {
 
       title: "Thumbpeice Trims (10, 28, 62, 63)",
       functions: "(8710, 8728, 8762, 8763)",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW Trim Template (810, 828, 866) Doc# 4257-D",
@@ -509,7 +484,7 @@ export const ExitDevices = {
 
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
       functions: "(8706, 8713, 8715, 8743, 8746)",
-      image: wideNBSVR,
+      image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
       text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
@@ -530,7 +505,7 @@ export const ExitDevices = {
 
       title: "(12-)NB-8700 (10, 40)",
       functions: "(8710, 8740)",
-      image: wideNBSVR,
+      image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
       text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
@@ -551,7 +526,7 @@ export const ExitDevices = {
 
       title: "(12-)NB-8700 (73, 74)",
       functions: "(8773, 8774)",
-      image: wideNBSVR,
+      image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
       text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
@@ -571,7 +546,7 @@ export const ExitDevices = {
       device: "8800",
 
       title: "(12-)(WS-)8800 (04, 10, 40, 44)",
-      image: wideStileRim,
+      image: Images.wideStileRim,
       functions: "(8806, 8813, 8815, 8843, 8846)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -595,7 +570,7 @@ export const ExitDevices = {
       device: "8800",
 
       title: "(12-)(WS-)8800 (06, 13, 15, 43, 46)",
-      image: wideStileRim,
+      image: Images.wideStileRim,
       functions: "(8806, 8813, 8815, 8843, 8846)",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -617,7 +592,7 @@ export const ExitDevices = {
       device: "8800",
 
       title: "(12-)(WS-)8800 (73, 74, 75, 76)",
-      image: wideStileRim,
+      image: Images.wideStileRim,
       functions: "8873, 8874, 8875, 8876",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -640,7 +615,7 @@ export const ExitDevices = {
 
       title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
       functions: "8804, 8810, 8828, 8863, 8866",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       warning:
         'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
@@ -661,7 +636,7 @@ export const ExitDevices = {
       device: "8900",
 
       title: "(12-)(WS-)8900 (04, 06, 10, 13, 15, 16, 40, 44)",
-      image: wideMortise,
+      image: Images.wideMortise,
       functions: "8904, 8906, 8910, 8913, 8915, 8916, 8940, 8944",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -683,7 +658,7 @@ export const ExitDevices = {
       device: "8900",
 
       title: "(12-)(WS-)8900 (73, 74, 75, 76)",
-      image: wideMortise,
+      image: Images.wideMortise,
       functions: "8973, 8974, 8975, 8976",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -706,7 +681,7 @@ export const ExitDevices = {
 
       title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
       functions: "(8904, 8910, 8928, 8963, 8966)",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
@@ -725,7 +700,7 @@ export const ExitDevices = {
       title: "(12-)PE8300 Narrow Mortise Exit (All Functions)",
       functions:
         "PE8304, PE8306, PE8310, PE8313, PE8315, PE8316, PE8340, PE8343, PE8344, PE8346, PE8373, PE8374, PE8375, PE8376",
-      image: narrowPE80Mortise,
+      image: Images.narrowPE80Mortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238416",
       text: "View Wood Door Mounting Template Doc# MEDT46",
@@ -748,7 +723,7 @@ export const ExitDevices = {
       title: "(12-) PE8400 CVR Exit",
       functions:
         "PE8406, PE8410, PE8413, PE8415, PE8440, PE8443, PE8446, PE8473, PE8474",
-      image: narrowPE80CVR,
+      image: Images.narrowPE80CVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
       text: "View Wood Door Mounting Template Doc# MEDT33",
@@ -770,7 +745,7 @@ export const ExitDevices = {
 
       title: "(12-)PE8500 Narrow Rim Exit (04, 10, 40, 44 Functions)",
       functions: "PE8504, PE8510, PE8540, PE8544",
-      image: narrowPE80Rim,
+      image: Images.narrowPE80Rim,
 
       warning:
         "NOTE: For 10 Function Just OMIT Cylinder hole from 2nd Template",
@@ -788,7 +763,7 @@ export const ExitDevices = {
       title:
         "(12-)PE8500 Narrow Rim Exit (06, 13, 15, 43, 46, 73, 74 Functions)",
       functions: "PE8506, PE8513, PE8515, PE8543, PE8546, PE8573, PE8574",
-      image: narrowPE80Rim,
+      image: Images.narrowPE80Rim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238392",
       text: "View Inside Mounting Template Doc# MEDT22",
@@ -803,7 +778,7 @@ export const ExitDevices = {
       device: "PE8500",
 
       title: "Strikes",
-      image: narrowPE80Rim,
+      image: Images.narrowPE80Rim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
       text: "View 656 Standard Strike Template (Double Door/Mullion) Doc# MEDT74",
@@ -833,7 +808,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit  (Wood Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: widePE80CVR,
+      image: Images.widePE80CVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
       text: "View Mounting Template (Wood Door) Doc# MEDT33",
@@ -854,7 +829,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit  (Metal Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: widePE80CVR,
+      image: Images.widePE80CVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
       text: "View Mounting Template (Metal Door) Doc# MEDT4",
@@ -875,7 +850,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit (Aluminum Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-      image: widePE80CVR,
+      image: Images.widePE80CVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238377",
       text: "View Mounting Template (Aluminum Door) Doc# MEDT4",
@@ -898,7 +873,7 @@ export const ExitDevices = {
       title: "(12-) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-      image: widePE80SVR,
+      image: Images.widePE80SVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238386",
       text: "View Mounting Template Doc# MEDT12",
@@ -919,7 +894,7 @@ export const ExitDevices = {
       title: "(12-)(HC)(FM) NB-PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-      image: widePE80SVR,
+      image: Images.widePE80SVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238388",
       text: "View Mountting Template Doc# MEDT14",
@@ -941,7 +916,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims (10, 28, 62, 63)",
       functions: "PE8710, PE8728, PE8762, PE8763",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       warning:
         'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
@@ -960,7 +935,7 @@ export const ExitDevices = {
       title: "(12-) NB-PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-      image: widePENBSVR,
+      image: Images.widePENBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
       text: "View Mounting Template Doc# MEDT13",
@@ -980,7 +955,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims (10, 28, 62, 63)",
       functions: "PE8710, PE8728, PE8762, PE8763",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       warning:
         'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
@@ -998,7 +973,7 @@ export const ExitDevices = {
 
       title: "(12-) PE8800 Rim Exit (04, 10, 40, 44)",
       functions: "PE8804, PE8810, PE8840, PE8844",
-      image: widePERim,
+      image: Images.widePERim,
 
       warning:
         "For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ",
@@ -1015,7 +990,7 @@ export const ExitDevices = {
       title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
       functions:
         "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876",
-      image: widePERim,
+        image: Images.widePERim,
 
       warning: "ET with Cross Spindle + Electrified Trims ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
@@ -1030,7 +1005,7 @@ export const ExitDevices = {
 
       title: "(12-)(HC-)(WS-) PE8800 Rim Exit (16, 28, 63, 66)",
       functions: "PE8816, PE8828, PE8863, PE8866",
-      image: widePERim,
+      image: Images.widePERim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238413",
       text: "View Mounting Template (16, 28, 63, 66 Bell Housing) Doc# MEDT43",
@@ -1042,7 +1017,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims",
       functions: "PE8804, PE8810, PE8828, PE8863, PE8866",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
       text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
@@ -1057,7 +1032,7 @@ export const ExitDevices = {
       device: 'PE8800',
 
       title: 'Strikes',
-      image: widePERim,
+      image: Images.widePERim,
 
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
       text3: "View 649 Standard Strike Template Doc# MEDT38",
@@ -1078,7 +1053,7 @@ export const ExitDevices = {
 
       title: '(12-)(WS-) PE8900 Mortise Exit',
       functions: '',
-      image: widePEMortise,
+      image: Images.widePEMortise,
 
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
       text: 'View Mounting Template Doc# MEDT42',
@@ -1096,7 +1071,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims",
       functions: "PE8904, PE8910, PE8928, PE8963, PE8966",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
       text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
@@ -1114,7 +1089,7 @@ export const ExitDevices = {
 
       title: "(12-) 9400 (04, 10)",
       functions: "9404, 9410",
-      image: narrowCVR9400,
+      image: Images.narrowCVR9400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055977",
       text: "View Bracket Mounting Template (Metal Doors) Doc# 4579",
@@ -1130,7 +1105,7 @@ export const ExitDevices = {
 
       title: "12-9700 SVR Exit (All Functions)",
       functions: "(9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774)",
-      image: crossWideSVR,
+      image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055982",
       text: "View Mounting Template Doc# 4046-L",
@@ -1155,7 +1130,7 @@ export const ExitDevices = {
 
       title: "(13-)(14-)(16-)9700 SVR Exit (All Functions)",
       functions: "(9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774)",
-      image: crossWideSVR,
+      image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055981",
       text: "View Mounting Template Doc# 4010-J",
@@ -1180,7 +1155,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims (10, 28, 63)",
       functions: "9710, 9728, 9763",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
       text: "View MAL Trim Template (810, 828, 866) Doc# 4024-L",
@@ -1196,7 +1171,7 @@ export const ExitDevices = {
 
       title: "(12-)9800 Wide Rim Exit",
       functions: "(ALL Functions)",
-      image: crossWideRim,
+      image: Images.crossWideRim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055984",
       text: "View Mounting Template Doc# 4207-J",
@@ -1218,7 +1193,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions: "9804, 9810, 9828, 9863",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
       text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
@@ -1235,7 +1210,7 @@ export const ExitDevices = {
 
       title: "(12-)9900 Wide Mortise Exit",
       functions: "(ALL Functions)",
-      image: crossWideMortise,
+      image: Images.crossWideMortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055990",
       text: "View Mounting Template Doc# 4011-G",
@@ -1257,7 +1232,7 @@ export const ExitDevices = {
 
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions: "9904, 9910, 9928, 9963",
-      image: thumbpieceTrims,
+      image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
       text: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
@@ -1275,7 +1250,7 @@ export const ExitDevices = {
 
       title: "(12-) 2727 SVR Exit",
       functions: "2727",
-      image: Series20SVR,
+      image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
       text: "View Mounting Template with Knob or Lever Trim Doc# 4301-G",
@@ -1289,7 +1264,7 @@ export const ExitDevices = {
 
       title: "(12-)2828 Rim Exit",
       functions: "2828",
-      image: Series20Rim,
+      image: Images.Exit2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056003",
       text: "View Mounting Template with HTB or GTB pull Doc# 4302-D",
@@ -1303,7 +1278,7 @@ export const ExitDevices = {
 
       title: "Strikes",
       functions: "2828",
-      image: strikes2828,
+      image: Images.strikes2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text: "View 649 Standard Strike Template Doc# 4004-K",
@@ -1320,7 +1295,7 @@ export const ExitDevices = {
       device: "3727",
 
       title: "3727",
-      image: Series30SVR,
+      image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
       text: "View Mounting Template with Knob or Lever Trim Doc# 4301-G",
@@ -1336,7 +1311,7 @@ export const ExitDevices = {
 
       title: "(12-)3828",
       functions: "3828",
-      image: Series30SVR,
+      image: Images.Exit3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056004",
       text: "View Mounting Template with HTB/GTB Trim Doc# 4287-E",
@@ -1350,7 +1325,7 @@ export const ExitDevices = {
 
       title: "Strikes",
       functions: "3838",
-      image: strikes3828,
+      image: Images.strikes3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text: "View 649 Standard Strike Template Doc# 4004-K",

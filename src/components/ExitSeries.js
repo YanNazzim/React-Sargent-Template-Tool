@@ -43,11 +43,11 @@ function ExitSeries() {
                     90 Series
                 </button>
                 <button className="btn" onClick={handleButtonClick30Series}>
-                    <img src={Images.Series30Rim} alt="30 Series Devices" className="btn-image" />
+                    <img src={Images.Exit3828} alt="30 Series Devices" className="btn-image" />
                     30 Series
                 </button>
                 <button className="btn" onClick={handleButtonClick20Series}>
-                    <img src={Images.Series20Rim} alt="20 Series Devices" className="btn-image" />
+                    <img src={Images.Exit2828} alt="20 Series Devices" className="btn-image" />
                     20 Series
                 </button>
             </div>

@@ -16,16 +16,15 @@ function MortiseTypes() {
   if (series === "8200") {
     standardDeviceImage = Images.Mortise8200;
     electrifiedDeviceImage = Images.MortiseElectrified8200;
-    indicatorDeviceImage = Images.Mortise8200Indicator;
+    indicatorDeviceImage = Images.MortiseIndicator8200;
   } else if (series === "9200") {
     standardDeviceImage = Images.Mortise9200;
     electrifiedDeviceImage = Images.Mortise9200;
-    indicatorDeviceImage = Images.Mortise8200Indicator;
   } else if (series === "M9200") {
     standardDeviceImage = Images.MortiseM9200;
   } else if (series === "7800") {
-    standardDeviceImage = Images.MortiseLock7800;
-    indicatorDeviceImage = Images.Mortise8200Indicator;
+    standardDeviceImage = Images.Mortise7800;
+    indicatorDeviceImage = Images.MortiseIndicator8200;
   }
 
   // Handle button clicks for each series and type
@@ -80,7 +79,7 @@ function MortiseTypes() {
       {series !== "M9200" && (
         <button className="btn" onClick={() => handleButtonClick(series, "Behavioral Health")}>
           <img
-            src={Images.BHW8200}
+            src={Images.Mortise8200BHW}
             alt="BHW Mortise Device"
             className="btn-image"
           />

@@ -31,7 +31,7 @@ function MortiseSeries() {
                 </button>
                 {/* Button for 7800 series */}
                 <button className="btn" onClick={() => handleButtonClick('7800')}>
-                    <img className="btn-image" src={Images.MortiseLock7800} alt="Mortise Lock"/>
+                    <img className="btn-image" src={Images.Mortise7800} alt="Mortise Lock"/>
                     7800
                 </button>
             </div>

@@ -37,10 +37,10 @@
 
 /* Image styling */
 .btn-image {
-  max-width: 40%; /* Ensure images are responsive */
+  max-width: 150px; /* Ensure images are responsive */
   height: auto;
   margin-bottom: 10px;
-  border-radius: 35px;
+  border-radius: 25px;
 }
 
 /* Button hover effect */

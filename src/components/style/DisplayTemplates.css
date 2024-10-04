@@ -78,7 +78,7 @@
 }
 
 .template-card a:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: #1565c0;
     border: solid black 3px;
 }

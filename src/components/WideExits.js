@@ -34,13 +34,13 @@ const widePE80Devices = [
 ];
 
 const Series20Devices = [
-  { id: "2727", name: "2727 SVR Exit", img: Images.Series20SVR },
-  { id: "2828", name: "2828 Rim Exit", img: Images.Series20Rim },
+  { id: "2727", name: "2727 SVR Exit", img: Images.Exit2727 },
+  { id: "2828", name: "2828 Rim Exit", img: Images.Exit2828 },
 ];
 
 const Series30Devices = [
-  { id: "3727", name: "3727/NB-3727 SVR Exit", img: Images.Series30SVR },
-  { id: "3828", name: "3828 Rim Exit", img: Images.Series30Rim },
+  { id: "3727", name: "3727/NB-3727 SVR Exit", img: Images.Exit2727 },
+  { id: "3828", name: "3828 Rim Exit", img: Images.Exit2828 },
 ];
 
 function WideExits() {

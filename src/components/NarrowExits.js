@@ -8,7 +8,7 @@ import { Images } from '../images/images'
 
 // Define Narrow80, Narrow90, and PE80 devices
 const narrow80Devices = [
-  { id: "8300", name: "8300 N Mortise Exit", img: Images.narrowMortise8800 }, // Updated to match correct Images key
+  { id: "8300", name: "8300 N Mortise Exit", img: Images.narrowMortise8300 }, // Updated to match correct Images key
   { id: "MD8400", name: "MD8400 N CVR Exit", img: Images.narrowCVR9400 }, // Updated to match correct Images key
   { id: "AD8400", name: "AD8400 N CVR Exit", img: Images.narrowCVR9400 }, // Same image as MD8400
   { id: "8500", name: "8500 N Rim Exit", img: Images.narrowRimExit8500 }, // Updated to match correct Images key
