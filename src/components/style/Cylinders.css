@@ -1,0 +1,73 @@
+.cylinder-info {
+    text-align: center;
+  }
+
+  .ToolTip {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .cylinder-info h1 {
+    background-color: #1565c0;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    margin: auto; /* Center align */
+    font-size: 3rem; /* Use rem for scalability */
+    max-width: 90%; /* Limit the width */
+  }
+  
+  .cylinder-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cylinder-card {
+    background-color: #1565c0;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 275px;
+  }
+  
+  .cylinder-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  .cylinder-card h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .cylinder-card p {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  @media screen and (max-width: 444px) {
+    .cylinder-card, .cylinder-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .cylinder-card, .cylinder-cards {
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .cylinder-card, .cylinder-cards {
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  

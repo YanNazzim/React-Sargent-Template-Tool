@@ -1,4 +1,5 @@
 import React from 'react';
+import './style/Cylinders.css';
 import { useParams } from 'react-router-dom';
 import { CylindersData } from '../data/CylindersData'; // This is your data file for cylinder details
 
@@ -14,9 +15,27 @@ function CylindersInfo() {
 
   return (
     <div className="cylinder-info">
+      {/* Title for the cylinder type */}
       <h1>{cylinderDetails.title}</h1>
-      <img src={cylinderDetails.image} alt={cylinderDetails.title} />
-      <p>{cylinderDetails.description}</p>
+      <h2 className='ToolTip' dangerouslySetInnerHTML={{ __html: cylinderDetails.tooltip }} />
+
+      {/* Iterate over sections and render each in its own card */}
+      <div className="cylinder-cards">
+        {cylinderDetails.sections.map((section, index) => (
+          <div key={index} className="cylinder-card">
+            {/* Heading for the section */}
+            <h2>{section.heading}</h2>
+
+            {/* Image for the section */}
+            <img src={section.image} alt={section.heading} />
+
+            {/* Texts for the section */}
+            {section.texts.map((text, textIndex) => (
+              <p key={textIndex}>{text}</p>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
