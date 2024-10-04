@@ -14,9 +14,9 @@
     "web-vitals": "^2.1.4"
   },
 "scripts": {
-  "start": "cross-env NODE_ENV=development react-scripts start",
-  "build": "cross-env NODE_ENV=production react-scripts build",
-  "test": "cross-env NODE_ENV=test react-scripts test"
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test"
 },
 
   "eslintConfig": {
@@ -36,9 +36,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
   }
+
 
 }
