@@ -1,20 +1,21 @@
 /* Device Images */
-import Mortise7800 from "../images/MortiseLock7800.png";
-import Mortise8200 from "../images/Mortise Lock.png";
-import Mortise8200Electric from "../images/MortiseElectrified8200.png";
-import Roseless from "../images/MortiseRoselessTrim.png";
-import Mortise9200 from "../images/MortiseLock9200.png";
-import IndicatorSA190 from "../images/MortiseIndicatorSA190.png";
-import IndicatorVN1 from "../images/MortiseIndicatorVN1.png";
-import Strike9200 from "../images/Strikes 9200.png";
-import Strike8200 from "../images/Strike 8200 7800.png";
-import BHW8200 from "../images/Mortise8200BHW.png";
-import BHL8200 from "../images/BHL8200.png";
-import ALP8200 from "../images/ALP8200.png";
-import BHD9200 from "../images/BHD9200.png";
-import PT7800 from "../images/PT7800.png";
-import M9200 from "../images/MortiseM9200.png";
-import Esc9200 from "../images/MortiseEscutch9200.png";
+import Mortise7800 from "../images/Mortise/MortiseLock7800.png";
+import Mortise8200 from "../images/Mortise/Mortise Lock.png";
+import Mortise8200Electric from "../images/Mortise/MortiseElectrified8200.png";
+import Roseless from "../images/Mortise/MortiseRoselessTrim.png";
+import Mortise9200 from "../images/Mortise/MortiseLock9200.png";
+import IndicatorSA190 from "../images/Mortise/MortiseIndicatorSA190.png";
+import IndicatorVN1 from "../images/Mortise/MortiseIndicatorVN1.png";
+import Strike9200 from "../images/Mortise/Strikes 9200.png";
+import Strike8200 from "../images/Mortise/Strike 8200 7800.png";
+import BHW8200 from "../images/Mortise/Mortise8200BHW.png";
+import BHL8200 from "../images/Mortise/BHL8200.png";
+import ALP8200 from "../images/Mortise/ALP8200.png";
+import BHD9200 from "../images/Mortise/BHD9200.png";
+import PT7800 from "../images/Mortise/PT7800.png";
+import M9200 from "../images/Mortise/MortiseM9200.png";
+import Esc9200 from "../images/Mortise/MortiseEscutch9200.png";
+
 
 export const MortiseLocks = {
   8200: [

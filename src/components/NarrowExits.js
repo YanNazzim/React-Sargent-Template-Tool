@@ -3,31 +3,26 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
 
 // Device images
-import narrowMortise from "../images/NarrowMortiseExit (8300).png";
-import narrowCVR from "../images/NarrowCVR.png";
-import narrowRim from "../images/Narrow Rim Exit (8500).png";
-import narrowCVR9400 from "../images/narrowCVR 9400.png";
-import narrowPE80Mortise from "../images/narrowPE80Mortise.png";
-import narrowPECVR from "../images/narrowPECVR.png";
-import narrowPERim from "../images/narrowPERim (PE8500).png";
+import { Images } from '../images/images'
+
 
 // Define Narrow80, Narrow90, and PE80 devices
 const narrow80Devices = [
-  { id: "8300", name: "8300 N Mortise Exit", img: narrowMortise },
-  { id: "MD8400", name: "MD8400 N CVR Exit", img: narrowCVR },
-  { id: "AD8400", name: "AD8400 N CVR Exit", img: narrowCVR },
-  { id: "8500", name: "8500 N Rim Exit", img: narrowRim },
-  { id: "AD8500", name: "AD8500 N Rim Exit", img: narrowRim },
+  { id: "8300", name: "8300 N Mortise Exit", img: Images.narrowMortise8800 }, // Updated to match correct Images key
+  { id: "MD8400", name: "MD8400 N CVR Exit", img: Images.narrowCVR9400 }, // Updated to match correct Images key
+  { id: "AD8400", name: "AD8400 N CVR Exit", img: Images.narrowCVR9400 }, // Same image as MD8400
+  { id: "8500", name: "8500 N Rim Exit", img: Images.narrowRimExit8500 }, // Updated to match correct Images key
+  { id: "AD8500", name: "AD8500 N Rim Exit", img: Images.narrowRimExit8500 }, // Same image as 8500
 ];
 
 const narrowPE80Devices = [
-  { id: "PE8300", name: "PE8300 Narrow Mortise Exit", img: narrowPE80Mortise },
-  { id: "PE8400", name: "PE8400 Narrow CVR Exit", img: narrowPECVR },
-  { id: "PE8500", name: "PE8500 Narrow Mortise Exit", img: narrowPERim },
+  { id: "PE8300", name: "PE8300 Narrow Mortise Exit", img: Images.narrowPE80Mortise }, // Correct key
+  { id: "PE8400", name: "PE8400 Narrow CVR Exit", img: Images.narrowPECVR }, // Correct key
+  { id: "PE8500", name: "PE8500 Narrow Rim Exit", img: Images.narrowPE8500 }, // Correct key
 ];
 
 const narrow90Devices = [
-  { id: "9400", name: "9400 N CVR Exit", img: narrowCVR9400 },
+  { id: "9400", name: "9400 N CVR Exit", img: Images.narrowCVR9400 }, // Correct key
 ];
 
 function NarrowExits() {

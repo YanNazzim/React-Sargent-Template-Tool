@@ -1,16 +1,7 @@
-/* eslint-disable no-use-before-define */
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
-
-/* Mortise Images */
-import Mortise8200 from "../images/MortiseLock.png";
-import MortiseElectrified8200 from "../images/MortiseElectrified8200.png";
-import Mortise8200Indicator from '../images/Mortise8200Indicator.png';
-import Mortise9200 from "../images/MortiseLock9200.png";
-import MortiseLock7800 from "../images/MortiseLock7800.png";
-import BHW8200 from '../images/Mortise8200BHW.png';
-import M9200 from '../images/MortiseM9200.png'
+import { Images } from "../images/images"; // Import Images object
 
 function MortiseTypes() {
   const navigate = useNavigate();
@@ -23,19 +14,18 @@ function MortiseTypes() {
 
   // Select images based on the series
   if (series === "8200") {
-    standardDeviceImage = Mortise8200;
-    electrifiedDeviceImage = MortiseElectrified8200;
-    indicatorDeviceImage = Mortise8200Indicator;
+    standardDeviceImage = Images.Mortise8200;
+    electrifiedDeviceImage = Images.MortiseElectrified8200;
+    indicatorDeviceImage = Images.Mortise8200Indicator;
   } else if (series === "9200") {
-    standardDeviceImage = Mortise9200;
-    electrifiedDeviceImage = Mortise9200;
-    indicatorDeviceImage = Mortise8200Indicator;
-  } else if (series ==="M9200") {
-    standardDeviceImage = M9200;
-
-  }else if (series === "7800") {
-    standardDeviceImage = MortiseLock7800;
-    indicatorDeviceImage = Mortise8200Indicator;
+    standardDeviceImage = Images.Mortise9200;
+    electrifiedDeviceImage = Images.Mortise9200;
+    indicatorDeviceImage = Images.Mortise8200Indicator;
+  } else if (series === "M9200") {
+    standardDeviceImage = Images.MortiseM9200;
+  } else if (series === "7800") {
+    standardDeviceImage = Images.MortiseLock7800;
+    indicatorDeviceImage = Images.Mortise8200Indicator;
   }
 
   // Handle button clicks for each series and type
@@ -63,7 +53,7 @@ function MortiseTypes() {
       </button>
 
       {/* Button for Electrified series */}
-      {series !== "7800" && series !=="M9200" && (
+      {series !== "7800" && series !== "M9200" && (
         <button className="btn" onClick={() => handleButtonClick(series, "Electrified")}>
           <img
             src={electrifiedDeviceImage}
@@ -90,7 +80,7 @@ function MortiseTypes() {
       {series !== "M9200" && (
         <button className="btn" onClick={() => handleButtonClick(series, "Behavioral Health")}>
           <img
-            src={BHW8200}
+            src={Images.BHW8200}
             alt="BHW Mortise Device"
             className="btn-image"
           />

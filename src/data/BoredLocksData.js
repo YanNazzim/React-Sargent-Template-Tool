@@ -1,11 +1,12 @@
-import Bored11 from "../images/Bored 11 Line.png";
-import Bored10 from "../images/Bored 10x Line.png";
-import Bored8X from "../images/Bored 8x Line.png";
-import Bored7Line from "../images/Bored 7 Line.png";
-import Bored6500 from "../images/Bored 6500 Series.png";
-import Bored6Line from "../images/Bored 6 Line.png";
-import BoredDL from "../images/Bored DL Series.png";
-import BHW10X from '../images/BHW10X.png'
+import Bored11 from "../images/Bored/Bored 11 Line.png";
+import Bored10 from "../images/Bored/Bored 10x Line.png";
+import Bored8X from "../images/Bored/Bored 8x Line.png";
+import Bored7Line from "../images/Bored/Bored 7 Line.png";
+import Bored6500 from "../images/Bored/Bored 6500 Series.png";
+import Bored6Line from "../images/Bored/Bored 6 Line.png";
+import BoredDL from "../images/Bored/Bored DL Series.png";
+import BHW10X from "../images/Bored/BHW10X.png";
+
 
 export const BoredLocks = {
   "11 Line": [

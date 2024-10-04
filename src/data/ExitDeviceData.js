@@ -1,31 +1,32 @@
 // ExitDeviceData.js
-import wideCVR from "../images/WideCVR.png";
-import wideStileRim from "../images/Wide Rim Exit (8800).png";
-import wideSVR from "../images/WideSVR.png";
-import wideNBSVR from "../images/WideNBSVR.png";
-import wideMortise from "../images/WideMortise.png";
-import wideLP8600 from "../images/LP8600 CVR Mortise.png";
-import crossWideRim from "../images/crossWideRim.png";
-import crossWideSVR from "../images/crossWideSVR.png";
-import crossWideMortise from "../images/crossWideMortise.png";
-import widePE80CVR from "../images/widePECVR.png";
-import widePE80SVR from "../images/widePESVR.png";
-import widePENBSVR from "../images/widePENBSVR.png";
-import widePERim from "../images/PE80 Wide Rim Exit.png";
-import widePEMortise from '../images/widePE80Mortise.png'
-import narrowMortise from "../images/NarrowMortiseExit (8300).png";
-import narrowCVR from "../images/NarrowCVR.png";
-import narrowRim from "../images/Narrow Rim Exit (8500).png";
-import narrowCVR9400 from "../images/narrowCVR 9400.png";
-import thumbpieceTrims from "../images/thumbpieceTrims1.png";
-import narrowPE80Mortise from "../images/narrowPE80Mortise.png";
-import narrowPE80CVR from "../images/narrowPECVR.png";
-import narrowPE80Rim from "../images/narrowPERim (PE8500).png";
-import Series20Rim from "../images/20 Series Rim (2828).png";
-import Series20SVR from "../images/20 Series SVR (2727).png";
-import Series30SVR from "../images/30 Series SVR.png";
-import strikes2828 from "../images/2828 Strikes.png";
-import strikes3828 from "../images/strikes3828.png";
+import wideCVR from "../images/Exits/WideCVR.png";
+import wideStileRim from "../images/Exits/Wide Rim Exit (8800).png";
+import wideSVR from "../images/Exits/WideSVR.png";
+import wideNBSVR from "../images/Exits/WideNBSVR.png";
+import wideMortise from "../images/Exits/WideMortise.png";
+import wideLP8600 from "../images/Exits/LP8600 CVR Mortise.png";
+import crossWideRim from "../images/Exits/crossWideRim.png";
+import crossWideSVR from "../images/Exits/crossWideSVR.png";
+import crossWideMortise from "../images/Exits/crossWideMortise.png";
+import widePE80CVR from "../images/Exits/widePECVR.png";
+import widePE80SVR from "../images/Exits/widePESVR.png";
+import widePENBSVR from "../images/Exits/widePENBSVR.png";
+import widePERim from "../images/Exits/PE80 Wide Rim Exit.png";
+import widePEMortise from "../images/Exits/widePE80Mortise.png";
+import narrowMortise from "../images/Exits/NarrowMortiseExit (8300).png";
+import narrowCVR from "../images/Exits/NarrowCVR.png";
+import narrowRim from "../images/Exits/Narrow Rim Exit (8500).png";
+import narrowCVR9400 from "../images/Exits/narrowCVR 9400.png";
+import thumbpieceTrims from "../images/Exits/thumbpieceTrims1.png";
+import narrowPE80Mortise from "../images/Exits/narrowPE80Mortise.png";
+import narrowPE80CVR from "../images/Exits/narrowPECVR.png";
+import narrowPE80Rim from "../images/Exits/narrowPERim (PE8500).png";
+import Series20Rim from "../images/Exits/20 Series Rim (2828).png";
+import Series20SVR from "../images/Exits/20 Series SVR (2727).png";
+import Series30SVR from "../images/Exits/30 Series SVR.png";
+import strikes2828 from "../images/Exits/2828 Strikes.png";
+import strikes3828 from "../images/Exits/strikes3828.png";
+
 
 export const ExitDevices = {
   Narrow80: [

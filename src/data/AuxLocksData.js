@@ -1,9 +1,10 @@
 // src/data/AuxLocksData.js
-import SSL1 from "../images/Aux SSL1 Spring Latch.png";
-import DB8200 from '../images/Aux 8200 Deadbolt.png'
-import DB4870 from '../images/Aux 4870 Deadbolt.png'
-import DB480 from '../images/Aux 480 Deadbolt.png'
-import DB460 from '../images/Aux 460 Deadbolt.png'
+import SSL1 from "../images/Aux Locks/Aux SSL1 Spring Latch.png";
+import DB8200 from "../images/Aux Locks/Aux 8200 Deadbolt.png";
+import DB4870 from "../images/Aux Locks/Aux 4870 Deadbolt.png";
+import DB480 from "../images/Aux Locks/Aux 480 Deadbolt.png";
+import DB460 from "../images/Aux Locks/Aux 460 Deadbolt.png";
+
 
 export const AuxLocks = {
   SSL1: [

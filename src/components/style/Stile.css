@@ -22,7 +22,7 @@
   width: 100%; /* Ensure button takes full width of its container */
   max-width: 600px; /* Set a max-width to prevent oversized buttons */
   color: white;
-  margin: 50px;
+  margin: 20px;
   border: solid black 3px;
   border-radius: 15px;
   padding: 20px;
