@@ -20,6 +20,10 @@ function Cylinders() {
         <img src={Images.CylMortise} className="btn-image" alt="Mortise Cylinder" />
         Mortise Cylinders <br />(41, 42, 43, 44, 45, 46, 48, 50, 52, 54, 56)
       </button>
+      <button className="btn" onClick={() => handleCylinderClick('Bored')}>
+        <img src={Images.CylBored} className="btn-image" alt="SFIC Cylinder" />
+        Bored/Aux Cylinders (KIL/KIK)
+      </button>
       <button className="btn" onClick={() => handleCylinderClick('SFIC')}>
         <img src={Images.CylSFIC} className="btn-image" alt="SFIC Cylinder" />
         SFIC (70-)

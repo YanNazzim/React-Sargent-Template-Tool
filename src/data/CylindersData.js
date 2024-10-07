@@ -70,5 +70,19 @@ export const CylindersData = {
       // Additional sections...
     ],
   },
+  Bored: {
+    title: 'KIL/KIK Cylinders',
+    tooltip: 'Right click on pictures to open in new tab<br />Tap & Hold on Mobile',
+    
+    sections: [
+      {
+        heading: 'All Cylinders',
+
+        texts: [
+          ""
+        ]
+      },
+    ],
+  },
   // Other cylinder types...
 };
