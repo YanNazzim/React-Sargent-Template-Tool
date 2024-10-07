@@ -1,167 +1,184 @@
 /* Global Styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color: #aaaaaa;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #aaaaaa;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header and Footer */
-.header, .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #aaaaaa;
-    width: 100%;
-    box-sizing: border-box;
+.header,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #aaaaaa;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Inner container to limit width and keep centered */
-.header-inner, .footer-inner {
-    max-width: 1280px;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
+.header-inner,
+.footer-inner {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-.footer p {
-    font-weight: bolder;
+.footer a {
+  font-weight: bolder;
+  text-align: center;
 }
 
 /* Content Wrapper */
 
-
 /* Style for the image */
 .SargentLogo {
-    height: auto;
-    max-width: 100%;
-    max-height: 175px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, border-radius 0.3s ease, border 0.3s ease; /* Add transition */
+  height: auto;
+  max-width: 100%;
+  max-height: 175px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, border-radius 0.3s ease, border 0.3s ease; /* Add transition */
 }
 
 .SargentLogo:hover {
-    transform: scale(1.05);
-    border-radius: 25px;
-    border: solid black 3px;
+  transform: scale(1.05);
+  border-radius: 25px;
+  border: solid black 3px;
 }
-
 
 /* Buttons */
 .Home {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    background-color: #1565c0;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    width: 100%;
-    max-width: 400px;
-    transition: all 0.3s ease;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #1565c0;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: green;
-    transform: scale(1.05);
+  background-color: green;
+  transform: scale(1.05);
 }
 
 /* Box elements */
 .box {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .box-title {
-    font-size: 1.5rem;
-    margin-top: 10px;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 /* Media Queries */
 
 /* Medium screens */
 @media (max-width: 1440px) {
-    .box-title {
-        font-size: 1.25rem;
-    }
+  .box-title {
+    font-size: 1.25rem;
+  }
 }
 
 /* Smaller screens (1024px or below) */
 @media (max-width: 1024px) {
-    button {
-        font-size: 1.2rem;
-        max-width: 100%; /* Ensure button spans full width */
-    }
+  button {
+    font-size: 1.2rem;
+    max-width: 100%; /* Ensure button spans full width */
+  }
 
-    .box-title {
-        font-size: 1.25rem;
-    }
+  .box-title {
+    font-size: 1.25rem;
+  }
+  .footer {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+  }
 }
 
 /* Mobile screens (768px or below) */
 @media (max-width: 768px) {
-    html, body {
-        width: 100%;
-        overflow-x: hidden; /* Prevent content from being cut off */
-    }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent content from being cut off */
+  }
 
-    .header-inner, .footer-inner {
-        padding: 10px;
-    }
+  .header-inner,
+  .footer-inner {
+    padding: 10px;
+  }
 
-    .box {
-        min-width: 768px;
-        max-width: 1024px; /* Ensure boxes take full width */
-    }
+  .box {
+    min-width: 768px;
+    max-width: 1024px; /* Ensure boxes take full width */
+  }
 
-    .box-title {
-        font-size: 1rem;
-    }
+  .box-title {
+    font-size: 1rem;
+  }
+  .footer {
+    text-align: center;
+  }
 }
 
 @media (max-width: 430px) {
-    html, body {
-        width: 100%;
-        overflow-x: hidden; /* Prevent content from being cut off */
-    }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent content from being cut off */
+  }
 
-    .Home {
-        max-width: 300px;
-    }
+  .Home {
+    max-width: 300px;
+  }
 
-    .header-inner, .footer-inner {
-        padding: 10px;
-    }
+  .header-inner,
+  .footer-inner {
+    padding: 10px;
+  }
 
-    .box {
-        min-width: 430px;
-        max-width: 932px; /* Ensure boxes take full width */
-    }
+  .box {
+    min-width: 430px;
+    max-width: 932px; /* Ensure boxes take full width */
+  }
 
-    .box-title {
-        font-size: 1rem;
-    }
+  .box-title {
+    font-size: 1rem;
+  }
+  .footer {
+    text-align: center;
+  }
 }
