@@ -1,10 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
-import { MortiseLocks } from "../data/MortiseLocksData";  // Import MortiseLocks data
-import { ExitDevices } from "../data/ExitDeviceData";  // Import ExitDevices data
-import { BoredLocks } from "../data/BoredLocksData";   // Import BoredLocks data
-import { AuxLocks } from "../data/AuxLocksData";   // Import AuxLocks data
+import { MortiseLocks } from "../data/MortiseLocksData";
+import { ExitDevices } from "../data/ExitDeviceData";
+import { BoredLocks } from "../data/BoredLocksData";
+import { AuxLocks } from "../data/AuxLocksData";
 
 function DisplayTemplates() {
   const location = useLocation();
@@ -24,36 +24,37 @@ function DisplayTemplates() {
     templates = AuxLocks[series] || [];
   }
 
-  // Filter templates based on type for Mortise Locks, and the id for Exit Devices, Bored Locks, and Auxiliary Locks
-  let filteredTemplates = [];
+  // Filter templates based on type for Mortise Locks, and the id for others
+  const filterByCategory = {
+    "Mortise Locks": template => template.device === type,
+    "Exit Devices": template => template.device === id,
+    "Bored Locks": template => template.device === id,
+    "Auxiliary Locks": template => template.device === id,
+  };
+  const filteredTemplates = templates.filter(filterByCategory[category]);
 
-  if (category === "Mortise Locks") {
-    // Filter by type (Standard, Electrified, or Indicator) for Mortise Locks
-    filteredTemplates = templates.filter(template =>
-      template.device === type
-    );
-  } else if (category === "Exit Devices" || category === "Auxiliary Locks" || category === "Bored Locks") {
-    // Exit Devices, Auxiliary Locks, and Bored Locks do not have the "type" distinction, so filter purely by id
-    filteredTemplates = templates.filter(template => template.device === id);
-  }
-
-  // Determine if "Electrified" or "Standard" or "Indicator" should be shown for Mortise Locks
-  
   // Construct the header label
   const headerLabel = category === "Exit Devices"
-  ? `${category} - ${series} - ${id}` // Show '?' and id for Exit Devices
-  : category === "Bored Locks" || category === "Auxiliary Locks"
-  ? `${category} - ${id}` // Show category and id for Bored Locks
-  : `${category} - ${series} ${type || "Standard"}`; // Display type for Mortise Locks
+    ? `${category} - ${series} - ${id}`
+    : category === "Bored Locks" || category === "Auxiliary Locks"
+    ? `${category} - ${id}`
+    : `${category} - ${series} ${type || "Standard"}`;
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {
-    return <h2 className="NoTemplatesError">Error: No templates available for {series} {type} </h2>;
+    return (
+      <h2 className="no-templates-error">
+        Error: No templates available for {category} {series} {id || type}
+      </h2>
+    );
   }
 
   return (
     <div className="display-templates">
       <h1>{headerLabel}</h1>
+      <h2 className="ToolTip">
+      Click on pictures to open image<br />Tap on Mobile!
+      </h2>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
           <div key={index} className="template-card">
@@ -61,33 +62,26 @@ function DisplayTemplates() {
               src={template.image}
               alt={template.title}
               className="template-image"
+              onClick={() => window.open(template.image, "_blank")}
             />
             <h2>{template.title}</h2>
-
-            {/* Conditionally render the h3 if warning is not empty */}
             {template.warning && <h3>{template.warning}</h3>}
-
-            {/* Primary link */}
             <a href={template.link} target="_blank" rel="noopener noreferrer">
               {template.text}
             </a>
-
-            {/* Render up to 10 additional links dynamically */}
-            {[...Array(10)].map((_, i) => {
-              const linkKey = `link${i + 1}`;  // Generates link1, link2, ... link10
-              const textKey = `text${i + 1}`;  // Generates text1, text2, ... text10
-              return (
-                template[linkKey] && (
-                  <a
-                    key={linkKey}
-                    href={template[linkKey]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {template[textKey]}
-                  </a>
-                )
-              );
+            {Array.from({ length: 10 }, (_, i) => {
+              const linkKey = `link${i + 1}`;
+              const textKey = `text${i + 1}`;
+              return template[linkKey] ? (
+                <a
+                  key={linkKey}
+                  href={template[linkKey]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {template[textKey]}
+                </a>
+              ) : null;
             })}
           </div>
         ))}

@@ -8,6 +8,11 @@
   margin: 0; /* Remove default margin */
 }
 
+.ToolTip {
+  text-align: center;
+  font-size: 2em;
+}
+
 .display-templates h1 {
   background-color: #1565c0;
   border-radius: 25px;
@@ -98,6 +103,15 @@
   font-size: 3vw; /* Responsive font size */
   background-color: #aaaaaa;
   margin: auto;
+}
+
+.image1 {
+  width: 100%; /* Make the image responsive */
+  max-width: 275px; /* Maintain the original max width */
+  height: auto;
+  margin: 0 auto 10px auto; /* Center align */
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
 /* Mobile Queries */

@@ -85,4 +85,5 @@ export const Images = {
   CylSchlageKeyway: require('./Cylinders/CylinderCompetitorKeyway.png'),
   CylMortiseSizes: require('./Cylinders/CylinderMortiseSizes.png'),
   CylBored: require('./Cylinders/CylinderBored.png'),
+  CylAllRegBored: require('./Cylinders/CylinderAllRegularBored.png')
 };

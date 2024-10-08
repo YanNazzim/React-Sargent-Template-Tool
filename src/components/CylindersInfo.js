@@ -1,7 +1,7 @@
-import React from 'react';
-import './style/Cylinders.css';
-import { useParams } from 'react-router-dom';
-import { CylindersData } from '../data/CylindersData'; // This is your data file for cylinder details
+import React from "react";
+import "./style/Cylinders.css";
+import { useParams } from "react-router-dom";
+import { CylindersData } from "../data/CylindersData"; // This is your data file for cylinder details
 
 function CylindersInfo() {
   const { type } = useParams(); // Get the cylinder type from URL params
@@ -17,7 +17,11 @@ function CylindersInfo() {
     <div className="cylinder-info">
       {/* Title for the cylinder type */}
       <h1>{cylinderDetails.title}</h1>
-      <h2 className='ToolTip' dangerouslySetInnerHTML={{ __html: cylinderDetails.tooltip }} />
+      <h2 className="ToolTip">
+        Click on pictures to open image
+        <br />
+        Tap on Mobile!
+      </h2>
 
       {/* Iterate over sections and render each in its own card */}
       <div className="cylinder-cards">
@@ -27,8 +31,9 @@ function CylindersInfo() {
             <h2>{section.heading}</h2>
 
             {/* Image for the section */}
-            <img src={section.image} alt={section.heading} />
-
+            <a href={section.image} target="_blank" rel="noopener noreferrer">
+              <img className="imgs" src={section.image} alt={section.heading} />
+            </a>
             {/* Texts for the section */}
             {section.texts.map((text, textIndex) => (
               <p key={textIndex}>{text}</p>

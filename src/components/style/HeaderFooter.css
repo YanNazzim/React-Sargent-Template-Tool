@@ -42,6 +42,19 @@ body {
 .footer a {
   font-weight: bolder;
   text-align: center;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.footer a:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease;
+  color: blue;
+}
+
+.footer p {
+  font-size: 1.25em;
+  font-weight: bolder;
 }
 
 /* Content Wrapper */

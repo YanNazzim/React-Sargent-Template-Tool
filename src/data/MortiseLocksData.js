@@ -291,7 +291,7 @@ export const MortiseLocks = {
       functions: "8212, 8230, PHR-NAC-82285",
       title: "VN1 Escutcheon Indicator",
       image: Images.MortiseIndicatorVN1,
-      text: "View Mounting Template for SA197 Indicator",
+      text: "View Mounting Template for VN1 Indicator",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1081719",
     },
     {
@@ -300,7 +300,7 @@ export const MortiseLocks = {
 
       title: "7800 W/ PT Trim",
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056049",
       text: "View Mounting Template (Metal & Wood) Doc# 4512",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1: "View PT Trim Template Doc# 7057",

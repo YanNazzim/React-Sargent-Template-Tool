@@ -1,7 +1,5 @@
 // ExitDeviceData.js
-import { Images } from '../images/images'; // Import the Images object
-
-
+import { Images } from "../images/images"; // Import the Images object
 
 export const ExitDevices = {
   Narrow80: [
@@ -388,7 +386,7 @@ export const ExitDevices = {
       title: "LP/LR/LS 8600 Template Form",
       functions:
         "LP8606, LR8606, LS8606, LP8610, LR8610, LS8610, LP8613, LR8613, LS8613, LP8615, LR8615, LS8615, LP8640, LR8640, LS8640, LP8643, LR8643, LS8643, LP8646, LR8646, LS8646, LP8673, LR8673, LS8673, LP8674, LR8674, LS8674",
-        image: Images.LS8600CVRMortise,
+      image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
       text: "View Template Request Form (Door Manufacturers Only)",
@@ -446,8 +444,8 @@ export const ExitDevices = {
 
       title:
         "(12-)(HC, HC4, FM)8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
-        image: Images.wideSVR,
-        functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
+      image: Images.wideSVR,
+      functions: "(8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774)",
 
       link: "https://www.sargentlock.com/en/view-pdf?url=https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970&page=1&data=%7B%22account%22%3A%7B%22raw%22%3A%5B%22Shared+%3E+Marketing+%3E+US+%3E+Sargent%22%2C%22Shared+%3E+Marketing+%3E+US%22%2C%22Shared+%3E+Marketing%22%2C%22Shared%22%5D%7D%2C%22asset_type%22%3A%7B%22raw%22%3A%22Document%22%7D%2C%22asset_sub_type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22title%22%3A%7B%22raw%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-8700%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%2C%22snippet%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-%3Cem%3E8700%3C%2Fem%3E%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%7D%2C%22body_content%22%3A%7B%22raw%22%3A%2213%2F32%5C%22%5Cn1+19%2F32%5C%22%5Cn1+3%2F8%5C%22%5Cn2+63%2F64%5C%22%5Cn15%2F16%5C%22%5Cn1+17%2F32%5C%22%5Cn5+25%2F32%5C%22%5Cn1+1%2F2%5C%22%5Cn1+1%2F4%5C%22%5Cn6+11%2F16%5C%22%5CnCUT-OUT+1%5Cn3%2F8%5C%22+TOP+MOUNTING%5CnHOLE+FOR+ET+TRIM%5CnIF+USED%5CnWIDER%2C+VERTICAL+C%5CnL+IS+2+3%2F4%5C%22+FROM%5CnCENTER+OF+BEVEL%22%2C%22snippet%22%3A%2213%2F32%26quot%3B%5Cn1+19%2F32%26quot%3B%5Cn1+3%2F8%26quot%3B%5Cn2+63%2F64%26quot%3B%5Cn15%2F16%26quot%3B%5Cn1+17%2F32%26quot%3B%5Cn5+25%2F32%26quot%3B%5Cn1+1%2F2%26quot%3B%5Cn1+1%2F4%26quot%3B%5Cn6+11%2F16%26quot%3B%5CnCUT-OUT+1%5Cn3%2F8%26quot%3B+TOP%22%7D%2C%22image%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fik.imagekit.io%2Ftwr9df4sfpl%2Fdam%2Fdam%2FAADSS1055970-web%22%7D%2C%22url%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970%22%7D%2C%22discontinued%22%3A%7B%22raw%22%3A%5B%22All%22%2C%22No%22%5D%7D%2C%22tags_pim%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22title_dam%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22extension%22%3A%7B%22raw%22%3A%22application%2Fpdf%22%7D%2C%22type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22document_profile%22%3A%7B%22raw%22%3A%22PIMAsset%22%7D%2C%22pim_path_id%22%3A%7B%22raw%22%3A%224462%22%2C%22snippet%22%3A%224462%22%7D%2C%22product_brand%22%3A%7B%22raw%22%3A%5B%22SARGENT%22%5D%7D%2C%22product_category%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22product_type%22%3A%7B%22raw%22%3A%5B%22Exit+Devices%22%5D%7D%2C%22product_subtype%22%3A%7B%22raw%22%3A%22Push+Pad%22%7D%2C%22product_series%22%3A%7B%22raw%22%3A%5B%2280+Series%22%5D%7D%2C%22author%22%3A%7B%22raw%22%3A%22kparadis%22%7D%2C%22revision%22%3A%7B%22raw%22%3A%221%22%7D%2C%22created_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22updated_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22brand_document_revision%22%3A%7B%22raw%22%3A%2204%2F2017%22%7D%2C%22processed_at%22%3A%7B%22raw%22%3A%222024-08-09T16%3A16%3A41-04%3A00%22%7D%2C%22exclude_from_aem_search%22%3A%7B%22raw%22%3A%5B%22All%22%5D%7D%2C%22country%22%3A%7B%22raw%22%3A%22United+States%3BCanada%22%7D%2C%22language%22%3A%7B%22raw%22%3A%22English%22%7D%2C%22sort_order%22%3A%7B%22raw%22%3A%2200000%22%7D%2C%22id%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22_meta%22%3A%7B%22id%22%3A%22AADSS1055970%22%2C%22engine%22%3A%22americas-marketing-dam%22%2C%22score%22%3A20.71886%7D%7D",
       text: "View (12-)(HC, HC4, FM)8700 Mounting Template (Any Door) Doc# 4462-G",
@@ -544,28 +542,30 @@ export const ExitDevices = {
     },
     {
       device: "8800",
-
       title: "(12-)(WS-)8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
       functions: "(8806, 8813, 8815, 8843, 8846)",
-
+      
+      warning: (
+        <>
+          ↓ For cylinder only Application ↓ <br />
+          use Mounting Template Hole 2
+        </>
+      ),
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
-      text1: "View Cylinder Only Template Doc# 4307-G",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text2: "View Trim Template (700 ET) Doc# 4277-18",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text3: "View 649 Strike Template (Single Door) Doc# 4004-K",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text4:
-        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text5:
-        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text6: "View Wide EM Raceway Template Doc# 4569-C",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text1: "View Trim Template (700 ET) Doc# 4277-18",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
+      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text3: "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text4: "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
+    
     {
       device: "8800",
 
@@ -618,7 +618,7 @@ export const ExitDevices = {
       image: Images.thumbpieceTrims,
 
       warning:
-        'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
+      'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -627,10 +627,10 @@ export const ExitDevices = {
       text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
       text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055890',
-      text4: 'View PSB/FSW/FSL Trim Template (814) Doc# 4546',
-      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055889',
-      text5: 'View MSL Trim Template (814) Doc# 4545',
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055890",
+      text4: "View PSB/FSW/FSL Trim Template (814) Doc# 4546",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055889",
+      text5: "View MSL Trim Template (814) Doc# 4545",
     },
     {
       device: "8900",
@@ -829,7 +829,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit  (Metal Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-        image: Images.widePECVR,
+      image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
       text: "View Mounting Template (Metal Door) Doc# MEDT4",
@@ -850,7 +850,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 Rim Exit (Aluminum Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674",
-        image: Images.widePECVR,
+      image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238377",
       text: "View Mounting Template (Aluminum Door) Doc# MEDT4",
@@ -894,7 +894,7 @@ export const ExitDevices = {
       title: "(12-)(HC)(FM) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774",
-        image: Images.widePESVR,
+      image: Images.widePESVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238388",
       text: "View Mountting Template Doc# MEDT14",
@@ -992,7 +992,7 @@ export const ExitDevices = {
       title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
       functions:
         "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876",
-        image: Images.widePERim,
+      image: Images.widePERim,
 
       warning: "ET with Cross Spindle + Electrified Trims ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
@@ -1035,9 +1035,9 @@ export const ExitDevices = {
       text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
     },
     {
-      device: 'PE8800',
+      device: "PE8800",
 
-      title: 'Strikes',
+      title: "Strikes",
       image: Images.widePERim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
@@ -1055,22 +1055,22 @@ export const ExitDevices = {
         "View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74",
     },
     {
-      device: 'PE8900',
+      device: "PE8900",
 
-      title: '(12-)(WS-) PE8900 Mortise Exit',
-      functions: '',
+      title: "(12-)(WS-) PE8900 Mortise Exit",
+      functions: "",
       image: Images.widePE80Mortise,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
-      text: 'View Mounting Template Doc# MEDT42',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238390',
-      text1: 'View Trim Template Doc# MEDT19',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238402',
-      text2: 'View (54-) Electrified ET Trim Template Doc# MEDT32',
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238420',
-      text3: 'View 908/C908 Standard Strike Template Doc# MEDT50',
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238419',
-      text4: 'View 815 Optional Strike Template Doc# MEDT49',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238412",
+      text: "View Mounting Template Doc# MEDT42",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
+      text1: "View Trim Template Doc# MEDT19",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238402",
+      text2: "View (54-) Electrified ET Trim Template Doc# MEDT32",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238420",
+      text3: "View 908/C908 Standard Strike Template Doc# MEDT50",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
+      text4: "View 815 Optional Strike Template Doc# MEDT49",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
     },
