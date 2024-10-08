@@ -446,7 +446,7 @@ export const ExitDevices = {
       image: Images.wideSVR,
       functions: "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774",
 
-      link: "https://www.sargentlock.com/en/view-pdf?url=https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970&page=1&data=%7B%22account%22%3A%7B%22raw%22%3A%5B%22Shared+%3E+Marketing+%3E+US+%3E+Sargent%22%2C%22Shared+%3E+Marketing+%3E+US%22%2C%22Shared+%3E+Marketing%22%2C%22Shared%22%5D%7D%2C%22asset_type%22%3A%7B%22raw%22%3A%22Document%22%7D%2C%22asset_sub_type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22title%22%3A%7B%22raw%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-8700%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%2C%22snippet%22%3A%22SARGENT+80+Series+%2812-%29HC8700%2C+%2812-%29HC4-%3Cem%3E8700%3C%2Fem%3E%2C+%2812-%29FM8700+Wide+Stile+SVR+Template%22%7D%2C%22body_content%22%3A%7B%22raw%22%3A%2213%2F32%5C%22%5Cn1+19%2F32%5C%22%5Cn1+3%2F8%5C%22%5Cn2+63%2F64%5C%22%5Cn15%2F16%5C%22%5Cn1+17%2F32%5C%22%5Cn5+25%2F32%5C%22%5Cn1+1%2F2%5C%22%5Cn1+1%2F4%5C%22%5Cn6+11%2F16%5C%22%5CnCUT-OUT+1%5Cn3%2F8%5C%22+TOP+MOUNTING%5CnHOLE+FOR+ET+TRIM%5CnIF+USED%5CnWIDER%2C+VERTICAL+C%5CnL+IS+2+3%2F4%5C%22+FROM%5CnCENTER+OF+BEVEL%22%2C%22snippet%22%3A%2213%2F32%26quot%3B%5Cn1+19%2F32%26quot%3B%5Cn1+3%2F8%26quot%3B%5Cn2+63%2F64%26quot%3B%5Cn15%2F16%26quot%3B%5Cn1+17%2F32%26quot%3B%5Cn5+25%2F32%26quot%3B%5Cn1+1%2F2%26quot%3B%5Cn1+1%2F4%26quot%3B%5Cn6+11%2F16%26quot%3B%5CnCUT-OUT+1%5Cn3%2F8%26quot%3B+TOP%22%7D%2C%22image%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fik.imagekit.io%2Ftwr9df4sfpl%2Fdam%2Fdam%2FAADSS1055970-web%22%7D%2C%22url%22%3A%7B%22raw%22%3A%22https%3A%2F%2Fstorage.googleapis.com%2Faa-americas%2Fdam%2FAADSS1055970%22%7D%2C%22discontinued%22%3A%7B%22raw%22%3A%5B%22All%22%2C%22No%22%5D%7D%2C%22tags_pim%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22title_dam%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22extension%22%3A%7B%22raw%22%3A%22application%2Fpdf%22%7D%2C%22type%22%3A%7B%22raw%22%3A%22Template%22%7D%2C%22document_profile%22%3A%7B%22raw%22%3A%22PIMAsset%22%7D%2C%22pim_path_id%22%3A%7B%22raw%22%3A%224462%22%2C%22snippet%22%3A%224462%22%7D%2C%22product_brand%22%3A%7B%22raw%22%3A%5B%22SARGENT%22%5D%7D%2C%22product_category%22%3A%7B%22raw%22%3A%5B%22Push+Pad%22%5D%7D%2C%22product_type%22%3A%7B%22raw%22%3A%5B%22Exit+Devices%22%5D%7D%2C%22product_subtype%22%3A%7B%22raw%22%3A%22Push+Pad%22%7D%2C%22product_series%22%3A%7B%22raw%22%3A%5B%2280+Series%22%5D%7D%2C%22author%22%3A%7B%22raw%22%3A%22kparadis%22%7D%2C%22revision%22%3A%7B%22raw%22%3A%221%22%7D%2C%22created_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22updated_at%22%3A%7B%22raw%22%3A%222018-07-11T08%3A36%3A00-04%3A00%22%7D%2C%22brand_document_revision%22%3A%7B%22raw%22%3A%2204%2F2017%22%7D%2C%22processed_at%22%3A%7B%22raw%22%3A%222024-08-09T16%3A16%3A41-04%3A00%22%7D%2C%22exclude_from_aem_search%22%3A%7B%22raw%22%3A%5B%22All%22%5D%7D%2C%22country%22%3A%7B%22raw%22%3A%22United+States%3BCanada%22%7D%2C%22language%22%3A%7B%22raw%22%3A%22English%22%7D%2C%22sort_order%22%3A%7B%22raw%22%3A%2200000%22%7D%2C%22id%22%3A%7B%22raw%22%3A%22AADSS1055970%22%7D%2C%22_meta%22%3A%7B%22id%22%3A%22AADSS1055970%22%2C%22engine%22%3A%22americas-marketing-dam%22%2C%22score%22%3A20.71886%7D%7D",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055970",
       text: "View (12-)(HC, HC4, FM)8700 Mounting Template (Any Door) Doc# 4462-G",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
@@ -540,46 +540,46 @@ export const ExitDevices = {
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
-      device: '8800',
-      title: '(12-)HC8800 (04, 10, 40, 44)',
+      device: "8800",
+      title: "(12-)HC8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
-      functions: '8804, 8810, 8840, 8844',
+      functions: "8804, 8810, 8840, 8844",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055894',
-      text1: 'View 700 ET Trim Template Doc# 4465',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055894",
+      text1: "View 700 ET Trim Template Doc# 4465",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text3: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text4: "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      text4:
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
-
     },
     {
-      device: '8800',
-      title: '(12-)HC8800 (06, 13, 15, 43 46)',
+      device: "8800",
+      title: "(12-)HC8800 (06, 13, 15, 43 46)",
       image: Images.wideStileRim,
-      functions: '8806, 8813, 8815, 8843, 8846',
+      functions: "8806, 8813, 8815, 8843, 8846",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055895',
-      text1: 'View 700-8 ET Trim Template Doc# 4463',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055895",
+      text1: "View 700-8 ET Trim Template Doc# 4463",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text3: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text4: "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      text4:
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
-
     },
     {
-      device: '8800',
-      title: '(12-)HC8800 (75, 76)',
+      device: "8800",
+      title: "(12-)HC8800 (75, 76)",
       image: Images.wideStileRim,
-      functions: '8875, 8876',
+      functions: "8875, 8876",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
@@ -590,14 +590,13 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-
     },
     {
       device: "8800",
       title: "(12-)(WS-)8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
       functions: "8804, 8810, 8840, 8844",
-      
+
       warning: (
         <>
           ↓ For cylinder only Application ↓ <br />
@@ -611,13 +610,15 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text3: "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      text3:
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text4: "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+      text4:
+        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
-    
+
     {
       device: "8800",
 
@@ -670,7 +671,7 @@ export const ExitDevices = {
       image: Images.thumbpieceTrims,
 
       warning:
-      'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
+        'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
       text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -1318,8 +1319,8 @@ export const ExitDevices = {
       text1: "View LL Lever Trim Template Doc# 4485-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055965",
       text2: "View 646/653/655 Strike Template Doc# 4413-B",
-      link3: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1',
-      text3: 'View HTB/GTB Trim Template',
+      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text3: "View HTB/GTB Trim Template",
     },
     {
       device: "2828",
@@ -1334,8 +1335,8 @@ export const ExitDevices = {
       text1: "View Knob or Lever Trim Template Doc# 4304-F",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
       text2: "View LL Lever Trim Template Doc# 4485-D",
-      link3: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1',
-      text3: 'View HTB/GTB Trim Template',
+      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text3: "View HTB/GTB Trim Template",
     },
     {
       device: "2828",
@@ -1369,8 +1370,8 @@ export const ExitDevices = {
       text2: "View 646/653/655 Strike Template Doc# 4413-B",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
       text3: "View 624 Alternative Strike Template Doc# 4009-H",
-      link4: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1',
-      text4: 'View HTB/GTB Trim Template',
+      link4: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text4: "View HTB/GTB Trim Template",
     },
     {
       device: "3828",
@@ -1385,8 +1386,8 @@ export const ExitDevices = {
       text1: "View Mounting Template with Knob or Lever trim Doc# 4304-F",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
       text2: "View LL Lever Trim Template Doc# 4485-D",
-      link3: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1',
-      text3: 'View HTB/GTB Trim Template',
+      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text3: "View HTB/GTB Trim Template",
     },
     {
       device: "3828",
