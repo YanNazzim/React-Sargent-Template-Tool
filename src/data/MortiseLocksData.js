@@ -6,8 +6,6 @@ export const MortiseLocks = {
   8200: [
     {
       device: "Standard",
-      functions:
-        "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "W/ Sectional Trims",
       image: Images.Mortise8200,
       text: "View Mounting Template Doc# 7057-30",
@@ -22,8 +20,6 @@ export const MortiseLocks = {
     },
     {
       device: "Standard",
-      functions:
-        "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "W/ Escutcheon Trims",
       image: Images.Mortise8200,
       text: "View Mounting Template Doc# 7057-30",
@@ -54,8 +50,6 @@ export const MortiseLocks = {
     },
     {
       device: "Standard",
-      functions:
-        "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268",
       title: "Roseless (R8200)",
       image: Images.MortiseRoselessTrim,
       text: "View Roseless Mortise Template Doc# 4647-B",
@@ -87,7 +81,8 @@ export const MortiseLocks = {
 
     {
       device: "Indicator",
-      functions: "8212, 8230, PHR-NAC-82285",
+
+      functions: '8205, 8212, 8220, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8250, 8251, 8252, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268, NAC-PHR-82281, NAC-PHR-82285',
       title: "VN1 Escutcheon Indicator",
       image: Images.MortiseIndicatorVN1,
       text: "View Mounting Template for VN1 Escutcheon Indicator",
@@ -277,8 +272,7 @@ export const MortiseLocks = {
       device: "Indicator",
       warning:
         "Right Click on picture -> Open image in new tab to see more details",
-      functions:
-        "7800, 7801, 7802, 7804, 7805, 7806, 7828, 7809, 7810, 7819, 7840, 7841, 7843, 7845, 7846, 7847, 7850, 7851, 7852",
+        functions: '7805, 7812, 7820, 7821, 7822, 7824, 7825, 7826, 7828, 7829, 7830, 7836, 7837, 7838, 7839, 7840, 7841, 7842, 7843, 7845, 7846, 7847, 7850, 7851, 7852, 7856, 7857, 7858, 7859, 7865, 7866, 7867, 7868',
       title:
         "Sectional Indicator SA190, SA191, SA192, SA193, SA194, SA196, SA197, SA198",
         image: Images.MortiseIndicatorSA190,
@@ -288,7 +282,7 @@ export const MortiseLocks = {
 
     {
       device: "Indicator",
-      functions: "8212, 8230, PHR-NAC-82285",
+      functions: '7805, 7812, 7820, 7821, 7822, 7824, 7825, 7826, 7828, 7829, 7830, 7836, 7837, 7838, 7839, 7840, 7841, 7842, 7843, 7845, 7846, 7847, 7850, 7851, 7852, 7856, 7857, 7858, 7859, 7865, 7866, 7867, 7868',
       title: "VN1 Escutcheon Indicator",
       image: Images.MortiseIndicatorVN1,
       text: "View Mounting Template for VN1 Indicator",
