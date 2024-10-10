@@ -5,6 +5,7 @@ import { MortiseLocks } from "../data/MortiseLocksData";
 import { ExitDevices } from "../data/ExitDeviceData";
 import { BoredLocks } from "../data/BoredLocksData";
 import { AuxLocks } from "../data/AuxLocksData";
+import { MultiPoints } from "../data/MultiPointsData";
 
 function DisplayTemplates() {
   const location = useLocation();
@@ -18,6 +19,8 @@ function DisplayTemplates() {
     templates = MortiseLocks[series] || [];
   } else if (category === "Exit Devices") {
     templates = ExitDevices[series] || [];
+  } else if (category === "Multi Points") {
+    templates = MultiPoints[series] || [];
   } else if (category === "Bored Locks") {
     templates = BoredLocks[series] || [];
   } else if (category === "Auxiliary Locks") {
@@ -26,19 +29,30 @@ function DisplayTemplates() {
 
   // Filter templates based on type for Mortise Locks, and the id for others
   const filterByCategory = {
-    "Mortise Locks": template => template.device === type,
-    "Exit Devices": template => template.device === id,
-    "Bored Locks": template => template.device === id,
-    "Auxiliary Locks": template => template.device === id,
+    "Mortise Locks": (template) => template.device === type,
+    "Exit Devices": (template) => template.device === id,
+    "Bored Locks": (template) => template.device === id,
+    "Auxiliary Locks": (template) => template.device === id,
   };
-  const filteredTemplates = templates.filter(filterByCategory[category]);
 
-  // Construct the header label
-  const headerLabel = category === "Exit Devices"
+  // Apply the filter if it exists
+  const filterFunction = filterByCategory[category];
+  const filteredTemplates = filterFunction
+    ? templates.filter(filterFunction)
+    : templates;
+
+// Construct the header label
+const headerLabel =
+  category === "Exit Devices" && series === "Thermal Pin"
+    ? `${category} - ${id}`
+    : category === "Exit Devices"
     ? `${category} - ${series} - ${id}`
+    : category === "Multi Points"
+    ? `${category} - ${id}`
     : category === "Bored Locks" || category === "Auxiliary Locks"
     ? `${category} - ${id}`
     : `${category} - ${series} ${type || "Standard"}`;
+
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {
@@ -53,7 +67,9 @@ function DisplayTemplates() {
     <div className="display-templates">
       <h1>{headerLabel}</h1>
       <h2 className="ToolTip">
-      Click on pictures to open image<br />Tap on Mobile!
+        Click on pictures to open image
+        <br />
+        Tap on Mobile!
       </h2>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (

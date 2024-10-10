@@ -27,9 +27,23 @@ function ExitSeries() {
         navigate('/wide', { state: { series: '30' } }); // Pass series '30'
     };
 
+    const handleButtonClickThermalPin = (series, id) => {
+        navigate("/display-templates", {
+            state: {
+                category: "Exit Devices",
+                series,
+                id, // Passing the correct series id
+            },
+        });
+    };
+
     return (
         <>
             <div className="stile-page">
+                <button className="btn" onClick={() => handleButtonClickThermalPin('Fire Rated Hardware', 'Thermal Pin')}>
+                    <img src={Images.ThermalPin683} alt="683 Thermal Pin" className="btn-image" />
+                    683 Thermal Pin
+                </button>
                 <button className="btn" onClick={handleButtonClick80Series}>
                     <img src={Images.wideStileRim} alt="80 Series Devices" className="btn-image" />
                     80 Series

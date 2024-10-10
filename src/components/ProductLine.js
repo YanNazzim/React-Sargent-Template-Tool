@@ -17,6 +17,10 @@ function ProductLine() {
         <img src={Images.wideStileRim} alt="Exit Devices" className="btn-image" />
         <span>Exit Devices</span>  {/* Added span to clarify the text */}
       </button>
+      <button className="btn" onClick={() => handleButtonClick('/multiPointSeries')}>
+        <img src={Images.MP7000} alt="Auxiliary Locks" className="btn-image" />
+        <span>Multipoint Locks</span>
+      </button>
       <button className="btn" onClick={() => handleButtonClick('/mortiseSeries')}>
         <img src={Images.Mortise8200} alt="Mortise" className="btn-image" />
         <span>Mortise</span>

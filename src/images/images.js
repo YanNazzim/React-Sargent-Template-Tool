@@ -30,6 +30,11 @@ export const Images = {
   strikes3828: require('./Exits/strikes3828.png'),
   strikes2828: require('./Exits/2828 Strikes.png'),
 
+  // Multi Point Locks
+  MP7000: require('./MultiPoints/7000.png'),
+  MP6100: require('./MultiPoints/6100.png'),
+  MP7300: require('./MultiPoints/7300.png'),
+
   // Mortise
   Mortise8200: require("./Mortise/MortiseLock.png"),
   Mortise9200: require("./Mortise/MortiseLock9200.png"),
@@ -85,5 +90,9 @@ export const Images = {
   CylSchlageKeyway: require('./Cylinders/CylinderCompetitorKeyway.png'),
   CylMortiseSizes: require('./Cylinders/CylinderMortiseSizes.png'),
   CylBored: require('./Cylinders/CylinderBored.png'),
-  CylAllRegBored: require('./Cylinders/CylinderAllRegularBored.png')
+  CylAllRegBored: require('./Cylinders/CylinderAllRegularBored.png'),
+
+
+  // Thermal Pins
+  ThermalPin683: require('./thermal pins.png'),
 };

@@ -16,6 +16,7 @@ import BoredSeries from './components/BoredSeries.js'
 import AuxLockSeries from './components/AuxLockSeries.js'
 import Cylinders from './components/Cylinders.js'
 import CylindersInfo from "./components/CylindersInfo.js";
+import MultiPointSeries from'./components/MultiPointSeries.js'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/narrow" element={<Narrow />} />
         <Route path="/wide" element={<Wide />} />
         <Route path="/exitSeries" element={<ExitSeries />} />
+        <Route path="/multiPointSeries" element={<MultiPointSeries />} />
         <Route path="/mortiseSeries" element={<MortiseSeries />} />
         <Route path="/mortiseTypes" element={<MortiseTypes />} />
         <Route path="/boredSeries" element={<BoredSeries />} />
