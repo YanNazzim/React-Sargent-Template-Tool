@@ -4,7 +4,6 @@ import logo from '../images/Sargent Logo.jpg';
 import { useNavigate } from 'react-router-dom';
 import { ExitDevices } from '../data/ExitDeviceData';
 import { MortiseLocks } from '../data/MortiseLocksData';
-import { BoredLocks } from '../data/BoredLocksData'
 
 function Header() {
   const [searchQuery, setSearchQuery] = useState('');
