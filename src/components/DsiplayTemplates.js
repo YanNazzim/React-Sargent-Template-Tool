@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
@@ -8,6 +9,7 @@ import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
 
 function DisplayTemplates() {
+
   const location = useLocation();
   const { category, series, id, type } = location.state;
 
@@ -41,18 +43,17 @@ function DisplayTemplates() {
     ? templates.filter(filterFunction)
     : templates;
 
-// Construct the header label
-const headerLabel =
-  category === "Exit Devices" && series === "Thermal Pin"
-    ? `${category} - ${id}`
-    : category === "Exit Devices"
-    ? `${category} - ${series} - ${id}`
-    : category === "Multi Points"
-    ? `${category} - ${id}`
-    : category === "Bored Locks" || category === "Auxiliary Locks"
-    ? `${category} - ${id}`
-    : `${category} - ${series} ${type || "Standard"}`;
-
+  // Construct the header label
+  const headerLabel =
+    category === "Exit Devices" && series === "Thermal Pin"
+      ? `${category} - ${id}`
+      : category === "Exit Devices"
+      ? `${category} - ${series} - ${id}`
+      : category === "Multi Points"
+      ? `${category} - ${id}`
+      : category === "Bored Locks" || category === "Auxiliary Locks"
+      ? `${category} - ${id}`
+      : `${category} - ${series} ${type || "Standard"}`;
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {

@@ -541,9 +541,88 @@ export const ExitDevices = {
     },
     {
       device: "8800",
+      title: "(12-)(WS-)8800 (04, 10, 40, 44)",
+      image: Images.wideStileRim,
+      functions: "8804, 8810, 8840, 8844",
+
+      warning: (
+        <>
+          ↓ For cylinder only Application ↓ <br />
+          use Mounting Template Hole 2
+        </>
+      ),
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
+      text: "View Mounting Template (Any Material) Doc# 4415-H",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text1: "View Trim Template (700 ET) Doc# 4277-18",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
+      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text3:
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+        text4:
+        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+        text5: "View Wide EM Raceway Template Doc# 4569-C",
+      },
+      
+      {
+        device: "8800",
+        
+        title: "(12-)(WS-)8800 (06, 13, 15, 43, 46)",
+        image: Images.wideStileRim,
+        functions: "8806, 8813, 8815, 8843, 8846",
+        
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
+        text: "View Mounting Template (Any Material) Doc# 4415-H",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+        text1: "View Trim Template (700-8 ET) Doc# 4414-H",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
+        text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+        text3:
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+        text4:
+        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+    {
+      device: "8800",
+      
+      title: "(12-)(WS-)8800 (73, 74, 75, 76)",
+      image: Images.wideStileRim,
+      functions: "8873, 8874, 8875, 8876",
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
+      text: "View Mounting Template (Any Material) Doc# 4415-H",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4714",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
+      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text3:
+      "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text4:
+      "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+    {
+      device: "8800",
       title: "(12-)HC8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
       functions: "8804, 8810, 8840, 8844",
+
+      warning: (
+        <>
+          ↓ For cylinder only Application ↓ <br />
+          use Mounting Template Hole 2
+        </>
+      ),
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
@@ -590,78 +669,6 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-    },
-    {
-      device: "8800",
-      title: "(12-)(WS-)8800 (04, 10, 40, 44)",
-      image: Images.wideStileRim,
-      functions: "8804, 8810, 8840, 8844",
-
-      warning: (
-        <>
-          ↓ For cylinder only Application ↓ <br />
-          use Mounting Template Hole 2
-        </>
-      ),
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
-      text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text1: "View Trim Template (700 ET) Doc# 4277-18",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text3:
-        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text4:
-        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
-    },
-
-    {
-      device: "8800",
-
-      title: "(12-)(WS-)8800 (06, 13, 15, 43, 46)",
-      image: Images.wideStileRim,
-      functions: "8806, 8813, 8815, 8843, 8846",
-
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
-      text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-      text1: "View Trim Template (700-8 ET) Doc# 4414-H",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text3:
-        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text4:
-        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
-    },
-    {
-      device: "8800",
-
-      title: "(12-)(WS-)8800 (73, 74, 75, 76)",
-      image: Images.wideStileRim,
-      functions: "8873, 8874, 8875, 8876",
-
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
-      text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4714",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-      text3:
-        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text4:
-        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "8800",

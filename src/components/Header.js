@@ -34,35 +34,21 @@ function Header() {
     } else if (
       searchQuery.includes('83') ||
       searchQuery.includes('84') ||
-      searchQuery.includes('85') ||
+      searchQuery.includes('85')
+    ) {
+      productData = ExitDevices.Narrow80;
+    } else if (
       searchQuery.includes('86') ||
       searchQuery.includes('87') ||
       searchQuery.includes('88') ||
       searchQuery.includes('89')
     ) {
-      productData = [
-        ...ExitDevices.Narrow80,
-        ...ExitDevices.Wide80,
-        ...ExitDevices.NarrowPE,
-        ...ExitDevices.WidePE,
-        ...ExitDevices.Narrow90,
-        ...ExitDevices.Wide90,
-        ...ExitDevices.Wide20,
-        ...ExitDevices.Wide30,
-        ...ExitDevices['Fire Rated Hardware'],
-      ];
+      productData = ExitDevices.Wide80;
     } else {
       productData = [
         ...Object.values(MortiseLocks).flat(),
         ...ExitDevices.Narrow80,
         ...ExitDevices.Wide80,
-        ...ExitDevices.NarrowPE,
-        ...ExitDevices.WidePE,
-        ...ExitDevices.Narrow90,
-        ...ExitDevices.Wide90,
-        ...ExitDevices.Wide20,
-        ...ExitDevices.Wide30,
-        ...ExitDevices['Fire Rated Hardware'],
       ];
     }
 
@@ -82,7 +68,7 @@ function Header() {
   };
 
   const handleCloseModal = () => {
-    handleClear(); // Clear the search input and results when closing the modal
+    handleClear();
     setIsModalOpen(false);
   };
 
@@ -95,6 +81,37 @@ function Header() {
       Math.min(prevIndex + 1, Math.ceil(filteredProducts.length / 2) - 1)
     );
   };
+
+  const handleItemClick = (product) => {
+    // Extract the base ID, e.g., convert MD8615 to MD8600
+    const baseId = product.device.replace(/(\d{2})\d{2}$/, '$100');
+  
+    // Determine the correct series based on the base ID prefix
+    let series = 'Wide80'; // Default to Wide80
+    
+    // Adjust series to Narrow80 if it falls within the appropriate range
+    if (
+      baseId.startsWith('83') ||
+      baseId.startsWith('84') ||
+      baseId.startsWith('85') ||
+      baseId === 'AD8400' // Add specific check for AD8400 to force it to Narrow80
+    ) {
+      series = 'Narrow80';
+    }
+  
+    // Navigate to display-templates with the appropriate series and base ID
+    navigate('/display-templates', {
+      state: {
+        category: 'Exit Devices',
+        series: series,
+        id: baseId,
+      },
+    });
+    handleCloseModal(); // Close the modal and clear the search when an item is clicked
+
+  };
+  
+  
 
   return (
     <header className='header'>
@@ -147,7 +164,11 @@ function Header() {
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                   >
                     {filteredProducts.map((product, index) => (
-                      <div className='carousel-item' key={index}>
+                      <div
+                        className='carousel-item'
+                        key={index}
+                        onClick={() => handleItemClick(product)}
+                      >
                         <img src={product.image} alt={product.title} />
                         <p>{product.title}</p>
                       </div>
