@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './style/HeaderFooter.css';
-import logo from '../images/Sargent Logo.jpg';
-import { useNavigate } from 'react-router-dom';
-import { ExitDevices } from '../data/ExitDeviceData';
-import { MortiseLocks } from '../data/MortiseLocksData';
+import React, { useState } from "react";
+import "./style/HeaderFooter.css";
+import logo from "../images/Sargent Logo.jpg";
+import { useNavigate } from "react-router-dom";
+import { ExitDevices } from "../data/ExitDeviceData";
+import { MortiseLocks } from "../data/MortiseLocksData";
 
 function Header() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,11 +17,11 @@ function Header() {
   };
 
   const handleButtonClickHome = () => {
-    navigate('/');
+    navigate("/");
   };
 
   const handleButtonClickLogo = () => {
-    window.open('https://www.sargentlock.com/en', '_blank');
+    window.open("https://www.sargentlock.com/en", "_blank");
   };
 
   const handleSearchClick = () => {
@@ -29,41 +29,46 @@ function Header() {
 
     let productData = [];
 
-    if (searchQuery.includes('82')) {
-      productData = Object.values(MortiseLocks).flat();
-    } else if (
-      searchQuery.includes('83') ||
-      searchQuery.includes('84') ||
-      searchQuery.includes('85')
-    ) {
-      productData = ExitDevices.Narrow80;
-    } else if (
-      searchQuery.includes('86') ||
-      searchQuery.includes('87') ||
-      searchQuery.includes('88') ||
-      searchQuery.includes('89')
-    ) {
-      productData = ExitDevices.Wide80;
-    } else {
-      productData = [
-        ...Object.values(MortiseLocks).flat(),
-        ...ExitDevices.Narrow80,
-        ...ExitDevices.Wide80,
-      ];
+    // Ensure MortiseLocks is defined
+    if (MortiseLocks && Object.keys(MortiseLocks).length > 0) {
+      productData = Object.entries(MortiseLocks).flatMap(([series, items]) =>
+        items.map((item) => ({
+          ...item,
+          category: "Mortise Locks",
+          series,
+        }))
+      );
     }
 
-    const results = productData.filter((product) =>
-      product.device.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.functions?.toLowerCase().includes(searchQuery.toLowerCase())
+    // Add Exit Devices data
+    productData.push(
+      ...ExitDevices.Narrow80.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Narrow80",
+      })),
+      ...ExitDevices.Wide80.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide80",
+      }))
+    );
+
+    const results = productData.filter(
+      (product) =>
+        product.device.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.functions?.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     setFilteredProducts(results);
     setIsModalOpen(true);
+
+    console.log("Search Results:", results); // Log all the filtered results
   };
 
   const handleClear = () => {
-    setSearchQuery('');
+    setSearchQuery("");
     setFilteredProducts([]);
   };
 
@@ -83,89 +88,80 @@ function Header() {
   };
 
   const handleItemClick = (product) => {
-    // Extract the base ID, e.g., convert MD8615 to MD8600
-    const baseId = product.device.replace(/(\d{2})\d{2}$/, '$100');
-  
-    // Determine the correct series based on the base ID prefix
-    let series = 'Wide80'; // Default to Wide80
-    
-    // Adjust series to Narrow80 if it falls within the appropriate range
-    if (
-      baseId.startsWith('83') ||
-      baseId.startsWith('84') ||
-      baseId.startsWith('85') ||
-      baseId === 'AD8400' // Add specific check for AD8400 to force it to Narrow80
-    ) {
-      series = 'Narrow80';
-    }
-  
-    // Navigate to display-templates with the appropriate series and base ID
-    navigate('/display-templates', {
+    const { device, category, series } = product;
+
+    console.log(
+      `Navigating to: Category: ${category}, Series: ${series}, ID: ${device}`
+    );
+
+    // Navigate to display-templates with the determined category, series, and device
+    navigate("/display-templates", {
       state: {
-        category: 'Exit Devices',
-        series: series,
-        id: baseId,
+        category,
+        series,
+        id: device, // Use the device name directly for routing
       },
     });
-    handleCloseModal(); // Close the modal and clear the search when an item is clicked
 
-  };
+    handleCloseModal(); // Close the modal and clear the search when an item is clicked
+  }; 
   
   
+  // // onClick={() => setIsModalOpen(true)}
 
   return (
-    <header className='header'>
+    <header className="header">
       <img
         src={logo}
-        alt='Sargent Logo'
-        className='SargentLogo'
+        alt="Sargent Logo"
+        className="SargentLogo"
         onClick={handleButtonClickLogo}
       />
-      <button className='Home' onClick={handleButtonClickHome}>
+      <button className="Home" onClick={handleButtonClickHome}>
         Templates Home Page
       </button>
-      <button className='Home' onClick={handleButtonClickBack}>
+      <button className="Home" onClick={handleButtonClickBack}>
         Previous Page
       </button>
-      <button onClick={() => setIsModalOpen(true)} className='Home'>
-        - Search -<br /> Under Construction
-      </button>
+      <button  className="Home">
+        - Search -<br /> Coming Soon
+      </button> 
 
       {isModalOpen && (
-        <div className='modal-overlay'>
-          <div className='modal-content'>
+        <div className="modal-overlay">
+          <div className="modal-content">
             <input
-              type='text'
-              placeholder='Search for device... (8238, 8613)'
+              type="text"
+              placeholder="Search for device... (8238, 8613)"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className='search-bar'
+              className="search-bar"
             />
-            <div className='modal-buttons'>
-              <button onClick={handleSearchClick} className='search-button'>
+            <div className="modal-buttons">
+              <button onClick={handleSearchClick} className="search-button">
                 Search
               </button>
-              <button onClick={handleClear} className='clear-button'>
+              <button onClick={handleClear} className="clear-button">
                 Clear
               </button>
-              <button onClick={handleCloseModal} className='close-button'>
+              <button onClick={handleCloseModal} className="close-button">
                 Close
               </button>
             </div>
 
             {filteredProducts.length > 0 && (
-              <div className='carousel-controls'>
-                <button className='carousel-button left' onClick={handlePrev}>
+              <div className="carousel-controls">
+                <button className="carousel-button left" onClick={handlePrev}>
                   &#8249;
                 </button>
-                <div className='carousel-container'>
+                <div className="carousel-container">
                   <div
-                    className='carousel-inner'
+                    className="carousel-inner"
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                   >
                     {filteredProducts.map((product, index) => (
                       <div
-                        className='carousel-item'
+                        className="carousel-item"
                         key={index}
                         onClick={() => handleItemClick(product)}
                       >
@@ -175,7 +171,7 @@ function Header() {
                     ))}
                   </div>
                 </div>
-                <button className='carousel-button right' onClick={handleNext}>
+                <button className="carousel-button right" onClick={handleNext}>
                   &#8250;
                 </button>
               </div>

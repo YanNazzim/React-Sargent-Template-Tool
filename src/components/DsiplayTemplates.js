@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
@@ -9,9 +8,8 @@ import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
 
 function DisplayTemplates() {
-
   const location = useLocation();
-  const { category, series, id, type } = location.state;
+  const { category, series, device } = location.state;
 
   // Initialize templates array
   let templates = [];
@@ -29,37 +27,19 @@ function DisplayTemplates() {
     templates = AuxLocks[series] || [];
   }
 
-  // Filter templates based on type for Mortise Locks, and the id for others
-  const filterByCategory = {
-    "Mortise Locks": (template) => template.device === type,
-    "Exit Devices": (template) => template.device === id,
-    "Bored Locks": (template) => template.device === id,
-    "Auxiliary Locks": (template) => template.device === id,
-  };
-
-  // Apply the filter if it exists
-  const filterFunction = filterByCategory[category];
-  const filteredTemplates = filterFunction
-    ? templates.filter(filterFunction)
-    : templates;
+  // Filter templates based on the device
+  const filteredTemplates = templates.filter(
+    (template) => template.device.toLowerCase() === device.toLowerCase()
+  );
 
   // Construct the header label
-  const headerLabel =
-    category === "Exit Devices" && series === "Thermal Pin"
-      ? `${category} - ${id}`
-      : category === "Exit Devices"
-      ? `${category} - ${series} - ${id}`
-      : category === "Multi Points"
-      ? `${category} - ${id}`
-      : category === "Bored Locks" || category === "Auxiliary Locks"
-      ? `${category} - ${id}`
-      : `${category} - ${series} ${type || "Standard"}`;
+  const headerLabel = `${category} - ${series} - ${device}`;
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {
     return (
       <h2 className="no-templates-error">
-        Error: No templates available for {category} {series} {id || type}
+        Error: No templates available for {headerLabel}
       </h2>
     );
   }
