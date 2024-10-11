@@ -76,10 +76,9 @@ body {
 .search-button:hover,
 .clear-button:hover,
 .close-button:hover {
-  transform: scale(.85);
+  transform: scale(0.85);
   border: black solid 3px;
   transition: transform 0.2s ease, border 0.2s ease;
-  
 }
 
 .clear-button {
@@ -88,10 +87,13 @@ body {
 }
 
 .search-bar {
-  font-size: 4vw;
+  font-size: 3.5vw;
   border: solid black 3px;
   margin: 15px;
   border-radius: 25px;
+  min-width: none;
+  max-width: 900px;
+  text-align: center;
 }
 
 /* Modal */
@@ -113,7 +115,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 90%;
-  max-width: 800px;
+  max-width: 1200px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -131,7 +133,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 1440px;
   overflow: hidden;
   margin: 20px auto;
 }
@@ -152,7 +154,7 @@ body {
 }
 
 .carousel-item img {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   border: 2px solid blue;
   border-radius: 8px;
@@ -189,6 +191,7 @@ body {
   width: 100%;
   max-width: 900px;
 }
+
 /* Media Queries for screens 1024px and below */
 @media (max-width: 1280px) {
   .search-bar,
@@ -196,12 +199,11 @@ body {
   .clear-button,
   .close-button {
     font-size: 5vw;
-    
   }
   .SargentLogo {
     height: auto;
     margin: 10px;
-    min-width: 400px ;
+    min-width: 400px;
   }
   .Home {
     margin: 10px;
@@ -212,26 +214,40 @@ body {
     font-size: 4vw;
   }
   .modal-content {
-  max-width: 1000px;
-  max-height: 750px;
-}
-.search-bar {
-  width: 950px;
-}
+    max-width: 1000px;
+    max-height: 750px;
+  }
+  .search-bar {
+    width: 850px;
+  }
 }
 
+@media (max-width: 920px) {
+  .search-bar {
+    width: 750px;
+  }
+}
 
 /* Media Queries for screens 768px and below */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .search-bar,
   .search-button,
   .clear-button,
   .close-button {
     font-size: 5vw;
+    max-width: 575px;
+    text-align: center;
   }
 
   .carousel-item {
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 550px) {
+  .search-bar {
+    max-width: 450px;
   }
 }
 
@@ -241,8 +257,9 @@ body {
   .search-button,
   .clear-button,
   .close-button {
+    width: 300px;
+    text-align: center;
     font-size: 6vw;
-    padding: 5px;
   }
   .carousel-item {
     font-size: 5vw;
@@ -250,5 +267,13 @@ body {
 
   .carousel-item img {
     max-width: 100px;
+  }
+  .SargentLogo {
+    min-width: 300px;
+  }
+}
+@media (max-width: 344px) {
+  .search-bar {
+    max-width: 300px;
   }
 }

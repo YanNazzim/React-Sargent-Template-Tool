@@ -88,7 +88,15 @@ export const CylindersData = {
     ],
   },
   LFIC: {
-    title: 'Large Format Interchangable Core'
+    title: 'Large Format Interchangable Core',
+
+    sections: [
+      {
+        heading: "6300 Core",
+        image: Images.CylCoreLFIC,
+        texts: [""],
+      },
+    ],
   },
   // Other cylinder types...
 };

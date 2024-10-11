@@ -94,6 +94,7 @@ export const Images = {
   CylCoreSFIC: require("./Cylinders/CylinderCoreSFIC.png"),
   CylHousingSFIC: require('./Cylinders/CylinderSFICWithHousing.png'),
   CylSFICKeyblanks: require('./Cylinders/CylinderSFICKeyblanks.png'),
+  CylCoreLFIC: require('./Cylinders/CylinderCoreLFIC.png'),
 
 
   // Thermal Pins
