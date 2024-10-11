@@ -98,8 +98,8 @@ export const ExitDevices = {
     {
       device: "AD8400",
 
-      title: "(12-)(NB-)AD8400 (06, 10, 13, 40, 43, 46)",
-      functions: "8406, 8410, 8413, 8440, 8443, 8446",
+      title: "(12-)(NB-)AD8400 (06, 10, 13, 15, 40, 43, 46)",
+      functions: "8406, 8410, 8413, 8415, 8440, 8443, 8446",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",

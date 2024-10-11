@@ -69,7 +69,7 @@ const headerLabel =
       <h2 className="ToolTip">
         Click on pictures to open image
         <br />
-        Tap on Mobile!
+        Tap on Mobile
       </h2>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (

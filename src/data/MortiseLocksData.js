@@ -1,7 +1,7 @@
 /* Device Images */
 import { Images } from '../images/images'
 
-
+/* MortiseLocksData.js */
 export const MortiseLocks = {
   8200: [
     {

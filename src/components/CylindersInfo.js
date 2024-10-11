@@ -10,7 +10,7 @@ function CylindersInfo() {
   const cylinderDetails = CylindersData[type];
 
   if (!cylinderDetails) {
-    return <div>No details available for this cylinder type.</div>;
+    return <div>No details available for this cylinder type: {type}</div>;
   }
 
   return (
@@ -20,7 +20,7 @@ function CylindersInfo() {
       <h2 className="ToolTip">
         Click on pictures to open image
         <br />
-        Tap on Mobile!
+        Tap on Mobile
       </h2>
 
       {/* Iterate over sections and render each in its own card */}

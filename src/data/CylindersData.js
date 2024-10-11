@@ -10,7 +10,7 @@ export const CylindersData = {
         texts: [
           "Order Using #97 x Finish",
           "Used with Cylnder only Application (8504, 8804)",
-          "04 function W/ ET Trim dont use rosette"
+          "04 function W/ ET Trim dont use rosette",
         ],
       },
 
@@ -18,16 +18,15 @@ export const CylindersData = {
         heading: "Parts",
         image: Images.CylRimParts,
 
-        texts: [
-        ],
+        texts: [],
       },
       {
         heading: "Schlage Keyways",
         image: Images.CylSchlageKeyway,
         texts: [
-            "Image contains Finishes",
-            "For Schlage 'C' -> SC-34",
-            "For Schlage 'E' -> SE-34",
+          "Image contains Finishes",
+          "For Schlage 'C' -> SC-34",
+          "For Schlage 'E' -> SE-34",
         ],
       },
       // Additional sections...
@@ -38,18 +37,14 @@ export const CylindersData = {
 
     sections: [
       {
-        heading: 'Sizes',
+        heading: "Sizes",
         image: Images.CylMortiseSizes,
-        texts: [
-
-        ]
+        texts: [],
       },
       {
         heading: "Parts",
         image: Images.CylMortiseParts,
-        texts: [
-          
-        ],
+        texts: [""],
       },
       {
         heading: "Cams",
@@ -60,17 +55,40 @@ export const CylindersData = {
     ],
   },
   Bored: {
-    title: 'KIL/KIK Cylinders',
-    
+    title: "KIL/KIK Cylinders",
+
     sections: [
       {
-        heading: 'All Standard Cylinders',
+        heading: "All Standard Cylinders",
         image: Images.CylAllRegBored,
-        texts: [
-          ""
-        ]
+        texts: [""],
       },
     ],
+  },
+  SFIC: {
+    title: "Small Format Interchangable Core",
+
+    sections: [
+      {
+        heading: "7300B Core",
+        image: Images.CylCoreSFIC,
+        texts: [""],
+      },
+      {
+        heading: "SFIC with housing",
+        image: Images.CylHousingSFIC,
+        texts: ['70-43 1-3/8"', '70-46  1-3/4"', '1-5/32" (29mm) diameter housing'],
+      },
+      {
+        heading: 'Key Blanks/Cut Keys',
+        image: Images.CylSFICKeyblanks,
+        texts: [''],
+
+      },
+    ],
+  },
+  LFIC: {
+    title: 'Large Format Interchangable Core'
   },
   // Other cylinder types...
 };
