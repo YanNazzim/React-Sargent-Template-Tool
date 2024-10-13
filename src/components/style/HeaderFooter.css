@@ -41,8 +41,8 @@ body {
 }
 
 .Home {
-  font-size: 32px;
-  padding: 5px;
+  font-size: 4vw;
+  padding: 25px;
   background-color: #1565c0;
   color: white;
   margin: 5px;
@@ -206,6 +206,7 @@ body {
     min-width: 400px;
   }
   .Home {
+    min-width: 600px;
     margin: 10px;
     font-size: 5vw;
   }
@@ -271,9 +272,20 @@ body {
   .SargentLogo {
     min-width: 300px;
   }
+  .Home {
+    min-width: 300px;
+  }
 }
 @media (max-width: 344px) {
   .search-bar {
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 275px;
+  }
+  .Home {
+    max-width: 200px;
+    font-size: 6vw;
   }
 }

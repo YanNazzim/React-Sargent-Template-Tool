@@ -54,7 +54,13 @@ function Header() {
         category: "Exit Devices",
         series: "Wide80",
         device: item.device || "Unknown Device",
-      }))
+      })),
+      ...ExitDevices.WidePE.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "WidePE",
+        device: item.device || "Unknown Device",
+      })),
     );
 
     // Filter results based on searchQuery
@@ -125,9 +131,7 @@ function Header() {
         Previous Page
       </button>
       <button onClick={() => setIsModalOpen(true)} className="Home">
-        - Search -
-        <br />
-        Coming Soon
+        Search
       </button>
 
       {isModalOpen && (

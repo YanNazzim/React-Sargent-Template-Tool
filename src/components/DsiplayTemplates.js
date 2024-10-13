@@ -27,13 +27,16 @@ function DisplayTemplates() {
     templates = AuxLocks[series] || [];
   }
 
-  // Filter templates based on type for Mortise Locks, and the id for others
+  // Safeguard for filtering when `device` or `type` is undefined
   const filterByCategory = {
     "Mortise Locks": (template) =>
-      type ? template.device.toLowerCase() === type.toLowerCase() : true,
-    "Exit Devices": (template) => template.device.toLowerCase() === device.toLowerCase(),
-    "Bored Locks": (template) => template.device.toLowerCase() === device.toLowerCase(),
-    "Auxiliary Locks": (template) => template.device.toLowerCase() === device.toLowerCase(),
+      type && template.device ? template.device.toLowerCase() === type.toLowerCase() : false,
+    "Exit Devices": (template) =>
+      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
+    "Bored Locks": (template) =>
+      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
+    "Auxiliary Locks": (template) =>
+      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
   };
 
   // Apply the filter if it exists

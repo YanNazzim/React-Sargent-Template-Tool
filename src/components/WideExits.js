@@ -1,5 +1,3 @@
-//wideExits
-
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
@@ -33,12 +31,12 @@ const widePE80Devices = [
   { id: "PE8900", name: "PE8900 Wide Mortise Exit", img: Images.widePE80Mortise },
 ];
 
-const Series20Devices = [
+const series20Devices = [
   { id: "2727", name: "2727 SVR Exit", img: Images.Exit2727 },
   { id: "2828", name: "2828 Rim Exit", img: Images.Exit2828 },
 ];
 
-const Series30Devices = [
+const series30Devices = [
   { id: "3727", name: "3727/NB-3727 SVR Exit", img: Images.Exit2727 },
   { id: "3828", name: "3828 Rim Exit", img: Images.Exit2828 },
 ];
@@ -49,27 +47,39 @@ function WideExits() {
   const { series } = location.state || {}; // Get series from passed state
 
   // Determine the correct set of devices to display based on the series
-  const devices = series === "90" ? wide90Devices 
-                : series === "PE" ? widePE80Devices 
-                : series === "20" ? Series20Devices
-                : series === "30" ? Series30Devices
-                : wide80Devices;
+  let devices;
+  switch (series) {
+    case "90":
+      devices = wide90Devices;
+      break;
+    case "PE":
+      devices = widePE80Devices;
+      break;
+    case "20":
+      devices = series20Devices;
+      break;
+    case "30":
+      devices = series30Devices;
+      break;
+    default:
+      devices = wide80Devices;
+      break;
+  }
 
   const handleButtonClick = (id) => {
-    navigate('/display-templates', { state: { category: 'Exit Devices', series: `Wide${series}`, id } });
+    const navigateSeries = series === "PE" ? "PE80" : `Wide${series}`; // Adjust series naming for PE series
+    navigate('/display-templates', { state: { category: 'Exit Devices', series: navigateSeries, device: id } });
   };
 
   return (
-    <>
-      <div className="stile-page">
-        {devices.map((device) => (
-          <button key={device.id} className="btn" onClick={() => handleButtonClick(device.id)}>
-            <img src={device.img} alt={device.name} className="btn-image" />
-            {device.name}
-          </button>
-        ))}
-      </div>
-    </>
+    <div className="stile-page">
+      {devices.map((device) => (
+        <button key={device.id} className="btn" onClick={() => handleButtonClick(device.id)}>
+          <img src={device.img} alt={device.name} className="btn-image" />
+          {device.name}
+        </button>
+      ))}
+    </div>
   );
 }
 
