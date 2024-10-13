@@ -9,7 +9,7 @@ import { MultiPoints } from "../data/MultiPointsData";
 
 function DisplayTemplates() {
   const location = useLocation();
-  const { category, series, device } = location.state;
+  const { category, series, type, device } = location.state || {};
 
   // Initialize templates array
   let templates = [];
@@ -27,13 +27,23 @@ function DisplayTemplates() {
     templates = AuxLocks[series] || [];
   }
 
-  // Filter templates based on the device
-  const filteredTemplates = templates.filter(
-    (template) => template.device.toLowerCase() === device.toLowerCase()
-  );
+  // Filter templates based on type for Mortise Locks, and the id for others
+  const filterByCategory = {
+    "Mortise Locks": (template) =>
+      type ? template.device.toLowerCase() === type.toLowerCase() : true,
+    "Exit Devices": (template) => template.device.toLowerCase() === device.toLowerCase(),
+    "Bored Locks": (template) => template.device.toLowerCase() === device.toLowerCase(),
+    "Auxiliary Locks": (template) => template.device.toLowerCase() === device.toLowerCase(),
+  };
+
+  // Apply the filter if it exists
+  const filterFunction = filterByCategory[category];
+  const filteredTemplates = filterFunction ? templates.filter(filterFunction) : templates;
 
   // Construct the header label
-  const headerLabel = `${category} - ${series} - ${device}`;
+  const headerLabel = `${category || "Category"} - ${series || "Series"} - ${
+    type || device || "Device"
+  }`;
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {

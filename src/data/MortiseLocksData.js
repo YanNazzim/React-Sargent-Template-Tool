@@ -9,6 +9,9 @@ export const MortiseLocks = {
       series: "8200",
       title: "W/ Sectional Trims",
       image: Images.Mortise8200,
+      functions:
+      "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268, 8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
+
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1: "View (50-) Mounting Template Doc# 7682-A",
@@ -21,6 +24,9 @@ export const MortiseLocks = {
       series: "8200",
       title: "W/ Escutcheon Trims",
       image: Images.Mortise8200,
+      functions:
+      "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268, 8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
+
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
       text1:
@@ -51,6 +57,9 @@ export const MortiseLocks = {
       device: "Standard",
       title: "Roseless (R8200)",
       image: Images.MortiseRoselessTrim,
+      functions:
+        "8204, 8205, 8206, 8213, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8231, 8235, 8236, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268, 8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
+
       text: "View Roseless Mortise Template Doc# 4647-B",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056034",
     },
@@ -63,7 +72,7 @@ export const MortiseLocks = {
       title: "8200 Mortise Lock - Electrified",
       image: Images.MortiseElectrified8200,
       warning: "Ensure proper wiring setup.",
-      text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
+      text: "View Mounting Template (70, 71, 71, 72, 73, NAC Functions) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
       text1: "View ",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
@@ -96,6 +105,8 @@ export const MortiseLocks = {
       device: "Behavioral Health",
       series: "8200",
       image: Images.Mortise8200BHW,
+      functions:
+        "8204, 8205, 8215, 8216, 8217, 8224, 8225, 8226, 8227, 8228, 8229, 8230, 8237, 8238, 8239, 8240, 8241, 8242, 8243, 8245, 8246, 8247, 8248, 8249, 8250, 8251, 8252, 8255, 8256, 8257, 8258, 8259, 8265, 8266, 8267, 8268, 8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
 
       title: "8200 W/ BHW Trim",
 
@@ -183,7 +194,7 @@ export const MortiseLocks = {
       series: "9200",
       title: "9200 Mortise Lock - Electrified",
       image: Images.Mortise9200,
-      text: "View Mounting Template (Functions 70, 71, 71, 72, 73) Doc# 7065",
+      text: "View Mounting Template (70, 71, 71, 72, 73, NAC Functions) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
       text1: "Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
@@ -238,6 +249,7 @@ export const MortiseLocks = {
       series: "7800",
       title: "W/ Sectional",
       image: Images.Mortise7800,
+      functions: "7804, 7805, 7806, 7813, 7815, 7816, 7817, 7824, 7825, 7826, 7827, 7828, 7829, 7830, 7831, 7835, 7836, 7837, 7838, 7839, 7840, 7841, 7842, 7843, 7845, 7846, 7847, 7848, 7849, 7850, 7851, 7852, 7855, 7856, 7857, 7858, 7859, 7865, 7866, 7867, 7868, 7870, 7871, 7872, 7873, 78270, 78271, 78274, 78275, 78280, 78281, 78284, 78285",
 
       warning: "",
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
@@ -255,6 +267,8 @@ export const MortiseLocks = {
       series: "7800",
       title: "W/ Escutcheon",
       image: Images.Mortise7800,
+      functions: "7804, 7805, 7806, 7813, 7815, 7816, 7817, 7824, 7825, 7826, 7827, 7828, 7829, 7830, 7831, 7835, 7836, 7837, 7838, 7839, 7840, 7841, 7842, 7843, 7845, 7846, 7847, 7848, 7849, 7850, 7851, 7852, 7855, 7856, 7857, 7858, 7859, 7865, 7866, 7867, 7868, 7870, 7871, 7872, 7873, 78270, 78271, 78274, 78275, 78280, 78281, 78284, 78285",
+
 
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",

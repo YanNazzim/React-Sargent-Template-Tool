@@ -29,31 +29,35 @@ function Header() {
 
     let productData = [];
 
-    // Ensure MortiseLocks is defined
+    // Include Mortise Locks data
     if (MortiseLocks && Object.keys(MortiseLocks).length > 0) {
       productData = Object.entries(MortiseLocks).flatMap(([series, items]) =>
         items.map((item) => ({
           ...item,
           category: "Mortise Locks",
           series,
+          device: item.device || "Unknown Device",
         }))
       );
     }
 
-    // Add Exit Devices data
+    // Include Exit Devices data
     productData.push(
       ...ExitDevices.Narrow80.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "Narrow80",
+        device: item.device || "Unknown Device",
       })),
       ...ExitDevices.Wide80.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "Wide80",
+        device: item.device || "Unknown Device",
       }))
     );
 
+    // Filter results based on searchQuery
     const results = productData.filter(
       (product) =>
         product.device.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -64,7 +68,7 @@ function Header() {
     setFilteredProducts(results);
     setIsModalOpen(true);
 
-    console.log("Search Results:", results); // Log all the filtered results
+    console.log("Search Results:", results); // Log search results for debugging
   };
 
   const handleClear = () => {
@@ -91,7 +95,7 @@ function Header() {
     const { device, category, series } = product;
 
     console.log(
-      `Navigating to: Category: ${category}, Series: ${series}, ID: ${device}`
+      `Navigating to: Category: ${category}, Series: ${series}, Device: ${device}`
     );
 
     // Navigate to display-templates with the determined category, series, and device
@@ -99,15 +103,12 @@ function Header() {
       state: {
         category,
         series,
-        id: device, // Use the device name directly for routing
+        device,
       },
     });
 
     handleCloseModal(); // Close the modal and clear the search when an item is clicked
-  }; 
-  
-  
-  // // onClick={() => setIsModalOpen(true)}
+  };
 
   return (
     <header className="header">
@@ -123,9 +124,11 @@ function Header() {
       <button className="Home" onClick={handleButtonClickBack}>
         Previous Page
       </button>
-      <button  className="Home">
-        - Search -<br /> Coming Soon
-      </button> 
+      <button onClick={() => setIsModalOpen(true)} className="Home">
+        - Search -
+        <br />
+        Coming Soon
+      </button>
 
       {isModalOpen && (
         <div className="modal-overlay">
