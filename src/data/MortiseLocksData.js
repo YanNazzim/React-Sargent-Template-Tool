@@ -14,10 +14,12 @@ export const MortiseLocks = {
 
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
-      text1: "View (50-) Mounting Template Doc# 7682-A",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
-      text2: "View Thumbturn Template Doc# 7059-B",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
+      text1: 'View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056022',
+      text2: "View (50-) Mounting Template Doc# 7682-A",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
+      text3: "View Thumbturn Template Doc# 7059-B",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
     },
     {
       device: "Standard",
@@ -254,13 +256,15 @@ export const MortiseLocks = {
       warning: "",
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
-      text1: "View (50-) Mounting Template Doc# 7682-A",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
-      text2:
+      text1: 'View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056022',
+      text2: "View (50-) Mounting Template Doc# 7682-A",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
+      text3:
         "View 78-0034 Deadbolt Strike Template (03, 20, 21, 22, 23 Functions) Doc# 7064-C",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
-      text3: "View Thumbturn Template Doc# 7059-B",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
+      text4: "View Thumbturn Template Doc# 7059-B",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
     },
     {
       device: "Standard",
