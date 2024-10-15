@@ -340,12 +340,12 @@ body {
 
 @media (max-width: 550px) {
   .search-bar {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 430px;
+    min-width: 430px;
   }
   .Home {
-    min-width: 450px;
-    max-width: 450px;
+    min-width: 430px;
+    max-width: 430px;
   }
 }
 
