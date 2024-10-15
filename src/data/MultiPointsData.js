@@ -33,6 +33,7 @@ export const MultiPoints = {
             device: '7300',
             title: '7300, FM7300, BL7300',
             image: Images.MP7300,
+            functions: '7305, 7337, 7389, 7356, 7318, FM7318, BL7318, 7325, FM7325, BL7325, 7324, BL7324, 7327, 7326, BL7326, 7341, FM7341, BL7341, 7339, FM7339, BL7339, 7349, FM7349, BL7349, 7340, FM7340, BL7340, 7338, 7390, 7301, FM7301, BL7301, 7365, 7314, 7366, FM7366, BL7366, 7319, 7368, BL7368, 7300',
 
             text: 'View Standard 7300 Template Form (Ceco Door Medallion, Curries 747 doors and frames)',
             link: 'https://www.sargentlock.com/en/standalone/7300-template',
