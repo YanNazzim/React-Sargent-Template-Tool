@@ -340,8 +340,12 @@ body {
 
 @media (max-width: 550px) {
   .search-bar {
-    max-width: 430px;
-    min-width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    min-width: 450px;
   }
   .Home {
     min-width: 430px;
@@ -349,7 +353,7 @@ body {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   .search-bar,
   .search-button,
   .clear-button,
@@ -379,5 +383,6 @@ body {
   .search-bar {
     min-width: 350px;
     max-width: 350px;
+    font-size: 4.5vw;
   }
 }
