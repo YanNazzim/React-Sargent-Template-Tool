@@ -8,7 +8,7 @@ import { BoredLocks } from "../data/BoredLocksData";
 import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
 import { CylindersData } from "../data/CylindersData";
-import { ThermalPin } from '../data/ThermalPinData'
+import { ThermalPin } from "../data/ThermalPinData";
 
 function Header() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -145,19 +145,19 @@ function Header() {
         )
       );
     }
-        // Include Thermal pin data
-        if (ThermalPin && Object.keys(ThermalPin).length > 0) {
-          productData.push(
-            ...Object.entries(ThermalPin).flatMap(([series, items]) =>
-              items.map((item) => ({
-                ...item,
-                category: "Thermal",
-                series,
-                device: item.device || "Unknown Device",
-              }))
-            )
-          );
-        }
+    // Include Thermal pin data
+    if (ThermalPin && Object.keys(ThermalPin).length > 0) {
+      productData.push(
+        ...Object.entries(ThermalPin).flatMap(([series, items]) =>
+          items.map((item) => ({
+            ...item,
+            category: "Thermal",
+            series,
+            device: item.device || "Unknown Device",
+          }))
+        )
+      );
+    }
 
     // Include Cylinders data
     if (CylindersData && Object.keys(CylindersData).length > 0) {
@@ -169,6 +169,7 @@ function Header() {
             device: section.heading, // Use section heading as the device name
             title: data.title, // Title of the cylinder type
             texts: section.texts || [], // Include texts to search in
+            metadata: section.metadata || "",
           }))
         )
       );
@@ -181,7 +182,8 @@ function Header() {
         product.device.toLowerCase().includes(query) ||
         product.title.toLowerCase().includes(query) ||
         product.functions?.toLowerCase().includes(query) || // Ensure it checks functions
-        product.texts?.some((text) => text.toLowerCase().includes(query))
+        product.texts?.some((text) => text.toLowerCase().includes(query)) ||
+        (product.metadata && product.metadata.toLowerCase().includes(query)) // Check metadata
       );
     });
 

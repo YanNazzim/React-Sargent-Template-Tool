@@ -79,6 +79,7 @@ export const Images = {
   CylMortise: require('./Cylinders/CylinderMortise.png'),
   CylRim: require('./Cylinders/CylinderRim.png'),
   CylLFIC: require('./Cylinders/CylinderLFIC.png'),
+  CylLFICCams: require('./Cylinders/CylinderLFICCams.png'),
   CylSFIC: require('./Cylinders/CylinderSFIC.png'),
   CylKESOF1: require('./Cylinders/CylinderKESOF1.png'),
   CylDegree: require('./Cylinders/CylinderDegree.png'),
@@ -99,6 +100,13 @@ export const Images = {
   CylCoreLFIC: require('./Cylinders/CylinderCoreLFIC.png'),
   CylDegreeFixedCore: require('./Cylinders/CylinderDegreeFixedCore.png'),
   CylDegreeLFIC: require('./Cylinders/CylinderDegreeLFIC.png'),
+  CylDegreeBored: require('./Cylinders/CylinderDegreeBored.png'),
+  CylDegreeRim: require('./Cylinders/CylinderDegreeRim.png'),
+  CylDegreeCams: require('./Cylinders/CylinderDegreeCams.png'),
+  CylKESOMortise: require('./Cylinders/CylinderKESOMortise.png'),
+  CylKESORim: require('./Cylinders/CylinderKESORim.png'),
+  CylKESOBored: require('./Cylinders/CylinderKESOBored.png'),
+  CylKESOCams: require('./Cylinders/CylinderKESOCam.png'),
 
 
   // Thermal Pins

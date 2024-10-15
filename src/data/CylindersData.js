@@ -147,11 +147,16 @@ export const CylindersData = {
           ],
         },
       },
+      {
+        heading: "LFIC Cams",
+        image: Images.CylLFICCams,
+        texts: [""],
+      },
     ],
   },
   Degree: {
     title: 'Degree Security Cylinders',
-
+    
     sections: [
       {
         heading: "Degree Cylinder Details",
@@ -161,26 +166,72 @@ export const CylindersData = {
           headers: ["Type","Degree Level", "Cylinder Size", "Came(s)"],
           rows: [
             ['Degree Mortise Cylinders',"DG1-, DG2- or DG3-", '41 (1-1/8"), 42 (1-1/4"), 43 (1-3/8"), 44 (1-1/2"), 46 (1-3/4")', "Std, 101,104,105,106,112 & 113"],
-            [' 1-3/8" ',"63-43", "60-43", "64-43"],
-            [' 1-1/2" ',"63-44", "60-44", "64-44"],
-            [' 1-3/4" ',"63-46", "60-46", "64-46"],
+            ['Expose Plug DG Mortise Cylinders (78-)" ',"DG1-", '41 (1-1/8") 42 (1-1/4") 43 (1-3/8")', "Standard or 105"],
+            ['Hotel Function DG Mortise Cylinders (50-)',"DG1", '43 (1-3/8") 44 (1-1/2")', "115 Only"],
           ],
         },
+      },
+      {
+        heading: "Degree Rim Cylinder Details",
+        image: Images.CylDegreeRim,
+        texts: [""],
+    
       },
       {
         heading: "Degree LFIC Details",
         image: Images.CylDegreeLFIC,
         texts: [""],
         table: {
-          headers: ["Length","Keyed Core", "Disposable Core", "Construction Keyed Core"],
+          headers: ["Length","Degree Level", "Keyed Core", "Disposable Core", "Construction Keyed Core"],
           rows: [
-            [' 1-1/4" ',"63-42", "60-42", "64-42"],
-            [' 1-3/8" ',"63-43", "60-43", "64-43"],
-            [' 1-1/2" ',"63-44", "60-44", "64-44"],
-            [' 1-3/4" ',"63-46", "60-46", "64-46"],
+            [' 1-1/4" ', "DG1-, DG2- DG3-", "63-42", "60-42", "64-42"],
+            [' 1-1/2" ', "DG1-, DG2- DG3-", "63-44", "60-44", "64-44"],
+            [' 1-3/4" ', "DG1-, DG2- DG3-", "63-46", "60-46", "64-46"],
           ],
         },
       },
+      {
+        heading: "Degree Cam Details",
+        image: Images.CylDegreeCams,
+        metadata: 'cams',
+        texts: [""],
+
+      },
+      {
+        heading: "Degree Bored Lock Cylinder Details",
+        image: Images.CylDegreeBored,
+        texts: [""],
+
+      },
+
+    ],
+  },
+  KESO: {
+    title: 'KESO F1',
+    sections: [
+      {
+        heading: "KESO F1 Mortise Cylinder Details",
+        image: Images.CylKESOMortise,
+        texts: [""],
+      },
+      {
+        heading: "KESO F1 Rim Cylinder Details",
+        image: Images.CylKESORim,
+        texts: [""],
+      },
+      {
+        heading: "KESO F1 Bored Lock Cylinder Details",
+        image: Images.CylKESOBored,
+        texts: [""],
+      },
+      {
+        heading: "KESO F1 Cam Details",
+        image: Images.CylKESOCams,
+        metadata: 'cams',
+
+        texts: [""],
+      },
+
     ],
   }
   // Other cylinder types...
