@@ -329,9 +329,11 @@ body {
 @media (max-width: 550px) {
   .search-bar {
     max-width: 450px;
+    min-width: 450px;
   }
   .Home {
     min-width: 450px;
+    max-width: 450px;
   }
 }
 
