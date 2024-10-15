@@ -6,6 +6,7 @@ export const MultiPoints = {
             device: '7000',
             image : Images.MP7000,
             title: 'Standard (NB)(WD)(MD)(ELR) 7000',
+            functions: '700106, 700113, 700115, 700143, 700146, 700173, 700174, 700606, 700613, 700615, 700673, 700674, 701006, 701013, 701015, 701073, 701074, 701306, 701313. 701315. 701343. 701346, 701616, 704043, 704046, 704315, 704340, 704343, 704346, 707306, 707313, 707315, 707373, 707374, 707406, 707413, 707415, 707473, 707474, 7000, WD7000, NB7000, WDNB7000, WD-NB-7000, WD-NB7000, WDNB-7000',
 
             text: 'View Metal Door Mounting Template Doc# 4582',
             link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1056046',
@@ -20,6 +21,7 @@ export const MultiPoints = {
             device: "6100",
             title: 'FM6100 ',
             image: Images.MP6100,
+            functions: '6101, 6113, FM6101, FM6113',
 
             text: 'View Template Form (Ceco Door StormPro® 361 or Curries StormPro® 361 doors and frames)',
             link: 'https://www.sargentlock.com/en/standalone/fm6100-template',
@@ -39,21 +41,6 @@ export const MultiPoints = {
             text2: 'View BL7300 Template Form (Ceco and Curries Multi-Solution Opening doors and frames)',
             link2: 'https://www.sargentlock.com/en/standalone/bl7300-template',
 
-        }
-    ],
-
-    'Thermal Pin': [
-        {
-            device: 'Thermal Pin',
-            image: Images.ThermalPin683,
-            title: '683 Thermal Pin',
-
-            text: 'View Single Door Template Doc# 4628',
-            link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055971',
-            text1: 'View Double Door Template Doc# 4617',
-            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055944',
-            text2: 'View Installation Instructions Doc# A7436',
-            link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055353',
         }
     ],
 }

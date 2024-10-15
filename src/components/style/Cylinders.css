@@ -31,7 +31,7 @@
   border-radius: 8px;
   padding: 20px;
   width: 100%;
-  max-width: 295px; /* Set max-width for better responsiveness */
+  max-width: fit-content; /* Set max-width for better responsiveness */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
 }
 
@@ -42,6 +42,13 @@
   margin: 0 auto 10px auto; /* Center align */
   border: 1px solid black;
   border-radius: 25px;
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
+}
+
+.cylinder-card img:hover {
+  box-shadow: black 0px 0px 10px 5px;
+  transform: scale(.85);
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
 }
 
 .cylinder-card h2 {
@@ -57,10 +64,50 @@
   text-align: center; /* Center align the text */
 }
 
+.cylinder-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.cylinder-table th,
+.cylinder-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cylinder-table td {
+  background-color: #ddd;
+}
+
+.cylinder-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
 @media screen and (max-width: 444px) {
   .cylinder-cards {
     flex-direction: column;
     gap: 10px; /* Reduce gap for smaller screens */
+  }
+  
+  .cylinder-card {
+    scale: 0.85;
+  }
+
+  .cylinder-table {
+    max-width: 300px;
+    font-size: 3vw;
+  }
+  .ToolTip {
+    text-align: center;
+    font-size: 6vw;
+  }
+  .cylinder-info h1 {
+    font-size: 7vw;
   }
 }
 

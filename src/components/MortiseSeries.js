@@ -14,9 +14,10 @@ function MortiseSeries() {
   return (
     <>
       <div className="stile-page">
-        <h2 className="ToolTip">
+      <h2 className="ToolTip">
             Strike Box (WBS) : 77-1141
-            <br />
+        </h2>
+        <h2 className="ToolTip">
             Strike Screw:  01-1019 x finish
         </h2>
         {/* Button for 8200 series */}

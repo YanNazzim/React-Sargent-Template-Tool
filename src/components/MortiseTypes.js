@@ -41,6 +41,12 @@ function MortiseTypes() {
 
   return (
     <div className="stile-page">
+            <h2 className="ToolTip">
+            Strike Box (WBS) : 77-1141
+        </h2>
+        <h2 className="ToolTip">
+            Strike Screw:  01-1019 x finish
+        </h2>
       {/* Button for Standard series */}
       <button className="btn" onClick={() => handleButtonClick(series, "Standard")}>
         <img

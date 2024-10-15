@@ -1,15 +1,29 @@
-/* Stile.css */
-
 /* Page container */
 .stile-page {
   display: flex;
-  flex-direction: column ; /* Allow buttons to wrap when necessary */
-  justify-content: center; /* Centers the buttons horizontally */
-  align-items: center; /* Centers the content vertically */
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers buttons horizontally */
   gap: 10px; /* Space between buttons */
   padding: 20px;
   background-color: #aaaaaa; /* Background color */
   margin: 0;
+  position: relative; /* Relative positioning to allow .ToolTip to be positioned absolutely */
+}
+
+/* Tooltip styling */
+.ToolTip {
+  position: absolute; /* Position it absolutely */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: auto;
+  text-align: center; /* Center the text */
+  font-size: 18px; /* Adjust font size */
+  color: black; /* Optional: text color */
+  background-color: #fff; /* Optional: background color */
+  padding: 10px;
+  border-radius: 10px; /* Optional: rounded corners */
+  z-index: 20; /* Ensure it’s above other elements */
 }
 
 /* Button styling */
@@ -19,8 +33,9 @@
   align-items: center;
   justify-content: center; /* Center content vertically */
   background-color: #007bff;
-  width: 100%; /* Ensure button takes full width of its container */
-  max-width: 600px; /* Set a max-width to prevent oversized buttons */
+  width: 100%; /* Full width by default */
+  max-height: 300px;
+  max-width: 600px;
   color: white;
   margin: 20px;
   border: solid black 3px;
@@ -37,8 +52,9 @@
 
 /* Image styling */
 .btn-image {
-  max-width: 150px; /* Ensure images are responsive */
+  max-width: 150px;
   height: auto;
+  max-height: 150px;
   margin-bottom: 10px;
   border-radius: 25px;
 }
@@ -47,22 +63,33 @@
 .btn:hover {
   background-color: #1565c0;
   border: solid black 6px;
-  transform: scale(1.05);
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
-/* Media Queries for Responsiveness */
+/* For screens wider than 1280px */
+@media (min-width: 1024px) {
+  .stile-page {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columns, each taking up 1 fraction */
+    gap: 20px; /* Adjust gap between buttons */
+    justify-items: center; /* Center single buttons horizontally */
+  }
 
-/* For screens wider than 1344px */
-@media (min-width: 1344px) {
   .btn {
-    max-width: 550px; /* Ensure buttons stay reasonable in size */
-    font-size: 42px;
-    padding: 18px;
+    width: 100%; /* Reduce width for better grid alignment */
+    max-height: fit-content;
+    max-width: 500px; /* Limit the max width */
+    font-size: 42px; /* Adjust font size for larger screens */
+    padding: 18px; /* Adjust padding */
   }
 }
 
-/* Medium screens (max-width: 1344px) */
-@media (max-width: 1344px) {
+/* Medium screens (max-width: 1280px) */
+@media (max-width: 1280px) {
   .btn {
     width: 450px;
     font-size: 4vw;
@@ -90,8 +117,8 @@
 /* Mobile devices (max-width: 440px) */
 @media (max-width: 440px) {
   .btn {
+    max-height: 250px;
     max-width: 300px;
-    min-width: 300px;
     font-size: 24px;
     padding: 10px;
   }
@@ -100,19 +127,3 @@
     width: 50%;
   }
 }
-
-/* Mobile devices (max-width: 440px) */
-@media (max-width: 444px) {
-  .btn {
-    max-width: 300px;
-    min-width: 300px;
-    font-size: 24px;
-    padding: 10px;
-  }
-
-  .btn-image {
-    width: 50%;
-  }
-}
-
-

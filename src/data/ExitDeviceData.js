@@ -6,9 +6,9 @@ export const ExitDevices = {
     {
       device: "8300",
 
-      title: "(12-)8300 Mortise Exit (04, 10, 15, 40, 43, 44)",
+      title: "(12-)8300 Mortise Exit (04, 10, 13, 15, 40, 43, 44)",
       image: Images.narrowMortise8300, // Use Images object reference
-      functions: "8304, 8310, 8315, 8340, 8343, 8344",
+      functions: "8304, 8310, 8313, 8315, 8340, 8343, 8344",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
       text: "View Mounting Template Doc# 4310-E",
@@ -1172,7 +1172,7 @@ export const ExitDevices = {
       device: "9700",
 
       title: "12-9700 SVR Exit (All Functions)",
-      functions: "(9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774)",
+      functions: "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774",
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055982",
@@ -1197,7 +1197,7 @@ export const ExitDevices = {
       device: "9700",
 
       title: "(13-)(14-)(16-)9700 SVR Exit (All Functions)",
-      functions: "(9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774)",
+      functions: "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774",
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055981",
@@ -1367,6 +1367,7 @@ export const ExitDevices = {
       device: "3727",
 
       title: "3727",
+      functions: "3737",
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
@@ -1400,7 +1401,7 @@ export const ExitDevices = {
       device: "3828",
 
       title: "Strikes",
-      functions: "3838",
+      metadata: "3838",
       image: Images.strikes3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
@@ -1413,18 +1414,4 @@ export const ExitDevices = {
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
   ],
-  'Fire Rated Hardware': [
-    {
-        device: 'Thermal Pin',
-        image: Images.ThermalPin683,
-        title: '683 Thermal Pin',
-
-        text: 'View Single Door Template Doc# 4628',
-        link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055971',
-        text1: 'View Double Door Template Doc# 4617',
-        link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055944',
-        text2: 'View Installation Instructions Doc# A7436',
-        link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055353',
-    }
-],
 };

@@ -15,7 +15,7 @@ export const AuxLocks = {
   ],
   8200: [
     {
-      device: '8200 Deadbolt',
+      device: '8200',
       image: Images.Aux8200, // Update to use the Images object
       title: '8200 Deadbolt',
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660", // Primary link
@@ -28,7 +28,7 @@ export const AuxLocks = {
   ],
   9200: [
     {
-      device: '9200 Deadbolt',
+      device: '9200',
       image: Images.Aux8200, // Update to use the Images object
       title: '9200 Deadbolt',
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660", // Primary link
@@ -41,7 +41,7 @@ export const AuxLocks = {
   ],
   4870: [
     {
-      device: '4870 Deadbolt',
+      device: '4870',
       image: Images.Aux4870, // Update to use the Images object
       title: '4870 Deadbolt',
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055682',
@@ -56,7 +56,7 @@ export const AuxLocks = {
   ],
   480: [
     {
-      device: '480 Deadbolt',
+      device: '480',
       image: Images.Aux480, // Update to use the Images object
       title: '480 Deadbolt',
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055654',
@@ -71,7 +71,7 @@ export const AuxLocks = {
   ],
   460: [
     {
-      device: '460 Deadbolt',
+      device: '460',
       image: Images.Aux460, // Update to use the Images object
       title: '460 Deadbolt',
       link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1206693',

@@ -4,6 +4,11 @@ import logo from "../images/Sargent Logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { ExitDevices } from "../data/ExitDeviceData";
 import { MortiseLocks } from "../data/MortiseLocksData";
+import { BoredLocks } from "../data/BoredLocksData";
+import { AuxLocks } from "../data/AuxLocksData";
+import { MultiPoints } from "../data/MultiPointsData";
+import { CylindersData } from "../data/CylindersData";
+import { ThermalPin } from '../data/ThermalPinData'
 
 function Header() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -55,28 +60,136 @@ function Header() {
         series: "Wide80",
         device: item.device || "Unknown Device",
       })),
+      ...ExitDevices.NarrowPE.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "NarrowPE",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
+      })),
       ...ExitDevices.WidePE.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "WidePE",
         device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
       })),
+      ...ExitDevices.Wide30.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide30",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
+      })),
+      ...ExitDevices.Wide20.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide20",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
+      })),
+      ...ExitDevices.Narrow90.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Narrow90",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
+      })),
+      ...ExitDevices.Wide90.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide90",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "", // Ensure functions field is included
+      }))
     );
 
+    // Include Bored Locks data
+    if (BoredLocks && Object.keys(BoredLocks).length > 0) {
+      productData.push(
+        ...Object.entries(BoredLocks).flatMap(([series, items]) =>
+          items.map((item) => ({
+            ...item,
+            category: "Bored Locks",
+            series,
+            device: item.device || "Unknown Device",
+          }))
+        )
+      );
+    }
+
+    // Include Aux Locks data
+    if (AuxLocks && Object.keys(AuxLocks).length > 0) {
+      productData.push(
+        ...Object.entries(AuxLocks).flatMap(([series, items]) =>
+          items.map((item) => ({
+            ...item,
+            category: "Auxiliary Locks",
+            series,
+            device: item.device || "Unknown Device",
+          }))
+        )
+      );
+    }
+
+    // Include MultiPoints data
+    if (MultiPoints && Object.keys(MultiPoints).length > 0) {
+      productData.push(
+        ...Object.entries(MultiPoints).flatMap(([series, items]) =>
+          items.map((item) => ({
+            ...item,
+            category: "Multi Points",
+            series,
+            device: item.device || "Unknown Device",
+          }))
+        )
+      );
+    }
+        // Include Thermal pin data
+        if (ThermalPin && Object.keys(ThermalPin).length > 0) {
+          productData.push(
+            ...Object.entries(ThermalPin).flatMap(([series, items]) =>
+              items.map((item) => ({
+                ...item,
+                category: "Thermal",
+                series,
+                device: item.device || "Unknown Device",
+              }))
+            )
+          );
+        }
+
+    // Include Cylinders data
+    if (CylindersData && Object.keys(CylindersData).length > 0) {
+      productData.push(
+        ...Object.entries(CylindersData).flatMap(([type, data]) =>
+          data.sections.map((section) => ({
+            category: "Cylinders",
+            type, // Pass the type for navigation
+            device: section.heading, // Use section heading as the device name
+            title: data.title, // Title of the cylinder type
+            texts: section.texts || [], // Include texts to search in
+          }))
+        )
+      );
+    }
+
     // Filter results based on searchQuery
-    const results = productData.filter(
-      (product) =>
-        product.device.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.functions?.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const results = productData.filter((product) => {
+      const query = searchQuery.toLowerCase();
+      return (
+        product.device.toLowerCase().includes(query) ||
+        product.title.toLowerCase().includes(query) ||
+        product.functions?.toLowerCase().includes(query) || // Ensure it checks functions
+        product.texts?.some((text) => text.toLowerCase().includes(query))
+      );
+    });
 
     setFilteredProducts(results);
     setIsModalOpen(true);
 
     console.log("Search Results:", results); // Log search results for debugging
   };
-
   const handleClear = () => {
     setSearchQuery("");
     setFilteredProducts([]);
@@ -98,20 +211,21 @@ function Header() {
   };
 
   const handleItemClick = (product) => {
-    const { device, category, series } = product;
+    const { device, category, series, type } = product;
 
-    console.log(
-      `Navigating to: Category: ${category}, Series: ${series}, Device: ${device}`
-    );
-
-    // Navigate to display-templates with the determined category, series, and device
-    navigate("/display-templates", {
-      state: {
-        category,
-        series,
-        device,
-      },
-    });
+    // Special handling for Cylinders to route them to CylindersInfo page
+    if (category === "Cylinders") {
+      navigate(`/cylinders-info/${type}`);
+    } else {
+      // Navigate to display-templates for other categories
+      navigate("/display-templates", {
+        state: {
+          category,
+          series,
+          device,
+        },
+      });
+    }
 
     handleCloseModal(); // Close the modal and clear the search when an item is clicked
   };
@@ -139,10 +253,11 @@ function Header() {
           <div className="modal-content">
             <input
               type="text"
-              placeholder="Search for device... (8238, 8613)"
+              placeholder="Search a Function... (8613, 10XG04, 8204)"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-bar"
+              id="search-bar"
             />
             <div className="modal-buttons">
               <button onClick={handleSearchClick} className="search-button">
@@ -172,8 +287,21 @@ function Header() {
                         key={index}
                         onClick={() => handleItemClick(product)}
                       >
-                        <img src={product.image} alt={product.title} />
-                        <p>{product.title}</p>
+                        <img
+                          src={
+                            product.category === "Cylinders"
+                              ? CylindersData[product.type]?.sections.find(
+                                  (section) =>
+                                    section.heading === product.device // Find the correct section for cylinders
+                                )?.image // Get the image from the matching section
+                              : product.image // For other categories, use product.image
+                          }
+                          alt={product.title}
+                        />
+                        <p>
+                          {product.title}{" "}
+                          {product.device ? `(${product.device})` : ""}
+                        </p>
                       </div>
                     ))}
                   </div>

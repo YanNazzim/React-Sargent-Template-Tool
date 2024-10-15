@@ -78,14 +78,14 @@
   border: solid white 3px;
   text-decoration: none;
   border-radius: 25px;
-  transform: scale(1.15); /* Hover effect */
-  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.2s;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.4s, box-shadow 0.3s;
 }
 
 .template-card a:hover {
-    transform: scale(1.1);
+    transform: scale(.95);
     background-color: #1565c0;
     border: solid black 3px;
+    box-shadow: black 5px 0px 15px 5px;
 }
 
 /* Image within template cards */

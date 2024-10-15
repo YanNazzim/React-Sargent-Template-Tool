@@ -6,9 +6,9 @@ export const BoredLocks = {
     {
       device: "11 Line",
       image: Images.Bored11, // Use Images object reference
-      functions: '11G13, 11G15-3, 11U15, 11U65, 11U68, 11U93, 11U94, 11U94-2, 11G04, 11G05, 11G24, 11G37, 11G44, 11G50, 11G54, 11G16, 11G17, 11G30, 11g38',
+      functions: '11G13, 11G15-3, 11U15, 11U65, 11U68, 11U93, 11U94, 11U94-2, 11G04, 11G05, 11G24, 11G37, 11G44, 11G50, 11G54, 11G16, 11G17, 11G30, 11G38, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "11 Line",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055639",
       text: "View Mounting Template Doc# 4527",
@@ -26,8 +26,9 @@ export const BoredLocks = {
     {
       device: "10X Line",
       image: Images.Bored10x, // Use Images object reference
+      functions: '10XG04, 10XG05, 10XG07, 10XG08, 10XG24, 10XG37, 10XG44, 10XG50, 10XG63, 10XG53, 10XG54, 10XG60, 10XG16, 10XG17, 10XG26, 10XG30, 10XG38, 10XG13, 10XG14, 10XG15, 10XG15-3, 10XG64, 10XG65, 10XU65, 10XU66, 10XU68, 10XU93, 10XU94, 10XU94-2, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "10X",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1181919",
       text: "View Mounting Template Doc# A8294",
@@ -47,6 +48,8 @@ export const BoredLocks = {
     {
       device: "10X BHW",
       image: Images.BHW10x, // Use Images object reference
+      functions: '10XG04, 10XG05, 10XG24, 10XG37, 10XG63, 10XG54, 10XG17, 10XG26, 10XG15, 10XG65, 10XU65, 10XU66, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
+
 
       title: "10X W/ BHW Trim",
 
@@ -58,8 +61,9 @@ export const BoredLocks = {
     {
       device: "8X Line",
       image: Images.Bored8x, // Use Images object reference
+      functions: '8XG04, 8XG05, 8XG37, 8XU65, 8XG17, 8XG15, 8XG93, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "8X",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055651",
       text: "View Mounting Template (Metal & Wood) Doc# 4732",
@@ -77,8 +81,9 @@ export const BoredLocks = {
     {
       device: "7 Line",
       image: Images.Bored7, // Use Images object reference
+      functions: '7G04, 7G05, 7G37, 7U15, 7G15-3, 7U65, 7U68, 7U93, 7U94, 7U94-2, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "7 Line",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055645",
       text: "View Mounting Template (Metal & Wood) Doc# 4481",
@@ -94,8 +99,9 @@ export const BoredLocks = {
     {
       device: "6500 Series",
       image: Images.Bored6500, // Use Images object reference
+      functions: '65G15-3, 65U15, 65U65, 65U93, 65U94, 65G04, 65G05, 65G37, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "6500",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055649",
       text: "View Mounting Template (Metal & Wood) Doc# 4430",
@@ -111,8 +117,9 @@ export const BoredLocks = {
     {
       device: "6 Line",
       image: Images.Bored6, // Use Images object reference
+      functions: '6U15, 6U65, 6U93, 6G04, 6G05, 6G37, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
 
-      title: "Standard",
+      title: "6 Line",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055652",
       text: "View Mounting Template Doc# 4252",
@@ -129,7 +136,7 @@ export const BoredLocks = {
   "DL Series": [
     {
       device: "DL Series",
-      image: Images.BoredDL, // Use Images object reference
+      image: Images.BoredDLSeries, // Use Images object reference
 
       title: "DL",
 
@@ -146,7 +153,7 @@ export const BoredLocks = {
     },
     {
       device: "DL Series",
-      image: Images.BoredDL, // Use Images object reference
+      image: Images.BoredDLSeries, // Use Images object reference
 
       title: "RDL",
 

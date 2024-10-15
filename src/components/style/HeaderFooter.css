@@ -19,6 +19,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+}
+
+.header img {
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  min-width: 300px;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.header img:hover {
+  box-shadow: black 0px 0px 10px 5px;
+  transform: scale(.85);
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  cursor: pointer;
+
 }
 
 .footer {
@@ -26,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2vw;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -40,28 +56,44 @@ body {
   transition: transform 0.2s ease;
 }
 
+/* Tooltip Styling */
+.ToolTip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  font-size: 2vw;
+  color: black;
+  background-color: #aaaaaa;
+  margin-top: 20px; /* Controls spacing between the tooltip and buttons */
+  border-radius: 10px;
+  position: relative;
+}
+
+
+/* Button Styling */
 .Home {
-  font-size: 4vw;
+  width: 650px;
+  font-size: 2vw;
   padding: 25px;
   background-color: #1565c0;
   color: white;
   margin: 5px;
   border: solid black 3px;
   border-radius: 25px;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
 }
 
 .Home:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
+  box-shadow: black 0px 0px 10px 5px;
+  transform: scale(.85);
+  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  cursor: pointer;
 }
 
-.SargentLogo {
-  margin: 5px;
-  max-width: 200px;
-  border-radius: 25px;
-}
-
+/* Search, Clear, and Close Buttons */
 .search-button,
 .clear-button,
 .close-button {
@@ -91,12 +123,10 @@ body {
   border: solid black 3px;
   margin: 15px;
   border-radius: 25px;
-  min-width: none;
   max-width: 900px;
   text-align: center;
 }
 
-/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -116,6 +146,7 @@ body {
   padding: 20px;
   width: 90%;
   max-width: 1200px;
+  max-height: fit-content;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -178,9 +209,11 @@ body {
 
 .carousel-button.left {
   margin-right: 10px;
+  font-size: 4vw;
 }
 
 .carousel-button.right {
+  font-size: 4vw;
   margin-left: 10px;
 }
 
@@ -189,7 +222,33 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 900px;
+}
+
+
+
+@media (max-width: 2560px) {
+  .Home {
+    font-size: 2.25vw;
+  }
+  .footer {
+    font-size: 1.5vw;
+  }
+  .search-bar {
+    min-width: 1024px;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1444px) {
+  .Home {
+    font-size: 2.25vw;
+  }
+  .footer {
+    font-size: 2vw;
+  }
+  .search-bar {
+    font-size: 3.25vw;
+  }
 }
 
 /* Media Queries for screens 1024px and below */
@@ -208,7 +267,7 @@ body {
   .Home {
     min-width: 600px;
     margin: 10px;
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .carousel-item {
@@ -219,17 +278,26 @@ body {
     max-height: 750px;
   }
   .search-bar {
-    width: 850px;
+    max-width: 850px;
+    min-width: 850px;
+    font-size: 4vw;
+  }
+  .footer {
+    font-size: 3vw;
   }
 }
+
+/* More responsive design as needed */
 
 @media (max-width: 920px) {
   .search-bar {
     width: 750px;
   }
+  .footer {
+    font-size: 3vw;
+  }
 }
 
-/* Media Queries for screens 768px and below */
 @media (max-width: 770px) {
   .search-bar,
   .search-button,
@@ -244,15 +312,29 @@ body {
     font-size: 3.5vw;
     font-weight: 700;
   }
+  .carousel-item img {
+    max-width: 250px;
+    min-width: 50px;
+    height: auto;
+  }
+  .footer {
+    font-size: 3vw;
+  }
+  .search-bar {
+    min-width: 575px;
+    font-size: 3.75vw;
+  }
 }
 
 @media (max-width: 550px) {
   .search-bar {
     max-width: 450px;
   }
+  .Home {
+    min-width: 450px;
+  }
 }
 
-/* Media Queries for screens 430px and below */
 @media (max-width: 430px) {
   .search-bar,
   .search-button,
@@ -274,18 +356,14 @@ body {
   }
   .Home {
     min-width: 300px;
+    max-width: 300px;
+    font-size: 8vw;
   }
-}
-@media (max-width: 344px) {
+  .footer {
+    font-size: 4vw;
+  }
   .search-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 275px;
-  }
-  .Home {
-    max-width: 200px;
-    font-size: 6vw;
+    min-width: 350px;
+    max-width: 350px;
   }
 }

@@ -34,10 +34,33 @@ function CylindersInfo() {
             <a href={section.image} target="_blank" rel="noopener noreferrer">
               <img className="imgs" src={section.image} alt={section.heading} />
             </a>
+            
             {/* Texts for the section */}
             {section.texts.map((text, textIndex) => (
               <p key={textIndex}>{text}</p>
             ))}
+
+            {/* Check if the section contains a table */}
+            {section.table && (
+              <table className="cylinder-table">
+                <thead>
+                  <tr>
+                    {section.table.headers.map((header, headerIndex) => (
+                      <th key={headerIndex}>{header}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.table.rows.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                      {row.map((cell, cellIndex) => (
+                        <td key={cellIndex}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
           </div>
         ))}
       </div>

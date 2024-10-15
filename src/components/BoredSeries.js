@@ -5,8 +5,6 @@ import "./style/Stile.css";
 // Import all the images
 import { Images } from '../images/images'
 
-
-
 function BoredSeries() {
   const navigate = useNavigate();
 
@@ -27,12 +25,12 @@ function BoredSeries() {
     { id: "DL Series", name: "DL Series", image: Images.BoredDLSeries, series: "DL Series" },
   ];
 
-  function handleButtonClick(series, id) {
+  function handleButtonClick(series) {
     navigate("/display-templates", {
       state: {
         category: "Bored Locks",
         series,
-        id, // Passing the correct series id
+        device: series, // Pass the series as the device identifier
       },
     });
   }
@@ -44,7 +42,7 @@ function BoredSeries() {
           <button
             key={item.id}
             className="btn"
-            onClick={() => handleButtonClick(item.series, item.id)}
+            onClick={() => handleButtonClick(item.series)}
           >
             <img
               className="btn-image"

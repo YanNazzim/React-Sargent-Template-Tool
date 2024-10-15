@@ -22,7 +22,7 @@ function AuxLockSeries() {
       state: {
         category: "Auxiliary Locks",
         series,
-        id, // Passing the correct series id
+        device: series, // Pass the series as the device identifier
       },
     });
   }

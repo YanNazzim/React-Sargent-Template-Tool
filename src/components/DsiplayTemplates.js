@@ -6,10 +6,11 @@ import { ExitDevices } from "../data/ExitDeviceData";
 import { BoredLocks } from "../data/BoredLocksData";
 import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
+import { ThermalPin } from "../data/ThermalPinData";
 
 function DisplayTemplates() {
   const location = useLocation();
-  const { category, series, type, device } = location.state || {};
+  const { category, series, type, device, id } = location.state || {};
 
   // Initialize templates array
   let templates = [];
@@ -25,18 +26,21 @@ function DisplayTemplates() {
     templates = BoredLocks[series] || [];
   } else if (category === "Auxiliary Locks") {
     templates = AuxLocks[series] || [];
+  } else if (category === "Thermal") {
+    templates = ThermalPin[series] || [];
   }
 
-  // Safeguard for filtering when `device` or `type` is undefined
+  // Update the filter logic to check for both type and device
   const filterByCategory = {
     "Mortise Locks": (template) =>
-      type && template.device ? template.device.toLowerCase() === type.toLowerCase() : false,
+      (type && template.device?.toLowerCase() === type.toLowerCase()) ||
+      (device && template.device?.toLowerCase() === device.toLowerCase()),
     "Exit Devices": (template) =>
-      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
+      device && template.device?.toLowerCase() === device.toLowerCase(),
     "Bored Locks": (template) =>
-      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
+      device && template.device?.toLowerCase() === device.toLowerCase(),
     "Auxiliary Locks": (template) =>
-      device && template.device ? template.device.toLowerCase() === device.toLowerCase() : false,
+      device && template.device?.toLowerCase() === device.toLowerCase(),
   };
 
   // Apply the filter if it exists
@@ -44,9 +48,20 @@ function DisplayTemplates() {
   const filteredTemplates = filterFunction ? templates.filter(filterFunction) : templates;
 
   // Construct the header label
-  const headerLabel = `${category || "Category"} - ${series || "Series"} - ${
-    type || device || "Device"
-  }`;
+  let headerLabel;
+  if (category === "Thermal") {
+    // Only show device or id for Thermal category
+    headerLabel = `${device || id}`;
+  } else if (category === "Multi Points"){
+    headerLabel = `${category || "Category"} - ${series || "Series"}`;
+  } else if (category === "Bored Locks"){
+    headerLabel = `${category || "Category"} - ${series || "Series"}`;
+  } else if (category === "Auxiliary Locks"){
+    headerLabel = `${category || "Category"} - ${series || "Series"}`;
+  } else {
+    // For other categories, include category, series, and type/device
+    headerLabel = `${category || "Category"} - ${series || "Series"} - ${type || device || id || ''}`;
+  }
 
   // If no templates are found, display a message
   if (filteredTemplates.length === 0) {

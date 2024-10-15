@@ -90,11 +90,15 @@ export const Images = {
   CylSchlageKeyway: require('./Cylinders/CylinderCompetitorKeyway.png'),
   CylMortiseSizes: require('./Cylinders/CylinderMortiseSizes.png'),
   CylBored: require('./Cylinders/CylinderBored.png'),
+  CylBoredLFIC: require('./Cylinders/CylinderLFICBored.png'),
+  CylBoredSFIC: require('./Cylinders/CylinderSFICBored.png'),
   CylAllRegBored: require('./Cylinders/CylinderAllRegularBored.png'),
   CylCoreSFIC: require("./Cylinders/CylinderCoreSFIC.png"),
   CylHousingSFIC: require('./Cylinders/CylinderSFICWithHousing.png'),
   CylSFICKeyblanks: require('./Cylinders/CylinderSFICKeyblanks.png'),
   CylCoreLFIC: require('./Cylinders/CylinderCoreLFIC.png'),
+  CylDegreeFixedCore: require('./Cylinders/CylinderDegreeFixedCore.png'),
+  CylDegreeLFIC: require('./Cylinders/CylinderDegreeLFIC.png'),
 
 
   // Thermal Pins

@@ -30,7 +30,7 @@ function ExitSeries() {
     const handleButtonClickThermalPin = (series, id) => {
         navigate("/display-templates", {
             state: {
-                category: "Exit Devices",
+                category: "Thermal",
                 series,
                 id, // Passing the correct series id
             },
@@ -40,7 +40,7 @@ function ExitSeries() {
     return (
         <>
             <div className="stile-page">
-                <button className="btn" onClick={() => handleButtonClickThermalPin('Fire Rated Hardware', 'Thermal Pin')}>
+                <button className="btn" onClick={() => handleButtonClickThermalPin('Thermal', 'Thermal Pin')}>
                     <img src={Images.ThermalPin683} alt="683 Thermal Pin" className="btn-image" />
                     683 Thermal Pin
                 </button>

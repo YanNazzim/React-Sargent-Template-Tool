@@ -68,13 +68,13 @@ export const MortiseLocks = {
       device: "Electrified",
       series: "8200",
       functions:
-        "8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285",
-      title: "8200 Mortise Lock - Electrified",
+        "8270, 8271, 8272, 8273, 82270, 82271, 82274, 82275, 82280, 82281, 82284, 82285, NAC",
+      title: "8200 Mortise Lock (70, 71, 72, 73, NAC)",
       image: Images.MortiseElectrified8200,
       warning: "Ensure proper wiring setup.",
-      text: "View Mounting Template (70, 71, 71, 72, 73, NAC Functions) Doc# 7065",
+      text: "View Lockbody Template (70, 71, 71, 72, 73, NAC Functions) Doc# 7065",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056016",
-      text1: "View ",
+      text1: "View Mounting Template (W/ Trim + Wiring) Doc# 7057",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
     },
     {
