@@ -326,6 +326,18 @@ body {
   }
 }
 
+@media (max-width: 660px) {
+  .Home {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .search-bar {
+    min-width: 500px;
+    max-width: 500px;
+  }
+}
+
+
 @media (max-width: 550px) {
   .search-bar {
     max-width: 450px;
