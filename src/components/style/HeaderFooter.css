@@ -251,7 +251,7 @@ body {
   }
 }
 
-/* Media Queries for screens 1024px and below */
+/* Media Queries for screens 1280px and below */
 @media (max-width: 1280px) {
   .search-bar,
   .search-button,
@@ -275,7 +275,7 @@ body {
   }
   .modal-content {
     max-width: 1000px;
-    max-height: 750px;
+    max-height: 950px;
   }
   .search-bar {
     max-width: 850px;

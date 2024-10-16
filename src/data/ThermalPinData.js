@@ -6,6 +6,7 @@ export const ThermalPin = {
             device: 'Thermal Pin',
             image: Images.ThermalPin683,
             title: '683 Thermal Pin',
+            functions: 'Fire, Pin, Fire Pin, Fire Bolt, Bolt',
 
             text: 'View Single Door Template Doc# 4628',
             link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055971',

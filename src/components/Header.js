@@ -113,6 +113,7 @@ function Header() {
             category: "Bored Locks",
             series,
             device: item.device || "Unknown Device",
+            functions: item.functions || "", // Ensure functions field is included
           }))
         )
       );
@@ -127,6 +128,8 @@ function Header() {
             category: "Auxiliary Locks",
             series,
             device: item.device || "Unknown Device",
+            functions: item.functions || "", // Ensure functions field is included
+
           }))
         )
       );
@@ -141,6 +144,8 @@ function Header() {
             category: "Multi Points",
             series,
             device: item.device || "Unknown Device",
+            functions: item.functions || "", // Ensure functions field is included
+
           }))
         )
       );
@@ -154,6 +159,8 @@ function Header() {
             category: "Thermal",
             series,
             device: item.device || "Unknown Device",
+            functions: item.functions || "", // Ensure functions field is included
+
           }))
         )
       );

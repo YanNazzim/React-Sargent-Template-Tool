@@ -107,6 +107,7 @@ export const Images = {
   CylKESORim: require('./Cylinders/CylinderKESORim.png'),
   CylKESOBored: require('./Cylinders/CylinderKESOBored.png'),
   CylKESOCams: require('./Cylinders/CylinderKESOCam.png'),
+  CylKeyBlanks: require('./Cylinders/CylinderKeyBlanks.png'),
 
 
   // Thermal Pins
