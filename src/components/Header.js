@@ -129,7 +129,6 @@ function Header() {
             series,
             device: item.device || "Unknown Device",
             functions: item.functions || "", // Ensure functions field is included
-
           }))
         )
       );
@@ -145,7 +144,6 @@ function Header() {
             series,
             device: item.device || "Unknown Device",
             functions: item.functions || "", // Ensure functions field is included
-
           }))
         )
       );
@@ -160,7 +158,6 @@ function Header() {
             series,
             device: item.device || "Unknown Device",
             functions: item.functions || "", // Ensure functions field is included
-
           }))
         )
       );
@@ -198,16 +195,19 @@ function Header() {
     setIsModalOpen(true);
     setCurrentIndex(0);
 
-
     console.log("Search Results:", results); // Log search results for debugging
   };
   const handleClear = () => {
     setSearchQuery("");
+    setCurrentIndex(0);
+
     setFilteredProducts([]);
   };
 
   const handleCloseModal = () => {
     handleClear();
+    setCurrentIndex(0);
+
     setIsModalOpen(false);
   };
 
