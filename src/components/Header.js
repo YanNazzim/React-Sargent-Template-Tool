@@ -196,6 +196,8 @@ function Header() {
 
     setFilteredProducts(results);
     setIsModalOpen(true);
+    setCurrentIndex(0);
+
 
     console.log("Search Results:", results); // Log search results for debugging
   };
