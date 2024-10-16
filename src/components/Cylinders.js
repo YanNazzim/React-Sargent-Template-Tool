@@ -30,11 +30,11 @@ function Cylinders() {
       </button>
       <button className="btn" onClick={() => handleCylinderClick('Bored')}>
         <img src={Images.CylBored} className="btn-image" alt="Bored Cylinder" />
-        Bored/Aux Cylinders (KIL/KIK)
+        Bored Cylinders (KIL/KIK)
       </button>
       <button className="btn" onClick={() => handleCylinderClick('Degree')}>
         <img src={Images.CylDegree} className="btn-image" alt="Degree Cylinder" />
-        DG1-, DG2- & DG3- Series Mortise Cylinders <span className="small-text">(Degree)</span>
+        Degree Mortise Cylinders
       </button>
       <button className="btn" onClick={() => handleCylinderClick('KESO')}>
         <img src={Images.CylKESOF1} className="btn-image" alt="KESO Cylinder" />

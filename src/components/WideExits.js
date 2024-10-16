@@ -67,9 +67,10 @@ function WideExits() {
   }
 
   const handleButtonClick = (id) => {
-    const navigateSeries = series === "PE" ? "PE80" : `Wide${series}`; // Adjust series naming for PE series
+    const navigateSeries = series === "PE" ? `Wide${series}` : `Wide${series}`; // Adjust series naming for PE series
     navigate('/display-templates', { state: { category: 'Exit Devices', series: navigateSeries, device: id } });
   };
+  
 
   return (
     <div className="stile-page">

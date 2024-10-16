@@ -62,8 +62,8 @@ export const ExitDevices = {
     {
       device: "MD8400",
 
-      title: "(12-)(NB-)MD8400 (06, 10, 13, 40, 43, 46)",
-      functions: "8406, 8410, 8413, 8440, 8443, 8446",
+      title: "(12-)(NB-)MD8400 (06, 10, 13, 15, 40, 43, 46)",
+      functions: "8406, 8410, 8413, 8415, 8440, 8443, 8446",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -463,7 +463,7 @@ export const ExitDevices = {
     {
       device: "8700",
 
-      title: "Thumbpeice Trims (10, 28, 62, 63)",
+      title: "Thumbpiece Trims (10, 28, 62, 63)",
       functions: "8710, 8728, 8762, 8763",
       image: Images.thumbpieceTrims,
 
@@ -598,8 +598,8 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055915",
+      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4530",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
@@ -662,8 +662,8 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055915",
+      text1: "View Electrified Trim Template (54-)(700-8 ET) Doc# 4530",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
@@ -673,7 +673,7 @@ export const ExitDevices = {
     {
       device: "8800",
 
-      title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
+      title: "Thumbpiece Trims (04, 10, 28, 63, 66)",
       functions: "8804, 8810, 8828, 8863, 8866",
       image: Images.thumbpieceTrims,
 
@@ -739,7 +739,7 @@ export const ExitDevices = {
     {
       device: "8900",
 
-      title: "Thumbpeice Trims (04, 10, 28, 63, 66)",
+      title: "Thumbpiece Trims (04, 10, 28, 63, 66)",
       functions: "(8904, 8910, 8928, 8963, 8966)",
       image: Images.thumbpieceTrims,
 
