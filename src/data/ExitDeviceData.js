@@ -701,7 +701,7 @@ export const ExitDevices = {
       device: "8800",
 
       title: "Thumbpiece Trims (04, 10, 28, 63, 66)",
-      functions: "8804, 8810, 8828, 8863, 8866, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder",
+      functions: "8804, 8810, 8828, 8863, 8866, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder, PTB, STS, MAL, FLL, FLW, PSB, MSL, FSL, FSW",
       image: Images.thumbpieceTrims,
 
       warning:
