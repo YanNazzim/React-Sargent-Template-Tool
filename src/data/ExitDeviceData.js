@@ -8,7 +8,8 @@ export const ExitDevices = {
 
       title: "(12-)8300 Mortise Exit (04, 10, 13, 15, 40, 43, 44)",
       image: Images.narrowMortise8300, // Use Images object reference
-      functions: "8304, 8310, 8313, 8315, 8340, 8343, 8344",
+      functions:
+        "8304, 8310, 8313, 8315, 8340, 8343, 8344, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Classroom, Class-Room, class, room, class room, Night Latch, Night, Latch, Store-Room, Passage",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
       text: "View Mounting Template Doc# 4310-E",
@@ -28,7 +29,8 @@ export const ExitDevices = {
 
       title: "(12-)8300 Mortise Exit (73, 74, 75, 76)",
       image: Images.narrowMortise8300, // Use Images object reference
-      functions: "8373, 8374, 8375, 8376",
+      functions:
+        "8373, 8374, 8375, 8376, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
       text: "View Mounting Template Doc# 4310-E",
@@ -47,7 +49,8 @@ export const ExitDevices = {
       device: "8300",
 
       title: "Thumbpiece Trims (04, 10, 28, 63)",
-      functions: "8304, 8310, 8328, 8363",
+      functions:
+        "8304, 8310, 8328, 8363, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, thumbpiece, thumb, piece, thumbpiece trims, PTB, STS, MAL, FLL, FLW",
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -63,7 +66,8 @@ export const ExitDevices = {
       device: "MD8400",
 
       title: "(12-)(NB-)MD8400 (06, 10, 13, 15, 40, 43, 46)",
-      functions: "8406, 8410, 8413, 8415, 8440, 8443, 8446",
+      functions:
+        "8406, 8410, 8413, 8415, 8440, 8443, 8446, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -81,7 +85,8 @@ export const ExitDevices = {
       device: "MD8400",
 
       title: "(12-)(NB-)MD8400 (73, 74)",
-      functions: "8473, 8474",
+      functions:
+        "8473, 8474, Electrified, Electrified Trim, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -99,7 +104,8 @@ export const ExitDevices = {
       device: "AD8400",
 
       title: "(12-)(NB-)AD8400 (06, 10, 13, 15, 40, 43, 46)",
-      functions: "8406, 8410, 8413, 8415, 8440, 8443, 8446",
+      functions:
+        "8406, 8410, 8413, 8415, 8440, 8443, 8446, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -117,7 +123,8 @@ export const ExitDevices = {
       device: "AD8400",
 
       title: "(12-)(NB-)AD8400 (73, 74)",
-      functions: "8473, 8474",
+      functions:
+        "8473, 8474, Electrified, Electrified Trim, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical",
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -135,7 +142,8 @@ export const ExitDevices = {
       device: "8500",
 
       title: "(12-)8500 Rim Exit (04, 10, 40, 44)",
-      functions: "8504, 8510, 8540, 8544",
+      functions:
+        "8504, 8510, 8540, 8544, Narrow, Rim, Exit, Narrow Rim, Narrow Rim Exit, Narrow Rim Exit Device, 8500, 700 ET, ET, ET Trim , 700 ET Trim, 704, 710, 740, 744, Narrow Exit Device, Narrow Exit, Exit, Exit only, Night, Latch, Night Latch",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -155,7 +163,8 @@ export const ExitDevices = {
       device: "8500",
 
       title: "(12-)8500 Rim Exit (06, 13, 15, 43, 46)",
-      functions1: "8506, 8513, 8515, 8543, 8546",
+      functions:
+        "8506, 8513, 8515, 8543, 8546, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 706-8, 715-8, 713-8, 743-8, 746-8, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -175,7 +184,8 @@ export const ExitDevices = {
       device: "8500",
 
       title: "(12-)8500 Rim Exit (73, 74)",
-      functions1: "8573, 8574",
+      functions:
+        "8573, 8574, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 773-7, 774-8, Electrified, Trim, Electrified Trim, Fail Safe, Fail Secure, Fail, Safe, Secure",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -195,7 +205,8 @@ export const ExitDevices = {
       device: "AD8500",
 
       title: "(12-)(WS-)AD8500 Rim Exit (04, 10, 40, 44)",
-      functions: "8504, 8510, 8540, 8544",
+      functions:
+        "8504, 8510, 8540, 8544, Narrow, Rim, Exit, Narrow Rim, Narrow Rim Exit, Narrow Rim Exit Device, 8500, 700 ET, ET, ET Trim , 700 ET Trim, 704, 710, 740, 744, Narrow Exit Device, Narrow Exit, Exit, Exit only, Night, Latch, Night Latch",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -215,7 +226,8 @@ export const ExitDevices = {
       device: "AD8500",
 
       title: "(12-)(WS-)AD8500 Rim Exit (06, 13, 15, 43, 46)",
-      functions: "8506, 8513, 8515, 8543, 8546, 8573, 8574",
+      functions:
+        "8506, 8513, 8515, 8543, 8546, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 706-8, 715-8, 713-8, 743-8, 746-8, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -235,7 +247,8 @@ export const ExitDevices = {
       device: "AD8500",
 
       title: "(12-)(WS-)AD8500 Rim Exit (73, 74)",
-      functions: "8573, 8574",
+      functions:
+        "8573, 8574, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 773-7, 774-8, Electrified, Trim, Electrified Trim, Fail Safe, Fail Secure, Fail, Safe, Secure",
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -258,7 +271,8 @@ export const ExitDevices = {
 
       title: "WD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
-      functions: "8606, 8610, 8613, 8615, 8640, 8643, 8646",
+      functions:
+        "8606, 8610, 8613, 8615, 8640, 8643, 8646, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, WD, Wood Door, Wood, WD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
@@ -279,7 +293,8 @@ export const ExitDevices = {
 
       title: "WD8600 CVR Exit (73,74)",
       image: Images.wideCVR,
-      functions: "8673, 8674",
+      functions:
+        "8673, 8674, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, WD, Wood Door, Wood, WD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, Trim, ET, Trim, ET Trim, Electrified Trim, 773-4, 774-4, 773, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
@@ -300,7 +315,8 @@ export const ExitDevices = {
 
       title: "(12-)MD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
-      functions: "8606, 8610, 8613, 8615, 8640, 8643, 8646",
+      functions:
+        "8606, 8610, 8613, 8615, 8640, 8643, 8646, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -321,7 +337,8 @@ export const ExitDevices = {
 
       title: "(12-)MD8600 CVR Exit (73,74)",
       image: Images.wideCVR,
-      functions: "8673,8674",
+      functions:
+        "8673,8674, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, ET, ET Trim, 773-4, 773, 774-4, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -342,7 +359,8 @@ export const ExitDevices = {
 
       title: "AD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
-      functions: "8606, 8610, 8613, 8615, 8640, 8643, 8646",
+      functions:
+        "8606, 8610, 8613, 8615, 8640, 8643, 8646, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, AD, Aluminum Door, Aluminum, AD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
@@ -363,7 +381,8 @@ export const ExitDevices = {
 
       title: "AD8600 CVR Exit (73,74)",
       image: Images.wideCVR,
-      functions: "8673,8674",
+      functions:
+        "8673,8674, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, AD, Aluminum Door, Aluminum, AD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, ET, ET Trim, 773-4, 773, 774-4, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
@@ -384,7 +403,7 @@ export const ExitDevices = {
 
       title: "LP/LR/LS 8600 Template Form",
       functions:
-        "LP8606, LR8606, LS8606, LP8610, LR8610, LS8610, LP8613, LR8613, LS8613, LP8615, LR8615, LS8615, LP8640, LR8640, LS8640, LP8643, LR8643, LS8643, LP8646, LR8646, LS8646, LP8673, LR8673, LS8673, LP8674, LR8674, LS8674",
+        "LP8606, LR8606, LS8606, LP8610, LR8610, LS8610, LP8613, LR8613, LS8613, LP8615, LR8615, LS8615, LP8640, LR8640, LS8640, LP8643, LR8643, LS8643, LP8646, LR8646, LS8646, LP8673, LR8673, LS8673, LP8674, LR8674, LS8674, LP/LR, LP, LR, LS, Concealed, Mortise, CVR",
       image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
@@ -395,7 +414,8 @@ export const ExitDevices = {
 
       title: "8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
       image: Images.wideSVR,
-      functions: "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774",
+      functions:
+        "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
       text: "View 8700 Mounting Template (Any Door) Doc# 4289-H",
@@ -419,7 +439,8 @@ export const ExitDevices = {
 
       title: "12-8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
       image: Images.wideSVR,
-      functions: "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774",
+      functions:
+        "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
       text: "View 12-8700 Mounting Template (Any Door) Doc# 4297-H",
@@ -444,7 +465,8 @@ export const ExitDevices = {
       title:
         "(12-)(HC, HC4, FM)8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
       image: Images.wideSVR,
-      functions: "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774",
+      functions:
+        "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055970",
       text: "View (12-)(HC, HC4, FM)8700 Mounting Template (Any Door) Doc# 4462-G",
@@ -464,7 +486,8 @@ export const ExitDevices = {
       device: "8700",
 
       title: "Thumbpiece Trims (10, 28, 62, 63)",
-      functions: "8710, 8728, 8762, 8763",
+      functions:
+        "8710, 8728, 8762, 8763, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, Thumb, Piece, Trim, Thumbpiece, PTB, STS, MAL, FLW, FLL",
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -480,7 +503,8 @@ export const ExitDevices = {
       device: "NB-8700",
 
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
-      functions: "8706, 8713, 8715, 8743, 8746",
+      functions:
+        "8706, 8713, 8715, 8743, 8746, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Class, Room, Classroom, Store, Storeroom, Store-Room, Passage",
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -501,7 +525,8 @@ export const ExitDevices = {
       device: "NB-8700",
 
       title: "(12-)NB-8700 (10, 40)",
-      functions: "8710, 8740",
+      functions:
+        "8710, 8740, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Exit Only, Exit, Only",
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -522,7 +547,8 @@ export const ExitDevices = {
       device: "NB-8700",
 
       title: "(12-)NB-8700 (73, 74)",
-      functions: "8773, 8774",
+      functions:
+        "8773, 8774, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Electrified, 773, 774, 773-4, 774-4",
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -543,7 +569,8 @@ export const ExitDevices = {
       device: "8800",
       title: "(12-)(WS-)8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
-      functions: "8804, 8810, 8840, 8844",
+      functions:
+        "8804, 8810, 8840, 8844, Night, Latch, Night Latch, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Exit Only, Night Latch, Night, Latch, Only, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, ",
 
       warning: (
         <>
@@ -560,41 +587,41 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-        text4:
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
-        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-        text5: "View Wide EM Raceway Template Doc# 4569-C",
-      },
-      
-      {
-        device: "8800",
-        
-        title: "(12-)(WS-)8800 (06, 13, 15, 43, 46)",
-        image: Images.wideStileRim,
-        functions: "8806, 8813, 8815, 8843, 8846",
-        
-        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
-        text: "View Mounting Template (Any Material) Doc# 4415-H",
-        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-        text1: "View Trim Template (700-8 ET) Doc# 4414-H",
-        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-        text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
-        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
-        text3:
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text5: "View Wide EM Raceway Template Doc# 4569-C",
+    },
+
+    {
+      device: "8800",
+
+      title: "(12-)(WS-)8800 (06, 13, 15, 43, 46)",
+      image: Images.wideStileRim,
+      functions: "8806, 8813, 8815, 8843, 8846, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, 12WS8800, Class, Room, Classroom, Store, Storeroom, Store-Room",
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
+      text: "View Mounting Template (Any Material) Doc# 4415-H",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text1: "View Trim Template (700-8 ET) Doc# 4414-H",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
+      text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
-        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-        text4:
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
     {
       device: "8800",
-      
+
       title: "(12-)(WS-)8800 (73, 74, 75, 76)",
       image: Images.wideStileRim,
-      functions: "8873, 8874, 8875, 8876",
+      functions: "8873, 8874, 8875, 8876, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, 12WS8800, Electrified, Trim, ELectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
@@ -604,10 +631,10 @@ export const ExitDevices = {
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
       text3:
-      "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
+        "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
       text4:
-      "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
+        "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5: "View Wide EM Raceway Template Doc# 4569-C",
     },
@@ -615,7 +642,7 @@ export const ExitDevices = {
       device: "8800",
       title: "(12-)HC8800 (04, 10, 40, 44)",
       image: Images.wideStileRim,
-      functions: "8804, 8810, 8840, 8844",
+      functions: "8804, 8810, 8840, 8844, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Exit Only, Night Latch, Night, Latch, Only",
 
       warning: (
         <>
@@ -640,7 +667,7 @@ export const ExitDevices = {
       device: "8800",
       title: "(12-)HC8800 (06, 13, 15, 43 46)",
       image: Images.wideStileRim,
-      functions: "8806, 8813, 8815, 8843, 8846",
+      functions: "8806, 8813, 8815, 8843, 8846, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Class, Room, Classroom, Store, Storeroom, Store-Room, ",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
@@ -658,7 +685,7 @@ export const ExitDevices = {
       device: "8800",
       title: "(12-)HC8800 (75, 76)",
       image: Images.wideStileRim,
-      functions: "8875, 8876",
+      functions: "8875, 8876, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Electrified, Trim, ELectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
@@ -674,7 +701,7 @@ export const ExitDevices = {
       device: "8800",
 
       title: "Thumbpiece Trims (04, 10, 28, 63, 66)",
-      functions: "8804, 8810, 8828, 8863, 8866",
+      functions: "8804, 8810, 8828, 8863, 8866, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder",
       image: Images.thumbpieceTrims,
 
       warning:
