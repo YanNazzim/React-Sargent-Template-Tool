@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./style/HeaderFooter.css";
 import logo from "../images/Sargent Logo.jpg";
 import { useNavigate } from "react-router-dom";
@@ -29,7 +29,8 @@ function Header() {
     window.open("https://www.sargentlock.com/en", "_blank");
   };
 
-  const handleSearchClick = () => {
+  // Wrap handleSearchClick in useCallback to ensure stable function reference
+  const handleSearchClick = useCallback(() => {
     if (!searchQuery) return;
 
     let productData = [];
@@ -194,20 +195,32 @@ function Header() {
     setFilteredProducts(results);
     setIsModalOpen(true);
     setCurrentIndex(0);
+  }, [searchQuery]); // Only re-create handleSearchClick if searchQuery changes
 
-    console.log("Search Results:", results); // Log search results for debugging
-  };
+  // Listen for "Enter" key press when modal is open
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Enter" && isModalOpen) {
+        handleSearchClick(); // Trigger search when "Enter" is pressed
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Clean up the event listener when the modal is closed
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isModalOpen, handleSearchClick]); // Include handleSearchClick as a dependency
+
   const handleClear = () => {
     setSearchQuery("");
     setCurrentIndex(0);
-
     setFilteredProducts([]);
   };
 
   const handleCloseModal = () => {
     handleClear();
-    setCurrentIndex(0);
-
     setIsModalOpen(false);
   };
 
@@ -250,10 +263,10 @@ function Header() {
         onClick={handleButtonClickLogo}
       />
       <button className="Home" onClick={handleButtonClickHome}>
-        Templates Home Page
+        Home
       </button>
       <button className="Home" onClick={handleButtonClickBack}>
-        Previous Page
+        Back
       </button>
       <button onClick={() => setIsModalOpen(true)} className="Home">
         Search

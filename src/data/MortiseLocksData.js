@@ -44,7 +44,7 @@ export const MortiseLocks = {
     },
     {
       device: "Standard",
-      title: "Strikes",
+      title: "8200 Strikes",
       image: Images.Strike82007800,
 
       warning:
@@ -184,7 +184,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       series: "9200",
-      title: "Strikes",
+      title: "9200 Strikes",
       image: Images.Strikes9200,
 
       warning:
@@ -213,7 +213,7 @@ export const MortiseLocks = {
     {
       device: "Electrified",
       series: "9200",
-      title: "Strikes",
+      title: "9200 Strikes",
       image: Images.Strikes9200,
 
       warning:
@@ -271,7 +271,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       series: "M9200",
-      title: "Strikes",
+      title: "M9200 Strikes",
       image: Images.Strikes9200,
 
       warning:
@@ -334,7 +334,7 @@ export const MortiseLocks = {
     {
       device: "Standard",
       series: "7800",
-      title: "Strikes",
+      title: "7800 Strikes",
       image: Images.Strike82007800,
 
       warning:
