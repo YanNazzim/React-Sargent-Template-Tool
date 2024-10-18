@@ -318,9 +318,9 @@ export const ExitDevices = {
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, 650, 606, Strike, 650 Strike, 606 Strike, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text1:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
@@ -340,9 +340,9 @@ export const ExitDevices = {
       functions:
         "8673, 8674, 650, 606, 650 Strike, 606 Strike, Strike CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, ET, ET Trim, 773-4, 773, 774-4, 774",
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text1:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
@@ -364,7 +364,7 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text1:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055953",
@@ -388,7 +388,7 @@ export const ExitDevices = {
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
       text2: "View ET Trim Template (54-)(700-4) Doc# 4467-F",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text1:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
