@@ -10,6 +10,9 @@ export const ExitDevices = {
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
         "8304, 8310, 8313, 8315, 8340, 8343, 8344, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Classroom, Class-Room, class, room, class room, Night Latch, Night, Latch, Store-Room, Passage",
+        MechOptions: '12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB',
+        ElecOptions: '53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59',
+        CylOptions: '',
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -28,10 +31,10 @@ export const ExitDevices = {
     {
       device: "8300",
 
-      title: "(12-)8300 Mortise Exit (73, 74, 75, 76)",
+      title: "(12-)8300 Mortise Exit (75, 76)",
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
-        "8373, 8374, 8375, 8376, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
+        "8375, 8376, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
