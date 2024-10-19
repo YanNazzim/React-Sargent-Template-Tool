@@ -29,7 +29,7 @@ function Header() {
     window.open("https://www.sargentlock.com/en", "_blank");
   };
 
-  // Wrap handleSearchClick in useCallback to ensure stable function reference
+  // Search logic
   const handleSearchClick = useCallback(() => {
     if (!searchQuery) return;
 
@@ -72,34 +72,6 @@ function Header() {
         ...item,
         category: "Exit Devices",
         series: "WidePE",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide30.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide30",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide20.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide20",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Narrow90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Narrow90",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide90",
         device: item.device || "Unknown Device",
         functions: item.functions || "", // Ensure functions field is included
       }))
@@ -149,7 +121,8 @@ function Header() {
         )
       );
     }
-    // Include Thermal pin data
+
+    // Include Thermal Pin data
     if (ThermalPin && Object.keys(ThermalPin).length > 0) {
       productData.push(
         ...Object.entries(ThermalPin).flatMap(([series, items]) =>
@@ -195,7 +168,7 @@ function Header() {
     setFilteredProducts(results);
     setIsModalOpen(true);
     setCurrentIndex(0);
-  }, [searchQuery]); // Only re-create handleSearchClick if searchQuery changes
+  }, [searchQuery]);
 
   // Listen for "Enter" key press when modal is open
   useEffect(() => {
@@ -207,11 +180,10 @@ function Header() {
 
     window.addEventListener("keydown", handleKeyDown);
 
-    // Clean up the event listener when the modal is closed
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isModalOpen, handleSearchClick]); // Include handleSearchClick as a dependency
+  }, [isModalOpen, handleSearchClick]);
 
   const handleClear = () => {
     setSearchQuery("");
@@ -251,7 +223,7 @@ function Header() {
       });
     }
 
-    handleCloseModal(); // Close the modal and clear the search when an item is clicked
+    handleCloseModal();
   };
 
   return (

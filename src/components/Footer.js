@@ -13,7 +13,7 @@ function Footer() {
         Technical Support Option 2
       </p>
       <p>
-        For Questions/Feedback Email us! @ techsupport.sargent@assaabloy.com
+        For Questions/Feedback Email us! techsupport.sargent@assaabloy.com
       </p>
     </footer>
   );

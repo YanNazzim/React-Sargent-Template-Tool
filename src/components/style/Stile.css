@@ -14,8 +14,8 @@
 /* Tooltip styling */
 .ToolTip {
   position: absolute; /* Position it absolutely */
-  left: 50%;
   transform: translateX(-50%); /* Center it horizontally */
+  left: 50%;
   width: auto;
   text-align: center; /* Center the text */
   font-size: 18px; /* Adjust font size */
