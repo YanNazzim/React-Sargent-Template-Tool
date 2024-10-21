@@ -1383,7 +1383,7 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
-      text2: "View 773 & 774 Trim Template (54-)700 ET Template Doc# 4314-T",
+      text2: "View (73 & 74 Function) Trim Template (54-)700 ET Template Doc# 4314-T",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text3: "View C908 Standard Strike Template (Single Door) Doc# 3908-Y",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
