@@ -10,9 +10,16 @@ export const ExitDevices = {
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
         "8304, 8310, 8313, 8315, 8340, 8343, 8344, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Classroom, Class-Room, class, room, class room, Night Latch, Night, Latch, Store-Room, Passage",
-        MechOptions: '12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB',
-        ElecOptions: '53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59',
-        CylOptions: '',
+      MechOptions: "12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -35,6 +42,18 @@ export const ExitDevices = {
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
         "8375, 8376, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
+      MechOptions: "12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: '12V, 24V, 12 V, 24 V',
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -1129,7 +1148,8 @@ export const ExitDevices = {
       device: "PE8800",
 
       title: "(12-)(HC-)(WS-) PE8800 Rim Exit (16, 28, 63, 66)",
-      functions: "PE8816, PE8828, PE8863, PE8866, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series,",
+      functions:
+        "PE8816, PE8828, PE8863, PE8866, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series,",
       image: Images.widePERim,
 
       warning: "If using thumbpiece trim go to TP Trim section",

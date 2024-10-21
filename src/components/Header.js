@@ -29,11 +29,42 @@ function Header() {
     window.open("https://www.sargentlock.com/en", "_blank");
   };
 
+  // Split query by dashes or spaces and return an array of terms
+  const splitSearchQuery = (query) => query.split(/[-\s]+/).filter(Boolean);
+
   // Search logic
   const handleSearchClick = useCallback(() => {
     if (!searchQuery) return;
 
     let productData = [];
+    const searchTerms = splitSearchQuery(searchQuery.toLowerCase());
+
+    // Function to match search terms against a product's options
+    const matchesOptions = (product, terms) => {
+      const {
+        functions,
+        MechOptions,
+        ElecOptions,
+        CylOptions,
+        railSizes,
+        trims,
+        finishes,
+        handing,
+        voltage,
+      } = product;
+      const allOptions = [
+        ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
+        ...(MechOptions ? MechOptions.toLowerCase().split(/,\s*/) : []),
+        ...(ElecOptions ? ElecOptions.toLowerCase().split(/,\s*/) : []),
+        ...(CylOptions ? CylOptions.toLowerCase().split(/,\s*/) : []),
+        ...(railSizes ? railSizes.toLowerCase().split(/,\s*/) : []),
+        ...(finishes ? finishes.toLowerCase().split(/,\s*/) : []),
+        ...(trims ? trims.toLowerCase().split(/,\s*/) : []),
+        ...(handing ? handing.toLowerCase().split(/,\s*/) : []),
+        ...(voltage ? voltage.toLowerCase().split(/,\s*/) : []),
+      ];
+      return terms.every((term) => allOptions.includes(term));
+    };
 
     // Include Mortise Locks data
     if (MortiseLocks && Object.keys(MortiseLocks).length > 0) {
@@ -43,6 +74,7 @@ function Header() {
           category: "Mortise Locks",
           series,
           device: item.device || "Unknown Device",
+          functions: item.functions || "", // Ensure functions field is included
         }))
       );
     }
@@ -54,26 +86,120 @@ function Header() {
         category: "Exit Devices",
         series: "Narrow80",
         device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
       })),
       ...ExitDevices.Wide80.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "Wide80",
         device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
       })),
       ...ExitDevices.NarrowPE.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "NarrowPE",
         device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
       })),
       ...ExitDevices.WidePE.map((item) => ({
         ...item,
         category: "Exit Devices",
         series: "WidePE",
         device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
+      })),
+      ...ExitDevices.Narrow90.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Narrow90",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
+      })),
+      ...ExitDevices.Wide90.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide90",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
+      })),
+      ...ExitDevices.Wide20.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide20",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
+      })),
+      ...ExitDevices.Wide30.map((item) => ({
+        ...item,
+        category: "Exit Devices",
+        series: "Wide30",
+        device: item.device || "Unknown Device",
+        functions: item.functions || "",
+        MechOptions: item.MechOptions || "",
+        ElecOptions: item.ElecOptions || "",
+        CylOptions: item.CylOptions || "",
+        railSizes: item.railSizes || "",
+        finishes: item.finishes || "",
+        trims: item.trims || "",
+        handing: item.handing || "",
+        voltage: item.voltage || "",
       }))
     );
 
@@ -144,25 +270,17 @@ function Header() {
           data.sections.map((section) => ({
             category: "Cylinders",
             type, // Pass the type for navigation
-            device: section.heading, // Use section heading as the device name
+            device: section.heading,
             title: data.title, // Title of the cylinder type
-            texts: section.texts || [], // Include texts to search in
-            metadata: section.metadata || "",
+            texts: section.texts || [],
           }))
         )
       );
     }
 
-    // Filter results based on searchQuery
+    // Filter results based on search query matching product options
     const results = productData.filter((product) => {
-      const query = searchQuery.toLowerCase();
-      return (
-        product.device.toLowerCase().includes(query) ||
-        product.title.toLowerCase().includes(query) ||
-        product.functions?.toLowerCase().includes(query) || // Ensure it checks functions
-        product.texts?.some((text) => text.toLowerCase().includes(query)) ||
-        (product.metadata && product.metadata.toLowerCase().includes(query)) // Check metadata
-      );
+      return matchesOptions(product, searchTerms);
     });
 
     setFilteredProducts(results);
@@ -249,7 +367,7 @@ function Header() {
           <div className="modal-content">
             <input
               type="text"
-              placeholder="Search a Function... (8613, 10XG04, 8204)"
+              placeholder="Search by Function or Options... (12-55-56-43-8313)"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-bar"
@@ -288,9 +406,9 @@ function Header() {
                             product.category === "Cylinders"
                               ? CylindersData[product.type]?.sections.find(
                                   (section) =>
-                                    section.heading === product.device // Find the correct section for cylinders
-                                )?.image // Get the image from the matching section
-                              : product.image // For other categories, use product.image
+                                    section.heading === product.device
+                                )?.image
+                              : product.image
                           }
                           alt={product.title}
                         />
