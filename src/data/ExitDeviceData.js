@@ -10,16 +10,19 @@ export const ExitDevices = {
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
         "8304, 8310, 8313, 8315, 8340, 8343, 8344, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Classroom, Class-Room, class, room, class room, Night Latch, Night, Latch, Store-Room, Passage",
-      MechOptions: "12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
       ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
       CylOptions:
-        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE",
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
       handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims:
         "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -41,14 +44,15 @@ export const ExitDevices = {
       title: "(12-)8300 Mortise Exit (75, 76)",
       image: Images.narrowMortise8300, // Use Images object reference
       functions:
-        "8375, 8376, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
-      MechOptions: "12, 16, 19, 23, 31, 36, 37, 43, 76, 85, 86, AL, LD, SG, TB",
+        "8373, 8374, 8375, 8376, Narrow, Narrow 80 Series, Narrow 80, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, ET, ET Trim, 700 ET, Narrow, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, Fail Safe, Fail Secure, Safe, Secure, Fail, 773, 774, 775, 776, Electrified Trim, Electrified",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
       ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
       CylOptions:
-        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE",
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
       handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-      voltage: '12V, 24V, 12 V, 24 V',
+      voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims:
@@ -75,6 +79,19 @@ export const ExitDevices = {
       title: "8300 Thumbpiece Trims (04, 10, 28, 63)",
       functions:
         "8304, 8310, 8328, 8363, Narrow, Narrow 80 Series, Narrow 80, Exit, Device, Narrow Exit, Narrow Exit Device, Narrow Mortise, Mortise, Narrow Mortise Exit, Narrow Mortise Exit Device, 8300, 80 series, 80, thumbpiece, thumb, piece, thumbpiece trims, PTB, STS, MAL, FLL, FLW",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -92,6 +109,19 @@ export const ExitDevices = {
       title: "(12-)(NB-)MD8400 (06, 10, 13, 15, 40, 43, 46)",
       functions:
         "8406, 8410, 8413, 8415, 8440, 8443, 8446, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 650, 652, 606, 650 Strike, 652 Strike, 606 Strike, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -111,6 +141,19 @@ export const ExitDevices = {
       title: "(12-)(NB-)MD8400 (73, 74)",
       functions:
         "8473, 8474, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 650, 652, 606, 650 Strike, 652 Strike, 606 Strike, Electrified, Electrified Trim, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -130,6 +173,19 @@ export const ExitDevices = {
       title: "(12-)(NB-)AD8400 (06, 10, 13, 15, 40, 43, 46)",
       functions:
         "8406, 8410, 8413, 8415, 8440, 8443, 8446, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 640, Strike, 640 Strike, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -149,6 +205,19 @@ export const ExitDevices = {
       title: "(12-)(NB-)AD8400 (73, 74)",
       functions:
         "8473, 8474, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 640, Strike, 640 Strike, Electrified, Electrified Trim, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, 8400, Narrow CVR Device, 100 Aux, 100, 106, 113, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -168,6 +237,19 @@ export const ExitDevices = {
       title: "(12-)8500 Rim Exit (04, 10, 40, 44)",
       functions:
         "8504, 8510, 8540, 8544, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Narrow, Rim, Exit, Narrow Rim, Narrow Rim Exit, Narrow Rim Exit Device, 8500, 700 ET, ET, ET Trim , 700 ET Trim, 704, 710, 740, 744, Narrow Exit Device, Narrow Exit, Exit, Exit only, Night, Latch, Night Latch",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -189,6 +271,19 @@ export const ExitDevices = {
       title: "(12-)8500 Rim Exit (06, 13, 15, 43, 46)",
       functions:
         "8506, 8513, 8515, 8543, 8546, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 706-8, 715-8, 713-8, 743-8, 746-8, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -210,6 +305,19 @@ export const ExitDevices = {
       title: "(12-)8500 Rim Exit (73, 74)",
       functions:
         "8573, 8574, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 773-7, 774-8, Electrified, Trim, Electrified Trim, Fail Safe, Fail Secure, Fail, Safe, Secure",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -231,6 +339,19 @@ export const ExitDevices = {
       title: "(12-)(WS-)AD8500 Rim Exit (04, 10, 40, 44)",
       functions:
         "8504, 8510, 8540, 8544, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Narrow, Rim, Exit, Narrow Rim, Narrow Rim Exit, Narrow Rim Exit Device, 8500, 700 ET, ET, ET Trim , 700 ET Trim, 704, 710, 740, 744, Narrow Exit Device, Narrow Exit, Exit, Exit only, Night, Latch, Night Latch",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -252,6 +373,19 @@ export const ExitDevices = {
       title: "(12-)(WS-)AD8500 Rim Exit (06, 13, 15, 43, 46)",
       functions:
         "8506, 8513, 8515, 8543, 8546, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Aluminum, Door, Aluminum Door, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 706-8, 715-8, 713-8, 743-8, 746-8, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -273,6 +407,19 @@ export const ExitDevices = {
       title: "(12-)(WS-)AD8500 Rim Exit (73, 74)",
       functions:
         "8573, 8574, Narrow, Narrow 80 Series, Narrow 80, 80, 80 series, series, 649 Strike, 649, Strike, 656, 656 Strike, 657, 657 Strike, Aluminum, Door, Aluminum Door, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, 700, 700 ET, ET, ET Trim, 700 ET Trim, 700-8, 773-7, 774-8, Electrified, Trim, Electrified Trim, Fail Safe, Fail Secure, Fail, Safe, Secure",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -297,6 +444,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, Strike, 650 Strike, 606 Strike, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, WD, Wood Door, Wood, WD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
@@ -319,6 +479,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8673, 8674, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, Strike, 650 Strike, 606 Strike, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, WD, Wood Door, Wood, WD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, Trim, ET, Trim, ET Trim, Electrified Trim, 773-4, 774-4, 773, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
@@ -341,6 +514,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, Strike, 650 Strike, 606 Strike, Wide, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -363,6 +549,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8673, 8674, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, 650 Strike, 606 Strike, Strike CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, MD, Metal Door, Metal, MD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, ET, ET Trim, 773-4, 773, 774-4, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
@@ -385,6 +584,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, 650 Strike, 606 Strike, Strike, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, AD, Aluminum Door, Aluminum, AD8600, 59, 59-, Delayed, Egress, Delayed Egress, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
@@ -407,6 +619,19 @@ export const ExitDevices = {
       image: Images.wideCVR,
       functions:
         "8673,8674, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 650, 606, 650 Strike, 606 Strike, CVR, Exit, Device, Wide CVR, Wide CVR Exit Device, Wide CVR Exit, 700-4, 700-4 ET, ET Trim, ET, Trim, 100 Aux, Auxiliary, Control, Aux Control, Auxiliary Control, 106, 106 Aux, 113, 113 Aux, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, AD, Aluminum Door, Aluminum, AD8600, 59, 59-, Delayed, Egress, Delayed Egress, Electrified, ET, ET Trim, 773-4, 773, 774-4, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
@@ -428,6 +653,19 @@ export const ExitDevices = {
       title: "LP/LR/LS 8600 Template Form",
       functions:
         "LP8606, LR8606, LS8606, LP8610, LR8610, LS8610, LP8613, LR8613, LS8613, LP8615, LR8615, LS8615, LP8640, LR8640, LS8640, LP8643, LR8643, LS8643, LP8646, LR8646, LS8646, LP8673, LR8673, LS8673, LP8674, LR8674, LS8674, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, LP/LR, LP, LR, LS, Concealed, Mortise, CVR",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
@@ -440,6 +678,19 @@ export const ExitDevices = {
       image: Images.wideSVR,
       functions:
         "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 646, 624, 655, 648, 653, 646 Strike, 624 Strike, 655 Strike, 648 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -466,6 +717,19 @@ export const ExitDevices = {
       image: Images.wideSVR,
       functions:
         "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 646, 624, 655, 648, 653, Strike, 646 Strike, 624 Strike, 655 Strike, 648 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -493,6 +757,19 @@ export const ExitDevices = {
       image: Images.wideSVR,
       functions:
         "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055970",
@@ -515,6 +792,19 @@ export const ExitDevices = {
       title: "8700 Thumbpiece Trims (10, 28, 62, 63)",
       functions:
         "8710, 8728, 8762, 8763, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, Thumb, Piece, Trim, Thumbpiece, PTB, STS, MAL, FLW, FLL",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -532,6 +822,19 @@ export const ExitDevices = {
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
       functions:
         "8706, 8713, 8715, 8743, 8746, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Class, Room, Classroom, Store, Storeroom, Store-Room, Passage",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -554,6 +857,19 @@ export const ExitDevices = {
       title: "(12-)NB-8700 (10, 40)",
       functions:
         "8710, 8740, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Exit Only, Exit, Only",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -576,6 +892,19 @@ export const ExitDevices = {
       title: "(12-)NB-8700 (73, 74)",
       functions:
         "8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Electrified, 773, 774, 773-4, 774-4",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -598,6 +927,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8804, 8810, 8840, 8844, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 649, Strike, 649 Strike, 644, 644 Strike, Night, Latch, Night Latch, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Exit Only, Night Latch, Night, Latch, Only, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, ",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       warning: (
         <>
@@ -628,6 +970,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8806, 8813, 8815, 8843, 8846, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 649, Strike, 649 Strike, 644, 644 Strike, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, 12WS8800, Class, Room, Classroom, Store, Storeroom, Store-Room",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -652,6 +1007,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8873, 8874, 8875, 8876, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 649, Strike, 649 Strike, 644, 644 Strike, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, WS8800, 128800, 12-8800, 12 8800, 12-WS-8800, 12-WS8800, 12 WS 8800, 12WS8800, Electrified, Trim, ELectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -675,6 +1043,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8804, 8810, 8840, 8844, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 649, Strike, 649 Strike, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Exit Only, Night Latch, Night, Latch, Only",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
 
       warning: (
         <>
@@ -701,6 +1082,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8806, 8813, 8815, 8843, 8846, 80, 80 series, series, Wide, Wide 80 Series, Wide 80, 649, Strike, 649 Strike, Rim, Rim Exit, Wide Rim Exit, 8800, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Class, Room, Classroom, Store, Storeroom, Store-Room, ",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -721,6 +1115,19 @@ export const ExitDevices = {
       image: Images.wideStileRim,
       functions:
         "8875, 8876, 80, 80 series, series, Rim, Rim Exit, Wide, Wide 80 Series, Wide 80, Wide Rim Exit, 8800, 649, Strike, 649 Strike, Rim Exit Device, Exit Device, Device, Wide Stile, Stile, Wide Rim Exit Device, HC8800, 12HC8800, 12-HC-8800, 12HC-8800, 12-HC8800, HC 8800, 12 HC 8800, 12HC 8800, Electrified, Trim, ELectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -739,6 +1146,19 @@ export const ExitDevices = {
       title: "8800 Thumbpiece Trims (04, 10, 28, 63, 66)",
       functions:
         "8804, 8810, 8828, 8863, 8866, 80, 80 series, series, Wide, Wide 80 Series, Wide 80, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder, PTB, STS, MAL, FLL, FLW, PSB, MSL, FSL, FSW",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.thumbpieceTrims,
 
       warning:
@@ -763,6 +1183,19 @@ export const ExitDevices = {
       image: Images.wideMortise,
       functions:
         "8904, 8906, 8910, 8913, 8915, 8916, 8940, 8943, 8944, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 908, C908, 815, 815 Strike, 908 Strike, C908 Strike, 815 Open Back Strike, Wide, Wide Mortise, Wide Mortise Exit, Wide Mortise Exit Device, Exit, Device, Exit Device, Mortise Exit, Mortise Exit Device, 700 ET, ET, ET Trim, Trim, Delayed Egress, Classroom, Class, Room, Class Room, Class-Room, Storeroom, Store Room, Store-room, passage, Exit, Only, Exit Only, 8900, 12-8900, 12 8900, 128900, WS8900, WS-8900, WS 8900, 12-WS-8900, 12-WS8900, 12WS-8900, 12 WS 8900",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -787,6 +1220,19 @@ export const ExitDevices = {
       image: Images.wideMortise,
       functions:
         "8975, 8976, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 908, C908, 815, 908 Strike, C908 Strike, 815 Open Back Strike, Wide, Wide Mortise, Wide Mortise Exit, Wide Mortise Exit Device, Exit, Device, Exit Device, Mortise Exit, Mortise Exit Device, 700 ET, ET, ET Trim, Trim, Delayed Egress, Electrified, Electrified Trim, 775, 776, 8900, 12-8900, 12 8900, 128900, WS8900, WS-8900, WS 8900, 12-WS-8900, 12-WS8900, 12WS-8900, 12 WS 8900",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -810,6 +1256,19 @@ export const ExitDevices = {
       title: "8900 Thumbpiece Trims (04, 10, 28, 63, 66)",
       functions:
         "8904, 8910, 8928, 8963, 8966, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, Thumb, Piece, Thumbpiece, Thumbpiece Trims, Thumbpiece Trim, PTB, STS, FLL, FLW, MAL, Night, Latch, Night Latch, Exit, Only, Exit Only, 8900, 12-8900, 12 8900, 128900, WS8900, WS-8900, WS 8900, 12-WS-8900, 12-WS8900, 12WS-8900, 12 WS 8900",
+        MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65-73, 65-73-7P, 73-7P, 81, 82, F1-82, 83, F1-83, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -1383,7 +1842,8 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
-      text2: "View (73 & 74 Function) Trim Template (54-)700 ET Template Doc# 4314-T",
+      text2:
+        "View (73 & 74 Function) Trim Template (54-)700 ET Template Doc# 4314-T",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text3: "View C908 Standard Strike Template (Single Door) Doc# 3908-Y",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
