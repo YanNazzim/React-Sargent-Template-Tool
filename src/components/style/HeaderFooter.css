@@ -31,7 +31,7 @@ body {
 
 .header img:hover {
   box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.85);
+  transform: scale(.95);
   transition: transform 0.3s ease-out, box-shadow 0.25s;
   cursor: pointer;
 
@@ -88,7 +88,7 @@ body {
 
 .Home:hover {
   box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.85);
+  transform: scale(.95);
   transition: transform 0.3s ease-out, box-shadow 0.25s;
   cursor: pointer;
 }

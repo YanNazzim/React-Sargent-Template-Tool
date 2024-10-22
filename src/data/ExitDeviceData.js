@@ -2269,7 +2269,7 @@ export const ExitDevices = {
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
       trims:
-        "",
+        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
       
       image: Images.Exit2727,
 
@@ -2288,6 +2288,20 @@ export const ExitDevices = {
       title: "(12-)2828 Rim Exit",
       functions:
         "2828, GTB, HTB, Rim, Exit, Rim Exit Device, Rim Exit, 20 Series, 20, series, 20 series rim, ",
+        MechOptions:
+        "12, LD",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims:
+        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+      
       image: Images.Exit2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056003",
@@ -2305,6 +2319,20 @@ export const ExitDevices = {
       title: "20 Series Strikes",
       functions:
         "2828, 649 , 649 Strike, Strike, 613, 613 Strike, 644, 644 Strike, 642, 642 Strike, Strikes, Strike",
+        MechOptions:
+        "12, LD",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims:
+        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+      
       image: Images.strikes2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
@@ -2324,6 +2352,20 @@ export const ExitDevices = {
       title: "3727 SVR Exit Device",
       functions:
         "3737, GTB, HTB, SVR, SVR Exit, SVR Exit Device, Exit, Device, Surface Vertical Rod, Exit Device, 646, 646 Strike, 653, 653 Strike, 655, 655 Strike, 30, 30 series, 30 series Exit, 30 series exit device",
+        MechOptions:
+        "12, LD, 16, NB",
+      ElecOptions:
+        "55",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims:
+        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+      
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
@@ -2343,6 +2385,20 @@ export const ExitDevices = {
       title: "(12-)3828 Rim Exit Device",
       functions:
         "3828, GTB, HTB, 30, 30 series, 30 series exit, 30 series exit device, 30 series rim exit, rim, exit, device, Rim Exit, Rim exit device",
+        MechOptions:
+        "12, LD, 16, NB",
+      ElecOptions:
+        "55",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims:
+        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+      
       image: Images.Exit3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056004",
@@ -2358,7 +2414,21 @@ export const ExitDevices = {
       device: "3828",
 
       title: "30 series Strikes",
-      metadata: "3838",
+      functions: "3838, 3727",
+      MechOptions:
+      "12, LD, 16, NB",
+    ElecOptions:
+      "55",
+    CylOptions:
+      "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+    railSizes: "E, F, J, G",
+    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+    voltage: "12V, 24V, 12 V, 24 V",
+    finishes:
+      "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+    trims:
+      "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+    
       image: Images.strikes3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
