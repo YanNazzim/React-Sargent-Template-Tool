@@ -2006,6 +2006,20 @@ export const ExitDevices = {
       title: "12-9700 SVR Exit (All Functions)",
       functions:
         "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774, Wide, Wide 90 Series, 90 Series, 90, Wide SVR, Surface, Surface Vertical Rod, Vertical Rods, Rods, Wide Rod Device, 9700, Wide ROd Exit Device, Wide SVR Exit Device, Exit Device, Exit, Device, SVR, Vertical Rod, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055982",
@@ -2032,6 +2046,20 @@ export const ExitDevices = {
       title: "(13-)(14-)(16-)9700 SVR Exit (All Functions)",
       functions:
         "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774, cross, crossbar, cross-bar, 300 Aux, 306 Aux, 313 Aux, 306, 313, Strike, 646, 624, 655, 646 Strike, 624 Strike, 655 Strike, Wide, Wide 90 Series, 90 Series, 90, Wide SVR, Surface, Surface Vertical Rod, Vertical Rods, Rods, Wide Rod Device, 9700, Wide ROd Exit Device, Wide SVR Exit Device, Exit Device, Exit, Device, SVR, Vertical Rod, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055981",
@@ -2058,6 +2086,20 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (10, 28, 63)",
       functions:
         "9710, 9728, 9763, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2075,6 +2117,20 @@ export const ExitDevices = {
       title: "(12-)9800 Wide Rim Exit",
       functions:
         "9804, 9810, 9813, 9815, 9873. 9874, 9875, 9876, 90, 90 series, wide 90 series, cross, crossbar, cross-bar, Wide Rim, Wide Rim Exit, Wide Rim Exit Device, Wide Exit Device, Wide Exit, Exit, Device, Store, Class, Room, Classroom, Storeroom, Store Room, Class Room, Store-room, class-room, passage, electrified Trim, Electrified, trim, ET, 700 ET, 700",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.crossWideRim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055984",
@@ -2098,6 +2154,20 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions:
         "9804, 9810, 9828, 9863, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2116,6 +2186,20 @@ export const ExitDevices = {
       title: "(12-)9900 Wide Mortise Exit",
       functions:
         "9904, 9910, 9913, 9915, 9973, 9974, 9975, 9976, 90, 90 Series, 90 Seriex Exit, 90 Series Exit Device, Exit, Device, Exit Device, Wide, Wide Exit, Wide Exit Device, Wide Mortise Exit Device, 90 series mortise exit, 90 series mortise exit device, mortise exit device, Store, Class, Room, Classroom, Storeroom, Store Room, Class Room, Store-room, class-room, passage, electrified Trim, Electrified, trim, ET, 700 ET, 700",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.crossWideMortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055990",
@@ -2140,6 +2224,20 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions:
         "9904, 9910, 9928, 9963, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
+        MechOptions:
+        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:
+        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
+      
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2159,6 +2257,20 @@ export const ExitDevices = {
       title: "(12-) 2727 SVR Exit",
       functions:
         "2727, GTB, HTB, 646 Strike, 646, 653 Strike, 653, 655 Strike, 655, Strike, 20, Series, SVR, 20 Series, 20 Series SVR, 20 Series Exit Device, Exit, Device, Surface Vertical Rod, Surface Vertical Rod Exit Device, SVR Exit Device",
+        MechOptions:
+        "12, LD",
+      ElecOptions:
+        "54",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims:
+        "",
+      
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",

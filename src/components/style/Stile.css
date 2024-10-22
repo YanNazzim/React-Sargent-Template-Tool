@@ -41,7 +41,7 @@
   border: solid black 3px;
   border-radius: 15px;
   padding: 20px;
-  font-size: 4vw;
+  font-size: 2.5em;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s, border 0.3s;
@@ -84,7 +84,6 @@
     max-height: fit-content;
     min-height: 300px;
     max-width: 500px; /* Limit the max width */
-    font-size: 42px; /* Adjust font size for larger screens */
     padding: 18px; /* Adjust padding */
   }
 }
@@ -92,8 +91,6 @@
 /* Medium screens (max-width: 1280px) */
 @media (max-width: 1280px) {
   .btn {
-    width: 450px;
-    font-size: 4vw;
     padding: 16px;
   }
 
@@ -106,7 +103,6 @@
 @media (max-width: 768px) {
   .btn {
     width: 95%;
-    font-size: 28px;
     padding: 12px;
   }
 
@@ -120,7 +116,6 @@
   .btn {
     max-height: 250px;
     max-width: 300px;
-    font-size: 24px;
     padding: 10px;
   }
 

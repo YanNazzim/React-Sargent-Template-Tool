@@ -6,7 +6,7 @@ export const BoredLocks = {
     {
       device: "11 Line",
       image: Images.Bored11, // Use Images object reference
-      functions: '11G13, 11G15-3, 11U15, 11U65, 11U68, 11U93, 11U94, 11U94-2, 11G04, 11G05, 11G24, 11G37, 11G44, 11G50, 11G54, 11G16, 11G17, 11G30, 11G38, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever',
+      functions: '11G13, 11G15-3, 11U15, 11U65, 11U68, 11U93, 11U94, 11U94-2, 11G04, 11G05, 11G24, 11G37, 11G44, 11G50, 11G54, 11G16, 11G17, 11G30, 11G38, Bored, Cylindrical, KIL, KIK, Key In Knob, Key In Lever, 11 Line',
 
       title: "11 Line",
 

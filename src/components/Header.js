@@ -15,6 +15,8 @@ function Header() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedProduct, setSelectedProduct] = useState(null); // To store the selected product
+
   const navigate = useNavigate();
 
   const handleButtonClickBack = () => {
@@ -42,6 +44,7 @@ function Header() {
     // Function to match search terms against a product's options
     const matchesOptions = (product, terms) => {
       const {
+        title,
         functions,
         MechOptions,
         ElecOptions,
@@ -51,8 +54,11 @@ function Header() {
         finishes,
         handing,
         voltage,
+        metadata,
       } = product;
+    
       const allOptions = [
+        ...(title ? [title.toLowerCase()] : []), // Keep title as a full term for exact matches
         ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
         ...(MechOptions ? MechOptions.toLowerCase().split(/,\s*/) : []),
         ...(ElecOptions ? ElecOptions.toLowerCase().split(/,\s*/) : []),
@@ -62,206 +68,49 @@ function Header() {
         ...(trims ? trims.toLowerCase().split(/,\s*/) : []),
         ...(handing ? handing.toLowerCase().split(/,\s*/) : []),
         ...(voltage ? voltage.toLowerCase().split(/,\s*/) : []),
+        ...(metadata ? metadata.toLowerCase().split(/,\s*/) : []),
       ];
-      return terms.every((term) => allOptions.includes(term));
+    
+      // Check if every term matches an entry in allOptions
+      return terms.every((term) => allOptions.some((option) => option.includes(term)));
     };
+    
 
-    // Include Mortise Locks data
-    if (MortiseLocks && Object.keys(MortiseLocks).length > 0) {
-      productData = Object.entries(MortiseLocks).flatMap(([series, items]) =>
-        items.map((item) => ({
-          ...item,
-          category: "Mortise Locks",
-          series,
-          device: item.device || "Unknown Device",
-          functions: item.functions || "", // Ensure functions field is included
-        }))
-      );
-    }
+    // Include all data sources into productData
+    const dataSources = [
+      { data: MortiseLocks, category: "Mortise Locks" },
+      { data: ExitDevices, category: "Exit Devices" },
+      { data: BoredLocks, category: "Bored Locks" },
+      { data: AuxLocks, category: "Auxiliary Locks" },
+      { data: MultiPoints, category: "Multi Points" },
+      { data: ThermalPin, category: "Thermal" },
+    ];
 
-    // Include Exit Devices data
-    productData.push(
-      ...ExitDevices.Narrow80.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Narrow80",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.Wide80.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide80",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.NarrowPE.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "NarrowPE",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.WidePE.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "WidePE",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.Narrow90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Narrow90",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.Wide90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide90",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.Wide20.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide20",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      })),
-      ...ExitDevices.Wide30.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide30",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "",
-        MechOptions: item.MechOptions || "",
-        ElecOptions: item.ElecOptions || "",
-        CylOptions: item.CylOptions || "",
-        railSizes: item.railSizes || "",
-        finishes: item.finishes || "",
-        trims: item.trims || "",
-        handing: item.handing || "",
-        voltage: item.voltage || "",
-      }))
-    );
-
-    // Include Bored Locks data
-    if (BoredLocks && Object.keys(BoredLocks).length > 0) {
-      productData.push(
-        ...Object.entries(BoredLocks).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Bored Locks",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
-
-    // Include Aux Locks data
-    if (AuxLocks && Object.keys(AuxLocks).length > 0) {
-      productData.push(
-        ...Object.entries(AuxLocks).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Auxiliary Locks",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
-
-    // Include MultiPoints data
-    if (MultiPoints && Object.keys(MultiPoints).length > 0) {
-      productData.push(
-        ...Object.entries(MultiPoints).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Multi Points",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
-
-    // Include Thermal Pin data
-    if (ThermalPin && Object.keys(ThermalPin).length > 0) {
-      productData.push(
-        ...Object.entries(ThermalPin).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Thermal",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
+    // Process each data source
+    dataSources.forEach(({ data, category }) => {
+      if (data && Object.keys(data).length > 0) {
+        productData.push(
+          ...Object.entries(data).flatMap(([series, items]) =>
+            items.map((item) => ({
+              ...item,
+              category,
+              series,
+              device: item.device || "Unknown Device",
+              title: item.title || "Unknown Device",
+              functions: item.functions || "",
+              MechOptions: item.MechOptions || "",
+              ElecOptions: item.ElecOptions || "",
+              CylOptions: item.CylOptions || "",
+              railSizes: item.railSizes || "",
+              handing: item.handing || "",
+              voltage: item.voltage || "",
+              finishes: item.finishes || "",
+              trims: item.trims || "",
+            }))
+          )
+        );
+      }
+    });
 
     // Include Cylinders data
     if (CylindersData && Object.keys(CylindersData).length > 0) {
@@ -271,21 +120,24 @@ function Header() {
             category: "Cylinders",
             type, // Pass the type for navigation
             device: section.heading,
-            title: data.title, // Title of the cylinder type
-            texts: section.texts || [],
+            title: data.title,
+            functions: section.texts ? section.texts.join(", ") : "",
+            metadata: section.metadata || "",
+            image: section.image || "", // Include image if available
           }))
         )
       );
     }
 
     // Filter results based on search query matching product options
-    const results = productData.filter((product) => {
-      return matchesOptions(product, searchTerms);
-    });
+    const results = productData.filter((product) =>
+      matchesOptions(product, searchTerms)
+    );
 
     setFilteredProducts(results);
     setIsModalOpen(true);
     setCurrentIndex(0);
+    setSelectedProduct(null); // Reset selected product when searching
   }, [searchQuery]);
 
   // Listen for "Enter" key press when modal is open
@@ -297,7 +149,6 @@ function Header() {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
@@ -307,6 +158,7 @@ function Header() {
     setSearchQuery("");
     setCurrentIndex(0);
     setFilteredProducts([]);
+    setSelectedProduct(null);
   };
 
   const handleCloseModal = () => {
@@ -325,23 +177,7 @@ function Header() {
   };
 
   const handleItemClick = (product) => {
-    const { device, category, series, type } = product;
-
-    // Special handling for Cylinders to route them to CylindersInfo page
-    if (category === "Cylinders") {
-      navigate(`/cylinders-info/${type}`);
-    } else {
-      // Navigate to display-templates for other categories
-      navigate("/display-templates", {
-        state: {
-          category,
-          series,
-          device,
-        },
-      });
-    }
-
-    handleCloseModal();
+    setSelectedProduct(product);
   };
 
   return (
@@ -385,45 +221,102 @@ function Header() {
               </button>
             </div>
 
-            {filteredProducts.length > 0 && (
-              <div className="carousel-controls">
-                <button className="carousel-button left" onClick={handlePrev}>
-                  &#8249;
+            {selectedProduct ? (
+              <div className="selected-product">
+                <button
+                  className="view-templates-button"
+                  onClick={() => {
+                    navigate("/display-templates", {
+                      state: {
+                        category: selectedProduct.category,
+                        series: selectedProduct.series,
+                        device: selectedProduct.device,
+                      },
+                    });
+                    handleCloseModal();
+                  }}
+                >
+                  View more templates for this device
                 </button>
-                <div className="carousel-container">
-                  <div
-                    className="carousel-inner"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                  >
-                    {filteredProducts.map((product, index) => (
-                      <div
-                        className="carousel-item"
+                <h2>{selectedProduct.title}</h2>
+                <a
+                  href={selectedProduct.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                </a>
+                <p>Category: {selectedProduct.category}</p>
+                <p>Device: {selectedProduct.device}</p>
+                {selectedProduct.warning && <p>{selectedProduct.warning}</p>}
+                {/* Dynamically render all links and their associated text */}
+                {Object.keys(selectedProduct).map((key, index) => {
+                  if (key.startsWith("link") && selectedProduct[key]) {
+                    const textKey = `text${key.slice(4)}`;
+                    return (
+                      <a
                         key={index}
-                        onClick={() => handleItemClick(product)}
+                        href={selectedProduct[key]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="product-link"
                       >
-                        <img
-                          src={
-                            product.category === "Cylinders"
-                              ? CylindersData[product.type]?.sections.find(
-                                  (section) =>
-                                    section.heading === product.device
-                                )?.image
-                              : product.image
-                          }
-                          alt={product.title}
-                        />
-                        <p>
-                          {product.title}{" "}
-                          {product.device ? `(${product.device})` : ""}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <button className="carousel-button right" onClick={handleNext}>
-                  &#8250;
-                </button>
+                        {selectedProduct[textKey] || "View Document"}
+                      </a>
+                    );
+                  }
+                  return null;
+                })}
               </div>
+            ) : (
+              filteredProducts.length > 0 && (
+                <div className="carousel-controls">
+                  <button className="carousel-button left" onClick={handlePrev}>
+                    &#8249;
+                  </button>
+                  <div className="carousel-container">
+                    <div
+                      className="carousel-inner"
+                      style={{
+                        transform: `translateX(-${currentIndex * 100}%)`,
+                      }}
+                    >
+                      {filteredProducts.map((product, index) => (
+                        <div
+                          className="carousel-item"
+                          key={index}
+                          onClick={() => handleItemClick(product)}
+                        >
+                          <img
+                            src={
+                              product.category === "Cylinders"
+                                ? CylindersData[product.type]?.sections.find(
+                                    (section) =>
+                                      section.heading === product.device
+                                  )?.image
+                                : product.image
+                            }
+                            alt={product.title}
+                          />
+                          <p>
+                            {product.title}{" "}
+                            {product.device ? `(${product.device})` : ""}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <button
+                    className="carousel-button right"
+                    onClick={handleNext}
+                  >
+                    &#8250;
+                  </button>
+                </div>
+              )
             )}
           </div>
         </div>
