@@ -183,10 +183,10 @@ export const MortiseLocks = {
 
       warning:
         "Right Click on picture -> Open image in new tab to see more details",
-      text: "Curved or Straight Lip Strikes (M-)9200 Template Doc# 7063",
+      text: "Curved or Straight Lip Strikes Template Doc# 7063",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
       text1:
-        "78-0034 Deadbolt Strike (M-)9200 03, 20, 21, 22, and 23 Functions Template",
+        "78-0034 Deadbolt Strike 03, 20, 21, 22, and 23 Functions Template",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
     },
     {
@@ -221,7 +221,7 @@ export const MortiseLocks = {
         "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BE, 613E, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
       trims: trimsString,
 
-      title: "8200 Mortise Lock (70, 71, 72, 73, NAC)",
+      title: "8200 Elecrified Lock (70, 71, 72, 73, NAC)",
       image: Images.MortiseElectrified8200,
       warning: "Ensure proper wiring setup.",
       text: "View Lockbody Template (70, 71, 71, 72, 73, NAC Functions) Doc# 7065",
