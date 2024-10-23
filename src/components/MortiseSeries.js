@@ -7,8 +7,15 @@ function MortiseSeries() {
   const navigate = useNavigate();
 
   // Define button click handlers for each series
+  // Handle button clicks for each series and type
   const handleButtonClick = (series) => {
-    navigate("/mortiseTypes", { state: { series } }); // Pass the series dynamically
+    navigate("/display-templates", {
+      state: {
+        category: "Mortise Locks",
+        series,
+        device: series
+      },
+    });
   };
 
   return (

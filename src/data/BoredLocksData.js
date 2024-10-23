@@ -1,6 +1,121 @@
 // src/data/BoredLocksData.js
 import { Images } from "../images/images"; // Import the Images object
 
+const roseTrims = [
+  "ER",
+  "ES",
+  "ET",
+  "EC",
+  "E",
+  "CO",
+  "O",
+  "G",
+  "L",
+  "K",
+  "TO",
+  "E2",
+  "E4",
+  "LN",
+  "CR",
+  "TR",
+  "E3",
+  "CE",
+  "TE",
+  "LE1",
+  "LE2",
+  "LE3",
+  "LE4",
+  "LW1",
+  "LS",
+  "WT",
+];
+const leverTrims = [
+  "MB",
+  "ME",
+  "MF",
+  "MG",
+  "MI",
+  "MW",
+  "NF",
+  "MN",
+  "MH",
+  "MS",
+  "MU",
+  "MV",
+  "NU",
+  "WG",
+  "MD",
+  "MJ",
+  "MP",
+  "ND",
+  "NJ",
+  "MA",
+  "MQ",
+  "MT",
+  "MM",
+  "MO",
+  "MZ",
+  "GT",
+  "H015",
+  "H016",
+  "H017",
+  "H018",
+  "RCM",
+  "RAL",
+  "REM",
+  "RAM",
+  "RAS",
+  "RAG",
+  "RGM",
+  "H001",
+  "H002",
+  "H003",
+  "H004",
+  "H005",
+  "H006",
+  "H007",
+  "H008",
+  "H011",
+];
+const simpleLevers = [
+  "A",
+  "B",
+  "L",
+  "E",
+  "F",
+  "J",
+  "P",
+  "W",
+  "R",
+  "G",
+  "S",
+  "Y",
+];
+
+const allTrims = [];
+
+// Add rose and lever combinations
+roseTrims.forEach((rose) => {
+  leverTrims.forEach((lever) => {
+    allTrims.push(`${rose}${lever}`);
+  });
+});
+
+// Add simple levers with roses
+roseTrims.forEach((rose) => {
+  simpleLevers.forEach((lever) => {
+    allTrims.push(`${rose}${lever}`);
+  });
+});
+
+// Add roses and levers on their own
+allTrims.push(...roseTrims);
+allTrims.push(...leverTrims);
+allTrims.push(...simpleLevers);
+
+// Join the resulting array into a single string for the trims field
+const trimsString = allTrims.join(", ");
+
 export const BoredLocks = {
   "11 Line": [
     {
@@ -14,7 +129,7 @@ export const BoredLocks = {
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trim: "OL, OJ, OB, OP, LL, LJ, LB, LP, EL, EJ, EB, EP, BL, BJ, BB, BP",
+      trims: trimsString,
 
       title: "11 Line",
 
@@ -42,7 +157,7 @@ export const BoredLocks = {
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trim: "GB, GL, GP, GMD, GMB, GND, GMW, LB, LL, LP, LMD, LMB, LND, LMW",
+      trims: trimsString,
 
       title: "10X",
 
@@ -71,7 +186,7 @@ export const BoredLocks = {
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes: "03, US03, 10BE, 32D, 605, 613E, 630",
-      trim: "LB",
+      trims: trimsString,
 
       title: "8X",
 
@@ -98,7 +213,7 @@ export const BoredLocks = {
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes: "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
-      trim: "LB",
+      trims: trimsString,
 
       title: "7 Line",
 
@@ -123,7 +238,7 @@ export const BoredLocks = {
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes: "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
-      trim: "KL, KB, KP",
+      trims: trimsString,
 
       title: "6500",
 
@@ -148,7 +263,7 @@ export const BoredLocks = {
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       finishes: "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
-      trim: "OB",
+      trim: trimsString,
 
       title: "6 Line",
 
@@ -174,7 +289,7 @@ export const BoredLocks = {
     CylOptions:
       "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
     finishes: "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BE, 613E, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
-    trims: 'TO, CO, O, E2, TR, CR, LN, E3, MB, ME, MF, MG, MI, MW, NF, MN, MH, MS, MU, MV, NU, WG, MD, MJ, MP, ND, NJ, MA, MQ, MT, MM, MO, MZ, GT, H015, H016, H017, H018, RCM, RAL, REM, RAM, RAS, RAG, RGM, H001, H002, H003, H004, H005, H006, H007, H008, H011, TOMB, TOME, TOMF, TOMG, TOMH, TOMI, TOMJ, TOMK, TOML, TOMM, TOMN, TOMO, TOMP, TOMQ, TOMR, TOMS, TOMT, TOMU, TOMV, TOMW, TOMX, TOMY, TOMZ, TOH001, TOH002, TOH003, TOH004, TOH005, TOH006, TOH007, TOH008, TOH011, COMB, COME, COMF, COMG, COMH, COMI, COMJ, COMK, COML, COMM, COMN, COMO, COMP, COMQ, COMR, COMS, COMT, COMU, COMV, COMW, COMX, COMY, COMZ, COH001, COH002, COH003, COH004, COH005, COH006, COH007, COH008, COH011, OMB, OME, OMF, OMG, OMH, OMI, OMJ, OMK, OML, OMM, OMN, OMO, OMP, OMQ, OMR, OMS, OMT, OMU, OMV, OMW, OMX, OMY, OMZ, OMH001, OMH002, OMH003, OMH004, OMH005, OMH006, OMH007, OMH008, OMH011, E2MB, E2ME, E2MF, E2MG, E2MH, E2MI, E2MJ, E2MK, E2ML, E2MM, E2MN, E2MO, E2MP, E2MQ, E2MR, E2MS, E2MT, E2MU, E2MV, E2MW, E2MX, E2MY, E2MZ, E2H001, E2H002, E2H003, E2H004, E2H005, E2H006, E2H007, E2H008, E2H011, TRMB, TRME, TRMF, TRMG, TRMH, TRMI, TRMJ, TRMK, TRML, TRMM, TRMN, TRMO, TRMP, TRMQ, TRMR, TRMS, TRMT, TRMU, TRMV, TRMW, TRMX, TRMY, TRMZ, TRH001, TRH002, TRH003, TRH004, TRH005, TRH006, TRH007, TRH008, TRH011, CRMB, CRME, CRMF, CRMG, CRMH, CRMI, CRMJ, CRMK, CRML, CRMM, CRMN, CRMO, CRMP, CRMQ, CRMR, CRMS, CRMT, CRMU, CRMV, CRMW, CRMX, CRMY, CRMZ, CRH001, CRH002, CRH003, CRH004, CRH005, CRH006, CRH007, CRH008, CRH011, LNMB, LNME, LNMF, LNMG, LNMH, LNMI, LNMJ, LNML, LNMM, LNMN, LNMO, LNMP, LNMQ, LNMR, LNMS, LNMT, LNMU, LNMV, LNMW, LNMX, LNMY, LNMZ, LNH001, LNH002, LNH003, LNH004, LNH005, LNH006, LNH007, LNH008, LNH011, E3MB, E3ME, E3MF, E3MG, E3MH, E3MI, E3MJ, E3MK, E3ML, E3MM, E3MN, E3MO, E3MP, E3MQ, E3MR, E3MS, E3MT, E3MU, E3MV, E3MW, E3MX, E3MY, E3MZ, E3H001, E3H002, E3H003, E3H004, E3H005, E3H006, E3H007, E3H008, E3H011',
+    trims: trimsString,
 
       title: "DL",
 
@@ -199,7 +314,7 @@ export const BoredLocks = {
     CylOptions:
       "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 80, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, KD, 30, VC, YC, YRC, YRC-7P, YC-7P, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
     finishes: "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BE, 613E, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
-    Trims: 'TO, CO, O, E2, TR, CR, LN, E3, MB, ME, MF, MG, MI, MW, NF, MN, MH, MS, MU, MV, NU, WG, MD, MJ, MP, ND, NJ, MA, MQ, MT, MM, MO, MZ, GT, H015, H016, H017, H018, RCM, RAL, REM, RAM, RAS, RAG, RGM, H001, H002, H003, H004, H005, H006, H007, H008, H011, TOMB, TOME, TOMF, TOMG, TOMH, TOMI, TOMJ, TOMK, TOML, TOMM, TOMN, TOMO, TOMP, TOMQ, TOMR, TOMS, TOMT, TOMU, TOMV, TOMW, TOMX, TOMY, TOMZ, TOH001, TOH002, TOH003, TOH004, TOH005, TOH006, TOH007, TOH008, TOH011, COMB, COME, COMF, COMG, COMH, COMI, COMJ, COMK, COML, COMM, COMN, COMO, COMP, COMQ, COMR, COMS, COMT, COMU, COMV, COMW, COMX, COMY, COMZ, COH001, COH002, COH003, COH004, COH005, COH006, COH007, COH008, COH011, OMB, OME, OMF, OMG, OMH, OMI, OMJ, OMK, OML, OMM, OMN, OMO, OMP, OMQ, OMR, OMS, OMT, OMU, OMV, OMW, OMX, OMY, OMZ, OMH001, OMH002, OMH003, OMH004, OMH005, OMH006, OMH007, OMH008, OMH011, E2MB, E2ME, E2MF, E2MG, E2MH, E2MI, E2MJ, E2MK, E2ML, E2MM, E2MN, E2MO, E2MP, E2MQ, E2MR, E2MS, E2MT, E2MU, E2MV, E2MW, E2MX, E2MY, E2MZ, E2H001, E2H002, E2H003, E2H004, E2H005, E2H006, E2H007, E2H008, E2H011, TRMB, TRME, TRMF, TRMG, TRMH, TRMI, TRMJ, TRMK, TRML, TRMM, TRMN, TRMO, TRMP, TRMQ, TRMR, TRMS, TRMT, TRMU, TRMV, TRMW, TRMX, TRMY, TRMZ, TRH001, TRH002, TRH003, TRH004, TRH005, TRH006, TRH007, TRH008, TRH011, CRMB, CRME, CRMF, CRMG, CRMH, CRMI, CRMJ, CRMK, CRML, CRMM, CRMN, CRMO, CRMP, CRMQ, CRMR, CRMS, CRMT, CRMU, CRMV, CRMW, CRMX, CRMY, CRMZ, CRH001, CRH002, CRH003, CRH004, CRH005, CRH006, CRH007, CRH008, CRH011, LNMB, LNME, LNMF, LNMG, LNMH, LNMI, LNMJ, LNML, LNMM, LNMN, LNMO, LNMP, LNMQ, LNMR, LNMS, LNMT, LNMU, LNMV, LNMW, LNMX, LNMY, LNMZ, LNH001, LNH002, LNH003, LNH004, LNH005, LNH006, LNH007, LNH008, LNH011, E3MB, E3ME, E3MF, E3MG, E3MH, E3MI, E3MJ, E3MK, E3ML, E3MM, E3MN, E3MO, E3MP, E3MQ, E3MR, E3MS, E3MT, E3MU, E3MV, E3MW, E3MX, E3MY, E3MZ, E3H001, E3H002, E3H003, E3H004, E3H005, E3H006, E3H007, E3H008, E3H011',
+    Trims: trimsString,
 
       title: "RDL",
 

@@ -10,7 +10,7 @@ import { ThermalPin } from "../data/ThermalPinData";
 
 function DisplayTemplates() {
   const location = useLocation();
-  const { category, series, type, device, id } = location.state || {};
+  const { category, series, device, id } = location.state || {};
 
   // Initialize templates array
   let templates = [];
@@ -33,7 +33,6 @@ function DisplayTemplates() {
   // Update the filter logic to check for both type and device
   const filterByCategory = {
     "Mortise Locks": (template) =>
-      (type && template.device?.toLowerCase() === type.toLowerCase()) ||
       (device && template.device?.toLowerCase() === device.toLowerCase()),
     "Exit Devices": (template) =>
       device && template.device?.toLowerCase() === device.toLowerCase(),
@@ -60,7 +59,7 @@ function DisplayTemplates() {
     headerLabel = `${category || "Category"} - ${series || "Series"}`;
   } else {
     // For other categories, include category, series, and type/device
-    headerLabel = `${category || "Category"} - ${series || "Series"} - ${type || device || id || ''}`;
+    headerLabel = `${category || "Category"} - ${series || "Series"}`;
   }
 
   // If no templates are found, display a message

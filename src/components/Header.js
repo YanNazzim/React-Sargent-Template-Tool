@@ -44,6 +44,7 @@ function Header() {
     // Function to match search terms against a product's options
     const matchesOptions = (product, terms) => {
       const {
+        device,
         title,
         functions,
         MechOptions,
@@ -65,6 +66,7 @@ function Header() {
 
       const allOptions = [
         ...(title ? [title.toLowerCase()] : []), // Keep title as a full term for exact matches
+        ...(device ? [device.toLowerCase()] : []), // Keep device as a full term for exact matches
         ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
         ...(MechOptions ? MechOptions.toLowerCase().split(/,\s*/) : []),
         ...(ElecOptions ? ElecOptions.toLowerCase().split(/,\s*/) : []),
