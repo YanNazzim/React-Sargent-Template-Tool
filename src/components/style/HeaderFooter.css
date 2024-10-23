@@ -39,21 +39,24 @@ body {
 
 .footer {
   display: flex;
+  color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1vw;
+  font-size: 2em;
   text-align: center;
 }
 
 .footer a {
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s;
   font-weight: 800;
+  color: white;
 }
 
 .footer a:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
+  transform: scale(.95);
+  color:blue;
+  transition: transform 0.2s ease, color 0.2s;
 }
 
 /* Tooltip Styling */
@@ -286,9 +289,6 @@ body {
 
 
 @media (max-width: 2560px) {
-  .footer {
-    font-size: 1.5vw;
-  }
   .search-bar {
     min-width: 1024px;
     font-size: 2vw;
@@ -296,9 +296,6 @@ body {
 }
 
 @media (max-width: 1444px) {
-  .footer {
-    font-size: 2vw;
-  }
   .search-bar {
     font-size: 3.25vw;
   }
@@ -328,9 +325,6 @@ body {
     min-width: 850px;
     font-size: 4vw;
   }
-  .footer {
-    font-size: 3vw;
-  }
 }
 
 /* More responsive design as needed */
@@ -338,9 +332,6 @@ body {
 @media (max-width: 920px) {
   .search-bar {
     width: 750px;
-  }
-  .footer {
-    font-size: 3vw;
   }
 }
 
@@ -359,9 +350,6 @@ body {
     max-width: 250px;
     min-width: 50px;
     height: auto;
-  }
-  .footer {
-    font-size: 3vw;
   }
   .search-bar {
     min-width: 575px;
@@ -422,9 +410,6 @@ body {
     min-width: 300px;
     max-width: 300px;
     font-size: 8vw;
-  }
-  .footer {
-    font-size: 4vw;
   }
   .search-bar {
     min-width: 350px;

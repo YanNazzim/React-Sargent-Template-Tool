@@ -55,8 +55,14 @@ function Header() {
         handing,
         voltage,
         metadata,
+        thumbturns,
       } = product;
-    
+
+      // Gather all text keys dynamically
+      const textFields = Object.keys(product)
+        .filter((key) => key.startsWith("text") && product[key])
+        .map((key) => product[key].toLowerCase());
+
       const allOptions = [
         ...(title ? [title.toLowerCase()] : []), // Keep title as a full term for exact matches
         ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
@@ -69,12 +75,15 @@ function Header() {
         ...(handing ? handing.toLowerCase().split(/,\s*/) : []),
         ...(voltage ? voltage.toLowerCase().split(/,\s*/) : []),
         ...(metadata ? metadata.toLowerCase().split(/,\s*/) : []),
+        ...(thumbturns ? thumbturns.toLowerCase().split(/,\s*/) : []),
+        ...textFields, // Include all dynamically gathered text fields
       ];
-    
+
       // Check if every term matches an entry in allOptions
-      return terms.every((term) => allOptions.some((option) => option.includes(term)));
+      return terms.every((term) =>
+        allOptions.some((option) => option.includes(term))
+      );
     };
-    
 
     // Include all data sources into productData
     const dataSources = [
@@ -106,6 +115,8 @@ function Header() {
               voltage: item.voltage || "",
               finishes: item.finishes || "",
               trims: item.trims || "",
+              text: item.text || "",
+              thumbturns: item.thumbturns || "",
             }))
           )
         );
@@ -203,7 +214,7 @@ function Header() {
           <div className="modal-content">
             <input
               type="text"
-              placeholder="Search by Function or Options... (12-55-56-43-8313)"
+              placeholder="Search Sargent Devices..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-bar"

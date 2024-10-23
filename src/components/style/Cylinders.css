@@ -4,7 +4,7 @@
 
 .ToolTip {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .cylinder-info h1 {
@@ -102,10 +102,7 @@
     max-width: 300px;
     font-size: 3vw;
   }
-  .ToolTip {
-    text-align: center;
-    font-size: 6vw;
-  }
+
   .cylinder-info h1 {
     font-size: 7vw;
   }
@@ -119,6 +116,8 @@
     gap: 15px; /* Adjust gap for medium screens */
   }
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .cylinder-cards {
