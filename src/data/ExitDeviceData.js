@@ -1384,7 +1384,7 @@ export const ExitDevices = {
       text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
     },
   ],
-  NarrowPE: [
+  NarrowPE80: [
     {
       device: "PE8300",
 
@@ -1548,7 +1548,7 @@ export const ExitDevices = {
         "View 649 Optional Strike Template (Double Door With Mullion) Doc# 4300-E",
     },
   ],
-  WidePE: [
+  WidePE80: [
     {
       device: "PE8600",
 
