@@ -57,6 +57,10 @@ const roseTrims = [
   "862",
 ];
 const leverTrims = [
+  "BB",
+  "BJ",
+  "BL",
+  "BP",
   "MB",
   "NF",
   "NI",
@@ -170,7 +174,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -203,7 +207,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -235,7 +239,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -263,7 +267,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V, V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -293,7 +297,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -323,7 +327,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -353,7 +357,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -383,7 +387,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -415,7 +419,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -447,7 +451,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -479,7 +483,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -511,7 +515,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -543,7 +547,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -578,7 +582,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -610,7 +614,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -642,7 +646,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -674,7 +678,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -706,7 +710,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -738,7 +742,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
@@ -769,7 +773,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
@@ -792,7 +796,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -829,7 +833,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -867,7 +871,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055970",
@@ -900,7 +904,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -928,7 +932,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -961,7 +965,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -994,7 +998,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -1027,7 +1031,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: (
         <>
           ↓ For cylinder only Application ↓ <br />
@@ -1067,7 +1071,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1102,7 +1106,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055921",
@@ -1137,7 +1141,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1171,7 +1175,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: (
         <>
           ↓ For cylinder only Application ↓ <br />
@@ -1207,7 +1211,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1238,7 +1242,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1267,7 +1271,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.thumbpieceTrims,
 
       warning:
@@ -1302,7 +1306,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -1337,7 +1341,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -1371,7 +1375,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+      trims: trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -1402,7 +1406,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.narrowPE80Mortise,
 
@@ -1427,7 +1431,7 @@ export const ExitDevices = {
       title: "(12-) PE8400 CVR Exit (All Functions)",
       functions:
         "PE8406, PE8410, PE8413, PE8415, PE8440, Narrow PE Series, Narrow PE80 Series, PE8443, PE8446, PE8473, PE8474, PE80 series, PE80, PE, PE80 Series, PE Series, 640, 652, 640 Strike, 652 Strike, ET, ET Trim, 700 ET, Narrow, Narrow CVR, Narrow CVR Exit, Narrow CVR Exit Device, CVR, Exit, Device, PE8400, 8400, PE80, PE, Narrow CVR Device, 100 Aux, 100, 106, 113, P100, P100 Aux, P106, P113, MD, WD, AD, Wood, Aluminum, Wood Door, ALuminum Door, Metal, Door, Metal Door, NB, Vertical Rods, Concealed Vertical Rod, Rods, Vertical, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1438,7 +1442,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.narrowPECVR,
 
@@ -1463,7 +1467,7 @@ export const ExitDevices = {
       title: "(12-)PE8500 Narrow Rim Exit (04, 10, 40, 44 Functions)",
       functions:
         "PE8504, PE8510, PE8540, PE8544, PE80 series, Narrow PE Series, Narrow PE80 Series, PE80, PE, PE80 Series, PE Series, Narrow, Rim, Exit, Narrow Rim, Narrow Rim Exit, Narrow Rim Exit Device, 8500, PE8500, PE80, Narrow PE, Narrow PE Exit Device, Narrow PE Exit, PE, 700 ET, ET, ET Trim , 700 ET Trim, 704, 710, 740, 744, WEL, NEL, WE, NE, Narrow Exit Device, Narrow Exit, Exit, Exit only, Night, Latch, Night Latch",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1474,7 +1478,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.narrowPE8500,
 
@@ -1495,7 +1499,7 @@ export const ExitDevices = {
         "(12-)PE8500 Narrow Rim Exit (06, 13, 15, 43, 46, 73, 74 Functions)",
       functions:
         "8506, 8513, 8515, 8543, 8546, 8573, 8574, PE8506, PE8513, PE8515, PE8543, PE8546, PE8573, PE8574, Narrow PE Series, Narrow PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, PE8500, 8500, Narrow, Rim, Exit, Device, Narrow Rim, Exit Device, Narrow Rim Exit, Narrow Rim Exit Device, P700, P700 ET, ET, ET Trim, P700 ET Trim, P700-8, P706-8, P715-8, P713-8, P743-8, P746-8, Classroom, Class-Room, class, room, class room, StoreRoom, Store Room, Store-Room, Passage",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1506,7 +1510,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.narrowPE8500,
 
@@ -1555,7 +1559,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 CVR Exit  (Wood Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Wood, WD, Wood Door, WD8600, PEWD8600, WD PE 8600, PE WD 8600, 650, 650 Strike, 652, 652 Strike, 100 Aux, P100 Aux, 106, 113, P113, P106, Wide, PE, Wide PE, Wide PE Exit, Wide PE Exit Device, Wide CVR, CVR, Wide CVR Exit Device, Storeroom, Store Room, Store-Room, Store, Room, Class, Room, Classroom, Class Room, Class-Room, Passage, ELectrified Trim, Electrified",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1566,7 +1570,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePECVR,
 
@@ -1589,7 +1593,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 CVR Exit  (Metal Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Metal, MD, Metal Door, MD8600, PEMD8600, MD PE 8600, PE MD 8600, 650, 650 Strike, 652, 652 Strike, 100 Aux, P100 Aux, 106, 113, P113, P106, Wide, PE, Wide PE, Wide PE Exit, Wide PE Exit Device, Wide CVR, CVR, Wide CVR Exit Device, Storeroom, Store Room, Store-Room, Store, Room, Class, Room, Classroom, Class Room, Class-Room, Passage, ELectrified Trim, Electrified",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1600,7 +1604,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePECVR,
 
@@ -1623,7 +1627,7 @@ export const ExitDevices = {
       title: "(12-) PE8600 CVR Exit (Aluminum Door)",
       functions:
         "PE8606, PE8610, PE8613, PE8615, PE8640, PE8643, PE8646, PE8673, PE8674, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Aluminum, AD, Aluminum Door, AD8600, PEAD8600, AD PE 8600, PE AD 8600, 640, 640 Strike, 606, 606 Strike, 100 Aux, P100 Aux, 106, 113, P113, P106, Wide, PE, Wide PE, Wide PE Exit, Wide PE Exit Device, Wide CVR, CVR, Wide CVR Exit Device, Storeroom, Store Room, Store-Room, Store, Room, Class, Room, Classroom, Class Room, Class-Room, Passage, Electrified Trim, Electrified",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1634,7 +1638,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePECVR,
 
@@ -1659,7 +1663,7 @@ export const ExitDevices = {
       title: "(12-) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 646, 624, 655, Strike, 646 Strike, 624 Strike, 655 Strike, PE, Wide PE, PE80, PE80 Series, Wide PE, Wide PE Exit Devce, Wide PE Exit, Wide SVR, Wide SVR Device, Wide SVR Exit, SVR, SVR Exit Device, 300 Aux, 306, 313, P306, P313, Wide PE 8700, Wide PE8700, PE, PE8700, 8700, WE, NE, WE Trim, NE Trim, Storeroom, Store Room, Store-Room, Store,  Room, Class, Room, Classroom, Class Room, Class-Room, Passage, Electrified Trim, Electrified, P700",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1670,7 +1674,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePESVR,
       warning: "If using thumbpiece trim go to TP Trim section",
@@ -1694,7 +1698,7 @@ export const ExitDevices = {
       title: "(12-)(HC)(FM) PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, 659, 655, 653, Strike, 659 Strike, 655 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, PE8700, WE, WE Trim, NE, NE Trim, ET, Trim, ET Trim, P700, Electrified Trim, Electrified, P773, P774",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1705,7 +1709,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePESVR,
       warning: "If using thumbpiece trim go to TP Trim section",
@@ -1731,7 +1735,7 @@ export const ExitDevices = {
       title: "PE8700 Thumbpiece Trims (10, 28, 62, 63)",
       functions:
         "PE8710, PE8728, PE8762, PE8763, Wide PE Series, Wide PE80 Series, PTB, STS, MAL, FLW, FLL, PE, Wide, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE, ThumbPiece, Thumb, Piece, Trims, Thumbpiece Trims, Thumbpiece trim, Pull, PE, PE8700, 8700, ",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1742,7 +1746,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -1761,7 +1765,7 @@ export const ExitDevices = {
       title: "(12-) NB-PE8700 SVR Exit",
       functions:
         "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, 659, 655, 653, Strike, 659 Strike, 655 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, PE8700, WE, WE Trim, NE, NE Trim, ET, Trim, ET Trim, P700, Electrified Trim, Electrified, P773, P774",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1774,7 +1778,7 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims:
         "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+
       image: Images.widePENBSVR,
 
       warning: "If using thumbpiece trim go to TP Trim section",
@@ -1798,7 +1802,7 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (10, 28, 62, 63)",
       functions:
         "PE8710, PE8728, PE8762, PE8763, PE80 series, Wide PE Series, Wide PE80 Series, PE80, PE, PE80 Series, PE Series, PTB, STS, MAL, FLW, FLL, PE, Wide, PE80, Wide PE, ThumbPiece, Thumb, Piece, Trims, Thumbpiece Trims, Thumbpiece trim, Pull, PE, PE8700, 8700, ",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1809,7 +1813,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -1830,7 +1834,7 @@ export const ExitDevices = {
       title: "(12-) PE8800 Rim Exit (04, 10, 40, 44)",
       functions:
         "PE8804, PE8810, PE8840, PE8844, PE80 series, Wide PE Series, Wide PE80 Series, PE80, PE, PE80 Series, PE Series, Wide PE, PE80, Wide PE Exit, Wide PE Exit Device, Wide Rim Exit, Wide PE Rim Exit, Wide 8800, 8800, PE8800, Wide, Night Latch, Exit Only, Night, Latch, Only, Exit, PE88, Raceway",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1841,7 +1845,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePERim,
 
@@ -1862,7 +1866,7 @@ export const ExitDevices = {
       title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
       functions:
         "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE, PE80, Wide PE Exit, Wide PE Exit Device, Wide Rim Exit, Wide PE Rim Exit, Wide 8800, 8800, PE8800, Wide, Exit, PE88, Raceway, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1873,7 +1877,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePERim,
 
@@ -1893,7 +1897,7 @@ export const ExitDevices = {
       title: "(12-)(HC-)(WS-) PE8800 Rim Exit (16, 28, 63, 66)",
       functions:
         "PE8816, PE8828, PE8863, PE8866, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series,",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1904,7 +1908,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePERim,
 
@@ -1922,7 +1926,7 @@ export const ExitDevices = {
       title: "PE8800 Thumbpiece Trims (04, 10, 28, 63, 66)",
       functions:
         "PE8804, PE8810, PE8828, PE8863, PE8866, PE80 series, Wide PE Series, Wide PE80 Series, PE80, PE, PE80 Series, PE Series, Thumb, Piece, Trim, Thumbpiece Trim, Thumbpiece, PTB, STS, MAL, FLW, FLL, PSB, FSW, FSL, MSL",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1933,7 +1937,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -1978,7 +1982,7 @@ export const ExitDevices = {
       title: "(12-)(WS-) PE8900 Mortise Exit",
       functions:
         "PE8904, 8904, PE8906, 8906, PE8910, 8910, PE8913, 8913, PE8915, 8915, PE8916, 8916, PE8940, 8940, PE8943, 8943, PE8944, 8944, PE8946, 8946, PE8973, 8973, PE8974, 8974, PE8975, 8975, PE8976, 8976, Wide PE Series, Wide PE80 Series, PE, Wide PE, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE80, Wide Exit, Exit, Wide, Wide Exit Device, Exit Device, Device, 8900 PE8900, Wide MOrtise, Wide Mortise Exit, Wide Mortise Exit Device, Wide PE Mortise Exit, Wide PE Mortise Exit Device, 908, C908, 815, 908 Strike, C908 Strike, 815 Strike, 815 Open Strike, 815 Open Back Strike",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -1989,7 +1993,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.widePE80Mortise,
 
@@ -2012,7 +2016,7 @@ export const ExitDevices = {
       title: "PE8900 Thumbpiece Trims",
       functions:
         "PE8904, PE8910, PE8928, PE8963, PE8966, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, MAL, FLL, FLW, STS, PTB, Thumb, Piece, Trim, Thumbpiece, Thumb-Piece, Thumbpiece Trim, Thumb-Piece Trim",
-        MechOptions:
+      MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
@@ -2023,7 +2027,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -2044,10 +2048,8 @@ export const ExitDevices = {
       title: "(12-) 9400 (04, 10)",
       functions:
         "9404, 9410, 9400, 90 Series, Narrow 90 Series, 90, Narrow, CVR, Narrow CVR, Narrow CVR Exit Device, Exit, Device, Exit Device, Narrow CVR Exit, Concealed, Concealed Vertical Rod, Narrow Concealed Vertical Rod, Narrow Concealed Vertical Rod Exit Device, Night Latch, Exit Only, Night, Latch, Only, 704, 710, 704 ET, 710 ET",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2055,18 +2057,19 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.narrowCVR9400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055979",
       text: "View Mounting Template (Metal Doors) Doc# 4580",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055978",
-      text1: "View Cylinder Application (04 Function) Mounting Template Doc# 54581",
+      text1:
+        "View Cylinder Application (04 Function) Mounting Template Doc# 54581",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055977",
       text2: "View Bracket Mounting Template (Metal Doors) Doc# 4579",
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055922',
-      text3: 'View Trim Template (700 ET) Doc# 4277',
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text3: "View Trim Template (700 ET) Doc# 4277",
     },
   ],
   Wide90: [
@@ -2076,10 +2079,8 @@ export const ExitDevices = {
       title: "12-9700 SVR Exit (All Functions)",
       functions:
         "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774, Wide, Wide 90 Series, 90 Series, 90, Wide SVR, Surface, Surface Vertical Rod, Vertical Rods, Rods, Wide Rod Device, 9700, Wide ROd Exit Device, Wide SVR Exit Device, Exit Device, Exit, Device, SVR, Vertical Rod, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2087,7 +2088,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.crossWideSVR,
 
@@ -2115,10 +2116,8 @@ export const ExitDevices = {
       title: "(13-)(14-)(16-)9700 SVR Exit (All Functions)",
       functions:
         "9706, 9710, 9713, 9715, 9728, 9763, 9773, 9774, cross, crossbar, cross-bar, 300 Aux, 306 Aux, 313 Aux, 306, 313, Strike, 646, 624, 655, 646 Strike, 624 Strike, 655 Strike, Wide, Wide 90 Series, 90 Series, 90, Wide SVR, Surface, Surface Vertical Rod, Vertical Rods, Rods, Wide Rod Device, 9700, Wide ROd Exit Device, Wide SVR Exit Device, Exit Device, Exit, Device, SVR, Vertical Rod, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2126,7 +2125,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.crossWideSVR,
 
@@ -2154,10 +2153,8 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (10, 28, 63)",
       functions:
         "9710, 9728, 9763, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2165,7 +2162,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -2184,10 +2181,8 @@ export const ExitDevices = {
       title: "(12-)9800 Wide Rim Exit",
       functions:
         "9804, 9810, 9813, 9815, 9873. 9874, 9875, 9876, 90, 90 series, wide 90 series, cross, crossbar, cross-bar, Wide Rim, Wide Rim Exit, Wide Rim Exit Device, Wide Exit Device, Wide Exit, Exit, Device, Store, Class, Room, Classroom, Storeroom, Store Room, Class Room, Store-room, class-room, passage, electrified Trim, Electrified, trim, ET, 700 ET, 700",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2195,7 +2190,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.crossWideRim,
 
@@ -2220,10 +2215,8 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions:
         "9804, 9810, 9828, 9863, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2231,7 +2224,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -2251,10 +2244,8 @@ export const ExitDevices = {
       title: "(12-)9900 Wide Mortise Exit",
       functions:
         "9904, 9910, 9913, 9915, 9973, 9974, 9975, 9976, 90, 90 Series, 90 Seriex Exit, 90 Series Exit Device, Exit, Device, Exit Device, Wide, Wide Exit, Wide Exit Device, Wide Mortise Exit Device, 90 series mortise exit, 90 series mortise exit device, mortise exit device, Store, Class, Room, Classroom, Storeroom, Store Room, Class Room, Store-room, class-room, passage, electrified Trim, Electrified, trim, ET, 700 ET, 700",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2262,7 +2253,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.crossWideMortise,
 
@@ -2288,10 +2279,8 @@ export const ExitDevices = {
       title: "Thumbpiece Trims (04, 10, 28, 63)",
       functions:
         "9904, 9910, 9928, 9963, Thumb, Piece, Trim, ThumbPiece, Thumb-Piece, Thumb Piece, Thumb Piece Trim, MAL, FLL, FLW, PTB, STS",
-        MechOptions:
-        "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
-      ElecOptions:
-        "54",
+      MechOptions: "12, 14, 23, 31, 36, 37, 42, 76, 85, 86, 87, CPC, SG, TB",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2299,7 +2288,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.thumbpieceTrims,
 
@@ -2320,10 +2309,8 @@ export const ExitDevices = {
       title: "(12-) 2727 SVR Exit",
       functions:
         "2727, GTB, HTB, 646 Strike, 646, 653 Strike, 653, 655 Strike, 655, Strike, 20, Series, SVR, 20 Series, 20 Series SVR, 20 Series Exit Device, Exit, Device, Surface Vertical Rod, Surface Vertical Rod Exit Device, SVR Exit Device",
-        MechOptions:
-        "12, LD",
-      ElecOptions:
-        "54",
+      MechOptions: "12, LD",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2331,7 +2318,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.Exit2727,
 
@@ -2350,10 +2337,8 @@ export const ExitDevices = {
       title: "(12-)2828 Rim Exit",
       functions:
         "2828, GTB, HTB, Rim, Exit, Rim Exit Device, Rim Exit, 20 Series, 20, series, 20 series rim, ",
-        MechOptions:
-        "12, LD",
-      ElecOptions:
-        "54",
+      MechOptions: "12, LD",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2361,7 +2346,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.Exit2828,
 
@@ -2380,10 +2365,8 @@ export const ExitDevices = {
       title: "20 Series Strikes",
       functions:
         "2828, 649 , 649 Strike, Strike, 613, 613 Strike, 644, 644 Strike, 642, 642 Strike, Strikes, Strike",
-        MechOptions:
-        "12, LD",
-      ElecOptions:
-        "54",
+      MechOptions: "12, LD",
+      ElecOptions: "54",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2391,7 +2374,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.strikes2828,
 
@@ -2412,10 +2395,8 @@ export const ExitDevices = {
       title: "3727 SVR Exit Device",
       functions:
         "3737, GTB, HTB, SVR, SVR Exit, SVR Exit Device, Exit, Device, Surface Vertical Rod, Exit Device, 646, 646 Strike, 653, 653 Strike, 655, 655 Strike, 30, 30 series, 30 series Exit, 30 series exit device",
-        MechOptions:
-        "12, LD, 16, NB",
-      ElecOptions:
-        "55",
+      MechOptions: "12, LD, 16, NB",
+      ElecOptions: "55",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2423,7 +2404,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.Exit2727,
 
@@ -2444,10 +2425,8 @@ export const ExitDevices = {
       title: "(12-)3828 Rim Exit Device",
       functions:
         "3828, GTB, HTB, 30, 30 series, 30 series exit, 30 series exit device, 30 series rim exit, rim, exit, device, Rim Exit, Rim exit device",
-        MechOptions:
-        "12, LD, 16, NB",
-      ElecOptions:
-        "55",
+      MechOptions: "12, LD, 16, NB",
+      ElecOptions: "55",
       CylOptions:
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2455,7 +2434,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-        trims:trimsString,
+      trims: trimsString,
 
       image: Images.Exit3828,
 
@@ -2473,18 +2452,16 @@ export const ExitDevices = {
 
       title: "30 series Strikes",
       functions: "3838, 3727",
-      MechOptions:
-      "12, LD, 16, NB",
-    ElecOptions:
-      "55",
-    CylOptions:
-      "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:trimsString,
+      MechOptions: "12, LD, 16, NB",
+      ElecOptions: "55",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, SF, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
+      trims: trimsString,
 
       image: Images.strikes3828,
 
@@ -2500,140 +2477,397 @@ export const ExitDevices = {
   ],
   KP80: [
     {
-      device: 'KP80',
+      device: "KP80",
 
-      title: 'KP 8800 Rim Exit Device',
+      title: "KP 8800 Rim Exit Device",
       image: Images.wideStileRim,
       functions: "8877, 8878, KP8877, KP8878, Fail, Secure, Safe",
       MechOptions:
-      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
-    CylOptions:
-      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
 
-
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055594',
-      text: 'View Metal and Wood Doors Mounting Template Doc# 4474',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
-      text1: 'View Full Device Installation Instructions Doc# A7137',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
-      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
-      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
-      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
-      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
-      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
-      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055594",
+      text: "View Metal and Wood Doors Mounting Template Doc# 4474",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+      text1: "View Full Device Installation Instructions Doc# A7137",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+      text2:
+        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+      text5:
+        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+      text6:
+        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
     {
-      device: 'KP80',
+      device: "KP80",
 
-      title: 'KP 8900 Mortise Exit Device',
+      title: "KP 8900 Mortise Exit Device",
       image: Images.wideMortise,
       functions: "8977, 8978, KP8977, KP8978, Fail, Secure, Safe",
       MechOptions:
-      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
-    CylOptions:
-      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055595',
-      text: 'View Metal and Wood Doors Mounting Template Doc# 4477',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
-      text1: 'View Full Device Installation Instructions Doc# A7137',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
-      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
-      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
-      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
-      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
-      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
-      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055595",
+      text: "View Metal and Wood Doors Mounting Template Doc# 4477",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+      text1: "View Full Device Installation Instructions Doc# A7137",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+      text2:
+        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+      text5:
+        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+      text6:
+        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
   ],
   KPPE80: [
     {
-      device: 'KPPE80',
+      device: "KPPE80",
 
-      title: 'KP PE8800 Rim Exit Device',
+      title: "KP PE8800 Rim Exit Device",
       image: Images.wideStileRim,
-      functions: "8877, 8878, KP8877, KP8878, KP, PE, PE8878, PE8877, Fail, Secure, Safe",
+      functions:
+        "8877, 8878, KP8877, KP8878, KP, PE, PE8878, PE8877, Fail, Secure, Safe",
       MechOptions:
-      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
-    ElecOptions:
-      "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
-    CylOptions:
-      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
 
-
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238428',
-      text: 'View Metal and Wood Doors Mounting Template Doc# MEDT58',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
-      text1: 'View Full Device Installation Instructions Doc# A7137',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
-      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
-      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
-      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
-      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
-      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
-      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238428",
+      text: "View Metal and Wood Doors Mounting Template Doc# MEDT58",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+      text1: "View Full Device Installation Instructions Doc# A7137",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+      text2:
+        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+      text5:
+        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+      text6:
+        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
     {
-      device: 'KPPE80',
+      device: "KPPE80",
 
-      title: 'KP PE8900 Mortise Exit Device',
+      title: "KP PE8900 Mortise Exit Device",
       image: Images.wideMortise,
-      functions: "8977, 8978, KP8977, KP8978, KP, PE, PE8977, PE8978, Fail, Secure, Safe",
+      functions:
+        "8977, 8978, KP8977, KP8978, KP, PE, PE8977, PE8978, Fail, Secure, Safe",
       MechOptions:
-      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
-    ElecOptions:
-      "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
-    CylOptions:
-      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:trimsString,
+        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238429',
-      text: 'View Metal and Wood Doors Mounting Template Doc# MEDT59',
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
-      text1: 'View Full Device Installation Instructions Doc# A7137',
-      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
-      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
-      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
-      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
-      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
-      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
-      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
-      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
-      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
-      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238429",
+      text: "View Metal and Wood Doors Mounting Template Doc# MEDT59",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+      text1: "View Full Device Installation Instructions Doc# A7137",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+      text2:
+        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+      text5:
+        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+      text6:
+        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+    },
+  ],
+  "IN120 80 Series": [
+    {
+      device: "IN120 80 Series",
+
+      title: "IN120 8800 Rim",
+      functions: "8877, 8878, Fail, Secure, Safe",
+      image: Images.IN120Rim,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions:
+        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
+      text: "View Metal and Wood Door Mounting Template Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
+      text1:
+        "View Von Duprin 98/99Mounting Template (Metal and Wood) Doc# 4734",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text2: "View Main Installation Instructions Doc# A8185",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text3:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text5:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text6:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+    },
+    {
+      device: "IN120 80 Series",
+
+      title: "IN120 8900 Mortise",
+      functions: "8977, 8978, Fail, Secure, Safe",
+      image: Images.IN120Mortise,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions:
+        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177256",
+      text: "View Mounting Template (Metal and Wood) Doc# 4717",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text2: "View Main Installation Instructions Doc# A8185",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text3:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text5:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text6:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+    },
+  ],
+  "IN120 PE80 Series": [
+    {
+      device: "IN120 PE80 Series",
+
+      title: "IN120 PE8600 CVR",
+      functions: "8678, Fail, Secure, Safe",
+      image: Images.IN120Rim,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
+      text: "View Standard Mounting Template (Wood) Doc# MEDT3",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
+      text1: "View Standard Mounting Template (Metal) Doc# MEDT4",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238438",
+      text2: "View Trim Template (STD/EA Option) Doc# MEDT68",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
+      text3: "View P106/P113 Aux Control Template Doc# MEDT7",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
+      text4: "View 650/652 Strike Template Doc# MEDT9",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text5:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text6:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text7:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text8:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+    },
+    {
+      device: "IN120 PE80 Series",
+
+      title: "IN120 PE8900 Mortise",
+      functions: "8977, 8978, Fail, Secure, Safe",
+      image: Images.IN120Rim,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
+      text: "View Metal and Wood Door Mounting Template Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
+      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text2: "View Main Installation Instructions Doc# A8185",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text3:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text5:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text6:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+    },
+    {
+      device: "IN120 PE80 Series",
+
+      title: "IN120 PE8800 Rim",
+      functions: "8877, 8878, Fail, Secure, Safe",
+      image: Images.IN120Rim,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
+      text: "View Metal and Wood Door Mounting Template Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
+      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text2: "View Main Installation Instructions Doc# A8185",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text3:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text5:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text6:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+    },
+    {
+      device: "IN120 PE80 Series",
+
+      title: "IN120 PE8700 Mortise -- Not Done",
+      functions: "8778, Fail, Secure, Safe",
+      image: Images.IN120Rim,
+
+      MechOptions:
+        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
+      text: "View Metal and Wood Door Mounting Template Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
+      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text2: "View Main Installation Instructions Doc# A8185",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text3:
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text4:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text5:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text6:
+        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
   ],
 };
