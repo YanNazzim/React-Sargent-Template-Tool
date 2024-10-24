@@ -60,7 +60,7 @@ function WideExits() {
     case "90":
       devices = wide90Devices;
       break;
-    case "PE":
+    case "PE80":
       devices = widePE80Devices;
       break;
     case "20":

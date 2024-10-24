@@ -81,10 +81,11 @@
 }
 
 .template-card a:hover {
+  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.4s, box-shadow 0.3s;
     transform: scale(.95);
     background-color: #1565c0;
     border: solid black 3px;
-    box-shadow: black 5px 0px 15px 5px;
+    box-shadow: black 0px 0px 15px 5px;
 }
 
 /* Image within template cards */
@@ -93,7 +94,14 @@
   width: 80%;
   max-width: 300px;
   border-radius: 25px;
+  transition: box-shadow 0.2s, transform 0.2s;
   border: solid black 3px;
+}
+
+.template-image:hover {
+  transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: black 0px 0px 15px 5px;
+    transform: scale(0.95);
 }
 
 /* Error message for no templates */

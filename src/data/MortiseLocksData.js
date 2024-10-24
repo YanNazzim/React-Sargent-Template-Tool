@@ -209,27 +209,6 @@ export const MortiseLocks = {
     },
     {
       device: "8200",
-      image: Images.KP80Trim,
-      title: 'KP 8200 (KeyPad)',
-      functions:
-        "KP, KP-8276, KP-8278, 8276, 8278",
-        MechOptions:
-        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
-      ElecOptions:
-        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
-      CylOptions:
-        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-      voltage: "12V, 24V, 12 V, 24 V",
-      finishes:
-        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-        trims:trimsString,
-
-        text: 'View KP Series Template',
-        link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055592',
-    },
-    {
-      device: "8200",
       functions:
         "8220, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8239, 8240, 8241, 8243, 8245, 8246, 8247, 8250, 8251, 8252, PHR-NAC-82281",
       MechOptions:
@@ -287,6 +266,40 @@ export const MortiseLocks = {
         "78-0034 Deadbolt Strike 03, 20, 21, 22, and 23 Functions Template",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
     },
+  ],
+  KP8200: [
+    {
+      device: "KP8200",
+      image: Images.KP80Trim,
+      title: 'KP 8200 (KeyPad)',
+      functions:
+        "KP, KP-8276, KP-8278, 8276, 8278",
+        MechOptions:
+        "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+      ElecOptions:
+        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+        trims:trimsString,
+
+        text: 'View KP Series Template',
+        link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1015336',
+        text1: 'View Full Device Installation Instructions Doc# A7373',
+        link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
+        text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
+        link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
+        text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
+        link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
+        text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
+        link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
+        text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
+        link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
+        text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+      },
   ],
   9200: [
     {

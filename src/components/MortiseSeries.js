@@ -13,7 +13,7 @@ function MortiseSeries() {
       state: {
         category: "Mortise Locks",
         series,
-        device: series
+        device: series,
       },
     });
   };
@@ -21,12 +21,8 @@ function MortiseSeries() {
   return (
     <>
       <div className="stile-page">
-      <h2 className="ToolTip">
-            Strike Box (WBS) : 77-1141
-        </h2>
-        <h2 className="ToolTip">
-            Strike Screw:  01-1019 x finish
-        </h2>
+        <h2 className="ToolTip">Strike Box (WBS) : 77-1141</h2>
+        <h2 className="ToolTip">Strike Screw: 01-1019 x finish</h2>
         {/* Button for 8200 series */}
         <button className="btn" onClick={() => handleButtonClick("8200")}>
           <img
@@ -35,6 +31,15 @@ function MortiseSeries() {
             alt="Mortise Lock"
           />
           8200
+        </button>
+        {/* Button for KP 8200 series */}
+        <button className="btn" onClick={() => handleButtonClick("KP8200")}>
+          <img
+            className="btn-image"
+            src={Images.Mortise8200}
+            alt="Mortise Lock"
+          />
+          KP 8200
         </button>
         {/* Button for 9200 series */}
         <button className="btn" onClick={() => handleButtonClick("9200")}>
