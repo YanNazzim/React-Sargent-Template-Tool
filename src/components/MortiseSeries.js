@@ -36,7 +36,7 @@ function MortiseSeries() {
         <button className="btn" onClick={() => handleButtonClick("KP8200")}>
           <img
             className="btn-image"
-            src={Images.Mortise8200}
+            src={Images.KP80Trim}
             alt="Mortise Lock"
           />
           KP 8200
