@@ -1,5 +1,155 @@
 // ExitDeviceData.js
-import { Images } from "../images/images"; // Import the Images object
+import { Images } from "../images/images";
+
+const roseTrims = [
+  ", 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
+  "28-K-LL",
+  "28-D-LL",
+  "28-C-LL",
+  "28-L-LL",
+  "814-HTB",
+  "HTB",
+  "814-GTB",
+  "GTB",
+  "814",
+  "810-HTB",
+  "810-GTB",
+  "810",
+  "T1",
+  "T2",
+  "T3",
+  "NE",
+  "WE",
+  "L",
+  "G",
+  "ER",
+  "ES",
+  "ET",
+  "EC",
+  "E",
+  "CO",
+  "O",
+  "TO",
+  "E2",
+  "E4",
+  "LN",
+  "CR",
+  "TR",
+  "E3",
+  "CE",
+  "TE",
+  "LE1",
+  "LE2",
+  "LE3",
+  "LE4",
+  "LW1",
+  "LS",
+  "WT",
+  "PTB",
+  "FLL",
+  "FLW",
+  "MAL",
+  "STS",
+  "PSB",
+  "FSL",
+  "FSW",
+  "MSL",
+  "862",
+];
+const leverTrims = [
+  "MB",
+  "NF",
+  "NI",
+  "NS",
+  "NU",
+  "NJ",
+  "ND",
+  "ME",
+  "MF",
+  "MG",
+  "MI",
+  "MW",
+  "NF",
+  "MN",
+  "MY",
+  "MC",
+  "MH",
+  "MS",
+  "MU",
+  "MV",
+  "NU",
+  "WG",
+  "MD",
+  "MJ",
+  "MP",
+  "ND",
+  "NJ",
+  "MA",
+  "MQ",
+  "MT",
+  "MM",
+  "MO",
+  "MZ",
+  "GT",
+  "H015",
+  "H016",
+  "H017",
+  "H018",
+  "RCM",
+  "RAL",
+  "REM",
+  "RAM",
+  "RAS",
+  "RAG",
+  "RGM",
+  "H001",
+  "H002",
+  "H003",
+  "H004",
+  "H005",
+  "H006",
+  "H007",
+  "H008",
+  "H011",
+];
+const simpleLevers = [
+  "A",
+  "B",
+  "L",
+  "E",
+  "F",
+  "J",
+  "P",
+  "W",
+  "R",
+  "G",
+  "S",
+  "Y",
+];
+
+const allTrims = [];
+
+// Add rose and lever combinations
+roseTrims.forEach((rose) => {
+  leverTrims.forEach((lever) => {
+    allTrims.push(`${rose}${lever}`);
+  });
+});
+
+// Add simple levers with roses
+roseTrims.forEach((rose) => {
+  simpleLevers.forEach((lever) => {
+    allTrims.push(`${rose}${lever}`);
+  });
+});
+
+// Add roses and levers on their own
+allTrims.push(...roseTrims);
+allTrims.push(...leverTrims);
+allTrims.push(...simpleLevers);
+
+// Join the resulting array into a single string for the trims field
+const trimsString = allTrims.join(", ");
 
 export const ExitDevices = {
   Narrow80: [
@@ -20,9 +170,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -55,9 +203,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055927",
@@ -89,9 +235,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -116,12 +260,10 @@ export const ExitDevices = {
         "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
       handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-      voltage: "12V, 24V, 12 V, 24 V",
+      voltage: "12V, 24V, 12 V, 24 V, V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -151,9 +293,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055945",
@@ -183,9 +323,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -215,9 +353,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowCVR8400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055941",
@@ -247,9 +383,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -281,9 +415,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -315,9 +447,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -349,9 +479,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
@@ -383,9 +511,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -417,9 +543,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055910",
@@ -454,9 +578,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -488,9 +610,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
@@ -522,9 +642,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -556,9 +674,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -590,9 +706,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
@@ -624,9 +738,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055938",
       text: "View Aluminum Door Mounting Template Doc# 4661-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
@@ -657,9 +769,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.LS8600CVRMortise,
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
@@ -682,9 +792,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -721,9 +829,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
@@ -761,9 +867,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055970",
@@ -796,9 +900,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -826,9 +928,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -861,9 +961,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -896,9 +994,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.wideNBSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
@@ -931,9 +1027,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: (
         <>
           ↓ For cylinder only Application ↓ <br />
@@ -973,9 +1067,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1010,9 +1102,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055921",
@@ -1047,9 +1137,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1083,9 +1171,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: (
         <>
           ↓ For cylinder only Application ↓ <br />
@@ -1121,9 +1207,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1154,9 +1238,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
@@ -1185,9 +1267,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.thumbpieceTrims,
 
       warning:
@@ -1222,9 +1302,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -1259,9 +1337,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055934",
@@ -1295,9 +1371,7 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, ETR, ETS, ETY, ETG, FLL, FSL, FLW, FSW, MAL, MSL, STS, PTB, PSB, 802-PTB, ETMD, ETMJ, ETMP, ETND, ETNJ, ETMA, ETMQ, ETMT, ETMO, ETMZ, ETGT, ETMB, ETME, ETMF, ETNF, ETMG, ETMI, ETMW, ETMN, ETMH, ETMS, ETMU, ETMV, ETNU, ETWG, ETRCM, ETRAL, ETREM, ETRAM, ETRAS, ETRAG, ETRGM, ETH015, ETH016, ETH017, ETH018, ETH001, ETH002, ETH003, ETH004, ETH005, ETH006, ETH007, ETH008, ETH011, 826, 824, 821, 827",
-
+      trims:trimsString,
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
@@ -1328,9 +1402,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.narrowPE80Mortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238416",
@@ -1365,9 +1438,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.narrowPECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
@@ -1402,9 +1474,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.narrowPE8500,
 
       warning:
@@ -1435,9 +1506,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.narrowPE8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238392",
@@ -1496,9 +1566,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
@@ -1531,9 +1600,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
@@ -1566,9 +1634,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePECVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238377",
@@ -1603,9 +1670,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePESVR,
       warning: "If using thumbpiece trim go to TP Trim section",
 
@@ -1639,9 +1705,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePESVR,
       warning: "If using thumbpiece trim go to TP Trim section",
 
@@ -1666,6 +1731,19 @@ export const ExitDevices = {
       title: "PE8700 Thumbpiece Trims (10, 28, 62, 63)",
       functions:
         "PE8710, PE8728, PE8762, PE8763, Wide PE Series, Wide PE80 Series, PTB, STS, MAL, FLW, FLL, PE, Wide, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE, ThumbPiece, Thumb, Piece, Trims, Thumbpiece Trims, Thumbpiece trim, Pull, PE, PE8700, 8700, ",
+        MechOptions:
+        "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, PL, 5CH, 23, 76, 85, 86, 87",
+      ElecOptions:
+        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -1731,9 +1809,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       warning:
@@ -1764,9 +1841,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePERim,
 
       warning:
@@ -1797,9 +1873,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePERim,
 
       warning: "ET with Cross Spindle + Electrified Trims ",
@@ -1829,9 +1904,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePERim,
 
       warning: "If using thumbpiece trim go to TP Trim section",
@@ -1859,9 +1933,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -1916,9 +1989,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.widePE80Mortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238412",
@@ -1951,9 +2023,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "NEP, WEP, NEL, WEL, NEJ, WEJ, NEF, WEF, NEE, WEE, WEB, NEB, WEA, NEA, WEY, NEY, WES, NES, WER, NER, WEG, NEG, NEC, WEC, WEWG, NEWG, WERGM, NERGM, NEREM, WEREM, NERCM, WERCM, NERAW, WERAW, WERAS, NERAS, NERAM, WERAM, NERAL, WERAL, WERAG, NERAG, WENU, NENU, WENJ, NENJ, NENF, WENF, WEND, NEND, WEMZ, NEMZ, WEMW, NEMW, NEMV, WEMV, WEMU, NEMU, WEMT, NEMT, NEMS, WEMS, NEMQ, WEMQ, NEMP, WEMP, WEMO, NEMO, NEMN, WEMN, WEMM, NEMM, WEMJ, NEMJ, NEMI, WEMI, NEMH, WEMH, WEMG, NEMG, NEMF, WEMF, NEME, WEME, WEMD, NEMD, NEMB, WEMB, NEMA, WEMA, NEH018, WEH018, NEH017, WEH017, NEH016, WEH016, NEH015, WEH015, NEH011, WEH011, NEH008, WEH008, WEH007, NEH007, WEH006, NEH006, WEH005, NEH005, NEH004, WEH004, NEH003, WEH003, NEH002, NEH001, WEH002, WEH001, NEGT, WEGT, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -1984,9 +2055,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.narrowCVR9400,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055979",
@@ -2017,9 +2087,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055982",
@@ -2057,9 +2126,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.crossWideSVR,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055981",
@@ -2097,9 +2165,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2128,9 +2195,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.crossWideRim,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055984",
@@ -2165,9 +2231,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2197,9 +2262,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.crossWideMortise,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055990",
@@ -2235,9 +2299,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims:
-        "ETA, ETB, ETE, ETF, ETJ, ETL, ETP, ETW, 862, 863, 864, FSL, MSL, STS, FSW, PSB, FLL, FLW, PTB, MAL, 821, 824, 826, 827",
-      
+        trims:trimsString,
+
       image: Images.thumbpieceTrims,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
@@ -2268,9 +2331,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:
-        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-      
+        trims:trimsString,
+
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
@@ -2299,9 +2361,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:
-        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-      
+        trims:trimsString,
+
       image: Images.Exit2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056003",
@@ -2330,9 +2391,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:
-        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-      
+        trims:trimsString,
+
       image: Images.strikes2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
@@ -2363,9 +2423,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:
-        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-      
+        trims:trimsString,
+
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
@@ -2396,9 +2455,8 @@ export const ExitDevices = {
       voltage: "12V, 24V, 12 V, 24 V",
       finishes:
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-      trims:
-        "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-      
+        trims:trimsString,
+
       image: Images.Exit3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056004",
@@ -2426,9 +2484,8 @@ export const ExitDevices = {
     voltage: "12V, 24V, 12 V, 24 V",
     finishes:
       "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
-    trims:
-      "28-K-LL, 28-N-LL, 28-D-LL, 28-C-LL, 28-L-LL, 814-HTB, 814-GTB, 810-HTB, 810-GTB, 802-HTB, 802-GTB, 28-K-OB, 28-C-OB, 28-L-OB, 866-TP, 814-TP",
-    
+      trims:trimsString,
+
       image: Images.strikes3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
@@ -2439,6 +2496,122 @@ export const ExitDevices = {
       text2: "View 644 Alternative Strike Template Doc# 3996-C",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
+    },
+  ],
+  KP80: [
+    {
+      device: 'KP80',
+
+      title: 'KP 8800 Rim Exit Device',
+      image: Images.wideStileRim,
+      functions: "8877, 8878, KP8877, KP8878, Fail, Secure, Safe",
+      MechOptions:
+      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+    CylOptions:
+      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+    railSizes: "E, F, J, G",
+    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+    voltage: "12V, 24V, 12 V, 24 V",
+    finishes:
+      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:trimsString,
+
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055594',
+      text: 'View Metal and Wood Doors Mounting Template Doc# 4474',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
+      text1: 'View Full Device Installation InstructionsDoc# A7137',
+    },
+    {
+      device: 'KP80',
+
+      title: 'KP 8900 Mortise Exit Device',
+      image: Images.wideMortise,
+      functions: "8977, 8978, KP8977, KP8978, Fail, Secure, Safe",
+      MechOptions:
+      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+    CylOptions:
+      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+    railSizes: "E, F, J, G",
+    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+    voltage: "12V, 24V, 12 V, 24 V",
+    finishes:
+      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:trimsString,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055595',
+      text: 'View Metal and Wood Doors Mounting Template Doc# 4477',
+    }
+  ],
+  KPPE80: [
+    {
+      device: 'KPPE80',
+
+      title: 'KP PE8800 Rim Exit Device',
+      image: Images.wideStileRim,
+      functions: "8877, 8878, KP8877, KP8878, KP, PE, PE8878, PE8877, Fail, Secure, Safe",
+      MechOptions:
+      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+    ElecOptions:
+      "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+    CylOptions:
+      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+    railSizes: "E, F, J, G",
+    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+    voltage: "12V, 24V, 12 V, 24 V",
+    finishes:
+      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:trimsString,
+
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238428',
+      text: 'View Metal and Wood Doors Mounting Template Doc# MEDT58',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
+      text1: 'View Full Device Installation Instructions Doc# A7137',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
+      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
+      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
+      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
+      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
+      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
+    },
+    {
+      device: 'KPPE80',
+
+      title: 'KP PE8900 Mortise Exit Device',
+      image: Images.wideMortise,
+      functions: "8977, 8978, KP8977, KP8978, KP, PE, PE8977, PE8978, Fail, Secure, Safe",
+      MechOptions:
+      "KP, 12, 16, 19, 23, 25, 29, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, 18, WR, FW",
+    ElecOptions:
+      "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
+    CylOptions:
+      "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+    railSizes: "E, F, J, G",
+    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+    voltage: "12V, 24V, 12 V, 24 V",
+    finishes:
+      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims:trimsString,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238429',
+      text: 'View Metal and Wood Doors Mounting Template Doc# MEDT59',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054957',
+      text1: 'View Full Device Installation Instructions Doc# A7137',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054988',
+      text2: 'View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
+      text3: 'View Door Position Switch (Frame) Installation Instructions Doc# A7983',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
+      text4: 'View Door Position Switch (Frame) Installation Instructions Doc# A8005',
+      link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
+      text5: 'View Controller Replacement 52-6085 Installation Instructions Doc# A8288',
+      link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179499',
+      text6: 'View Weatherization Kit 52-6084 Installation Instructions Doc# A8289',
     },
   ],
 };

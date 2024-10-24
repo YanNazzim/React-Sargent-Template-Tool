@@ -112,4 +112,7 @@ export const Images = {
 
   // Thermal Pins
   ThermalPin683: require('./thermal pins.png'),
+
+  // KP Devices
+  KP80Trim: require('./Exits/KP80 Keypad Escutcheon.png'),
 };

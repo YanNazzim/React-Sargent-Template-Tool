@@ -128,6 +128,8 @@ export const MultiPoints = {
       finishes:
         "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BE, 613E, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
       trims: trimsString,
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V, V",
       text: "View Metal Door Mounting Template Doc# 4582",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056046",
       text1: "View Wood Door Mounting Template Doc# 4624",
@@ -148,6 +150,8 @@ export const MultiPoints = {
       finishes:
         "03, US03, 10BE, 32D, 605, 613E, 630, 04, US04, 606, 09, US09, 611, 10, 612, US10, 10B, 613, 10BE, 613E, 10BL, 614, 14, US14, 618, 15, US15, 619, 20D, 624, 26, 625, 26D, BSP, WSP",
       trims: trimsString,
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V, V",
       text: "View Template Form (Ceco Door StormPro® 361 or Curries StormPro® 361 doors and frames)",
       link: "https://www.sargentlock.com/en/standalone/fm6100-template",
     },
@@ -169,6 +173,8 @@ export const MultiPoints = {
       thumbturns:
         "130KB, 130KT, 130LB, 130KA, 130KC, t1, t2, t3, standard, 130LT, 130LC",
       trims: trimsString,
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V, V",
 
       text: "View Standard 7300 Template Form (Ceco Door Medallion, Curries 747 doors and frames)",
       link: "https://www.sargentlock.com/en/standalone/7300-template",
