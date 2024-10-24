@@ -115,4 +115,5 @@ export const Images = {
 
   // KP Devices
   KP80Trim: require('./Exits/KP80 Keypad Escutcheon.png'),
+  KP10X: require('./Bored/KP10X.png'),
 };
