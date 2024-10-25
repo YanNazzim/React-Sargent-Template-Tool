@@ -107,7 +107,7 @@ function Stile() {
             KP {series} Series <br></br> {deviceListKP}
           </button>
         )}
-        {/* Render KP button only if series is not "80" or "PE80" */}
+        {/* Render KP button only if series is "80" or "PE80" */}
         {(series === "80" /*|| series === "PE80"*/) && (
           <button
             className="btn"
