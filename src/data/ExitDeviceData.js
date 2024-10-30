@@ -2642,7 +2642,7 @@ export const ExitDevices = {
       image: Images.IN120Rim,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
       CylOptions:
@@ -2682,7 +2682,7 @@ export const ExitDevices = {
       image: Images.IN120Mortise,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions:
         "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
       CylOptions:
@@ -2717,11 +2717,11 @@ export const ExitDevices = {
       device: "IN120 PE80 Series",
 
       title: "IN120 PE8600 CVR",
-      functions: "8678, Fail, Secure, Safe",
-      image: Images.IN120Rim,
+      functions: "8678, PE, PE8678, Fail, Secure, Safe",
+      image: Images.IN120,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
@@ -2733,11 +2733,11 @@ export const ExitDevices = {
       trims: trimsString,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238403",
-      text: "View Standard Mounting Template (Wood) Doc# MEDT3",
+      text: "View Standard Device Mounting Template (Wood) Doc# MEDT3",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238379",
-      text1: "View Standard Mounting Template (Metal) Doc# MEDT4",
+      text1: "View Standard Device Mounting Template (Metal) Doc# MEDT4",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238438",
-      text2: "View Trim Template (STD/EA Option) Doc# MEDT68",
+      text2: "View IN Series Trim Template (STD/EA Option) Doc# MEDT68",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text3: "View P106/P113 Aux Control Template Doc# MEDT7",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
@@ -2758,12 +2758,12 @@ export const ExitDevices = {
     {
       device: "IN120 PE80 Series",
 
-      title: "IN120 PE8900 Mortise",
-      functions: "8977, 8978, Fail, Secure, Safe",
-      image: Images.IN120Rim,
+      title: "IN120 PE8700 SVR",
+      functions: "8778, PE, PE8778, Fail, Secure, Safe",
+      image: Images.IN120,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
@@ -2774,34 +2774,43 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
-      text: "View Metal and Wood Door Mounting Template Doc# 4714",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
-      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text2: "View Main Installation Instructions Doc# A8185",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text3:
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238386",
+      text: "View Standard Mounting Template (Metal and Wood Door) Doc# MEDT12",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
+      text1:
+        "View Fire Rated (12-) Mounting Template (Metal and Wood) Doc# MEDT13",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238439",
+      text2: "View IN Series Trim Template Doc# MEDT69",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238401",
+      text3: "View 648 Top Strike Template Doc# MEDT31",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238400",
+      text4: "View 624/655 Bottom Strike Template Doc# MEDT30",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
+      text5: "View 306/313 Auxiliary Control Template Doc# 4214",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text6: "View Main Installation Instructions Doc# A8185",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+      text7:
         "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
+      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text8:
         "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text5:
+      link9: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text9:
         "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text6:
+      link10: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text10:
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
     {
       device: "IN120 PE80 Series",
 
       title: "IN120 PE8800 Rim",
-      functions: "8877, 8878, Fail, Secure, Safe",
-      image: Images.IN120Rim,
+      functions: "8877, 8878, PE, PE8877, PE8878, Fail, Secure, Safe",
+      image: Images.IN120,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
@@ -2812,10 +2821,10 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
-      text: "View Metal and Wood Door Mounting Template Doc# 4714",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
-      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
+      text: "View Mounting Template (Any Material) Doc# MEDT44",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238423",
+      text1: "View IN Series Trim Template (Metal and Wood) Doc# MEDT53",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
       text2: "View Main Installation Instructions Doc# A8185",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
@@ -2834,12 +2843,12 @@ export const ExitDevices = {
     {
       device: "IN120 PE80 Series",
 
-      title: "IN120 PE8700 Mortise -- Not Done",
-      functions: "8778, Fail, Secure, Safe",
-      image: Images.IN120Rim,
+      title: "IN120 PE8900 Mortise",
+      functions: "8977, 8978, PE, PE8977, PE8978, Fail, Secure, Safe",
+      image: Images.IN120,
 
       MechOptions:
-        "IN120, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+        "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
       ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
@@ -2850,23 +2859,27 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177255",
-      text: "View Metal and Wood Door Mounting Template Doc# 4714",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
-      text1: "View Mounting Template (Metal and Wood) Doc# 4736",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text2: "View Main Installation Instructions Doc# A8185",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text3:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238412",
+      text: "View Mounting Template (Any Material) Doc# 4714",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1: "View IN Series Trim Template (Metal and Wood) Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238420",
+      text2: "View 908/C908 Strike Template Doc# MEDT50",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
+      text3: "View 815 Open Back Strike Template Doc# MEDT49",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+      text4: "View Main Installation Instructions Doc# A8185",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
       text5:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text6:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text7:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+      text8:
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
   ],

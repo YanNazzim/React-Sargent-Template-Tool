@@ -91,11 +91,11 @@ function Stile() {
             className="btn-image"
             alt="NarrowExits"
           />
-          Narrow {series} Series <br></br> {deviceListNarrow}
+          Standard Narrow {series} Series <br></br> {deviceListNarrow}
         </button>
         <button id="Wide" className="btn" onClick={handleButtonClickWide}>
           <img src={deviceImageWide} className="btn-image" alt="WideExits" />
-          Wide {series} Series <br></br> {deviceListWide}
+          Standard Wide {series} Series <br></br> {deviceListWide}
         </button>
         {/* Render KP button only if series is not "80" or "PE80" */}
         {(series === "80" || series === "PE80") && (
@@ -108,7 +108,7 @@ function Stile() {
           </button>
         )}
         {/* Render KP button only if series is "80" or "PE80" */}
-        {(series === "80" /*|| series === "PE80"*/) && (
+        {(series === "80" || series === "PE80") && (
           <button
             className="btn"
             onClick={() => handleButtonClickEM(`IN120 ${series} Series`)}
