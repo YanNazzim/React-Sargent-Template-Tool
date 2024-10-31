@@ -49,35 +49,83 @@ const series30Devices = [
   { id: "3828", name: "3828 Rim Exit", img: Images.Exit2828 },
 ];
 
+// Define additional device lists for IN and KP combinations
+const widePE80INDevices = [
+  {
+    id: "INPE8600",
+    name: "IN120 PE8600 Wide CVR Exit",
+    img: Images.widePECVR,
+  },
+  {
+    id: "INPE8700",
+    name: "IN120 PE8700 Wide SVR Exit",
+    img: Images.widePESVR,
+  },
+  {
+    id: "INPE8800",
+    name: "IN120 PE8800 Wide Rim Exit",
+    img: Images.widePERim,
+  },
+  {
+    id: "INPE8900",
+    name: "IN120 PE8900 Wide Mortise Exit",
+    img: Images.widePE80Mortise,
+  },
+];
+
+const wideIN80Devices = [
+  { id: "IN8800", name: "IN Series 8800 Rim Exit", img: Images.IN120 },
+  { id: "IN8900", name: "IN Series 8900 Mortise Exit", img: Images.IN120 },
+];
+
+const wideKP80Devices = [
+  { id: "KP8800", name: "KP8800 Wide Rim Exit", img: Images.KP80Trim },
+  { id: "KP8900", name: "KP8900 Wide Mortise Exit", img: Images.KP80Trim },
+];
+
+const widePE80KPDevices = [
+  { id: "KPPE8800", name: "KP PE8800 Wide Rim Exit", img: Images.KP80Trim },
+  { id: "KPPE8900", name: "KP PE8900 Wide Mortise Exit", img: Images.KP80Trim },
+];
+
 function WideExits() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { series } = location.state || {}; // Get series from passed state
+  const { series, type } = location.state || {}; // Get series and type from passed state
 
-  // Determine the correct set of devices to display based on the series
+  // Determine the correct set of devices to display based on the series and type
   let devices;
-  switch (series) {
-    case "90":
-      devices = wide90Devices;
-      break;
-    case "PE80":
-      devices = widePE80Devices;
-      break;
-    case "20":
-      devices = series20Devices;
-      break;
-    case "30":
-      devices = series30Devices;
-      break;
-    default:
-      devices = wide80Devices;
-      break;
+  if (series === "PE80" && type === "IN ") {
+    devices = widePE80INDevices;
+  } else if (series === "80" && type === "IN ") {
+    devices = wideIN80Devices;
+  } else if (series === "PE80" && type === "KP ") {
+    devices = widePE80KPDevices;
+  } else if (series === "80" && type === "KP ") {
+    devices = wideKP80Devices;
+  } else if (series === "90") {
+    devices = wide90Devices;
+  } else if (series === "PE80") {
+    devices = widePE80Devices;
+  } else if (series === "20") {
+    devices = series20Devices;
+  } else if (series === "30") {
+    devices = series30Devices;
+  } else {
+    devices = wide80Devices;
   }
 
   const handleButtonClick = (id) => {
-    const navigateSeries = series === "PE" ? `Wide${series}` : `Wide${series}`; // Adjust series naming for PE series
+    // Determine the series value based on type
+    const isKPOrIN = type === "KP " || type === "IN ";
+
+    // Navigate based on whether type is "KP" or "IN"
     navigate("/display-templates", {
-      state: { category: "Exit Devices", series: navigateSeries, device: id },
+      state: {
+        category: "Exit Devices",
+        series: isKPOrIN ? `${type}${series}` : `Wide${series}`,
+        device: id,
+      },
     });
   };
 

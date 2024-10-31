@@ -15,7 +15,8 @@ import BoredSeries from './components/BoredSeries.js'
 import AuxLockSeries from './components/AuxLockSeries.js'
 import Cylinders from './components/Cylinders.js'
 import CylindersInfo from "./components/CylindersInfo.js";
-import MultiPointSeries from'./components/MultiPointSeries.js'
+import MultiPointSeries from'./components/MultiPointSeries.js';
+import EMProducts from './components/EMProducts.js'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/auxiliaryLocksSeries" element={<AuxLockSeries />} />
         <Route path="/Cylinders" element={<Cylinders />} />
         <Route path="/cylinders-info/:type" element={<CylindersInfo />} />
+        <Route path="/em-products" element={<EMProducts />} />
 
       </Routes>
       <Footer /> {/* Ensure Footer is part of every page */}

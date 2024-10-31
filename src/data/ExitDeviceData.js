@@ -2475,9 +2475,9 @@ export const ExitDevices = {
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
   ],
-  KP80: [
+  'KP 80': [
     {
-      device: "KP80",
+      device: "KP8800",
 
       title: "KP 8800 Rim Exit Device",
       image: Images.wideStileRim,
@@ -2515,7 +2515,7 @@ export const ExitDevices = {
         "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
     {
-      device: "KP80",
+      device: "KP8900",
 
       title: "KP 8900 Mortise Exit Device",
       image: Images.wideMortise,
@@ -2553,9 +2553,9 @@ export const ExitDevices = {
         "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
   ],
-  KPPE80: [
+  'KP PE80': [
     {
-      device: "KPPE80",
+      device: "KPPE8800",
 
       title: "KP PE8800 Rim Exit Device",
       image: Images.wideStileRim,
@@ -2594,7 +2594,7 @@ export const ExitDevices = {
         "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
     {
-      device: "KPPE80",
+      device: "KPPE8900",
 
       title: "KP PE8900 Mortise Exit Device",
       image: Images.wideMortise,
@@ -2612,32 +2612,34 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238429",
-      text: "View Metal and Wood Doors Mounting Template Doc# MEDT59",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
-      text1: "View Full Device Installation Instructions Doc# A7137",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text2:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
+      text: 'View Mounting Template Doc# MEDT42',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238429",
+      text1: "View IN Series Trim Template Doc# MEDT59",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+      text2: "View Full Device Installation Instructions Doc# A7137",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
       text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
       text5:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
       text6:
+        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+      text7:
         "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
   ],
-  "IN120 80 Series": [
+  "IN 80": [
     {
-      device: "IN120 80 Series",
+      device: "IN8800",
 
-      title: "IN120 8800 Rim",
+      title: "IN (100, 120, 220) 8800 Rim",
       functions: "8877, 8878, Fail, Secure, Safe",
       image: Images.IN120Rim,
 
@@ -2675,9 +2677,9 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
     {
-      device: "IN120 80 Series",
+      device: "IN8900",
 
-      title: "IN120 8900 Mortise",
+      title: "IN (100, 120, 220) 8900 Mortise",
       functions: "8977, 8978, Fail, Secure, Safe",
       image: Images.IN120Mortise,
 
@@ -2712,9 +2714,9 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
   ],
-  "IN120 PE80 Series": [
+  "IN PE80": [
     {
-      device: "IN120 PE80 Series",
+      device: "INPE8600",
 
       title: "IN120 PE8600 CVR",
       functions: "8678, PE, PE8678, Fail, Secure, Safe",
@@ -2756,7 +2758,7 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
     {
-      device: "IN120 PE80 Series",
+      device: "INPE8700",
 
       title: "IN120 PE8700 SVR",
       functions: "8778, PE, PE8778, Fail, Secure, Safe",
@@ -2803,7 +2805,7 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
     {
-      device: "IN120 PE80 Series",
+      device: "INPE8800",
 
       title: "IN120 PE8800 Rim",
       functions: "8877, 8878, PE, PE8877, PE8878, Fail, Secure, Safe",
@@ -2841,7 +2843,7 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
     {
-      device: "IN120 PE80 Series",
+      device: "INPE8900",
 
       title: "IN120 PE8900 Mortise",
       functions: "8977, 8978, PE, PE8977, PE8978, Fail, Secure, Safe",

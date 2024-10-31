@@ -34,12 +34,13 @@ function MortiseSeries() {
         </button>
         {/* Button for KP 8200 series */}
         <button className="btn" onClick={() => handleButtonClick("KP8200")}>
-          <img
-            className="btn-image"
-            src={Images.KP80Trim}
-            alt="Mortise Lock"
-          />
-          KP 8200
+          <img className="btn-image" src={Images.KP80Trim} alt="Mortise Lock" />
+          KP Series 8200
+        </button>
+        {/* Button for IN Series 8200 series */}
+        <button className="btn" onClick={() => handleButtonClick("IN8200")}>
+          <img className="btn-image" src={Images.IN7900} alt="Mortise Lock" />
+          IN Series 8200
         </button>
         {/* Button for 9200 series */}
         <button className="btn" onClick={() => handleButtonClick("9200")}>
@@ -67,6 +68,15 @@ function MortiseSeries() {
             alt="Mortise Lock"
           />
           7800
+        </button>
+                {/* Button for 7900 series */}
+                <button className="btn" onClick={() => handleButtonClick("IN7900")}>
+          <img
+            className="btn-image"
+            src={Images.IN7900}
+            alt="Mortise Lock"
+          />
+          IN Series 7800
         </button>
       </div>
     </>

@@ -119,6 +119,8 @@ export const Images = {
 
   // IN120 Devices
   IN120: require('./Exits/IN120.png'),
+  IN10X: require('./Bored/IN10X.png'),
+  IN7900: require('./Mortise/IN7900.png'),
   IN120Rim: require('./Exits/IN120 Rim.png'),
   IN120Mortise: require('./Exits/IN120 Mortise.png'),
 };
