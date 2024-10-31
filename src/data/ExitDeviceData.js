@@ -188,7 +188,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Raceway Template Doc# 4568-C",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8300",
@@ -221,7 +221,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Raceway Template Doc# 4568-C",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8300",
@@ -249,7 +249,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
       text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
-      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
+      text3: "View STS Strim Template (810, 814, 828, 866) Doc#  4020-F",
     },
     {
       device: "MD8400",
@@ -279,7 +279,7 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Raceway Template Doc# 4568-C",
+      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "MD8400",
@@ -309,7 +309,7 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Raceway Template Doc# 4568-C",
+      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8400",
@@ -339,7 +339,7 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Raceway Template Doc# 4568-C",
+      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8400",
@@ -369,7 +369,7 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Raceway Template Doc# 4568-C",
+      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -401,7 +401,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -433,7 +433,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -465,7 +465,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -497,7 +497,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -529,7 +529,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -561,7 +561,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Raceway Template Doc# 4568-C",
+      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
   ],
   Wide80: [
@@ -595,7 +595,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "WD8600",
@@ -627,7 +627,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "MD8600",
@@ -659,7 +659,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "MD8600",
@@ -691,7 +691,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "AD8600",
@@ -723,7 +723,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "AD8600",
@@ -755,7 +755,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "LP8600",
@@ -814,7 +814,7 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text6: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text7: "View Wide EM Raceway Template Doc# 4569-C",
+      text7: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -851,7 +851,7 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text6: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text7: "View Wide EM Raceway Template Doc# 4569-C",
+      text7: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -886,7 +886,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -921,7 +921,7 @@ export const ExitDevices = {
 
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
       functions:
-        "8706, 8713, 8715, 8743, 8746, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Class, Room, Classroom, Store, Storeroom, Store-Room, Passage",
+        "8706, 8713, 8715, 8743, 8746, NB8706, NB8713, NB8715, NB8743, NB8746, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Class, Room, Classroom, Store, Storeroom, Store-Room, Passage",
       MechOptions:
         "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
       ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
@@ -947,14 +947,14 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "NB-8700",
 
       title: "(12-)NB-8700 (10, 40)",
       functions:
-        "8710, 8740, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Exit Only, Exit, Only",
+        "8710, 8740, NB8710, NB8740, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Exit Only, Exit, Only",
       MechOptions:
         "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
       ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
@@ -980,14 +980,14 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "NB-8700",
 
       title: "(12-)NB-8700 (73, 74)",
       functions:
-        "8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Electrified, 773, 774, 773-4, 774-4",
+        "8773, 8774, NB8773, NB8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Electrified, 773, 774, 773-4, 774-4",
       MechOptions:
         "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
       ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
@@ -1013,7 +1013,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1051,7 +1051,7 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
 
     {
@@ -1087,7 +1087,7 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1122,7 +1122,7 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1157,7 +1157,7 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1193,7 +1193,7 @@ export const ExitDevices = {
       text4:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1224,7 +1224,7 @@ export const ExitDevices = {
       text4:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide EM Raceway Template Doc# 4569-C",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1322,7 +1322,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text6: "View Wide EM Raceway Template Doc# 4569-C",
+      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8900",
@@ -1357,7 +1357,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text6: "View Wide EM Raceway Template Doc# 4569-C",
+      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8900",
@@ -1423,7 +1423,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
       text5: "View 815 Strike Template Doc# MEDT49",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow EM Raceway Template Doc# MEDT8",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8400",
@@ -1459,7 +1459,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
       text5: "View 652 Standard Strike Template Doc# MEDT9",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow EM Raceway Template Doc# MEDT8",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1490,7 +1490,7 @@ export const ExitDevices = {
       text1:
         "View (04 Function) with ET Trim Inside Mounting Template Doc# MEDT41 ",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow EM Raceway Template Doc# MEDT8",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1521,7 +1521,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238411",
       text2: "View (54-)(P773-8/P774-8) Electrified Trim Template Doc# MEDT41",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow EM Raceway Template Doc# MEDT8",
+      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1585,7 +1585,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text4: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8600",
@@ -1619,7 +1619,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text4: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8600",
@@ -1655,7 +1655,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text5: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text6: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1690,7 +1690,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Control Template Doc# 4214",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1727,7 +1727,7 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text5: "View 306/313 Auxiliary Control Template Doc# 4214",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text6: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1764,7 +1764,7 @@ export const ExitDevices = {
 
       title: "(12-) NB-PE8700 SVR Exit",
       functions:
-        "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, 659, 655, 653, Strike, 659 Strike, 655 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, PE8700, WE, WE Trim, NE, NE Trim, ET, Trim, ET Trim, P700, Electrified Trim, Electrified, P773, P774",
+        "PE8706, PE8710, PE8713, PE8715, PE8740, PE8743, PE8746, PE8773, PE8774, NB8706, NB8710, NB8713, NB8715, NB8740, NB8743, NB8746, NB8773, NB8774, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, 659, 655, 653, Strike, 659 Strike, 655 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, PE8700, WE, WE Trim, NE, NE Trim, ET, Trim, ET Trim, P700, Electrified Trim, Electrified, P773, P774",
       MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
@@ -1794,7 +1794,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Control Template Doc# 4214",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "NB-PE8700",
@@ -1858,7 +1858,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template Doc# MEDT19",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text3: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text3: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1889,7 +1889,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
       text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text3: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text3: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1918,7 +1918,7 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text1: "View Trim Template (716) Doc# MEDT19",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text2: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text2: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -2008,7 +2008,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
       text4: "View 815 Optional Strike Template Doc# MEDT49",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide EM Wiring Raceway Template Doc# MEDT17",
+      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8900",
