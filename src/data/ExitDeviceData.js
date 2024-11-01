@@ -799,7 +799,7 @@ export const ExitDevices = {
       trims: trimsString,
       warning: "If using thumbpiece trim go to TP Trim section",
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055961",
       text: "View 8700 Mounting Template (Any Door) Doc# 4289-H",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
