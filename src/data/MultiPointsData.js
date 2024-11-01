@@ -185,5 +185,34 @@ export const MultiPoints = {
         "View BL7300 Template Form (Ceco and Curries Multi-Solution Opening doors and frames)",
       link2: "https://www.sargentlock.com/en/standalone/bl7300-template",
     },
+    {
+      device: '7300',
+      title: "IN Series 7300, FM7300, BL7300",
+      functions: "73277, 73276, B, MB, Fail, Secure, Safe",
+      image: Images.IN120,
+      MechOptions:
+        "IN120, IN100, IN220, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
+      ElecOptions: "91, IPV, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238598",
+      text: "View IN100 (Aperio) Installation Instructions Doc# A8377",
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055024',
+      text1: 'ASSA ABLOY Frame Door Position Switch Installation Instructions Doc# A7983',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055023',
+      text2: 'SARGENT Hinge Door Position Switch Installation Instructions Doc# A8005',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1190724',
+      text3: 'SARGENT IN120 and Passport 1000 P2 Series WiFi-Enabled Products (Option: 91-) Hard Powering Instructions Doc# WFMN10A',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054960',
+      text4: 'SARGENT IP-Enabled Quick Reference Guide Installation Instructions Doc# WFMN3',
+
+    },
   ],
 };

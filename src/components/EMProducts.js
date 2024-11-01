@@ -11,6 +11,7 @@ function EMProducts() {
   let deviceListIN120 = "";
   let deviceImageKP = "";
   let deviceImageIN120 = "";
+  let deviceImageSN = "";
 
   // Logging the value of series to verify
   useEffect(() => {
@@ -20,9 +21,8 @@ function EMProducts() {
   const devicListKP80 = ["(KP8800, KP8900)"];
   const devicListKPPE80 = ["(KP PE8800, KP PE8900)"];
   const devicListIN12080 = ["(IN100, IN120, IN220)"];
-  const devicListIN120PE80 = [
-    "(IN120 PE8600, IN120 PE8700, IN120 PE8800, IN120 PE8900)",
-  ];
+  const devicListIN120PE80 = ["(IN100, IN120, IN220)",];
+  const deviceListSN = ["(SN200, SN210)"]
 
   // Assign device lists and images based on the series
   if (series === "80") {
@@ -30,12 +30,14 @@ function EMProducts() {
     deviceListIN120 = devicListIN12080;
     deviceImageKP = Images.KP80Trim;
     deviceImageIN120 = Images.IN120;
+    deviceImageSN = Images.SN200ET
   }
   if (series === "PE80") {
     deviceListKP = devicListKPPE80;
     deviceListIN120 = devicListIN120PE80;
     deviceImageKP = Images.KP80Trim;
     deviceImageIN120 = Images.IN120;
+    deviceImageSN = Images.SN200ET
   }
 
   const handleButtonClickKP = () => {
@@ -44,6 +46,10 @@ function EMProducts() {
 
   const handleButtonClickIN = () => {
     navigate("/wide", { state: { series, type: "IN " } });
+  };
+
+  const handleButtonClickSN = () => {
+    navigate("/wide", { state: { series, type: "SN " } });
   };
 
   
@@ -64,6 +70,16 @@ function EMProducts() {
             alt="IN120Exits"
           />
           IN {series} Series <br /> {deviceListIN120}
+        </button>
+      )}
+            {(series === "80" || series === "PE80") && (
+        <button className="btn" onClick={handleButtonClickSN}>
+          <img
+            src={deviceImageSN}
+            className="btn-image"
+            alt="IN120Exits"
+          />
+          SN {series} Series <br /> {deviceListSN}
         </button>
       )}
     </div>

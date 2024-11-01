@@ -88,6 +88,16 @@ const widePE80KPDevices = [
   { id: "KPPE8900", name: "KP PE8900 Wide Mortise Exit", img: Images.KP80Trim },
 ];
 
+const wideSN80Devices = [
+  { id: "SN8800", name: "SN8800 Wide Rim Exit", img: Images.KP80Trim },
+  { id: "SN8900", name: "SN8900 Wide Mortise Exit", img: Images.KP80Trim },
+];
+
+const widePE80SNDevices = [
+  { id: "SNPE8800", name: "SN PE8800 Wide Rim Exit", img: Images.KP80Trim },
+  { id: "SNPE8900", name: "SN PE8900 Wide Mortise Exit", img: Images.KP80Trim },
+];
+
 function WideExits() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -103,6 +113,10 @@ function WideExits() {
     devices = widePE80KPDevices;
   } else if (series === "80" && type === "KP ") {
     devices = wideKP80Devices;
+  } else if (series === "PE80" && type === "SN ") {
+    devices = widePE80SNDevices;
+  } else if (series === "80" && type === "SN ") {
+    devices = wideSN80Devices;
   } else if (series === "90") {
     devices = wide90Devices;
   } else if (series === "PE80") {
@@ -117,13 +131,13 @@ function WideExits() {
 
   const handleButtonClick = (id) => {
     // Determine the series value based on type
-    const isKPOrIN = type === "KP " || type === "IN ";
+    const isKPOrSNOrIN = type === "KP " || type === "IN " || type === "SN ";
 
     // Navigate based on whether type is "KP" or "IN"
     navigate("/display-templates", {
       state: {
         category: "Exit Devices",
-        series: isKPOrIN ? `${type}${series}` : `Wide${series}`,
+        series: isKPOrSNOrIN ? `${type}${series}` : `Wide${series}`,
         device: id,
       },
     });
