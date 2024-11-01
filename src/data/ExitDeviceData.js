@@ -2885,4 +2885,128 @@ export const ExitDevices = {
         "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
     },
   ],
+  "SN 80": [
+    {
+      device: "SN8600",
+      title: "SN Series 8600 CVR Exit (200, 210)",
+      functions: '8675, 8676, 8606, 8610, 8613, 8646, 8640, 8643, ',
+      image: Images.SN200ET,
+
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055627",
+      text: "View SN Series for Metal and Wood Doors Template Doc# 4704",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      
+    },
+    {
+      device: "SN8700",
+      title: "SN Series 8700 SVR Exit (200, 210)",
+      functions: '8775, 8776, 8706, 8710, 8713, 8746, 8740, 8743, ',
+      image: Images.SN200ET,
+
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055627",
+      text: "View SN Series for Metal and Wood Doors (8700) Template Doc# 4705",
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055630',
+      text1: 'View SN Series for Metal and Wood Doors (NB8700) Template Doc# 4706',
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text2: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      
+    },
+    {
+      device: "SN8800",
+      title: "SN Series 8800 Rim Exit (200, 210)",
+      functions: '8875, 8876, 8804, 8806, 8810, 8813, 8844, 8846, 8843',
+      image: Images.SN200ET,
+
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086701",
+      text: "View SN Series for Metal and Wood Doors Template Doc# 4707",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      
+    },
+    {
+      device: "SN8900",
+      title: "SN Series 8900 Mortise Exit (200, 210)",
+      functions: '8975, 8976, 8904, 8906, 8910, 8913, 8944, 8946, 8943',
+      image: Images.SN200ET,
+
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086701",
+      text: "View SN Series for Metal and Wood Doors Template Doc# 4707",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      
+    },
+  ],
 };

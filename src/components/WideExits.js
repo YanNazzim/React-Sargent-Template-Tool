@@ -89,8 +89,10 @@ const widePE80KPDevices = [
 ];
 
 const wideSN80Devices = [
-  { id: "SN8800", name: "SN8800 Wide Rim Exit", img: Images.KP80Trim },
-  { id: "SN8900", name: "SN8900 Wide Mortise Exit", img: Images.KP80Trim },
+  { id: "SN8600", name: "SN 8600 Wide Concealed Rod Exit", img: Images.SN200ET },
+  { id: "SN8700", name: "SN 8700 Wide Surface Rod Exit", img: Images.SN200ET },
+  { id: "SN8800", name: "SN 8800 Wide Rim Exit", img: Images.SN200ET },
+  { id: "SN8900", name: "SN 8900 Wide Mortise Exit", img: Images.SN200ET },
 ];
 
 const widePE80SNDevices = [
@@ -113,10 +115,10 @@ function WideExits() {
     devices = widePE80KPDevices;
   } else if (series === "80" && type === "KP ") {
     devices = wideKP80Devices;
-  } else if (series === "PE80" && type === "SN ") {
-    devices = widePE80SNDevices;
   } else if (series === "80" && type === "SN ") {
     devices = wideSN80Devices;
+  } else if (series === "PE80" && type === "SN ") {
+    devices = widePE80SNDevices;
   } else if (series === "90") {
     devices = wide90Devices;
   } else if (series === "PE80") {
