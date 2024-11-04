@@ -42,6 +42,11 @@ function MortiseSeries() {
           <img className="btn-image" src={Images.IN7900} alt="Mortise Lock" />
           IN Series 8200
         </button>
+                {/* Button for SN Series 8200 series */}
+                <button className="btn" onClick={() => handleButtonClick("SN8200")}>
+          <img className="btn-image" src={Images.SN8200} alt="Mortise Lock" />
+          SN Series 8200
+        </button>
         {/* Button for 9200 series */}
         <button className="btn" onClick={() => handleButtonClick("9200")}>
           <img
@@ -76,7 +81,7 @@ function MortiseSeries() {
             src={Images.IN7900}
             alt="Mortise Lock"
           />
-          IN Series 7800
+          IN Series 7900
         </button>
       </div>
     </>

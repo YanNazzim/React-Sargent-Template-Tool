@@ -128,5 +128,9 @@ export const Images = {
   SN200ET: require('./Exits/SNTrim 80.png'),
   SNPE8600: require('./Exits/SNPE8600.png'),
   SNPE8900: require('./Exits/SNPE8900.png'),
-  SNPETRIM: require('./Exits/SNPETRIM.png')
+  SNPETRIM: require('./Exits/SNPETRIM.png'),
+  SN10X: require('./Bored/SN10X.png'),
+  SN8200: require('./Mortise/SN8200.png'),
+  SNFM7300: require('./MultiPoints/SNFM7300.png'),
+
 };

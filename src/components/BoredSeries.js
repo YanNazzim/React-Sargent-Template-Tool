@@ -14,6 +14,7 @@ function BoredSeries() {
     { id: "10X Line", name: "10X Line", image: Images.Bored10x, series: "10X Line" },
     { id: "KP 10X", name: "KP 10X Line", image: Images.KP10X, series: "KP 10X" },
     { id: "IN 10X", name: "IN 10X Line", image: Images.IN10X, series: "IN 10X" },
+    { id: "SN 10X", name: "SN 10X Line", image: Images.SN10X, series: "SN 10X" },
     { id: "8X Line", name: "8X Line", image: Images.Bored8x, series: "8X Line" },
     { id: "7 Line", name: "7 Line", image: Images.Bored7, series: "7 Line" },
     {
