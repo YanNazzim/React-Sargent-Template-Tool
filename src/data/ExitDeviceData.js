@@ -188,7 +188,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8300",
@@ -221,7 +222,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8300",
@@ -279,7 +281,8 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text4:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "MD8400",
@@ -309,7 +312,8 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text4:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8400",
@@ -339,7 +343,8 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text4:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8400",
@@ -369,7 +374,8 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text4: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text4:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -401,7 +407,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -433,7 +440,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "8500",
@@ -465,7 +473,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -497,7 +506,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -529,7 +539,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
     {
       device: "AD8500",
@@ -561,7 +572,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard (12-) Strike Template Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
-      text5: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      text5:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
   ],
   Wide80: [
@@ -595,7 +607,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "WD8600",
@@ -627,7 +640,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "MD8600",
@@ -659,7 +673,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "MD8600",
@@ -691,7 +706,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "AD8600",
@@ -723,7 +739,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "AD8600",
@@ -755,7 +772,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "LP8600",
@@ -814,7 +832,8 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text6: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text7: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text7:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -851,7 +870,8 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text6: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text7: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text7:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -886,7 +906,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Trim Doc# 4214-F",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8700",
@@ -947,7 +968,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "NB-8700",
@@ -980,7 +1002,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "NB-8700",
@@ -1013,7 +1036,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
       text4: "View NB306/NB313 Auxiliary Trim Doc# 4583-A",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1051,7 +1075,8 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
 
     {
@@ -1087,7 +1112,8 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1122,7 +1148,8 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1157,7 +1184,8 @@ export const ExitDevices = {
       text4:
         "View 644 Alternate Strike Template (Double Door No Mullion) Doc# 3996-C",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1193,7 +1221,8 @@ export const ExitDevices = {
       text4:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1224,7 +1253,8 @@ export const ExitDevices = {
       text4:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8800",
@@ -1322,7 +1352,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text6:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8900",
@@ -1357,7 +1388,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055930",
       text5: "View 815 Open Back Strike Template Doc# 4192-H",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      text6:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
       device: "8900",
@@ -1423,7 +1455,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
       text5: "View 815 Strike Template Doc# MEDT49",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8400",
@@ -1459,7 +1492,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
       text5: "View 652 Standard Strike Template Doc# MEDT9",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1490,7 +1524,8 @@ export const ExitDevices = {
       text1:
         "View (04 Function) with ET Trim Inside Mounting Template Doc# MEDT41 ",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1521,7 +1556,8 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238411",
       text2: "View (54-)(P773-8/P774-8) Electrified Trim Template Doc# MEDT41",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6: "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
+      text6:
+        "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
     {
       device: "PE8500",
@@ -1585,7 +1621,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text4: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8600",
@@ -1619,7 +1656,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text4: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8600",
@@ -1655,7 +1693,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
       text5: "View 106/113 Auxiliary Control Template Doc# MEDT7",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text6:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1690,7 +1729,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Control Template Doc# 4214",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1727,7 +1767,8 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text5: "View 306/313 Auxiliary Control Template Doc# 4214",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text6: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text6:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8700",
@@ -1794,7 +1835,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text4: "View 306/313 Auxiliary Control Template Doc# 4214",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "NB-PE8700",
@@ -1858,7 +1900,8 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template Doc# MEDT19",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text3: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text3:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1889,7 +1932,8 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
       text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text3: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text3:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -1918,7 +1962,8 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text1: "View Trim Template (716) Doc# MEDT19",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text2: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text2:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
@@ -2008,7 +2053,8 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
       text4: "View 815 Optional Strike Template Doc# MEDT49",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text5: "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
+      text5:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8900",
@@ -2475,7 +2521,7 @@ export const ExitDevices = {
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
   ],
-  'KP 80': [
+  "KP 80": [
     {
       device: "KP8800",
 
@@ -2553,7 +2599,7 @@ export const ExitDevices = {
         "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
     },
   ],
-  'KP PE80': [
+  "KP PE80": [
     {
       device: "KPPE8800",
 
@@ -2612,8 +2658,8 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238412',
-      text: 'View Mounting Template Doc# MEDT42',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238412",
+      text: "View Mounting Template Doc# MEDT42",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238429",
       text1: "View IN Series Trim Template Doc# MEDT59",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
@@ -2889,12 +2935,13 @@ export const ExitDevices = {
     {
       device: "SN8600",
       title: "SN Series 8600 CVR Exit (200, 210)",
-      functions: '8675, 8676, 8606, 8610, 8613, 8646, 8640, 8643, ',
+      functions: "8673, 8674, 8606, 8610, 8613, 8646, 8640, 8643, ",
       image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
-      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2907,24 +2954,25 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055627",
       text: "View SN Series for Metal and Wood Doors Template Doc# 4704",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
-      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text2:
         "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
       text3:
         "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      
     },
     {
       device: "SN8700",
       title: "SN Series 8700 SVR Exit (200, 210)",
-      functions: '8775, 8776, 8706, 8710, 8713, 8746, 8740, 8743, ',
+      functions: "8773, 8774, 8706, 8710, 8713, 8746, 8740, 8743, ",
       image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
-      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2934,29 +2982,32 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055627",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055628",
       text: "View SN Series for Metal and Wood Doors (8700) Template Doc# 4705",
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055630',
-      text1: 'View SN Series for Metal and Wood Doors (NB8700) Template Doc# 4706',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055630",
+      text1:
+        "View SN Series for Metal and Wood Doors (NB8700) Template Doc# 4706",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
-      text2: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+      text2:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text3:
         "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
       text4:
         "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      
     },
     {
       device: "SN8800",
       title: "SN Series 8800 Rim Exit (200, 210)",
-      functions: '8875, 8876, 8804, 8806, 8810, 8813, 8844, 8846, 8843',
+      functions:
+        "8873, 8874, 8875, 8876, 8804, 8806, 8810, 8813, 8844, 8846, 8843",
       image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
-      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2969,24 +3020,26 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086701",
       text: "View SN Series for Metal and Wood Doors Template Doc# 4707",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
-      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text2:
         "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
       text3:
         "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      
     },
     {
       device: "SN8900",
       title: "SN Series 8900 Mortise Exit (200, 210)",
-      functions: '8975, 8976, 8904, 8906, 8910, 8913, 8944, 8946, 8943',
+      functions:
+        "8973, 8974, 8975, 8976, 8904, 8906, 8910, 8913, 8944, 8946, 8943",
       image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
-      ElecOptions: "91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
       CylOptions:
         "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
       railSizes: "E, F, J, G",
@@ -2996,17 +3049,146 @@ export const ExitDevices = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086701",
-      text: "View SN Series for Metal and Wood Doors Template Doc# 4707",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055629",
+      text: "View SN Series for Metal and Wood Doors Template Doc# 4708",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
-      text1: "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
       text2:
         "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
       text3:
         "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      
+    },
+  ],
+  "SN PE80": [
+    {
+      device: "SNPE8600",
+      title: "SN Series PE8600 CVR Exit",
+      image: Images.SNPE8600,
+      functions:
+        "8673, 8674, 8606, 8610, 8613, 8646, 8640, 8643, PE, PE8673, PE8674, PE8606, PE8610, PE8613, PE8646, PE8640, PE8643",
+
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238404",
+      text: "View SN Series for Metal and Wood Doors Template Doc# MEDT34",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+    },
+    {
+      device: "SNPE8700",
+      title: "SN Series PE8600 CVR Exit",
+      image: Images.SNPETRIM,
+      functions:
+        "8773, 8774, 8706, 8710, 8713, 8746, 8740, 8743, PE, PE8773, PE8674, PE8706, PE8670, PE8713, PE8746, PE8740, PE8743",
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238385",
+      text: "View SN Series for Metal and Wood Doors Template (PE8700) Doc# MEDT11",
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238425',
+      text1: 'View SN Series for Metal and Wood Doors Template (NB-PE8700) Doc# MEDT55',
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text2:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text3:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text4:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+    },
+    {
+      device: "SNPE8800",
+      title: "SN Series PE8800 Rim Exit",
+      image: Images.SNPETRIM,
+      functions:
+        "8873, 8874, 8875, 8876, 8804, 8806, 8810, 8813, 8844, 8846, 8843, PE, PE8873, PE8874, PE8875, PE8876, PE8804, PE8806, PE8810, PE8813, PE8840, PE8843, PE8844, PE8846",
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238440",
+      text: "View SN Series for Metal and Wood Doors Template Doc# MEDT56",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+    },
+    {
+      device: "SNPE8900",
+      title: "SN Series PE8900 Mortise Exit",
+      image: Images.SNPE8900,
+      functions:
+        "8973, 8974, 8975, 8976, 8904, 8906, 8910, 8913, 8944, 8946, 8943, PE, PE8973, PE8974, PE8975, PE8976, PE8904, PE8906, PE8910, PE8913, PE8940, PE8943, PE8944, PE8946",
+      MechOptions:
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238427",
+      text: "View SN Series for Metal and Wood Doors Template Doc# MEDT57",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
+      text1:
+        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
     },
   ],
 };

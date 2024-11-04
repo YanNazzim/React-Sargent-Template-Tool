@@ -125,5 +125,8 @@ export const Images = {
   IN120Mortise: require('./Exits/IN120 Mortise.png'),
 
   // SN Devices
-  SN200ET: require('./Exits/SNTrim 80.png')
+  SN200ET: require('./Exits/SNTrim 80.png'),
+  SNPE8600: require('./Exits/SNPE8600.png'),
+  SNPE8900: require('./Exits/SNPE8900.png'),
+  SNPETRIM: require('./Exits/SNPETRIM.png')
 };
