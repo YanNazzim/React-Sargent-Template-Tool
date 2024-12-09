@@ -1,0 +1,136 @@
+/* Root Variables for Theming */
+:root {
+    --primary-color: #333;
+    --hover-bg-color: #ddd;
+    --bg-color: #f4f4f4;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --transition-duration: 0.3s;
+    --hamburger-size: 2rem;
+    --pane-width: 20vw;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger-icon {
+    position: fixed; /* Keep it outside the menu */
+    top: 20px; /* Adjust the position */
+    left: 20px; /* Adjust the position */
+    background: none;
+    border: none;
+    font-size: var(--hamburger-size);
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's above the menu */
+    color: var(--primary-color);
+    transition: color var(--transition-duration);
+    background-color: white;
+  }
+  
+  .hamburger-icon:hover {
+    color: var(--hover-bg-color);
+  }
+  
+  /* Side Pane */
+  .side-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: var(--pane-width);
+    background-color: var(--bg-color);
+    box-shadow: 2px 0 5px var(--box-shadow-color);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000; /* Below the hamburger icon */
+    transform: translateX(-100%);
+    transition: transform var(--transition-duration) ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text and content properly */
+  }
+  
+  .side-pane.open {
+    transform: translateX(0);
+  }
+  
+  /* Menu Container */
+  .menu {
+    margin-top: 60px; /* Add space below the hamburger icon */
+    width: 100%; /* Ensure it spans the pane width */
+  }
+  
+  /* Menu Links */
+  .menu a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+  
+  .menu a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--primary-color);
+  }
+  
+  /* Submenu Styles */
+  .submenu {
+    margin-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .submenu a {
+    font-weight: normal;
+  }
+  
+  /* Fix for Text Position */
+  .menu h3, .menu button {
+    margin: 10px 0;
+    text-align: left;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .menu button {
+    border-bottom: 1px solid #333;
+  }
+
+  .menuHome {
+    padding-bottom: 15px;
+  }
+
+  .narrowMenu {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Divider line below narrowMenu */
+    text-decoration: none;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  .wideMenu {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Divider line below narrowMenu */
+    text-decoration: none;
+    color: var(--primary-color);
+    text-align: center;
+
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    :root {
+      --pane-width: 60vw; /* Wider pane for smaller screens */
+    }
+  
+    .hamburger-icon {
+      font-size: 1.5rem; /* Adjust size for smaller screens */
+    }
+  }
+  
