@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
@@ -11,6 +11,9 @@ import { ThermalPin } from "../data/ThermalPinData";
 function DisplayTemplates() {
   const location = useLocation();
   const { category, series, device, id } = location.state || {};
+
+  // State to track which template is expanded
+  const [expandedTemplate, setExpandedTemplate] = useState(null);
 
   // Initialize templates array
   let templates = [];
@@ -51,11 +54,7 @@ function DisplayTemplates() {
   if (category === "Thermal") {
     // Only show device or id for Thermal category
     headerLabel = `${device || id}`;
-  } else if (category === "Multi Points"){
-    headerLabel = `${category || "Category"} - ${series || "Series"}`;
-  } else if (category === "Bored Locks"){
-    headerLabel = `${category || "Category"} - ${series || "Series"}`;
-  } else if (category === "Auxiliary Locks"){
+  } else if (category === "Multi Points" || category === "Bored Locks" || category === "Auxiliary Locks") {
     headerLabel = `${category || "Category"} - ${series || "Series"}`;
   } else {
     // For other categories, include category, series, and type/device
@@ -71,6 +70,11 @@ function DisplayTemplates() {
     );
   }
 
+  // Toggle the expanded state for a template
+  const toggleTemplate = (index) => {
+    setExpandedTemplate(expandedTemplate === index ? null : index);
+  };
+
   return (
     <div className="display-templates">
       <h1>{headerLabel}</h1>
@@ -81,32 +85,39 @@ function DisplayTemplates() {
       </h2>
       <div className="template-cards">
         {filteredTemplates.map((template, index) => (
-          <div key={index} className="template-card">
+          <div
+            key={index}
+            className={`template-card ${expandedTemplate === index ? 'selected' : ''}`} // Dynamically add 'selected' class
+          >
             <img
               src={template.image}
               alt={template.title}
               className="template-image"
-              onClick={() => window.open(template.image, "_blank")}
+              onClick={() => toggleTemplate(index)} // Toggle the expanded state
             />
             <h2>{template.title}</h2>
-            {template.warning && <h3>{template.warning}</h3>}
-            <a href={template.link} target="_blank" rel="noopener noreferrer">
-              {template.text}
-            </a>
-            {Array.from({ length: 10 }, (_, i) => {
-              const linkKey = `link${i + 1}`;
-              const textKey = `text${i + 1}`;
-              return template[linkKey] ? (
-                <a
-                  key={linkKey}
-                  href={template[linkKey]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {template[textKey]}
+            {expandedTemplate === index && ( // Only show details for expanded template
+              <div className="template-details">
+                {template.warning && <h3>{template.warning}</h3>}
+                <a href={template.link} target="_blank" rel="noopener noreferrer">
+                  {template.text}
                 </a>
-              ) : null;
-            })}
+                {Array.from({ length: 10 }, (_, i) => {
+                  const linkKey = `link${i + 1}`;
+                  const textKey = `text${i + 1}`;
+                  return template[linkKey] ? (
+                    <a
+                      key={linkKey}
+                      href={template[linkKey]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {template[textKey]}
+                    </a>
+                  ) : null;
+                })}
+              </div>
+            )}
           </div>
         ))}
       </div>

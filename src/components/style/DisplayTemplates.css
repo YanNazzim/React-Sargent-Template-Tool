@@ -1,12 +1,12 @@
-/* DisplayTemplates.css */
-
+/* General Styles */
 .display-templates {
   background-color: #aaaaaa;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
+/* Tooltip */
 .ToolTip {
   text-align: center;
   font-size: 2em;
@@ -17,20 +17,21 @@
   border-radius: 25px;
   color: white;
   text-align: center;
-  margin: 0 auto 50px; /* Center align and space below */
-  font-size: 3rem; /* Use rem for scalability */
-  max-width: 90%; /* Limit the width */
+  margin: 0 auto 50px;
+  font-size: 3rem;
+  max-width: 90%;
+  width: 100%;
 }
 
 /* Card container */
 .template-cards {
   display: flex;
-  justify-content: center; /* Center cards for better alignment */
-  flex-wrap: wrap; /* Allows cards to wrap */
-  gap: 10px; /* Consistent spacing */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap between cards to add more space */
   padding: 20px;
-  width: 100vw; /* Full width minus padding */
-  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 /* Individual template card */
@@ -43,37 +44,40 @@
   border: solid black 5px;
   border-radius: 25px;
   width: 100%;
-  max-width: 500px; /* Maximum width for larger screens */
-  padding: 10px;
-  box-sizing: border-box; /* Include padding in width calculation */
+  max-width: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center; /* Ensures text inside is centered */
+  transition: transform 0.3s, width 0.3s ease-in-out;
 }
 
-/* Header for individual template cards */
+/* Selected template card */
+.template-card.selected {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  max-width: 500px; /* Increase width when selected */
+}
+
+/* Template card header */
 .template-card h2 {
   color: white;
-  font-size: 3rem; /* Scalable font size */
+  font-size: 2.5rem;
   text-align: center;
-}
-
-.template-card h3 {
-  background-color: white;
-  text-align: center;
-  padding: 5px;
-  font-size: 24px;
-  border: solid red 3px;
-  border-radius: 25px;
+  margin-bottom: 15px;
 }
 
 /* Links within template cards */
 .template-card a {
+  display: flex; /* Use flexbox for links */
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 1.5rem; /* Use rem for scalability */
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 35px;
+  margin: 10px 0;
   background-color: #01579b;
-  width: 80%; /* Adjust width */
-  max-width: 300px;
-  padding: 10px;
+  width: 90%;
+  max-width: fit-content;
+  padding: 12px;
   border: solid white 3px;
   text-decoration: none;
   border-radius: 25px;
@@ -81,69 +85,82 @@
 }
 
 .template-card a:hover {
-  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.4s, box-shadow 0.3s;
-    transform: scale(.95);
-    background-color: #1565c0;
-    border: solid black 3px;
-    box-shadow: black 0px 0px 15px 5px;
+  transform: scale(0.95);
+  background-color: #1565c0;
+  border: solid black 3px;
+  box-shadow: black 0px 0px 15px 5px;
 }
 
 /* Image within template cards */
 .template-image {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 80%;
-  max-width: 300px;
+  max-width: 280px;
   border-radius: 25px;
   transition: box-shadow 0.2s, transform 0.2s;
   border: solid black 3px;
 }
 
 .template-image:hover {
-  transition: box-shadow 0.2s, transform 0.2s;
-    box-shadow: black 0px 0px 15px 5px;
-    transform: scale(0.95);
+  box-shadow: black 0px 0px 15px 5px;
+  transform: scale(0.95);
+}
+
+/* Template details (expanded state) */
+.template-details {
+  display: flex; /* Ensure items inside are centered */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.template-details a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.template-details h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
 }
 
 /* Error message for no templates */
 .NoTemplatesError {
   text-align: center;
-  font-size: 3vw; /* Responsive font size */
+  font-size: 3vw;
   background-color: #aaaaaa;
   margin: auto;
 }
 
-.image1 {
-  width: 100%; /* Make the image responsive */
-  max-width: 275px; /* Maintain the original max width */
-  height: auto;
-  margin: 0 auto 10px auto; /* Center align */
-  border: 1px solid black;
-  border-radius: 25px;
-}
-
 /* Mobile Queries */
 @media (max-width: 1024px) {
-    .template-cards {
-        margin: auto;
-    }
+  .template-cards {
+    margin: auto;
+  }
 
   .template-card {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
     padding: 15px;
   }
 
   .template-card h2 {
-    font-size: 2.5rem; /* Adjust font size for headings */
+    font-size: 2rem;
   }
 
   .template-image {
-    width: 90%; /* Scale down image */
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .display-templates h1 {
-    font-size: 2.5rem; /* Adjust font size for heading */
+    font-size: 2.5rem;
   }
 
   .template-card {
@@ -151,17 +168,17 @@
   }
 
   .template-card h2 {
-    font-size: 2rem; /* Adjust font size for headings */
+    font-size: 2rem;
   }
 
   .template-image {
-    width: 90%; /* Ensure image is responsive */
+    width: 90%;
   }
 }
 
 @media (max-width: 660px) {
   .template-card {
-    max-width: 400px;
+    max-width: 100%;
   }
 }
 
@@ -179,14 +196,12 @@
   }
 
   .template-card h2 {
-    font-size: 1.55rem; /* Further adjust font size */
+    font-size: 1.5rem;
   }
 
   .template-card a {
     margin: 10px;
-    font-size: 1rem; /* Adjust link font size */
-    max-width: 240px; /* Scale links */
+    font-size: 1rem;
+    max-width: 240px;
   }
 }
-
-/* Remove unnecessary 3600px media query */

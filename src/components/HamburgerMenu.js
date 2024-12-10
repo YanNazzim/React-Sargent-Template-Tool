@@ -77,6 +77,11 @@ const HamburgerMenu = () => {
     navigate("/wide", { state: { series } }); // Pass the series to Narrow page
     handleNavigation(); // Close the menu after navigating
   };
+    // Function to handle navigation with state
+    const handleButtonClickEMProducts = (series) => {
+      navigate("/em-products", { state: { series } }); // Pass the series to Narrow page
+      handleNavigation(); // Close the menu after navigating
+    };
 
   return (
     <>
@@ -94,7 +99,7 @@ const HamburgerMenu = () => {
         <div className="side-pane open" ref={menuRef}>
           <nav className="menu">
             <Link to="/" onClick={handleNavigation}>
-              Home
+              Home 🏠
             </Link>
 
             {/* Exits Menu with Submenu */}
@@ -127,6 +132,18 @@ const HamburgerMenu = () => {
                   >
                     90 Series
                   </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickWide("30")}
+                  >
+                    30 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickWide("20")}
+                  >
+                    20 Series
+                  </button>
                   {activeSubMenu === "PE80" && (
                     <div
                       className={`nested-submenu ${
@@ -135,16 +152,22 @@ const HamburgerMenu = () => {
                     >
                       <button
                         className="narrowMenu"
-                        onClick={() => handleButtonClickNarrow("PE")}
+                        onClick={() => handleButtonClickNarrow("PE80")}
                       >
                         Narrow <br></br> (PE8300, PE8400, PE8500)
                       </button>
                       <br />
                       <button
                         className="wideMenu"
-                        onClick={() => handleButtonClickWide("PE")}
+                        onClick={() => handleButtonClickWide("PE80")}
                       >
                         Wide <br></br> (PE8600, PE8700, PE8800, PE8900)
+                      </button>
+                      <button
+                        className="EM-Menu"
+                        onClick={() => handleButtonClickEMProducts("PE80")}
+                      >
+                        Access Control Products <br></br> (KP, IN, SN)
                       </button>
                     </div>
                   )}
@@ -166,6 +189,12 @@ const HamburgerMenu = () => {
                         onClick={() => handleButtonClickWide("80")}
                       >
                         Wide <br></br> (8600, 8700, 8800, 8900)
+                      </button>
+                      <button
+                        className="EM-Menu"
+                        onClick={() => handleButtonClickEMProducts("80")}
+                      >
+                        Access Control Products <br></br> (KP, IN, SN)
                       </button>
                     </div>
                   )}
