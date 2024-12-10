@@ -1,0 +1,161 @@
+/* Root Variables for Theming */
+:root {
+    --primary-color: #333;
+    --hover-bg-color: #ddd;
+    --bg-color: #dadada;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --transition-duration: 0.3s;
+    --hamburger-size: 2rem;
+    --pane-width: 25vw;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger-icon {
+    position: fixed; /* Keep it outside the menu */
+    top: 20px; /* Adjust the position */
+    left: 20px; /* Adjust the position */
+    background: none;
+    border: none;
+    font-size: var(--hamburger-size);
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's above the menu */
+    color: var(--bg-color);
+    transition: color var(--transition-duration), scale var(--transition-duration);
+    background-color: #333;
+    border-radius: 25px;
+  }
+  
+  .hamburger-icon:hover {
+    color: #ffffff;
+    transition: color var(--transition-duration), scale var(--transition-duration);
+    transform: scale(0.95);
+  }
+  
+  /* Side Pane */
+  .side-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: var(--pane-width);
+    background-color: var(--bg-color);
+    box-shadow: 2px 0 5px var(--box-shadow-color);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000; /* Below the hamburger icon */
+    transform: translateX(-100%);
+    transition: transform var(--transition-duration) ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text and content properly */
+  }
+  
+  .side-pane.open {
+    transform: translateX(0);
+  }
+  
+  /* Menu Container */
+  .menu {
+    margin-top: 60px; /* Add space below the hamburger icon */
+    width: 100%; /* Ensure it spans the pane width */
+    text-align: center;
+    background-color: #007bff;
+    border: 3px solid black;
+    border-radius: 25px;
+  }
+  
+  /* Menu Links */
+  .menu a {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+  
+  .menu a:hover {
+    color: black;
+  }
+  
+/* Submenu Styles */
+.submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    border-radius: 25px;
+    border: 3px solid white;
+    overflow: hidden; /* Ensures content is hidden when height is limited */
+    max-height: 0; /* Initially collapsed */
+    transition: max-height var(--transition-duration) ease-in-out;
+}
+
+/* When submenu is open */
+.submenu.open {
+    max-height: 500px; /* Set a maximum value large enough for content */
+}
+
+/* Nested Submenu Styles */
+.nested-submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: #1565c0;
+    font-weight: normal;
+    overflow: hidden; /* Ensures content is hidden when height is limited */
+    max-height: 0; /* Initially collapsed */
+    color: black;
+    transition: max-height var(--transition-duration) ease-in-out;
+}
+
+/* When nested submenu is open */
+.nested-submenu.open {
+    max-height: 300px; /* Adjust as needed for nested content */
+}
+
+.menu-item button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    transition: color 0.3s;
+}
+.menu-item button:hover {
+    color: black;
+}
+
+  /* Fix for Text Position */
+  .menu h3, .menu button, .exits {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .menuHome {
+    padding-bottom: 15px;
+    color: #333;
+  }
+
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    :root {
+      --pane-width: 60vw; /* Wider pane for smaller screens */
+    }
+  
+    .hamburger-icon {
+      font-size: 1.5rem; /* Adjust size for smaller screens */
+    }
+  }
+  

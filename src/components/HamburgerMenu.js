@@ -1,24 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./style/HamburgerMenu.css";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
-  const [activeSubMenu, setActiveSubMenu] = useState(null); // For nested submenus
+  const [activeSubMenu, setActiveSubMenu] = useState(null);
+  const menuRef = useRef(null); // Reference to the side panel
+  const buttonRef = useRef(null); // Reference to the hamburger button
+  const navigate = useNavigate(); // Use navigate from react-router-dom
 
   const toggleMenu = () => {
     const newState = !isOpen;
     setIsOpen(newState);
     document.body.classList.toggle("menu-open", newState);
-  
-    // Reset menus if closing the menu
+
     if (!newState) {
+      // Reset menus if closing the menu
       setActiveMenu(null);
       setActiveSubMenu(null);
     }
   };
-  
 
   const handleMenuClick = (menu) => {
     setActiveMenu((prevMenu) => (prevMenu === menu ? null : menu));
@@ -38,16 +40,58 @@ const HamburgerMenu = () => {
     document.body.classList.remove("menu-open");
   };
 
+  const handleClickOutside = (event) => {
+    // Ensure the click is outside both the menu and the hamburger button
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target)
+    ) {
+      setIsOpen(false);
+      setActiveMenu(null);
+      setActiveSubMenu(null);
+      document.body.classList.remove("menu-open");
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  // Function to handle navigation with state
+  const handleButtonClickNarrow = (series) => {
+    navigate("/narrow", { state: { series } }); // Pass the series to Narrow page
+    handleNavigation(); // Close the menu after navigating
+  };
+  // Function to handle navigation with state
+  const handleButtonClickWide = (series) => {
+    navigate("/wide", { state: { series } }); // Pass the series to Narrow page
+    handleNavigation(); // Close the menu after navigating
+  };
+
   return (
     <>
       {/* Hamburger Icon */}
-      <button className="hamburger-icon" onClick={toggleMenu}>
+      <button
+        className="hamburger-icon"
+        onClick={toggleMenu}
+        ref={buttonRef} // Reference for excluding clicks
+      >
         ☰
       </button>
 
       {/* Sliding Menu Pane */}
       {isOpen && (
-        <div className="side-pane open">
+        <div className="side-pane open" ref={menuRef}>
           <nav className="menu">
             <Link to="/" onClick={handleNavigation}>
               Home
@@ -56,84 +100,99 @@ const HamburgerMenu = () => {
             {/* Exits Menu with Submenu */}
             <div className="menu-item">
               <button
-                className="menu-toggle"
+                className="exits"
                 onClick={() => handleMenuClick("exits")}
               >
-                Exits
+                Exit Devices
               </button>
               {activeMenu === "exits" && (
-                <div className="submenu">
+                <div
+                  className={`submenu ${activeMenu === "exits" ? "open" : ""}`}
+                >
                   <button
-                    className="menu-toggle"
-                    onClick={() => handleSubMenuClick("PE80")}
-                  >
-                    PE80 Series
-                  </button>
-                  {activeSubMenu === "PE80" && (
-                    <div className="nested-submenu">
-                      <Link
-                        className="narrowMenu"
-                        to="/pe80-template-1"
-                        onClick={handleNavigation}
-                      >
-                        {"\t"}Narrow (PE8300, PE8400, PE8500)
-                      </Link>
-                      <br></br>
-                      <Link
-                        className="wideMenu"
-                        to="/pe80-template-2"
-                        onClick={handleNavigation}
-                      >
-                        Wide (PE8600, PE8700, PE8800, PE8900)
-                      </Link>
-                    </div>
-                  )}
-
-                  <button
-                    className="menu-toggle"
+                    className="exitSeries"
                     onClick={() => handleSubMenuClick("80")}
                   >
                     80 Series
                   </button>
-                  {activeSubMenu === "80" && (
-                    <div className="nested-submenu">
-                      <Link to="/80-template-1" onClick={handleNavigation}>
-                        Template 1
-                      </Link>
-                      <Link to="/80-template-2" onClick={handleNavigation}>
-                        Template 2
-                      </Link>
-                    </div>
-                  )}
-
                   <button
-                    className="menu-toggle"
+                    className="exitSeries"
+                    onClick={() => handleSubMenuClick("PE80")}
+                  >
+                    PE80 Series
+                  </button>
+                  <button
+                    className="exitSeries"
                     onClick={() => handleSubMenuClick("90")}
                   >
                     90 Series
                   </button>
+                  {activeSubMenu === "PE80" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "PE80" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="narrowMenu"
+                        onClick={() => handleButtonClickNarrow("PE")}
+                      >
+                        Narrow <br></br> (PE8300, PE8400, PE8500)
+                      </button>
+                      <br />
+                      <button
+                        className="wideMenu"
+                        onClick={() => handleButtonClickWide("PE")}
+                      >
+                        Wide <br></br> (PE8600, PE8700, PE8800, PE8900)
+                      </button>
+                    </div>
+                  )}
+                  {activeSubMenu === "80" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "80" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="narrowMenu"
+                        onClick={() => handleButtonClickNarrow("80")}
+                      >
+                        Narrow <br></br> (8300, 8400, 8500)
+                      </button>
+                      <br />
+                      <button
+                        className="wideMenu"
+                        onClick={() => handleButtonClickWide("80")}
+                      >
+                        Wide <br></br> (8600, 8700, 8800, 8900)
+                      </button>
+                    </div>
+                  )}
                   {activeSubMenu === "90" && (
-                    <div className="nested-submenu">
-                      <Link to="/90-template-1" onClick={handleNavigation}>
-                        Template 1
-                      </Link>
-                      <Link to="/90-template-2" onClick={handleNavigation}>
-                        Template 2
-                      </Link>
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "90" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="narrowMenu"
+                        onClick={() => handleButtonClickNarrow("90")}
+                      >
+                        Narrow <br></br> (9400)
+                      </button>
+                      <br />
+                      <button
+                        className="wideMenu"
+                        onClick={() => handleButtonClickWide("90")}
+                      >
+                        Wide <br></br> (9700, 9800, 9900)
+                      </button>
                     </div>
                   )}
                 </div>
               )}
             </div>
-
-            {/* Other Menus */}
-            <Link to="/Cylinders" onClick={handleNavigation}>
-              Cylinders
-            </Link>
-            <br></br>
-            <Link to="/em-products" onClick={handleNavigation}>
-              Electro-Mechanical Products
-            </Link>
           </nav>
         </div>
       )}

@@ -17,12 +17,13 @@ import AuxLockSeries from './components/AuxLockSeries.js'
 import Cylinders from './components/Cylinders.js'
 import CylindersInfo from "./components/CylindersInfo.js";
 import MultiPointSeries from'./components/MultiPointSeries.js'
-
+import HamburgerMenu from "./components/HamburgerMenu.js";
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Header /> {/* Ensure Header is part of every page */}
+      <HamburgerMenu />
       <Routes>
         <Route path="/" element={<ProductLine />} />
         <Route path="/display-templates" element={<DisplayTemplates />} />
