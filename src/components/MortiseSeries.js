@@ -7,19 +7,22 @@ function MortiseSeries() {
   const navigate = useNavigate();
 
   // Define button click handlers for each series
+  // Handle button clicks for each series and type
   const handleButtonClick = (series) => {
-    navigate("/mortiseTypes", { state: { series } }); // Pass the series dynamically
+    navigate("/display-templates", {
+      state: {
+        category: "Mortise Locks",
+        series,
+        device: series,
+      },
+    });
   };
 
   return (
     <>
       <div className="stile-page">
-      <h2 className="ToolTip">
-            Strike Box (WBS) : 77-1141
-        </h2>
-        <h2 className="ToolTip">
-            Strike Screw:  01-1019 x finish
-        </h2>
+        <h2 className="ToolTip">Strike Box (WBS) : 77-1141</h2>
+        <h2 className="ToolTip">Strike Screw: 01-1019 x finish</h2>
         {/* Button for 8200 series */}
         <button className="btn" onClick={() => handleButtonClick("8200")}>
           <img
@@ -28,6 +31,21 @@ function MortiseSeries() {
             alt="Mortise Lock"
           />
           8200
+        </button>
+        {/* Button for KP 8200 series */}
+        <button className="btn" onClick={() => handleButtonClick("KP8200")}>
+          <img className="btn-image" src={Images.KP80Trim} alt="Mortise Lock" />
+          KP Series 8200
+        </button>
+        {/* Button for IN Series 8200 series */}
+        <button className="btn" onClick={() => handleButtonClick("IN8200")}>
+          <img className="btn-image" src={Images.IN7900} alt="Mortise Lock" />
+          IN Series 8200
+        </button>
+                {/* Button for SN Series 8200 series */}
+                <button className="btn" onClick={() => handleButtonClick("SN8200")}>
+          <img className="btn-image" src={Images.SN8200} alt="Mortise Lock" />
+          SN Series 8200
         </button>
         {/* Button for 9200 series */}
         <button className="btn" onClick={() => handleButtonClick("9200")}>
@@ -55,6 +73,15 @@ function MortiseSeries() {
             alt="Mortise Lock"
           />
           7800
+        </button>
+                {/* Button for 7900 series */}
+                <button className="btn" onClick={() => handleButtonClick("IN7900")}>
+          <img
+            className="btn-image"
+            src={Images.IN7900}
+            alt="Mortise Lock"
+          />
+          IN Series 7900
         </button>
       </div>
     </>

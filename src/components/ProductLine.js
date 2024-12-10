@@ -23,7 +23,7 @@ function ProductLine() {
       </button>
       <button className="btn" onClick={() => handleButtonClick('/mortiseSeries')}>
         <img src={Images.Mortise8200} alt="Mortise" className="btn-image" />
-        <span>Mortise</span>
+        <span>Mortise Locks</span>
       </button>
       <button className="btn" onClick={() => handleButtonClick('/boredSeries')}>
         <img src={Images.BoredLock} alt="Bored Locks" className="btn-image" />
@@ -35,7 +35,7 @@ function ProductLine() {
       </button>
       <button className="btn" onClick={() => handleButtonClick('/cylinders')}>
         <img src={Images.CylMortise} alt="Cylinders" className="btn-image" />
-        <span>Cylinders</span>
+        <span>Cylinders Info</span>
       </button>
     </div>
   );

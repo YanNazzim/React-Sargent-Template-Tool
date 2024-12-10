@@ -4,7 +4,7 @@
 
 .ToolTip {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .cylinder-info h1 {
@@ -47,7 +47,7 @@
 
 .cylinder-card img:hover {
   box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.85);
+  transform: scale(.95);
   transition: transform 0.3s ease-out, box-shadow 0.25s;
 }
 
@@ -102,10 +102,7 @@
     max-width: 300px;
     font-size: 3vw;
   }
-  .ToolTip {
-    text-align: center;
-    font-size: 6vw;
-  }
+
   .cylinder-info h1 {
     font-size: 7vw;
   }
@@ -119,6 +116,8 @@
     gap: 15px; /* Adjust gap for medium screens */
   }
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .cylinder-cards {

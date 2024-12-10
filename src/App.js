@@ -11,17 +11,19 @@ import DisplayTemplates from "./components/DsiplayTemplates.js";
 import Header from "./components/Header"; // Import Header
 import Footer from "./components/Footer.js";
 import MortiseSeries from "./components/MortiseSeries.js";
-import MortiseTypes from './components/MortiseTypes.js'
 import BoredSeries from './components/BoredSeries.js'
 import AuxLockSeries from './components/AuxLockSeries.js'
 import Cylinders from './components/Cylinders.js'
 import CylindersInfo from "./components/CylindersInfo.js";
-import MultiPointSeries from'./components/MultiPointSeries.js'
-import HamburgerMenu from "./components/HamburgerMenu.js";
+import MultiPointSeries from'./components/MultiPointSeries.js';
+import EMProducts from './components/EMProducts.js'
+import HamburgerMenu from "./components/HamburgerMenu"; // Import the menu
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <HamburgerMenu /> {/* Add the hamburger menu */}
       <Header /> {/* Ensure Header is part of every page */}
       <HamburgerMenu />
       <Routes>
@@ -33,11 +35,11 @@ function App() {
         <Route path="/exitSeries" element={<ExitSeries />} />
         <Route path="/multiPointSeries" element={<MultiPointSeries />} />
         <Route path="/mortiseSeries" element={<MortiseSeries />} />
-        <Route path="/mortiseTypes" element={<MortiseTypes />} />
         <Route path="/boredSeries" element={<BoredSeries />} />
         <Route path="/auxiliaryLocksSeries" element={<AuxLockSeries />} />
         <Route path="/Cylinders" element={<Cylinders />} />
         <Route path="/cylinders-info/:type" element={<CylindersInfo />} />
+        <Route path="/em-products" element={<EMProducts />} />
 
       </Routes>
       <Footer /> {/* Ensure Footer is part of every page */}

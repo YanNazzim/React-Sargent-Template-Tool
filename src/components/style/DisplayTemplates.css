@@ -2,7 +2,6 @@
 
 .display-templates {
   background-color: #aaaaaa;
-  width: 100vw; /* Full viewport width */
   overflow-x: hidden; /* Prevent horizontal overflow */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
@@ -30,7 +29,7 @@
   flex-wrap: wrap; /* Allows cards to wrap */
   gap: 10px; /* Consistent spacing */
   padding: 20px;
-  width: calc(100% - 40px); /* Full width minus padding */
+  width: 100vw; /* Full width minus padding */
   box-sizing: border-box; /* Ensure padding is included in width */
 }
 
@@ -44,7 +43,7 @@
   border: solid black 5px;
   border-radius: 25px;
   width: 100%;
-  max-width: 600px; /* Maximum width for larger screens */
+  max-width: 500px; /* Maximum width for larger screens */
   padding: 10px;
   box-sizing: border-box; /* Include padding in width calculation */
 }
@@ -73,7 +72,7 @@
   margin-bottom: 35px;
   background-color: #01579b;
   width: 80%; /* Adjust width */
-  max-width: 400px;
+  max-width: 300px;
   padding: 10px;
   border: solid white 3px;
   text-decoration: none;
@@ -82,10 +81,11 @@
 }
 
 .template-card a:hover {
+  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.4s, box-shadow 0.3s;
     transform: scale(.95);
     background-color: #1565c0;
     border: solid black 3px;
-    box-shadow: black 5px 0px 15px 5px;
+    box-shadow: black 0px 0px 15px 5px;
 }
 
 /* Image within template cards */
@@ -94,7 +94,14 @@
   width: 80%;
   max-width: 300px;
   border-radius: 25px;
+  transition: box-shadow 0.2s, transform 0.2s;
   border: solid black 3px;
+}
+
+.template-image:hover {
+  transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: black 0px 0px 15px 5px;
+    transform: scale(0.95);
 }
 
 /* Error message for no templates */
@@ -153,7 +160,9 @@
 }
 
 @media (max-width: 660px) {
-  
+  .template-card {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 444px) {
@@ -165,11 +174,16 @@
     margin: auto;
   }
 
+  .template-card {
+    max-width: 300px;
+  }
+
   .template-card h2 {
     font-size: 1.55rem; /* Further adjust font size */
   }
 
   .template-card a {
+    margin: 10px;
     font-size: 1rem; /* Adjust link font size */
     max-width: 240px; /* Scale links */
   }

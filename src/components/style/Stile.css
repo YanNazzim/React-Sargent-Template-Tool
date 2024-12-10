@@ -6,24 +6,9 @@
   align-items: center; /* Centers buttons horizontally */
   gap: 10px; /* Space between buttons */
   padding: 20px;
-  background-color: #aaaaaa; /* Background color */
+  background-color: #aaaaaa;
   margin: 0;
   position: relative; /* Relative positioning to allow .ToolTip to be positioned absolutely */
-}
-
-/* Tooltip styling */
-.ToolTip {
-  position: absolute; /* Position it absolutely */
-  left: 50%;
-  transform: translateX(-50%); /* Center it horizontally */
-  width: auto;
-  text-align: center; /* Center the text */
-  font-size: 18px; /* Adjust font size */
-  color: black; /* Optional: text color */
-  background-color: #fff; /* Optional: background color */
-  padding: 10px;
-  border-radius: 10px; /* Optional: rounded corners */
-  z-index: 20; /* Ensure it’s above other elements */
 }
 
 /* Button styling */
@@ -41,7 +26,7 @@
   border: solid black 3px;
   border-radius: 15px;
   padding: 20px;
-  font-size: 48px;
+  font-size: 2.5em;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s, border 0.3s;
@@ -84,7 +69,6 @@
     max-height: fit-content;
     min-height: 300px;
     max-width: 500px; /* Limit the max width */
-    font-size: 42px; /* Adjust font size for larger screens */
     padding: 18px; /* Adjust padding */
   }
 }
@@ -92,8 +76,6 @@
 /* Medium screens (max-width: 1280px) */
 @media (max-width: 1280px) {
   .btn {
-    width: 450px;
-    font-size: 4vw;
     padding: 16px;
   }
 
@@ -105,8 +87,6 @@
 /* Smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
   .btn {
-    width: 95%;
-    font-size: 28px;
     padding: 12px;
   }
 
@@ -115,12 +95,26 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .btn {
+    max-width: 450px;
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .btn {
+    max-width: 450px;
+    min-width: 450px;
+  }
+}
+
 /* Mobile devices (max-width: 440px) */
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .btn {
     max-height: 250px;
     max-width: 300px;
-    font-size: 24px;
+    min-width: 300px;
     padding: 10px;
   }
 

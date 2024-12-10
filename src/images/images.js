@@ -112,4 +112,25 @@ export const Images = {
 
   // Thermal Pins
   ThermalPin683: require('./thermal pins.png'),
+
+  // KP Devices
+  KP80Trim: require('./Exits/KP80 Keypad Escutcheon.png'),
+  KP10X: require('./Bored/KP10X.png'),
+
+  // IN Devices
+  IN120: require('./Exits/IN120.png'),
+  IN10X: require('./Bored/IN10X.png'),
+  IN7900: require('./Mortise/IN7900.png'),
+  IN120Rim: require('./Exits/IN120 Rim.png'),
+  IN120Mortise: require('./Exits/IN120 Mortise.png'),
+
+  // SN Devices
+  SN200ET: require('./Exits/SNTrim 80.png'),
+  SNPE8600: require('./Exits/SNPE8600.png'),
+  SNPE8900: require('./Exits/SNPE8900.png'),
+  SNPETRIM: require('./Exits/SNPETRIM.png'),
+  SN10X: require('./Bored/SN10X.png'),
+  SN8200: require('./Mortise/SN8200.png'),
+  SNFM7300: require('./MultiPoints/SNFM7300.png'),
+
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./style/HeaderFooter.css";
 import logo from "../images/Sargent Logo.jpg";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +15,8 @@ function Header() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedProduct, setSelectedProduct] = useState(null); // To store the selected product
+
   const navigate = useNavigate();
 
   const handleButtonClickBack = () => {
@@ -29,139 +31,99 @@ function Header() {
     window.open("https://www.sargentlock.com/en", "_blank");
   };
 
-  const handleSearchClick = () => {
+  // Split query by dashes or spaces and return an array of terms
+  const splitSearchQuery = (query) => query.split(/[-\s]+/).filter(Boolean);
+
+  // Search logic
+  const handleSearchClick = useCallback(() => {
     if (!searchQuery) return;
 
     let productData = [];
+    const searchTerms = splitSearchQuery(searchQuery.toLowerCase());
 
-    // Include Mortise Locks data
-    if (MortiseLocks && Object.keys(MortiseLocks).length > 0) {
-      productData = Object.entries(MortiseLocks).flatMap(([series, items]) =>
-        items.map((item) => ({
-          ...item,
-          category: "Mortise Locks",
-          series,
-          device: item.device || "Unknown Device",
-        }))
-      );
-    }
+    // Function to match search terms against a product's options
+    const matchesOptions = (product, terms) => {
+      const {
+        device,
+        title,
+        functions,
+        MechOptions,
+        ElecOptions,
+        CylOptions,
+        railSizes,
+        trims,
+        finishes,
+        handing,
+        voltage,
+        metadata,
+        thumbturns,
+      } = product;
 
-    // Include Exit Devices data
-    productData.push(
-      ...ExitDevices.Narrow80.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Narrow80",
-        device: item.device || "Unknown Device",
-      })),
-      ...ExitDevices.Wide80.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide80",
-        device: item.device || "Unknown Device",
-      })),
-      ...ExitDevices.NarrowPE.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "NarrowPE",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.WidePE.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "WidePE",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide30.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide30",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide20.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide20",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Narrow90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Narrow90",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      })),
-      ...ExitDevices.Wide90.map((item) => ({
-        ...item,
-        category: "Exit Devices",
-        series: "Wide90",
-        device: item.device || "Unknown Device",
-        functions: item.functions || "", // Ensure functions field is included
-      }))
-    );
+      // Gather all text keys dynamically
+      const textFields = Object.keys(product)
+        .filter((key) => key.startsWith("text") && product[key])
+        .map((key) => product[key].toLowerCase());
 
-    // Include Bored Locks data
-    if (BoredLocks && Object.keys(BoredLocks).length > 0) {
-      productData.push(
-        ...Object.entries(BoredLocks).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Bored Locks",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
+      const allOptions = [
+        ...(title ? [title.toLowerCase()] : []), // Keep title as a full term for exact matches
+        ...(device ? [device.toLowerCase()] : []), // Keep device as a full term for exact matches
+        ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
+        ...(MechOptions ? MechOptions.toLowerCase().split(/,\s*/) : []),
+        ...(ElecOptions ? ElecOptions.toLowerCase().split(/,\s*/) : []),
+        ...(CylOptions ? CylOptions.toLowerCase().split(/,\s*/) : []),
+        ...(railSizes ? railSizes.toLowerCase().split(/,\s*/) : []),
+        ...(finishes ? finishes.toLowerCase().split(/,\s*/) : []),
+        ...(trims ? trims.toLowerCase().split(/,\s*/) : []),
+        ...(handing ? handing.toLowerCase().split(/,\s*/) : []),
+        ...(voltage ? voltage.toLowerCase().split(/,\s*/) : []),
+        ...(metadata ? metadata.toLowerCase().split(/,\s*/) : []),
+        ...(thumbturns ? thumbturns.toLowerCase().split(/,\s*/) : []),
+        ...textFields, // Include all dynamically gathered text fields
+      ];
 
-    // Include Aux Locks data
-    if (AuxLocks && Object.keys(AuxLocks).length > 0) {
-      productData.push(
-        ...Object.entries(AuxLocks).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Auxiliary Locks",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
+      // Check if every term matches an entry in allOptions
+      return terms.every((term) =>
+        allOptions.some((option) => option.includes(term))
       );
-    }
+    };
 
-    // Include MultiPoints data
-    if (MultiPoints && Object.keys(MultiPoints).length > 0) {
-      productData.push(
-        ...Object.entries(MultiPoints).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Multi Points",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
-    // Include Thermal pin data
-    if (ThermalPin && Object.keys(ThermalPin).length > 0) {
-      productData.push(
-        ...Object.entries(ThermalPin).flatMap(([series, items]) =>
-          items.map((item) => ({
-            ...item,
-            category: "Thermal",
-            series,
-            device: item.device || "Unknown Device",
-            functions: item.functions || "", // Ensure functions field is included
-          }))
-        )
-      );
-    }
+    // Include all data sources into productData
+    const dataSources = [
+      { data: MortiseLocks, category: "Mortise Locks" },
+      { data: ExitDevices, category: "Exit Devices" },
+      { data: BoredLocks, category: "Bored Locks" },
+      { data: AuxLocks, category: "Auxiliary Locks" },
+      { data: MultiPoints, category: "Multi Points" },
+      { data: ThermalPin, category: "Thermal" },
+    ];
+
+    // Process each data source
+    dataSources.forEach(({ data, category }) => {
+      if (data && Object.keys(data).length > 0) {
+        productData.push(
+          ...Object.entries(data).flatMap(([series, items]) =>
+            items.map((item) => ({
+              ...item,
+              category,
+              series,
+              device: item.device || "Unknown Device",
+              title: item.title || "Unknown Device",
+              functions: item.functions || "",
+              MechOptions: item.MechOptions || "",
+              ElecOptions: item.ElecOptions || "",
+              CylOptions: item.CylOptions || "",
+              railSizes: item.railSizes || "",
+              handing: item.handing || "",
+              voltage: item.voltage || "",
+              finishes: item.finishes || "",
+              trims: item.trims || "",
+              text: item.text || "",
+              thumbturns: item.thumbturns || "",
+            }))
+          )
+        );
+      }
+    });
 
     // Include Cylinders data
     if (CylindersData && Object.keys(CylindersData).length > 0) {
@@ -170,44 +132,50 @@ function Header() {
           data.sections.map((section) => ({
             category: "Cylinders",
             type, // Pass the type for navigation
-            device: section.heading, // Use section heading as the device name
-            title: data.title, // Title of the cylinder type
-            texts: section.texts || [], // Include texts to search in
+            device: section.heading,
+            title: data.title,
+            functions: section.texts ? section.texts.join(", ") : "",
             metadata: section.metadata || "",
+            image: section.image || "", // Include image if available
           }))
         )
       );
     }
 
-    // Filter results based on searchQuery
-    const results = productData.filter((product) => {
-      const query = searchQuery.toLowerCase();
-      return (
-        product.device.toLowerCase().includes(query) ||
-        product.title.toLowerCase().includes(query) ||
-        product.functions?.toLowerCase().includes(query) || // Ensure it checks functions
-        product.texts?.some((text) => text.toLowerCase().includes(query)) ||
-        (product.metadata && product.metadata.toLowerCase().includes(query)) // Check metadata
-      );
-    });
+    // Filter results based on search query matching product options
+    const results = productData.filter((product) =>
+      matchesOptions(product, searchTerms)
+    );
 
     setFilteredProducts(results);
     setIsModalOpen(true);
     setCurrentIndex(0);
+    setSelectedProduct(null); // Reset selected product when searching
+  }, [searchQuery]);
 
-    console.log("Search Results:", results); // Log search results for debugging
-  };
+  // Listen for "Enter" key press when modal is open
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Enter" && isModalOpen) {
+        handleSearchClick(); // Trigger search when "Enter" is pressed
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isModalOpen, handleSearchClick]);
+
   const handleClear = () => {
     setSearchQuery("");
     setCurrentIndex(0);
-
     setFilteredProducts([]);
+    setSelectedProduct(null);
   };
 
   const handleCloseModal = () => {
     handleClear();
-    setCurrentIndex(0);
-
     setIsModalOpen(false);
   };
 
@@ -222,23 +190,7 @@ function Header() {
   };
 
   const handleItemClick = (product) => {
-    const { device, category, series, type } = product;
-
-    // Special handling for Cylinders to route them to CylindersInfo page
-    if (category === "Cylinders") {
-      navigate(`/cylinders-info/${type}`);
-    } else {
-      // Navigate to display-templates for other categories
-      navigate("/display-templates", {
-        state: {
-          category,
-          series,
-          device,
-        },
-      });
-    }
-
-    handleCloseModal(); // Close the modal and clear the search when an item is clicked
+    setSelectedProduct(product);
   };
 
   return (
@@ -250,10 +202,10 @@ function Header() {
         onClick={handleButtonClickLogo}
       />
       <button className="Home" onClick={handleButtonClickHome}>
-        Templates Home Page
+        Home
       </button>
       <button className="Home" onClick={handleButtonClickBack}>
-        Previous Page
+        Back
       </button>
       <button onClick={() => setIsModalOpen(true)} className="Home">
         Search
@@ -264,7 +216,7 @@ function Header() {
           <div className="modal-content">
             <input
               type="text"
-              placeholder="Search a Function... (8613, 10XG04, 8204)"
+              placeholder="Search Sargent Devices..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-bar"
@@ -282,45 +234,102 @@ function Header() {
               </button>
             </div>
 
-            {filteredProducts.length > 0 && (
-              <div className="carousel-controls">
-                <button className="carousel-button left" onClick={handlePrev}>
-                  &#8249;
+            {selectedProduct ? (
+              <div className="selected-product">
+                <button
+                  className="view-templates-button"
+                  onClick={() => {
+                    navigate("/display-templates", {
+                      state: {
+                        category: selectedProduct.category,
+                        series: selectedProduct.series,
+                        device: selectedProduct.device,
+                      },
+                    });
+                    handleCloseModal();
+                  }}
+                >
+                  View more templates for this device
                 </button>
-                <div className="carousel-container">
-                  <div
-                    className="carousel-inner"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                  >
-                    {filteredProducts.map((product, index) => (
-                      <div
-                        className="carousel-item"
+                <h2>{selectedProduct.title}</h2>
+                <a
+                  href={selectedProduct.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                </a>
+                <p>Category: {selectedProduct.category}</p>
+                <p>Device: {selectedProduct.device}</p>
+                {selectedProduct.warning && <p>{selectedProduct.warning}</p>}
+                {/* Dynamically render all links and their associated text */}
+                {Object.keys(selectedProduct).map((key, index) => {
+                  if (key.startsWith("link") && selectedProduct[key]) {
+                    const textKey = `text${key.slice(4)}`;
+                    return (
+                      <a
                         key={index}
-                        onClick={() => handleItemClick(product)}
+                        href={selectedProduct[key]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="product-link"
                       >
-                        <img
-                          src={
-                            product.category === "Cylinders"
-                              ? CylindersData[product.type]?.sections.find(
-                                  (section) =>
-                                    section.heading === product.device // Find the correct section for cylinders
-                                )?.image // Get the image from the matching section
-                              : product.image // For other categories, use product.image
-                          }
-                          alt={product.title}
-                        />
-                        <p>
-                          {product.title}{" "}
-                          {product.device ? `(${product.device})` : ""}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <button className="carousel-button right" onClick={handleNext}>
-                  &#8250;
-                </button>
+                        {selectedProduct[textKey] || "View Document"}
+                      </a>
+                    );
+                  }
+                  return null;
+                })}
               </div>
+            ) : (
+              filteredProducts.length > 0 && (
+                <div className="carousel-controls">
+                  <button className="carousel-button left" onClick={handlePrev}>
+                    &#8249;
+                  </button>
+                  <div className="carousel-container">
+                    <div
+                      className="carousel-inner"
+                      style={{
+                        transform: `translateX(-${currentIndex * 100}%)`,
+                      }}
+                    >
+                      {filteredProducts.map((product, index) => (
+                        <div
+                          className="carousel-item"
+                          key={index}
+                          onClick={() => handleItemClick(product)}
+                        >
+                          <img
+                            src={
+                              product.category === "Cylinders"
+                                ? CylindersData[product.type]?.sections.find(
+                                    (section) =>
+                                      section.heading === product.device
+                                  )?.image
+                                : product.image
+                            }
+                            alt={product.title}
+                          />
+                          <p>
+                            {product.title}{" "}
+                            {product.device ? `(${product.device})` : ""}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <button
+                    className="carousel-button right"
+                    onClick={handleNext}
+                  >
+                    &#8250;
+                  </button>
+                </div>
+              )
             )}
           </div>
         </div>

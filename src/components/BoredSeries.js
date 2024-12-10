@@ -12,7 +12,9 @@ function BoredSeries() {
   const seriesList = [
     { id: "11 Line", name: "11 Line", image: Images.Bored11, series: "11 Line" },
     { id: "10X Line", name: "10X Line", image: Images.Bored10x, series: "10X Line" },
-    { id: "10X BHW", name: "10X BHW", image: Images.BHW10x, series: "10X BHW" },
+    { id: "KP 10X", name: "KP 10X Line", image: Images.KP10X, series: "KP 10X" },
+    { id: "IN 10X", name: "IN 10X Line", image: Images.IN10X, series: "IN 10X" },
+    { id: "SN 10X", name: "SN 10X Line", image: Images.SN10X, series: "SN 10X" },
     { id: "8X Line", name: "8X Line", image: Images.Bored8x, series: "8X Line" },
     { id: "7 Line", name: "7 Line", image: Images.Bored7, series: "7 Line" },
     {
@@ -37,6 +39,12 @@ function BoredSeries() {
 
   return (
     <div className="stile-page">
+            <h2 className="ToolTip">
+            Strike Box (WBS) : 77-1141
+        </h2>
+        <h2 className="ToolTip">
+            Strike Screw:  01-1019 x finish
+        </h2>
       {seriesList.length > 0 ? (
         seriesList.map((item) => (
           <button

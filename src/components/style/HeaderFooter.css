@@ -31,7 +31,7 @@ body {
 
 .header img:hover {
   box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.85);
+  transform: scale(.95);
   transition: transform 0.3s ease-out, box-shadow 0.25s;
   cursor: pointer;
 
@@ -39,21 +39,24 @@ body {
 
 .footer {
   display: flex;
+  color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1vw;
+  font-size: 2em;
   text-align: center;
 }
 
 .footer a {
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s;
   font-weight: 800;
+  color: white;
 }
 
 .footer a:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
+  transform: scale(.95);
+  color:blue;
+  transition: transform 0.2s ease, color 0.2s;
 }
 
 /* Tooltip Styling */
@@ -76,7 +79,7 @@ body {
 /* Button Styling */
 .Home {
   width: 650px;
-  font-size: 2vw;
+  font-size: 2em;
   padding: 25px;
   background-color: #1565c0;
   color: white;
@@ -88,7 +91,7 @@ body {
 
 .Home:hover {
   box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.85);
+  transform: scale(.95);
   transition: transform 0.3s ease-out, box-shadow 0.25s;
   cursor: pointer;
 }
@@ -119,6 +122,8 @@ body {
 }
 
 .search-bar {
+  justify-content: center;
+  align-items: center;
   font-size: 3.5vw;
   border: solid black 3px;
   margin: 15px;
@@ -138,18 +143,22 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: hidden; /* Prevent body scroll */
 }
 
 .modal-content {
   background-color: #1976d2;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 20px;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  max-height: fit-content;
+  height: 80vh; /* Set a fixed height */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
 }
+
+
 
 .modal-buttons {
   display: flex;
@@ -180,7 +189,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2em;
   color: white;
 }
 
@@ -224,15 +233,62 @@ body {
   width: 100%;
 }
 
+.selected-product h2 {
+  color: white;
+}
+
+.selected-product p {
+  font-size: 2em;
+  color: white;
+}
+
+.product-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+  width: fit-content;
+  border-radius: 15px;
+  background-color: #1976d2;
+  border: 3px solid black;
+  color: white;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  background-color: #1565c0;
+  transform: scale(0.95);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.view-templates-button {
+  color: white;
+  background-color: #1565c0;
+  font-size: 2em;
+  padding: 5px;
+  border-radius: 15px;
+  border: 3px solid white;
+  transition: transform 0.2s, background-color 0.2s;
+  margin-top: 25px;
+}
+
+.view-templates-button:hover {
+  background-color: #1976d2;
+  transform: scale(0.95);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
 
 
 @media (max-width: 2560px) {
-  .Home {
-    font-size: 2.25vw;
-  }
-  .footer {
-    font-size: 1.5vw;
-  }
   .search-bar {
     min-width: 1024px;
     font-size: 2vw;
@@ -240,12 +296,6 @@ body {
 }
 
 @media (max-width: 1444px) {
-  .Home {
-    font-size: 2.25vw;
-  }
-  .footer {
-    font-size: 2vw;
-  }
   .search-bar {
     font-size: 3.25vw;
   }
@@ -264,26 +314,16 @@ body {
     margin: 10px;
     min-width: 400px;
   }
-  .Home {
-    min-width: 600px;
-    margin: 10px;
-    font-size: 4vw;
-  }
 
-  .carousel-item {
-    font-size: 4vw;
-  }
+
   .modal-content {
     max-width: 1000px;
-    max-height: 950px;
+    max-height: fit-content;
   }
   .search-bar {
     max-width: 850px;
     min-width: 850px;
     font-size: 4vw;
-  }
-  .footer {
-    font-size: 3vw;
   }
 }
 
@@ -292,9 +332,6 @@ body {
 @media (max-width: 920px) {
   .search-bar {
     width: 750px;
-  }
-  .footer {
-    font-size: 3vw;
   }
 }
 
@@ -308,17 +345,11 @@ body {
     text-align: center;
   }
 
-  .carousel-item {
-    font-size: 3.5vw;
-    font-weight: 700;
-  }
+
   .carousel-item img {
     max-width: 250px;
     min-width: 50px;
     height: auto;
-  }
-  .footer {
-    font-size: 3vw;
   }
   .search-bar {
     min-width: 575px;
@@ -335,6 +366,10 @@ body {
     min-width: 500px;
     max-width: 500px;
   }
+  .carousel-item img {
+    min-width: 150px;
+    max-width: 150px;
+  }
 }
 
 
@@ -344,8 +379,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 430px;
+    min-width: 430px;
   }
   .Home {
     min-width: 430px;
@@ -362,12 +397,11 @@ body {
     text-align: center;
     font-size: 6vw;
   }
-  .carousel-item {
-    font-size: 5vw;
-  }
+
 
   .carousel-item img {
     max-width: 100px;
+    min-width: 100px;
   }
   .SargentLogo {
     min-width: 300px;
@@ -376,9 +410,6 @@ body {
     min-width: 300px;
     max-width: 300px;
     font-size: 8vw;
-  }
-  .footer {
-    font-size: 4vw;
   }
   .search-bar {
     min-width: 350px;
