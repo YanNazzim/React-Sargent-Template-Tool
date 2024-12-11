@@ -4,23 +4,15 @@
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+  text-align: center; /* Center all text in the container */
 }
 
 /* Tooltip */
 .ToolTip {
   text-align: center;
   font-size: 2em;
-}
-
-.display-templates h1 {
-  background-color: #1565c0;
-  border-radius: 25px;
-  color: white;
-  text-align: center;
-  margin: 0 auto 50px;
-  font-size: 3rem;
-  max-width: 90%;
-  width: 100%;
+  margin: 0 auto 20px; /* Ensure some margin below the tooltip */
+  display: inline-block; /* Allow for better centering */
 }
 
 /* Card container */
@@ -47,14 +39,14 @@
   max-width: 400px;
   padding: 15px;
   box-sizing: border-box;
-  text-align: center; /* Ensures text inside is centered */
+  text-align: center;
   transition: transform 0.3s, width 0.3s ease-in-out;
 }
 
 /* Selected template card */
 .template-card.selected {
-  transform: scale(1.05); /* Slightly enlarge the card */
-  max-width: 500px; /* Increase width when selected */
+  transform: scale(1.05);
+  max-width: 500px;
 }
 
 /* Template card header */
@@ -67,7 +59,7 @@
 
 /* Links within template cards */
 .template-card a {
-  display: flex; /* Use flexbox for links */
+  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
@@ -108,7 +100,7 @@
 
 /* Template details (expanded state) */
 .template-details {
-  display: flex; /* Ensure items inside are centered */
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
@@ -138,6 +130,55 @@
   margin: auto;
 }
 
+/* Toggle buttons and slider */
+.view-toggle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px auto; /* Center the toggle container */
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 300px;
+  justify-content: space-between; /* Ensure the buttons are spaced */
+}
+
+.view-toggle .slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-toggle .slider.left {
+  transform: translateX(-3%);
+}
+
+.view-toggle .slider.right {
+  transform: translateX(97%);
+}
+
+.view-toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.view-toggle button.active {
+  color: #ffffff;
+}
+
+.view-toggle button:not(.active) {
+  color: #007bff;
+}
+
+
 /* Mobile Queries */
 @media (max-width: 1024px) {
   .template-cards {
@@ -156,6 +197,14 @@
   .template-image {
     width: 90%;
   }
+
+  .ToolTip {
+    font-size: 1.8em;
+  }
+
+  .view-toggle {
+    width: 250px; /* Adjust width on smaller screens */
+  }
 }
 
 @media (max-width: 768px) {
@@ -173,6 +222,14 @@
 
   .template-image {
     width: 90%;
+  }
+
+  .ToolTip {
+    font-size: 1.8em;
+  }
+
+  .view-toggle {
+    width: 250px;
   }
 }
 
@@ -203,5 +260,9 @@
     margin: 10px;
     font-size: 1rem;
     max-width: 240px;
+  }
+
+  .view-toggle {
+    width: 100%;
   }
 }
