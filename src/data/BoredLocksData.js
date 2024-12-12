@@ -194,6 +194,46 @@ export const BoredLocks = {
       text4: "View 800 Strike Template Doc# 4131",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
       text5: "View 808 Strike Template Doc# 4049",
+      installation: [
+        {
+          device: "11 Line",
+          image: Images.Bored11, // Use Images object reference
+          title: "11 Line Mounting Related Installation Instructions",
+
+          text: "View All Functions Installation Instructions Doc# A7469",
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054806',
+          text1: "View Dummy Trim Installation Instructions Doc# A7470",
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054807',
+          text2: 'View 50 Function Installation Instructions Doc# A7608',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054797',
+          text3: 'View High Security Lever Attatchment Installation Instructions Doc# A7608',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054809',
+          text4: '6010 Replacement Kit - Replacing SARGENT 7600 Line with 7 Line, 8 Line, 10 Line, or 11 Line Locks Installation Instructions Doc# A6567',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054811',
+        },
+        {
+          device: "11 Line",
+          image: Images.Bored11, // Use Images object reference
+          title: "11 Line Cylinder Related Installation Instructions",
+
+          text: "View Removable Core (60, 63, 64) or Arrow, Best and Falcon Interchangeable Core (65-73, 70, 72, 73) Cylinder and Lever Removal Instructions Doc# A7471",
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054805',
+          text1: "View 30-Option Lever to Accept Schlage® Fixed Core Cylinder Installation Instructions Doc# A7476",
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1164624',
+          text2: 'View 6300 Series Tailpiece Retainer for 758, 858 Series Padlocks and 7, 10, and 11 Lines, 6500 Series Bored Locks Installation Instructions Doc# A8188',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054635',
+          text3: 'View YC- Cylinder Option Spacer Installation Instructions Doc# A8225',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054808',
+        },
+        {
+          device: '11 Line',
+          image: Images.Bored11,
+          title: "11 Line Parts Manual",
+          
+          text: 'View 11 Line Bored Lock Parts Manual Doc# A8252',
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1061505',
+        },
+      ],
     },
   ],
   "10X Line": [
@@ -314,32 +354,32 @@ export const BoredLocks = {
       device: "SN 10X",
       title: "SN Series 10X Line",
       image: Images.SN10X,
-      functions: '10XG, 10XG271, 10XG270, 271, 270',
+      functions: "10XG, 10XG271, 10XG270, 271, 270",
 
       MechOptions:
-      "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
-    ElecOptions:
-      "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
-    CylOptions:
-      "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-    railSizes: "E, F, J, G",
-    handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-    voltage: "12V, 24V, 12 V, 24 V",
-    finishes:
-      "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-    trims: trimsString,
+        "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
+      ElecOptions:
+        "03, 0E, 04, 0D, 0F, 0G, 0H91, IPV, BIS, BIKS, BIPS, BIKPS, FIKPS, FIPS, BIPS, IKPV, BIKPS, BCP, BCKP, DIPS, DIKPS, B, MB",
+      CylOptions:
+        "47, BR, KD, LC, 30, SF, YC, YC-7P, YRC, SC, SE, 10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
 
-    link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1245559',
-    text: 'View SN Series Template (Metal & Wood) Doc# 4759',
-    link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1230481',
-    text1: 'View Main Installation Instructions Doc# A8353',
-    link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-    text2:
-      "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-    link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-    text3:
-      "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-  },
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1245559",
+      text: "View SN Series Template (Metal & Wood) Doc# 4759",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
+      text1: "View Main Installation Instructions Doc# A8353",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+      text2:
+        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+      text3:
+        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+    },
   ],
 
   "8X Line": [
