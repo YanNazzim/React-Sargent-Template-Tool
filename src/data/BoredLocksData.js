@@ -201,15 +201,17 @@ export const BoredLocks = {
           title: "11 Line Mounting Related Installation Instructions",
 
           text: "View All Functions Installation Instructions Doc# A7469",
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054806',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054806",
           text1: "View Dummy Trim Installation Instructions Doc# A7470",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054807',
-          text2: 'View 50 Function Installation Instructions Doc# A7608',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054797',
-          text3: 'View High Security Lever Attatchment Installation Instructions Doc# A7608',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054809',
-          text4: '6010 Replacement Kit - Replacing SARGENT 7600 Line with 7 Line, 8 Line, 10 Line, or 11 Line Locks Installation Instructions Doc# A6567',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054811',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054807",
+          text2: "View 50 Function Installation Instructions Doc# A7608",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054797",
+          text3:
+            "View High Security Lever Attatchment Installation Instructions Doc# A7608",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054809",
+          text4:
+            "6010 Replacement Kit - Replacing SARGENT 7600 Line with 7 Line, 8 Line, 10 Line, or 11 Line Locks Installation Instructions Doc# A6567",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1054811",
         },
         {
           device: "11 Line",
@@ -217,21 +219,24 @@ export const BoredLocks = {
           title: "11 Line Cylinder Related Installation Instructions",
 
           text: "View Removable Core (60, 63, 64) or Arrow, Best and Falcon Interchangeable Core (65-73, 70, 72, 73) Cylinder and Lever Removal Instructions Doc# A7471",
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054805',
-          text1: "View 30-Option Lever to Accept Schlage® Fixed Core Cylinder Installation Instructions Doc# A7476",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1164624',
-          text2: 'View 6300 Series Tailpiece Retainer for 758, 858 Series Padlocks and 7, 10, and 11 Lines, 6500 Series Bored Locks Installation Instructions Doc# A8188',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054635',
-          text3: 'View YC- Cylinder Option Spacer Installation Instructions Doc# A8225',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054808',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054805",
+          text1:
+            "View 30-Option Lever to Accept Schlage® Fixed Core Cylinder Installation Instructions Doc# A7476",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1164624",
+          text2:
+            "View 6300 Series Tailpiece Retainer for 758, 858 Series Padlocks and 7, 10, and 11 Lines, 6500 Series Bored Locks Installation Instructions Doc# A8188",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054635",
+          text3:
+            "View YC- Cylinder Option Spacer Installation Instructions Doc# A8225",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054808",
         },
         {
-          device: '11 Line',
+          device: "11 Line",
           image: Images.Bored11,
           title: "11 Line Parts Manual",
-          
-          text: 'View 11 Line Bored Lock Parts Manual Doc# A8252',
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1061505',
+
+          text: "View 11 Line Bored Lock Parts Manual Doc# A8252",
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1061505",
         },
       ],
     },
@@ -266,6 +271,33 @@ export const BoredLocks = {
       text5: "View 800 Strike Template Doc# 4131",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
       text6: "View 808 Strike Template Doc# 4049 ",
+      installation: [
+        {
+          device: "10X Line",
+      image: Images.Bored10x, // Use Images object reference
+      title: "10X Installation Instructions",
+      
+      text: 'View 10x Mounting Installation Instructions Doc# A8286',
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1182335',
+      text1: 'View Electrified Bored Lock Installation Instructions Doc# A8351',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1218351',
+      text2: 'View 10 Line Latch Extension Assembly For 3-3/4" and 5" Backsets Doc# A8295 ',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1184598',
+      text3: 'View 4399 Exit Button Installation Instructions Doc# A7864',
+      link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055069',
+      text4: 'View ElectroLynx® Retrofit Kit Installation Instructions A7738',
+      link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1235473',
+        },
+        {
+          device: "10X Line",
+          image: Images.Bored10x, // Use Images object reference
+          title: "10X Parts Manual",
+
+          text: 'View 10x Parts Manual Doc# A8287',
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1182311',
+          
+        }
+      ],
     },
   ],
 
@@ -311,6 +343,18 @@ export const BoredLocks = {
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
       text7:
         "52-2847 Weather Seal Conduit for use on Non-Fire Rated Exterior Doors Installation Instructions Doc# A7721",
+        installation: [
+          {
+            device: 'KP 10X',
+            title: 'KP 10X Line Installation Instructions',
+            image: Images.KP10X,
+
+            text: 'View KP Series 10X Line Installation Instructions Doc# A8355',
+            link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1230483',
+            text1: 'View KP Series Controller Replacement 52-6085 Installation Instructions Doc# A8288',
+            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1179497',
+          }
+        ]
     },
   ],
 
