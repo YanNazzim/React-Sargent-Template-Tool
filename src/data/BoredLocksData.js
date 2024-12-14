@@ -290,22 +290,6 @@ export const BoredLocks = {
           text4:
             "View ElectroLynx® Retrofit Kit Installation Instructions A7738",
           link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
-          image: Images.Bored10x, // Use Images object reference
-          title: "10X Installation Instructions",
-
-          text: "View 10x Mounting Installation Instructions Doc# A8286",
-          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1182335",
-          text1:
-            "View Electrified Bored Lock Installation Instructions Doc# A8351",
-          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1218351",
-          text2:
-            'View 10 Line Latch Extension Assembly For 3-3/4" and 5" Backsets Doc# A8295 ',
-          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1184598",
-          text3: "View 4399 Exit Button Installation Instructions Doc# A7864",
-          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055069",
-          text4:
-            "View ElectroLynx® Retrofit Kit Installation Instructions A7738",
-          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
         },
         {
           device: "10X Line",
@@ -502,10 +486,10 @@ export const BoredLocks = {
           title: "8X Installation Instructions",
           image: Images.Bored8x, // Use Images object reference
 
-          text: 'View 8X Line Installation Instructions Doc# A8193',
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054822',
-          text1: 'View 8X Line Knob Locks Installation Instructions',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1053976',
+          text: "View 8X Line Installation Instructions Doc# A8193",
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054822",
+          text1: "View 8X Line Knob Locks Installation Instructions",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1053976",
         },
       ],
     },
@@ -545,17 +529,19 @@ export const BoredLocks = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054828",
           text: "View 7 Line Installation Instructions Doc# A7240",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054815',
-          text1: 'View 7 Line 30 Prefix Installation Instructions Doc# A6838',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054814',
-          text2: 'View 7 and 10 Line Levers with Removable Core (63-) or Arrow, Best and Falcon Interchangeable Core Installation Instructions Doc# A6847',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054811',
-          text3: 'View 6010 Replacement Kit - Replacing SARGENT 7600 Line with 7 Line, 8 Line, 10 Line, or 11 Line Locks Installation Instructions Doc# A6567',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054813',
-          text4: 'View Bored Lock 7 Line SF Prefix Installation Instructions',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054635',
-          text5: 'View 6300 Series Tailpiece Retainer for 758, 858 Series Padlocks and 7, 10, and 11 Lines, 6500 Series Bored Locks Installation Instructions Doc# A8188',
-          
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054815",
+          text1: "View 7 Line 30 Prefix Installation Instructions Doc# A6838",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054814",
+          text2:
+            "View 7 and 10 Line Levers with Removable Core (63-) or Arrow, Best and Falcon Interchangeable Core Installation Instructions Doc# A6847",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054811",
+          text3:
+            "View 6010 Replacement Kit - Replacing SARGENT 7600 Line with 7 Line, 8 Line, 10 Line, or 11 Line Locks Installation Instructions Doc# A6567",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1054813",
+          text4: "View Bored Lock 7 Line SF Prefix Installation Instructions",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1054635",
+          text5:
+            "View 6300 Series Tailpiece Retainer for 758, 858 Series Padlocks and 7, 10, and 11 Lines, 6500 Series Bored Locks Installation Instructions Doc# A8188",
         },
         {
           device: "7 Line",
@@ -563,9 +549,9 @@ export const BoredLocks = {
 
           title: "7 Line Parts Manual",
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1067006',
-          text: 'View 7 Line Parts Manual',
-        }
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1067006",
+          text: "View 7 Line Parts Manual",
+        },
       ],
     },
   ],
@@ -596,18 +582,20 @@ export const BoredLocks = {
       text5: "View 808 Strike Template Doc# 4049",
       installation: [
         {
-          device: '6500 series',
+          device: "6500 series",
           image: Images.Bored6500, // Use Images object reference
           title: "6500",
-          
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054830',
-          text: 'View 6500 Line Installation Instructions Doc# A6913',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054831',
-          text1: 'View 6500 Line Construction Plugs Installation Instructions Doc# A7001',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054635',
-          text2: 'View 6300 Series Tailpiece Retainer for 7 Line Installation Instructions Doc# A8188',
-        }
-      ]
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054830",
+          text: "View 6500 Line Installation Instructions Doc# A6913",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054831",
+          text1:
+            "View 6500 Line Construction Plugs Installation Instructions Doc# A7001",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054635",
+          text2:
+            "View 6300 Series Tailpiece Retainer for 7 Line Installation Instructions Doc# A8188",
+        },
+      ],
     },
   ],
   "6 Line": [
@@ -639,23 +627,23 @@ export const BoredLocks = {
       text5: "View 808 Strike Template Doc# 4049",
       installation: [
         {
-          device: '6 Line',
-          title: '6 Line Installation Instructions',
+          device: "6 Line",
+          title: "6 Line Installation Instructions",
           image: Images.Bored6,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054829',
-          text: 'View 6 Line Installation Instructions Doc# A6286',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1191277',
-          text1: 'View 6 Line Installation Instructions (French) Doc# A6286',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054829",
+          text: "View 6 Line Installation Instructions Doc# A6286",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1191277",
+          text1: "View 6 Line Installation Instructions (French) Doc# A6286",
         },
         {
-          device: '6 Line',
-          title: '6 Line Parts Manual',
+          device: "6 Line",
+          title: "6 Line Parts Manual",
           image: Images.Bored6,
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1060907',
-          text: 'View 6 Line Parts Manual',
-        }
-      ]
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1060907",
+          text: "View 6 Line Parts Manual",
+        },
+      ],
     },
   ],
   "DL Series": [
@@ -717,20 +705,18 @@ export const BoredLocks = {
           image: Images.BoredDLSeries, // Use Images object reference
           title: "DL & RDL Installation Instructions",
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054810',
-          text: 'View DL Series Tubular Lock Installation Instructions Doc# A7858',
-    
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054810",
+          text: "View DL Series Tubular Lock Installation Instructions Doc# A7858",
         },
         {
           device: "DL Series",
           image: Images.BoredDLSeries, // Use Images object reference
           title: "DL & RDL Parts Manual",
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1060918',
-          text: 'View DL Series Parts Manual Doc# A8256',
-    
-        }
-      ]
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1060918",
+          text: "View DL Series Parts Manual Doc# A8256",
+        },
+      ],
     },
   ],
   // Add more series and devices as needed
