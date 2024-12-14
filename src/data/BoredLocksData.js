@@ -290,6 +290,22 @@ export const BoredLocks = {
           text4:
             "View ElectroLynx® Retrofit Kit Installation Instructions A7738",
           link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
+          image: Images.Bored10x, // Use Images object reference
+          title: "10X Installation Instructions",
+
+          text: "View 10x Mounting Installation Instructions Doc# A8286",
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1182335",
+          text1:
+            "View Electrified Bored Lock Installation Instructions Doc# A8351",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1218351",
+          text2:
+            'View 10 Line Latch Extension Assembly For 3-3/4" and 5" Backsets Doc# A8295 ',
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1184598",
+          text3: "View 4399 Exit Button Installation Instructions Doc# A7864",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055069",
+          text4:
+            "View ElectroLynx® Retrofit Kit Installation Instructions A7738",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
         },
         {
           device: "10X Line",
@@ -325,37 +341,29 @@ export const BoredLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1245557",
       text: "View Metal and Wood Doors Mounting Template Doc# 4757",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1230483",
-      text1: "View Full Device Installation Instructions Doc# A8355",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text2:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
-      text5:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
-      text6:
-        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text7:
-        "52-2847 Weather Seal Conduit for use on Non-Fire Rated Exterior Doors Installation Instructions Doc# A7721",
       installation: [
         {
           device: "KP 10X",
           title: "KP 10X Line Installation Instructions",
           image: Images.KP10X,
 
-          text: "View KP Series 10X Line Installation Instructions Doc# A8355",
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230483",
+          text: "View Full Device Installation Instructions Doc# A8355",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
           text1:
-            "View KP Series Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+            "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text2:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text3:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+          text4:
+            "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+          text5:
+            "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
         },
       ],
     },
@@ -366,7 +374,7 @@ export const BoredLocks = {
       device: "IN 10X",
 
       title: "IN 10X Line",
-      image: Images.KP10X,
+      image: Images.IN10X,
       functions: "77, 10XG77, G77, 10X, Fail, Secure, Safe",
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -382,17 +390,34 @@ export const BoredLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1245558",
       text: "View Metal and Wood Doors Mounting Template Doc# 4758",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1230489",
-      text1: "View Full Device Installation Instructions Doc# A8356",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text2:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (Option: 91-) Hard Powering Instructions Doc# WFMN10A",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: [
+        {
+          device: "IN 10X",
+          image: Images.IN10X,
+          title: "IN (100, 120, 220)",
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230485",
+          text: "View IN100 Series 10X Line with Aperio™ Technology Installation Instructions Doc# A87",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1179538",
+          text1:
+            "View IN100 Series EM01 Outside Escutcheon (Reader) & Controller Replacement Installation Instructions Doc# A8293",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1230489",
+          text2:
+            "View IN120 and IN220 Series 10X Line Installation Instructions Doc# A8356",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+          text3:
+            "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (Option: 91-) Hard Powering Instructions Doc# WFMN10A",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text4:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text5:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1054960",
+          text6:
+            "View Corbin Russwin and SARGENT IP-Enabled Quick Reference Guide Installation Instructions Doc WFMN3",
+        },
+      ],
     },
   ],
 
@@ -418,14 +443,30 @@ export const BoredLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1245559",
       text: "View SN Series Template (Metal & Wood) Doc# 4759",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
-      text1: "View Main Installation Instructions Doc# A8353",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: [
+        {
+          device: "SN 10X",
+          title: "SN Series (SN200, SN210) 10X Line Installation Instructions",
+          image: Images.SN10X,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
+          text: "View Main Installation Instructions Doc# A8353",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text1:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text2:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        },
+        {
+          device: "SN 10X",
+          title: "SN Series 10X Parts Manual",
+          image: Images.SN10X,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230740",
+          text: "View SN200 and SN210 Series Integrated Wired Access Control and PIV Compatible Solutions Parts Manual Doc# A8363",
+        },
+      ],
     },
   ],
 
@@ -455,6 +496,18 @@ export const BoredLocks = {
       text4: "View 800 Strike Template Doc# 4131",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055641",
       text5: "View 808 Strike Template Doc# 4049",
+      installation: [
+        {
+          device: "8X Line",
+          title: "8X Installation Instructions",
+          image: Images.Bored8x, // Use Images object reference
+
+          text: 'View 8X Line Installation Instructions Doc# A8193',
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054822',
+          text1: 'View 8X Line Knob Locks Installation Instructions',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1053976',
+        },
+      ],
     },
   ],
   "7 Line": [
