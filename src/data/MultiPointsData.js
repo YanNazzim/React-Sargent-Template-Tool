@@ -138,9 +138,30 @@ export const MultiPoints = {
         {
           device: "7000",
           image: Images.MP7000,
-          title: "7000 ",
+          title: "Regular 7000 Series Installation Instruction",
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054638",
+          text: "View Main 7000 Series Installation Instructions Doc# A7860",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054640",
+          text1:
+            "View (12-)WD-7000 Series for Wood Doors Installation Instructions Doc# A7971",
+
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054639",
+          text2: "View 7000 Series W/ ELR Installation Instructions Doc# A8147",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1058552",
+          text3:
+            "View 7000 Series with SE LP10 Reader Installation Instructions Doc# A8239",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055071",
+          text4:
+            "View 4291/4292 Series Keypads Installation Instructions Doc# A6851",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055069",
+          text5: "View 4399 Exit Button Installation Instructions Doc# A7864",
+        },
+        {
+          device: "7000",
+          image: Images.MP7000,
+          title: "SN200 7000 Series Installation Instruction",
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217884",
-          text: "View 7000 with 56- Electric Latch Retraction Installation Instructions Doc# A8285",
+          text: "View 7000 with Electric Latch Retraction (SN200 ELR/56-) Installation Instructions Doc# A8285",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
           text1:
             "ASSA ABLOY Frame Door Position Switch Installation Instructions Doc# A7983",
@@ -150,7 +171,6 @@ export const MultiPoints = {
         },
       ],
     },
-    
   ],
 
   6100: [
@@ -170,6 +190,22 @@ export const MultiPoints = {
       voltage: "12V, 24V, 12 V, 24 V, V",
       text: "View Template Form (Ceco Door StormPro® 361 or Curries StormPro® 361 doors and frames)",
       link: "https://www.sargentlock.com/en/standalone/fm6100-template",
+      installation: [
+        {
+          device: "6100",
+          title: "FM6100 Installation Instructions",
+          image: Images.MP6100,
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054641',
+          text: 'View FM6100 Series for Window Shutters Installation Instructions Doc# A8058',
+        },
+        {
+          device: "6100",
+          title: "FM6100 Parts Manual",
+          image: Images.MP6100,
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1241992',
+          text: 'FM6100 series Multi-Point Lock Parts Manual Doc# A8350',
+        },
+      ],
     },
   ],
 
@@ -200,6 +236,30 @@ export const MultiPoints = {
       text2:
         "View BL7300 Template Form (Ceco and Curries Multi-Solution Opening doors and frames)",
       link2: "https://www.sargentlock.com/en/standalone/bl7300-template",
+      installation: [
+        {
+          device: "7300",
+          title: "(FM, BL) 7300 Installation Instructions",
+      image: Images.MP7300,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1164508',
+      text: 'View 7300 Series Installation Instructions Doc# A8270',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1043834',
+      text1: 'View FM7300 and BL7300 Series Installation Instructions Doc# A8220',
+      link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055069',
+      text2: 'View 4399 Exit Button Installation Instructions Doc# A7864',
+        },
+        {
+          device: "7300",
+          title: "(FM, BL) 7300 Installation Instructions",
+      image: Images.MP7300,
+
+      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1165701',
+      text: 'View 7300 Series Parts Manual Doc# A8271',
+      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1015117',
+      text1: 'View FM7300 and BL7300 Series Parts Manual Doc# A8232',
+        },
+      ]
     },
     {
       device: "7300",
