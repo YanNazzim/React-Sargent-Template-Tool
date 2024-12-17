@@ -77,11 +77,21 @@ const HamburgerMenu = () => {
     navigate("/wide", { state: { series } }); // Pass the series to Narrow page
     handleNavigation(); // Close the menu after navigating
   };
-    // Function to handle navigation with state
-    const handleButtonClickEMProducts = (series) => {
-      navigate("/em-products", { state: { series } }); // Pass the series to Narrow page
-      handleNavigation(); // Close the menu after navigating
-    };
+  // Function to handle navigation with state
+  const handleButtonClickEMProducts = (series) => {
+    navigate("/em-products", { state: { series } }); // Pass the series to Narrow page
+    handleNavigation(); // Close the menu after navigating
+  };
+  // Function to handle navigation with state
+  const handleButtonClickMultipoints = (series) => {
+    navigate("/display-templates", {
+      state: {
+        category: "Multi Points",
+        series,
+      },
+    });
+    handleNavigation(); // Close the menu after navigating
+  };
 
   return (
     <>
@@ -219,6 +229,77 @@ const HamburgerMenu = () => {
                       </button>
                     </div>
                   )}
+                </div>
+              )}
+            </div>
+
+            {/* Multipoints Menu with Submenu */}
+            <div className="menu-item">
+              <button
+                className="Multipoints"
+                onClick={() => handleMenuClick("multipoints")}
+              >
+                Multipoints
+              </button>
+              {activeMenu === "multipoints" && (
+                <div
+                  className={`submenu ${
+                    activeMenu === "multipoints" ? "open" : ""
+                  }`}
+                >
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("7000")}
+                  >
+                    7000 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("6100")}
+                  >
+                    6100 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("7300")}
+                  >
+                    7300 Series
+                  </button>
+                </div>
+              )}
+            </div>
+            {/* Multipoints Menu with Submenu */}
+            <div className="menu-item">
+              <button
+                className="Multipoints"
+                onClick={() => handleMenuClick("multipoints")}
+              >
+                Multipoints
+              </button>
+              {activeMenu === "multipoints" && (
+                <div
+                  className={`submenu ${
+                    activeMenu === "multipoints" ? "open" : ""
+                  }`}
+                >
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("7000")}
+                  >
+                    7000 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("6100")}
+                  >
+                    6100 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickMultipoints("7300")}
+                  >
+                    7300 Series
+                  </button>
                 </div>
               )}
             </div>

@@ -181,28 +181,34 @@ export const MortiseLocks = {
           link9: "https://storage.googleapis.com/aa-americas/dam/AADSS1055235",
           text9:
             "View 93 Function Dummy Trim (One Side) Installation Instructions Doc# A7036",
-            link10: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055234',
-            text10: 'View 677 and 2-677 Rabbeted Door Kits Installation Instructions Doc# A7066',
+          link10: "https://storage.googleapis.com/aa-americas/dam/AADSS1055234",
+          text10:
+            "View 677 and 2-677 Rabbeted Door Kits Installation Instructions Doc# A7066",
         },
         {
           device: "8200",
-          title: '8200 Mechanical Accessory (Indicators) Related Installation Instructions',
+          title:
+            "8200 Mechanical Accessory (Indicators) Related Installation Instructions",
           image: Images.Mortise8200,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054626',
-          text: 'View 130 Thumbturn and 184 Emergency Release Installation Instructions Doc# A5675',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055229',
-          text1: 'View Anti-Vandal (AV-) Pull Trim or 667 Anti-Vandal Trim Kit Installation Instructions Doc# A7635',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055248',
-          text2: 'View Secured Indicator Rose (50-) and Retrofit Kit (185S) Installation Instructions Doc# A7671',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055069',
-          text3: 'View 4399 Exit Button Installation Instructions Doc# A7864',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1089470',
-          text4: 'View Sectional Trim with V Series Indicators Installation Instructions Doc# A8257',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1089472',
-          text5: 'View Escutcheon Trim (VN1) with V Series Indicators Installation Instructions Doc# A8260',
-          link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054603',
-          text6: 'View Trim One Side Installation Instructions Doc# A7028'
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054626",
+          text: "View 130 Thumbturn and 184 Emergency Release Installation Instructions Doc# A5675",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055229",
+          text1:
+            "View Anti-Vandal (AV-) Pull Trim or 667 Anti-Vandal Trim Kit Installation Instructions Doc# A7635",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055248",
+          text2:
+            "View Secured Indicator Rose (50-) and Retrofit Kit (185S) Installation Instructions Doc# A7671",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055069",
+          text3: "View 4399 Exit Button Installation Instructions Doc# A7864",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1089470",
+          text4:
+            "View Sectional Trim with V Series Indicators Installation Instructions Doc# A8257",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1089472",
+          text5:
+            "View Escutcheon Trim (VN1) with V Series Indicators Installation Instructions Doc# A8260",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1054603",
+          text6: "View Trim One Side Installation Instructions Doc# A7028",
         },
         {
           device: "8200",
@@ -236,13 +242,13 @@ export const MortiseLocks = {
             "View EcoFlex™ Electrified Mortise Locks (NAC-) with High-Security Monitoring Options Installation and Wiring Instructions Doc# A8192",
         },
         {
-          device: '8200',
-          title: '8200 Parts Manual',
+          device: "8200",
+          title: "8200 Parts Manual",
           image: Images.Mortise8200,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1014667',
-          text: 'View 8200 Series Mortise Lock Parts Manual Doc# A4741',
-        }
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1014667",
+          text: "View 8200 Series Mortise Lock Parts Manual Doc# A4741",
+        },
       ],
     },
     {
@@ -376,14 +382,14 @@ export const MortiseLocks = {
         "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
       trims: trimsString,
 
-      link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055592',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055592",
       text: "View KP Series Template Doc# 4514",
       installation: [
         {
-          device: 'KP8200',
+          device: "KP8200",
           image: Images.KP80Trim,
           title: "KP 8200 (KeyPad)",
-    
+
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1015336",
           text: "View Full Device Installation Instructions Doc# A7373",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
@@ -401,8 +407,8 @@ export const MortiseLocks = {
           link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
           text6:
             "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
-        }
-      ]
+        },
+      ],
     },
   ],
   IN8200: [
@@ -426,22 +432,59 @@ export const MortiseLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055617",
       text: "View IN 8200 Mounting Template Doc# 4713",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1179538",
-      text3:
-        "View IN100 Series EM01 Outside Escutcheon (Reader) & Controller Replacement Installation Instructions Doc# A8293",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1179522",
-      text4: "View IN100 Aperio Installation instructions Doc# A8190",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
-      text5: "View IN120 and IN220 Instalation Instructions Doc# A8151",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text6:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text7:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text8:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: [
+        {
+          device: "IN8200",
+          title: "IN100 Installation Instructions",
+          image: Images.IN7900,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1179538",
+          text: "View IN100 Series EM01 Outside Escutcheon (Reader) & Controller Replacement Installation Instructions Doc# A8293",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1179522",
+          text4: "View IN100 Aperio Installation instructions Doc# A8190",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text6:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text7:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        },
+        {
+          device: "IN8200",
+          title: "IN120 Installation Instruction",
+          image: Images.IN7900,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
+          text: "View IN120 and IN220 Instalation Instructions Doc# A8151",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+          text1:
+            "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text6:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text7:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        },
+        {
+          device: "IN8200",
+          title: 'IN220 Installation Instructions',
+          image: Images.IN7900,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
+          text: "View IN120 and IN220 Instalation Instructions Doc# A8151",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054960",
+          text1:
+            "View IP-Enabled Quick Reference Guide Installation Instructions Doc# WFMN3",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text6:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text7:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        
+        }
+      ],
     },
   ],
 
@@ -466,14 +509,32 @@ export const MortiseLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1179379",
       text: "View SN Series Template (Metal & Wood) Doc# 4702",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
-      text1: "View Main Installation Instructions Doc# A8353",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: [
+        {
+          device: "SN8200",
+          title: 'SN Series Installation Instructions',
+          image: Images.SN8200,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
+          text: "View Main Installation Instructions Doc# A8353",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+          text2:
+            "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+          text3:
+            "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        
+        },
+        {
+          device: "SN8200",
+          title: 'SN Series Parts Manual',
+          image: Images.SN8200,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230740",
+          text: "View SN200 and SN210 Series Integrated Wired Access Control and PIV Compatible Solutions Parts Manual Doc# A8363",
+
+        },
+      ]
     },
   ],
   9200: [
