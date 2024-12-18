@@ -1136,9 +1136,9 @@ export const ExitDevices = {
       warning: "If using thumbpiece trim go to TP Trim section",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055921",
-      text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
-      text1: "View Trim Template (700-8 ET) Doc# 4414-H",
+      text: "View Mounting Template (Any Material) Doc# 4285_11",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
@@ -1516,8 +1516,13 @@ export const ExitDevices = {
 
       image: Images.narrowPE8500,
 
-      warning:
-        "NOTE: For 10 Function Just OMIT Cylinder hole from 2nd Template",
+      warning: (
+        <>
+          10 function WITHOUT trim -&gt; Template 1 Omit Cylinder hole
+          <br />
+          10 function WITH Dummy trim -&gt; Template 2 Omit Cylinder Hole
+        </>
+      ),
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238405",
       text: "View (04 Function) Cylinder only Inside Mounting Template Doc# MEDT35",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238406",

@@ -15,7 +15,7 @@
   top: 5px; /* Adjust the position */
   left: 20px; /* Adjust the position */
   background: none;
-  border: none;
+  border: 5px solid white;
   font-size: var(--hamburger-size);
   cursor: pointer;
   z-index: 1002; /* Ensure it's above the menu */
@@ -56,11 +56,11 @@
 
 /* Menu Container */
 .menu {
-  margin-top: 60px; /* Add space below the hamburger icon */
+  margin-top: 75px; /* Add space below the hamburger icon */
   width: 100%; /* Ensure it spans the pane width */
   text-align: center;
   background-color: #007bff;
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 25px;
 }
 
@@ -77,6 +77,11 @@
   justify-content: center; /* Center the content */
 }
 
+.exits, .Multipoints, .Bored, .Mortise {
+  margin-top: 15px;
+  border: 5px solid black;
+}
+
 /* Menu Link Hover Effects */
 .menu a:hover {
   color: black;
@@ -90,7 +95,7 @@
   justify-content: center;
   background-color: #007bff;
   border-radius: 25px;
-  border: 3px solid white;
+  border: 5px dotted white;
   overflow: hidden; /* Ensures content is hidden when height is limited */
   max-height: 0; /* Initially collapsed */
   transition: max-height var(--transition-duration) ease-in-out;
@@ -98,6 +103,7 @@
 
 /* When submenu is open */
 .submenu.open {
+  border: 3px solid white;
   max-height: fit-content; /* Set a maximum value large enough for content */
 }
 
@@ -107,7 +113,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
   background-color: #1565c0;
   font-weight: normal;
   overflow: hidden; /* Ensures content is hidden when height is limited */
@@ -125,7 +130,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   color: white;
   transition: color 0.3s;
 }
@@ -135,10 +140,9 @@
 
 /* Fix for Text Position */
 .menu h3, .menu button, .exits {
-  margin: 10px 0;
   font-size: 2em;
   font-weight: bold;
-  border: none;
+  border-radius: 25px;
   background: none;
   cursor: pointer;
 }

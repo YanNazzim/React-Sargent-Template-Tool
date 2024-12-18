@@ -92,6 +92,26 @@ const HamburgerMenu = () => {
     });
     handleNavigation(); // Close the menu after navigating
   };
+  // Function to handle navigation with state
+  const handleButtonClickMortise = (series) => {
+    navigate("/display-templates", {
+      state: {
+        category: "Mortise Locks",
+        series,
+      },
+    });
+    handleNavigation(); // Close the menu after navigating
+  };
+  // Function to handle navigation with state
+  const handleButtonClickBored = (series) => {
+    navigate("/display-templates", {
+      state: {
+        category: "Bored Locks",
+        series,
+      },
+    });
+    handleNavigation(); // Close the menu after navigating
+  };
 
   return (
     <>
@@ -268,38 +288,203 @@ const HamburgerMenu = () => {
                 </div>
               )}
             </div>
-            {/* Multipoints Menu with Submenu */}
+            {/* Mortise Menu with Submenu */}
             <div className="menu-item">
               <button
-                className="Multipoints"
-                onClick={() => handleMenuClick("multipoints")}
+                className="Mortise"
+                onClick={() => handleMenuClick("Mortise")}
               >
-                Multipoints
+                Mortise
               </button>
-              {activeMenu === "multipoints" && (
+              {activeMenu === "Mortise" && (
                 <div
                   className={`submenu ${
-                    activeMenu === "multipoints" ? "open" : ""
+                    activeMenu === "Mortise" ? "open" : ""
                   }`}
                 >
                   <button
-                    className="exitSeries"
-                    onClick={() => handleButtonClickMultipoints("7000")}
+                    className="mortiseSeries"
+                    onClick={() => handleSubMenuClick("7800")}
                   >
-                    7000 Series
+                    7800 Series
                   </button>
                   <button
                     className="exitSeries"
-                    onClick={() => handleButtonClickMultipoints("6100")}
+                    onClick={() => handleSubMenuClick("8200")}
                   >
-                    6100 Series
+                    8200 Series
                   </button>
                   <button
                     className="exitSeries"
-                    onClick={() => handleButtonClickMultipoints("7300")}
+                    onClick={() => handleSubMenuClick("9200")}
                   >
-                    7300 Series
+                    9200 Series
                   </button>
+                  {activeSubMenu === "7800" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "7800" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="7800"
+                        onClick={() => handleButtonClickMortise("7800")}
+                      >
+                        Standard/Electrified 7800 Series
+                      </button>
+                      <br />
+                      <button
+                        className="IN7900"
+                        onClick={() => handleButtonClickMortise("IN7900")}
+                      >
+                        IN 7900 Series
+                      </button>
+                    </div>
+                  )}
+                  {activeSubMenu === "8200" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "8200" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="8200"
+                        onClick={() => handleButtonClickMortise("8200")}
+                      >
+                        Standard/Electrified 8200 Series
+                      </button>
+                      <br />
+                      <button
+                        className="wideMenu"
+                        onClick={() => handleButtonClickMortise("KP8200")}
+                      >
+                        KP 8200 Series
+                      </button>
+                      <button
+                        className="EM-Menu"
+                        onClick={() => handleButtonClickMortise("IN8200")}
+                      >
+                        IN 8200 Series
+                      </button>
+                      <button
+                        className="EM-Menu"
+                        onClick={() => handleButtonClickMortise("SN8200")}
+                      >
+                        SN 8200 Series
+                      </button>
+                    </div>
+                  )}
+                  {activeSubMenu === "9200" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "9200" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="narrowMenu"
+                        onClick={() => handleButtonClickMortise("9200")}
+                      >
+                        9200 Series
+                      </button>
+                      <br />
+                      <button
+                        className="wideMenu"
+                        onClick={() => handleButtonClickMortise("M9200")}
+                      >
+                        M-9200 Series
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+            {/* Bored Locks Menu with Submenu */}
+            <div className="menu-item">
+              <button
+                className="Bored"
+                onClick={() => handleMenuClick("Bored")}
+              >
+                Bored Locks
+              </button>
+              {activeMenu === "Bored" && (
+                <div
+                  className={`submenu ${activeMenu === "Bored" ? "open" : ""}`}
+                >
+                  <button
+                    className="mortiseSeries"
+                    onClick={() => handleButtonClickBored("11 Line")}
+                  >
+                    11 Line
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleSubMenuClick("10X Line")}
+                  >
+                    10X Line
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickBored("8X Line")}
+                  >
+                    8X Line
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickBored("7 Line")}
+                  >
+                    7 Line
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickBored("6500")}
+                  >
+                    6500 Series
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickBored("6 Line")}
+                  >
+                    6 Line
+                  </button>
+                  <button
+                    className="exitSeries"
+                    onClick={() => handleButtonClickBored("DL")}
+                  >
+                    DL Series
+                  </button>
+                  {activeSubMenu === "10X Line" && (
+                    <div
+                      className={`nested-submenu ${
+                        activeSubMenu === "10X Line" ? "open" : ""
+                      }`}
+                    >
+                      <button
+                        className="10X"
+                        onClick={() => handleButtonClickBored("10X Line")}
+                      >
+                        Standard/Electrified 10X Line
+                      </button>
+                      <br />
+                      <button
+                        className="KP 10X"
+                        onClick={() => handleButtonClickBored("KP 10X")}
+                      >
+                        KP 10X Line
+                      </button>
+                      <button
+                        className="IN 10X"
+                        onClick={() => handleButtonClickBored("IN 10X")}
+                      >
+                        IN 10X Line
+                      </button>
+                      <button
+                        className="SN 10X"
+                        onClick={() => handleButtonClickBored("SN 10X")}
+                      >
+                        SN 10X Line
+                      </button>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
