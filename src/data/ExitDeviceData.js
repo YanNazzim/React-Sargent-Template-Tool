@@ -2441,7 +2441,7 @@ export const ExitDevices = {
   ],
   Wide30: [
     {
-      device: "3727",
+      device: "30Series",
 
       title: "3727 SVR Exit Device",
       functions:
@@ -2457,7 +2457,7 @@ export const ExitDevices = {
         "03, US03, 04, US04, US10, 10, 10B, 10BE, 26D, BSP, WSP, 605, 606, 612, 613, 613E, 624, 626, EB, ED, EN, EP, EAB",
       trims: trimsString,
 
-      image: Images.Exit2727,
+      image: Images.Exit3727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
       text: "View Mounting Template with Knob or Lever Trim Doc# 4301-G",
@@ -2469,9 +2469,67 @@ export const ExitDevices = {
       text3: "View 624 Alternative Strike Template Doc# 4009-H",
       link4: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
       text4: "View HTB/GTB Trim Template",
+      installation: [
+        {
+          device: "30Series",
+          title: "30 Series Device/Mullion Instructions",
+          image: Images.Exit3727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055253',
+          text: 'View (12-)3727, (12-)NB3727 Wide Stile SVR Installation Instructions Doc# A7426',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055310',
+          text1: 'View 3828 Wide Stile Rim Installation Instructions Doc# A7424',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
+          text2: 'View 980S and 12-980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7688',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
+          text3: 'View L980 Mullion for 30 Series Exit Devices Installation Instructions Doc# A7102',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
+          text4: 'View L980S and 12-L980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7111',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055258',
+          text5: 'View EL980 Electric Lockable Non Fire-Rated Mullion for 30 Series Exit Devices Installation Instructions Doc# A7195',
+        },
+        {
+          device: "30Series",
+          title: "30 Series Trim Instructions",
+          image: Images.Exit3727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1192859',
+          text: 'View 28 Series Lever and Rose Trim for 30 Series 3727/3828 SVR/Rim Installation Instructions Doc# A7274',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055357',
+          text1: 'View Thumbpiece Outside Trim for 30 Series Exit Devices Installation Instructions Doc# A7369',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054796',
+          text2: 'View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634',
+        },
+        {
+          device: "30Series",
+          title: "30 Series Accessories Instructions",
+          image: Images.Exit3727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055286',
+          text: 'View End Cap Mounting Plate for 30 Series Exit Devices Installation Instructions Doc# A5027',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
+          text1: 'View Glass Bead Shim Kit for 30 Series Exit Devices Installation Instructions Doc# A7004',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055358',
+          text2: 'View 601 Shim Kit Rectangular Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7967',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
+          text3: 'View Exit Device Mounting Strikes Installation Instructions Doc# MEMN1',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
+          text4: 'View Mounting Flush Panel Top Strike Installation Instructions Doc# MEMN6',
+        },
+        {
+          device: "30Series",
+          title: "30 Series Parts/Catalog",
+          image: Images.Exit3727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1062108',
+          text: 'View 20/30 Series Parts Manual Doc# A8273',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1004786",
+          text1: 'View 30 Series Catalog Doc# 90126',
+        }
+      ]
     },
     {
-      device: "3828",
+      device: "30Series",
 
       title: "(12-)3828 Rim Exit Device",
       functions:

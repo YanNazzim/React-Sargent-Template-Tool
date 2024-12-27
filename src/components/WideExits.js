@@ -40,13 +40,11 @@ const widePE80Devices = [
 ];
 
 const series20Devices = [
-  { id: "2727", name: "2727 SVR Exit", img: Images.Exit2727 },
-  { id: "2828", name: "2828 Rim Exit", img: Images.Exit2828 },
+  { id: "20Series", name: "2727/2828 Exits", img: Images.Exit2727 },
 ];
 
 const series30Devices = [
-  { id: "3727", name: "3727/NB-3727 SVR Exit", img: Images.Exit2727 },
-  { id: "3828", name: "3828 Rim Exit", img: Images.Exit2828 },
+  { id: "30Series", name: "3727/3828 Exits", img: Images.Exit3727 },
 ];
 
 // Define additional device lists for IN and KP combinations

@@ -19,13 +19,24 @@ function ExitSeries() {
     navigate("/stile", { state: { series: "90" } }); // Pass series '90'
   };
 
-  const handleButtonClick20Series = () => {
-    navigate("/wide", { state: { series: "20" } }); // Pass series '20'
-  };
+  const handleButtonClick20Series = (series) => {
+    navigate("/display-templates", {
+      state: {
+        category: "Exit Devices",
+        series: "Wide20",
 
-  const handleButtonClick30Series = () => {
-    navigate("/wide", { state: { series: "30" } }); // Pass series '30'
-  };
+      },
+    });
+  }
+
+  const handleButtonClick30Series = (series) => {
+    navigate("/display-templates", {
+      state: {
+        category: "Exit Devices",
+        series: "Wide30",
+      },
+    });
+  }
 
   const handleButtonClickThermalPin = (series, id) => {
     navigate("/display-templates", {

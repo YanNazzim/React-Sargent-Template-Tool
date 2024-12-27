@@ -27,6 +27,7 @@ export const Images = {
   Exit2828: require('./Exits/20 Series Rim (2828).png'),
   Exit2727: require('./Exits/20 Series SVR (2727).png'),
   Exit3828: require('./Exits/30 Series Rim (3828).png'),
+  Exit3727: require('./Exits/30 Series SVR.png'),
   strikes3828: require('./Exits/strikes3828.png'),
   strikes2828: require('./Exits/2828 Strikes.png'),
 
