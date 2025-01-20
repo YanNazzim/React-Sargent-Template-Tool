@@ -468,7 +468,7 @@ export const MortiseLocks = {
         },
         {
           device: "IN8200",
-          title: 'IN220 Installation Instructions',
+          title: "IN220 Installation Instructions",
           image: Images.IN7900,
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
@@ -482,8 +482,7 @@ export const MortiseLocks = {
           link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
           text7:
             "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-        
-        }
+        },
       ],
     },
   ],
@@ -512,7 +511,7 @@ export const MortiseLocks = {
       installation: [
         {
           device: "SN8200",
-          title: 'SN Series Installation Instructions',
+          title: "SN Series Installation Instructions",
           image: Images.SN8200,
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230481",
@@ -523,18 +522,16 @@ export const MortiseLocks = {
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
           text3:
             "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-        
         },
         {
           device: "SN8200",
-          title: 'SN Series Parts Manual',
+          title: "SN Series Parts Manual",
           image: Images.SN8200,
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1230740",
           text: "View SN200 and SN210 Series Integrated Wired Access Control and PIV Compatible Solutions Parts Manual Doc# A8363",
-
         },
-      ]
+      ],
     },
   ],
   9200: [
@@ -560,6 +557,30 @@ export const MortiseLocks = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056041",
       text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056022",
+      installation: [
+        {
+          device: "9200",
+          image: Images.Mortise9200,
+          title: "9200 Installation Instructions",
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055250",
+          text: "View 9200 with Rose Trim Installation Instructions Doc# A7146",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055251",
+          text1:
+            "KS and LS Security Escutcheon Trim for 9100 and (M-)9200 Series Installation Instructions Doc# A7147",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054626",
+          text2:
+            "View (M-)9200 Series 130 Thumbturn and 184 Emergency Release Installation Instructions Doc# A5675",
+        },
+        {
+          device: "9200",
+          image: Images.Mortise9200,
+          title: "9200 Parts Manual",
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1014671",
+          text: "View 9200 Series Parts Manual Doc# A4743",
+        },
+      ],
     },
     {
       device: "9200",
@@ -699,6 +720,23 @@ export const MortiseLocks = {
       trims: trimsString,
 
       title: "M9200",
+
+      installation: [
+        {
+          device: "M9200",
+          image: Images.Mortise9200,
+          title: "M9200 Installation Instructions",
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055250",
+          text: "View 9200 with Rose Trim Installation Instructions Doc# A7146",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055251",
+          text1:
+            "KS and LS Security Escutcheon Trim for 9100 and (M-)9200 Series Installation Instructions Doc# A7147",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054626",
+          text2:
+            "View (M-)9200 Series 130 Thumbturn and 184 Emergency Release Installation Instructions Doc# A5675",
+        },
+      ],
 
       text: "View Mounting Template Doc# 4483",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056039",
