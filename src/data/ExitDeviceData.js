@@ -2381,6 +2381,69 @@ export const ExitDevices = {
       text2: "View 646/653/655 Strike Template Doc# 4413-B",
       link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
       text3: "View HTB/GTB Trim Template",
+
+      installation: [
+        {
+          device: "2727",
+          title: "2727 only Related Installation Instructions",
+          image: Images.Exit2727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055274',
+          text: 'View Standard Installation Instructions Doc# A6187',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055299',
+          text1: 'View Fire Rated (12-) Installation Instructions Doc# A6524',
+        },
+        {
+          device: "2828",
+          title: "2828 only Related Installation Instructions",
+          image: Images.Exit2828,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055277',
+          text: 'View Main Installation Instructions Doc# A6386',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
+          text1: 'View 980S/12-980 Mullion Installation Instructions Doc# A7688',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
+          text2: 'View L980S/12-L980 Mullion Installation Instructions Doc# A7111',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
+          text3: 'View L980 (Aluminum) Mullion Installation Instructions Doc# A7102',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
+          text4: 'View EL980 Mullion Installation Instructions Doc# A7195',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055358',
+          text5: 'View 601 Shim Kit Installation Instructions Doc# A7967',
+
+
+        },
+        {
+          device: "2727",
+          title: 'Trim Related Installation Instructions',
+          image: Images.Exit2727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1192859',
+          text: 'View 28 Series Lever and Rose Trim for 20 and 30 Series 2727/2828, 3727/3828 Rim, SVR Installation Instructions Doc# A7274',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055357',
+          text1: 'View Thumbpiece Outside Trim for 20 and 30 Series Exit Devices Installation Instructions Doc# A7369',
+        },
+        {
+          device: "2727",
+          title: "Shared between 2727/2828 Installation Instructions",
+          image: Images.Exit2727,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055334',
+          text: 'View Through Bolt Application Installation Instructions Doc# A6190',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
+          text1: 'View Glass Bead Shim Kit Installation Instructions Doc# A7004',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
+          text2: 'View Glass Bead Shim Kit Installation Instructions Doc# A7004',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054796',
+          text3: 'View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
+          text4: 'View Mounting Strikes Installation Instructions Doc# MEMN1',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
+          text5: 'View Flush Panel Top Strike Installation Instructions Doc# MEMN6',
+
+
+        },
+      ]
     },
     {
       device: "2828",

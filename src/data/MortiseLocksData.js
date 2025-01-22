@@ -802,6 +802,44 @@ export const MortiseLocks = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055661",
       text4: "View Thumbturn Template Doc# 7059-B",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056032",
+
+      installation: [
+        {
+          device: '7800',
+          image: Images.Mortise7800,
+          title: "7800 Lockbody/Trim related Installation Instructions",
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055246",
+          text: 'View Standard/Main Installation Instructions Doc# A7772',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055248",
+          text1: 'View Secured Indicator Rose (50-) and Retrofit Kit (185S) Installation Instructions Doc# A7671',
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055229",
+          text2: 'View Anti-Vandal (AV-) Pull Trim or 667 Anti-Vandal Trim Kit Installation Instructions Doc# A7635',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054603',
+          text3: 'View Trim One Side Kit Installation Instructions Doc# A7028',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1060085',
+          text4: 'View 7800 Knobs / 8200 Levers Mortise Lock & 3P8225 Levers Triad Lock with Escutcheon Trim - WT Designs Installation Instructions Doc# A7034',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055235',
+          text5: 'View 93 Function Dummy Trim (One Side) Installation Instructions Doc# A7036',
+        }, 
+        {
+          device: '7800',
+          image: Images.Mortise7800,
+          title: "7800 Cylinder, Indicator & Wiring related Installation Instructions",        
+          
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054796',
+          text: 'View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054626',
+          text1: 'View 130 Thumbturn and 184 Emergency Release Installation Instructions Doc# A5675',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055234',
+          text2: 'View 677 and 2-677 Rabbeted Door Kits Installation Instructions Doc# A7066',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1053370',
+          text3: 'View Visual Occupancy Indicators for Sectional Trim (185C, 185P, and 49- Options) Installation Instructions Doc #A7623 ',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054627',
+          text4: 'View Electrified (70-73) Functions and Monitoring Prefixes (RX, LX & DX) with the ElectroLynx® Connector System Installation Instructions Doc# A7722',
+        }
+ 
+      ]
     },
     {
       device: "7800",
@@ -942,25 +980,35 @@ export const MortiseLocks = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055617",
       text: "View IN 7900 Mounting Template Doc# 4713",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1179533",
-      text2:
-        "View IN100 Series Von Duprin 98/99 Series EK1 Retrofit Kit Installation Instructions Doc# A8277",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1179538",
-      text3:
-        "View IN100 Series EM01 Outside Escutcheon (Reader) & Controller Replacement Installation Instructions Doc# A8293",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1179522",
-      text4: "View IN100 Aperio Installation instructions Doc# A8190",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
-      text5: "View IN120 and IN220 Instalation Instructions Doc# A8151",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text6:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text7:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text8:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+
+
+        installation: [
+          {
+            device: "IN7900",
+            title: 'IN Series 7900 INstallation instructions',
+            image: Images.IN7900,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066678",
+            text: "View IN120 and IN220 Instalation Instructions Doc# A8151",
+            link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1179533",
+            text1:
+              "View IN100 Series Von Duprin 98/99 Series EK1 Retrofit Kit Installation Instructions Doc# A8277",
+            link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1179538",
+            text3:
+              "View IN100 Series EM01 Outside Escutcheon (Reader) & Controller Replacement Installation Instructions Doc# A8293",
+            link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1179522",
+            text4: "View IN100 Aperio Installation instructions Doc# A8190",
+            link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+            text6:
+              "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+            link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+            text7:
+              "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+            link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+            text8:
+              "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+          }
+        ]
     },
   ],
 };
