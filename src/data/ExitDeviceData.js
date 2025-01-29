@@ -2121,6 +2121,22 @@ export const ExitDevices = {
       text2: "View Bracket Mounting Template (Metal Doors) Doc# 4579",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text3: "View Trim Template (700 ET) Doc# 4277",
+
+      installation: [
+        {
+          device: "9400",
+          title: "9400 Mounting Related Instructions",
+          image: Images.narrowCVR9400,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055348",
+          text: 'View 9400 Main Mounting Installation Instructions Doc# A7828',
+        },
+        {
+          device: "9400",
+          title: "9400 Cylinder / Accessories Related Instructions",
+          image: Images.narrowCVR9400,
+        }
+      ]
     },
   ],
   Wide90: [
