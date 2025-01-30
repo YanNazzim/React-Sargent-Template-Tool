@@ -2129,14 +2129,31 @@ export const ExitDevices = {
           image: Images.narrowCVR9400,
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055348",
-          text: 'View 9400 Main Mounting Installation Instructions Doc# A7828',
+          text: "View 9400 Main Mounting Installation Instructions Doc# A7828",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055355",
+          text1: "View Trim Installation instructions Doc# A6374",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055338",
+          text2: "View Freewheeling Trim Installation instructions Doc# A6374",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055365",
+          text3: "View Crossbar Assembly Installation Instructions Doc# MEMN4",
         },
         {
           device: "9400",
           title: "9400 Cylinder / Accessories Related Instructions",
           image: Images.narrowCVR9400,
-        }
-      ]
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
+          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
+          text2:
+            "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
+          text3:
+            "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
+        },
+      ],
     },
   ],
   Wide90: [
@@ -2174,8 +2191,45 @@ export const ExitDevices = {
         "View 648 Alternate Strike (Transom Panel Application) Template Doc# 4225-C",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1234418",
       text6: "View 653 Alternate Bottom Strike for 12-9700",
-      link7: "",
-      text7: "",
+
+      installation: [
+        {
+          device: "9700",
+          title: "9700 Mounting Related Instructions",
+          image: Images.crossWideSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055350",
+          text: "View (12)9700 Main Mounting Installation Instructions Doc# A7828",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055355",
+          text1: "View Trim Installation instructions Doc# A6374",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055338",
+          text2: "View Freewheeling Trim Installation instructions Doc# A6374",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055365",
+          text3: "View Crossbar Assembly Installation Instructions Doc# MEMN4",
+        },
+        {
+          device: "9700",
+          title: "9700 Cylinder / Accessories Related Instructions",
+          image: Images.crossWideSVR,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
+          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
+          text2:
+            "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
+          text3:
+            "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
+            link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
+            text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
+            link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
+            text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
+            link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
+            text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
+        },
+      ],
     },
     {
       device: "9700",
@@ -2275,6 +2329,70 @@ export const ExitDevices = {
       text6: "View 642 Alternate Strike Template Doc# 4007-E",
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1234418",
       text7: "View 644 Alternate Strike Template Doc# 3996-C",
+
+      installation: [
+        {
+          device: "9800",
+          title: "9800 Mounting Related Instructions",
+          image: Images.crossWideRim,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055367",
+          text: "View (12)9800 Main Mounting Installation Instructions Doc# A7828",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055355",
+          text1: "View Trim Installation instructions Doc# A6374",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055338",
+          text2: "View Freewheeling Trim Installation instructions Doc# A6374",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055365",
+          text3: "View Crossbar Assembly Installation Instructions Doc# MEMN4",
+        },
+        {
+          device: "9800",
+          title: "9800 Cylinder / Accessories Related Instructions",
+          image: Images.crossWideRim,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
+          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
+          text2:
+            "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
+          text3:
+            "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
+            link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
+            text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
+            link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
+            text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
+            link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
+            text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
+        },
+        {
+          device: "9800",
+          title: "9800 Mullion Related Instructions",
+          image: Images.L980,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1173182',
+          text: 'View 650A Installation Instructions Doc# A6580',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
+          text1: 'View L980 Installation Instructions Doc# A7102',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055256',
+          text2: 'View (12-)HC980/HD980 Installation Instructions Doc# A5885',
+          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
+          text3: 'View L980S/12-L980 Installation Instructions Doc# A7111',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055258',
+          text4: 'View EL980 Installation Instructions Doc# A7195',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
+          text5: 'View 980S/12-980 Installation Instructions Doc# A7688',
+          link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055262',
+          text6: 'View (12-)HC-L980 Installation Instructions Doc# A7962',
+          link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055255',
+          text7: 'View 12-HD980 STABALIZER Installation Instructions Doc# A7826',
+          link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055285',
+          text8: 'View 651 STABALIZER Installation Instructions Doc# A6581',
+
+        }
+      ],
     },
     {
       device: "9800",
@@ -2404,62 +2522,66 @@ export const ExitDevices = {
           title: "2727 only Related Installation Instructions",
           image: Images.Exit2727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055274',
-          text: 'View Standard Installation Instructions Doc# A6187',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055299',
-          text1: 'View Fire Rated (12-) Installation Instructions Doc# A6524',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055274",
+          text: "View Standard Installation Instructions Doc# A6187",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055299",
+          text1: "View Fire Rated (12-) Installation Instructions Doc# A6524",
         },
         {
           device: "2828",
           title: "2828 only Related Installation Instructions",
           image: Images.Exit2828,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055277',
-          text: 'View Main Installation Instructions Doc# A6386',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
-          text1: 'View 980S/12-980 Mullion Installation Instructions Doc# A7688',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
-          text2: 'View L980S/12-L980 Mullion Installation Instructions Doc# A7111',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
-          text3: 'View L980 (Aluminum) Mullion Installation Instructions Doc# A7102',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
-          text4: 'View EL980 Mullion Installation Instructions Doc# A7195',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055358',
-          text5: 'View 601 Shim Kit Installation Instructions Doc# A7967',
-
-
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055277",
+          text: "View Main Installation Instructions Doc# A6386",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055263",
+          text1:
+            "View 980S/12-980 Mullion Installation Instructions Doc# A7688",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055265",
+          text2:
+            "View L980S/12-L980 Mullion Installation Instructions Doc# A7111",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055266",
+          text3:
+            "View L980 (Aluminum) Mullion Installation Instructions Doc# A7102",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055266",
+          text4: "View EL980 Mullion Installation Instructions Doc# A7195",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055358",
+          text5: "View 601 Shim Kit Installation Instructions Doc# A7967",
         },
         {
           device: "2727",
-          title: 'Trim Related Installation Instructions',
+          title: "Trim Related Installation Instructions",
           image: Images.Exit2727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1192859',
-          text: 'View 28 Series Lever and Rose Trim for 20 and 30 Series 2727/2828, 3727/3828 Rim, SVR Installation Instructions Doc# A7274',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055357',
-          text1: 'View Thumbpiece Outside Trim for 20 and 30 Series Exit Devices Installation Instructions Doc# A7369',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1192859",
+          text: "View 28 Series Lever and Rose Trim for 20 and 30 Series 2727/2828, 3727/3828 Rim, SVR Installation Instructions Doc# A7274",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055357",
+          text1:
+            "View Thumbpiece Outside Trim for 20 and 30 Series Exit Devices Installation Instructions Doc# A7369",
         },
         {
           device: "2727",
           title: "Shared between 2727/2828 Installation Instructions",
           image: Images.Exit2727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055334',
-          text: 'View Through Bolt Application Installation Instructions Doc# A6190',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
-          text1: 'View Glass Bead Shim Kit Installation Instructions Doc# A7004',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
-          text2: 'View Glass Bead Shim Kit Installation Instructions Doc# A7004',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054796',
-          text3: 'View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
-          text4: 'View Mounting Strikes Installation Instructions Doc# MEMN1',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
-          text5: 'View Flush Panel Top Strike Installation Instructions Doc# MEMN6',
-
-
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055334",
+          text: "View Through Bolt Application Installation Instructions Doc# A6190",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055298",
+          text1:
+            "View Glass Bead Shim Kit Installation Instructions Doc# A7004",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055298",
+          text2:
+            "View Glass Bead Shim Kit Installation Instructions Doc# A7004",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text3:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055284",
+          text4: "View Mounting Strikes Installation Instructions Doc# MEMN1",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055366",
+          text5:
+            "View Flush Panel Top Strike Installation Instructions Doc# MEMN6",
         },
-      ]
+      ],
     },
     {
       device: "2828",
@@ -2554,58 +2676,69 @@ export const ExitDevices = {
           title: "30 Series Device/Mullion Instructions",
           image: Images.Exit3727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055253',
-          text: 'View (12-)3727, (12-)NB3727 Wide Stile SVR Installation Instructions Doc# A7426',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055310',
-          text1: 'View 3828 Wide Stile Rim Installation Instructions Doc# A7424',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
-          text2: 'View 980S and 12-980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7688',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
-          text3: 'View L980 Mullion for 30 Series Exit Devices Installation Instructions Doc# A7102',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
-          text4: 'View L980S and 12-L980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7111',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055258',
-          text5: 'View EL980 Electric Lockable Non Fire-Rated Mullion for 30 Series Exit Devices Installation Instructions Doc# A7195',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055253",
+          text: "View (12-)3727, (12-)NB3727 Wide Stile SVR Installation Instructions Doc# A7426",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055310",
+          text1:
+            "View 3828 Wide Stile Rim Installation Instructions Doc# A7424",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055263",
+          text2:
+            "View 980S and 12-980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7688",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055266",
+          text3:
+            "View L980 Mullion for 30 Series Exit Devices Installation Instructions Doc# A7102",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055265",
+          text4:
+            "View L980S and 12-L980 Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7111",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055258",
+          text5:
+            "View EL980 Electric Lockable Non Fire-Rated Mullion for 30 Series Exit Devices Installation Instructions Doc# A7195",
         },
         {
           device: "30Series",
           title: "30 Series Trim Instructions",
           image: Images.Exit3727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1192859',
-          text: 'View 28 Series Lever and Rose Trim for 30 Series 3727/3828 SVR/Rim Installation Instructions Doc# A7274',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055357',
-          text1: 'View Thumbpiece Outside Trim for 30 Series Exit Devices Installation Instructions Doc# A7369',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1054796',
-          text2: 'View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1192859",
+          text: "View 28 Series Lever and Rose Trim for 30 Series 3727/3828 SVR/Rim Installation Instructions Doc# A7274",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055357",
+          text1:
+            "View Thumbpiece Outside Trim for 30 Series Exit Devices Installation Instructions Doc# A7369",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text2:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
         },
         {
           device: "30Series",
           title: "30 Series Accessories Instructions",
           image: Images.Exit3727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055286',
-          text: 'View End Cap Mounting Plate for 30 Series Exit Devices Installation Instructions Doc# A5027',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055298',
-          text1: 'View Glass Bead Shim Kit for 30 Series Exit Devices Installation Instructions Doc# A7004',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055358',
-          text2: 'View 601 Shim Kit Rectangular Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7967',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
-          text3: 'View Exit Device Mounting Strikes Installation Instructions Doc# MEMN1',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
-          text4: 'View Mounting Flush Panel Top Strike Installation Instructions Doc# MEMN6',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055286",
+          text: "View End Cap Mounting Plate for 30 Series Exit Devices Installation Instructions Doc# A5027",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055298",
+          text1:
+            "View Glass Bead Shim Kit for 30 Series Exit Devices Installation Instructions Doc# A7004",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055358",
+          text2:
+            "View 601 Shim Kit Rectangular Steel Mullions for 30 Series Exit Devices Installation Instructions Doc# A7967",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055284",
+          text3:
+            "View Exit Device Mounting Strikes Installation Instructions Doc# MEMN1",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055366",
+          text4:
+            "View Mounting Flush Panel Top Strike Installation Instructions Doc# MEMN6",
         },
         {
           device: "30Series",
           title: "30 Series Parts/Catalog",
           image: Images.Exit3727,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1062108',
-          text: 'View 20/30 Series Parts Manual Doc# A8273',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1062108",
+          text: "View 20/30 Series Parts Manual Doc# A8273",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1004786",
-          text1: 'View 30 Series Catalog Doc# 90126',
-        }
-      ]
+          text1: "View 30 Series Catalog Doc# 90126",
+        },
+      ],
     },
     {
       device: "30Series",
@@ -3258,8 +3391,9 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238385",
       text: "View SN Series for Metal and Wood Doors Template (PE8700) Doc# MEDT11",
-      link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1238425',
-      text1: 'View SN Series for Metal and Wood Doors Template (NB-PE8700) Doc# MEDT55',
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238425",
+      text1:
+        "View SN Series for Metal and Wood Doors Template (NB-PE8700) Doc# MEDT55",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
       text2:
         "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",

@@ -134,4 +134,6 @@ export const Images = {
   SN8200: require('./Mortise/SN8200.png'),
   SNFM7300: require('./MultiPoints/SNFM7300.png'),
 
+  //Mullions
+  L980: require("./Exits/mullion.png")
 };
