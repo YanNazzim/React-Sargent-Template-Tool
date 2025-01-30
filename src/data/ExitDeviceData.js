@@ -2360,12 +2360,6 @@ export const ExitDevices = {
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
           text3:
             "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
-            link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
-            text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
-            link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
-            text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
-            link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
-            text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
         },
         {
           device: "9800",
@@ -2485,6 +2479,40 @@ export const ExitDevices = {
       text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
       text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
+
+      installation: [
+        {
+          device: "9800",
+          title: "9800 Mounting Related Instructions",
+          image: Images.crossWideRim,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1182247",
+          text: "View (12)9900 Main Mounting Installation Instructions Doc# A7828",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055355",
+          text1: "View Trim Installation instructions Doc# A6374",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055338",
+          text2: "View Freewheeling Trim Installation instructions Doc# A6374",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055365",
+          text3: "View Crossbar Assembly Installation Instructions Doc# MEMN4",
+        },
+        {
+          device: "9800",
+          title: "9800 Cylinder / Accessories Related Instructions",
+          image: Images.crossWideRim,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
+          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
+          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
+          text2:
+            "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
+          text3:
+            "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
+        },
+
+      ],
     },
   ],
   Wide20: [
