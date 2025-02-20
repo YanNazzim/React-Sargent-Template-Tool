@@ -20,8 +20,8 @@
   background-color: #007bff;
 
   /* pick the “largest” size you want from the start */
-  width: 300px;
-  height: 250px;
+  width: 400px;
+  height: 350px;
   font-size: 2em;
 
   color: white;
@@ -43,7 +43,7 @@
 
 /* Image styling remains unchanged */
 .btn-image {
-  max-width: 150px;
+  max-width: 250px;
   height: auto;
   max-height: 150px;
   margin-bottom: 10px;
@@ -63,67 +63,23 @@
   transform: scale(1.05);
 }
 
-/* For screens wider than 1024px */
-@media (min-width: 1024px) {
-  .btn {
-    width: 100%;
-    max-height: 350px;
-    min-height: 300px;
-    max-width: 400px;
-    padding: 25px;
-    font-size: 2em;
-  }
-}
-
-/* Medium screens (max-width: 1280px) */
-@media (max-width: 1280px) {
-  .btn {
-    padding: 15px;
-    font-size: 1.5em; /* Slightly smaller font size */
-  }
-
-  .btn-image {
-    max-width: 40%;
-  }
-}
-
-/* Smaller devices (max-width: 768px) */
+/* Media query for vertical stacking on mobile devices */
 @media (max-width: 768px) {
+  .stile-page {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    row-gap: 15px; /* Increase vertical gap if needed */
+  }
+  
+  /* Optionally adjust button sizes for mobile */
   .btn {
-    padding: 10px;
-    font-size: 1.2em; /* Smaller font size for smaller screens */
+    width: 90%; /* Allow buttons to be nearly full-width */
+    height: auto;
+    padding: 15px;
+    font-size: 1.5em;
   }
-
+  
   .btn-image {
-    max-width: 50%;
-  }
-}
-
-/* Mobile devices (max-width: 640px) */
-@media (max-width: 640px) {
-  .btn {
-    max-width: 100%; /* Full width for smaller screens */
-    min-width: 100%; /* Full width for smaller screens */
-    padding: 10px;
-    font-size: 1.2em; /* Smaller font size for mobile */
-  }
-
-  .btn-image {
-    max-width: 60%; /* Larger image for better visibility */
-  }
-}
-
-/* Mobile devices (max-width: 440px) */
-@media (max-width: 450px) {
-  .btn {
-    max-height: 250px; /* Slightly taller for better content display */
-    max-width: 100%; /* Full width for smaller screens */
-    min-width: 100%; /* Full width for smaller screens */
-    padding: 10px;
-    font-size: 1em; /* Smaller font size for mobile */
-  }
-
-  .btn-image {
-    width: 50%; /* Larger image for better visibility */
+    max-width: 100%;
+    max-height: 120px;
   }
 }
