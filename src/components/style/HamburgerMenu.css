@@ -1,8 +1,8 @@
 /* Root Variables for Theming */
 :root {
-  --primary-color: #333; /* Dark text color */
-  --hover-bg-color: #f0f0f0; /* Light hover background */
-  --bg-color: #ffffff; /* White background */
+  --primary-color: #ffffff; /* Dark text color */
+  --hover-bg-color: #000000; /* Light hover background */
+  --bg-color: rgba(34,34,34); /* White background */
   --box-shadow-color: rgba(0, 0, 0, 0.2); /* Subtle shadow */
   --transition-duration: 0.3s; /* Smooth transitions */
   --hamburger-size: 3rem; /* Size of the hamburger icon */
@@ -44,13 +44,39 @@
   box-shadow: 2px 0 5px var(--box-shadow-color);
   padding: 20px;
   overflow-y: auto;
-  z-index: 1000; /* Below the hamburger icon */
+  z-index: 1000;
   transform: translateX(-100%);
   transition: transform var(--transition-duration) ease-in-out;
+  
+  /* Make it a column flex container */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
 }
+
+/* Optional: Style the bottom button to match the theme */
+.menu-bottom {
+  text-align: center;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.bottom-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: var(--accent-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.bottom-button:hover {
+  background-color: #0056b3; /* or your desired hover color */
+}
+
 
 .side-pane.open {
   transform: translateX(0);

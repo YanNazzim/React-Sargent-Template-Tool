@@ -3,37 +3,32 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
   column-gap: 15px; /* Horizontal gap remains */
-  row-gap: 5px;     /* Reduced vertical gap (25px - 20px) */
   padding: 30px;
-  background-color: #f4f4f4;
-  margin: 0;
-  min-height: 100vh;
+  background-color: rgb(69, 69, 69);
   justify-items: center; /* Center items horizontally */
-  align-items: center;   /* Center items vertically */
+  align-items: center; /* Center items vertically */
 }
 
-/* Center the last button if the total number is odd */
-.stile-page > :last-child:nth-child(odd) {
-  grid-column: 1 / -1;
-  justify-self: center;
-  align-self: center;
-}
+
 
 /* Button styling - fixed sizes across all viewports */
 .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
+  justify-content: center;
   background-color: #007bff;
-  width: 100%;
-  max-width: 400px; /* Fixed max-width for consistent sizing */
+
+  /* pick the “largest” size you want from the start */
+  width: 300px;
+  height: 250px;
+  font-size: 2em;
+
   color: white;
   margin: 5px;
   border: 3px solid #0056b3;
   border-radius: 20px;
   padding: 20px;
-  font-size: 1.8em; /* Consistent, readable font size */
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -41,6 +36,9 @@
   overflow: hidden;
   user-select: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Prevent shrinking if the grid is too narrow */
+  flex-shrink: 0;
 }
 
 /* Image styling remains unchanged */
@@ -64,7 +62,6 @@
 .btn:hover .btn-image {
   transform: scale(1.05);
 }
-
 
 /* For screens wider than 1024px */
 @media (min-width: 1024px) {

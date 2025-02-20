@@ -5,35 +5,34 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
   font-size: 16px;
   background-color: #f4f4f4;
   overflow-x: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* No display:flex or align-items:center here */
 }
 
 /* Header Styles */
 .header {
   display: flex;
+  align-self: stretch;  /* force the header to span 100% even in a centered flex container */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(34, 34, 34);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   line-height: 1.6;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
 }
 
 .header img {
   transition: box-shadow 0.3s ease;
-  min-width: 300px !important;
+  min-width: 150px !important;
   margin: 10px;
   border-radius: 15px;
   will-change: transform, box-shadow;
@@ -319,7 +318,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(34,34,34);
   padding: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -328,9 +327,11 @@ body {
 }
 
 .footer a {
+  text-align: center;
   color: #007bff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.5em;
   transition: color 0.3s ease, transform 0.3s ease;
   margin: 5px 0;
 }
@@ -341,9 +342,10 @@ body {
 }
 
 .footer p {
+  color: white;
   text-align: center;
   margin: 10px 0;
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 1.6;
 }
 

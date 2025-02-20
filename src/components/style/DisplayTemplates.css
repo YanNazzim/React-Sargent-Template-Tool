@@ -1,6 +1,6 @@
 /* General Styles */
 .display-templates {
-  background-color: #f4f4f4; /* Light background */
+  background-color: rgb(34,34,34); /* Light background */
   padding: 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
@@ -85,7 +85,8 @@
 
 /* Template Card */
 .template-card {
-  background-color: white;
+  border: 3px solid white;
+  background-color: #999999;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -129,7 +130,7 @@
 
 .template-details a {
   display: block;
-  color: #007bff; /* Vibrant blue */
+  color: #ffffff; /* Vibrant blue */
   text-decoration: none;
   margin: 10px 0;
   transition: color 0.3s;
