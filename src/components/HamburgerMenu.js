@@ -26,6 +26,7 @@ const HamburgerMenu = () => {
   };
 
   const handleSubMenuClick = (submenu) => {
+    // Toggle the nested submenu for the clicked parent button
     setActiveSubMenu((prevSubMenu) =>
       prevSubMenu === submenu ? null : submenu
     );
@@ -63,7 +64,7 @@ const HamburgerMenu = () => {
     };
   }, [isOpen]);
 
-  // Navigation handlers
+  // Navigation handlers for internal routes
   const handleButtonClickNarrow = (series) => {
     navigate("/narrow", { state: { series } });
     handleNavigation();
@@ -80,25 +81,20 @@ const HamburgerMenu = () => {
   };
 
   const handleButtonClickMultipoints = (series) => {
-    navigate("/display-templates", {
-      state: { category: "Multi Points", series },
-    });
+    navigate("/display-templates", { state: { category: "Multi Points", series } });
     handleNavigation();
   };
 
   const handleButtonClickMortise = (series) => {
-    navigate("/display-templates", {
-      state: { category: "Mortise Locks", series },
-    });
+    navigate("/display-templates", { state: { category: "Mortise Locks", series } });
     handleNavigation();
   };
 
   const handleButtonClickBored = (series) => {
-    navigate("/display-templates", {
-      state: { category: "Bored Locks", series },
-    });
+    navigate("/display-templates", { state: { category: "Bored Locks", series } });
     handleNavigation();
   };
+
   // Handler for external link
   const handleExternalLink = () => {
     window.open("https://sargent-parts.netlify.app", "_blank");
@@ -131,35 +127,42 @@ const HamburgerMenu = () => {
                 </button>
                 {activeMenu === "exits" && (
                   <div className="submenu open">
+                    {/* 80 Series */}
                     <button
                       className="exitSeries"
                       onClick={() => handleSubMenuClick("80")}
                     >
                       80 Series
                     </button>
+                    {activeSubMenu === "80" && (
+                      <div className="nested-submenu open">
+                        <button
+                          className="narrowMenu"
+                          onClick={() => handleButtonClickNarrow("80")}
+                        >
+                          Narrow <br /> (8300, 8400, 8500)
+                        </button>
+                        <button
+                          className="wideMenu"
+                          onClick={() => handleButtonClickWide("80")}
+                        >
+                          Wide <br /> (8600, 8700, 8800, 8900)
+                        </button>
+                        <button
+                          className="EM-Menu"
+                          onClick={() => handleButtonClickEMProducts("80")}
+                        >
+                          Access Control Products <br /> (KP, IN, SN)
+                        </button>
+                      </div>
+                    )}
+
+                    {/* PE80 Series */}
                     <button
                       className="exitSeries"
                       onClick={() => handleSubMenuClick("PE80")}
                     >
                       PE80 Series
-                    </button>
-                    <button
-                      className="exitSeries"
-                      onClick={() => handleSubMenuClick("90")}
-                    >
-                      90 Series
-                    </button>
-                    <button
-                      className="exitSeries"
-                      onClick={() => handleButtonClickWide("30")}
-                    >
-                      30 Series
-                    </button>
-                    <button
-                      className="exitSeries"
-                      onClick={() => handleButtonClickWide("20")}
-                    >
-                      20 Series
                     </button>
                     {activeSubMenu === "PE80" && (
                       <div className="nested-submenu open">
@@ -183,28 +186,14 @@ const HamburgerMenu = () => {
                         </button>
                       </div>
                     )}
-                    {activeSubMenu === "80" && (
-                      <div className="nested-submenu open">
-                        <button
-                          className="narrowMenu"
-                          onClick={() => handleButtonClickNarrow("80")}
-                        >
-                          Narrow <br /> (8300, 8400, 8500)
-                        </button>
-                        <button
-                          className="wideMenu"
-                          onClick={() => handleButtonClickWide("80")}
-                        >
-                          Wide <br /> (8600, 8700, 8800, 8900)
-                        </button>
-                        <button
-                          className="EM-Menu"
-                          onClick={() => handleButtonClickEMProducts("80")}
-                        >
-                          Access Control Products <br /> (KP, IN, SN)
-                        </button>
-                      </div>
-                    )}
+
+                    {/* 90 Series */}
+                    <button
+                      className="exitSeries"
+                      onClick={() => handleSubMenuClick("90")}
+                    >
+                      90 Series
+                    </button>
                     {activeSubMenu === "90" && (
                       <div className="nested-submenu open">
                         <button
@@ -221,6 +210,20 @@ const HamburgerMenu = () => {
                         </button>
                       </div>
                     )}
+
+                    {/* Additional series buttons that do not have nested submenu */}
+                    <button
+                      className="exitSeries"
+                      onClick={() => handleButtonClickWide("30")}
+                    >
+                      30 Series
+                    </button>
+                    <button
+                      className="exitSeries"
+                      onClick={() => handleButtonClickWide("20")}
+                    >
+                      20 Series
+                    </button>
                   </div>
                 )}
               </div>
@@ -273,18 +276,6 @@ const HamburgerMenu = () => {
                     >
                       7800 Series
                     </button>
-                    <button
-                      className="exitSeries"
-                      onClick={() => handleSubMenuClick("8200")}
-                    >
-                      8200 Series
-                    </button>
-                    <button
-                      className="exitSeries"
-                      onClick={() => handleSubMenuClick("9200")}
-                    >
-                      9200 Series
-                    </button>
                     {activeSubMenu === "7800" && (
                       <div className="nested-submenu open">
                         <button
@@ -301,6 +292,12 @@ const HamburgerMenu = () => {
                         </button>
                       </div>
                     )}
+                    <button
+                      className="exitSeries"
+                      onClick={() => handleSubMenuClick("8200")}
+                    >
+                      8200 Series
+                    </button>
                     {activeSubMenu === "8200" && (
                       <div className="nested-submenu open">
                         <button
@@ -329,6 +326,12 @@ const HamburgerMenu = () => {
                         </button>
                       </div>
                     )}
+                    <button
+                      className="exitSeries"
+                      onClick={() => handleSubMenuClick("9200")}
+                    >
+                      9200 Series
+                    </button>
                     {activeSubMenu === "9200" && (
                       <div className="nested-submenu open">
                         <button
@@ -371,6 +374,34 @@ const HamburgerMenu = () => {
                     >
                       10X Line
                     </button>
+                    {activeSubMenu === "10X Line" && (
+                      <div className="nested-submenu open">
+                        <button
+                          className="10X"
+                          onClick={() => handleButtonClickBored("10X Line")}
+                        >
+                          Standard/Electrified 10X Line
+                        </button>
+                        <button
+                          className="KP 10X"
+                          onClick={() => handleButtonClickBored("KP 10X")}
+                        >
+                          KP 10X Line
+                        </button>
+                        <button
+                          className="IN 10X"
+                          onClick={() => handleButtonClickBored("IN 10X")}
+                        >
+                          IN 10X Line
+                        </button>
+                        <button
+                          className="SN 10X"
+                          onClick={() => handleButtonClickBored("SN 10X")}
+                        >
+                          SN 10X Line
+                        </button>
+                      </div>
+                    )}
                     <button
                       className="exitSeries"
                       onClick={() => handleButtonClickBored("8X Line")}
@@ -401,43 +432,15 @@ const HamburgerMenu = () => {
                     >
                       DL Series
                     </button>
-                    {activeSubMenu === "10X Line" && (
-                      <div className="nested-submenu open">
-                        <button
-                          className="10X"
-                          onClick={() => handleButtonClickBored("10X Line")}
-                        >
-                          Standard/Electrified 10X Line
-                        </button>
-                        <button
-                          className="KP 10X"
-                          onClick={() => handleButtonClickBored("KP 10X")}
-                        >
-                          KP 10X Line
-                        </button>
-                        <button
-                          className="IN 10X"
-                          onClick={() => handleButtonClickBored("IN 10X")}
-                        >
-                          IN 10X Line
-                        </button>
-                        <button
-                          className="SN 10X"
-                          onClick={() => handleButtonClickBored("SN 10X")}
-                        >
-                          SN 10X Line
-                        </button>
-                      </div>
-                    )}
                   </div>
                 )}
               </div>
             </nav>
           </div>
-          {/* Bottom section with the fixed button */}
+          {/* Bottom section with the external link button */}
           <div className="menu-bottom">
             <button className="bottom-button" onClick={handleExternalLink}>
-              Sargent Part Numbers Look Up Tool
+              Go to My Tool
             </button>
           </div>
         </div>
