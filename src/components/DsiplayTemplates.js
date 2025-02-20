@@ -85,31 +85,34 @@ function DisplayTemplates() {
         <button
           className={viewMode === "templates" ? "active" : ""}
           onClick={() => toggleView("templates")}
+          aria-label="View Templates"
         >
           Templates
         </button>
         <button
           className={viewMode === "instructions" ? "active" : ""}
           onClick={() => toggleView("instructions")}
+          aria-label="View Installation Instructions"
         >
           Installation/Parts
         </button>
       </div>
 
       {/* Content Display */}
-      <div className="template-cards">
+      <div className={`template-grid ${contentToShow.length === 1 ? "single-item" : ""}`}>
         {contentToShow.map((template, index) => (
           <div
             key={index}
-            className={`template-card ${
-              expandedTemplate === index ? "selected" : ""
-            }`}
+            className={`template-card ${expandedTemplate === index ? "selected" : ""}`}
+            onClick={() => toggleTemplate(index)}
+            role="button"
+            tabIndex={0}
+            aria-label={`Template ${template.title}`}
           >
             <img
               src={template.image}
               alt={template.title}
               className="template-image"
-              onClick={() => toggleTemplate(index)}
             />
             <h2>{template.title}</h2>
             {expandedTemplate === index && (
@@ -119,6 +122,7 @@ function DisplayTemplates() {
                   href={template.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Open ${template.text}`}
                 >
                   {template.text}
                 </a>
@@ -131,6 +135,7 @@ function DisplayTemplates() {
                       href={template[linkKey]}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Open ${template[textKey]}`}
                     >
                       {template[textKey]}
                     </a>

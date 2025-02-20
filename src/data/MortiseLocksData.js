@@ -142,8 +142,8 @@ export const MortiseLocks = {
 
       text: "View Mounting Template Doc# 7057-30",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
-      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056022",
+      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 7058",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056028",
       text2: "View (50-) Mounting Template Doc# 7682-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
       text3: "View Thumbturn Template Doc# 7059-B",
@@ -555,8 +555,8 @@ export const MortiseLocks = {
 
       text: "View Lockbody Mounting Template Doc# 4482",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056041",
-      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056022",
+      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 7058",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056028",
       installation: [
         {
           device: "9200",
@@ -793,8 +793,8 @@ export const MortiseLocks = {
       warning: "",
       text: "View Metal and Wood Doors Mounting Template Doc# 7057",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055660",
-      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 4555",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056022",
+      text1: "View Rose Trim Template (CR, E, L, LN, O, SL, SN, TR) Doc# 7058",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056028",
       text2: "View (50-) Mounting Template Doc# 7682-A",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056033",
       text3:

@@ -1,181 +1,52 @@
 /* General Styles */
 .display-templates {
-  background-color: #aaaaaa;
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-  text-align: center; /* Center all text in the container */
+  background-color: #f4f4f4; /* Light background */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
 }
 
 .deviceHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 15px;
-  padding: 10px;
-  background-color:#01579b;
-  width: 500px;
-  text-align: center;
-  font-size: 3em;
-  color: white;
-  border-radius: 25px;
+  font-size: 2.5em;
+  color: #333; /* Dark text */
+  margin-bottom: 20px;
 }
 
-/* Tooltip */
 .ToolTip {
-  color: white;
-  text-align: center;
-  font-size: 2em;
-  margin: 0 auto 20px; /* Ensure some margin below the tooltip */
-  display: inline-block; /* Allow for better centering */
+  font-size: 1.2em;
+  color: #666; /* Subtle text */
+  margin-bottom: 30px;
 }
 
-/* Card container */
-.template-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px; /* Increased gap between cards to add more space */
-  padding: 20px;
-  width: 100vw;
-  box-sizing: border-box;
-}
-
-/* Individual template card */
-.template-card {
-  background-color: #1565c0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: solid black 5px;
-  border-radius: 25px;
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  box-sizing: border-box;
-  text-align: center;
-  transition: transform 0.3s, width 0.3s ease-in-out;
-}
-
-/* Selected template card */
-.template-card.selected {
-  transform: scale(1.05);
-  max-width: 500px;
-}
-
-/* Template card header */
-.template-card h2 {
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-/* Links within template cards */
-.template-card a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 10px 0;
-  background-color: #01579b;
-  width: 90%;
-  max-width: fit-content;
-  padding: 12px;
-  border: solid white 3px;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.4s, box-shadow 0.3s;
-}
-
-.template-card a:hover {
-  transform: scale(0.95);
-  background-color: #1565c0;
-  border: solid black 3px;
-  box-shadow: black 0px 0px 15px 5px;
-}
-
-/* Image within template cards */
-.template-image {
-  margin-top: 20px;
-  width: 80%;
-  max-width: 280px;
-  border-radius: 25px;
-  transition: box-shadow 0.2s, transform 0.2s;
-  border: solid black 3px;
-}
-
-.template-image:hover {
-  box-shadow: black 0px 0px 15px 5px;
-  transform: scale(0.95);
-}
-
-/* Template details (expanded state) */
-.template-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-  line-height: 1.6;
-}
-
-.template-details a {
-  text-align: center;
-  display: block;
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.template-details h3 {
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-/* Error message for no templates */
-.NoTemplatesError {
-  text-align: center;
-  font-size: 3vw;
-  background-color: #aaaaaa;
-  margin: auto;
-}
-
-/* Toggle buttons and slider */
+/* Toggle Buttons with Slider */
 .view-toggle {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
-  margin: 20px auto; /* Center the toggle container */
-  background-color: #f0f0f0;
-  border-radius: 20px;
+  margin: 20px auto;
+  background-color: #e0e0e0; /* Light gray */
+  border-radius: 25px;
   padding: 5px;
+  width: 300px;
   height: 40px;
-  max-width: 400px;
-  min-width: 400px;
-  justify-content: space-between; /* Ensure the buttons are spaced */
 }
 
 .view-toggle .slider {
   position: absolute;
   width: 50%;
-  height: 75%;
-  background-color: #007bff;
-  border-radius: 20px;
+  height: 80%;
+  background-color: #007bff; /* Vibrant blue */
+  border-radius: 25px;
   transition: transform 0.3s ease-in-out;
 }
 
 .view-toggle .slider.left {
-  transform: translateX(0%);
+  transform: translateX(-45%);
 }
 
 .view-toggle .slider.right {
-  transform: translateX(95%);
+  transform: translateX(45%);
 }
 
 .view-toggle button {
@@ -186,101 +57,105 @@
   font-weight: bold;
   cursor: pointer;
   z-index: 1;
+  color: #333; /* Dark text */
+  transition: color 0.3s;
 }
 
 .view-toggle button.active {
-  color: #ffffff;
+  color: white; /* White text for active button */
 }
 
-.view-toggle button:not(.active) {
-  color: #007bff;
+.view-toggle button:hover {
+  color: #007bff; /* Vibrant blue on hover */
 }
 
-
-/* Mobile Queries */
-@media (max-width: 1024px) {
-  .template-cards {
-    margin: auto;
-  }
-
-  .template-card {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .template-card h2 {
-    font-size: 2rem;
-  }
-
-  .template-image {
-    width: 90%;
-  }
-
-  .ToolTip {
-    font-size: 1.8em;
-  }
-
-  .view-toggle {
-    width: 250px; /* Adjust width on smaller screens */
-  }
+/* Template Grid */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 
+.template-grid.single-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Template Card */
+.template-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.template-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.template-card.selected {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Even stronger shadow */
+}
+
+.template-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.template-image:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.template-details {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.template-details h3 {
+  font-size: 1.2em;
+  color: #dc3545; /* Red for warnings */
+  margin-bottom: 10px;
+}
+
+.template-details a {
+  display: block;
+  color: #007bff; /* Vibrant blue */
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.template-details a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .display-templates h1 {
-    font-size: 2.5rem;
+  .deviceHeading {
+    font-size: 2em;
   }
 
-  .template-card {
-    padding: 15px;
-  }
-
-  .template-card h2 {
-    font-size: 2rem;
-  }
-
-  .template-image {
-    width: 90%;
-  }
-
-  .ToolTip {
-    font-size: 1.8em;
-  }
-
-  .view-toggle {
-    width: 250px;
+  .template-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
-@media (max-width: 660px) {
-  .template-card {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 444px) {
-  .display-templates h1 {
-    font-size: 20px;
+@media (max-width: 480px) {
+  .deviceHeading {
+    font-size: 1.5em;
   }
 
-  .template-cards {
-    margin: auto;
-  }
-
-  .template-card {
-    max-width: 300px;
-  }
-
-  .template-card h2 {
-    font-size: 1.5rem;
-  }
-
-  .template-card a {
-    margin: 10px;
-    font-size: 1rem;
-    max-width: 240px;
-  }
-
-  .view-toggle {
-    width: 100%;
+  .template-grid {
+    grid-template-columns: 1fr;
   }
 }

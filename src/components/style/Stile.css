@@ -1,82 +1,88 @@
-/* Page container */
+/* Stile Page as a strict 2-column grid with reduced vertical gap */
 .stile-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers buttons horizontally */
-  gap: 10px; /* Space between buttons */
-  padding: 20px;
-  background-color: #aaaaaa;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  column-gap: 15px; /* Horizontal gap remains */
+  row-gap: 5px;     /* Reduced vertical gap (25px - 20px) */
+  padding: 30px;
+  background-color: #f4f4f4;
   margin: 0;
-  position: relative; /* Relative positioning to allow .ToolTip to be positioned absolutely */
+  min-height: 100vh;
+  justify-items: center; /* Center items horizontally */
+  align-items: center;   /* Center items vertically */
 }
 
-/* Button styling */
+/* Center the last button if the total number is odd */
+.stile-page > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Button styling - fixed sizes across all viewports */
 .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Center content vertically */
   background-color: #007bff;
-  width: 100%; /* Full width by default */
-  max-height: 300px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 400px; /* Fixed max-width for consistent sizing */
   color: white;
-  margin: 20px;
-  border: solid black 3px;
-  border-radius: 15px;
+  margin: 5px;
+  border: 3px solid #0056b3;
+  border-radius: 20px;
   padding: 20px;
-  font-size: 2.5em;
+  font-size: 1.8em; /* Consistent, readable font size */
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, border 0.3s;
+  transition: all 0.3s ease;
   text-align: center;
   overflow: hidden;
   user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Image styling */
+/* Image styling remains unchanged */
 .btn-image {
   max-width: 150px;
   height: auto;
   max-height: 150px;
   margin-bottom: 10px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 /* Button hover effect */
 .btn:hover {
-  background-color: #1565c0;
-  border: solid black 6px;
-  transform: scale(0.95);
-  cursor: pointer;
+  background-color: #0056b3;
+  border: 3px solid #004080;
+  transform: scale(0.98);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* For screens wider than 1280px */
-@media (min-width: 1024px) {
-  .stile-page {
-    display: grid;
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 columns, each taking up 1 fraction */
-    gap: 20px; /* Adjust gap between buttons */
-    justify-items: center; /* Center single buttons horizontally */
-  }
+.btn:hover .btn-image {
+  transform: scale(1.05);
+}
 
+
+/* For screens wider than 1024px */
+@media (min-width: 1024px) {
   .btn {
-    width: 100%; /* Reduce width for better grid alignment */
-    max-height: fit-content;
+    width: 100%;
+    max-height: 350px;
     min-height: 300px;
-    max-width: 500px; /* Limit the max width */
-    padding: 18px; /* Adjust padding */
+    max-width: 400px;
+    padding: 25px;
+    font-size: 2em;
   }
 }
 
 /* Medium screens (max-width: 1280px) */
 @media (max-width: 1280px) {
   .btn {
-    padding: 16px;
+    padding: 15px;
+    font-size: 1.5em; /* Slightly smaller font size */
   }
 
   .btn-image {
@@ -87,7 +93,8 @@
 /* Smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
   .btn {
-    padding: 12px;
+    padding: 10px;
+    font-size: 1.2em; /* Smaller font size for smaller screens */
   }
 
   .btn-image {
@@ -95,30 +102,31 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+/* Mobile devices (max-width: 640px) */
+@media (max-width: 640px) {
   .btn {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 100%; /* Full width for smaller screens */
+    min-width: 100%; /* Full width for smaller screens */
+    padding: 10px;
+    font-size: 1.2em; /* Smaller font size for mobile */
   }
-}
 
-@media screen and (max-width: 580px) {
-  .btn {
-    max-width: 450px;
-    min-width: 450px;
+  .btn-image {
+    max-width: 60%; /* Larger image for better visibility */
   }
 }
 
 /* Mobile devices (max-width: 440px) */
 @media (max-width: 450px) {
   .btn {
-    max-height: 250px;
-    max-width: 300px;
-    min-width: 300px;
+    max-height: 250px; /* Slightly taller for better content display */
+    max-width: 100%; /* Full width for smaller screens */
+    min-width: 100%; /* Full width for smaller screens */
     padding: 10px;
+    font-size: 1em; /* Smaller font size for mobile */
   }
 
   .btn-image {
-    width: 50%;
+    width: 50%; /* Larger image for better visibility */
   }
 }

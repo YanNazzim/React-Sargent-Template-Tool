@@ -10,128 +10,66 @@ body {
   align-items: center;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #aaaaaa;
+  background-color: #f4f4f4;
   overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header Styles */
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  line-height: 1.6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header img {
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
-  min-width: 300px;
-  margin: 5px;
-  border-radius: 25px;
+  transition: box-shadow 0.3s ease;
+  min-width: 300px !important;
+  margin: 10px;
+  border-radius: 15px;
+  will-change: transform, box-shadow;
 }
 
 .header img:hover {
-  box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.95);
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
   cursor: pointer;
-
 }
 
-.footer {
-  display: flex;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  text-align: center;
-}
-
-.footer a {
-  transition: transform 0.2s ease, color 0.2s;
-  font-weight: 800;
-  color: white;
-}
-
-.footer a:hover {
-  transform: scale(.95);
-  color:blue;
-  transition: transform 0.2s ease, color 0.2s;
-}
-
-/* Tooltip Styling */
-.ToolTip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  text-align: center;
-  font-size: 2vw;
-  color: black;
-  background-color: #aaaaaa;
-  margin-top: 20px; /* Controls spacing between the tooltip and buttons */
-  border-radius: 10px;
-  position: relative;
-}
-
-
-/* Button Styling */
+/* Button Styles */
 .Home {
-  width: 650px;
-  font-size: 2em;
-  padding: 25px;
-  background-color: #1565c0;
+  width: 200px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
   margin: 5px;
-  border: solid black 3px;
+  border: none;
   border-radius: 25px;
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  transition: transform 0.3s ease-out, box-shadow 0.25s, background-color 0.3s;
+  cursor: pointer;
 }
 
 .Home:hover {
-  box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.95);
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
-  cursor: pointer;
+  background-color: #0056b3;
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Search, Clear, and Close Buttons */
-.search-button,
-.clear-button,
-.close-button {
-  font-size: 3vw;
-  border-radius: 25px;
-  background-color: #1565c0;
-  transition: transform 0.2s ease, border 0.2s ease;
-  color: white;
-  border: solid white 3px;
+.Home:active {
+  transform: scale(0.9);
 }
 
-.search-button:hover,
-.clear-button:hover,
-.close-button:hover {
-  transform: scale(0.85);
-  border: black solid 3px;
-  transition: transform 0.2s ease, border 0.2s ease;
-}
-
-.clear-button {
-  color: red;
-  background-color: white;
-}
-
-.search-bar {
-  justify-content: center;
-  align-items: center;
-  font-size: 3.5vw;
-  border: solid black 3px;
-  margin: 15px;
-  border-radius: 25px;
-  max-width: 900px;
-  text-align: center;
-}
-
+/* Modal Overlay & Content */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -139,43 +77,109 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow: hidden; /* Prevent body scroll */
+  animation: fadeIn 0.3s ease-out;
 }
 
-.modal-content {
-  background-color: #1976d2;
-  border-radius: 25px;
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  height: 80vh; /* Set a fixed height */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  margin: 0 auto 20px;
   text-align: center;
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  transition: border-color 0.3s;
 }
 
+.search-bar::placeholder {
+  color: #999;
+}
 
+.search-bar:focus {
+  border-color: #0056b3;
+  outline: none;
+}
 
+/* Modal Buttons */
 .modal-buttons {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.carousel-container {
-  position: relative;
+.search-button,
+.clear-button,
+.close-button {
+  font-size: 1.2em;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.search-button:hover,
+.close-button:hover {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+/* Carousel Styles */
+.carousel-controls {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1440px;
-  overflow: hidden;
-  margin: 20px auto;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+/* Carousel Container */
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .carousel-inner {
@@ -184,236 +188,219 @@ body {
   width: 100%;
 }
 
+/* Carousel Item */
 .carousel-item {
   min-width: 50%;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  font-size: 2em;
-  color: white;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* Improved Card Image Styles */
 .carousel-item img {
-  max-width: 300px;
-  height: auto;
-  border: 2px solid blue;
-  border-radius: 8px;
-  margin: auto;
+  display: block;
+  width: 100%;        /* Ensures image spans no more than the card’s width */
+  height: auto;       /* Maintain aspect ratio */
+  max-height: 150px;  /* Set a maximum height */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Carousel navigation buttons */
+.carousel-item img:hover {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Item Title */
+.carousel-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Carousel Navigation Buttons */
 .carousel-button {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 123, 255, 0.8);
   color: white;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 2rem;
-  z-index: 10;
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Left Button Position */
 .carousel-button.left {
-  margin-right: 10px;
-  font-size: 4vw;
+  left: 10px;
 }
 
+/* Right Button Position */
 .carousel-button.right {
-  font-size: 4vw;
-  margin-left: 10px;
+  right: 10px;
 }
 
-.carousel-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+/* Button Hover Effects */
+.carousel-button:hover {
+  background-color: rgba(0, 86, 179, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+/* Selected Product Styles */
+.selected-product {
+  text-align: center;
+  color: #333;
 }
 
 .selected-product h2 {
-  color: white;
+  font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 .selected-product p {
-  font-size: 2em;
-  color: white;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 .product-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  margin: 10px 0;
+}
+
+.product-link:hover {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+.view-templates-button {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 15px;
+}
+
+.view-templates-button:hover {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+/* Footer Styles */
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: white;
-  padding: 15px;
-  margin: auto;
-  margin-bottom: 10px;
-  max-width: 100%;
-  width: fit-content;
-  border-radius: 15px;
-  background-color: #1976d2;
-  border: 3px solid black;
-  color: white;
-  transition: background-color 0.2s, transform 0.2s;
-  font-size: 1.25em;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: auto;
+  color: #333;
+}
+
+.footer a {
+  color: #007bff;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 5px 0;
 }
 
-.product-link:hover {
-  background-color: #1565c0;
-  transform: scale(0.95);
-  transition: background-color 0.2s, transform 0.2s;
+.footer a:hover {
+  color: #0056b3;
+  transform: scale(1.05);
 }
 
-.view-templates-button {
-  color: white;
-  background-color: #1565c0;
-  font-size: 2em;
-  padding: 5px;
-  border-radius: 15px;
-  border: 3px solid white;
-  transition: transform 0.2s, background-color 0.2s;
-  margin-top: 25px;
+.footer p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
-.view-templates-button:hover {
-  background-color: #1976d2;
-  transform: scale(0.95);
-  transition: transform 0.2s, background-color 0.2s;
+.footer p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-
-
-@media (max-width: 2560px) {
-  .search-bar {
-    min-width: 1024px;
-    font-size: 2vw;
-  }
+.footer p a:hover {
+  color: #0056b3;
 }
 
-@media (max-width: 1444px) {
-  .search-bar {
-    font-size: 3.25vw;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header img {
+    min-width: 280px;
   }
 }
 
-/* Media Queries for screens 1280px and below */
-@media (max-width: 1280px) {
-  .search-bar,
-  .search-button,
-  .clear-button,
-  .close-button {
-    font-size: 5vw;
+@media (max-width: 768px) {
+  .header,
+  .footer {
+    padding: 15px;
   }
-  .SargentLogo {
-    height: auto;
-    margin: 10px;
-    min-width: 400px;
-  }
-
-
-  .modal-content {
-    max-width: 1000px;
-    max-height: fit-content;
-  }
-  .search-bar {
-    max-width: 850px;
-    min-width: 850px;
-    font-size: 4vw;
-  }
-}
-
-/* More responsive design as needed */
-
-@media (max-width: 920px) {
-  .search-bar {
-    width: 750px;
-  }
-}
-
-@media (max-width: 770px) {
-  .search-bar,
-  .search-button,
-  .clear-button,
-  .close-button {
-    font-size: 5vw;
-    max-width: 575px;
-    text-align: center;
-  }
-
-
-  .carousel-item img {
-    max-width: 250px;
-    min-width: 50px;
-    height: auto;
-  }
-  .search-bar {
-    min-width: 575px;
-    font-size: 3.75vw;
-  }
-}
-
-@media (max-width: 660px) {
-  .Home {
-    min-width: 500px;
-    max-width: 500px;
-  }
-  .search-bar {
-    min-width: 500px;
-    max-width: 500px;
-  }
-  .carousel-item img {
-    min-width: 150px;
-    max-width: 150px;
-  }
-}
-
-
-@media (max-width: 550px) {
-  .search-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 430px;
-    min-width: 430px;
+  .header img {
+    min-width: 250px;
   }
   .Home {
-    min-width: 430px;
-    max-width: 430px;
+    width: 180px;
+    font-size: 1em;
+  }
+  .footer p {
+    font-size: 1em;
+  }
+  .footer a {
+    font-size: 1em;
   }
 }
 
-@media (max-width: 450px) {
-  .search-bar,
-  .search-button,
-  .clear-button,
-  .close-button {
-    width: 300px;
-    text-align: center;
-    font-size: 6vw;
+@media (max-width: 480px) {
+  .header,
+  .footer {
+    padding: 10px;
   }
-
-
-  .carousel-item img {
-    max-width: 100px;
-    min-width: 100px;
-  }
-  .SargentLogo {
-    min-width: 300px;
+  .header img {
+    min-width: 200px;
   }
   .Home {
-    min-width: 300px;
-    max-width: 300px;
-    font-size: 8vw;
+    width: 150px;
+    font-size: 0.9em;
   }
-  .search-bar {
-    min-width: 350px;
-    max-width: 350px;
-    font-size: 4.5vw;
+  .footer p {
+    font-size: 0.9em;
+  }
+  .footer a {
+    font-size: 0.9em;
   }
 }

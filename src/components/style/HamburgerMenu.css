@@ -1,34 +1,36 @@
 /* Root Variables for Theming */
 :root {
-  --primary-color: #333;
-  --hover-bg-color: #ddd;
-  --bg-color: #dadada;
-  --box-shadow-color: rgba(0, 0, 0, 0.2);
-  --transition-duration: 0.3s;
-  --hamburger-size: 3rem;
-  --pane-width: 25vw;
+  --primary-color: #333; /* Dark text color */
+  --hover-bg-color: #f0f0f0; /* Light hover background */
+  --bg-color: #ffffff; /* White background */
+  --box-shadow-color: rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  --transition-duration: 0.3s; /* Smooth transitions */
+  --hamburger-size: 3rem; /* Size of the hamburger icon */
+  --pane-width: 300px; /* Width of the side pane */
+  --accent-color: #007bff; /* Vibrant blue for accents */
+  --border-radius: 15px; /* Rounded corners */
 }
 
 /* Hamburger Icon */
 .hamburger-icon {
-  position: fixed; /* Keep it outside the menu */
-  top: 5px; /* Adjust the position */
-  left: 20px; /* Adjust the position */
-  background: none;
-  border: 5px solid white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: var(--accent-color); /* Vibrant blue background */
+  border: none;
   font-size: var(--hamburger-size);
   cursor: pointer;
   z-index: 1002; /* Ensure it's above the menu */
-  color: var(--bg-color);
-  transition: color var(--transition-duration), scale var(--transition-duration);
-  background-color: #333;
-  border-radius: 25px;
+  color: white; /* White icon */
+  transition: background-color var(--transition-duration), transform var(--transition-duration);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  box-shadow: 0 4px 6px var(--box-shadow-color); /* Subtle shadow */
 }
 
 .hamburger-icon:hover {
-  color: #ffffff;
-  transition: color var(--transition-duration), scale var(--transition-duration);
-  transform: scale(0.95);
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(0.95); /* Slight scale-down effect */
 }
 
 /* Side Pane */
@@ -47,7 +49,7 @@
   transition: transform var(--transition-duration) ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align text and content properly */
+  align-items: flex-start;
 }
 
 .side-pane.open {
@@ -56,108 +58,129 @@
 
 /* Menu Container */
 .menu {
-  margin-top: 75px; /* Add space below the hamburger icon */
-  width: 100%; /* Ensure it spans the pane width */
+  margin-top: 80px; /* Add space below the hamburger icon */
+  width: 100%;
   text-align: center;
-  background-color: #007bff;
-  border: 5px solid black;
-  border-radius: 25px;
 }
 
 /* Menu Links */
 .menu a {
   width: 100%;
   text-decoration: none;
-  color: white;
+  color: var(--primary-color); /* Ensures high contrast */
   font-weight: bold;
-  font-size: 3em;
+  font-size: 1.5em; /* Readable size */
+  line-height: 1.4;
   transition: background-color var(--transition-duration), color var(--transition-duration);
   display: flex;
-  align-items: center; /* Align icon and text horizontally */
-  justify-content: center; /* Center the content */
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
 }
 
-.exits, .Multipoints, .Bored, .Mortise {
-  margin-top: 15px;
-  border: 5px solid black;
-}
-
-/* Menu Link Hover Effects */
 .menu a:hover {
-  color: black;
+  background-color: var(--hover-bg-color); /* Light hover background */
+  color: var(--accent-color); /* Blue text on hover */
+}
+
+/* Menu Buttons */
+.menu-item button {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 1.3em; /* Slightly larger for clarity */
+  line-height: 1.4;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+  border-radius: var(--border-radius);
+}
+
+.menu-item button:hover {
+  background-color: var(--hover-bg-color); /* Light hover background */
+  color: var(--accent-color); /* Blue text on hover */
 }
 
 /* Submenu Styles */
 .submenu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #007bff;
-  border-radius: 25px;
-  border: 5px dotted white;
-  overflow: hidden; /* Ensures content is hidden when height is limited */
-  max-height: 0; /* Initially collapsed */
+  align-items: flex-start;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  max-height: 0;
   transition: max-height var(--transition-duration) ease-in-out;
+  margin-left: 20px;
 }
 
-/* When submenu is open */
 .submenu.open {
-  border: 3px solid white;
-  max-height: fit-content; /* Set a maximum value large enough for content */
+  max-height: none; /* Allow submenu to expand fully */
 }
 
 /* Nested Submenu Styles */
 .nested-submenu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #1565c0;
-  font-weight: normal;
-  overflow: hidden; /* Ensures content is hidden when height is limited */
-  max-height: 0; /* Initially collapsed */
-  color: black;
+  align-items: flex-start;
+  background-color: var(--hover-bg-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  max-height: 0;
   transition: max-height var(--transition-duration) ease-in-out;
+  margin-left: 20px;
 }
 
-/* When nested submenu is open */
 .nested-submenu.open {
-  max-height: fit-content; /* Adjust as needed for nested content */
+  max-height: none; /* Allow nested submenu to expand fully */
 }
 
-.menu-item button {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  color: white;
-  transition: color 0.3s;
-}
-.menu-item button:hover {
-  color: black;
-}
 
-/* Fix for Text Position */
-.menu h3, .menu button, .exits {
-  font-size: 2em;
-  font-weight: bold;
-  border-radius: 25px;
-  background: none;
-  cursor: pointer;
-}
 
-.wideMenu {
+/* Ensure Submenu and Nested Submenu Button Text is Readable */
+.submenu button,
+.nested-submenu button {
   width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+/* Optional: Add a subtle text-shadow for extra contrast*/
+.menu a,
+.menu-item button,
+.submenu button,
+.nested-submenu button {
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   :root {
-    --pane-width: 60vw; /* Wider pane for smaller screens */
+    --pane-width: 80vw; /* Wider pane for smaller screens */
   }
 
   .hamburger-icon {
-    font-size: 2rem; /* Adjust size for smaller screens */
+    font-size: 2rem; /* Smaller icon for mobile */
+  }
+
+  .menu a {
+    font-size: 1.2em; /* Smaller font size for mobile */
+  }
+
+  .menu-item button {
+    font-size: 1em; /* Smaller font size for mobile */
   }
 }

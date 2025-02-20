@@ -436,7 +436,7 @@ const HamburgerMenu = () => {
                   </button>
                   <button
                     className="exitSeries"
-                    onClick={() => handleButtonClickBored("6500")}
+                    onClick={() => handleButtonClickBored("6500 Series")}
                   >
                     6500 Series
                   </button>
@@ -448,7 +448,7 @@ const HamburgerMenu = () => {
                   </button>
                   <button
                     className="exitSeries"
-                    onClick={() => handleButtonClickBored("DL")}
+                    onClick={() => handleButtonClickBored("DL Series")}
                   >
                     DL Series
                   </button>
