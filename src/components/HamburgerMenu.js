@@ -440,7 +440,7 @@ const HamburgerMenu = () => {
           {/* Bottom section with the external link button */}
           <div className="menu-bottom">
             <button className="bottom-button" onClick={handleExternalLink}>
-              Go to My Tool
+              Sargent Part Number Lookup Tool
             </button>
           </div>
         </div>
