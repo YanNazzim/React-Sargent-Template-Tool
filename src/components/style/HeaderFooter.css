@@ -16,7 +16,7 @@ body {
 /* Header Styles */
 .header {
   display: flex;
-  align-self: stretch;  /* force the header to span 100% even in a centered flex container */
+  align-self: stretch; /* force the header to span 100% even in a centered flex container */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -85,13 +85,23 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Search Bar */
@@ -155,7 +165,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 60%;
   padding: 0 20px;
   margin-top: 20px;
 }
@@ -166,7 +176,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   width: 90%;
-  max-width: 500px;
+  max-width: 800px;
   max-height: 80vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -206,9 +216,9 @@ body {
 /* Improved Card Image Styles */
 .carousel-item img {
   display: block;
-  width: 100%;        /* Ensures image spans no more than the card’s width */
-  height: auto;       /* Maintain aspect ratio */
-  max-height: 150px;  /* Set a maximum height */
+  width: 100%; /* Ensures image spans no more than the card’s width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a maximum height */
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -242,26 +252,32 @@ body {
   justify-content: center;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-250%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Left Button Position */
 .carousel-button.left {
-  left: 10px;
+  z-index: 100;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  left: 200px;
 }
 
 /* Right Button Position */
 .carousel-button.right {
-  right: 10px;
+  right: 200px;
+  font-size: 2em;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
 }
 
 /* Button Hover Effects */
 .carousel-button:hover {
   background-color: rgba(0, 86, 179, 0.9);
-  transform: translateY(-50%) scale(1.1);
 }
-
 
 /* Selected Product Styles */
 .selected-product {
@@ -318,7 +334,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(34,34,34);
+  background-color: rgb(34, 34, 34);
   padding: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
