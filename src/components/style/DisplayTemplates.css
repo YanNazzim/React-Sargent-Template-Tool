@@ -1,162 +1,199 @@
+/* CSS Variables for Theme Management */
+:root {
+  --primary-bg: #2d2d2d;
+  --secondary-bg: #3a3a3a;
+  --accent: #4a9dff;
+  --accent-hover: #3685e0;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b0b0b0;
+  --warning: #ff6b6b;
+  --card-radius: 12px;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
 /* General Styles */
 .display-templates {
-  background-color: rgb(34,34,34); /* Light background */
-  padding: 20px;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  background: var(--primary-bg);
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-primary);
 }
 
 .deviceHeading {
-  font-size: 2.5em;
-  color: #ffffff; /* Dark text */
-  margin-bottom: 20px;
+  font-size: 2.25rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-align: center;
 }
 
 .ToolTip {
-  font-size: 1.2em;
-  color: #666; /* Subtle text */
-  margin-bottom: 30px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
-/* Toggle Buttons with Slider */
+/* Toggle Buttons */
 .view-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 20px auto;
-  background-color: #e0e0e0; /* Light gray */
-  border-radius: 25px;
-  padding: 5px;
-  width: 300px;
-  height: 40px;
+  margin: 2rem auto;
+  background: var(--secondary-bg);
+  border-radius: var(--card-radius);
+  padding: 0.25rem;
+  width: 320px;
+  box-shadow: var(--shadow);
 }
 
 .view-toggle .slider {
   position: absolute;
   width: 50%;
-  height: 80%;
-  background-color: #007bff; /* Vibrant blue */
-  border-radius: 25px;
-  transition: transform 0.3s ease-in-out;
+  height: calc(100% - 8px);
+  background: var(--accent);
+  border-radius: 8px;
+  transition: var(--transition);
+  top: 4px;
+  z-index: 1;
 }
 
-.view-toggle .slider.left {
-  transform: translateX(-45%);
-}
-
-.view-toggle .slider.right {
-  transform: translateX(45%);
-}
+.view-toggle .slider.left { left: 4px; }
+.view-toggle .slider.right { left: calc(50% - 6px); }
 
 .view-toggle button {
-  flex: 1;
-  border: none;
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: var(--transition);
   background: transparent;
-  font-size: 1em;
-  font-weight: bold;
+  border: none;
   cursor: pointer;
-  z-index: 1;
-  color: #333; /* Dark text */
-  transition: color 0.3s;
+  z-index: 2;
 }
 
 .view-toggle button.active {
-  color: white; /* White text for active button */
+  color: var(--text-primary);
 }
 
-.view-toggle button:hover {
-  color: #007bff; /* Vibrant blue on hover */
+.view-toggle button:hover:not(.active) {
+  color: var(--accent);
 }
 
 /* Template Grid */
 .template-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.template-grid.single-item {
-  display: flex;
-  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Template Card */
 .template-card {
-  border: 3px solid white;
-  background-color: #999999;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-  text-align: center;
+  background: var(--secondary-bg);
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow);
 }
 
 .template-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .template-card.selected {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Even stronger shadow */
+  transform: scale(1.03);
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
 .template-image {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  transition: transform 0.3s;
+  width: 90%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: var(--primary-bg);
+  padding: 1rem;
+  transition: var(--transition);
 }
 
 .template-image:hover {
-  transform: scale(1.05); /* Slight scale on hover */
+  transform: scale(1.05);
 }
 
 .template-details {
-  margin-top: 15px;
-  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
 }
 
 .template-details h3 {
-  font-size: 1.2em;
-  color: #dc3545; /* Red for warnings */
-  margin-bottom: 10px;
+  color: var(--warning);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .template-details a {
-  display: block;
-  color: #ffffff; /* Vibrant blue */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  transition: var(--transition);
   text-decoration: none;
-  margin: 10px 0;
-  transition: color 0.3s;
 }
 
 .template-details a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  background: rgba(74, 157, 255, 0.1);
+  color: var(--accent-hover);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .deviceHeading {
-    font-size: 2em;
+    font-size: 1.75rem;
+  }
+
+  .view-toggle {
+    width: 280px;
   }
 
   .template-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .deviceHeading {
-    font-size: 1.5em;
-  }
-
   .template-grid {
     grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .template-card {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .template-image {
+    height: 180px;
   }
 }
