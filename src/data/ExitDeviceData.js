@@ -1527,7 +1527,7 @@ export const ExitDevices = {
       text: "View (04 Function) Cylinder only Inside Mounting Template Doc# MEDT35",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238406",
       text1:
-        "View (04 Function) with ET Trim Inside Mounting Template Doc# MEDT41 ",
+        "View (04 Function) with ET Trim Inside Mounting Template Doc# MEDT36 ",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
