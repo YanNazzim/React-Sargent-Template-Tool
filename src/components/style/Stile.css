@@ -1,85 +1,105 @@
-/* Stile Page as a strict 2-column grid with reduced vertical gap */
 .stile-page {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
-  column-gap: 15px; /* Horizontal gap remains */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 30px;
   background-color: rgb(69, 69, 69);
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center;
+  align-items: stretch;
 }
 
-
-
-/* Button styling - fixed sizes across all viewports */
 .btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   background-color: #007bff;
-
-  /* pick the “largest” size you want from the start */
-  width: 400px;
-  height: 350px;
-  font-size: 2em;
-
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  height: 200px;
+  font-size: 1.8em;
   color: white;
-  margin: 5px;
   border: 3px solid #0056b3;
-  border-radius: 20px;
-  padding: 20px;
-  font-weight: bold;
+  border-radius: 15px;
+  padding: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
   overflow: hidden;
-  user-select: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  /* Prevent shrinking if the grid is too narrow */
-  flex-shrink: 0;
-}
-
-/* Image styling remains unchanged */
-.btn-image {
-  max-width: 250px;
-  height: auto;
-  max-height: 150px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-/* Button hover effect */
-.btn:hover {
-  background-color: #0056b3;
-  border: 3px solid #004080;
-  transform: scale(0.98);
+  flex-grow: 1;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover .btn-image {
-  transform: scale(1.05);
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  z-index: 2;
 }
 
-/* Media query for vertical stacking on mobile devices */
+.btn-image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-right: 25px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover .btn-image {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Glow effect */
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .stile-page {
-    grid-template-columns: 1fr; /* Stack items vertically */
-    row-gap: 15px; /* Increase vertical gap if needed */
+    padding: 20px;
+    gap: 15px;
   }
-  
-  /* Optionally adjust button sizes for mobile */
+
   .btn {
-    width: 90%; /* Allow buttons to be nearly full-width */
+    flex-direction: column;
     height: auto;
-    padding: 15px;
-    font-size: 1.5em;
+    min-height: 300px;
+    padding: 25px;
   }
-  
+
   .btn-image {
-    max-width: 100%;
-    max-height: 120px;
+    width: 120px;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .btn-content {
+    align-items: center;
+    text-align: center;
   }
 }

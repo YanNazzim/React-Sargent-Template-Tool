@@ -16,7 +16,8 @@ body {
 /* Header Styles */
 .header {
   display: flex;
-  align-self: stretch; /* force the header to span 100% even in a centered flex container */
+  align-self: stretch;
+  /* force the header to span 100% even in a centered flex container */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -36,12 +37,20 @@ body {
   margin: 10px;
   border-radius: 15px;
   will-change: transform, box-shadow;
+  border: 2px solid #007bff;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .header img:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transform: scale(0.95);
   cursor: pointer;
+  border-color: #0056b3;
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(0.95) rotateZ(2deg);
 }
 
 /* Button Styles */
@@ -56,6 +65,10 @@ body {
   border-radius: 25px;
   transition: transform 0.3s ease-out, box-shadow 0.25s, background-color 0.3s;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .Home:hover {
@@ -70,6 +83,7 @@ body {
 
 /* Modal Overlay & Content */
 .modal-overlay {
+  /* Original properties */
   position: fixed;
   top: 0;
   left: 0;
@@ -82,12 +96,16 @@ body {
   align-items: center;
   z-index: 1000;
   animation: fadeIn 0.3s ease-out;
+
+  /* New styling additions */
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -98,6 +116,7 @@ body {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -114,6 +133,8 @@ body {
   margin: 0 auto 20px;
   text-align: center;
   transition: border-color 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
 }
 
 .search-bar::placeholder {
@@ -123,6 +144,8 @@ body {
 .search-bar:focus {
   border-color: #0056b3;
   outline: none;
+  background: rgba(255, 255, 255, 0.15);
+
 }
 
 /* Modal Buttons */
@@ -216,9 +239,12 @@ body {
 /* Improved Card Image Styles */
 .carousel-item img {
   display: block;
-  width: 100%; /* Ensures image spans no more than the card’s width */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 150px; /* Set a maximum height */
+  width: 100%;
+  /* Ensures image spans no more than the card’s width */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-height: 150px;
+  /* Set a maximum height */
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -238,6 +264,7 @@ body {
 
 /* Carousel Navigation Buttons */
 .carousel-button {
+  /* Original properties */
   width: 40px;
   height: 40px;
   background-color: rgba(0, 123, 255, 0.8);
@@ -254,6 +281,10 @@ body {
   top: 50%;
   transform: translateY(-250%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  /* New styling additions */
+  border: 2px solid #0056b3;
+  backdrop-filter: blur(4px);
 }
 
 /* Left Button Position */
@@ -385,40 +416,60 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header,
-  .footer {
+
+  .header {
+    /* Original properties */
     padding: 15px;
+
+    /* New styling additions */
+    flex-direction: column;
+    background-image: none;
   }
+
   .header img {
+    /* Original properties */
     min-width: 250px;
+
+    /* New styling additions */
+    margin: 10px 0;
   }
+
   .Home {
+    /* Original properties */
     width: 180px;
     font-size: 1em;
+
+    /* New styling additions */
+    order: 2;
   }
-  .footer p {
-    font-size: 1em;
-  }
-  .footer a {
-    font-size: 1em;
+
+  .search-bar {
+    /* New styling additions */
+    order: 3;
+    width: 95%;
   }
 }
 
 @media (max-width: 480px) {
+
   .header,
   .footer {
     padding: 10px;
   }
+
   .header img {
     min-width: 200px;
   }
+
   .Home {
     width: 150px;
     font-size: 0.9em;
   }
+
   .footer p {
     font-size: 0.9em;
   }
+
   .footer a {
     font-size: 0.9em;
   }

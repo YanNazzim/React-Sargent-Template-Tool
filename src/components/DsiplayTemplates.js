@@ -78,7 +78,7 @@ function DisplayTemplates() {
       <h2 className="ToolTip">Click/Tap on pictures to see more!</h2>
 
       {/* Toggle Buttons with Slider */}
-      <div className="view-toggle">
+      <div className="view-toggle" >
         <div
           className={`slider ${viewMode === "templates" ? "left" : "right"}`}
         ></div>

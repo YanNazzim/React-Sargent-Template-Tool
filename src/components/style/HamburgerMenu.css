@@ -210,3 +210,140 @@
     font-size: 1em; /* Smaller font size for mobile */
   }
 }
+
+/* PRESERVED ORIGINAL CODE ABOVE */
+
+/* New Enhancements - Add below original code */
+.hamburger-icon {
+  /* Animated burger bars */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all var(--transition-duration);
+  transform-origin: center;
+}
+
+/* Dynamic icon animation */
+.hamburger-icon:hover::before {
+  transform: translateY(2px) rotate(45deg);
+}
+
+.hamburger-icon:hover::after {
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+.side-pane {
+  /* Frosted glass effect */
+  backdrop-filter: blur(12px);
+  background-color: rgba(34, 34, 34, 0.98);
+  border-right: 3px solid var(--accent-color);
+}
+
+.menu a {
+  /* Gradient underline effect */
+  position: relative;
+  overflow: hidden;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width var(--transition-duration);
+}
+
+.menu a:hover::after {
+  width: 60%;
+}
+
+/* Submenu indicators */
+.submenu button::before {
+  content: '›';
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--accent-color);
+  transition: transform var(--transition-duration);
+}
+
+.submenu button:hover::before {
+  transform: translateX(5px);
+}
+
+.nested-submenu button::before {
+  content: '»';
+}
+
+/* Bottom button animation */
+.bottom-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg) translate(-20%, 100%);
+  transition: transform 0.6s ease;
+}
+
+.bottom-button:hover::after {
+  transform: rotate(45deg) translate(20%, -100%);
+}
+
+/* Nested menu indentation */
+.nested-submenu {
+  margin-left: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Better touch targets */
+.menu-item button {
+  position: relative;
+  padding-left: 40px;
+}
+
+.menu-item button::after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+/* Mobile enhancements */
+@media (max-width: 768px) {
+  .side-pane {
+    backdrop-filter: blur(8px);
+  }
+  
+  .menu-item button {
+    padding-left: 35px;
+  }
+}
+
+.menu-top {
+  padding-top: 40px; /* Creates space below hamburger icon */
+}
