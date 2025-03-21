@@ -597,17 +597,20 @@ export const ExitDevices = {
       trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
-      text1:
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055954",
+      text1: "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
+      
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055953",
-      text2: "View Trim Template (700-4 ET) Doc# 4436-E",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
-      text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5:
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055953",
+      text3: "View Trim Template (700-4 ET) Doc# 4436-E",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
+      text4: "View 650/606 Strike Template Doc# 4449-G",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
@@ -630,17 +633,19 @@ export const ExitDevices = {
       trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
-      text1:
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055954",
+      text1: "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
+      text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
-      text2: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
-      text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5:
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
+      text3: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
+      text4: "View 650/606 Strike Template Doc# 4449-G",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
@@ -663,17 +668,20 @@ export const ExitDevices = {
       trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
-      text1:
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
+      text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
+      
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
+      text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
-      text2: "View Trim Template (700-4 ET) Doc# 4448-J",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
-      text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5:
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
+      text3: "View Trim Template (700-4 ET) Doc# 4448-J",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
+      text4: "View 650/606 Strike Template Doc# 4449-G",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
@@ -696,17 +704,20 @@ export const ExitDevices = {
       trims: trimsString,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
-      text1:
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
+      text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
+      
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
+      text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
-      text2: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
-      text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
-      text5:
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
+      text3: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
+      text4: "View 650/606 Strike Template Doc# 4449-G",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
