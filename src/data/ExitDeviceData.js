@@ -2130,8 +2130,6 @@ export const ExitDevices = {
         "View Cylinder Application (04 Function) Mounting Template Doc# 54581",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055977",
       text2: "View Bracket Mounting Template (Metal Doors) Doc# 4579",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text3: "View Trim Template (700 ET) Doc# 4277",
 
       installation: [
         {
