@@ -190,6 +190,27 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+
+      installation: [
+        {
+          device: "8300",
+          title: "8300 Mounting Related Instructions",
+          image: Images.narrowMortise8300,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055317",
+          text: "View (12)8300 Main Mounting Installation Instructions Doc# A6696",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
+          text1: "View (12)8300 Through Bolt Application Installation Instructions Doc# A6257",
+        },
+        {
+          device: "8300",
+          title: "8300 Cylinder / Accessories Related Instructions",
+          image: Images.narrowMortise8300,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
+          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7411',
+        },
+      ],
     },
     {
       device: "8300",
@@ -283,6 +304,29 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+
+      installation: [
+        {
+          device: "MD8400",
+          title: "8400 Mounting Related Instructions",
+          image: Images.narrowCVR8400,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055344",
+          text: "View (12)(NB)MD8400 Main Mounting Installation Instructions Doc# A6697",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
+          text1: "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
+        },
+        {
+          device: "MD8400",
+          title: "8400 Cylinder / Accessories Related Instructions",
+          image: Images.narrowCVR8400,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
+          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
+          text1: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+        },
+      ],
     },
     {
       device: "MD8400",
@@ -345,6 +389,30 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      installation: [
+        {
+          device: "AD8400",
+          title: "8400 Mounting Related Instructions",
+          image: Images.narrowCVR8400,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055344",
+          text: "View (12)(NB)MD8400 Main Mounting Installation Instructions Doc# A6697",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
+          text1: "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
+        },
+        {
+          device: "AD8400",
+          title: "8400 Cylinder / Accessories Related Instructions",
+          image: Images.narrowCVR8400,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
+          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
+          text1: 'View 106/113 Aux Control Installation Instructions Doc# A7955',
+          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055347',
+          text2: 'View 639/640 Strikes Installation Instructions Doc# A8037',
+        },
+      ],
     },
     {
       device: "AD8400",
@@ -409,6 +477,25 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text5:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+      installation: [
+        {
+          device: "8500",
+          title: "8500 Mounting Related Instructions",
+          image: Images.narrowRimExit8500,
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066698",
+          text: "View (12)(AD)8500 Main Mounting Installation Instructions Doc# AA6699",
+        },
+        {
+          device: "8500",
+          title: "8500 Cylinder / Accessories Related Instructions",
+          image: Images.narrowRimExit8500,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
+          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
+          text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+        },
+      ]
     },
     {
       device: "8500",
@@ -508,6 +595,26 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text5:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
+
+      installation: [
+        {
+          device: "AD8500",
+          title: "8500 Mounting Related Instructions",
+          image: Images.narrowRimExit8500,
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066698",
+          text: "View (12)(AD)8500 Main Mounting Installation Instructions Doc# AA6699",
+        },
+        {
+          device: "AD8500",
+          title: "8500 Cylinder / Accessories Related Instructions",
+          image: Images.narrowRimExit8500,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
+          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
+          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
+          text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+        },
+      ]
     },
     {
       device: "AD8500",
@@ -599,7 +706,7 @@ export const ExitDevices = {
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055954",
       text1: "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
-      
+
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
@@ -612,6 +719,25 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+
+      installation: [
+        {
+          device: "WD8600",
+          title: "WD8600 Mounting Related Instructions",
+          image: Images.wideCVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055329",
+          text: "View (12)(NB)WD8600 Main Mounting Installation Instructions Doc# A3937",
+        },
+        {
+          device: "WD8600",
+          title: "WD8600 Cylinder / Accessories Related Instructions",
+          image: Images.wideCVR,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
+          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+        },
+      ],
     },
     {
       device: "WD8600",
@@ -670,7 +796,7 @@ export const ExitDevices = {
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
-      
+
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
@@ -683,6 +809,25 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+
+      installation: [
+        {
+          device: "MD8600",
+          title: "MD8600 Mounting Related Instructions",
+          image: Images.wideCVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055345",
+          text: "View (12)(NB)MD8600 Main Mounting Installation Instructions Doc# A7002",
+        },
+        {
+          device: "MD8600",
+          title: "MD8600 Cylinder / Accessories Related Instructions",
+          image: Images.wideCVR,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
+          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+        },
+      ],
     },
     {
       device: "MD8600",
@@ -706,7 +851,7 @@ export const ExitDevices = {
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
-      
+
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
@@ -752,6 +897,24 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      installation: [
+        {
+          device: "AD8600",
+          title: "AD8600 Mounting Related Instructions",
+          image: Images.wideCVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055345",
+          text: "View (12)(NB)AD8600 Main Mounting Installation Instructions Doc# A7002",
+        },
+        {
+          device: "WD8600",
+          title: "WD8600 Cylinder / Accessories Related Instructions",
+          image: Images.wideCVR,
+
+          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
+          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+        },
+      ],
     },
     {
       device: "AD8600",
@@ -807,6 +970,16 @@ export const ExitDevices = {
 
       link: "https://www.sargentlock.com/en/standalone/lp8600-template",
       text: "View Template Request Form (Door Manufacturers Only)",
+      installation: [
+        {
+          device: "LP8600",
+          title: "LP/LR/LS 8600 Mounting Related Instructions",
+          image: Images.wideCVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055354",
+          text: "(12-)LP8600 x (12-)LR8600, (12-)LS8600 CTL CVR Low Profile Double Egress and Double Doors, Single Door Installation Instructions Doc# A7393",
+        }
+      ]
     },
     {
       device: "8700",
@@ -845,6 +1018,26 @@ export const ExitDevices = {
       link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text7:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      installation: [
+        {
+          device: "8700",
+          title: "8700 Mounting Related Instructions",
+          image: Images.wideSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055361",
+          text: "View (STD, 12, HC, HC4)8700 Main Mounting Installation Instructions Doc# A6701",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1064525",
+          text1: "View (12)FM8700 Main Mounting Installation Instructions Doc# A7827",
+        },
+        {
+          device: "8700",
+          title: "8700 Cylinder / Accessory Related Instructions",
+          image: Images.wideSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
+          text: "View 306/313 Aux Control Installation Instructions Doc# A5978",
+        },
+      ]
     },
     {
       device: "8700",
@@ -981,6 +1174,24 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      installation: [
+        {
+          device: "NB-8700",
+          title: "8700 Mounting Related Instructions",
+          image: Images.wideSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055330",
+          text: "View (12)NB8700 Main Mounting Installation Instructions Doc# A7617",
+        },
+        {
+          device: "NB-8700",
+          title: "8700 Cylinder / Accessory Related Instructions",
+          image: Images.wideSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055342",
+          text: "View NB306/NB313 Aux Control Installation Instructions Doc# A7830",
+        },
+      ]
     },
     {
       device: "NB-8700",
@@ -1088,6 +1299,32 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+      installation: [
+        {
+          device: "8800",
+          title: "8800 Mounting Related Instructions",
+          image: Images.wideStileRim,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055349",
+          text: "View (12-)(WS)(HC-)8800, (12-)8888 Wide Stile Rim Installation Instructions Doc# A6770",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055341",
+          text1: "View (12-)8800 Wide Stile Rim 16, 28, 63, & 66 Functions Installation Instructions Doc# A6703",
+        },
+        {
+          device: "8800",
+          title: "8800 Cylinder / Accessory Related Instructions",
+          image: Images.wideStileRim,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055356",
+          text: "View 814 FSL, MSL, PSB Pull Trim (Night Latch) Installation Instructions Doc# A5025",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055309",
+          text1: "View Anti-Vandal Pull Trim Installation Instructions Doc# A5030",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055301",
+          text2: "View 862, 863, 864 Pull Trim INstallation Instructions Doc# A7474",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055269",
+          text3: "View PTB Pull Trim Installation Instruction Doc# A5851",
+        },
+      ]
     },
 
     {
@@ -1365,6 +1602,25 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+
+      installation: [
+        {
+          device: "8900",
+          title: "8900 Mounting Related Instructions",
+          image: Images.wideMortise,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055332",
+          text: "View (12)(WS)8900 Wide Stile Mortise Installation Instructions Doc# A6705"
+        },
+        {
+          device: "8900",
+          title: "8900 Cylinder / Accessory Related Instructions",
+          image: Images.wideMortise,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055309",
+          text: "View Anti Vandal Pull Trim Installation Instructions Doc# A5030",
+        },
+      ]
     },
     {
       device: "8900",
@@ -2231,12 +2487,12 @@ export const ExitDevices = {
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
           text3:
             "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
-            link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
-            text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
-            link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
-            text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
-            link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
-            text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
+          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
+          text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
+          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
+          text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
+          link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
+          text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
         },
       ],
     },
