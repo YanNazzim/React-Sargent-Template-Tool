@@ -984,7 +984,7 @@ export const ExitDevices = {
     {
       device: "8700",
 
-      title: "8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
+      title: "(NB) 8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
       image: Images.wideSVR,
       functions:
         "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 646, 624, 655, 648, 653, 646 Strike, 624 Strike, 655 Strike, 648 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
@@ -1042,7 +1042,7 @@ export const ExitDevices = {
     {
       device: "8700",
 
-      title: "12-8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
+      title: "(NB) 12-8700 SVR Exit (06, 10, 13, 15, 40, 43, 46, 73, 74)",
       image: Images.wideSVR,
       functions:
         "8706, 8710, 8713, 8715, 8740, 8743, 8746, 8773, 8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 646, 624, 655, 648, 653, Strike, 646 Strike, 624 Strike, 655 Strike, 648 Strike, 653 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, Electrified Trim, Electrified, 773, 774",
@@ -1216,8 +1216,8 @@ export const ExitDevices = {
       text: "View Single Door Mounting Template (Any Material) Doc# 4553-C",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
       text1: "View Double Door Mounting Template (Any Material) Doc# 4559-G",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text2: "View Trim Template (700 ET) Doc# 4277-18",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text2: "View Trim Template (700-8 ET) Doc# 4414-H",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
       text3:
         "View 653/654/659/655 Standard Top&Bottom Strike Template Doc# 4296-G",
@@ -1286,8 +1286,8 @@ export const ExitDevices = {
       ),
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055914",
       text: "View Mounting Template (Any Material) Doc# 4415-H",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text1: "View Trim Template (700 ET) Doc# 4277-18",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text1: "View Trim Template (700-8 ET) Doc# 4414-H",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
@@ -1385,8 +1385,6 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055921",
       text: "View Mounting Template (Any Material) Doc# 4285_11",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
-      text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text2: "View 649 Strike Template (Single Door) Doc# 4004-K",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
@@ -2586,7 +2584,7 @@ export const ExitDevices = {
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055928",
       text2: "View Electrified Trim Template (54-)700 ET Template Doc# 4314-T",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
       text4: "View 649 Standard Strike Template (Single Door) Doc# 4004-K",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055985",
       text5: "View 613 Alternate Strike Template Doc# 3995-F",
