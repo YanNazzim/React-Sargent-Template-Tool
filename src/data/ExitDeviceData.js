@@ -1722,6 +1722,17 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
+        installation: [
+          {
+            device: "PE8300",
+            title: "PE8300 Mounting Related Instructions",
+            image: Images.narrowPE80Mortise,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234580",
+            text: "(12-)PE8300 Narrow Stile Mortise Installation Instructions Doc# A8303",
+
+          },
+        ]
     },
     {
       device: "PE8400",
@@ -1759,7 +1770,19 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
-    },
+        installation: [
+          {
+            device: "PE8400",
+            title: "PE8400 Mounting Related Instructions",
+            image: Images.narrowPECVR,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234590",
+            text: "(12-)(MD)(AD)PE8400 Narrow Stile CVR Installation Instructions Doc# A8306",
+            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234586',
+            text1: '(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309',
+          },
+        ]
+      },
     {
       device: "PE8500",
 
@@ -1796,7 +1819,19 @@ export const ExitDevices = {
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
-    },
+        installation: [
+          {
+            device: "PE8500",
+            title: "PE8500 Mounting Related Instructions",
+            image: Images.narrowPE8500,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234578",
+            text: "(12-)(AD)PE8500 Installation Instructions Doc# A8302",
+            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
+            text1: '604 Rub Strip Installation Instructions Doc# A8148',
+          },
+        ]
+      },
     {
       device: "PE8500",
 
@@ -1893,7 +1928,24 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
-    },
+        installation: [
+          {
+            device: "PE8600",
+            title: "PE8600 Mounting Related Instructions",
+            image: Images.widePECVR,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234584",
+            text: "(12-)(MD)(AD)PE8600 Wide Stile CVR Installation Instructions Doc# A8305",
+            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234588',
+            text1: '(12-)(WD)(NB-)PE8600 Wide Stile CVR Installation Instructions Doc# A8315',
+            link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234586',
+            text2: '(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309',
+            link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055347',
+            text3: '(AD) 639/640 Strikes Installation Instructions Doc# A8037',
+
+          },
+        ]
+      },
     {
       device: "PE8600",
 
@@ -2001,7 +2053,24 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
-    },
+        installation: [
+          {
+            device: "PE8700",
+            title: "PE8700 Mounting Related Instructions",
+            image: Images.widePESVR,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234592",
+            text: "(12-)(HC-)(HC4-)PE8700 Wide Stile SVR Installation Instructions Doc# A8307",
+            link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234594',
+            text1: '(12-)FM-PE8700 Wide Stile SVR Installation Instructions Doc# A8319',
+            link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055351',
+            text2: '306 and 313 Auxiliary Control Installation Instructions Doc# A5978',
+            link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234596',
+            text3: 'Shim Kit (FM-PE8700) Installation Instructions Doc# A8338',
+
+          },
+        ]
+      },
     {
       device: "PE8700",
 
@@ -2107,7 +2176,20 @@ export const ExitDevices = {
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
-    },
+        installation: [
+          {
+            device: "PE8700",
+            title: "NB-PE8700 Mounting Related Instructions",
+            image: Images.widePESVR,
+            warning: "NB uses same parts as standard. Just omit bottom prep during installation",
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234592",
+            text: "(12-)(HC-)(HC4-)PE8700 Wide Stile SVR Installation Instructions Doc# A8307",
+            link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055351',
+            text2: '306 and 313 Auxiliary Control Installation Instructions Doc# A5978',
+          },
+        ]
+      },
     {
       device: "NB-PE8700",
 
@@ -2172,7 +2254,25 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text3:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
-    },
+        installation: [
+          {
+            device: "PE8800",
+            title: "PE8800 Mounting Related Instructions",
+            image: Images.widePERim,
+
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234574",
+            text: "(12-)(WS)PE8800 Wide Stile Rim Installation Instructions Doc# A8301",
+            link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246385',
+            text2: '(12-)PE8800 Wide Stile Rim 16, 28, 63, and 66 Functions Installation Instructions Doc# A8296',
+            link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055316",
+            text3: "(12-)HC8800, (12-)HC-PE8800 Wide Stile Rim Installation Instructions Doc# A7683",
+            link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055309',
+            text4: 'Anti-Vandal Pull Trim Installation Instructions Doc# A5030',
+            link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1234576",
+            text5: "93 Decorative, Static Pushbar and 95 Active Dummy Rail for PE80 Series PE8800 Wide Stile Rim Installation Instructions Doc# A8320",
+          },
+        ]
+      },
     {
       device: "PE8800",
 
