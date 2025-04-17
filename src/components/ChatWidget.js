@@ -48,7 +48,7 @@ const ChatWidget = () => {
             location="us"
             triggerId="searchWidgetTrigger"
           ></gen-search-widget>
-          <input placeholder="Search here" id="searchWidgetTrigger" />
+          <input placeholder="Ask the AI a question" id="searchWidgetTrigger" />
           {/* Add any additional styling or elements as needed */}
         </div>
       )}
