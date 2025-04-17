@@ -1,0 +1,64 @@
+/* src/components/ChatWidget.css */
+.chat-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9999; /* High z-index to stay on top */
+  }
+  
+  .chat-bubble {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-bubble:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .chat-window {
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+    /* Add more styling as needed for the widget */
+  }
+
+  /* src/components/ChatWidget.css */
+
+/* Target the input field */
+#searchWidgetTrigger {
+    border: 1px solid red; /* Example: Change the border */
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Target a hypothetical result container (adjust the selector) */
+  .gen-search-result {
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+  }
+  
+  /* Example to style the button */
+  .gen-search-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

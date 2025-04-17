@@ -18,6 +18,7 @@ import CylindersInfo from "./components/CylindersInfo.js";
 import MultiPointSeries from'./components/MultiPointSeries.js';
 import EMProducts from './components/EMProducts.js'
 import HamburgerMenu from "./components/HamburgerMenu"; // Import the menu
+import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
         <Route path="/em-products" element={<EMProducts />} />
 
       </Routes>
+      <ChatWidget />
+
       <Footer /> {/* Ensure Footer is part of every page */}
     </Router>
   );
