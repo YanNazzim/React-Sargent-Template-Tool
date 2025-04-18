@@ -1,0 +1,30 @@
+/* src/components/style/ChatWidgetCustom.css */
+
+.custom-chat-window {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    border: 2px solid #444; /* Darker border */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9); /* Stronger shadow */
+  }
+  
+  .custom-chat-window input {
+    background-color: #333; /* Darker input */
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .custom-chat-window input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Example: Adjust result styles */
+  .custom-chat-window .gen-search-result {
+    border-bottom: 1px solid #555;
+    padding: 10px;
+  }
+  
+  .custom-chat-window .gen-search-result:last-child {
+    border-bottom: none;
+  }
+  
+  /* Add more styles as needed */

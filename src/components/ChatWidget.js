@@ -1,10 +1,11 @@
-// src/components/ChatWidget.js
 import React, { useState, useEffect, useRef } from 'react';
-import '../components/style/ChatWidget.css'; // Create a CSS file for styling
+import '../components/style/ChatWidget.css';
+import './style/ChatWidgetCustom.css';
 
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const chatWindowRef = useRef(null);
+  const inputRef = useRef(null); // Ref for the hidden input
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
@@ -17,6 +18,23 @@ const ChatWidget = () => {
     script.async = true;
     document.body.appendChild(script);
 
+    // Function to trigger the hidden input
+    const triggerInput = () => {
+      if (inputRef.current) {
+        inputRef.current.click();
+      }
+    };
+
+    // Open chat and trigger input on button click
+    const chatButton = document.querySelector('.chat-bubble');
+    if (chatButton) {
+      chatButton.addEventListener('click', () => {
+        toggleChat();
+        triggerInput();
+      });
+    }
+
+
     // Handle clicks outside the chat window to close it
     const handleClickOutside = (event) => {
       if (chatWindowRef.current && !chatWindowRef.current.contains(event.target)) {
@@ -27,6 +45,13 @@ const ChatWidget = () => {
     document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      if (chatButton) {
+        chatButton.removeEventListener('click', () => {
+          toggleChat();
+          triggerInput();
+        });
+      }
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
@@ -41,15 +66,20 @@ const ChatWidget = () => {
 
       {/* Chat Window (Appears when the bubble is clicked) */}
       {isOpen && (
-        <div className="chat-window" ref={chatWindowRef}>
+        <div className="chat-window custom-chat-window" ref={chatWindowRef}>
           {/* Your widget code here */}
           <gen-search-widget
             configId="64e54ea6-0482-4f95-b14d-8d268cd8e835"
             location="us"
             triggerId="searchWidgetTrigger"
           ></gen-search-widget>
-          <input placeholder="Ask our AI a question" id="searchWidgetTrigger" />
-          {/* Add any additional styling or elements as needed */}
+          {/* Hidden input field */}
+          <input
+            id="searchWidgetTrigger"
+            ref={inputRef}
+            style={{ display: 'none' }}
+            readOnly // Make it read-only
+          />
         </div>
       )}
     </div>

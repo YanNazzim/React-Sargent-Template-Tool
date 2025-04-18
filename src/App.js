@@ -43,9 +43,10 @@ function App() {
         <Route path="/em-products" element={<EMProducts />} />
 
       </Routes>
-      <ChatWidget />
+      
 
-      <Footer /> {/* Ensure Footer is part of every page */}
+      <Footer  /> {/* Ensure Footer is part of every page */}
+      <ChatWidget />
     </Router>
   );
 }
