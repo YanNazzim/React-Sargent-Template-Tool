@@ -25,6 +25,10 @@ const ChatWidget = () => {
       }
     };
 
+    const toggleChat = () => {
+      setIsOpen(!isOpen);
+  };
+
     // Open chat and trigger input on button click
     const chatButton = document.querySelector('.chat-bubble');
     if (chatButton) {
@@ -54,14 +58,13 @@ const ChatWidget = () => {
       }
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [isOpen]); // Added toggleChat to the dependency array
 
   return (
     <div className="chat-widget-container">
       {/* Chat Bubble (Always Visible) */}
-      <div className="chat-bubble" onClick={toggleChat}>
-        {/* You can add an icon or image here */}
-        Click Here for <br /> AI Powered Search
+      <div className="chat-bubble">
+        AI Powered Search
       </div>
 
       {/* Chat Window (Appears when the bubble is clicked) */}
