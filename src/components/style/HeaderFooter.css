@@ -4,13 +4,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Crucial: Minimum full viewport height */
   box-sizing: border-box;
   font-size: 16px;
   background-color: #f4f4f4;
   overflow-x: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* No display:flex or align-items:center here */
+  display: flex; /* Crucial: Flex container for body */
+  flex-direction: column; /* Crucial: Vertical layout */
 }
 
 /* Header Styles */
@@ -358,9 +359,13 @@ body {
   background-color: #0056b3;
   transform: scale(0.95);
 }
+main {
+  flex: 1; /* NEW:  Allow main to grow and take remaining vertical space */
+}
 
 /* Footer Styles */
 .footer {
+  /* Keep existing styles */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,8 +374,7 @@ body {
   padding: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 100%;
-  margin-top: auto;
+  height: auto; /* Changed from 100% to auto */
   color: #333;
 }
 
