@@ -36,7 +36,7 @@ const ChatWidget = () => {
       {/* Chat Bubble (Always Visible) */}
       <div className="chat-bubble" onClick={toggleChat}>
         {/* You can add an icon or image here */}
-        AI
+        Click Here for <br /> AI Powered Search
       </div>
 
       {/* Chat Window (Appears when the bubble is clicked) */}
