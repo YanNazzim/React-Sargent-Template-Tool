@@ -25,9 +25,6 @@ const ChatWidget = () => {
       }
     };
 
-    const toggleChat = () => {
-      setIsOpen(!isOpen);
-  };
 
     // Open chat and trigger input on button click
     const chatButton = document.querySelector('.chat-bubble');
@@ -58,6 +55,7 @@ const ChatWidget = () => {
       }
       document.removeEventListener('mousedown', handleClickOutside);
     };
+    // eslint-disable-next-line 
   }, [isOpen]); // Added toggleChat to the dependency array
 
   return (
