@@ -70,17 +70,12 @@ const ChatWidget = () => {
         <div className="chat-window custom-chat-window" ref={chatWindowRef}>
           {/* Your widget code here */}
           <gen-search-widget
-            configId="64e54ea6-0482-4f95-b14d-8d268cd8e835"
-            location="us"
-            triggerId="searchWidgetTrigger"
-          ></gen-search-widget>
-          {/* Hidden input field */}
-          <input
-            id="searchWidgetTrigger"
-            ref={inputRef}
-            style={{ display: 'none' }}
-            readOnly // Make it read-only
-          />
+  configId="64e54ea6-0482-4f95-b14d-8d268cd8e835"
+  location="us"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<input placeholder="Search here" id="searchWidgetTrigger" />
         </div>
       )}
     </div>
