@@ -299,7 +299,7 @@ export const ExitDevices = {
       text1: "View Trim Template (700-4 ET) Doc# 4448-J",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text2: "View 650/652/606 Standard Strike Template Doc# 4449-G",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
@@ -353,7 +353,7 @@ export const ExitDevices = {
       text1: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text2: "View 650/652/606 Standard Strike Template Doc# 4449-G",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
@@ -384,7 +384,7 @@ export const ExitDevices = {
       text1: "View Trim Template (700-4 ET) Doc# 4448-J",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055939",
       text2: "View 640 Standard Strike Template Doc# 4649-A",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
@@ -439,7 +439,7 @@ export const ExitDevices = {
       text1: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055939",
       text2: "View 640 Standard Strike Template Doc# 4649-A",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text3: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055898",
       text4:
@@ -715,7 +715,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      text5: "View 106/113 Auxiliary Trim Doc# 4433-A",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
@@ -769,7 +769,7 @@ export const ExitDevices = {
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
-      text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
+      text5: "View 106/113 Auxiliary Trim Doc# 4433-A",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
@@ -804,7 +804,7 @@ export const ExitDevices = {
       text3: "View Trim Template (700-4 ET) Doc# 4448-J",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
@@ -859,7 +859,7 @@ export const ExitDevices = {
       text3: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text5: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text6:
@@ -892,7 +892,7 @@ export const ExitDevices = {
       text2: "View Trim Template (700-4 ET) Doc# 4448-J",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5:
@@ -943,7 +943,7 @@ export const ExitDevices = {
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text3: "View 650/606 Strike Template Doc# 4449-G",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055952",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055937",
       text4: "View 106/113 Auxiliary Trim Doc# 4212-D",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
       text5:
