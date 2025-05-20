@@ -210,6 +210,17 @@ export const ExitDevices = {
           link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
           text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7411',
         },
+        {
+          device: "8300",
+          title: "8300 Catalog / Parts Manual",
+          image: Images.narrowMortise8300,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=28',
+          text: 'View 80 Series Catalog (Page 28) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=3',
+          text1: 'View 80 Series Parts Manual (Page 3) Doc# A8231',
+        },
       ],
     },
     {
@@ -326,6 +337,17 @@ export const ExitDevices = {
           link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
           text1: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
         },
+        {
+          device: "MD8400",
+          title: "MD8400 Catalog / Parts Manual",
+          image: Images.narrowCVR8400,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=30',
+          text: 'View 80 Series Catalog (Page 30) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4',
+          text1: 'View 80 Series Parts Manual (Page 4) Doc# A8231',
+        },
       ],
     },
     {
@@ -412,6 +434,17 @@ export const ExitDevices = {
           link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055347',
           text2: 'View 639/640 Strikes Installation Instructions Doc# A8037',
         },
+        {
+          device: "MD8400",
+          title: "MD8400 Catalog / Parts Manual",
+          image: Images.narrowCVR8400,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=32',
+          text: 'View 80 Series Catalog (Page 32) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=8',
+          text1: 'View 80 Series Parts Manual (Page 8) Doc# A8231',
+        },
       ],
     },
     {
@@ -494,6 +527,17 @@ export const ExitDevices = {
           text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
           link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
           text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+        },
+        {
+          device: "8500",
+          title: "8500 Catalog / Parts Manual",
+          image: Images.narrowRimExit8500,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24',
+          text: 'View 80 Series Catalog (Page 24) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10',
+          text1: 'View 80 Series Parts Manual (Page 10) Doc# A8231',
         },
       ]
     },
@@ -613,6 +657,17 @@ export const ExitDevices = {
           text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
           link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
           text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+        },
+        {
+          device: "AD8500",
+          title: "AD8500 Catalog / Parts Manual",
+          image: Images.narrowRimExit8500,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24',
+          text: 'View 80 Series Catalog (Page 24) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10',
+          text1: 'View 80 Series Parts Manual (Page 10) Doc# A8231',
         },
       ]
     },
@@ -737,6 +792,17 @@ export const ExitDevices = {
           link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
           text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
         },
+        {
+          device: "WD8600",
+          title: "WD8600 Catalog / Parts Manual",
+          image: Images.narrowRimExit8500,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=22',
+          text: 'View 80 Series Catalog (Page 22) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=16',
+          text1: 'View 80 Series Parts Manual (Page 16) Doc# A8231',
+        },
       ],
     },
     {
@@ -827,6 +893,17 @@ export const ExitDevices = {
           link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
           text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
         },
+        {
+          device: "MD8600",
+          title: "MD8600 Catalog / Parts Manual",
+          image: Images.wideCVR,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=18',
+          text: 'View 80 Series Catalog (Page 18) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12',
+          text1: 'View 80 Series Parts Manual (Page 12) Doc# A8231',
+        },
       ],
     },
     {
@@ -907,12 +984,23 @@ export const ExitDevices = {
           text: "View (12)(NB)AD8600 Main Mounting Installation Instructions Doc# A7002",
         },
         {
-          device: "WD8600",
-          title: "WD8600 Cylinder / Accessories Related Instructions",
+          device: "AD8600",
+          title: "AD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
           link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
           text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+        },
+        {
+          device: "AD8600",
+          title: "AD8600 Catalog / Parts Manual",
+          image: Images.wideCVR,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=20',
+          text: 'View 80 Series Catalog (Page 20) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=20',
+          text1: 'View 80 Series Parts Manual (Page 20) Doc# A8231',
         },
       ],
     },
@@ -1036,6 +1124,17 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
           text: "View 306/313 Aux Control Installation Instructions Doc# A5978",
+        },
+        {
+          device: "8700",
+          title: "8700 Catalog / Parts Manual",
+          image: Images.wideSVR,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=14',
+          text: 'View 80 Series Catalog (Page 14) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26',
+          text1: 'View 80 Series Parts Manual (Page 26) Doc# A8231',
         },
       ]
     },
@@ -1185,6 +1284,17 @@ export const ExitDevices = {
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
           text1: "View 306/313 Aux Control Installation Instructions Doc# A5978",
         },
+        {
+          device: "NB-8700",
+          title: "8700 Catalog / Parts Manual",
+          image: Images.wideNBSVR,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=16',
+          text: 'View 80 Series Catalog (Page 16) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26',
+          text1: 'View 80 Series Parts Manual (Page 26) Doc# A8231',
+        },
       ]
     },
     {
@@ -1309,6 +1419,17 @@ export const ExitDevices = {
           text2: "View 862, 863, 864 Pull Trim INstallation Instructions Doc# A7474",
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055269",
           text3: "View PTB Pull Trim Installation Instruction Doc# A5851",
+        },
+        {
+          device: "8800",
+          title: "8800 Catalog / Parts Manual",
+          image: Images.wideStileRim,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=10',
+          text: 'View 80 Series Catalog (Page 10) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46',
+          text1: 'View 80 Series Parts Manual (Page 46) Doc# A8231',
         },
       ]
     },
@@ -1603,6 +1724,17 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055309",
           text: "View Anti Vandal Pull Trim Installation Instructions Doc# A5030",
+        },
+        {
+          device: "8900",
+          title: "8900 Catalog / Parts Manual",
+          image: Images.wideMortise,
+
+          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=12',
+          text: 'View 80 Series Catalog (Page 12) Doc# 90641',
+
+          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89',
+          text1: 'View 80 Series Parts Manual (Page 89) Doc# A8231',
         },
       ]
     },
