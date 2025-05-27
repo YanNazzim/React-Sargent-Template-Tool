@@ -1241,7 +1241,7 @@ export const ExitDevices = {
       text3: "View STS Strim Template Doc# (810, 828, 866) 4020-F",
     },
     {
-      device: "NB-8700",
+      device: "NB-8700 NEW",
 
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
       functions:
@@ -1275,7 +1275,7 @@ export const ExitDevices = {
 
       installation: [
         {
-          device: "NB-8700",
+          device: "NB-8700 NEW",
           title: "8700 Mounting Related Instructions",
           image: Images.wideNBSVR,
 
@@ -1285,7 +1285,7 @@ export const ExitDevices = {
           text1: "View 306/313 Aux Control Installation Instructions Doc# A5978",
         },
         {
-          device: "NB-8700",
+          device: "NB-8700 NEW",
           title: "8700 Catalog / Parts Manual",
           image: Images.wideNBSVR,
 
@@ -1298,7 +1298,7 @@ export const ExitDevices = {
       ]
     },
     {
-      device: "NB-8700",
+      device: "NB-8700 NEW",
 
       title: "(12-)NB-8700 (73, 74)",
       functions:
@@ -1330,7 +1330,7 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
-      device: "NB-8700",
+      device: "NB-8700 NEW",
 
       title: "NB-8700 Thumbpiece Trims (10, 28, 62, 63)",
       functions:

@@ -74,7 +74,7 @@ function DisplayTemplates() {
 
   return (
     <div className="display-templates">
-      <h1 className="deviceHeading">{category || "Category"} - {series || "Series"}</h1>
+      <h1 className="deviceHeading">{category || "Category"} - {device || series}</h1>
       <h2 className="ToolTip">Click/Tap on pictures to see more!</h2>
 
       {/* Toggle Buttons with Slider */}

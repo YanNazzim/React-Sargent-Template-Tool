@@ -16,7 +16,8 @@ const wide80Devices = [
     img: Images.wideCVR,
   },
   { id: "8700", name: "8700 Wide SVR Exit", img: Images.wideSVR },
-  { id: "NB-8700", name: "NB-8700 Wide SVR Exit", img: Images.wideNBSVR },
+  { id: "NB-8700 OLD", name: "NB-8700 Wide SVR Exit (OLD STYLE  - Before 4/14/25)", img: Images.wideNBSVR },
+  { id: "NB-8700 NEW", name: "NB-8700 Wide SVR Exit (NEW STYLE  - After 4/14/25)", img: Images.wideNBSVR },
   { id: "8800", name: "8800 Wide Rim Exit", img: Images.wideStileRim },
   { id: "8900", name: "8900 Wide Mortise Exit", img: Images.wideMortise },
 ];
