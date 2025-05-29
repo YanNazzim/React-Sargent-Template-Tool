@@ -200,26 +200,28 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055317",
           text: "View (12)8300 Main Mounting Installation Instructions Doc# A6696",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
-          text1: "View (12)8300 Through Bolt Application Installation Instructions Doc# A6257",
+          text1:
+            "View (12)8300 Through Bolt Application Installation Instructions Doc# A6257",
         },
         {
           device: "8300",
           title: "8300 Cylinder / Accessories Related Instructions",
           image: Images.narrowMortise8300,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
-          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7411',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055333",
+          text: "View 668 Glass Bead Shim Kit Installation Instructions Doc# A7411",
         },
         {
           device: "8300",
           title: "8300 Catalog / Parts Manual",
           image: Images.narrowMortise8300,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=28',
-          text: 'View 80 Series Catalog (Page 28) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=28",
+          text: "View 80 Series Catalog (Page 28) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=3',
-          text1: 'View 80 Series Parts Manual (Page 3) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=3",
+          text1: "View 80 Series Parts Manual (Page 3) Doc# A8231",
         },
       ],
     },
@@ -325,28 +327,31 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055344",
           text: "View (12)(NB)MD8400 Main Mounting Installation Instructions Doc# A6697",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
-          text1: "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
+          text1:
+            "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
         },
         {
           device: "MD8400",
           title: "8400 Cylinder / Accessories Related Instructions",
           image: Images.narrowCVR8400,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
-          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
-          text1: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055333",
+          text: "View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055276",
+          text1:
+            "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
           device: "MD8400",
           title: "MD8400 Catalog / Parts Manual",
           image: Images.narrowCVR8400,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=30',
-          text: 'View 80 Series Catalog (Page 30) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=30",
+          text: "View 80 Series Catalog (Page 30) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4',
-          text1: 'View 80 Series Parts Manual (Page 4) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4",
+          text1: "View 80 Series Parts Manual (Page 4) Doc# A8231",
         },
       ],
     },
@@ -420,30 +425,33 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055344",
           text: "View (12)(NB)MD8400 Main Mounting Installation Instructions Doc# A6697",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055352",
-          text1: "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
+          text1:
+            "View (12)(NB)MD8400 Through Bolt Application Installation Instructions Doc# A6257",
         },
         {
           device: "AD8400",
           title: "8400 Cylinder / Accessories Related Instructions",
           image: Images.narrowCVR8400,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
-          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
-          text1: 'View 106/113 Aux Control Installation Instructions Doc# A7955',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055347',
-          text2: 'View 639/640 Strikes Installation Instructions Doc# A8037',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055333",
+          text: "View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055276",
+          text1:
+            "View 106/113 Aux Control Installation Instructions Doc# A7955",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055347",
+          text2: "View 639/640 Strikes Installation Instructions Doc# A8037",
         },
         {
           device: "MD8400",
           title: "MD8400 Catalog / Parts Manual",
           image: Images.narrowCVR8400,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=32',
-          text: 'View 80 Series Catalog (Page 32) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=32",
+          text: "View 80 Series Catalog (Page 32) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=8',
-          text1: 'View 80 Series Parts Manual (Page 8) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=8",
+          text1: "View 80 Series Parts Manual (Page 8) Doc# A8231",
         },
       ],
     },
@@ -523,23 +531,24 @@ export const ExitDevices = {
           title: "8500 Cylinder / Accessories Related Instructions",
           image: Images.narrowRimExit8500,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
-          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
-          text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055333",
+          text: "View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055362",
+          text1: "View 604 Rub Strip Installation Instructions Doc# A8148",
         },
         {
           device: "8500",
           title: "8500 Catalog / Parts Manual",
           image: Images.narrowRimExit8500,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24',
-          text: 'View 80 Series Catalog (Page 24) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24",
+          text: "View 80 Series Catalog (Page 24) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10',
-          text1: 'View 80 Series Parts Manual (Page 10) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
+          text1: "View 80 Series Parts Manual (Page 10) Doc# A8231",
         },
-      ]
+      ],
     },
     {
       device: "8500",
@@ -653,23 +662,24 @@ export const ExitDevices = {
           title: "8500 Cylinder / Accessories Related Instructions",
           image: Images.narrowRimExit8500,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055333',
-          text: 'View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
-          text1: 'View 604 Rub Strip Installation Instructions Doc# A8148',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055333",
+          text: "View 668 Glass Bead Shim Kit Installation Instructions Doc# A7955",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055362",
+          text1: "View 604 Rub Strip Installation Instructions Doc# A8148",
         },
         {
           device: "AD8500",
           title: "AD8500 Catalog / Parts Manual",
           image: Images.narrowRimExit8500,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24',
-          text: 'View 80 Series Catalog (Page 24) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=24",
+          text: "View 80 Series Catalog (Page 24) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10',
-          text1: 'View 80 Series Parts Manual (Page 10) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
+          text1: "View 80 Series Parts Manual (Page 10) Doc# A8231",
         },
-      ]
+      ],
     },
     {
       device: "AD8500",
@@ -760,7 +770,8 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055954",
-      text1: "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
+      text1:
+        "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
 
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text2:
@@ -789,19 +800,20 @@ export const ExitDevices = {
           title: "WD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
-          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055276",
+          text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
           device: "WD8600",
           title: "WD8600 Catalog / Parts Manual",
           image: Images.narrowRimExit8500,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=22',
-          text: 'View 80 Series Catalog (Page 22) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=22",
+          text: "View 80 Series Catalog (Page 22) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=16',
-          text1: 'View 80 Series Parts Manual (Page 16) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=16",
+          text1: "View 80 Series Parts Manual (Page 16) Doc# A8231",
         },
       ],
     },
@@ -826,7 +838,8 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text: "View Wood Door Mounting Template Doc# 4431-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055954",
-      text1: "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
+      text1:
+        "View Wood Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4565-B",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055955",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
@@ -861,7 +874,8 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
-      text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
+      text1:
+        "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
 
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
@@ -890,19 +904,20 @@ export const ExitDevices = {
           title: "MD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
-          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055276",
+          text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
           device: "MD8600",
           title: "MD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=18',
-          text: 'View 80 Series Catalog (Page 18) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=18",
+          text: "View 80 Series Catalog (Page 18) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12',
-          text1: 'View 80 Series Parts Manual (Page 12) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
+          text1: "View 80 Series Parts Manual (Page 12) Doc# A8231",
         },
       ],
     },
@@ -927,7 +942,8 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
       text: "View Hollow Metal Door Mounting Template Doc# 4445-J",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055949",
-      text1: "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
+      text1:
+        "View Hollow Metal Door Mounting Template (NB - NO BOTTOM ROD) Doc# 4566-A",
 
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
@@ -988,19 +1004,20 @@ export const ExitDevices = {
           title: "AD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055276',
-          text: 'View 106/113 Aux Control Installation Instructions Doc# A5985',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055276",
+          text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
           device: "AD8600",
           title: "AD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=20',
-          text: 'View 80 Series Catalog (Page 20) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=20",
+          text: "View 80 Series Catalog (Page 20) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=20',
-          text1: 'View 80 Series Parts Manual (Page 20) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=20",
+          text1: "View 80 Series Parts Manual (Page 20) Doc# A8231",
         },
       ],
     },
@@ -1066,8 +1083,8 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055354",
           text: "(12-)LP8600 x (12-)LR8600, (12-)LS8600 CTL CVR Low Profile Double Egress and Double Doors, Single Door Installation Instructions Doc# A7393",
-        }
-      ]
+        },
+      ],
     },
     {
       device: "8700",
@@ -1115,7 +1132,8 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055361",
           text: "View (STD, 12, HC, HC4)8700 Main Mounting Installation Instructions Doc# A6701",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1064525",
-          text1: "View (12)FM8700 Main Mounting Installation Instructions Doc# A7827",
+          text1:
+            "View (12)FM8700 Main Mounting Installation Instructions Doc# A7827",
         },
         {
           device: "8700",
@@ -1130,13 +1148,14 @@ export const ExitDevices = {
           title: "8700 Catalog / Parts Manual",
           image: Images.wideSVR,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=14',
-          text: 'View 80 Series Catalog (Page 14) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=14",
+          text: "View 80 Series Catalog (Page 14) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26',
-          text1: 'View 80 Series Parts Manual (Page 26) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
+          text1: "View 80 Series Parts Manual (Page 26) Doc# A8231",
         },
-      ]
+      ],
     },
     {
       device: "8700",
@@ -1241,6 +1260,102 @@ export const ExitDevices = {
       text3: "View STS Strim Template Doc# (810, 828, 866) 4020-F",
     },
     {
+      device: "NB-8700 OLD",
+
+      title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
+      functions:
+        "8706, 8713, 8715, 8743, 8746, NB8706, NB8713, NB8715, NB8743, NB8746, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Class, Room, Classroom, Store, Storeroom, Store-Room, Passage",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+      image: Images.wideNBSVR,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
+      text: "View NB8700 Mounting Template (Single Door) Doc# 4553",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
+      text1: "View NB8700 Mounting Template (Double Door) Doc# 4559",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055900",
+      text2: "View Trim Template (700-8 ET) Doc# 4414",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
+      text3: "View 646/624/655 Standard Strike Template Doc# 4009-H",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055963",
+      text4: "View 648 Alt Top Strike Template Doc# 4225-C",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
+      text6: "View NB306/NB313 Auxiliary Template Doc# 4583",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text7:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+
+      installation: [
+        {
+          device: "NB-8700 OLD",
+          title: "NB8700 Mounting Related Instructions",
+          image: Images.wideNBSVR,
+
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055330",
+          text: "View (STD, NB, 12, HC, HC4)8700 Main Mounting Installation Instructions Doc# A7617",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
+          text1:
+            "View NBB306/NB313 Aux Control Installation Instructions Doc# A7830",
+        },
+        {
+          device: "NB-8700 OLD",
+          title: "8700 Catalog / Parts Manual",
+          image: Images.wideNBSVR,
+
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=16",
+          text: "View 80 Series Catalog (Page 16) Doc# 90641",
+
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=35",
+          text1: "View 80 Series Parts Manual (Page 35) Doc# A8231",
+        },
+      ],
+    },
+    {
+      device: "NB-8700 OLD",
+
+      title: "(12-)NB-8700 (73, 74)",
+      functions:
+        "8773, 8774, NB8773, NB8774, Wide, Wide 80 Series, Wide 80, 80, 80 series, series, 653, 654, 655, 659, Strike, 653 Strike, 654 Srike, 655 Strike, 659 Strike, Wide, Wide Exit Device, Wide Exit, SVR, SVR Exit, SVR Exit Device, Exit, Device, Exit Device, Surface Vertical Rod, Surface, Vertical, Rod, Vertical Rod, Surface Rod, 8700, ET, Trim, ET Trim, 700 ET, 700-8 NB, NB8700, No Bottom, Less Bottom Rod, Less, Bottom, Rod, LBR, Electrified, 773, 774",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+      image: Images.wideNBSVR,
+
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055969",
+      text: "View NB8700 Mounting Template (Single Door) Doc# 4553",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055967",
+      text1: "View NB8700 Mounting Template (Double Door) Doc# 4559",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055968",
+      text2: "View Trim Template ((54-)700 ET - 73/74 function) Doc# 4714",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
+      text3: "View 646/624/655 Standard Strike Template Doc# 4009-H",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055963",
+      text4: "View 648 Alt Top Strike Template Doc# 4225-C",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055966",
+      text6: "View NB306/NB313 Auxiliary Template Doc# 4583",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055972",
+      text7:
+        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
+    },
+    {
       device: "NB-8700 NEW",
 
       title: "(12-)NB-8700 (06, 13, 15, 43, 46)",
@@ -1282,20 +1397,22 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055361",
           text: "View (STD, NB, 12, HC, HC4)8700 Main Mounting Installation Instructions Doc# A6701",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
-          text1: "View 306/313 Aux Control Installation Instructions Doc# A5978",
+          text1:
+            "View 306/313 Aux Control Installation Instructions Doc# A5978",
         },
         {
           device: "NB-8700 NEW",
           title: "8700 Catalog / Parts Manual",
           image: Images.wideNBSVR,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=16',
-          text: 'View 80 Series Catalog (Page 16) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=16",
+          text: "View 80 Series Catalog (Page 16) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26',
-          text1: 'View 80 Series Parts Manual (Page 26) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
+          text1: "View 80 Series Parts Manual (Page 26) Doc# A8231",
         },
-      ]
+      ],
     },
     {
       device: "NB-8700 NEW",
@@ -1404,7 +1521,8 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055349",
           text: "View (12-)(WS)(HC-)8800, (12-)8888 Wide Stile Rim Installation Instructions Doc# A6770",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055341",
-          text1: "View (12-)8800 Wide Stile Rim 16, 28, 63, & 66 Functions Installation Instructions Doc# A6703",
+          text1:
+            "View (12-)8800 Wide Stile Rim 16, 28, 63, & 66 Functions Installation Instructions Doc# A6703",
         },
         {
           device: "8800",
@@ -1414,9 +1532,11 @@ export const ExitDevices = {
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055356",
           text: "View 814 FSL, MSL, PSB Pull Trim (Night Latch) Installation Instructions Doc# A5025",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055309",
-          text1: "View Anti-Vandal Pull Trim Installation Instructions Doc# A5030",
+          text1:
+            "View Anti-Vandal Pull Trim Installation Instructions Doc# A5030",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055301",
-          text2: "View 862, 863, 864 Pull Trim INstallation Instructions Doc# A7474",
+          text2:
+            "View 862, 863, 864 Pull Trim INstallation Instructions Doc# A7474",
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055269",
           text3: "View PTB Pull Trim Installation Instruction Doc# A5851",
         },
@@ -1425,13 +1545,14 @@ export const ExitDevices = {
           title: "8800 Catalog / Parts Manual",
           image: Images.wideStileRim,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=10',
-          text: 'View 80 Series Catalog (Page 10) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=10",
+          text: "View 80 Series Catalog (Page 10) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46',
-          text1: 'View 80 Series Parts Manual (Page 46) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46",
+          text1: "View 80 Series Parts Manual (Page 46) Doc# A8231",
         },
-      ]
+      ],
     },
 
     {
@@ -1715,7 +1836,7 @@ export const ExitDevices = {
           image: Images.wideMortise,
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055332",
-          text: "View (12)(WS)8900 Wide Stile Mortise Installation Instructions Doc# A6705"
+          text: "View (12)(WS)8900 Wide Stile Mortise Installation Instructions Doc# A6705",
         },
         {
           device: "8900",
@@ -1730,13 +1851,14 @@ export const ExitDevices = {
           title: "8900 Catalog / Parts Manual",
           image: Images.wideMortise,
 
-          link: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=12',
-          text: 'View 80 Series Catalog (Page 12) Doc# 90641',
+          link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1004788&page=12",
+          text: "View 80 Series Catalog (Page 12) Doc# 90641",
 
-          link1: 'https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89',
-          text1: 'View 80 Series Parts Manual (Page 89) Doc# A8231',
+          link1:
+            "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+          text1: "View 80 Series Parts Manual (Page 89) Doc# A8231",
         },
-      ]
+      ],
     },
     {
       device: "8900",
@@ -1848,9 +1970,8 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234580",
           text: "(12-)PE8300 Narrow Stile Mortise Installation Instructions Doc# A8303",
-
         },
-      ]
+      ],
     },
     {
       device: "PE8400",
@@ -1896,10 +2017,11 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234590",
           text: "(12-)(MD)(AD)PE8400 Narrow Stile CVR Installation Instructions Doc# A8306",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234586',
-          text1: '(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1234586",
+          text1:
+            "(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309",
         },
-      ]
+      ],
     },
     {
       device: "PE8500",
@@ -1945,10 +2067,10 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234578",
           text: "(12-)(AD)PE8500 Installation Instructions Doc# A8302",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055362',
-          text1: '604 Rub Strip Installation Instructions Doc# A8148',
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055362",
+          text1: "604 Rub Strip Installation Instructions Doc# A8148",
         },
-      ]
+      ],
     },
     {
       device: "PE8500",
@@ -2054,15 +2176,16 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234584",
           text: "(12-)(MD)(AD)PE8600 Wide Stile CVR Installation Instructions Doc# A8305",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234588',
-          text1: '(12-)(WD)(NB-)PE8600 Wide Stile CVR Installation Instructions Doc# A8315',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234586',
-          text2: '(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055347',
-          text3: '(AD) 639/640 Strikes Installation Instructions Doc# A8037',
-
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1234588",
+          text1:
+            "(12-)(WD)(NB-)PE8600 Wide Stile CVR Installation Instructions Doc# A8315",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1234586",
+          text2:
+            "(WD-)P106 and (WD-)P113 Auxiliary Control Installation Instructions Doc# A8309",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055347",
+          text3: "(AD) 639/640 Strikes Installation Instructions Doc# A8037",
         },
-      ]
+      ],
     },
     {
       device: "PE8600",
@@ -2179,15 +2302,16 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234592",
           text: "(12-)(HC-)(HC4-)PE8700 Wide Stile SVR Installation Instructions Doc# A8307",
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234594',
-          text1: '(12-)FM-PE8700 Wide Stile SVR Installation Instructions Doc# A8319',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055351',
-          text2: '306 and 313 Auxiliary Control Installation Instructions Doc# A5978',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1234596',
-          text3: 'Shim Kit (FM-PE8700) Installation Instructions Doc# A8338',
-
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1234594",
+          text1:
+            "(12-)FM-PE8700 Wide Stile SVR Installation Instructions Doc# A8319",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
+          text2:
+            "306 and 313 Auxiliary Control Installation Instructions Doc# A5978",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1234596",
+          text3: "Shim Kit (FM-PE8700) Installation Instructions Doc# A8338",
         },
-      ]
+      ],
     },
     {
       device: "PE8700",
@@ -2299,14 +2423,16 @@ export const ExitDevices = {
           device: "PE8700",
           title: "NB-PE8700 Mounting Related Instructions",
           image: Images.widePESVR,
-          warning: "NB uses same parts as standard. Just omit bottom prep during installation",
+          warning:
+            "NB uses same parts as standard. Just omit bottom prep during installation",
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234592",
           text: "(12-)(HC-)(HC4-)PE8700 Wide Stile SVR Installation Instructions Doc# A8307",
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055351',
-          text2: '306 and 313 Auxiliary Control Installation Instructions Doc# A5978',
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055351",
+          text2:
+            "306 and 313 Auxiliary Control Installation Instructions Doc# A5978",
         },
-      ]
+      ],
     },
     {
       device: "NB-PE8700",
@@ -2380,16 +2506,19 @@ export const ExitDevices = {
 
           link: "https://storage.googleapis.com/aa-americas/dam/AADSS1234574",
           text: "(12-)(WS)PE8800 Wide Stile Rim Installation Instructions Doc# A8301",
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1246385',
-          text2: '(12-)PE8800 Wide Stile Rim 16, 28, 63, and 66 Functions Installation Instructions Doc# A8296',
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1246385",
+          text2:
+            "(12-)PE8800 Wide Stile Rim 16, 28, 63, and 66 Functions Installation Instructions Doc# A8296",
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055316",
-          text3: "(12-)HC8800, (12-)HC-PE8800 Wide Stile Rim Installation Instructions Doc# A7683",
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055309',
-          text4: 'Anti-Vandal Pull Trim Installation Instructions Doc# A5030',
+          text3:
+            "(12-)HC8800, (12-)HC-PE8800 Wide Stile Rim Installation Instructions Doc# A7683",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055309",
+          text4: "Anti-Vandal Pull Trim Installation Instructions Doc# A5030",
           link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1234576",
-          text5: "93 Decorative, Static Pushbar and 95 Active Dummy Rail for PE80 Series PE8800 Wide Stile Rim Installation Instructions Doc# A8320",
+          text5:
+            "93 Decorative, Static Pushbar and 95 Active Dummy Rail for PE80 Series PE8800 Wide Stile Rim Installation Instructions Doc# A8320",
         },
-      ]
+      ],
     },
     {
       device: "PE8800",
@@ -2623,10 +2752,11 @@ export const ExitDevices = {
           title: "9400 Cylinder / Accessories Related Instructions",
           image: Images.narrowCVR9400,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
-          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055300",
+          text: "View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
-          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          text1:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
           text2:
             "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
@@ -2693,22 +2823,26 @@ export const ExitDevices = {
           title: "9700 Cylinder / Accessories Related Instructions",
           image: Images.crossWideSVR,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
-          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055300",
+          text: "View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
-          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          text1:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
           text2:
             "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
           link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1235473",
           text3:
             "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055284',
-          text4: 'View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055366',
-          text5: 'View Flush Panel Top Strikes Installation Instructions Doc# MEMN6',
-          link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1202287',
-          text6: 'View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737',
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055284",
+          text4:
+            "View Flush Panel Mounting Strikes Installation Instructions Doc# MEMN1",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055366",
+          text5:
+            "View Flush Panel Top Strikes Installation Instructions Doc# MEMN6",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1202287",
+          text6:
+            "View 570 and 571 Rod Connector/Extension Kits for 90 Series SVR Installation Instructions Doc# A6737",
         },
       ],
     },
@@ -2831,10 +2965,11 @@ export const ExitDevices = {
           title: "9800 Cylinder / Accessories Related Instructions",
           image: Images.crossWideRim,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
-          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055300",
+          text: "View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
-          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          text1:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
           text2:
             "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
@@ -2847,26 +2982,26 @@ export const ExitDevices = {
           title: "9800 Mullion Related Instructions",
           image: Images.L980,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1173182',
-          text: 'View 650A Installation Instructions Doc# A6580',
-          link1: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055266',
-          text1: 'View L980 Installation Instructions Doc# A7102',
-          link2: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055256',
-          text2: 'View (12-)HC980/HD980 Installation Instructions Doc# A5885',
-          link3: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055265',
-          text3: 'View L980S/12-L980 Installation Instructions Doc# A7111',
-          link4: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055258',
-          text4: 'View EL980 Installation Instructions Doc# A7195',
-          link5: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055263',
-          text5: 'View 980S/12-980 Installation Instructions Doc# A7688',
-          link6: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055262',
-          text6: 'View (12-)HC-L980 Installation Instructions Doc# A7962',
-          link7: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055255',
-          text7: 'View 12-HD980 STABALIZER Installation Instructions Doc# A7826',
-          link8: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055285',
-          text8: 'View 651 STABALIZER Installation Instructions Doc# A6581',
-
-        }
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1173182",
+          text: "View 650A Installation Instructions Doc# A6580",
+          link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055266",
+          text1: "View L980 Installation Instructions Doc# A7102",
+          link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055256",
+          text2: "View (12-)HC980/HD980 Installation Instructions Doc# A5885",
+          link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055265",
+          text3: "View L980S/12-L980 Installation Instructions Doc# A7111",
+          link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055258",
+          text4: "View EL980 Installation Instructions Doc# A7195",
+          link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055263",
+          text5: "View 980S/12-980 Installation Instructions Doc# A7688",
+          link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055262",
+          text6: "View (12-)HC-L980 Installation Instructions Doc# A7962",
+          link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055255",
+          text7:
+            "View 12-HD980 STABALIZER Installation Instructions Doc# A7826",
+          link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1055285",
+          text8: "View 651 STABALIZER Installation Instructions Doc# A6581",
+        },
       ],
     },
     {
@@ -2981,10 +3116,11 @@ export const ExitDevices = {
           title: "9800 Cylinder / Accessories Related Instructions",
           image: Images.crossWideRim,
 
-          link: 'https://storage.googleapis.com/aa-americas/dam/AADSS1055300',
-          text: 'View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411',
+          link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055300",
+          text: "View 607 Locking Slide Replacement Kit for 90 Series Installation Instructions Doc# A7411",
           link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054796",
-          text1: "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
+          text1:
+            "View 6300 Series Large Format Interchangeable Cores (LFIC) Cylinder Removal and Installation Instructions Doc# A5634",
           link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054787",
           text2:
             "View Keso F1 170 Series (Mortise Cylinders) and 164 (Rim Cylinders) Removable Cylinder Installation Instructions Doc# A5687",
@@ -2992,7 +3128,6 @@ export const ExitDevices = {
           text3:
             "View 90 Series ElectroLynx® Retrofit Kit Installation Instructions Doc# A7738",
         },
-
       ],
     },
   ],
@@ -3767,10 +3902,10 @@ export const ExitDevices = {
       trims: trimsString,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055628",
-      text: "View SN Series for Metal and Wood Doors (8700) Template Doc# 4705",
+      text: "View SN Series for Metal and Wood Doors ((NB)8700 NEW STYLE) Template Doc# 4705",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055630",
       text1:
-        "View SN Series for Metal and Wood Doors (NB8700) Template Doc# 4706",
+        "View SN Series for Metal and Wood Doors (NB8700 OLD STYLE) Template Doc# 4706",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238424",
       text2:
         "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
