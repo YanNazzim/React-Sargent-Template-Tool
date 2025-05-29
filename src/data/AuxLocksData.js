@@ -12,8 +12,8 @@ export const AuxLocks = {
       image: Images.SSL1,
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086890",
       text: "View Mounting Template Doc# 4263",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055593",
-      text1: "View Curved & Straight Lip Strike Template Doc# 7063",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055642",
+      text1: "View 800 Strike Template Doc# 4131",
       installation: [
         {
           device: "SSL1",
