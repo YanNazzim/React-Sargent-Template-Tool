@@ -1474,6 +1474,66 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
       text3: "View STS Strim Template Doc# (810, 828, 866) 4020-F",
     },
+        {
+      device: "8800",
+
+      title: "8888 and 88 Series Rose/Lever Trims (88-KL, 88-DL, 88-CL, 88-LL)",
+      functions:
+        "8888, 88-KL, 88-DL, 88-CL, 88-LL",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      metadata: "80 series, series, Wide, Wide 80 Series, Wide 80, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder, PTB, STS, MAL, FLL, FLW, PSB, MSL, FSL, FSW",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+      image: Images.roselever88,
+
+      link: "https://www.sargentlock.com/en/view-pdf?id=AADSS1055926&page=1",
+      text: "View (12-)8888 Rim Exit Template with prep for rose/lever trim Doc# 4429",
+      link1: "https://www.sargentlock.com/en/view-pdf?id=AADSS1055916&page=1",
+      text1: "View 88 Series Rose/Lever Trim Template (Outside Prep) Doc# 4428",
+
+    },
+        {
+      device: "8800",
+
+      title: "8800 Thumbpiece Trims (04, 10, 28, 63, 66)",
+      functions:
+        "8804, 8810, 8828, 8863, 8866, 80, 80 series, series, Wide, Wide 80 Series, Wide 80, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder, PTB, STS, MAL, FLL, FLW, PSB, MSL, FSL, FSW",
+      MechOptions:
+        "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
+      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
+      CylOptions:
+        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
+      railSizes: "E, F, J, G",
+      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
+      voltage: "12V, 24V, 12 V, 24 V",
+      finishes:
+        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
+      trims: trimsString,
+      image: Images.thumbpieceTrims,
+
+      warning:
+        'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
+      text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
+      text1: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
+      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
+      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055890",
+      text4: "View PSB/FSW/FSL Trim Template (814) Doc# 4546",
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055889",
+      text5: "View MSL Trim Template (814) Doc# 4545",
+    },
     {
       device: "8800",
       title: "(12-)(WS-)8800 (04, 10, 40, 44)",
@@ -1759,40 +1819,7 @@ export const ExitDevices = {
       text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
     },
-    {
-      device: "8800",
 
-      title: "8800 Thumbpiece Trims (04, 10, 28, 63, 66)",
-      functions:
-        "8804, 8810, 8828, 8863, 8866, 80, 80 series, series, Wide, Wide 80 Series, Wide 80, Thumb, Piece, Trims, ThumbPiece, Thumb Piece, Thumbpiece Trims, Night Latch, Night, Latch, Classroom, Class Room, Class-Room, Intruder, Classroom Intruder, PTB, STS, MAL, FLL, FLW, PSB, MSL, FSL, FSW",
-      MechOptions:
-        "12, 14, 16, 19, 23, 31, 36, 37, AD, WD, MD, HC, WS, 43, 49, 76, 85, 86, 87, GL, PL, LD, SG, TB, NB, CPC, 5CH",
-      ElecOptions: "53, 54, 55, 56, 56-HK, HK, 58, 59, AL, BC, BC-59",
-      CylOptions:
-        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-      railSizes: "E, F, J, G",
-      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-      voltage: "12V, 24V, 12 V, 24 V",
-      finishes:
-        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims: trimsString,
-      image: Images.thumbpieceTrims,
-
-      warning:
-        'NOTE: FSL, FSW, MSL & PSB trims are same as others but the cylinder is located 3/8"(9mm) lower',
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055887",
-      text: "View FLL/FLW Trim Template (810, 814, 828, 866) Doc# 4257-D",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055888",
-      text1: "View MAL Trim Template (810, 814, 828, 866) Doc# 4024-L",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055891",
-      text2: "View PTB Trim Template (810, 814, 828, 866) Doc# 4221-E",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055920",
-      text3: "View STS Strim Template Doc# (810, 814, 828, 866) 4020-F",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055890",
-      text4: "View PSB/FSW/FSL Trim Template (814) Doc# 4546",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055889",
-      text5: "View MSL Trim Template (814) Doc# 4545",
-    },
     {
       device: "8900",
 
