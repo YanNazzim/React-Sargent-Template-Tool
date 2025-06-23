@@ -2518,8 +2518,6 @@ export const ExitDevices = {
         "For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
       text: "View Mounting Template Doc# MEDT44",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
-      text1: "View 04 Cylinder Only Template Doc# 4307-G",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template Doc# MEDT19",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
