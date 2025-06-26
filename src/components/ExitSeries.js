@@ -29,6 +29,8 @@ function ExitSeries() {
     });
   }
 
+  
+
   const handleButtonClick30Series = (series) => {
     navigate("/display-templates", {
       state: {

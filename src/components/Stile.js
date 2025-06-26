@@ -1,3 +1,4 @@
+// src/components/Stile.js
 import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
@@ -7,6 +8,14 @@ function Stile() {
   const navigate = useNavigate();
   const location = useLocation();
   const { series } = location.state || {};
+
+  // Redirect to home if series is not available (e.g., on refresh)
+  useEffect(() => {
+    if (!series) {
+      navigate("/");
+    }
+  }, [series, navigate]); // Add navigate to dependency array
+
   let deviceListNarrow = "";
   let deviceListWide = "";
   let deviceListEM = "";
@@ -62,9 +71,8 @@ function Stile() {
   };
 
   const handleButtonClickEM = () => {
-    navigate("/em-products", { state: {series} });
+    navigate("/em-products", { state: { series } });
   };
-
 
   return (
     <div className="stile-page">
@@ -86,7 +94,6 @@ function Stile() {
           Electromechanical {series} Series <br /> {deviceListEM}
         </button>
       )}
-
     </div>
   );
 }

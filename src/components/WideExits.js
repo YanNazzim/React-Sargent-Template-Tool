@@ -1,4 +1,5 @@
-import React from "react";
+// src/components/WideExits.js
+import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
 
@@ -105,6 +106,13 @@ function WideExits() {
   const navigate = useNavigate();
   const location = useLocation();
   const { series, type } = location.state || {}; // Get series and type from passed state
+
+  // Redirect to home if series is not available (e.g., on refresh)
+  useEffect(() => {
+    if (!series) {
+      navigate("/");
+    }
+  }, [series, navigate]); // Add navigate to dependency array
 
   // Determine the correct set of devices to display based on the series and type
   let devices;

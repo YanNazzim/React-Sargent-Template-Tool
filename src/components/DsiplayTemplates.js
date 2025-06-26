@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react"; // Import useEffect
+import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
 import { ExitDevices } from "../data/ExitDeviceData";
@@ -10,10 +10,19 @@ import { ThermalPin } from "../data/ThermalPinData";
 
 function DisplayTemplates() {
   const location = useLocation();
+  const navigate = useNavigate(); // Initialize useNavigate
   const { category, series, device } = location.state || {};
 
   const [expandedTemplate, setExpandedTemplate] = useState(null);
   const [viewMode, setViewMode] = useState("templates");
+
+  // Redirect to home if critical state is not available (e.g., on refresh)
+  useEffect(() => {
+    if (!category || !series) { // Check for both category and series
+      navigate("/");
+    }
+  }, [category, series, navigate]);
+
 
   // Initialize templates and installation instructions array
   let templates = [];

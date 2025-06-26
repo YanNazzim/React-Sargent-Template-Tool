@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Import useEffect
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style/Stile.css";
 
@@ -28,6 +28,13 @@ function NarrowExits() {
   const navigate = useNavigate();
   const location = useLocation();
   const { series } = location.state || {}; // Get series from passed state
+
+  // Redirect to home if series is not available (e.g., on refresh)
+  useEffect(() => {
+    if (!series) {
+      navigate("/");
+    }
+  }, [series, navigate]);
 
   // Determine the correct set of devices to display based on the series
   const devices =
