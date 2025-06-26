@@ -2,6 +2,7 @@
 export const Images = {
   // Exits
   thumbpieceTrims: require('./Exits/thumbpieceTrims1.png'),
+  roselever88: require('./Exits/88roselever.png'),
   wideCVR: require("./Exits/WideCVR.png"),
   wideStileRim: require("./Exits/Wide Rim Exit (8800).png"),
   wideSVR: require("./Exits/WideSVR.png"),

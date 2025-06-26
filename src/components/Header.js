@@ -117,6 +117,7 @@ function Header() {
               voltage: item.voltage || "",
               finishes: item.finishes || "",
               trims: item.trims || "",
+              metadata: item.metadata || "",
               text: item.text || "",
               thumbturns: item.thumbturns || "",
             }))
