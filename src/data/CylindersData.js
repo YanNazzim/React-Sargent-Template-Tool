@@ -102,6 +102,25 @@ export const CylindersData = {
         texts: [""],
         metadata: '7300B, 7P-7300B, 11-7300B, SFIC, Small, Format, Interchangable, Core, Small Format, Interchangable Core, Small Format Interchangable Core',
       },
+            {
+        heading: "Medeco Cylinders in Sargent 10X",
+        image: Images.Medeco,
+        texts: [""],
+        metadata: 'SFIC, Interchangable, Core, Small Format, Interchangable Core, Small Format Interchangable Core, LFIC, Conventional, Large Format, Large, Medeco',
+                table: {
+          headers: ["Name","Format", "Part#"],
+          rows: [
+            [" Medeco/Sargent ",' Standard/Conventional ', " 20-801 "],
+            [" Medeco/Sargent ",' SFIC ', " 70- Prefix on lock "],
+            [" Medeco/Sargent ",' LFIC ', " 32-2401 "],
+            [" Medeco/Medeco ",' LFIC ', " NOT AVAILABLE "],
+
+
+
+
+          ],
+        },
+      },
     ],
   },
   SFIC: {
