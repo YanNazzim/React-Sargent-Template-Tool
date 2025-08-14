@@ -1,57 +1,49 @@
+/* src/components/style/HeaderFooter.css */
+
 /* Global Styles */
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh; /* Crucial: Minimum full viewport height */
+  min-height: 100vh;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #f4f4f4;
+  background-color: var(--primary-bg); /* Ensures dark background */
   overflow-x: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flex; /* Crucial: Flex container for body */
-  flex-direction: column; /* Crucial: Vertical layout */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styles */
 .header {
   display: flex;
   align-self: stretch;
-  /* force the header to span 100% even in a centered flex container */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgb(34, 34, 34);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
-  line-height: 1.6;
   position: relative;
-  top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .header img {
-  transition: box-shadow 0.3s ease;
-  min-width: 150px !important;
-  margin: 10px;
-  border-radius: 15px;
-  will-change: transform, box-shadow;
-  border: 2px solid #007bff;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.3);
-  transform-style: preserve-3d;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  max-width: 200px;
+  border-radius: var(--card-radius);
+  transition: transform var(--transition), box-shadow var(--transition);
+  background-color: #fff; /* White background to keep logo visible */
+  padding: 10px;
+  border: 2px solid var(--accent);
 }
 
 .header img:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(0.95);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent);
   cursor: pointer;
-  border-color: #0056b3;
-  background: rgba(0, 0, 0, 0.5);
-  transform: scale(0.95) rotateZ(2deg);
 }
 
 /* Button Styles */
@@ -59,32 +51,31 @@ body {
   width: 200px;
   font-size: 1.2em;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: transparent;
+  color: var(--accent);
   margin: 5px;
-  border: none;
+  border: 2px solid var(--accent);
   border-radius: 25px;
   transition: transform 0.3s ease-out, box-shadow 0.25s, background-color 0.3s;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .Home:hover {
-  background-color: #0056b3;
-  transform: scale(0.95);
+  background-color: var(--accent);
+  color: var(--primary-bg);
+  transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .Home:active {
-  transform: scale(0.9);
+  transform: scale(0.98);
 }
 
 /* Modal Overlay & Content */
 .modal-overlay {
-  /* Original properties */
   position: fixed;
   top: 0;
   left: 0;
@@ -95,108 +86,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1001;
   animation: fadeIn 0.3s ease-out;
-
-  /* New styling additions */
-  cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Search Bar */
-.search-bar {
-  width: 80%;
-  padding: 10px 15px;
-  font-size: 1.2em;
-  border: 2px solid #007bff;
-  border-radius: 30px;
-  margin: 0 auto 20px;
-  text-align: center;
-  transition: border-color 0.3s;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-}
-
-.search-bar::placeholder {
-  color: #999;
-}
-
-.search-bar:focus {
-  border-color: #0056b3;
-  outline: none;
-  background: rgba(255, 255, 255, 0.15);
-
-}
-
-/* Modal Buttons */
-.modal-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.search-button,
-.clear-button,
-.close-button {
-  font-size: 1.2em;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 25px;
-  background-color: #007bff;
-  color: white;
-  transition: transform 0.3s, background-color 0.3s;
-  cursor: pointer;
-}
-
-.search-button:hover,
-.close-button:hover {
-  background-color: #0056b3;
-  transform: scale(0.95);
-}
-
-.clear-button {
-  background-color: #dc3545;
-}
-
-.clear-button:hover {
-  background-color: #c82333;
-}
-
-/* Carousel Styles */
-.carousel-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60%;
-  padding: 0 20px;
-  margin-top: 20px;
-}
-
-/* Modal Content */
 .modal-content {
-  background-color: #fff;
+  background-color: var(--secondary-bg);
+  border: 2px solid var(--accent);
+  color: var(--text-primary);
   border-radius: 20px;
   padding: 20px;
   width: 90%;
@@ -205,276 +102,141 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   overflow-y: auto;
-  overflow-x: hidden;
-  margin: 0 auto;
 }
 
-/* Carousel Container */
-.carousel-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: 100%;
-}
-
-/* Carousel Item */
-.carousel-item {
-  min-width: 50%;
-  box-sizing: border-box;
-  padding: 10px;
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  margin: 0 auto 20px;
   text-align: center;
-  font-size: 1em;
-  color: #333;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  transition: border-color 0.3s;
+  background: var(--primary-bg);
+  color: var(--text-primary);
 }
 
-/* Improved Card Image Styles */
-.carousel-item img {
-  display: block;
-  width: 100%;
-  /* Ensures image spans no more than the card’s width */
-  height: auto;
-  /* Maintain aspect ratio */
-  max-height: 150px;
-  /* Set a maximum height */
-  border-radius: 10px;
-  margin-bottom: 10px;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.search-bar::placeholder {
+  color: var(--text-secondary);
 }
 
-.carousel-item img:hover {
-  transform: scale(0.98);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.search-bar:focus {
+  border-color: #fff;
+  outline: none;
 }
 
-/* Carousel Item Title */
-.carousel-item p {
-  margin: 0;
-  font-size: 1em;
-}
-
-/* Carousel Navigation Buttons */
-.carousel-button {
-  /* Original properties */
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 123, 255, 0.8);
-  color: white;
+/* Modal Buttons */
+.search-button, .clear-button, .close-button {
+  font-size: 1.2em;
+  padding: 10px 25px;
   border: none;
-  border-radius: 50%;
+  border-radius: 25px;
+  transition: transform 0.3s, background-color 0.3s;
   cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-250%);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-
-  /* New styling additions */
-  border: 2px solid #0056b3;
-  backdrop-filter: blur(4px);
+  background-color: var(--accent);
+  color: var(--primary-bg);
 }
 
-/* Left Button Position */
-.carousel-button.left {
-  z-index: 100;
-  font-size: 2em;
-  width: 50px;
-  height: 50px;
-  left: 200px;
+.search-button:hover, .close-button:hover {
+    background-color: var(--accent-hover);
 }
 
-/* Right Button Position */
-.carousel-button.right {
-  right: 200px;
-  font-size: 2em;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
+.clear-button {
+    background-color: var(--text-secondary);
 }
 
-/* Button Hover Effects */
-.carousel-button:hover {
-  background-color: rgba(0, 86, 179, 0.9);
+.clear-button:hover {
+    background-color: var(--warning);
 }
 
 /* Selected Product Styles */
 .selected-product {
   text-align: center;
-  color: #333;
+  color: var(--text-primary);
+  padding: 20px;
 }
 
 .selected-product h2 {
   font-size: 1.8em;
   margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.selected-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--card-radius);
+  margin-bottom: 20px;
+  border: 2px solid var(--accent);
 }
 
 .selected-product p {
   font-size: 1.2em;
   margin-bottom: 15px;
+  color: var(--text-secondary);
 }
 
-.product-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+.selected-product a,
+.view-templates-button {
+  display: block;
+  padding: 12px 20px;
+  margin: 10px auto;
+  background-color: var(--accent);
+  color: var(--primary-bg);
+  border: none;
   border-radius: 25px;
   text-decoration: none;
   transition: transform 0.3s, background-color 0.3s;
-  margin: 10px 0;
-}
-
-.product-link:hover {
-  background-color: #0056b3;
-  transform: scale(0.95);
-}
-
-.view-templates-button {
-  padding: 10px 25px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.2em;
+  font-weight: 500;
+  max-width: 300px;
+  font-size: 1.1em;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-  margin-top: 15px;
 }
 
+.selected-product a:hover,
 .view-templates-button:hover {
-  background-color: #0056b3;
-  transform: scale(0.95);
+  background-color: var(--accent-hover);
+  transform: scale(1.05);
 }
+
 main {
-  flex: 1; /* NEW:  Allow main to grow and take remaining vertical space */
+  flex: 1; /* Allow main to take up remaining vertical space */
 }
 
 /* Footer Styles */
 .footer {
-  /* Keep existing styles */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(34, 34, 34);
+  background-color: var(--secondary-bg);
   padding: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: auto; /* Changed from 100% to auto */
-  color: #333;
+  color: var(--text-secondary);
 }
 
 .footer a {
   text-align: center;
-  color: #007bff;
+  color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5em;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
   margin: 5px 0;
 }
 
 .footer a:hover {
-  color: #0056b3;
-  transform: scale(1.05);
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer p {
-  color: white;
+  color: var(--text-primary);
   text-align: center;
   margin: 10px 0;
   font-size: 1.5em;
   line-height: 1.6;
-}
-
-.footer p a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.footer p a:hover {
-  color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .header img {
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .header {
-    /* Original properties */
-    padding: 15px;
-
-    /* New styling additions */
-    flex-direction: column;
-    background-image: none;
-  }
-
-  .header img {
-    /* Original properties */
-    min-width: 250px;
-
-    /* New styling additions */
-    margin: 10px 0;
-  }
-
-  .Home {
-    /* Original properties */
-    width: 180px;
-    font-size: 1em;
-
-    /* New styling additions */
-    order: 2;
-  }
-
-  .search-bar {
-    /* New styling additions */
-    order: 3;
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .header,
-  .footer {
-    padding: 10px;
-  }
-
-  .header img {
-    min-width: 200px;
-  }
-
-  .Home {
-    width: 150px;
-    font-size: 0.9em;
-  }
-
-  .footer p {
-    font-size: 0.9em;
-  }
-
-  .footer a {
-    font-size: 0.9em;
-  }
 }

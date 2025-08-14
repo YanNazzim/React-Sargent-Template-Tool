@@ -1,7 +1,26 @@
-/* App.css */
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  /* Dark Theme Color Palette */
+  --primary-bg: #0a192f;      /* Deep, modern navy for main backgrounds */
+  --secondary-bg: #172a45;    /* Slightly lighter navy for cards and surfaces */
+  --accent: #64ffda;          /* Vibrant, welcoming mint green for interactive elements */
+  --accent-hover: #52d9c1;    /* A slightly darker mint for hover states */
+  --text-primary: #ccd6f6;    /* Light, readable text */
+  --text-secondary: #8892b0;  /* Softer text for less emphasis */
+  --warning: #ff6b6b;
+  --card-radius: 12px;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
 body {
-    background-color: #f0f0f0; /* Set the background color of the entire page */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Optional: Set a default font */
-  }
-  
+    background-color: var(--primary-bg); /* Applying the dark theme background globally */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

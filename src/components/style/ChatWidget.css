@@ -1,5 +1,4 @@
 /* src/components/style/ChatWidget.css */
-
 .chat-widget-container {
     position: fixed;
     bottom: 20px;
@@ -8,40 +7,35 @@
     flex-direction: column;
     align-items: flex-end;
     z-index: 9999;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
   }
-  
+
   .chat-bubble {
-    width: fit-content;
     height: 60px;
-    background-color: black;
-    color: yellow;
-    border: 3px solid yellow;
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    border: 2px solid var(--accent-hover);
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
   }
-  
+
   .chat-bubble:hover {
     transform: scale(1.1);
-    opacity: 1;
-    background-color: white;
-    color: black;
-    border-color: black;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    background-color: var(--accent-hover);
   }
-  
+
   .chat-window {
     margin-bottom: 10px;
-    background-color: #222;
+    background-color: var(--secondary-bg);
     border-radius: 15px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
     width: 350px;
@@ -49,55 +43,44 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
+    border: 2px solid var(--accent);
     animation: slideUp 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+
   #searchWidgetTrigger {
     width: 100%;
     padding: 15px;
     font-size: 1.2em;
     border: none;
-    border-top: 2px solid yellow;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #333;
-    color: black;
+    border-top: 2px solid var(--accent);
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
     outline: none;
   }
-  
+
   #searchWidgetTrigger::placeholder {
-    color: #ffc107;
+    color: var(--text-secondary);
   }
-  
-  #searchWidgetTrigger:focus {
-    border-color: #ffc107;
-    box-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
-  }
-  
+
   gen-search-widget {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
     padding: 15px;
     color: black;
   }
-  
-  /* Example: Style result items (you'll need to inspect the widget) */
- .gen-search-result {
-    padding: 12px;
-    border-bottom: 2px solid #555;
+
+  /* Custom styles for chat results to ensure readability */
+  gen-search-widget::part(result-list-entry) {
+    background-color: #f0f0f0; /* Light background for chat bubbles */
+    color: black; /* Black text as requested */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  gen-search-widget::part(result-title) {
+      color: black;
+  }
+
+  gen-search-widget::part(result-snippet){
+      color: #333;
   }

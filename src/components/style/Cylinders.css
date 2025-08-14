@@ -1,20 +1,23 @@
+/* src/components/style/Cylinders.css */
 .cylinder-info {
   margin-top: -30px;
   min-height: 800px;
   text-align: center;
-  background-color: rgb(69, 69, 69);
+  background-color: var(--primary-bg);
+  padding: 2rem 1rem;
 }
 
 .ToolTip {
-  color: white;
+  color: var(--text-secondary);
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 2rem;
 }
 
 .cylinder-info h1 {
   padding-top: 30px;
   font-size: 2.5em;
-  color: #ffffff; /* Dark text */
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
@@ -22,107 +25,71 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; /* Center cards within the container */
+  justify-content: center;
 }
 
 .cylinder-card {
-  border: 3px solid white;
-  background-color: #999999;
-  border-radius: 15px;
+  border: 2px solid var(--accent);
+  background-color: var(--secondary-bg);
+  border-radius: var(--card-radius);
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
   cursor: pointer;
   text-align: center;
+  max-width: 320px; /* Added for better layout */
+}
+
+.cylinder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 .cylinder-card img {
-  width: 100%; /* Make the image responsive */
-  max-width: 275px; /* Maintain the original max width */
+  width: 100%;
+  max-width: 275px;
   height: auto;
-  margin: 0 auto 10px auto; /* Center align */
-  border: 1px solid black;
-  border-radius: 25px;
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  margin: 0 auto 10px auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-out;
 }
 
 .cylinder-card img:hover {
-  box-shadow: black 0px 0px 10px 5px;
-  transform: scale(.95);
-  transition: transform 0.3s ease-out, box-shadow 0.25s;
+  transform: scale(1.05);
 }
 
 .cylinder-card h2 {
-  color: white;
-  font-size: 2rem; /* Adjust for better scalability */
+  color: var(--accent);
+  font-size: 1.8rem;
   margin-bottom: 10px;
-  text-align: center; /* Center align the text */
 }
 
 .cylinder-card p {
-  color: white;
-  font-size: 1.25rem; /* Slightly smaller for better readability */
-  text-align: center; /* Center align the text */
+  color: var(--text-primary);
+  font-size: 1.1rem;
 }
 
 .cylinder-table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  color: var(--text-primary);
 }
 
 .cylinder-table th,
 .cylinder-table td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--primary-bg);
   padding: 8px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .cylinder-table td {
-  background-color: #ddd;
+  background-color: var(--secondary-bg);
 }
 
 .cylinder-table th {
-  background-color: #f2f2f2;
+  background-color: var(--primary-bg);
   font-weight: bold;
-}
-
-
-@media screen and (max-width: 444px) {
-  .cylinder-cards {
-    flex-direction: column;
-    gap: 10px; /* Reduce gap for smaller screens */
-  }
-  
-  .cylinder-card {
-    scale: 0.85;
-  }
-
-  .cylinder-table {
-    max-width: 300px;
-    font-size: 3vw;
-  }
-
-  .cylinder-info h1 {
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cylinder-cards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Adjust gap for medium screens */
-  }
-}
-
-
-
-@media screen and (max-width: 1024px) {
-  .cylinder-cards {
-    justify-content: center;
-    gap: 20px; /* Restore original gap */
-  }
+  color: var(--accent);
 }

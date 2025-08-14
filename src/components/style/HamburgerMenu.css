@@ -1,14 +1,13 @@
-/* Root Variables for Theming */
+/* src/components/style/HamburgerMenu.css */
 :root {
-  --primary-color: #ffffff; /* Dark text color */
-  --hover-bg-color: #000000; /* Light hover background */
-  --bg-color: rgba(34,34,34); /* White background */
-  --box-shadow-color: rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  --transition-duration: 0.3s; /* Smooth transitions */
-  --hamburger-size: 3rem; /* Size of the hamburger icon */
-  --pane-width: 300px; /* Width of the side pane */
-  --accent-color: #007bff; /* Vibrant blue for accents */
-  --border-radius: 15px; /* Rounded corners */
+  --primary-bg: #0a192f;
+  --secondary-bg: #172a45;
+  --accent: #64ffda;
+  --accent-hover: #52d9c1;
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --card-radius: 12px;
+  --transition-duration: 0.3s;
 }
 
 /* Hamburger Icon */
@@ -16,21 +15,21 @@
   position: fixed;
   top: 20px;
   left: 20px;
-  background: var(--accent-color); /* Vibrant blue background */
+  background: var(--accent);
   border: none;
-  font-size: var(--hamburger-size);
+  font-size: 2.5rem;
   cursor: pointer;
-  z-index: 1002; /* Ensure it's above the menu */
-  color: white; /* White icon */
+  z-index: 1002;
+  color: var(--primary-bg);
   transition: background-color var(--transition-duration), transform var(--transition-duration);
-  border-radius: var(--border-radius);
+  border-radius: var(--card-radius);
   padding: 10px;
-  box-shadow: 0 4px 6px var(--box-shadow-color); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-icon:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(0.95); /* Slight scale-down effect */
+  background-color: var(--accent-hover);
+  transform: scale(0.95);
 }
 
 /* Side Pane */
@@ -39,76 +38,40 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: var(--pane-width);
-  background-color: var(--bg-color);
-  box-shadow: 2px 0 5px var(--box-shadow-color);
-  padding: 20px;
+  width: 300px;
+  background-color: var(--secondary-bg);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  /* Changed padding to add 50px to the top (20px + 50px = 70px) */
+  padding: 120px 20px 20px 20px;
   overflow-y: auto;
   z-index: 1000;
   transform: translateX(-100%);
   transition: transform var(--transition-duration) ease-in-out;
-  
-  /* Make it a column flex container */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* Optional: Style the bottom button to match the theme */
-.menu-bottom {
-  text-align: center;
-  margin-top: 20px; /* Adjust spacing as needed */
-}
-
-.bottom-button {
-  width: 100%;
-  padding: 15px;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: var(--primary-color);
-  background: var(--accent-color);
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  transition: background-color var(--transition-duration);
-}
-
-.bottom-button:hover {
-  background-color: #0056b3; /* or your desired hover color */
-}
-
-
 .side-pane.open {
   transform: translateX(0);
 }
 
-/* Menu Container */
-.menu {
-  margin-top: 80px; /* Add space below the hamburger icon */
-  width: 100%;
-  text-align: center;
-}
-
 /* Menu Links */
 .menu a {
-  width: 100%;
   text-decoration: none;
-  color: var(--primary-color); /* Ensures high contrast */
+  color: var(--text-primary);
   font-weight: bold;
-  font-size: 1.5em; /* Readable size */
-  line-height: 1.4;
+  font-size: 1.5em;
   transition: background-color var(--transition-duration), color var(--transition-duration);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   padding: 15px;
-  border-radius: var(--border-radius);
+  border-radius: var(--card-radius);
   margin-bottom: 10px;
 }
 
 .menu a:hover {
-  background-color: var(--hover-bg-color); /* Light hover background */
-  color: var(--accent-color); /* Blue text on hover */
+  background-color: var(--primary-bg);
+  color: var(--accent);
 }
 
 /* Menu Buttons */
@@ -116,234 +79,23 @@
   width: 100%;
   text-align: left;
   padding: 15px;
-  font-size: 1.3em; /* Slightly larger for clarity */
-  line-height: 1.4;
+  font-size: 1.3em;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-primary);
   background: none;
   border: none;
   cursor: pointer;
   transition: background-color var(--transition-duration), color var(--transition-duration);
-  border-radius: var(--border-radius);
+  border-radius: var(--card-radius);
 }
 
 .menu-item button:hover {
-  background-color: var(--hover-bg-color); /* Light hover background */
-  color: var(--accent-color); /* Blue text on hover */
+  background-color: var(--primary-bg);
+  color: var(--accent);
 }
 
 /* Submenu Styles */
 .submenu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: var(--bg-color);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height var(--transition-duration) ease-in-out;
+  background-color: var(--secondary-bg);
   margin-left: 20px;
-}
-
-.submenu.open {
-  max-height: none; /* Allow submenu to expand fully */
-}
-
-/* Nested Submenu Styles */
-.nested-submenu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: var(--hover-bg-color);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height var(--transition-duration) ease-in-out;
-  margin-left: 20px;
-}
-
-.nested-submenu.open {
-  max-height: none; /* Allow nested submenu to expand fully */
-}
-
-
-
-/* Ensure Submenu and Nested Submenu Button Text is Readable */
-.submenu button,
-.nested-submenu button {
-  width: 100%;
-  text-align: left;
-  padding: 10px 15px;
-  font-size: 1.2em;
-  line-height: 1.4;
-  font-weight: bold;
-  color: var(--primary-color);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
-}
-
-/* Optional: Add a subtle text-shadow for extra contrast*/
-.menu a,
-.menu-item button,
-.submenu button,
-.nested-submenu button {
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  :root {
-    --pane-width: 80vw; /* Wider pane for smaller screens */
-  }
-
-  .hamburger-icon {
-    font-size: 2rem; /* Smaller icon for mobile */
-  }
-
-  .menu a {
-    font-size: 1.2em; /* Smaller font size for mobile */
-  }
-
-  .menu-item button {
-    font-size: 1em; /* Smaller font size for mobile */
-  }
-}
-
-/* PRESERVED ORIGINAL CODE ABOVE */
-
-/* New Enhancements - Add below original code */
-.hamburger-icon {
-  /* Animated burger bars */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  overflow: hidden;
-}
-
-.hamburger-icon::before,
-.hamburger-icon::after {
-  content: '';
-  width: 30px;
-  height: 3px;
-  background: white;
-  transition: all var(--transition-duration);
-  transform-origin: center;
-}
-
-/* Dynamic icon animation */
-.hamburger-icon:hover::before {
-  transform: translateY(2px) rotate(45deg);
-}
-
-.hamburger-icon:hover::after {
-  transform: translateY(-2px) rotate(-45deg);
-}
-
-.side-pane {
-  /* Frosted glass effect */
-  backdrop-filter: blur(12px);
-  background-color: rgba(34, 34, 34, 0.98);
-  border-right: 3px solid var(--accent-color);
-}
-
-.menu a {
-  /* Gradient underline effect */
-  position: relative;
-  overflow: hidden;
-}
-
-.menu a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent-color);
-  transition: width var(--transition-duration);
-}
-
-.menu a:hover::after {
-  width: 60%;
-}
-
-/* Submenu indicators */
-.submenu button::before {
-  content: '›';
-  display: inline-block;
-  margin-right: 10px;
-  color: var(--accent-color);
-  transition: transform var(--transition-duration);
-}
-
-.submenu button:hover::before {
-  transform: translateX(5px);
-}
-
-.nested-submenu button::before {
-  content: '»';
-}
-
-/* Bottom button animation */
-.bottom-button {
-  position: relative;
-  overflow: hidden;
-}
-
-.bottom-button::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.1);
-  transform: rotate(45deg) translate(-20%, 100%);
-  transition: transform 0.6s ease;
-}
-
-.bottom-button:hover::after {
-  transform: rotate(45deg) translate(20%, -100%);
-}
-
-/* Nested menu indentation */
-.nested-submenu {
-  margin-left: 30px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Better touch targets */
-.menu-item button {
-  position: relative;
-  padding-left: 40px;
-}
-
-.menu-item button::after {
-  content: '';
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  background: var(--accent-color);
-  border-radius: 50%;
-}
-
-/* Mobile enhancements */
-@media (max-width: 768px) {
-  .side-pane {
-    backdrop-filter: blur(8px);
-  }
-  
-  .menu-item button {
-    padding-left: 35px;
-  }
-}
-
-.menu-top {
-  padding-top: 40px; /* Creates space below hamburger icon */
 }

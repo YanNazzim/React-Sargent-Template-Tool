@@ -180,15 +180,6 @@ function Header() {
     setIsModalOpen(false);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      Math.min(prevIndex + 1, Math.ceil(filteredProducts.length / 2) - 1)
-    );
-  };
 
   const handleItemClick = (product) => {
     setSelectedProduct(product);
@@ -288,9 +279,6 @@ function Header() {
             ) : (
               filteredProducts.length > 0 && (
                 <div className="carousel-controls">
-                  <button className="carousel-button left" onClick={handlePrev}>
-                    &#8249;
-                  </button>
                   <div className="carousel-container">
                     <div
                       className="carousel-inner"
@@ -323,12 +311,6 @@ function Header() {
                       ))}
                     </div>
                   </div>
-                  <button
-                    className="carousel-button right"
-                    onClick={handleNext}
-                  >
-                    &#8250;
-                  </button>
                 </div>
               )
             )}
