@@ -1401,8 +1401,8 @@ export const ExitDevices = {
       trims: trimsString,
       image: Images.wideNBSVR,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
-      text: "View NB8700 Mounting Template (Any Door) Doc# MEDT13",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055958",
+      text: "View NB8700 Mounting Template (Any Door) Doc# 4297",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
