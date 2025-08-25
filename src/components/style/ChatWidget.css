@@ -35,7 +35,7 @@
 
   .chat-window {
     margin-bottom: 10px;
-    background-color: var(--secondary-bg);
+    background-color: white; /* Setting a white background for the entire chat window */
     border-radius: 15px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
     width: 350px;
@@ -53,24 +53,24 @@
     font-size: 1.2em;
     border: none;
     border-top: 2px solid var(--accent);
-    background-color: var(--primary-bg);
-    color: var(--text-primary);
+    background-color: white;
+    color: black; /* Explicitly setting the input text to black */
     outline: none;
   }
 
   #searchWidgetTrigger::placeholder {
-    color: var(--text-secondary);
+    color: #555; /* A darker placeholder for better visibility */
   }
 
   gen-search-widget {
     flex: 1;
     padding: 15px;
-    color: black;
+    color: black; /* This ensures all text within the widget defaults to black */
   }
 
   /* Custom styles for chat results to ensure readability */
   gen-search-widget::part(result-list-entry) {
-    background-color: #f0f0f0; /* Light background for chat bubbles */
+    background-color: #f0f0f0; /* Light gray background for chat bubbles */
     color: black; /* Black text as requested */
     border-radius: 10px;
     padding: 10px;
