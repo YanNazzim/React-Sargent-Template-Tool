@@ -1,15 +1,13 @@
-/* src/components/style/ChatWidgetCustom.css */
-
 .custom-chat-window {
     background-color: var(--secondary-bg);
-    color: var(--text-primary);
+    color: black;
     border: 2px solid var(--border-color);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
   }
 
   .custom-chat-window input {
     background-color: var(--primary-bg);
-    color: var(--text-primary);
+    color: black;
     border-color: var(--border-color);
   }
 
@@ -26,5 +24,3 @@
   .custom-chat-window .gen-search-result:last-child {
     border-bottom: none;
   }
-
-  /* Add more styles as needed */
