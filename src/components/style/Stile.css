@@ -21,7 +21,7 @@
   width: 100%;
   height: 200px;
   font-size: 1.8em;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
   border-radius: 15px;
   padding: 25px;
   cursor: pointer;
@@ -50,7 +50,7 @@
 }
 
 .btn:hover .btn-image {
-  transform: rotate(5deg) scale(1.1);
+  transform: scale(1.05); /* Removed rotation for a cleaner effect */
 }
 
 @media (max-width: 768px) {

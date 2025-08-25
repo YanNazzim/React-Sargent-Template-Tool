@@ -29,7 +29,7 @@
 }
 
 .cylinder-card {
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
   background-color: var(--secondary-bg);
   border-radius: var(--card-radius);
   padding: 20px;
@@ -78,7 +78,7 @@
 
 .cylinder-table th,
 .cylinder-table td {
-  border: 1px solid var(--primary-bg);
+  border: 1px solid var(--border-color);
   padding: 8px;
   text-align: center;
   font-size: 1em;

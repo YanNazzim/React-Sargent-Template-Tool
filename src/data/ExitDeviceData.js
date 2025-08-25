@@ -2358,6 +2358,8 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238386",
       text: "View Mounting Template Doc# MEDT12",
+            link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
+      text: "View (12-) Mounting Template Doc# MEDT13",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text1: "View Trim Template (P700 ET Trim) Doc# MEDT19",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238402",

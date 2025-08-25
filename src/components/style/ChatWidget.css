@@ -8,7 +8,7 @@
     align-items: flex-end;
     z-index: 9999;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: var(--text-primary);
   }
 
   .chat-bubble {
@@ -52,7 +52,7 @@
     padding: 15px;
     font-size: 1.2em;
     border: none;
-    border-top: 2px solid var(--accent);
+    border-top: 2px solid var(--border-color);
     background-color: var(--primary-bg);
     color: var(--text-primary);
     outline: none;
@@ -65,22 +65,22 @@
   gen-search-widget {
     flex: 1;
     padding: 15px;
-    color: black;
+    color: var(--text-primary);
   }
 
   /* Custom styles for chat results to ensure readability */
   gen-search-widget::part(result-list-entry) {
-    background-color: #f0f0f0; /* Light background for chat bubbles */
-    color: black; /* Black text as requested */
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
   }
 
   gen-search-widget::part(result-title) {
-      color: black;
+      color: var(--accent);
   }
 
   gen-search-widget::part(result-snippet){
-      color: #333;
+      color: var(--text-secondary);
   }

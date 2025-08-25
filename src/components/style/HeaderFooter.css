@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
+  background-color: var(--secondary-bg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
   position: relative;
@@ -37,12 +37,12 @@ body {
   transition: transform var(--transition), box-shadow var(--transition);
   background-color: #fff; /* White background to keep logo visible */
   padding: 10px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
 }
 
 .header img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px var(--accent);
+  box-shadow: 0 0 20px rgba(138, 180, 248, 0.5); /* Blue glow on hover */
   cursor: pointer;
 }
 
@@ -92,14 +92,14 @@ body {
 
 .modal-content {
   background-color: var(--secondary-bg);
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
   color: var(--text-primary);
   border-radius: 20px;
   padding: 20px;
   width: 90%;
   max-width: 800px;
   max-height: 80vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   text-align: center;
   overflow-y: auto;
 }
@@ -109,7 +109,7 @@ body {
   width: 80%;
   padding: 10px 15px;
   font-size: 1.2em;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
   border-radius: 30px;
   margin: 0 auto 20px;
   text-align: center;
@@ -123,7 +123,7 @@ body {
 }
 
 .search-bar:focus {
-  border-color: #fff;
+  border-color: var(--accent);
   outline: none;
 }
 
@@ -169,7 +169,7 @@ body {
   height: auto;
   border-radius: var(--card-radius);
   margin-bottom: 20px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--border-color);
 }
 
 .selected-product p {
@@ -229,7 +229,7 @@ main {
 }
 
 .footer a:hover {
-  color: #fff;
+  color: var(--text-primary);
   text-decoration: underline;
 }
 
