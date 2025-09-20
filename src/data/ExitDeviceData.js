@@ -2235,8 +2235,8 @@ export const ExitDevices = {
       text2: "View (54-) Electrified ET Trim Template (73 & 74) Doc# MEDT51",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
       text3: "View 650/652 Standard Strike Template Doc# MEDT9",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238382",
-      text4: "View 106/113 Auxiliary Control Template Doc# MEDT7",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1258165",
+      text4: "View 106/113 Auxiliary Control Template Doc# MEDT70",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
