@@ -76,11 +76,11 @@
 }
 
 .view-toggle .slider.left {
-  transform: translateX(0%);
+  transform: translateX(-50%);
 }
 
 .view-toggle .slider.right {
-  transform: translateX(100%);
+  transform: translateX(50%);
 }
 
 .view-toggle button {
