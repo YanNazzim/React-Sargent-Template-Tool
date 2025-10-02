@@ -10,92 +10,131 @@
   --transition-duration: 0.3s;
 }
 
-/* Hamburger Icon */
-.hamburger-icon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background: var(--accent);
-  border: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  z-index: 1002;
-  color: var(--primary-bg);
-  transition: background-color var(--transition-duration), transform var(--transition-duration);
-  border-radius: var(--card-radius);
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+/* New Dropdown Styles for Products Menu */
+.products-dropdown-container {
+  position: relative; /* Container is relative to position the dropdown */
 }
 
-.hamburger-icon:hover {
-  background-color: var(--accent-hover);
-  transform: scale(0.95);
-}
-
-/* Side Pane */
-.side-pane {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 300px;
+.dropdown-content-wrapper {
+  position: absolute;
+  top: 100%; /* Position below the "Products" button */
+  right: 0;
+  min-width: 300px;
+  max-width: 400px;
   background-color: var(--secondary-bg);
-  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-  /* Changed padding to add 50px to the top (20px + 50px = 70px) */
-  padding: 120px 20px 20px 20px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  max-height: 80vh; /* Limit height for scrollability */
   overflow-y: auto;
-  z-index: 1000;
-  transform: translateX(-100%);
-  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.product-dropdown-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 10px;
 }
 
-.side-pane.open {
-  transform: translateX(0);
+.dropdown-item {
+  border-bottom: 1px solid var(--primary-bg);
+}
+.dropdown-item:last-child {
+  border-bottom: none;
 }
 
-/* Menu Links */
-.menu a {
-  text-decoration: none;
-  color: var(--text-primary);
-  font-weight: bold;
-  font-size: 1.5em;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
-  display: block;
-  padding: 15px;
-  border-radius: var(--card-radius);
-  margin-bottom: 10px;
-}
-
-.menu a:hover {
-  background-color: var(--primary-bg);
-  color: var(--accent);
-}
-
-/* Menu Buttons */
-.menu-item button {
+.product-menu-item, .product-submenu-item, .product-menu-item-nested {
   width: 100%;
+  padding: 12px 15px;
   text-align: left;
-  padding: 15px;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.1em;
+  font-weight: 500;
   color: var(--text-primary);
   background: none;
   border: none;
   cursor: pointer;
   transition: background-color var(--transition-duration), color var(--transition-duration);
-  border-radius: var(--card-radius);
+  border-radius: 8px;
+  margin: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu-item button:hover {
+.product-menu-item:hover, .product-submenu-item:hover, .product-menu-item-nested:hover {
   background-color: var(--primary-bg);
   color: var(--accent);
 }
 
-/* Submenu Styles */
-.submenu {
-  background-color: var(--secondary-bg);
-  margin-left: 20px;
+/* Style for immediate child buttons of the dropdown-submenu */
+/* This targets items like 7000, 6100, 7300 Series (Multipoints) */
+.dropdown-submenu > button:not(.product-submenu-item) {
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    font-size: 1em; /* Slightly smaller for sub-level */
+    padding: 10px 15px;
+    margin: 4px 0;
+    font-weight: 400;
+    justify-content: flex-start;
+}
+
+.dropdown-submenu > button:not(.product-submenu-item):hover {
+    background-color: var(--primary-bg);
+    color: var(--accent);
+}
+
+
+.dropdown-submenu, .dropdown-nested-submenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  background-color: var(--primary-bg); /* Slight background for nested lists */
+  border-radius: 8px;
+  margin-top: 5px;
+}
+.dropdown-nested-submenu {
+    padding-left: 10px;
+    background-color: transparent;
+}
+.dropdown-nested-submenu button {
+    font-size: 1em;
+    padding: 8px 10px;
+    margin: 2px 0;
+    font-weight: 400;
+    /* Styles for the innermost items (e.g., Narrow/Wide 80 Series) */
+    background-color: var(--secondary-bg); 
+    color: var(--text-secondary);
+}
+
+.dropdown-nested-submenu button:hover {
+    background-color: var(--primary-bg);
+    color: var(--accent);
+}
+
+
+.arrow {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.product-menu-item.single-item {
+    font-weight: bold;
+    border-top: 1px solid var(--primary-bg);
+    margin-top: 5px;
+}
+.product-menu-item.active {
+    background-color: var(--accent);
+    color: var(--primary-bg);
+}
+.product-menu-item.active .arrow {
+    color: var(--primary-bg);
+}
+
+/* Original Hamburger Menu CSS is now suppressed */
+.hamburger-icon {
+    display: none; 
+}
+.side-pane {
+    display: none; 
 }

@@ -10,50 +10,56 @@
   --text-secondary: #bdc1c6;  /* Lighter gray for secondary information */
   --border-color: #5f6368;    /* A subtle gray for borders and dividers */
   --warning: #ff6b6b;
+  --success: #38c172; /* Added a success color */
   --card-radius: 12px;
-  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.6);
-  --shadow-selected: 0 12px 32px rgba(0, 0, 0, 0.8);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.8);
+  --shadow-selected: 0 0 0 3px var(--accent); /* Accent border on selection */
 }
 
-/* General Styles */
+/* ------------------------------------------- */
+/* --- General Page Structure and Typography --- */
+/* ------------------------------------------- */
 .display-templates {
   background: var(--primary-bg);
   padding: 2rem 1rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px); /* Adjust based on header/footer */
   font-family: "Inter", system-ui, sans-serif;
   color: var(--text-primary);
 }
 
 .deviceHeading {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   color: var(--text-primary);
-  margin-bottom: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
   text-align: center;
 }
 
 .ToolTip {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-weight: 500;
   text-align: center;
 }
 
-/* Toggle Buttons */
+/* ------------------------------------------- */
+/* --- View Toggle Button (Templates/Inst) --- */
+/* ------------------------------------------- */
 .view-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin: 2rem auto;
-  background: var(--secondary-bg);
-  border-radius: var(--card-radius);
-  padding: 0.25rem;
-  width: 320px;
+  background: var(--primary-bg);
+  border-radius: 50px; /* Pill shape */
+  border: 2px solid var(--border-color);
+  padding: 0;
+  width: clamp(280px, 90%, 360px);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -63,31 +69,28 @@
   width: 50%;
   height: 100%;
   background: var(--accent);
-  border-radius: var(--card-radius);
-  transition: var(--transition);
+  border-radius: 50px;
+  transition: transform var(--transition), background-color var(--transition);
   top: 0;
-  left: 0;
   z-index: 1;
 }
 
 .view-toggle .slider.left {
-  left: 0;
-  transform: translateX(0);
+  transform: translateX(0%);
 }
 
 .view-toggle .slider.right {
-  left: 50%;
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
 .view-toggle button {
   position: relative;
   flex: 1;
   padding: 0.75rem 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-secondary);
-  transition: var(--transition);
+  transition: color var(--transition);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -96,34 +99,31 @@
 }
 
 .view-toggle button.active {
-  color: var(--primary-bg);
+  color: var(--primary-bg); /* Text color pops against the slider */
 }
 
 .view-toggle button:hover:not(.active) {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
-.view-toggle button:first-child {
-  border-top-left-radius: var(--card-radius);
-  border-bottom-left-radius: var(--card-radius);
-}
-
-.view-toggle button:last-child {
-  border-top-right-radius: var(--card-radius);
-  border-bottom-right-radius: var(--card-radius);
-}
-
-/* Template Grid */
+/* ------------------------------------------- */
+/* --- Content Grid and Cards --- */
+/* ------------------------------------------- */
 .template-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+  /* Auto-fit columns for responsive density */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 1.5rem 0;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* Template Card */
+.template-grid.single-item {
+    max-width: 500px; /* Constraint single item width for focus */
+    margin: 0 auto;
+}
+
 .template-card {
   background: var(--secondary-bg);
   border-radius: var(--card-radius);
@@ -136,30 +136,40 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  cursor: pointer; /* Added cursor for better UX */
+  cursor: pointer;
+  height: 100%; /* Ensures uniform height before expansion */
+  box-sizing: border-box;
+  position: relative;
 }
 
 .template-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
 }
 
 .template-card.selected {
-  transform: scale(1.03);
+  /* No transform on selection to keep vertical flow clean */
   border-color: var(--accent);
   box-shadow: var(--shadow-selected);
 }
 
+.template-card h2 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    flex-grow: 1; /* Pushes details down */
+}
+
 .template-image {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 1rem;
   background: var(--primary-bg);
   padding: 1rem;
   transition: var(--transition);
-  border: 1px solid var(--border-color); /* Added border for contrast */
+  border: 1px solid var(--border-color);
 }
 
 .template-image:hover {
@@ -170,64 +180,122 @@
 .template-details {
   border-top: 1px solid var(--border-color);
   padding-top: 1rem;
+  margin-top: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.template-details h3 {
-  color: var(--warning);
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
-  font-weight: 600;
+.warning-text {
+    color: var(--warning);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    padding: 0 10px;
 }
 
 .template-details a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  display: block;
+  width: 100%;
   color: var(--accent);
-  padding: 0.75rem;
-  margin: 0.5rem 0;
+  padding: 0.6rem 0.5rem;
+  margin: 0.3rem 0;
   border-radius: 6px;
   transition: var(--transition);
   text-decoration: none;
+  font-size: 1.05rem;
+  white-space: normal;
+  box-sizing: border-box;
 }
 
 .template-details a:hover {
   background: rgba(138, 180, 248, 0.1);
   color: var(--accent-hover);
+  text-decoration: underline;
 }
 
-/* Responsive Design */
+/* NEW: Copy Links Button Styling */
+.copy-links-button {
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    width: 100%;
+    max-width: 300px;
+}
+
+.copy-links-button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* NEW: Copy Success Message */
+.copy-success-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--success);
+    color: var(--primary-bg);
+    font-weight: 700;
+    padding: 5px 0;
+    text-align: center;
+    animation: fadeOut 3s forwards;
+    z-index: 10;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* ------------------------------------------- */
+/* --- Responsive Adjustments --- */
+/* ------------------------------------------- */
+@media (max-width: 1024px) {
+    .template-grid {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
   .deviceHeading {
-    font-size: 1.75rem;
-  }
-
-  .view-toggle {
-    width: 280px;
+    font-size: 2rem;
   }
 
   .template-grid {
-    gap: 1rem;
-    padding: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .template-card {
+    padding: 1rem;
+    border-radius: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .template-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
     padding: 0;
+  }
+  
+  .display-templates {
+      padding: 1rem 0.5rem;
   }
 
   .template-card {
     border-radius: 0;
     border-left: none;
     border-right: none;
-    padding: 1rem;
-  }
-
-  .template-image {
-    height: 180px;
+    box-shadow: none;
   }
 }

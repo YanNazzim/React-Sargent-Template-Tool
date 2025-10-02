@@ -16,62 +16,98 @@ body {
   flex-direction: column;
 }
 
-/* Header Styles */
+/* Header Styles - MODIFIED */
 .header {
   display: flex;
-  align-self: stretch;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: center; /* Center horizontally in the new layout */
+  justify-content: space-between; /* Space out logo and navbar */
+  padding: 10px 40px; /* Reduced vertical padding, increased horizontal */
   background-color: var(--secondary-bg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 999;
+  box-sizing: border-box;
+}
+
+/* New Header/Navbar Structure */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header img {
-  max-width: 200px;
+  max-width: 150px; /* Smaller logo for navbar */
   border-radius: var(--card-radius);
   transition: transform var(--transition), box-shadow var(--transition);
   background-color: #fff; /* White background to keep logo visible */
-  padding: 10px;
+  padding: 5px;
   border: 2px solid var(--border-color);
+  cursor: pointer;
 }
 
 .header img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(138, 180, 248, 0.5); /* Blue glow on hover */
-  cursor: pointer;
 }
 
-/* Button Styles */
-.Home {
-  width: 200px;
-  font-size: 1.2em;
-  padding: 10px 20px;
+.navbar-main {
+  display: flex;
+  gap: 15px; /* Space between navbar items */
+}
+
+/* Replaced .Home with .nav-item */
+.nav-item {
+  min-width: 100px;
+  font-size: 1.1em;
+  padding: 10px 15px;
   background-color: transparent;
-  color: var(--accent);
-  margin: 5px;
-  border: 2px solid var(--accent);
+  color: var(--text-primary);
+  border: 2px solid transparent; /* Subtle transparent border for effect */
   border-radius: 25px;
-  transition: transform 0.3s ease-out, box-shadow 0.25s, background-color 0.3s;
+  transition: all 0.3s ease-out;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Home:hover {
+.nav-item:hover, .nav-item.active {
   background-color: var(--accent);
   color: var(--primary-bg);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
 }
 
-.Home:active {
+.nav-item:active {
   transform: scale(0.98);
+}
+
+.products-dropdown-container {
+  position: relative;
+}
+
+.dropdown-content-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Align dropdown to the right edge of the Products button */
+  min-width: 300px;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 /* Modal Overlay & Content */
@@ -149,6 +185,58 @@ body {
 
 .clear-button:hover {
     background-color: var(--warning);
+}
+
+/* Search Results List Styling - REVAMPED */
+.search-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    max-height: 40vh; /* Max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+}
+
+.carousel-item {
+    /* Style for a single search result item in the list */
+    width: 100%; 
+    padding: 15px;
+    border-radius: var(--card-radius);
+    background-color: var(--primary-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.carousel-item:hover {
+    background-color: var(--secondary-bg);
+    border-color: var(--accent);
+}
+
+.carousel-item img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+
+.carousel-item p {
+    color: var(--text-primary);
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+    flex-grow: 1;
 }
 
 /* Selected Product Styles */
@@ -239,4 +327,50 @@ main {
   margin: 10px 0;
   font-size: 1.5em;
   line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+    flex-direction: column; /* Stack logo and nav vertically on small screens */
+    align-items: center;
+  }
+
+  .header-top {
+      flex-direction: column;
+  }
+
+  .navbar-main {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 5px;
+  }
+
+  .nav-item {
+    font-size: 1em;
+    padding: 8px 10px;
+    min-width: unset;
+    flex: 1;
+  }
+  
+  .dropdown-content-wrapper {
+      left: 0;
+      right: unset;
+      transform: translateX(0);
+      min-width: 100%;
+      border-left: none;
+      border-right: none;
+  }
+  
+  .carousel-item {
+      padding: 10px;
+      margin-bottom: 5px;
+  }
+  
+  .carousel-item img {
+      max-width: 80px;
+      max-height: 80px;
+  }
 }

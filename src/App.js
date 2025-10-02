@@ -17,16 +17,16 @@ import Cylinders from './components/Cylinders.js'
 import CylindersInfo from "./components/CylindersInfo.js";
 import MultiPointSeries from'./components/MultiPointSeries.js';
 import EMProducts from './components/EMProducts.js'
-import HamburgerMenu from "./components/HamburgerMenu"; // Import the menu
+// import HamburgerMenu from "./components/HamburgerMenu"; // Import the menu - REMOVED
 import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <HamburgerMenu /> {/* Add the hamburger menu */}
+      {/* <HamburgerMenu /> REMOVED */}
       <Header /> {/* Ensure Header is part of every page */}
-      <HamburgerMenu />
+      {/* <HamburgerMenu /> REMOVED */}
       <Routes>
         <Route path="/" element={<ProductLine />} />
         <Route path="/display-templates" element={<DisplayTemplates />} />

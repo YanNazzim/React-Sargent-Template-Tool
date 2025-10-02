@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./style/HeaderFooter.css";
 import logo from "../images/Sargent Logo.jpg";
 import { useNavigate } from "react-router-dom";
+import ProductDropdown from "./Carousel"; 
 import { ExitDevices } from "../data/ExitDeviceData";
 import { MortiseLocks } from "../data/MortiseLocksData";
 import { BoredLocks } from "../data/BoredLocksData";
@@ -14,22 +15,46 @@ function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedProduct, setSelectedProduct] = useState(null); // To store the selected product
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleButtonClickBack = () => {
-    navigate(-1);
-  };
-
   const handleButtonClickHome = () => {
     navigate("/");
+    setIsProductsDropdownOpen(false);
+  };
+  
+  const handleToggleProductsDropdown = (event) => {
+    event.stopPropagation();
+    setIsProductsDropdownOpen((prev) => !prev);
   };
 
-  const handleButtonClickLogo = () => {
-    window.open("https://www.sargentlock.com/en", "_blank");
+  const handleCloseProductsDropdown = () => {
+    setIsProductsDropdownOpen(false);
   };
+    // Click outside handler for dropdown
+    useEffect(() => {
+        function handleClickOutside(event) {
+            // Check if the click is outside the dropdown container
+            const dropdownContainer = document.querySelector('.products-dropdown-container');
+            // Check if the click is outside the container, but only run if dropdown is open
+            if (isProductsDropdownOpen && dropdownContainer && !dropdownContainer.contains(event.target)) {
+                handleCloseProductsDropdown();
+            }
+        }
+
+        if (isProductsDropdownOpen) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [isProductsDropdownOpen]);
+
 
   // Split query by dashes or spaces and return an array of terms
   const splitSearchQuery = (query) => query.split(/[-\s]+/).filter(Boolean);
@@ -65,8 +90,8 @@ function Header() {
         .map((key) => product[key].toLowerCase());
 
       const allOptions = [
-        ...(title ? [title.toLowerCase()] : []), // Keep title as a full term for exact matches
-        ...(device ? [device.toLowerCase()] : []), // Keep device as a full term for exact matches
+        ...(title ? [title.toLowerCase()] : []), 
+        ...(device ? [device.toLowerCase()] : []), 
         ...(functions ? functions.toLowerCase().split(/,\s*/) : []),
         ...(MechOptions ? MechOptions.toLowerCase().split(/,\s*/) : []),
         ...(ElecOptions ? ElecOptions.toLowerCase().split(/,\s*/) : []),
@@ -78,7 +103,7 @@ function Header() {
         ...(voltage ? voltage.toLowerCase().split(/,\s*/) : []),
         ...(metadata ? metadata.toLowerCase().split(/,\s*/) : []),
         ...(thumbturns ? thumbturns.toLowerCase().split(/,\s*/) : []),
-        ...textFields, // Include all dynamically gathered text fields
+        ...textFields, 
       ];
 
       // Check if every term matches an entry in allOptions
@@ -150,7 +175,6 @@ function Header() {
 
     setFilteredProducts(results);
     setIsModalOpen(true);
-    setCurrentIndex(0);
     setSelectedProduct(null); // Reset selected product when searching
   }, [searchQuery]);
 
@@ -170,7 +194,6 @@ function Header() {
 
   const handleClear = () => {
     setSearchQuery("");
-    setCurrentIndex(0);
     setFilteredProducts([]);
     setSelectedProduct(null);
   };
@@ -187,21 +210,40 @@ function Header() {
 
   return (
     <header className="header">
-      <img
-        src={logo}
-        alt="Sargent Logo"
-        className="SargentLogo"
-        onClick={handleButtonClickLogo}
-      />
-      <button className="Home" onClick={handleButtonClickHome}>
-        Home
-      </button>
-      <button className="Home" onClick={handleButtonClickBack}>
-        Back
-      </button>
-      <button onClick={() => setIsModalOpen(true)} className="Home">
-        Search
-      </button>
+      <div className="header-top">
+        <img
+          src={logo}
+          alt="Sargent Logo"
+          className="SargentLogo"
+          onClick={() => window.open("https://www.sargentlock.com/en", "_blank")}
+        />
+        <nav className="navbar-main">
+          {/* Home Button */}
+          <button className="nav-item" onClick={handleButtonClickHome}>
+            Home
+          </button>
+          
+          {/* Products Dropdown */}
+          <div className="products-dropdown-container">
+            <button 
+              className={`nav-item products-dropdown-toggle ${isProductsDropdownOpen ? 'active' : ''}`}
+              onClick={handleToggleProductsDropdown}
+            >
+              Products
+            </button>
+            {isProductsDropdownOpen && (
+              <div className="dropdown-content-wrapper">
+                <ProductDropdown handleClose={handleCloseProductsDropdown} />
+              </div>
+            )}
+          </div>
+
+          {/* Search Button (reusing old search modal logic) */}
+          <button className="nav-item" onClick={() => setIsModalOpen(true)}>
+            Search
+          </button>
+        </nav>
+      </div>
 
       {isModalOpen && (
         <div className="modal-overlay">
@@ -250,7 +292,14 @@ function Header() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={selectedProduct.image}
+                    src={
+                      selectedProduct.category === "Cylinders"
+                        ? CylindersData[selectedProduct.type]?.sections.find(
+                            (section) =>
+                              section.heading === selectedProduct.device
+                          )?.image
+                        : selectedProduct.image
+                    }
                     alt={selectedProduct.title}
                   />
                 </a>
@@ -278,39 +327,30 @@ function Header() {
               </div>
             ) : (
               filteredProducts.length > 0 && (
-                <div className="carousel-controls">
-                  <div className="carousel-container">
+                <div className="search-results-list">
+                  {filteredProducts.map((product, index) => (
                     <div
-                      className="carousel-inner"
-                      style={{
-                        transform: `translateX(-${currentIndex * 100}%)`,
-                      }}
+                      className="carousel-item"
+                      key={index}
+                      onClick={() => handleItemClick(product)}
                     >
-                      {filteredProducts.map((product, index) => (
-                        <div
-                          className="carousel-item"
-                          key={index}
-                          onClick={() => handleItemClick(product)}
-                        >
-                          <img
-                            src={
-                              product.category === "Cylinders"
-                                ? CylindersData[product.type]?.sections.find(
-                                    (section) =>
-                                      section.heading === product.device
-                                  )?.image
-                                : product.image
-                            }
-                            alt={product.title}
-                          />
-                          <p>
-                            {product.title}{" "}
-                            {product.device ? `(${product.device})` : ""}
-                          </p>
-                        </div>
-                      ))}
+                      <img
+                        src={
+                          product.category === "Cylinders"
+                            ? CylindersData[product.type]?.sections.find(
+                                (section) =>
+                                  section.heading === product.device
+                              )?.image
+                            : product.image
+                        }
+                        alt={product.title}
+                      />
+                      <p>
+                        {product.title}{" "}
+                        {product.device ? `(${product.device})` : ""} - {product.category}
+                      </p>
                     </div>
-                  </div>
+                  ))}
                 </div>
               )
             )}
