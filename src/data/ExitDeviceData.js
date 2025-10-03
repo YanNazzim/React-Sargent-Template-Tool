@@ -2173,7 +2173,7 @@ export const ExitDevices = {
       text6:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
     },
-        {
+    {
       device: "PE8500",
 
       title:
@@ -2785,7 +2785,7 @@ export const ExitDevices = {
       text5:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
-        {
+    {
       device: "PE8900",
 
       title: "(12-)(WS-) PE8900 Mortise Exit (73, 74, 75, 76)",
@@ -4279,15 +4279,21 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238427",
       text: "View SN Series for Metal and Wood Doors Template Doc# MEDT57",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SNPE8900",
+        title: "SN Series PE8900 Mortise Exit",
+        image: Images.SNPE8900,
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
   ],
 };
