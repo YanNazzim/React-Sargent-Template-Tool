@@ -3623,23 +3623,29 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055594",
       text: "View Metal and Wood Doors Mounting Template Doc# 4474",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
-      text1: "View Full Device Installation Instructions Doc# A7137",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text2:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
-      text5:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
-      text6:
-        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      installation: {
+        device: "KP8800",
+
+        title: "KP 8800 Rim Exit Device",
+        image: Images.wideStileRim,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+        text: "View Full Device Installation Instructions Doc# A7137",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+        text2:
+          "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text3:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+        text5:
+          "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+        text6:
+          "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      }
     },
     {
       device: "KP8900",
@@ -3662,23 +3668,29 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055595",
       text: "View Metal and Wood Doors Mounting Template Doc# 4477",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
-      text1: "View Full Device Installation Instructions Doc# A7137",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text2:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
-      text5:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
-      text6:
-        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      installation: {
+        device: "KP8900",
+
+        title: "KP 8900 Mortise Exit Device",
+        image: Images.wideMortise,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+        text: "View Full Device Installation Instructions Doc# A7137",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+        text2:
+          "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text3:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A8005",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+        text5:
+          "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+        text6:
+          "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      }
     },
   ],
   "KP PE80": [
@@ -3704,23 +3716,29 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238428",
       text: "View Metal and Wood Doors Mounting Template Doc# MEDT58",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
-      text1: "View Full Device Installation Instructions Doc# A7137",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text2:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
-      text5:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
-      text6:
-        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      installation: {
+        device: "KPPE8800",
+
+        title: "KP PE8800 Rim Exit Device",
+        image: Images.wideStileRim,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+        text: "View Full Device Installation Instructions Doc# A7137",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+        text2:
+          "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text3:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text4:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+        text5:
+          "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+        text6:
+          "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      }
     },
     {
       device: "KPPE8900",
@@ -3746,23 +3764,29 @@ export const ExitDevices = {
       text: "View Mounting Template Doc# MEDT42",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238429",
       text1: "View IN Series Trim Template Doc# MEDT59",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
-      text2: "View Full Device Installation Instructions Doc# A7137",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
-      text3:
-        "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text5:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
-      text6:
-        "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
-      text7:
-        "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      installation: {
+        device: "KPPE8900",
+
+        title: "KP PE8900 Mortise Exit Device",
+        image: Images.wideMortise,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1054957",
+        text: "View Full Device Installation Instructions Doc# A7137",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1054988",
+        text3:
+          "View 52-2847 Weather Seal Conduit Installation Instructions Doc# A7721",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text5:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1179497",
+        text6:
+          "View Controller Replacement 52-6085 Installation Instructions Doc# A8288",
+        link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1179499",
+        text7:
+          "View Weatherization Kit 52-6084 Installation Instructions Doc# A8289",
+      }
     },
   ],
   "IN 80": [
@@ -3770,9 +3794,9 @@ export const ExitDevices = {
       device: "IN8800",
 
       title: "IN (100, 120, 220) 8800 Rim",
+      image: Images.IN120Rim,
       functions: "8877, 8878, ",
       metadata: "Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120Rim,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -3792,28 +3816,34 @@ export const ExitDevices = {
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1177257",
       text1:
         "View Von Duprin 98/99Mounting Template (Metal and Wood) Doc# 4734",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text2: "View Main Installation Instructions Doc# A8185",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text3:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text5:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text6:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "IN8800",
+
+        title: "IN (100, 120, 220) 8800 Rim",
+        image: Images.IN120Rim,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+        text: "View Main Installation Instructions Doc# A8185",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text3:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text5:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text6:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
     {
       device: "IN8900",
 
       title: "IN (100, 120, 220) 8900 Mortise",
+      image: Images.IN120Mortise,
       functions: "8977, 8978, ",
       metadata: "Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120Mortise,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -3830,20 +3860,26 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1177256",
       text: "View Mounting Template (Metal and Wood) Doc# 4717",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text2: "View Main Installation Instructions Doc# A8185",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text3:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text5:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text6:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "IN8900",
+
+        title: "IN (100, 120, 220) 8900 Mortise",
+        image: Images.IN120Mortise,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+        text: "View Main Installation Instructions Doc# A8185",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text3:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text5:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text6:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
   ],
   "IN PE80": [
@@ -3851,9 +3887,9 @@ export const ExitDevices = {
       device: "INPE8600",
 
       title: "IN120 PE8600 CVR",
+      image: Images.IN120,
       functions: "8678, PE8678",
       metadata: "PE, Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -3877,26 +3913,32 @@ export const ExitDevices = {
       text3: "View P106/P113 Aux Control Template Doc# MEDT7",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
       text4: "View 650/652 Strike Template Doc# MEDT9",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text5:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text6:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text7:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text8:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "INPE8600",
+
+        title: "IN120 PE8600 CVR",
+        image: Images.IN120,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text6:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text7:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text8:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
     {
       device: "INPE8700",
 
       title: "IN120 PE8700 SVR",
+      image: Images.IN120,
       functions: "8778, PE8778",
       metadata: "PE, Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -3923,28 +3965,34 @@ export const ExitDevices = {
       text4: "View 624/655 Bottom Strike Template Doc# MEDT30",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055962",
       text5: "View 306/313 Auxiliary Control Template Doc# 4214",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text6: "View Main Installation Instructions Doc# A8185",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text7:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text8:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link9: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text9:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link10: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text10:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "INPE8700",
+
+        title: "IN120 PE8700 SVR",
+        image: Images.IN120,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+        text: "View Main Installation Instructions Doc# A8185",
+        link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text7:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text8:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link9: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text9:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link10: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text10:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
     {
       device: "INPE8800",
 
       title: "IN120 PE8800 Rim",
+      image: Images.IN120,
       functions: "8877, 8878, PE8877, PE8878",
       metadata: "PE, Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -3962,28 +4010,34 @@ export const ExitDevices = {
       text: "View Mounting Template (Any Material) Doc# MEDT44",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238423",
       text1: "View IN Series Trim Template (Metal and Wood) Doc# MEDT53",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text2: "View Main Installation Instructions Doc# A8185",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text3:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text4:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text5:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text6:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "INPE8800",
+
+        title: "IN120 PE8800 Rim",
+        image: Images.IN120,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+        text: "View Main Installation Instructions Doc# A8185",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text3:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text4:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text5:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text6:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
     {
       device: "INPE8900",
 
       title: "IN120 PE8900 Mortise",
+      image: Images.IN120,
       functions: "8977, 8978, PE8977, ",
       metadata: "PE, Fail, Secure, Safe, IN Series, 100, 120, 220",
-      image: Images.IN120,
 
       MechOptions:
         "IN120, IN, 100, 120, 220, 29, WBS, 20, 23, 25, 36, 37, 41, 75, 76, 77, 85, 86, 87, CPC, SG, T1, T2, T3, FW, KD, EA",
@@ -4005,29 +4059,34 @@ export const ExitDevices = {
       text2: "View 908/C908 Strike Template Doc# MEDT50",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238419",
       text3: "View 815 Open Back Strike Template Doc# MEDT49",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
-      text4: "View Main Installation Instructions Doc# A8185",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
-      text5:
-        "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text6:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text7:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
-      link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
-      text8:
-        "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      installation: {
+        device: "INPE8900",
+        title: "IN120 PE8900 Mortise",
+        image: Images.IN120,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1066679",
+        text: "View Main Installation Instructions Doc# A8185",
+        link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1254871",
+        text5:
+          "View 98/99 Von Durpin Retrofit Instalation Instructions Doc# A8229",
+        link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text6:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text7:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+        link8: "https://storage.googleapis.com/aa-americas/dam/AADSS1190724",
+        text8:
+          "View IN120 and Passport 1000 P2 Series WiFi-Enabled Products (91-) Hard Powering Instructions Doc# WFMN10A",
+      }
     },
   ],
   "SN 80": [
     {
       device: "SN8600",
       title: "SN Series 8600 CVR Exit (200, 210)",
+      image: Images.SN200ET,
       functions: "8673, 8674, 8606, 8610, 8613, 8646, 8640, 8643, ",
       metadata: "Fail, Secure, Safe, SN Series, 200, 210",
-      image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
@@ -4044,22 +4103,27 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055627",
       text: "View SN Series for Metal and Wood Doors Template Doc# 4704",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installtion: {
+        device: "SN8600",
+        title: "SN Series 8600 CVR Exit (200, 210)",
+        image: Images.SN200ET,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SN8700",
       title: "SN Series 8700 SVR Exit (200, 210)",
+      image: Images.SN200ET,
       functions: "8773, 8774, 8706, 8710, 8713, 8746, 8740, 8743, ",
       metadata: "Fail, Secure, Safe, SN Series, 200, 210",
-      image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
@@ -4076,26 +4140,31 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055628",
       text: "View SN Series for Metal and Wood Doors ((NB)8700 NEW STYLE) Template Doc# 4705",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055630",
-      text1:
-        "View SN Series for Metal and Wood Doors (NB8700 OLD STYLE) Template Doc# 4706",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text2:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SN8700",
+        title: "SN Series 8700 SVR Exit (200, 210)",
+        image: Images.SN200ET,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055630",
+        text:
+          "View SN Series for Metal and Wood Doors (NB8700 OLD STYLE) Template Doc# 4706",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text2:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# A8284",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text3:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text4:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SN8800",
       title: "SN Series 8800 Rim Exit (200, 210)",
+      image: Images.SN200ET,
       functions:
         "8873, 8874, 8875, 8876, 8804, 8806, 8810, 8813, 8844, 8846, 8843",
       metadata: "Fail, Secure, Safe, SN Series, 200, 210",
-      image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
@@ -4112,23 +4181,28 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1086701",
       text: "View SN Series for Metal and Wood Doors Template Doc# 4707",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SN8800",
+        title: "SN Series 8800 Rim Exit (200, 210)",
+        image: Images.SN200ET,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SN8900",
       title: "SN Series 8900 Mortise Exit (200, 210)",
+      image: Images.SN200ET,
       functions:
         "8973, 8974, 8975, 8976, 8904, 8906, 8910, 8913, 8944, 8946, 8943",
       metadata: "Fail, Secure, Safe, SN Series, 200, 210",
-      image: Images.SN200ET,
 
       MechOptions:
         "SN, 210, 200, SN200, SN210, 12, 14, 16, LD, 19, 23, 25, 29, 36, 37, 41, 43, 75, 76, 77, 85, 86, 87, CPC, SG, NB, PL, TB, HC, HC4, WS, FW",
@@ -4145,15 +4219,20 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055629",
       text: "View SN Series for Metal and Wood Doors Template Doc# 4708",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SN8900",
+        title: "SN Series 8900 Mortise Exit (200, 210)",
+        image: Images.SN200ET,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
   ],
   "SN PE80": [
@@ -4180,15 +4259,20 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238404",
       text: "View SN Series for Metal and Wood Doors Template Doc# MEDT34",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SNPE8600",
+        title: "SN Series PE8600 CVR Exit",
+        image: Images.SNPE8600,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SNPE8700",
@@ -4212,18 +4296,23 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238385",
       text: "View SN Series for Metal and Wood Doors Template (PE8700) Doc# MEDT11",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238425",
-      text1:
-        "View SN Series for Metal and Wood Doors Template (NB-PE8700) Doc# MEDT55",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text2:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text3:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text4:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SNPE8700",
+        title: "SN Series PE8600 CVR Exit",
+        image: Images.SNPETRIM,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238425",
+        text:
+          "View SN Series for Metal and Wood Doors Template (NB-PE8700) Doc# MEDT55",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text2:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text3:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text4:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SNPE8800",
@@ -4247,15 +4336,20 @@ export const ExitDevices = {
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238440",
       text: "View SN Series for Metal and Wood Doors Template Doc# MEDT56",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
-      text1:
-        "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
-      text2:
-        "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
-      text3:
-        "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      installation: {
+        device: "SNPE8800",
+        title: "SN Series PE8800 Rim Exit",
+        image: Images.SNPETRIM,
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1217883",
+        text:
+          "View SN Series with 56- Electric Latch Retraction Installation Instructions Doc# MEDT54",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055024",
+        text2:
+          "View Door Position Switch (Frame) Installation Instructions Doc# A7983",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055023",
+        text3:
+          "View Door Position Switch (Hinge) Installation Instructions Doc# A8005",
+      }
     },
     {
       device: "SNPE8900",
