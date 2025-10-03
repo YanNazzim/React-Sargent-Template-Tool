@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; // Import useEffect
-import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
+import React, { useState, useEffect, useRef } from "react"; 
+import { useLocation, useNavigate } from "react-router-dom"; 
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
 import { ExitDevices } from "../data/ExitDeviceData";
@@ -8,21 +8,52 @@ import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
 import { ThermalPin } from "../data/ThermalPinData";
 
+// Helper to safely extract and display up to 5 options/metadata tags
+const formatOptions = (optionsString) => {
+    if (!optionsString) return "N/A";
+    const options = optionsString.split(/, |,\s*|\s+/).filter(s => s.length > 0);
+    const displayedOptions = options.slice(0, 5).join(", ");
+    return options.length > 5 ? `${displayedOptions}, ...` : displayedOptions;
+};
+
+// Helper to classify link for visual cue
+const getLinkIcon = (text) => {
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes("parts manual") || lowerText.includes("catalog")) return "📖";
+    if (lowerText.includes("wiring") || lowerText.includes("electrical")) return "🔌";
+    if (lowerText.includes("strike") || lowerText.includes("auxiliary")) return "🔨";
+    if (lowerText.includes("template") || lowerText.includes("mounting")) return "📄";
+    if (lowerText.includes("installation")) return "🛠️";
+    return "🔗";
+};
+
+
 function DisplayTemplates() {
   const location = useLocation();
-  const navigate = useNavigate(); // Initialize useNavigate
-  const { category, series, device } = location.state || {};
+  const navigate = useNavigate(); 
+  const { category, series, device, initialTemplateTitle, key } = location.state || {};
 
   const [expandedTemplate, setExpandedTemplate] = useState(null);
   const [viewMode, setViewMode] = useState("templates");
-  const [copyStatus, setCopyStatus] = useState(null); // New state for copy status
+  const [copyStatus, setCopyStatus] = useState(null); 
+  // NEW STATE: Tracks if the initial search-based auto-open/view-switch has completed.
+  const [initialSearchDone, setInitialSearchDone] = useState(false); 
+  
+  const itemRefs = useRef([]);
 
-  // Redirect to home if critical state is not available (e.g., on refresh)
+  // Effect 0: Handle navigation reset & guard. Runs whenever the unique navigation key changes.
   useEffect(() => {
-    if (!category || !series) { // Check for both category and series
+    // Reset the flag and expanded state on every new navigation (search click)
+    setInitialSearchDone(false);
+    setExpandedTemplate(null);
+    
+    // Safety guard for direct URL access/refresh
+    if (!category || !series) { 
       navigate("/");
     }
-  }, [category, series, navigate]);
+  // Reset logic must run on 'key' change to re-enable auto-open for the new search result
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [key]); 
 
 
   // Initialize templates and installation instructions array
@@ -72,13 +103,95 @@ function DisplayTemplates() {
   const contentToShow =
     viewMode === "templates" ? filteredTemplates : filteredInstructions;
 
+  // Effect 1: Auto-Open and View Switch Logic. Now conditional on initialSearchDone flag.
+  useEffect(() => {
+    // 1. Skip if no title was provided, or if auto-open is completed for this navigation.
+    if (!initialTemplateTitle || initialSearchDone) {
+        return;
+    }
+    
+    let indexToExpand = contentToShow.findIndex(
+      (item) => item.title === initialTemplateTitle
+    );
+
+    // Scenario A: Item found in the currently active view mode.
+    if (indexToExpand !== -1) {
+      setExpandedTemplate(indexToExpand);
+      setInitialSearchDone(true); // Auto-open complete for this key
+      return;
+    } 
+
+    // Scenario B: Item not found in the current view mode. Try to switch views.
+    if (viewMode === "templates" && filteredInstructions.length > 0) {
+      const instructionIndex = filteredInstructions.findIndex(
+        (item) => item.title === initialTemplateTitle
+      );
+
+      if (instructionIndex !== -1) {
+        // Found in instructions, but currently in templates. Force switch.
+        setViewMode("instructions"); 
+        // NOTE: We rely on the re-run of this effect with the new viewMode 
+        // to land in Scenario A and set setInitialSearchDone(true)
+        return; 
+      }
+    } else if (viewMode === "instructions" && filteredTemplates.length > 0) {
+      const templateIndex = filteredTemplates.findIndex(
+        (item) => item.title === initialTemplateTitle
+      );
+
+      if (templateIndex !== -1) {
+        // Found in templates, but currently in instructions. Force switch.
+        setViewMode("templates");
+        return; 
+      }
+    }
+
+    // If initial title was provided but item was NOT found in either list, mark as done
+    setInitialSearchDone(true); 
+    
+  // This dependency array remains largely the same, but the logic inside relies on the flag to prevent overriding the user.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialTemplateTitle, category, series, device, key, contentToShow, viewMode]); 
+
+
+  // Effect 2: Auto-scrolling logic (remains the same)
+  useEffect(() => {
+    if (expandedTemplate !== null) {
+      const timeoutId = setTimeout(() => {
+        const targetElement = itemRefs.current[expandedTemplate];
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center', 
+          });
+        }
+      }, 50); 
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [expandedTemplate, contentToShow.length]); 
+
+  // Reset itemRefs whenever the content list changes 
+  itemRefs.current = [];
+  const setItemRef = (el, index) => {
+    if (el) {
+      itemRefs.current[index] = el;
+    }
+  };
+
+
   const toggleTemplate = (index) => {
     setExpandedTemplate(expandedTemplate === index ? null : index);
-    setCopyStatus(null); // Clear copy status on new expansion
+    setCopyStatus(null); 
+    // USER INTERACTION: Mark auto-open logic as complete/overridden
+    setInitialSearchDone(true); 
   };
 
   const toggleView = (view) => {
     if (view !== viewMode) {
+      // USER INTERACTION: Mark auto-open logic as complete/overridden BEFORE changing view mode
+      setInitialSearchDone(true); 
+      
       setViewMode(view);
       setExpandedTemplate(null);
       setCopyStatus(null);
@@ -86,12 +199,10 @@ function DisplayTemplates() {
   };
 
   const handleCopyLinks = async (e, template) => {
-    e.stopPropagation(); // Prevent the card from closing
+    e.stopPropagation(); 
     
-    // Use single line format for better link recognition
     let linksToCopy = `--- ${template.title} ---\n\n`;
     
-    // Helper array to collect all link items
     const linkItems = [];
     
     // Check for the main link/text (which is often text0/link0)
@@ -115,20 +226,16 @@ function DisplayTemplates() {
     }
 
     // Format the collected links into a clean, numbered list
-    // Use a single line for the description and URL, followed by an extra newline for spacing.
     linkItems.forEach((item, index) => {
-        // Updated format: "1. [Description]: [URL]\n\n" - This format works best for most clients.
-        linksToCopy += `${index + 1}. ${item.text}: ${item.url}\n\n`;
+        linksToCopy += `${getLinkIcon(item.text)} ${item.text}: ${item.url}\n\n`;
     });
     
     try {
       await navigator.clipboard.writeText(linksToCopy.trim());
       setCopyStatus(template.title);
-      // Clear status after 3 seconds
       setTimeout(() => setCopyStatus(null), 3000);
     } catch (err) {
       console.error('Failed to copy text: ', err);
-      // Optionally provide a different status for error
     }
   };
 
@@ -163,6 +270,8 @@ function DisplayTemplates() {
         {contentToShow.map((template, index) => (
           <div
             key={index}
+            // Set the ref dynamically based on the current index
+            ref={(el) => setItemRef(el, index)} 
             className={`template-card ${expandedTemplate === index ? "selected" : ""}`}
             onClick={() => toggleTemplate(index)}
             role="button"
@@ -177,9 +286,19 @@ function DisplayTemplates() {
               className="template-image"
             />
             <h2>{template.title}</h2>
+            
+            {/* UPDATED: Only showing Functions */}
+            {expandedTemplate === index && (
+                <div className="template-metadata">
+                    <h3><strong>Key Functions (Max 5 shown)</strong></h3>
+                    <p><strong>Functions:</strong> {formatOptions(template.functions)}</p>
+                </div>
+            )}
+            
             {expandedTemplate === index && (
               <div className="template-details">
                 {template.warning && <h3 className="warning-text">{template.warning}</h3>}
+                
 
                 {/* New Copy Button */}
                 <button 
@@ -196,7 +315,7 @@ function DisplayTemplates() {
                   rel="noopener noreferrer"
                   aria-label={`Open ${template.text}`}
                 >
-                  {template.text}
+                  {getLinkIcon(template.text)} {template.text}
                 </a>
 
                 {/* Render numbered links (link1/text1, etc.) */}
@@ -211,7 +330,7 @@ function DisplayTemplates() {
                       rel="noopener noreferrer"
                       aria-label={`Open ${template[textKey]}`}
                     >
-                      {template[textKey]}
+                      {getLinkIcon(template[textKey])} {template[textKey]}
                     </a>
                   ) : null;
                 })}

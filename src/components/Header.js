@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react"; 
 import "./style/HeaderFooter.css";
 import logo from "../images/Sargent Logo.jpg";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +15,6 @@ function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -56,18 +55,10 @@ function Header() {
     }, [isProductsDropdownOpen]);
 
 
-  // Split query by dashes or spaces and return an array of terms
+  // Helper functions used in search logic
   const splitSearchQuery = (query) => query.split(/[-\s]+/).filter(Boolean);
 
-  // Search logic
-  const handleSearchClick = useCallback(() => {
-    if (!searchQuery) return;
-
-    let productData = [];
-    const searchTerms = splitSearchQuery(searchQuery.toLowerCase());
-
-    // Function to match search terms against a product's options
-    const matchesOptions = (product, terms) => {
+  const matchesOptions = (product, terms) => {
       const {
         device,
         title,
@@ -110,7 +101,17 @@ function Header() {
       return terms.every((term) =>
         allOptions.some((option) => option.includes(term))
       );
-    };
+  };
+  
+  // Core search logic function
+  const runSearchLogic = (query) => {
+    if (!query) {
+        setFilteredProducts([]);
+        return;
+    }
+
+    let productData = [];
+    const searchTerms = splitSearchQuery(query.toLowerCase());
 
     // Include all data sources into productData
     const dataSources = [
@@ -158,8 +159,9 @@ function Header() {
           data.sections.map((section) => ({
             category: "Cylinders",
             type, // Pass the type for navigation
+            series: type, // Use type as series for navigation to CylindersInfo
             device: section.heading,
-            title: data.title,
+            title: section.heading, // Use section heading as title for matching auto-expand later
             functions: section.texts ? section.texts.join(", ") : "",
             metadata: section.metadata || "",
             image: section.image || "", // Include image if available
@@ -174,28 +176,30 @@ function Header() {
     );
 
     setFilteredProducts(results);
-    setIsModalOpen(true);
-    setSelectedProduct(null); // Reset selected product when searching
-  }, [searchQuery]);
-
-  // Listen for "Enter" key press when modal is open
+  };
+  
+  // NEW: Debounce search effect (300ms)
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "Enter" && isModalOpen) {
-        handleSearchClick(); // Trigger search when "Enter" is pressed
-      }
-    };
+    if (!isModalOpen) {
+        setFilteredProducts([]);
+        return;
+    }
+    
+    // Debounce logic
+    const handler = setTimeout(() => {
+      runSearchLogic(searchQuery);
+    }, 300);
 
-    window.addEventListener("keydown", handleKeyDown);
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      clearTimeout(handler);
     };
-  }, [isModalOpen, handleSearchClick]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchQuery, isModalOpen]);
+
 
   const handleClear = () => {
     setSearchQuery("");
     setFilteredProducts([]);
-    setSelectedProduct(null);
   };
 
   const handleCloseModal = () => {
@@ -205,8 +209,41 @@ function Header() {
 
 
   const handleItemClick = (product) => {
-    setSelectedProduct(product);
+    // Determine the series for navigation
+    if (product.category === "Cylinders") {
+        // Navigate directly to the cylinders info page using the series (type) as a param
+        // Use replace: true to ensure the navigation fires even if the page is the same
+        navigate(`/cylinders-info/${product.series}`, { replace: true });
+    } else {
+        // For all other product types, navigate to the display templates page
+        // Use a time-based key (new Date().getTime()) in the state to force a re-render/re-navigation 
+        // when the user searches for an item on the current page.
+        navigate("/display-templates", {
+            state: {
+                category: product.category,
+                series: product.series,
+                device: product.device,
+                initialTemplateTitle: product.title,
+                // Add a unique key to force state update even if path/params are identical
+                key: new Date().getTime(), 
+            },
+            // Also use replace: true to ensure the navigation command fires
+            replace: true
+        });
+    }
+
+    // Always close the modal immediately after navigation
+    handleCloseModal();
   };
+  
+  const handleOpenSearchModal = () => {
+      setIsModalOpen(true);
+      // Immediately run search once when the modal opens if there is an existing query
+      if (searchQuery) {
+          runSearchLogic(searchQuery);
+      }
+  }
+
 
   return (
     <header className="header">
@@ -238,8 +275,8 @@ function Header() {
             )}
           </div>
 
-          {/* Search Button (reusing old search modal logic) */}
-          <button className="nav-item" onClick={() => setIsModalOpen(true)}>
+          {/* Search Button (now only opens the modal) */}
+          <button className="nav-item" onClick={handleOpenSearchModal}>
             Search
           </button>
         </nav>
@@ -257,9 +294,8 @@ function Header() {
               id="search-bar"
             />
             <div className="modal-buttons">
-              <button onClick={handleSearchClick} className="search-button">
-                Search
-              </button>
+              {/* HIDDEN: The Search button is now redundant, removing it visually for a cleaner look */}
+              {/* <button onClick={handleSearchClick} className="search-button"> Search </button> */}
               <button onClick={handleClear} className="clear-button">
                 Clear
               </button>
@@ -268,91 +304,38 @@ function Header() {
               </button>
             </div>
 
-            {selectedProduct ? (
-              <div className="selected-product">
-                <button
-                  className="view-templates-button"
-                  onClick={() => {
-                    navigate("/display-templates", {
-                      state: {
-                        category: selectedProduct.category,
-                        series: selectedProduct.series,
-                        device: selectedProduct.device,
-                      },
-                    });
-                    handleCloseModal();
-                  }}
-                >
-                  View more templates for this device
-                </button>
-                <h2>{selectedProduct.title}</h2>
-                <a
-                  href={selectedProduct.image}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={
-                      selectedProduct.category === "Cylinders"
-                        ? CylindersData[selectedProduct.type]?.sections.find(
-                            (section) =>
-                              section.heading === selectedProduct.device
-                          )?.image
-                        : selectedProduct.image
-                    }
-                    alt={selectedProduct.title}
-                  />
-                </a>
-                <p>Category: {selectedProduct.category}</p>
-                <p>Device: {selectedProduct.device}</p>
-                {selectedProduct.warning && <p>{selectedProduct.warning}</p>}
-                {/* Dynamically render all links and their associated text */}
-                {Object.keys(selectedProduct).map((key, index) => {
-                  if (key.startsWith("link") && selectedProduct[key]) {
-                    const textKey = `text${key.slice(4)}`;
-                    return (
-                      <a
-                        key={index}
-                        href={selectedProduct[key]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="product-link"
-                      >
-                        {selectedProduct[textKey] || "View Document"}
-                      </a>
-                    );
-                  }
-                  return null;
-                })}
+            {/* Display search results live */}
+            {filteredProducts.length > 0 ? (
+              <div className="search-results-list">
+                {filteredProducts.map((product, index) => (
+                  <div
+                    className="carousel-item"
+                    key={index}
+                    onClick={() => handleItemClick(product)}
+                  >
+                    <img
+                      src={
+                        product.category === "Cylinders"
+                          ? CylindersData[product.series]?.sections.find(
+                              (section) =>
+                                section.heading === product.device
+                            )?.image
+                          : product.image
+                      }
+                      alt={product.title}
+                    />
+                    <p>
+                      {product.title}{" "}
+                      {product.device ? `(${product.device})` : ""} - {product.category}
+                    </p>
+                  </div>
+                ))}
               </div>
             ) : (
-              filteredProducts.length > 0 && (
-                <div className="search-results-list">
-                  {filteredProducts.map((product, index) => (
-                    <div
-                      className="carousel-item"
-                      key={index}
-                      onClick={() => handleItemClick(product)}
-                    >
-                      <img
-                        src={
-                          product.category === "Cylinders"
-                            ? CylindersData[product.type]?.sections.find(
-                                (section) =>
-                                  section.heading === product.device
-                              )?.image
-                            : product.image
-                        }
-                        alt={product.title}
-                      />
-                      <p>
-                        {product.title}{" "}
-                        {product.device ? `(${product.device})` : ""} - {product.category}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )
+                // Only show "No results found" if the user has actually typed something
+                filteredProducts.length === 0 && searchQuery && (
+                    <p>No results found for "{searchQuery}"</p>
+                )
             )}
           </div>
         </div>
