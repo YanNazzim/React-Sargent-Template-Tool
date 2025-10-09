@@ -8,6 +8,26 @@ import { AuxLocks } from "../data/AuxLocksData";
 import { MultiPoints } from "../data/MultiPointsData";
 import { ThermalPin } from "../data/ThermalPinData";
 
+// Helper to safely extract and display up to 5 options/metadata tags
+const formatOptions = (optionsString) => {
+    if (!optionsString) return "N/A";
+    const options = optionsString.split(/, |,\s*|\s+/).filter(s => s.length > 0);
+    const displayedOptions = options.slice(0, 5).join(", ");
+    return options.length > 5 ? `${displayedOptions}, ...` : displayedOptions;
+};
+
+// Helper to classify link for visual cue
+const getLinkIcon = (text) => {
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes("parts manual") || lowerText.includes("catalog")) return "📖";
+    if (lowerText.includes("wiring") || lowerText.includes("electrical")) return "🔌";
+    if (lowerText.includes("strike") || lowerText.includes("auxiliary")) return "🔨";
+    if (lowerText.includes("template") || lowerText.includes("mounting")) return "📄";
+    if (lowerText.includes("installation")) return "🛠️";
+    return "🔗";
+};
+
+
 function DisplayTemplates() {
   const location = useLocation();
   const navigate = useNavigate();
