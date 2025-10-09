@@ -76,11 +76,11 @@
 }
 
 .view-toggle .slider.left {
-  transform: translateX(-50%);
+  transform: translateX(0);
 }
 
 .view-toggle .slider.right {
-  transform: translateX(50%);
+  transform: translateX(100%);
 }
 
 .view-toggle button {
@@ -107,7 +107,7 @@
 }
 
 /* ------------------------------------------- */
-/* --- Content Grid and Cards --- */
+/* --- Content Grid and Cards (existing) --- */
 /* ------------------------------------------- */
 .template-grid {
   display: grid;
@@ -139,7 +139,7 @@
   cursor: pointer;
   height: 100%; /* Ensures uniform height before expansion */
   box-sizing: border-box;
-  position: relative;
+  position: relative; /* CRITICAL for positioning the status pop-up */
 }
 
 .template-card:hover {
@@ -195,27 +195,7 @@
     padding: 0 10px;
 }
 
-.template-details a {
-  display: block;
-  width: 100%;
-  color: var(--accent);
-  padding: 0.6rem 0.5rem;
-  margin: 0.3rem 0;
-  border-radius: 6px;
-  transition: var(--transition);
-  text-decoration: none;
-  font-size: 1.05rem;
-  white-space: normal;
-  box-sizing: border-box;
-}
-
-.template-details a:hover {
-  background: rgba(138, 180, 248, 0.1);
-  color: var(--accent-hover);
-  text-decoration: underline;
-}
-
-/* NEW: Copy Links Button Styling */
+/* NEW: Copy Links Button Styling (Local inside card) */
 .copy-links-button {
     background-color: var(--accent);
     color: var(--primary-bg);
@@ -235,30 +215,114 @@
     background-color: var(--accent-hover);
 }
 
-/* NEW: Copy Success Message */
-.copy-success-message {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--success);
-    color: var(--primary-bg);
+/* MODIFIED: Local Copy Status Message for POP-UP effect */
+.copy-links-status {
+    /* Positioned absolutely within the card */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
+    /* Styling to look like a pop-up */
+    padding: 10px 20px;
+    border-radius: 10px;
     font-weight: 700;
-    padding: 5px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    min-width: 200px;
     text-align: center;
-    animation: fadeOut 3s forwards;
-    z-index: 10;
+    z-index: 20; /* Ensure it floats above content */
+
+    /* Animation to appear/disappear */
+    animation: popupFade 3s forwards;
 }
 
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+.copy-links-status.success {
+    background-color: var(--success);
+    color: var(--primary-bg);
+}
+
+.copy-links-status.warning {
+    background-color: var(--warning);
+    color: var(--primary-bg);
+}
+
+.copy-links-status.error {
+    background-color: #f00;
+    color: var(--primary-bg);
+}
+
+
+@keyframes popupFade {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); } /* Pop in effect */
+    10% { opacity: 1; transform: translate(-50%, -50%) scale(1); } /* Fully visible */
+    90% { opacity: 1; transform: translate(-50%, -50%) scale(1); } /* Hold visibility */
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1); } /* Fade out */
 }
 
 
 /* ------------------------------------------- */
-/* --- Responsive Adjustments --- */
+/* --- NEW: Link Selection List Styles --- */
+/* ------------------------------------------- */
+.link-selection-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left; /* Ensure text starts at the left */
+}
+
+.link-item {
+    display: flex;
+    align-items: flex-start; /* Align checkbox and text at the top */
+    gap: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle separator */
+}
+
+.link-item:last-child {
+    border-bottom: none;
+}
+
+.link-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--accent); 
+    margin: 0;
+    flex-shrink: 0; /* Prevent it from shrinking */
+    margin-top: 4px; /* Adjust vertical alignment with text */
+}
+
+.link-item a {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    white-space: normal;
+    word-break: break-word;
+    color: var(--text-primary); 
+    text-decoration: none;
+    transition: color 0.15s;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.link-item a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+    background: none;
+}
+
+/* Highlight selected text/link */
+.link-item input[type="checkbox"]:checked + a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+
+/* ------------------------------------------- */
+/* --- Responsive Adjustments (existing) --- */
 /* ------------------------------------------- */
 @media (max-width: 1024px) {
     .template-grid {

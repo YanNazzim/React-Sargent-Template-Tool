@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; // Import useEffect
-import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom"; 
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
 import { ExitDevices } from "../data/ExitDeviceData";
@@ -10,55 +10,38 @@ import { ThermalPin } from "../data/ThermalPinData";
 
 function DisplayTemplates() {
   const location = useLocation();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
   const { category, series, device } = location.state || {};
 
   const [expandedTemplate, setExpandedTemplate] = useState(null);
   const [viewMode, setViewMode] = useState("templates");
-  const [copyStatus, setCopyStatus] = useState(null); // New state for copy status
+  // State to track selected links: { 'templateIndex-linkIndex': { url, text, templateTitle } }
+  const [selectedLinks, setSelectedLinks] = useState({}); 
+  // State for copy status, now scoped to the card by storing the template's title or index
+  const [copyStatus, setCopyStatus] = useState(null); 
+  const [copyStatusIndex, setCopyStatusIndex] = useState(null);
+
 
   // Redirect to home if critical state is not available (e.g., on refresh)
   useEffect(() => {
-    if (!category || !series) { // Check for both category and series
+    if (!category || !series) {
       navigate("/");
     }
   }, [category, series, navigate]);
 
+  // Data Loading Logic 
+  let dataStore = {};
+  if (category === "Mortise Locks") dataStore = MortiseLocks;
+  else if (category === "Exit Devices") dataStore = ExitDevices;
+  else if (category === "Bored Locks") dataStore = BoredLocks;
+  else if (category === "Auxiliary Locks") dataStore = AuxLocks;
+  else if (category === "Multi Points") dataStore = MultiPoints;
+  else if (category === "Thermal") dataStore = ThermalPin;
 
-  // Initialize templates and installation instructions array
-  let templates = [];
-  let installationInstructions = [];
-  if (category === "Mortise Locks") {
-    templates = MortiseLocks[series] || [];
-    installationInstructions = (MortiseLocks[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  } else if (category === "Exit Devices") {
-    templates = ExitDevices[series] || [];
-    installationInstructions = (ExitDevices[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  } else if (category === "Bored Locks") {
-    templates = BoredLocks[series] || [];
-    installationInstructions = (BoredLocks[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  } else if (category === "Auxiliary Locks") {
-    templates = AuxLocks[series] || [];
-    installationInstructions = (AuxLocks[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  } else if (category === "Multi Points") {
-    templates = MultiPoints[series] || [];
-    installationInstructions = (MultiPoints[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  } else if (category === "Thermal") {
-    templates = ThermalPin[series] || [];
-    installationInstructions = (ThermalPin[series] || [])
-      .map((template) => template.installation || [])
-      .flat();
-  }
+  let templates = dataStore[series] || [];
+  let installationInstructions = (dataStore[series] || [])
+    .map((template) => template.installation || [])
+    .flat();
 
   const filteredTemplates = device
     ? templates.filter((t) => t.device?.toLowerCase() === device.toLowerCase())
@@ -71,10 +54,100 @@ function DisplayTemplates() {
 
   const contentToShow =
     viewMode === "templates" ? filteredTemplates : filteredInstructions;
+    
+  // Helper to extract all link objects from a template in order (link0 to link10)
+  const extractLinks = (template) => {
+    const links = [];
+    if (template.link) {
+      links.push({ text: template.text || "Document Link", url: template.link });
+    }
+    for (let i = 1; i <= 10; i++) {
+      const linkKey = `link${i}`;
+      const textKey = `text${i}`;
+      if (template[linkKey]) {
+        links.push({
+          text: template[textKey] || `Document Link ${i}`,
+          url: template[linkKey],
+        });
+      }
+    }
+    return links;
+  };
+
+  // State Handler for Checkboxes (Global selection remains, keyed by index)
+  const handleLinkToggle = (templateIndex, linkIndex, linkDetails) => {
+    const key = `${templateIndex}-${linkIndex}`;
+    setSelectedLinks((prev) => {
+      const newLinks = { ...prev };
+      if (newLinks[key]) {
+        delete newLinks[key];
+      } else {
+        newLinks[key] = {
+          ...linkDetails,
+          templateTitle: contentToShow[templateIndex].title,
+        };
+      }
+      return newLinks;
+    });
+  };
+
+  // NEW: Local Copy Function (scoped to a specific templateIndex)
+  const handleCopyLinks = async (e, templateIndex, templateTitle) => {
+    e.stopPropagation(); // Prevent card from collapsing
+
+    // 1. Filter selected links only for this template card
+    const relevantKeys = Object.keys(selectedLinks).filter(key => 
+        key.startsWith(`${templateIndex}-`)
+    );
+
+    if (relevantKeys.length === 0) {
+      setCopyStatus("None Selected");
+      setCopyStatusIndex(templateIndex);
+      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+      return;
+    }
+
+    // 2. Sort keys by link index (to maintain list order in the output)
+    const sortedLinkKeys = relevantKeys.sort((a, b) => {
+      const aL = parseInt(a.split("-")[1], 10);
+      const bL = parseInt(b.split("-")[1], 10);
+      return aL - bL;
+    });
+
+    // 3. Compile the final formatted email output
+    let emailOutput = `
+
+Please find the requested document link(s) below. If you need anything further, please let me know.
+
+Device/Document(s) requested: ${category} - ${device || series}
+
+**${templateTitle}**
+`;
+
+    sortedLinkKeys.forEach((key) => {
+      const linkDetails = selectedLinks[key];
+      emailOutput += `- ${linkDetails.text}: ${linkDetails.url}\n`;
+    });
+
+    try {
+      await navigator.clipboard.writeText(emailOutput.trim());
+      setCopyStatus("Links Copied!");
+      setCopyStatusIndex(templateIndex);
+      // Clear status after 3 seconds
+      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+      setCopyStatus("Copy Failed");
+      setCopyStatusIndex(templateIndex);
+      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+    }
+  };
+
 
   const toggleTemplate = (index) => {
     setExpandedTemplate(expandedTemplate === index ? null : index);
-    setCopyStatus(null); // Clear copy status on new expansion
+    setCopyStatus(null);
+    setCopyStatusIndex(null); // Clear copy status on new expansion
   };
 
   const toggleView = (view) => {
@@ -82,63 +155,30 @@ function DisplayTemplates() {
       setViewMode(view);
       setExpandedTemplate(null);
       setCopyStatus(null);
+      setCopyStatusIndex(null);
     }
   };
 
-  const handleCopyLinks = async (e, template) => {
-    e.stopPropagation(); // Prevent the card from closing
-    
-    // Use single line format for better link recognition
-    let linksToCopy = `--- ${template.title} ---\n\n`;
-    
-    // Helper array to collect all link items
-    const linkItems = [];
-    
-    // Check for the main link/text (which is often text0/link0)
-    if (template.link) {
-      linkItems.push({
-        text: template.text || 'Document Link',
-        url: template.link
-      });
-    }
+  // Re-map contentToShow to ensure we have the indexes and extracted links
+  const contentWithLinks = contentToShow.map((template, index) => ({
+    ...template,
+    templateIndex: index, // Add index for unique key generation
+    links: extractLinks(template),
+  }));
 
-    // Iterate through numbered links
-    for (let i = 1; i <= 10; i++) {
-      const linkKey = `link${i}`;
-      const textKey = `text${i}`;
-      if (template[linkKey]) {
-        linkItems.push({
-          text: template[textKey] || `Document Link ${i}`,
-          url: template[linkKey]
-        });
-      }
-    }
-
-    // Format the collected links into a clean, numbered list
-    // Use a single line for the description and URL, followed by an extra newline for spacing.
-    linkItems.forEach((item, index) => {
-        // Updated format: "1. [Description]: [URL]\n\n" - This format works best for most clients.
-        linksToCopy += `${index + 1}. ${item.text}: ${item.url}\n\n`;
-    });
-    
-    try {
-      await navigator.clipboard.writeText(linksToCopy.trim());
-      setCopyStatus(template.title);
-      // Clear status after 3 seconds
-      setTimeout(() => setCopyStatus(null), 3000);
-    } catch (err) {
-      console.error('Failed to copy text: ', err);
-      // Optionally provide a different status for error
-    }
-  };
 
   return (
     <div className="display-templates">
-      <h1 className="deviceHeading">{category || "Category"} - {device || series}</h1>
-      <h2 className="ToolTip">Click/Tap on cards to expand details and copy links for easy customer support!</h2>
+      <h1 className="deviceHeading">
+        {category || "Category"} - {device || series}
+      </h1>
+      <h2 className="ToolTip">
+        Click/Tap on cards to expand details. Select links then use the 'Copy
+        Selected' button inside the card for an easy email output.
+      </h2>
 
-      {/* Toggle Buttons with Slider */}
-      <div className="view-toggle" >
+      {/* Toggle Buttons with Slider (UNCHANGED) */}
+      <div className="view-toggle">
         <div
           className={`slider ${viewMode === "templates" ? "left" : "right"}`}
         ></div>
@@ -159,17 +199,33 @@ function DisplayTemplates() {
       </div>
 
       {/* Content Display */}
-      <div className={`template-grid ${contentToShow.length === 1 ? "single-item" : ""}`}>
-        {contentToShow.map((template, index) => (
+      <div
+        className={`template-grid ${
+          contentWithLinks.length === 1 ? "single-item" : ""
+        }`}
+      >
+        {contentWithLinks.map((template, templateIndex) => (
           <div
-            key={index}
-            className={`template-card ${expandedTemplate === index ? "selected" : ""}`}
-            onClick={() => toggleTemplate(index)}
+            key={templateIndex}
+            className={`template-card ${
+              expandedTemplate === templateIndex ? "selected" : ""
+            }`}
+            onClick={() => toggleTemplate(templateIndex)}
             role="button"
             tabIndex={0}
             aria-label={`Template ${template.title}`}
           >
-            {copyStatus === template.title && <div className="copy-success-message">Links Copied!</div>}
+            {/* NEW: Local Copy Status */}
+            {copyStatusIndex === templateIndex && copyStatus && (
+              <div 
+                className={`copy-links-status ${
+                  copyStatus === "Links Copied!" ? "success" : 
+                  copyStatus === "None Selected" ? "warning" : "error"
+                }`}
+              >
+                {copyStatus === "Links Copied!" ? "Links Copied to Clipboard!" : copyStatus}
+              </div>
+            )}
             
             <img
               src={template.image}
@@ -177,44 +233,53 @@ function DisplayTemplates() {
               className="template-image"
             />
             <h2>{template.title}</h2>
-            {expandedTemplate === index && (
+            {expandedTemplate === templateIndex && (
               <div className="template-details">
-                {template.warning && <h3 className="warning-text">{template.warning}</h3>}
+                {template.warning && (
+                  <h3 className="warning-text">⚠️ {template.warning}</h3>
+                )}
 
-                {/* New Copy Button */}
+                {/* NEW: Local Copy Button */}
                 <button 
-                    className="copy-links-button" 
-                    onClick={(e) => handleCopyLinks(e, template)}
+                  className="copy-links-button" 
+                  onClick={(e) => handleCopyLinks(e, templateIndex, template.title)}
                 >
-                    Copy All Links to Clipboard
+                  Copy Selected Link(s)
                 </button>
-                
-                {/* Render the first link (link/text) */}
-                <a
-                  href={template.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Open ${template.text}`}
-                >
-                  {template.text}
-                </a>
 
-                {/* Render numbered links (link1/text1, etc.) */}
-                {Array.from({ length: 10 }, (_, i) => {
-                  const linkKey = `link${i + 1}`;
-                  const textKey = `text${i + 1}`;
-                  return template[linkKey] ? (
-                    <a
-                      key={linkKey}
-                      href={template[linkKey]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Open ${template[textKey]}`}
-                    >
-                      {template[textKey]}
-                    </a>
-                  ) : null;
-                })}
+                {/* NEW: List of links with checkboxes */}
+                <div className="link-selection-list">
+                  {template.links.map((linkDetails, linkIndex) => {
+                    const linkKey = `${templateIndex}-${linkIndex}`;
+                    return (
+                      <div key={linkIndex} className="link-item">
+                        <input
+                          type="checkbox"
+                          id={`link-${linkKey}`}
+                          checked={!!selectedLinks[linkKey]}
+                          onChange={(e) => {
+                            e.stopPropagation();
+                            handleLinkToggle(
+                              templateIndex,
+                              linkIndex,
+                              linkDetails
+                            );
+                          }}
+                          onClick={(e) => e.stopPropagation()} // Prevent card collapse on checkbox click
+                        />
+                        <a
+                          href={linkDetails.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Open ${linkDetails.text}`}
+                          onClick={(e) => e.stopPropagation()} // Allow click to open document
+                        >
+                          {linkDetails.text}
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
