@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom"; 
 import "./style/DisplayTemplates.css";
 import { MortiseLocks } from "../data/MortiseLocksData";
@@ -15,9 +15,9 @@ function DisplayTemplates() {
 
   const [expandedTemplate, setExpandedTemplate] = useState(null);
   const [viewMode, setViewMode] = useState("templates");
-  // State to track selected links: { 'templateIndex-linkIndex': { url, text, templateTitle } }
+  // State to track selected links: { 'templateIndex-linkIndex': { url, text, templateTitle, templateIndex, linkIndex } }
   const [selectedLinks, setSelectedLinks] = useState({}); 
-  // State for copy status, now scoped to the card by storing the template's title or index
+  // State for copy status, scoped to the card where the button was pressed
   const [copyStatus, setCopyStatus] = useState(null); 
   const [copyStatusIndex, setCopyStatusIndex] = useState(null);
 
@@ -29,7 +29,7 @@ function DisplayTemplates() {
     }
   }, [category, series, navigate]);
 
-  // Data Loading Logic 
+  // Data Loading Logic (omitted for brevity, assume it works as before)
   let dataStore = {};
   if (category === "Mortise Locks") dataStore = MortiseLocks;
   else if (category === "Exit Devices") dataStore = ExitDevices;
@@ -59,8 +59,11 @@ function DisplayTemplates() {
   const extractLinks = (template) => {
     const links = [];
     if (template.link) {
-      links.push({ text: template.text || "Document Link", url: template.link });
+      links.push({ text: template.text || "Document Link", url: template.link, isPrimary: true });
+    } else {
+      links.push({ text: template.text || "Document Link", url: template.link, isPrimary: true });
     }
+
     for (let i = 1; i <= 10; i++) {
       const linkKey = `link${i}`;
       const textKey = `text${i}`;
@@ -68,6 +71,7 @@ function DisplayTemplates() {
         links.push({
           text: template[textKey] || `Document Link ${i}`,
           url: template[linkKey],
+          isPrimary: false
         });
       }
     }
@@ -82,65 +86,123 @@ function DisplayTemplates() {
       if (newLinks[key]) {
         delete newLinks[key];
       } else {
+        // Store extra details needed for unique titles and sorting
         newLinks[key] = {
           ...linkDetails,
           templateTitle: contentToShow[templateIndex].title,
+          templateIndex: templateIndex,
+          linkIndex: linkIndex
         };
       }
       return newLinks;
     });
   };
+  
+  // Function to remove a link directly using its key from the navbar
+  const handleRemoveLink = (key, e) => {
+    e.stopPropagation();
+    setSelectedLinks(prev => {
+        const newState = { ...prev };
+        // Determine the indices from the key
+        const [tIndex, lIndex] = key.split("-").map(Number);
+        
+        // Find the checkbox and uncheck it visually (important for UI consistency)
+        const checkbox = document.getElementById(`link-${tIndex}-${lIndex}`);
+        if (checkbox) {
+          checkbox.checked = false;
+        }
 
-  // NEW: Local Copy Function (scoped to a specific templateIndex)
-  const handleCopyLinks = async (e, templateIndex, templateTitle) => {
-    e.stopPropagation(); // Prevent card from collapsing
+        delete newState[key];
+        return newState;
+    });
+  };
 
-    // 1. Filter selected links only for this template card
-    const relevantKeys = Object.keys(selectedLinks).filter(key => 
-        key.startsWith(`${templateIndex}-`)
-    );
 
-    if (relevantKeys.length === 0) {
+  // MODIFIED: Memoized derivation to calculate total links AND list of selected links (sorted by index)
+  const { totalLinks, sortedSelectedLinks } = useMemo(() => {
+    let totalLinks = 0;
+    const linksArray = Object.entries(selectedLinks).map(([key, linkDetails]) => {
+        totalLinks++;
+        return {
+            key, // Preserve the original key for removal
+            ...linkDetails
+        };
+    }).sort((a, b) => {
+        // Sort primarily by templateIndex and secondarily by linkIndex
+        if (a.templateIndex !== b.templateIndex) {
+            return a.templateIndex - b.templateIndex; // Sort by template index first
+        }
+        return a.linkIndex - b.linkIndex; // Then sort by link index
+    });
+
+    return { totalLinks, sortedSelectedLinks: linksArray };
+  }, [selectedLinks]);
+
+  
+  // MODIFIED: This function now copies the entire global queue and clears it all.
+  const handleCopyLinks = async (e) => {
+    e.stopPropagation();
+
+    if (totalLinks === 0) {
       setCopyStatus("None Selected");
-      setCopyStatusIndex(templateIndex);
+      setCopyStatusIndex(expandedTemplate); // Use the currently expanded card for status feedback
       setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
       return;
     }
 
-    // 2. Sort keys by link index (to maintain list order in the output)
-    const sortedLinkKeys = relevantKeys.sort((a, b) => {
-      const aL = parseInt(a.split("-")[1], 10);
-      const bL = parseInt(b.split("-")[1], 10);
-      return aL - bL;
-    });
-
-    // 3. Compile the final formatted email output
-    let emailOutput = `Hello Customer/Dealer,
-
-Please find the requested document link(s) below. If you need anything further, please let me know.
+    // --- 1. Group links by original template for coherent output ---
+    const linksByTemplate = sortedSelectedLinks.reduce((acc, link) => {
+        const title = link.templateTitle;
+        if (!acc[title]) {
+            acc[title] = {
+                title,
+                links: []
+            };
+        }
+        acc[title].links.push(link);
+        return acc;
+    }, {});
+    
+    // --- 2. Compile the final formatted email output ---
+    let emailOutput = `Please find the requested document link(s) below. If you need anything further, please let me know.
 
 Device/Document(s) requested: ${category} - ${device || series}
 
 --------------------------------------
-
-**${templateTitle}**
 `;
 
-    sortedLinkKeys.forEach((key) => {
-      const linkDetails = selectedLinks[key];
-      emailOutput += `- ${linkDetails.text}: ${linkDetails.url}\n`;
-    });
+    for (const title in linksByTemplate) {
+        emailOutput += `\n**${title}**\n`;
+        let templateLinks = "";
+        linksByTemplate[title].links.forEach(link => {
+            templateLinks += `- ${link.text}: ${link.url}\n`;
+        });
+        emailOutput += templateLinks;
+    }
 
+    // --- 3. Copy data and clear the entire queue ---
     try {
       await navigator.clipboard.writeText(emailOutput.trim());
       setCopyStatus("Links Copied!");
-      setCopyStatusIndex(templateIndex);
+      setCopyStatusIndex(expandedTemplate);
+      
+      // Clear all checkboxes visually
+      sortedSelectedLinks.forEach(link => {
+        const checkbox = document.getElementById(`link-${link.templateIndex}-${link.linkIndex}`);
+        if (checkbox) {
+          checkbox.checked = false;
+        }
+      });
+
+      // Clear the entire queue state
+      setSelectedLinks({});
+      
       // Clear status after 3 seconds
       setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
     } catch (err) {
       console.error("Failed to copy text: ", err);
       setCopyStatus("Copy Failed");
-      setCopyStatusIndex(templateIndex);
+      setCopyStatusIndex(expandedTemplate);
       setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
     }
   };
@@ -149,15 +211,15 @@ Device/Document(s) requested: ${category} - ${device || series}
   const toggleTemplate = (index) => {
     setExpandedTemplate(expandedTemplate === index ? null : index);
     setCopyStatus(null);
-    setCopyStatusIndex(null); // Clear copy status on new expansion
+    setCopyStatusIndex(null); // Clear local copy status on card interaction
   };
 
   const toggleView = (view) => {
     if (view !== viewMode) {
-      setViewMode(view);
       setExpandedTemplate(null);
       setCopyStatus(null);
       setCopyStatusIndex(null);
+      setViewMode(view);
     }
   };
 
@@ -168,6 +230,11 @@ Device/Document(s) requested: ${category} - ${device || series}
     links: extractLinks(template),
   }));
 
+  // Helper to determine if a link is selected
+  const isLinkSelected = (templateIndex, linkIndex) => {
+    const key = `${templateIndex}-${linkIndex}`;
+    return !!selectedLinks[key];
+  };
 
   return (
     <div className="display-templates">
@@ -179,6 +246,7 @@ Device/Document(s) requested: ${category} - ${device || series}
         Selected' button inside the card for an easy email output.
       </h2>
 
+      
       {/* Toggle Buttons with Slider (UNCHANGED) */}
       <div className="view-toggle">
         <div
@@ -217,7 +285,7 @@ Device/Document(s) requested: ${category} - ${device || series}
             tabIndex={0}
             aria-label={`Template ${template.title}`}
           >
-            {/* NEW: Local Copy Status */}
+            {/* Local Copy Status Pop-up */}
             {copyStatusIndex === templateIndex && copyStatus && (
               <div 
                 className={`copy-links-status ${
@@ -241,24 +309,25 @@ Device/Document(s) requested: ${category} - ${device || series}
                   <h3 className="warning-text">⚠️ {template.warning}</h3>
                 )}
 
-                {/* NEW: Local Copy Button */}
+                {/* Local Copy Button: Now copies the ENTIRE global queue */}
                 <button 
                   className="copy-links-button" 
-                  onClick={(e) => handleCopyLinks(e, templateIndex, template.title)}
+                  // Note: Removed the local index arguments since the function is now global scope.
+                  onClick={(e) => handleCopyLinks(e)}
                 >
-                  Copy Selected Link(s) for Email
+                  Copy All {totalLinks > 0 ? `(${totalLinks}) ` : ''}Selected Link(s)
                 </button>
 
-                {/* NEW: List of links with checkboxes */}
+                {/* List of links with checkboxes */}
                 <div className="link-selection-list">
                   {template.links.map((linkDetails, linkIndex) => {
-                    const linkKey = `${templateIndex}-${linkIndex}`;
                     return (
                       <div key={linkIndex} className="link-item">
                         <input
                           type="checkbox"
-                          id={`link-${linkKey}`}
-                          checked={!!selectedLinks[linkKey]}
+                          // IMPORTANT: Use the full key as the ID for easy lookup in handleRemoveLink
+                          id={`link-${templateIndex}-${linkIndex}`}
+                          checked={isLinkSelected(templateIndex, linkIndex)}
                           onChange={(e) => {
                             e.stopPropagation();
                             handleLinkToggle(
@@ -286,6 +355,32 @@ Device/Document(s) requested: ${category} - ${device || series}
             )}
           </div>
         ))}
+      </div>
+      
+      {/* NEW GLOBAL COPY QUEUE NAVBAR (Bottom Dock) */}
+      <div className={`copy-queue-navbar ${totalLinks === 0 ? 'hidden' : ''}`}>
+          <div className="navbar-header">
+              📝 Ready to Copy ({totalLinks} Links)
+          </div>
+          <div className="links-container">
+              {sortedSelectedLinks.map((link) => (
+                  <button
+                      key={link.key}
+                      className="queue-link-button"
+                      onClick={(e) => e.stopPropagation()} 
+                      title={`${link.templateTitle}: ${link.text}`}
+                  >
+                      {link.text}
+                      <button
+                          className="remove-link-btn"
+                          onClick={(e) => handleRemoveLink(link.key, e)}
+                          aria-label={`Remove ${link.text}`}
+                      >
+                          &times;
+                      </button>
+                  </button>
+              ))}
+          </div>
       </div>
     </div>
   );

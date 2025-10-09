@@ -47,6 +47,98 @@
 }
 
 /* ------------------------------------------- */
+/* --- NEW: Global Copy Queue Navbar --- */
+/* ------------------------------------------- */
+.copy-queue-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-bg); /* Use secondary background */
+    border-top: 2px solid var(--accent);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transform: translateY(0%); /* Always default to visible (controlled by 'hidden' class) */
+    transition: transform 0.3s ease-out;
+    box-sizing: border-box;
+}
+
+.copy-queue-navbar.hidden {
+    transform: translateY(100%);
+}
+
+.navbar-header {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevent from shrinking */
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+    overflow-x: auto;
+    padding-bottom: 5px; /* Space for scrollbar */
+    /* Hide vertical scrollbar by default for a cleaner look */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.links-container::-webkit-scrollbar {
+    display: none;
+}
+
+.queue-link-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    cursor: default; /* Not a normal button interaction */
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.queue-link-button:hover {
+    background-color: var(--border-color);
+    border-color: var(--accent);
+}
+
+.remove-link-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s, transform 0.2s;
+    line-height: 1;
+}
+
+.remove-link-btn:hover {
+    color: var(--warning);
+    transform: scale(1.1);
+}
+
+
+/* ------------------------------------------- */
 /* --- View Toggle Button (Templates/Inst) --- */
 /* ------------------------------------------- */
 .view-toggle {
@@ -76,11 +168,11 @@
 }
 
 .view-toggle .slider.left {
-  transform: translateX(-50%);
+  transform: translateX(0);
 }
 
 .view-toggle .slider.right {
-  transform: translateX(50%);
+  transform: translateX(100%);
 }
 
 .view-toggle button {
@@ -331,12 +423,35 @@
 }
 
 @media (max-width: 768px) {
+  /* Ensure the navbar is scrollable horizontally on small screens */
+  .copy-queue-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .navbar-header {
+      margin-bottom: 5px;
+      margin-right: 0;
+  }
+
+  .links-container {
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow-x: scroll; /* Enable horizontal scrolling */
+      padding-bottom: 10px;
+      padding-top: 5px;
+  }
+
   .deviceHeading {
     font-size: 2rem;
   }
 
   .template-grid {
     padding: 1rem 0;
+    /* Add extra bottom margin to accommodate the navbar */
+    margin-bottom: 80px; 
   }
 
   .template-card {
