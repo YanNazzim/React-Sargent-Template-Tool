@@ -150,39 +150,17 @@ function DisplayTemplates() {
       return;
     }
 
-    // --- 1. Group links by original template for coherent output ---
-    const linksByTemplate = sortedSelectedLinks.reduce((acc, link) => {
-        const title = link.templateTitle;
-        if (!acc[title]) {
-            acc[title] = {
-                title,
-                links: []
-            };
-        }
-        acc[title].links.push(link);
-        return acc;
-    }, {});
-    
-    // --- 2. Compile the final formatted email output ---
-    let emailOutput = `Please find the requested document link(s) below. If you need anything further, please let me know.
+    // --- 1. Compile the minimal output string as requested: "Link Text: URL" per line. ---
+    // This replaces the previous logic that constructed an email body format.
+    const copyOutput = sortedSelectedLinks.map(link => {
+        // Format: Link Text: URL
+        return `\n${link.text}: ${link.url}\n`;
+    }).join('\n'); // Join all entries with a newline
 
-Device/Document(s) requested: ${category} - ${device || series}
-
---------------------------------------
-`;
-
-    for (const title in linksByTemplate) {
-        emailOutput += `\n**${title}**\n`;
-        let templateLinks = "";
-        linksByTemplate[title].links.forEach(link => {
-            templateLinks += `- ${link.text}: ${link.url}\n`;
-        });
-        emailOutput += templateLinks;
-    }
-
-    // --- 3. Copy data and clear the entire queue ---
+    // --- 2. Copy data and clear the entire queue ---
     try {
-      await navigator.clipboard.writeText(emailOutput.trim());
+      // Use the new minimal output string
+      await navigator.clipboard.writeText(copyOutput.trim());
       setCopyStatus("Links Copied!");
       setCopyStatusIndex(expandedTemplate);
       
