@@ -139,7 +139,7 @@ function DisplayTemplates() {
   }, [selectedLinks]);
 
   
-  // MODIFIED: This function now copies the entire global queue and clears it all.
+  // MODIFIED: This function now correctly groups links by card title before formatting the output.
   const handleCopyLinks = async (e) => {
     e.stopPropagation();
 
@@ -150,16 +150,39 @@ function DisplayTemplates() {
       return;
     }
 
-    // --- 1. Compile the minimal output string as requested: "Link Text: URL" per line. ---
-    // This replaces the previous logic that constructed an email body format.
-    const copyOutput = sortedSelectedLinks.map(link => {
-        // Format: Link Text: URL
-        return `\n${link.text}: ${link.url}\n`;
-    }).join('\n'); // Join all entries with a newline
+    // --- 1. Group links by their source card title (templateTitle) ---
+    const groupedLinks = new Map();
+    sortedSelectedLinks.forEach(link => {
+      const title = link.templateTitle;
+      if (!groupedLinks.has(title)) {
+        groupedLinks.set(title, []);
+      }
+      groupedLinks.get(title).push(link);
+    });
+    
+    // --- 2. Build the final output string ---
+    const outputBlocks = [];
 
-    // --- 2. Copy data and clear the entire queue ---
+    groupedLinks.forEach((linksInCard, title) => {
+      // 1. Create the card title header
+      const header = `----${title}----`;
+
+      // 2. Create the list of links for this card
+      // Format: Link Text: URL
+      const linksList = linksInCard.map(link => 
+        `${link.text}: ${link.url}`
+      ).join('\n\n'); // Join individual links with a single newline
+
+      // 3. Combine header and links list
+      outputBlocks.push(`${header}\n${linksList}`);
+    });
+
+    // 4. Join all card blocks with a double newline
+    const copyOutput = outputBlocks.join('\n\n');
+
+    // --- 3. Copy data and clear the entire queue ---
     try {
-      // Use the new minimal output string
+      // Use the new structured output string
       await navigator.clipboard.writeText(copyOutput.trim());
       setCopyStatus("Links Copied!");
       setCopyStatusIndex(expandedTemplate);
