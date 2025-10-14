@@ -514,7 +514,7 @@ export const ExitDevices = {
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
-      text: "View 04 Cylinder/Exit Only Mounting Template (Any Door) Doc# 4645-E",
+      text: "View 04 Cylinder/Exit Only Mounting Template (Any Door) Doc# 4307-G",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055911",
