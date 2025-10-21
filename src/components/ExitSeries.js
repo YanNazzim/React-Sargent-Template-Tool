@@ -52,6 +52,7 @@ function ExitSeries() {
 
   return (
     <>
+    
       <div className="stile-page">
         <button
           className="btn"
