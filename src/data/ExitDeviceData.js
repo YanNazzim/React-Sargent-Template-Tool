@@ -514,7 +514,7 @@ export const ExitDevices = {
       image: Images.narrowRimExit8500,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055909",
-      text: "View 04 Cylinder/Exit Only Mounting Template (Any Door) Doc# 4645-E",
+      text: "View 04 Cylinder/Exit Only Mounting Template (Any Door) Doc# 4307-G",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055922",
       text1: "View Trim Template (700 ET) Doc# 4277-18",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055911",
@@ -2647,10 +2647,10 @@ export const ExitDevices = {
     {
       device: "PE8800",
 
-      title: "(12-) PE8800 Rim Exit (04, 10, 40, 44)",
+      title: "(12-) PE8800 Rim Exit (04, 06, 10, 13, 15, 43, 46, 73, 74, 75, 76)",
       functions:
-        "PE8804, PE8810, PE8840, PE8844, PE80 series, ",
-      metadata: "Wide PE Series, Wide PE80 Series, PE80, PE, PE80 Series, PE Series, Wide PE, PE80, Wide PE Exit, Wide PE Exit Device, Wide Rim Exit, Wide PE Rim Exit, Wide 8800, 8800, PE8800, Wide, Night Latch, Exit Only, Night, Latch, Only, Exit, PE88, Raceway",
+        "PE8804, PE8810, PE8840, PE8844, PE80 series, PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876, ",
+      metadata: "Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE, PE80, Wide PE Exit, Wide PE Exit Device, Wide Rim Exit, Wide PE Rim Exit, Wide 8800, 8800, PE8800, Wide, Exit, PE88, Raceway, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
       MechOptions:
         "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
       ElecOptions:
@@ -2666,16 +2666,17 @@ export const ExitDevices = {
 
       image: Images.widePERim,
 
-      warning:
-        "For cylinder only template, focus on top right cutout dimensions and focus on CL reference points when using W/ MEDT44 ",
+      warning: "NE/WE Trim with Cross Spindle + Electrified Trims ",
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
       text: "View Mounting Template Doc# MEDT44",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
-      text2: "View Trim Template Doc# MEDT19",
+      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238391",
+      text1: "View P700-8 Trim Template Doc# MEDT20",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
+      text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
       text3:
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
-      installation: [
+              installation: [
         {
           device: "PE8800",
           title: "PE8800 Mounting Related Instructions",
@@ -2696,39 +2697,6 @@ export const ExitDevices = {
             "93 Decorative, Static Pushbar and 95 Active Dummy Rail for PE80 Series PE8800 Wide Stile Rim Installation Instructions Doc# A8320",
         },
       ],
-    },
-    {
-      device: "PE8800",
-
-      title: "(12-) PE8800 Rim Exit (06, 13, 15, 43, 46, 73, 74, 75, 76)",
-      functions:
-        "PE8806, PE8813, PE8815, PE8843, PE8846, PE8873, PE8874, PE8875, PE8876, ",
-      metadata: "Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, Wide PE, PE80, Wide PE Exit, Wide PE Exit Device, Wide Rim Exit, Wide PE Rim Exit, Wide 8800, 8800, PE8800, Wide, Exit, PE88, Raceway, Class, Room, Store, Storeroom, Classroom, Store Room, Store-Room, Class-Room, Class Room, Passage, Electrified, ET, Eclectrified Trim, 773, 774, 775, 776, 773-8, 774-8, 775-8, 776-8",
-      MechOptions:
-        "12, HK, FM, HC, WS, LC, 16, LD, AD, MD, WD, 31, OL, 36, TB, CPC, SG, 18, 49, 14, GL, NB, PL, 5CH, 23, 76, 85, 86, 87",
-      ElecOptions:
-        "AL, 53, W53, 54, W54, 55, W55, 55-ERM, ERM, W55-ERM, W55, 56, 56-HK, 58, 59, WH",
-      CylOptions:
-        "10, 10-21, 10-63, 11, 11-21, 11-60, 11-63, 11-64, 11-70-7P, 11-72-7P, 11-73-7P, 11-65-73-7P, 21, 22, 51, 52, 60, 63, 64, 70, 72, 73, 65, 7P, 65-73, 65-73-7P, 73-7P, 81, 82, F1, F1-82, 83, F1-83, 124, 127, 84, BR, LC, SC, SE, BR, DG1, DG1-21, DG1-60, DG1-63, DG1-64, DG1-65, DG2, DG2-21, DG2-60, DG2-63, DG2-64, DG2-65, DG3, DG3-21, DG3-60, DG3-63, DG3-64, DG3-65, ",
-      railSizes: "E, F, J, G",
-      handing: "LHR, LH, LHRB, RHR, RH, RHRB",
-      voltage: "12V, 24V, 12 V, 24 V",
-      finishes:
-        "03, US03, 04, US04, US09, 09, US10, 10, 10B, 10BE, 10BL, US14, US15, 20D, 26D, 26, 32, 32D, BSP, WSP, 605, 606, 611, 612, 613, 613E, 613L, 618, 619, 624, 625, 626, 629, 630",
-      trims: trimsString,
-
-      image: Images.widePERim,
-
-      warning: "ET with Cross Spindle + Electrified Trims ",
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238414",
-      text: "View Mounting Template Doc# MEDT44",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238391",
-      text1: "View P700-8 Trim Template Doc# MEDT20",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238397",
-      text2: "View (54-) Electrified ET Trim Template Doc# MEDT27",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238389",
-      text3:
-        "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT17",
     },
     {
       device: "PE8800",
