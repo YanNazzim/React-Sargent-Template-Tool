@@ -626,6 +626,23 @@ export const ExitDevices = {
       text5:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
+                    {
+      device: "8500",
+
+      title: "8500 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
     {
       device: "AD8500",
 
@@ -760,6 +777,23 @@ export const ExitDevices = {
       text5:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4568-C",
     },
+                        {
+      device: "AD8500",
+
+      title: "AD8500 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
   ],
   Wide80: [
     {
@@ -1856,6 +1890,23 @@ export const ExitDevices = {
       text3:
         "View 649 Standard Strike Template (Double Door W/ Mullion) Doc# 4300-E",
     },
+                {
+      device: "8800",
+
+      title: "8800 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
 
     {
       device: "8900",
@@ -2212,7 +2263,7 @@ export const ExitDevices = {
       title: "PE8500 Strikes",
       image: Images.narrowPE8500,
       metadata:
-        "Strike, Strikes, PE80 series, Wide PE Series, Wide PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 657 Strike, 649 Strike, 658 Strike, 613 Strike, 642 Strike, 644 Strike, 656, 657, 649, 658, 613, 642, 644",
+        "Strike, Strikes, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 657 Strike, 649 Strike, 658 Strike, 613 Strike, 642 Strike, 644 Strike, 656, 657, 649, 658, 613, 642, 644",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1246741",
       text: "View 656 Standard Strike Template (Double Door/Mullion) Doc# MEDT74",
@@ -2234,6 +2285,23 @@ export const ExitDevices = {
       text7:
         "View 649 Optional Strike Template (Double Door With Mullion) Doc# 4300-E",
     },
+        {
+      device: "PE8500",
+
+      title: "PE8500 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        }
   ],
   WidePE80: [
     {
@@ -2720,6 +2788,23 @@ export const ExitDevices = {
       text5:
         "View 656 Strike Template (Double Door W/ 980 Mullion) Doc# MEDT74",
     },
+            {
+      device: "PE8800",
+
+      title: "PE8800 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
     {
       device: "PE8900",
 
@@ -3156,6 +3241,23 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055892",
       text3: "View STS Trim Template (810, 814, 828, 866) Doc# 4021-G",
     },
+                        {
+      device: "9800",
+
+      title: "9800 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
 
     {
       device: "9900",
@@ -3412,6 +3514,23 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
+                            {
+      device: "2828",
+
+      title: "2828 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
   ],
   Wide30: [
     {
@@ -3544,7 +3663,7 @@ export const ExitDevices = {
       text3: "View HTB/GTB Trim Template",
     },
     {
-      device: "3828",
+      device: "30Series",
 
       title: "30 series Strikes",
       functions: "3838, 3727",
@@ -3570,6 +3689,23 @@ export const ExitDevices = {
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
       text3: "View 642 Alternative Strike Template Doc# 4007-E",
     },
+                                {
+      device: "30Series",
+
+      title: "3828 Mullions",
+      image: Images.L980,
+      metadata:
+        "Mullions, 12-, 12-L980, 12-980, 12, 12 L980S, 12 980, 12 L980 Mullion, PE80 series, Narrrow PE Series, Narrrow PE80 Series, PE80, PE, PE80 Series, PE Series, 656 Strike, 649 Strike, 656, 649, 650, 650A, 980, 980A, L980, L980A, L980S, Steel, steel, Aluminum, aluminum, Metal, metal, steel mullion, aluminum mullion, metal mullion",
+
+        link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056013",
+        text: "View 650/650A Aluminum Mullion Frame Template Doc# 4311",
+        link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056014",
+        text1: "View 980& L980A Aluminum Mullion Frame Template Doc# 4006",
+        link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056011",
+        text2: "View L980S/12-980/12-L980/EL980 Steel Mullion Frame Template Doc# 4206",
+        link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056015",
+        text3: "View (12-)HC980/HD980/HCL980 Steel Mullion Frame Template Doc# 4627",
+        },
   ],
   "KP 80": [
     {
