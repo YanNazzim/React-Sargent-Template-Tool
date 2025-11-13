@@ -2071,6 +2071,8 @@ export const ExitDevices = {
       text2: "View Metal Door Mounting Template Doc# MEDT3",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238418",
       text3: "View Trim Template Doc# MEDT48",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238421",
+      text4: "View (54-)(73 & 74 functions) Electrified Trim Template Doc# MEDT51",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238381",
       text4: "View 640 Standard Strike Template Doc# MEDT6",
       link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
