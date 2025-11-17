@@ -2124,12 +2124,12 @@ export const ExitDevices = {
       text3: "View Trim Template Doc# MEDT48",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238421",
       text4: "View (54-)(73 & 74 functions) Electrified Trim Template Doc# MEDT51",
-      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1238381",
-      text4: "View 640 Standard Strike Template Doc# MEDT6",
-      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
-      text5: "View 652 Standard Strike Template Doc# MEDT9",
-      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
-      text6:
+      link5: "https://storage.googleapis.com/aa-americas/dam/AADSS1238381",
+      text5: "View 640 Standard Strike Template Doc# MEDT6",
+      link6: "https://storage.googleapis.com/aa-americas/dam/AADSS1238384",
+      text6: "View 652 Standard Strike Template Doc# MEDT9",
+      link7: "https://storage.googleapis.com/aa-americas/dam/AADSS1238383",
+      text7:
         "View Narrow Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# MEDT8",
       installation: [
         {
