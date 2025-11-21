@@ -797,9 +797,9 @@ export const ExitDevices = {
   ],
   Wide80: [
     {
-      device: "WD8600",
+      device: "8600",
 
-      title: "WD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "Wood Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -836,7 +836,7 @@ export const ExitDevices = {
 
       installation: [
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -844,7 +844,7 @@ export const ExitDevices = {
           text: "View (12)(NB)WD8600 Main Mounting Installation Instructions Doc# A3937",
         },
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -852,7 +852,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Catalog / Parts Manual",
           image: Images.narrowRimExit8500,
 
@@ -866,9 +866,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "WD8600",
+      device: "8600",
 
-      title: "WD8600 CVR Exit (73,74)",
+      title: "Wood Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673, 8674, ",
@@ -903,9 +903,9 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
-      device: "MD8600",
+      device: "8600",
 
-      title: "(12-)MD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "(12-) Metal Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -942,7 +942,7 @@ export const ExitDevices = {
 
       installation: [
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -950,7 +950,7 @@ export const ExitDevices = {
           text: "View (12)(NB)MD8600 Main Mounting Installation Instructions Doc# A7002",
         },
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -958,7 +958,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
@@ -972,9 +972,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "MD8600",
+      device: "8600",
 
-      title: "(12-)MD8600 CVR Exit (73,74)",
+      title: "(12-) Metal Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673, 8674, ",
@@ -1010,9 +1010,9 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
-      device: "AD8600",
+      device: "8600",
 
-      title: "AD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "Aluminum Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -1044,7 +1044,7 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
       installation: [
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -1052,7 +1052,7 @@ export const ExitDevices = {
           text: "View (12)(NB)AD8600 Main Mounting Installation Instructions Doc# A7002",
         },
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -1060,7 +1060,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
@@ -1074,9 +1074,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "AD8600",
+      device: "8600",
 
-      title: "AD8600 CVR Exit (73,74)",
+      title: "Aluminum Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673,8674, ",

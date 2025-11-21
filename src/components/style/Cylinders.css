@@ -10,86 +10,104 @@
 .ToolTip {
   color: var(--text-secondary);
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 2rem;
+  font-size: 1.2em; /* Slightly smaller for readability */
+  margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .cylinder-info h1 {
   padding-top: 30px;
   font-size: 2.5em;
-  color: var(--text-primary);
+  color: var(--accent-hover); /* Use a more prominent accent */
   margin-bottom: 20px;
 }
 
 .cylinder-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px; /* Increased gap */
   justify-content: center;
 }
 
 .cylinder-card {
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color); /* Thinner border */
   background-color: var(--secondary-bg);
   border-radius: var(--card-radius);
-  padding: 20px;
+  padding: 25px;
   box-shadow: var(--shadow);
   transition: transform var(--transition), box-shadow var(--transition);
   cursor: pointer;
   text-align: center;
-  max-width: 320px; /* Added for better layout */
+  max-width: 350px; /* Wider card */
+  min-height: 250px; /* Consistent height */
+  display: flex;
+  flex-direction: column;
 }
 
 .cylinder-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--accent), var(--shadow-hover);
 }
 
 .cylinder-card img {
   width: 100%;
-  max-width: 275px;
+  max-width: 300px;
   height: auto;
-  margin: 0 auto 10px auto;
-  border-radius: 8px;
+  margin: 0 auto 15px auto;
+  border-radius: 6px;
   transition: transform 0.3s ease-out;
+  background-color: #212831; /* Subtle image background */
+  padding: 10px;
 }
 
-.cylinder-card img:hover {
+.cylinder-card a:hover img {
   transform: scale(1.05);
 }
 
 .cylinder-card h2 {
   color: var(--accent);
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .cylinder-card p {
   color: var(--text-primary);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  margin: 5px 0;
+  line-height: 1.4;
 }
 
 .cylinder-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px 0 0; /* Adjusted top margin */
   color: var(--text-primary);
+  font-size: 0.95em;
 }
 
 .cylinder-table th,
 .cylinder-table td {
   border: 1px solid var(--border-color);
-  padding: 8px;
+  padding: 10px;
   text-align: center;
-  font-size: 1em;
 }
 
 .cylinder-table td {
-  background-color: var(--secondary-bg);
+  background-color: #1a222c;
+  color: var(--text-primary);
 }
 
 .cylinder-table th {
-  background-color: var(--primary-bg);
+  background-color: var(--secondary-bg);
   font-weight: bold;
   color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .cylinder-card {
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

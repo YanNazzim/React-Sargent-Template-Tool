@@ -1,4 +1,4 @@
-// Footer.js
+// src/components/Footer.js
 import React from 'react';
 import "./style/HeaderFooter.css"
 
@@ -15,16 +15,39 @@ function Footer() {
 
   return (
     <footer className='footer'>
-      <a href="tel:1-800-727-5477" onClick={handlePhoneClick}>
-        Need Support? <br /> Call 1-800-727-5477 
-      </a>
-      <p>
-        Customer Support - Option 1 <br />
-        Technical Support Option 2
-      </p>
-      <p>
-        For Questions/Feedback Email us! <a href="mailto:techsupport.sargent@assaabloy.com" onClick={handleEmailClick}>techsupport.sargent@assaabloy.com</a>
-      </p>
+      <div className="footer-content-wrapper">
+        
+        <div className="footer-section contact-info">
+          <p className="section-title">Technical Support</p>
+          <a 
+            href="tel:1-800-727-5477" 
+            onClick={handlePhoneClick}
+            className="contact-phone"
+            title="Call Technical Support"
+          >
+            1-800-727-5477
+          </a>
+          <p className="contact-options">
+            Customer Support - Option 1 | Technical Support - Option 2
+          </p>
+        </div>
+
+        <div className="footer-section contact-email">
+          <p className="section-title">Get in Touch</p>
+          <a 
+            href="mailto:techsupport.sargent@assaabloy.com" 
+            onClick={handleEmailClick}
+            className="contact-email-link"
+            title="Email Technical Support"
+          >
+            techsupport.sargent@assaabloy.com
+          </a>
+          <p className="copyright">
+            © {new Date().getFullYear()} Sargent Manufacturing. All Rights Reserved.
+          </p>
+        </div>
+
+      </div>
     </footer>
   );
 }

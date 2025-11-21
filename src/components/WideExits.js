@@ -8,13 +8,11 @@ import { Images } from "../images/images";
 
 // Define Wide80, Wide90, and PE80 devices using the Images object
 const wide80Devices = [
-  { id: "WD8600", name: "WD8600 Wide CVR Exit", img: Images.wideCVR },
-  { id: "MD8600", name: "MD8600 Wide CVR Exit", img: Images.wideCVR },
-  { id: "AD8600", name: "AD8600 Wide CVR Exit", img: Images.wideCVR },
+  { id: "8600", name: "8600 Wide CVR Exit (WD, MD, AD)", img: Images.wideCVR }, // Consolidated entry
   {
     id: "LP8600",
     name: "LP/LR/LS8600 Wide CVR/Mortise Exit",
-    img: Images.wideCVR,
+    img: Images.LS8600CVRMortise,
   },
   { id: "8700", name: "8700 Wide SVR Exit", img: Images.wideSVR },
   { id: "NB-8700 OLD", name: "NB-8700 Wide SVR Exit (OLD STYLE  - Before 4/14/25)", img: Images.wideNBSVR },

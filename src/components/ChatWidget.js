@@ -1,5 +1,5 @@
 // src/components/ChatWidget.js
-import React, { useState, useEffect, useRef, useCallback } from 'react'; // <-- ADDED useCallback
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import '../components/style/ChatWidget.css'; // Ensure this is the correct path
 
 const ChatWidget = () => {
@@ -7,10 +7,10 @@ const ChatWidget = () => {
   const chatWindowRef = useRef(null);
   const inputRef = useRef(null);
 
-  // FIX: Wrap toggleChat in useCallback to ensure a stable function reference
+  // Use useCallback to ensure the function reference is stable
   const toggleChat = useCallback(() => {
     setIsOpen(prev => !prev);
-  }, []); // Empty dependency array ensures this function never changes
+  }, []);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -21,20 +21,26 @@ const ChatWidget = () => {
 
     const triggerInput = () => {
       if (inputRef.current) {
+        // Triggers the chat input focus when the bubble is clicked
         inputRef.current.click();
       }
     };
 
     const chatButton = document.querySelector('.chat-bubble');
+
+    // FIX: Create a stable handler function to be used for adding/removing the listener
+    const handleChatButtonClick = () => {
+      toggleChat();
+      triggerInput();
+    };
+
     if (chatButton) {
-      chatButton.addEventListener('click', () => {
-        toggleChat();
-        triggerInput();
-      });
+      // Use the stable function reference here
+      chatButton.addEventListener('click', handleChatButtonClick);
     }
 
     const handleClickOutside = (event) => {
-      if (chatWindowRef.current && !chatWindowRef.current.contains(event.target) && !chatButton.contains(event.target)) {
+      if (chatWindowRef.current && !chatWindowRef.current.contains(event.target) && chatButton && !chatButton.contains(event.target)) {
         setIsOpen(false);
       }
     };
@@ -44,16 +50,18 @@ const ChatWidget = () => {
     return () => {
         document.body.removeChild(script);
         if (chatButton) {
-            chatButton.removeEventListener('click', toggleChat);
+            // FIX: Use the exact same stable reference to remove the listener
+            chatButton.removeEventListener('click', handleChatButtonClick);
         }
         document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [toggleChat]); // The dependency is now stable, resolving the error
+  }, [toggleChat]); 
 
   return (
     <div className="chat-widget-container">
+      {/* Revert button text to 'AI Chat' for a cleaner look */}
       <div className="chat-bubble">
-        AI Powered Search
+        AI Chat
       </div>
 
       {isOpen && (

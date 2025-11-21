@@ -293,40 +293,88 @@ main {
   flex: 1; /* Allow main to take up remaining vertical space */
 }
 
-/* Footer Styles */
+/* Footer Styles - REDESIGN */
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--secondary-bg);
-  padding: 20px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px; /* Increased vertical padding for space */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4); /* Stronger, modern shadow */
   width: 100%;
+  box-sizing: border-box;
   color: var(--text-secondary);
 }
 
-.footer a {
-  text-align: center;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.5em;
-  transition: color 0.3s ease;
-  margin: 5px 0;
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-around; /* Spread content out */
+  align-items: flex-start; /* Align sections to the top */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
-.footer a:hover {
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align content within each section */
+  max-width: 45%;
+}
+
+.footer-section.contact-email {
+  align-items: flex-end; /* Right-align the second column for contrast */
+  text-align: right;
+}
+
+
+.section-title {
+  font-size: 1.25rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-phone {
+  font-size: 2.0rem; /* Prominent phone number */
   color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.contact-phone:hover {
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
-.footer p {
+.contact-options {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contact-email-link {
+  font-size: 1.1rem;
   color: var(--text-primary);
-  text-align: center;
-  margin: 10px 0;
-  font-size: 1.5em;
-  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 5px;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+.contact-email-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 15px 0 0 0;
+  opacity: 0.7;
 }
 
 /* Responsive adjustments */
@@ -372,5 +420,32 @@ main {
   .carousel-item img {
       max-width: 80px;
       max-height: 80px;
+  }
+
+  /* Footer responsiveness for mobile: vertical stacking */
+  .footer-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-section.contact-email {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-phone {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
   }
 }

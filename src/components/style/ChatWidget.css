@@ -12,30 +12,35 @@
   }
 
   .chat-bubble {
-    height: 60px;
-    background-color: var(--accent);
-    color: var(--primary-bg);
-    border: 2px solid var(--accent-hover);
-    border-radius: 50px;
-    padding: 10px 20px;
+    /* Redesigned for smaller, modern, high-contrast pill shape */
+    height: 40px;
+    background-color: var(--secondary-bg); /* Match main menu/card background */
+    color: var(--accent); /* Use accent color for main text */
+    border: 2px solid var(--accent);
+    border-radius: 20px; /* Pill shape */
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
-    font-size: 1.2em;
-    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: all 0.2s ease-in-out;
+    font-size: 1.0em;
+    font-weight: 500;
   }
 
   .chat-bubble:hover {
-    transform: scale(1.1);
-    background-color: var(--accent-hover);
+    /* High contrast hover effect */
+    transform: translateY(-2px) scale(1.02);
+    background-color: var(--accent);
+    color: var(--primary-bg); /* Dark text on bright background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-hover);
   }
 
   .chat-window {
     margin-bottom: 10px;
-    background-color: white; /* Setting a white background for the entire chat window */
+    background-color: var(--primary-bg); /* Use theme variable */
     border-radius: 15px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
     width: 350px;
@@ -43,44 +48,59 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--border-color); /* Use theme border */
     animation: slideUp 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   #searchWidgetTrigger {
     width: 100%;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1.0em;
     border: none;
-    border-top: 2px solid var(--accent);
-    background-color: white;
-    color: black; /* Explicitly setting the input text to black */
+    border-top: 2px solid var(--border-color); /* Use theme border */
+    background-color: var(--primary-bg); /* Use theme variable */
+    color: var(--text-primary); /* Use theme variable */
     outline: none;
   }
 
   #searchWidgetTrigger::placeholder {
-    color: #555; /* A darker placeholder for better visibility */
+    color: var(--text-secondary); /* Use theme variable */
   }
+
+  /* --- BEGIN AI CHAT WIDGET TEXT COLOR OVERRIDES (The main fix) --- */
 
   gen-search-widget {
     flex: 1;
     padding: 15px;
-    color: black; /* This ensures all text within the widget defaults to black */
+    /* Removed color: var(--text-primary); from here to prevent global inheritance */
   }
 
-  /* Custom styles for chat results to ensure readability */
+  /* Overrides to ensure text elements inside the Shadow DOM are black */
+
   gen-search-widget::part(result-list-entry) {
-    background-color: #f0f0f0; /* Light gray background for chat bubbles */
-    color: black; /* Black text as requested */
+    background-color: var(--primary-bg);
+    /* Ensure primary text is light gray for consistency against the dark widget background */
+    color: var(--text-primary); 
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+  }
+  
+  /* Target the general message and snippet parts and set color to black */
+  gen-search-widget::part(message-text),
+  gen-search-widget::part(result-snippet),
+  gen-search-widget::part(result-list-entry-title) {
+      /* Force text color to black for readability inside the chat history area */
+      color: black !important; 
   }
 
+  /* Keep the title colors accented for emphasis */
   gen-search-widget::part(result-title) {
-      color: black;
+      color: var(--accent-hover); 
   }
-
-  gen-search-widget::part(result-snippet){
-      color: #333;
+  
+  /* Ensure the links themselves are dark */
+  gen-search-widget::part(result-link) {
+      color: #000000;
   }
