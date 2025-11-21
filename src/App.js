@@ -8,25 +8,23 @@ import Narrow from "./components/NarrowExits.js";
 import Wide from "./components/WideExits.js";
 import ExitSeries from "./components/ExitSeries.js";
 import DisplayTemplates from "./components/DsiplayTemplates.js";
-import Header from "./components/Header"; // Import Header
+import Header from "./components/Header"; 
 import Footer from "./components/Footer.js";
 import MortiseSeries from "./components/MortiseSeries.js";
-import BoredSeries from './components/BoredSeries.js'
-import AuxLockSeries from './components/AuxLockSeries.js'
-import Cylinders from './components/Cylinders.js'
+import BoredSeries from './components/BoredSeries.js';
+import AuxLockSeries from './components/AuxLockSeries.js';
+import Cylinders from './components/Cylinders.js';
 import CylindersInfo from "./components/CylindersInfo.js";
 import MultiPointSeries from'./components/MultiPointSeries.js';
-import EMProducts from './components/EMProducts.js'
-// import HamburgerMenu from "./components/HamburgerMenu"; // Import the menu - REMOVED
+import EMProducts from './components/EMProducts.js';
 import ChatWidget from './components/ChatWidget';
+import TechSupportHubBanner from './components/TechSupportHubBanner'; // <--- Import the helper widget
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      {/* <HamburgerMenu /> REMOVED */}
-      <Header /> {/* Ensure Header is part of every page */}
-      {/* <HamburgerMenu /> REMOVED */}
+      <Header /> 
       <Routes>
         <Route path="/" element={<ProductLine />} />
         <Route path="/display-templates" element={<DisplayTemplates />} />
@@ -41,12 +39,11 @@ function App() {
         <Route path="/Cylinders" element={<Cylinders />} />
         <Route path="/cylinders-info/:type" element={<CylindersInfo />} />
         <Route path="/em-products" element={<EMProducts />} />
-
       </Routes>
       
-
-      <Footer  /> {/* Ensure Footer is part of every page */}
+      <Footer /> 
       <ChatWidget />
+      <TechSupportHubBanner /> {/* <--- Added the helper popup here */}
     </Router>
   );
 }
