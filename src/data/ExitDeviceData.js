@@ -2775,7 +2775,7 @@ export const ExitDevices = {
         "Strike, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 649, 649 Strike, 658 Strike, 658, 613, 613 Strike, 642 Strike, 642, 644, 644 Strike",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
-      text: "View 649 Standard Strike Template Doc# MEDT38",
+      text: "View 649 Standard Strike Template (Single Door) Doc# MEDT38",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
       text1: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",
