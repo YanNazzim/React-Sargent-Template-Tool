@@ -999,7 +999,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
       text3: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
