@@ -797,9 +797,9 @@ export const ExitDevices = {
   ],
   Wide80: [
     {
-      device: "WD8600",
+      device: "8600",
 
-      title: "WD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "Wood Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -836,7 +836,7 @@ export const ExitDevices = {
 
       installation: [
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -844,7 +844,7 @@ export const ExitDevices = {
           text: "View (12)(NB)WD8600 Main Mounting Installation Instructions Doc# A3937",
         },
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -852,7 +852,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "WD8600",
+          device: "8600",
           title: "WD8600 Catalog / Parts Manual",
           image: Images.narrowRimExit8500,
 
@@ -866,9 +866,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "WD8600",
+      device: "8600",
 
-      title: "WD8600 CVR Exit (73,74)",
+      title: "Wood Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673, 8674, ",
@@ -903,9 +903,9 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
-      device: "MD8600",
+      device: "8600",
 
-      title: "(12-)MD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "(12-) Metal Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -942,7 +942,7 @@ export const ExitDevices = {
 
       installation: [
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -950,7 +950,7 @@ export const ExitDevices = {
           text: "View (12)(NB)MD8600 Main Mounting Installation Instructions Doc# A7002",
         },
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -958,7 +958,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "MD8600",
+          device: "8600",
           title: "MD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
@@ -972,9 +972,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "MD8600",
+      device: "8600",
 
-      title: "(12-)MD8600 CVR Exit (73,74)",
+      title: "(12-) Metal Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673, 8674, ",
@@ -999,7 +999,7 @@ export const ExitDevices = {
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055948",
       text2:
         "View (59- Delayed Egress) Hollow Metal Door Mounting Template Doc# 4455-D",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055940",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055936",
       text3: "View Trim Template (54-)(700-4 ET) Doc# 4467-F",
       link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055943",
       text4: "View 650/606 Strike Template Doc# 4449-G",
@@ -1010,9 +1010,9 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
     },
     {
-      device: "AD8600",
+      device: "8600",
 
-      title: "AD8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
+      title: "Aluminum Door 8600 CVR Exit (06, 10, 13, 15, 40, 43, 46)",
       image: Images.wideCVR,
       functions:
         "8606, 8610, 8613, 8615, 8640, 8643, 8646, ",
@@ -1044,7 +1044,7 @@ export const ExitDevices = {
         "View Wide Electrical Options Wiring Template (AL, 53, 55, 56, etc) Doc# 4569-C",
       installation: [
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Mounting Related Instructions",
           image: Images.wideCVR,
 
@@ -1052,7 +1052,7 @@ export const ExitDevices = {
           text: "View (12)(NB)AD8600 Main Mounting Installation Instructions Doc# A7002",
         },
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Cylinder / Accessories Related Instructions",
           image: Images.wideCVR,
 
@@ -1060,7 +1060,7 @@ export const ExitDevices = {
           text: "View 106/113 Aux Control Installation Instructions Doc# A5985",
         },
         {
-          device: "AD8600",
+          device: "8600",
           title: "AD8600 Catalog / Parts Manual",
           image: Images.wideCVR,
 
@@ -1074,9 +1074,9 @@ export const ExitDevices = {
       ],
     },
     {
-      device: "AD8600",
+      device: "8600",
 
-      title: "AD8600 CVR Exit (73,74)",
+      title: "Aluminum Door 8600 CVR Exit (73,74)",
       image: Images.wideCVR,
       functions:
         "8673,8674, ",
@@ -2458,7 +2458,7 @@ export const ExitDevices = {
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238386",
       text: "View Mounting Template Doc# MEDT12",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238387",
-      text1: "View (12-) Mounting Template Doc# MEDT13",
+      text1: "View 12- Mounting Template Doc# MEDT13",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1238390",
       text2: "View Trim Template (P700 ET Trim) Doc# MEDT19",
       link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1238402",
@@ -2775,7 +2775,7 @@ export const ExitDevices = {
         "Strike, Wide PE Series, Wide PE80 Series, PE80 series, PE80, PE, PE80 Series, PE Series, 649, 649 Strike, 658 Strike, 658, 613, 613 Strike, 642 Strike, 642, 644, 644 Strike",
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1238408",
-      text: "View 649 Standard Strike Template Doc# MEDT38",
+      text: "View 649 Standard Strike Template (Single Door) Doc# MEDT38",
       link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1238410",
       text1: "View 658 Standard Strike (W/ 650A Mullion) Template Doc# MEDT40",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1246740",

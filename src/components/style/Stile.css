@@ -1,75 +1,130 @@
 /* src/components/style/Stile.css */
 .stile-page {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 30px;
-  background-color: var(--primary-bg); /* Dark background */
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  display: grid;
+  /* Increased minimum size for better desktop layout and space usage */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 30px; /* Increased gap */
+  padding: 40px;
+  max-width: 1600px; 
+  margin: 0 auto;
+  align-content: start;
+  min-height: calc(100vh - 100px);
 }
 
 .btn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
   background: var(--secondary-bg);
   color: var(--text-primary);
-  min-width: 300px;
-  max-width: 600px;
   width: 100%;
-  height: 200px;
-  font-size: 1.8em;
-  border: 2px solid var(--border-color);
-  border-radius: 15px;
-  padding: 25px;
+  min-height: 280px; /* Taller card style for content */
+  height: auto; 
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+  padding: 24px; /* Increased padding */
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: var(--transition);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background-color: var(--accent);
-  color: var(--primary-bg);
+  transform: translateY(-4px); /* Reduced vertical lift for smoother feel */
+  box-shadow: 0 0 0 2px var(--accent-hover), var(--shadow-hover); /* Blue highlight border + shadow */
+  background-color: #1a222c; /* Slightly darker on hover for depth */
 }
 
+/* New Hover Effect: Subtle glow from the bottom */
+.btn:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    border-radius: 2px;
+}
+
+/* Image styling */
 .btn-image {
-  width: 160px;
+  width: 160px; /* Increased image size */
   height: 160px;
   object-fit: contain;
-  margin-right: 25px;
-  border-radius: 15px;
-  transition: all 0.4s ease;
-  background-color: #fff; /* White background for image clarity */
-  padding: 5px;
+  margin-bottom: 18px; 
+  border-radius: 8px; /* Slightly less rounded border */
+  background-color: #212831; /* Darker box behind image */
+  padding: 12px;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .btn:hover .btn-image {
-  transform: scale(1.05); /* Removed rotation for a cleaner effect */
+  transform: scale(1.03); /* Subtle image scale */
+  border-color: var(--accent);
 }
 
+/* Text Styling inside buttons */
+.btn h3 {
+  margin: 0;
+  font-size: 1.5em; /* Larger header */
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.btn p, .btn span {
+  margin: 0;
+  font-size: 1.05em; /* Slightly larger body text */
+  color: var(--text-secondary);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* Typography utilities for buttons that didn't use h3/p tags yet */
+.btn span {
+  font-size: 1.3em; /* Primary title text */
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Tooltip for ancillary info on some pages (Mortise/Bored) */
+.stile-page .ToolTip {
+    width: 100%;
+    grid-column: 1 / -1; /* Span entire grid width */
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .stile-page {
-    padding: 20px;
+    padding: 20px 10px;
     gap: 15px;
+    grid-template-columns: 1fr; /* Single column on mobile */
   }
-
+  
   .btn {
-    flex-direction: column;
-    height: auto;
-    min-height: 300px;
-    padding: 25px;
+    min-height: 220px;
+    padding: 15px;
   }
 
   .btn-image {
     width: 120px;
     height: 120px;
-    margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .btn span {
+      font-size: 1.2em;
   }
 }

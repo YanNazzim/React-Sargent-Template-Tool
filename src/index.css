@@ -2,23 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-  /* Google-inspired Muted Palette */
-  --primary-bg: #1f2328;      /* Deep charcoal gray for main backgrounds */
-  --secondary-bg: #292d32;    /* Slightly lighter gray for cards and surfaces */
-  --accent: #8ab4f8;          /* Muted, calming blue for interactive elements */
-  --accent-hover: #a3c1fa;    /* A slightly brighter blue for hover states */
-  --text-primary: #e8eaed;    /* Off-white for high-contrast text */
-  --text-secondary: #bdc1c6;  /* Lighter gray for secondary information */
-  --border-color: #5f6368;    /* A subtle gray for borders and dividers */
-  --warning: #ff6b6b;
-  --card-radius: 12px;
-  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.6);
+  /* New Modern Industrial Dark Palette (High Contrast) */
+  --primary-bg: #0d1117;      /* Very deep charcoal/navy, almost black */
+  --secondary-bg: #161b22;    /* Slightly lighter dark surface for cards */
+  --accent: #58a6ff;          /* Vibrant, clear blue for highlights (similar to GitHub Blue) */
+  --accent-hover: #79b8ff;    /* Brighter blue for interactions */
+  --text-primary: #c9d1d9;    /* Light gray/off-white for main text */
+  --text-secondary: #8b949e;  /* Muted gray for descriptions/secondary info */
+  --border-color: #30363d;    /* Subtle dark border/separator */
+  --card-radius: 12px;        /* Consistent rounded corners */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.6);
+  --warning: #f85149;
+  --success: #3fb950;
 }
 
 body {
-    background-color: var(--primary-bg); /* Applying the dark theme background globally */
+    background-color: var(--primary-bg);
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--text-primary);
