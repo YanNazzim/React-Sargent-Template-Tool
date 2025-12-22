@@ -1,35 +1,45 @@
 // src/components/ChatWidget.js
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import '../components/style/ChatWidget.css';
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import "../components/style/ChatWidget.css";
 
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { 
-      role: 'assistant', 
+    {
+      role: "assistant",
       text: "Hello! I am your AI Tech Support and Sargent Specialist. I can help with Part ID, Templates, and technical questions. What do you need?",
-      sources: []
-    }
+      sources: [],
+    },
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const [sessionId, setSessionId] = useState("projects/310182215564/locations/global/collections/default_collection/engines/sargent-tech-support_1766204715994/sessions/-");
+  const [sessionId, setSessionId] = useState(
+    "projects/310182215564/locations/global/collections/default_collection/engines/sargent-tech-support_1766204715994/sessions/-"
+  );
 
   const messagesEndRef = useRef(null);
-  const toggleChat = useCallback(() => setIsOpen(prev => !prev), []);
-  const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  const toggleChat = useCallback(() => setIsOpen((prev) => !prev), []);
+  const scrollToBottom = () =>
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
 
-  useEffect(() => { if (isOpen) scrollToBottom(); }, [messages, isOpen]);
+  useEffect(() => {
+    if (isOpen) scrollToBottom();
+  }, [messages, isOpen]);
 
   const parseSources = (citations) => {
     if (!citations || citations.length === 0) return [];
     const uniqueMap = new Map();
-    citations.forEach(cit => {
-      cit.sources?.forEach(src => {
-        if(src.uri && !uniqueMap.has(src.uri)) {
+    citations.forEach((cit) => {
+      cit.sources?.forEach((src) => {
+        if (src.uri && !uniqueMap.has(src.uri)) {
           let cleanTitle = src.title || "Sargent Documentation";
-          if (cleanTitle.length > 50) cleanTitle = cleanTitle.substring(0, 47) + "...";
-          uniqueMap.set(src.uri, { title: cleanTitle, uri: src.uri, type: src.uri.endsWith('.pdf') ? 'PDF Document' : 'Web Page' });
+          if (cleanTitle.length > 50)
+            cleanTitle = cleanTitle.substring(0, 47) + "...";
+          uniqueMap.set(src.uri, {
+            title: cleanTitle,
+            uri: src.uri,
+            type: src.uri.endsWith(".pdf") ? "PDF Document" : "Web Page",
+          });
         }
       });
     });
@@ -38,31 +48,52 @@ const ChatWidget = () => {
 
   const formatMessageText = (text) => {
     if (!text) return null;
-    const lines = text.split('\n');
+    const lines = text.split("\n");
     const formattedContent = [];
     let listBuffer = [];
     const parseBold = (str) => {
       const parts = str.split(/(\*\*.*?\*\*)/g);
       return parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          return <strong key={i} style={{ color: '#005a9c' }}>{part.slice(2, -2)}</strong>;
+        if (part.startsWith("**") && part.endsWith("**")) {
+          return (
+            <strong key={i} style={{ color: "#005a9c" }}>
+              {part.slice(2, -2)}
+            </strong>
+          );
         }
         return part;
       });
     };
     lines.forEach((line, index) => {
       const trimmed = line.trim();
-      if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
+      if (trimmed.startsWith("* ") || trimmed.startsWith("- ")) {
         listBuffer.push(<li key={index}>{parseBold(trimmed.substring(2))}</li>);
       } else {
         if (listBuffer.length > 0) {
-          formattedContent.push(<ul key={`ul-${index}`} style={{ paddingLeft: '20px', margin: '5px 0' }}>{listBuffer}</ul>);
+          formattedContent.push(
+            <ul
+              key={`ul-${index}`}
+              style={{ paddingLeft: "20px", margin: "5px 0" }}
+            >
+              {listBuffer}
+            </ul>
+          );
           listBuffer = [];
         }
-        if (trimmed) formattedContent.push(<div key={index} style={{ marginBottom: '8px' }}>{parseBold(trimmed)}</div>);
+        if (trimmed)
+          formattedContent.push(
+            <div key={index} style={{ marginBottom: "8px" }}>
+              {parseBold(trimmed)}
+            </div>
+          );
       }
     });
-    if (listBuffer.length > 0) formattedContent.push(<ul key="ul-last" style={{ paddingLeft: '20px' }}>{listBuffer}</ul>);
+    if (listBuffer.length > 0)
+      formattedContent.push(
+        <ul key="ul-last" style={{ paddingLeft: "20px" }}>
+          {listBuffer}
+        </ul>
+      );
     return formattedContent;
   };
 
@@ -72,22 +103,56 @@ const ChatWidget = () => {
 
     const userMessage = input.trim();
     setInput("");
-    setMessages(prev => [...prev, { role: 'user', text: userMessage }]);
+    setMessages((prev) => [...prev, { role: "user", text: userMessage }]);
     setIsLoading(true);
 
-    const FUNCTION_URL = "/.netlify/functions/chat"; 
-    const safeSessionId = typeof sessionId === 'string' ? sessionId : sessionId.name;
+    const FUNCTION_URL = "/.netlify/functions/chat";
+    const safeSessionId =
+      typeof sessionId === "string" ? sessionId : sessionId.name;
 
-    // We apply the promptSpec on EVERY message to ensure formatting rules never drift
     const answerGenerationSpec = {
       ignoreAdversarialQuery: true,
       ignoreNonAnswerSeekingQuery: true,
       ignoreLowRelevantContent: true,
-      includeCitations: false, 
+      includeCitations: false,
       modelSpec: { modelVersion: "gemini-2.5-flash/answer_gen/v1" },
       promptSpec: {
         preamble: `AI Tech Support and Sargent Specialist
 Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate, technical support and part identification.
+
+## Prefix & Compatibility Rules for Exit Devices (80 / PE80 Series)
+- 12-: UL Fire Rated. All devices. Conflict: 16- (Cylinder Dogging) or HK- (Hex Key Dogging).
+- 14-: Sliding bolt bottom case for 8700 Series.
+- 16-: Cylinder lockdown (Dogging). Panic only; uses #41 cylinder and #97 ring. Conflict: 12-, 59-, or AL-.
+- 18-: Passive Dogging Indicator (PE80 Series only).
+- LD-: Less Dogging. Used for non-fire-rated devices.
+- 19-: Pushbar without Lexan touchpad.
+- 23-: 4-7/8" ANSI flat lip strike (8900/8300 Series mortise only).
+- 31-: Thick Doors (Specify thickness). Conflict: HC8700 or FM8700.
+- 36-: Six lobe security head screws.
+- 37-: Spanner head screws.
+- 43-: Flush End Cap. Conflict: LP, LR, or LS devices.
+- 49-: Indicator. Available on 8816/8866 and PE8816/PE8866 only.
+- 53-: Latchbolt monitoring. Conflict: 49-, 59-, GL-, HC-, WS-, FM8700, or 8600 Series.
+- 54-: Monitors ET Lever movement (ET Control micro switch).
+- 55-: Request to Exit (RX) rail switch. Conflict: 59- or FM8700.
+- 56-: Remote Latch Retraction (ELR). 80/PE80 only. Conflict: 58-, 59-, AL-, BT-, or FM8700.
+- 56-HK-: ELR with manual Hex Key dogging. Conflict: 12-, 58-, 59-, AL-, or BT-.
+- 58-: Electric Rail Dogging. Conflict: 56- or 59-.
+- 59-: Electroguard Delayed Egress. Conflict: 16-, 53-, 55-, 56-, 58-, AL-, BT-, GL-, HC-, or WS-.
+- AL-: Alarmed Exit (Min 36" door). Conflict: 16-, 56-, 59-, BT-, GL-, HC-, HC4-, or WS-.
+- NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series (PE or 80 series).
+- GL-: Guarded Latch (Rim only). Conflict: 53-, 59-, AL-, HC-, or WS-.
+- PL-: SARGuide Photoluminescent rail. Conflict: 85- or 87-.
+- TB-: Through Bolts (8300-8900 Series).
+- 5CH-: 5lb. Pressure Release (8800, 8500, 8600, 8400 only). Conflict: 14-, 49-, 58-, 59-, BC-59-, or TI-.
+
+## 20 & 30 Series Technical Specialization & Exclusions
+- NOT AVAILABLE on 20/30: No electrified options (56, 58, 59), no alarms (AL), no latch monitoring (53), no concealed vertical rods, no indicators (18, 49), no tactile options (76, 85, 86, 87).
+- CYLINDER TYPE: Uses **C10-1** (7 Line style) bored cylinder for all keyed lever/knob trims.
+- TRIM COMPATIBILITY: All **28 Series Trims** work with 20 & 30 Series.
+- 04 FUNCTION (NIGHT LATCH): With Trim uses **28-K-LL** or **814-HTB**. Cylinder Only (Rim 2828/3828) uses **#34 Rim Cylinder**.
+- DOGGING: 20 Series is Hex ONLY. 30 SERIES EXCLUSIVE: **16- Cylinder Dogging** is available (Panic only).
 
 ## Response Style: "Technical Brevity"
 - SINGLE PART NUMBER: Always provide exactly one part number. Do not list options.
@@ -95,37 +160,17 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
 - NO FLUFF: Strictly exclude marketing text.
 - FORMATTING: Use **bold** for part numbers. Use bullet points (*) for technical specs.
 
-## 20 & 30 Series Technical Specialization
-- CYLINDER TYPE: Uses the **C10-1** (7 Line style) bored cylinder for all keyed lever/knob trims.
-- TRIM COMPATIBILITY: All **28 Series Trims** (Lever, Rose, GTB/HTB Pulls, OB Knob, TP Thumbpiece) work with 20 & 30 Series.
-- 04 FUNCTION (NIGHT LATCH) OPTIONS:
-    * With Trim: Uses **28-K-LL** lever trim or **814-HTB** pull trim.
-    * Cylinder Only (Rim 2828/3828): Uses **#34 Rim Cylinder** for operation without trim.
-- 30 SERIES EXCLUSIVE: **16- Cylinder Dogging** is available (Panic only). Uses a rail-mounted cylinder.
-- FINISHES: Standard finishes for 28 Series Lever trims include **03, 04, 10, 10B, 10BE, 20D, 26D, BSP, WSP**.
-
 ## Night Latch (04) Cylinder Rules (General)
 - RIM EXITS (8804, 9804, PE8504, PE8804, 2828, 3828): Uses a **#34 Rim Cylinder**.
 - MORTISE EXITS (8304, 8904, 9904, PE8304, PE8904): Uses a **#46 Mortise Cylinder** (standard ET trim).
-
-## Pull & Plate Trim Cylinder Rules (PTB, PSB, FLL, MSL)
-- RIM PULLS (8804 PSB / 8804 PTB): Uses **#34 Rim Cylinder**.
-- MORTISE PULLS/PLATES (8904 MSL / 8904 FLL): Uses **#43 Mortise Cylinder**.
-- RULE: Pull/Plate trims on Mortise devices (8900/9900) use **#43** mortise cylinders because they lack the depth of ET lever trims.
+- PULL/PLATE TRIMS (Mortise 8904 MSL / 8904 FLL): Uses **#43 Mortise Cylinder**.
 
 ## Critical Product Rules: Lockbodies & Exits
 - RIM DEVICES (8800, PE8800, 20, 30): DO NOT use lockbodies.
-- MORTISE EXITS (8300, 8900, 9900):
-    * 9904 uses **904** lockbody.
-    * 8913, 15, 06, 43, 46, 73, 74, 75, 76 use **915** lockbody.
+- MORTISE EXITS (8300, 8900, 9900): 9904 uses **904** lockbody. 8913, 15, 06, 43, 46, 73, 74, 75, 76 use **915** lockbody.
 
 ## Device Function Quick Guide (ANSI Code -> Sargent Code)
-- 01 -> 10: Exit Only / Dummy.
-- 02 -> 10: Dummy Pull.
-- 03 -> 04: Night Latch (Key Retracts Latch).
-- 08 -> 13: Key Locks/Unlocks Trim (Classroom).
-- 09 -> 06: Key Unlocks Trim (Storeroom).
-- 14 -> 15: Passage.
+- 01/02 -> 10 (Exit Only/Dummy). 03 -> 04 (Night Latch). 08 -> 13 (Classroom). 09 -> 06 (Storeroom). 14 -> 15 (Passage).
 
 ## Additional Hardware Rules
 - DOGGING: Hex = **68-2569**. Cylinder = **816-x**. 
@@ -135,41 +180,47 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
 ## Referrals
 - Templates: https://sargent-templates.netlify.app/
 - Cylinders: https://sargent-cylinders.netlify.app/
-- Support: yan.gonzalez@assaabloy.com.`
+- Support: yan.gonzalez@assaabloy.com.`,
       },
-    }
+    };
 
-try {
+    try {
       const response = await fetch(FUNCTION_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           query: { text: userMessage },
           session: safeSessionId,
-          answerGenerationSpec: answerGenerationSpec
-        })
+          answerGenerationSpec: answerGenerationSpec,
+        }),
       });
-      
+
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || "Server Error");
 
       if (data.answer) {
-        setMessages(prev => [...prev, { 
-            role: 'assistant', 
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
             text: data.answer.answerText,
-            sources: parseSources(data.answer.citations)
-        }]);
-        if (data.session) setSessionId(data.session.name || data.session); 
+            sources: parseSources(data.answer.citations),
+          },
+        ]);
+        if (data.session) setSessionId(data.session.name || data.session);
       }
     } catch (error) {
-      setMessages(prev => [...prev, { role: 'assistant', text: `Connection Error: ${error.message}` }]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", text: `Connection Error: ${error.message}` },
+      ]);
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <div className={`chat-widget-container ${isOpen ? 'open' : ''}`}>
+    <div className={`chat-widget-container ${isOpen ? "open" : ""}`}>
       {!isOpen && (
         <div className="chat-launcher" onClick={toggleChat}>
           <div className="launcher-icon">💬</div>
@@ -180,16 +231,28 @@ try {
         <div className="chat-window">
           <div className="chat-header">
             <div className="header-title">AI Tech Support</div>
-            <button className="close-btn" onClick={toggleChat}>×</button>
+            <button className="close-btn" onClick={toggleChat}>
+              ×
+            </button>
           </div>
           <div className="chat-messages">
             {messages.map((msg, i) => (
               <div key={i} className={`message-row ${msg.role}`}>
-                <div className="message-bubble">{msg.role === 'assistant' ? formatMessageText(msg.text) : msg.text}</div>
+                <div className="message-bubble">
+                  {msg.role === "assistant"
+                    ? formatMessageText(msg.text)
+                    : msg.text}
+                </div>
                 {msg.sources?.length > 0 && (
                   <div className="sources-grid">
                     {msg.sources.map((src, idx) => (
-                      <a key={idx} href={src.uri} target="_blank" rel="noreferrer" className="source-card">
+                      <a
+                        key={idx}
+                        href={src.uri}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="source-card"
+                      >
                         <span className="source-icon">📄</span>
                         <div className="source-details">
                           <span className="source-title">{src.title}</span>
@@ -201,12 +264,23 @@ try {
                 )}
               </div>
             ))}
-            {isLoading && <div className="message-row assistant"><div className="message-bubble loading">...</div></div>}
+            {isLoading && (
+              <div className="message-row assistant">
+                <div className="message-bubble loading">...</div>
+              </div>
+            )}
             <div ref={messagesEndRef} />
           </div>
           <form className="chat-input-area" onSubmit={handleSendMessage}>
-            <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="Ex: 8813, SFIC core..." disabled={isLoading} />
-            <button type="submit" disabled={isLoading || !input.trim()}>→</button>
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Ex: 8813, SFIC core..."
+              disabled={isLoading}
+            />
+            <button type="submit" disabled={isLoading || !input.trim()}>
+              →
+            </button>
           </form>
         </div>
       )}
