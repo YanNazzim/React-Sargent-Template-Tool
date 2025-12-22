@@ -83,7 +83,7 @@ const ChatWidget = () => {
       ignoreAdversarialQuery: true,
       ignoreNonAnswerSeekingQuery: true,
       ignoreLowRelevantContent: true,
-      includeCitations: true, 
+      includeCitations: false, 
       modelSpec: { modelVersion: "gemini-2.5-flash/answer_gen/v1" },
       promptSpec: {
         preamble: `AI Tech Support and Sargent Specialist
