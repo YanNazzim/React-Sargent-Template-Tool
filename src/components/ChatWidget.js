@@ -72,7 +72,7 @@ const ChatWidget = () => {
 
       // Skip bracketed system info
       if (trimmed.startsWith("[") && trimmed.endsWith("]")) {
-        return; 
+        return;
       }
 
       if (trimmed.startsWith("* ") || trimmed.startsWith("- ")) {
@@ -80,7 +80,10 @@ const ChatWidget = () => {
       } else {
         if (listBuffer.length > 0) {
           formattedContent.push(
-            <ul key={`ul-${index}`} style={{ paddingLeft: "20px", margin: "5px 0" }}>
+            <ul
+              key={`ul-${index}`}
+              style={{ paddingLeft: "20px", margin: "5px 0" }}
+            >
               {listBuffer}
             </ul>
           );
@@ -114,7 +117,8 @@ const ChatWidget = () => {
     setIsLoading(true);
 
     const FUNCTION_URL = "/.netlify/functions/chat";
-    const safeSessionId = typeof sessionId === "string" ? sessionId : sessionId.name;
+    const safeSessionId =
+      typeof sessionId === "string" ? sessionId : sessionId.name;
 
     const answerGenerationSpec = {
       ignoreAdversarialQuery: true,
@@ -166,27 +170,29 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 - RIM DEVICES (8800, PE8800, 20, 30): DO NOT use lockbodies.
 - MORTISE EXITS: 9904 uses **904** lockbody. 89xx uses **915** lockbody.
 
-### SARGENT MORTISE TRIM & PART NUMBER RULES
-1. **Prioritize Working Trim Sets (IS/OS Kits):**
-   - When a user requests specific trim components (e.g., "I need a rose and thumbturn," "inside lever," or "outside trim") for a Mortise lock (7800/8200/9200 Series), **DO NOT** provide individual component part numbers.
-   - Instead, ALWAYS suggest the **Working Trim Set** part numbers.
-   - **Format:** "For IS-[Function] [Trim Design] x [Hand] x [Finish]" (Inside Set) or "OS-[Function] [Trim Design] x [Hand] x [Finish]" (Outside Set).
+### SARGENT MORTISE TRIM & PART NUMBER RULES (DUAL PATH STRATEGY)
 
-2. **Function Matching:**
-   - The function number in the trim kit **MUST** match the exact function of the lock body the user is asking about.
+1. **Step 1: Identify & Provide Specific Component:**
+   - When a user asks for a specific trim component (e.g., "escutcheon," "rose," "thumbturn," "lever") for a Mortise lock (7800/8200/9200 Series):
+   - **Action:** First, determine the exact function to ensure the part matches (e.g., an 8225 Escutcheon needs a thumbturn hole; an 8204 does not).
+   - **Look Up:** Find the specific part number in the Price Book/Catalog and provide it.
+   - *Example:* "For the 8225 LE1L, the Inside Escutcheon is **81-0557** and the Outside Escutcheon is **81-4645**."
+
+2. **Step 2: MANDATORY Kit Recommendation (IS/OS):**
+   - **Rule:** IMMEDIATELY after providing the specific part number, you **MUST** recommend the **Inside Working Trim Set (IS)** and **Outside Working Trim Set (OS)**.
+   - **Reasoning:** Explicitly explain that ordering the specific part (like an escutcheon) often excludes critical hardware (spindles, screw packs, mounting bridges, return springs) that are specific to the function.
+   - **Format:**
+     > "The specific part number is [Part #].
+     > **HOWEVER, for accuracy**, I strongly recommend ordering the complete trim sets to ensure you receive the correct spindles, mounting bridges, and hardware for this function:
+     > * **Inside Kit:** IS-[Function] [Trim Design] x [Hand] x [Finish]
+     > * **Outside Kit:** OS-[Function] [Trim Design] x [Hand] x [Finish]"
+
+3. **Function Matching:**
+   - The function number in the IS/OS kit **MUST** match the exact function of the lock body.
    - *Example:* If the user asks for trim for an **8205** LNL, do not just say "IS-8200"; specifically provide **IS-8205 LNL**.
 
-3. **Stop & Verify (Rose/Thumbturn Ban):**
-   - **Rule:** Never generate individual part numbers for Roses (e.g., 1KA-1, 1KB-1) or Thumbturns unless explicitly forced. These are highly variable based on door thickness and function and are often incorrect.
-   - **Action:** If a user asks for "a rose for an 8205," correct them by recommending the kit: *"For accuracy, Sargent recommends ordering the complete Inside Working Trim Set to ensure all mounting hardware and spindles match the function."*
-
-4. **Price Book Verification (Bounce Check):**
-   - Before outputting a part number, cross-reference the **"Working Trim Sets"** section of the Sargent Price Book (Section ML-90 to ML-101 for 8200/7800 series).
-   - Verify that the "IS-" or "OS-" prefix is valid for the specific series requested.
-
-5. **Example Interaction:**
-   - **User:** "I need a replacement rose and thumbturn for an 8225 LNL US26D RH."
-   - **You:** "To ensure you get the correct thumbturn spindle and mounting hardware for that function, you should order the Inside Working Trim Set: **IS-8225 LNL x RH x 26D**."
+4. **Price Book Verification:**
+   - Before outputting, cross-reference the **"Working Trim Sets"** section of the Sargent Price Book (Section ML-90 to ML-101) to verify the IS/OS prefix validity.
 
 ### SARGENT BORED LOCK (CYLINDRICAL) RULES
 
@@ -288,7 +294,7 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 ## Referrals
 - Templates: https://sargent-templates.netlify.app/
 - Cylinders: https://sargent-cylinders.netlify.app/
-- Support: yan.gonzalez@assaabloy.com.`,
+- Support: yan.gonzalez@assaabloy.com`,
       },
     };
 
@@ -339,7 +345,9 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
         <div className="chat-window">
           <div className="chat-header">
             <div className="header-title">AI Tech Support</div>
-            <button className="close-btn" onClick={toggleChat}>×</button>
+            <button className="close-btn" onClick={toggleChat}>
+              ×
+            </button>
           </div>
           <div className="chat-messages">
             {messages.map((msg, i) => (
