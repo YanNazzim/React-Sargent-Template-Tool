@@ -108,7 +108,7 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
     * 8913, 15, 06, 43, 46, 73, 74, 75, 76 use **915** lockbody.
 - CYLINDERS & SFIC:
     * SFIC Core Only = **7P-7300B**.
-    * 8900/8300 with ET Trim = **#46** mortise cylinder.
+    * 8904/8304 with ET Trim = **#46** mortise cylinder.
     * 8904 with Pull Trim = **#43** mortise cylinder.
 
 ## Additional Hardware Rules
