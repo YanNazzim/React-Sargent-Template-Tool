@@ -99,10 +99,10 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
 - CYLINDER TYPE: Uses the **C10-1** (7 Line style) bored cylinder for all keyed lever/knob trims.
 - TRIM COMPATIBILITY: All **28 Series Trims** (Lever, Rose, GTB/HTB Pulls, OB Knob, TP Thumbpiece) work with 20 & 30 Series.
 - 04 FUNCTION (NIGHT LATCH) OPTIONS:
-    * With Trim: Uses **28-K-LL** lever trim or **814-HTB** pull trim[cite: 34, 41, 674].
+    * With Trim: Uses **28-K-LL** lever trim or **814-HTB** pull trim.
     * Cylinder Only (Rim 2828/3828): Uses **#34 Rim Cylinder** for operation without trim.
 - 30 SERIES EXCLUSIVE: **16- Cylinder Dogging** is available (Panic only). Uses a rail-mounted cylinder.
-- FINISHES: Standard finishes for 28 Series Lever trims include **03, 04, 10, 10B, 10BE, 20D, 26D, BSP, WSP**[cite: 894].
+- FINISHES: Standard finishes for 28 Series Lever trims include **03, 04, 10, 10B, 10BE, 20D, 26D, BSP, WSP**.
 
 ## Night Latch (04) Cylinder Rules (General)
 - RIM EXITS (8804, 9804, PE8504, PE8804, 2828, 3828): Uses a **#34 Rim Cylinder**.
