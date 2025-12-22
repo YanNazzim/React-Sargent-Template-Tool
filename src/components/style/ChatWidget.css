@@ -16,7 +16,7 @@
     padding: 14px 28px;
     border-radius: 40px;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 45, 114, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,20 +28,17 @@
     background: #003c96;
 }
 
-.launcher-icon { font-size: 18px; }
-.launcher-text { font-weight: 600; font-size: 16px; }
-
-/* --- Window --- */
+/* --- Window (Dark Theme) --- */
 .chat-window {
     width: 360px;
     height: 550px;
-    background: #ffffff;
+    background: #1a1a1a; /* Deep Charcoal */
     border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border: 1px solid #eee;
+    border: 1px solid #333;
     animation: slideUp 0.3s ease-out;
 }
 
@@ -57,17 +54,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #333;
 }
 
 .header-title { font-weight: 600; font-size: 16px; }
 .close-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
 
-/* --- Messages --- */
+/* --- Messages Area --- */
 .chat-messages {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
-    background: #f8f9fa;
+    background: #121212; /* Deepest Dark */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -87,12 +85,17 @@
     border-radius: 12px;
     font-size: 14px;
     line-height: 1.5;
-    color: #333;
-    background: white;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 }
 
+/* Assistant Bubble (Dark Gray) */
+.message-row.assistant .message-bubble {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-bottom-left-radius: 2px;
+}
+
+/* User Bubble (Sargent Blue) */
 .message-row.user .message-bubble {
     background: #002d72;
     color: white;
@@ -100,11 +103,13 @@
     border-bottom-right-radius: 2px;
 }
 
-.message-row.assistant .message-bubble {
-    border-bottom-left-radius: 2px;
+/* --- Yellow Highlight for Part Numbers/Bold --- */
+.highlight-yellow {
+    color: #ffcc00; /* Distinct technical yellow */
+    font-weight: 600;
 }
 
-/* --- COOL SOURCE CARDS --- */
+/* --- Cool Source Cards (Dark Mode) --- */
 .sources-grid {
     display: flex;
     flex-direction: column;
@@ -116,18 +121,18 @@
 .source-card {
     display: flex;
     align-items: center;
-    background: white;
+    background: #252525;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     text-decoration: none;
     transition: all 0.2s ease;
     gap: 12px;
 }
 
 .source-card:hover {
-    border-color: #002d72;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-color: #ffcc00;
+    background: #2d2d2d;
     transform: translateX(4px);
 }
 
@@ -142,7 +147,7 @@
 .source-title {
     font-size: 12px;
     font-weight: 600;
-    color: #002d72;
+    color: #e0e0e0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -155,11 +160,11 @@
     text-transform: uppercase;
 }
 
-/* --- Input --- */
+/* --- Input Area --- */
 .chat-input-area {
     padding: 16px;
-    background: white;
-    border-top: 1px solid #eee;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
     display: flex;
     gap: 10px;
 }
@@ -168,20 +173,21 @@
     flex: 1;
     padding: 12px 16px;
     border-radius: 24px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
+    background: #2d2d2d;
+    color: white;
     outline: none;
     font-size: 14px;
-    transition: border-color 0.2s;
 }
 
-.chat-input-area input:focus { border-color: #002d72; }
+.chat-input-area input:focus { border-color: #ffcc00; }
 
 .chat-input-area button {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: #002d72;
-    color: white;
+    background: #ffcc00;
+    color: #000;
     border: none;
     cursor: pointer;
     font-weight: bold;
