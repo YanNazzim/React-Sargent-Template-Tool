@@ -1,6 +1,6 @@
 // netlify/functions/chat.js
-const { VertexAI } = require('@google-cloud/vertexai');
-const path = require('path');
+const { VertexAI } = require("@google-cloud/vertexai");
+const path = require("path");
 
 /* AUTHENTICATION LOGIC */
 const getAuthOptions = () => {
@@ -12,43 +12,52 @@ const getAuthOptions = () => {
         credentials: {
           client_email: credentials.client_email,
           private_key: credentials.private_key,
-        }
+        },
       };
     } catch (error) {
-      console.error("Auth Error: Could not parse GOOGLE_SERVICE_ACCOUNT_JSON", error);
+      console.error(
+        "Auth Error: Could not parse GOOGLE_SERVICE_ACCOUNT_JSON",
+        error
+      );
     }
   }
 
   // 2. LOCAL MODE: Look for the file in the project ROOT
   // process.cwd() gets the folder you are running 'netlify dev' from
-  console.log("Looking for key at:", path.join(process.cwd(), 'sargent-key.json'));
-  
+  console.log(
+    "Looking for key at:",
+    path.join(process.cwd(), "sargent-key.json")
+  );
+
   return {
-    keyFilename: path.join(process.cwd(), 'sargent-key.json') 
+    keyFilename: path.join(process.cwd(), "sargent-key.json"),
   };
 };
 
 // Initialize Vertex AI
-const vertex_ai = new VertexAI({ 
-  project: '310182215564', 
-  location: 'us-central1',
-  googleAuthOptions: getAuthOptions() 
+const vertex_ai = new VertexAI({
+  project: "310182215564",
+  location: "us-central1",
+  googleAuthOptions: getAuthOptions(),
 });
 
 // Define your Sargent Data Store
 const sargentDataStore = {
   retrieval: {
     vertexAiSearch: {
-      datastore: 'projects/310182215564/locations/global/collections/default_collection/dataStores/sargent-docs_1766204355624' 
-    }
-  }
+      datastore:
+        "projects/310182215564/locations/global/collections/default_collection/dataStores/sargent-docs_1766204355624",
+    },
+  },
 };
 // Instantiate the model with the tool
 const model = vertex_ai.getGenerativeModel({
-  model: 'gemini-2.5-flash', 
+  model: "gemini-2.5-flash",
   tools: [sargentDataStore],
   systemInstruction: {
-    parts: [{ text: `AI Tech Support and Sargent Specialist
+    parts: [
+      {
+        text: `AI Tech Support and Sargent Specialist
 Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate, technical support and part identification.
 
 VISUAL ANALYSIS: If an image is provided, analyze the hardware. Look for:
@@ -80,14 +89,22 @@ LD-: Less Dogging. Used for non-fire-rated devices.
 AL-: Alarmed Exit (Min 36" door). Conflict: 16, 56, 59, BT, GL, HC, HC4, or WS.
 NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
-8300 = Narrow Mortise Exit
-8400 = Narrow CVR Exit
-8500 = Narrow Rim Exit
-8600 = Wide CVR Exit
-8700 = Wide SVR Exit
-8800 = Wide Rim Exit
-8900 = Wide Mortise Exit
+Sargent Exit Device function # 04 = Night Latch - Key Retracts Latch
+Sargent Exit Device function # 06 = Store Room - Key Unlocks Lever, Lever retracts latch, ALWAYS LOCKED
+Sargent Exit Device function # 10 = Exit Only - Can be blank or have a Dummy Pull/Escutcheon Trim
+Sargent Exit Device function # 13 = Class Room - Key Unlocks Lever, Lever retracts latch, CAN BE LEFT UNLOCKED
+Sargent Exit Device function # 15 = Passage - Lever always retracts latch. (Free Entry)
+Sargent Exit Device function # 16 = Classroom Security (Intruder) - Inside Key Locks/Unlocks outside trim, Outside key retracts latch
+Sargent Exit Device function # 40 = Exit Only (Freewheeling Lever) - Escutcheon Trim that Spins freely 
+Sargent Exit Device function # 43 = Class Room (Freewheeling Lever) - Key Unlocks Lever, Lever retracts latch, CAN BE LEFT UNLOCKED
+Sargent Exit Device function # 46 = Store Room (Freewheeling Lever) - Key Unlocks Lever, Lever retracts latch, ALWAYS LOCKED
+Sargent Exit Device function # 73 = Electrified Trim (Fail Safe - NO KEY) - Power on = Locked | Power off = Unlocked
+Sargent Exit Device function # 74 = Electrified Trim (Fail Secure - NO KEY) - Power on = Unlocked | Power off = Locked
+Sargent Exit Device function # 75 = Electrified Trim (Fail Safe - HAS KEY OVERRIDE) - Power on = Locked | Power off = Unlocked
+Sargent Exit Device function # 76 = Electrified Trim (Fail Secure - HAS KEY OVERRIDE) - Power on = Unlocked | Power off = Locked
 
+8816 cannot have dogging at all
+A cylinder on the panic bar's chassis usually indicates a 16 function
 
 ## Response Style: "Technical Brevity"
 - SINGLE PART NUMBER: Always provide the most accurate part number.
@@ -100,8 +117,11 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
 ## Cylinder Rules
 - RIM EXITS: Uses **#34 Rim Cylinder**.
-- MORTISE EXITS(8304/8904/9904): Uses **#46 Mortise Cylinder** (standard ET trim).
+- 8816: Inside 44 Mortise | Outside 34 Rim.
+- 8916: Inside 34 Mortise | Outside 46 Rim.
+- MORTISE EXITS: Uses **#46 Mortise Cylinder** (standard ET trim).
 - MORTISE PULLS (8904 MSL / 8904 FLL): Uses **#43 Mortise Cylinder**.
+
 
 ## Lockbodies
 - RIM DEVICES (8800, PE8800, 20, 30): DO NOT use lockbodies.
@@ -235,42 +255,44 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 ## Referrals
 - Templates: https://sargent-templates.netlify.app/
 - Cylinders: https://sargent-cylinders.netlify.app/
-- Support: yan.gonzalez@assaabloy.com` }]
-  }
+- Support: yan.gonzalez@assaabloy.com`,
+      },
+    ],
+  },
 });
 
 exports.handler = async (event) => {
   // Only allow POST requests
-  if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method Not Allowed' };
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
 
   try {
     const body = JSON.parse(event.body);
     const { query, history } = body;
-    
+
     // 1. Construct the "Content" parts
     const userContentParts = [];
-    
+
     // Add text if present
     if (query.text) {
       userContentParts.push({ text: query.text });
     }
-    
+
     // Add image if present
     if (query.image && query.image.data) {
       userContentParts.push({
         inlineData: {
           mimeType: query.image.mimeType,
-          data: query.image.data 
-        }
+          data: query.image.data,
+        },
       });
     }
 
     // 2. Format History
-    const chatHistory = (history || []).map(msg => ({
-      role: msg.role === 'assistant' ? 'model' : 'user',
-      parts: [{ text: msg.text }]
+    const chatHistory = (history || []).map((msg) => ({
+      role: msg.role === "assistant" ? "model" : "user",
+      parts: [{ text: msg.text }],
     }));
 
     const chat = model.startChat({
@@ -280,7 +302,7 @@ exports.handler = async (event) => {
     // 3. Send Message
     const result = await chat.sendMessage(userContentParts);
     const response = await result.response;
-    
+
     // 4. Extract Answer
     const candidate = response.candidates[0];
     const answerText = candidate.content.parts[0].text;
@@ -292,16 +314,17 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         answer: {
           answerText: answerText,
-          citations: citations
-        }
-      })
+          citations: citations,
+        },
+      }),
     };
-
   } catch (error) {
     console.error("Error calling Vertex AI:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to process request: " + error.message })
+      body: JSON.stringify({
+        error: "Failed to process request: " + error.message,
+      }),
     };
   }
 };

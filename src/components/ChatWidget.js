@@ -69,7 +69,7 @@ const ChatWidget = () => {
         if (src.uri && !uniqueMap.has(src.uri)) {
           let cleanTitle = src.title || "Sargent Documentation";
           if (cleanTitle.length > 50)
-            cleanTitle = cleanTitle.substring(0, 47) + "...";
+            cleanTitle = cleanTitle.substring(0, 47) + "Thinking...";
           uniqueMap.set(src.uri, {
             title: cleanTitle,
             uri: src.uri,
@@ -205,6 +205,23 @@ LD-: Less Dogging. Used for non-fire-rated devices.
 AL-: Alarmed Exit (Min 36" door). Conflict: 16, 56, 59, BT, GL, HC, HC4, or WS.
 NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
+Sargent Exit Device function # 04 = Night Latch - Key Retracts Latch
+Sargent Exit Device function # 06 = Store Room - Key Unlocks Lever, Lever retracts latch, ALWAYS LOCKED
+Sargent Exit Device function # 10 = Exit Only - Can be blank or have a Dummy Pull/Escutcheon Trim
+Sargent Exit Device function # 13 = Class Room - Key Unlocks Lever, Lever retracts latch, CAN BE LEFT UNLOCKED
+Sargent Exit Device function # 15 = Passage - Lever always retracts latch. (Free Entry)
+Sargent Exit Device function # 16 = Classroom Security (Intruder) - Inside Key Locks/Unlocks outside trim, Outside key retracts latch
+Sargent Exit Device function # 40 = Exit Only (Freewheeling Lever) - Escutcheon Trim that Spins freely 
+Sargent Exit Device function # 43 = Class Room (Freewheeling Lever) - Key Unlocks Lever, Lever retracts latch, CAN BE LEFT UNLOCKED
+Sargent Exit Device function # 46 = Store Room (Freewheeling Lever) - Key Unlocks Lever, Lever retracts latch, ALWAYS LOCKED
+Sargent Exit Device function # 73 = Electrified Trim (Fail Safe - NO KEY) - Power on = Locked | Power off = Unlocked
+Sargent Exit Device function # 74 = Electrified Trim (Fail Secure - NO KEY) - Power on = Unlocked | Power off = Locked
+Sargent Exit Device function # 75 = Electrified Trim (Fail Safe - HAS KEY OVERRIDE) - Power on = Locked | Power off = Unlocked
+Sargent Exit Device function # 76 = Electrified Trim (Fail Secure - HAS KEY OVERRIDE) - Power on = Unlocked | Power off = Locked
+
+8816 cannot have dogging at all
+A cylinder on the panic bar's chassis usually indicates a 16 function
+
 ## Response Style: "Technical Brevity"
 - SINGLE PART NUMBER: Always provide the most accurate part number.
 - FORMATTING: Use **bold** for part numbers and templates.
@@ -216,8 +233,11 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
 ## Cylinder Rules
 - RIM EXITS: Uses **#34 Rim Cylinder**.
+- 8816: Inside 44 Mortise | Outside 34 Rim.
+- 8916: Inside 34 Mortise | Outside 46 Rim.
 - MORTISE EXITS: Uses **#46 Mortise Cylinder** (standard ET trim).
 - MORTISE PULLS (8904 MSL / 8904 FLL): Uses **#43 Mortise Cylinder**.
+
 
 ## Lockbodies
 - RIM DEVICES (8800, PE8800, 20, 30): DO NOT use lockbodies.
@@ -455,7 +475,14 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
             ))}
             {isLoading && (
               <div className="message-row assistant">
-                <div className="message-bubble loading">...</div>
+                <div className="message-bubble loading">
+                  {/* MODIFIED: Replaced text with animated dots structure */}
+                  <div className="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
               </div>
             )}
             <div ref={messagesEndRef} />
