@@ -18,7 +18,7 @@
 .env.test.local
 .env.production.local
 
-sargent-ai-85cf96e9a734.json
+sargent-key.json
 
 npm-debug.log*
 yarn-debug.log*
