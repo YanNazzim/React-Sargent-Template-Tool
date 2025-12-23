@@ -47,7 +47,7 @@ const ChatWidget = () => {
         const base64String = reader.result.split(",")[1];
         setSelectedImage({
           mimeType: file.type,
-          data: base64String
+          data: base64String,
         });
       };
       reader.readAsDataURL(file);
@@ -82,7 +82,10 @@ const ChatWidget = () => {
   };
 
   const formatMessageText = (text) => {
-    if (!text) return null;
+    // --- CRASH FIX: SAFETY CHECK ---
+    // If text is null, undefined, or NOT a string, return null to avoid crash
+    if (!text || typeof text !== "string") return null;
+
     const lines = text.split("\n");
     const formattedContent = [];
     let listBuffer = [];
@@ -110,7 +113,10 @@ const ChatWidget = () => {
       } else {
         if (listBuffer.length > 0) {
           formattedContent.push(
-            <ul key={`ul-${index}`} style={{ paddingLeft: "20px", margin: "5px 0" }}>
+            <ul
+              key={`ul-${index}`}
+              style={{ paddingLeft: "20px", margin: "5px 0" }}
+            >
               {listBuffer}
             </ul>
           );
@@ -145,20 +151,21 @@ const ChatWidget = () => {
 
     // Optimistically update UI
     setMessages((prev) => [
-      ...prev, 
-      { 
-        role: "user", 
-        text: userMessage, 
-        image: currentPreview // Pass preview to render in chat
-      }
+      ...prev,
+      {
+        role: "user",
+        text: userMessage,
+        image: currentPreview, // Pass preview to render in chat
+      },
     ]);
-    
+
     setInput("");
     clearImage(); // Reset input immediately
     setIsLoading(true);
 
     const FUNCTION_URL = "/.netlify/functions/chat";
-    const safeSessionId = typeof sessionId === "string" ? sessionId : sessionId.name;
+    const safeSessionId =
+      typeof sessionId === "string" ? sessionId : sessionId.name;
     const answerGenerationSpec = {
       ignoreAdversarialQuery: true,
       ignoreNonAnswerSeekingQuery: true,
@@ -171,6 +178,7 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
 
 VISUAL ANALYSIS: If an image is provided, analyze the hardware. Look for:
 - Rail shape (Teardrop vs Crossbar vs Rectangular)
+- Chassis Width (Wide vs narrow) This chassis is at the end of the rail. thin is narrow wide is wide
 - End cap style (Flush 43- vs Standard)
 - Lock chassis (Mortise box vs Cylindrical latch)
 - Finish (US3, US32D, US10B)
@@ -347,15 +355,15 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
       },
     };
 
-try {
+    try {
       const response = await fetch(FUNCTION_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           // MODIFIED: Send both text and image in the query object
-          query: { 
-            text: userMessage || "Identify this Sargent product", 
-            image: currentImage 
+          query: {
+            text: userMessage || "Identify this Sargent product",
+            image: currentImage,
           },
           session: safeSessionId,
           answerGenerationSpec: answerGenerationSpec,
@@ -398,7 +406,9 @@ try {
         <div className="chat-window">
           <div className="chat-header">
             <div className="header-title">AI Tech Support</div>
-            <button className="close-btn" onClick={toggleChat}>×</button>
+            <button className="close-btn" onClick={toggleChat}>
+              ×
+            </button>
           </div>
           <div className="chat-messages">
             {messages.map((msg, i) => (
@@ -406,18 +416,32 @@ try {
                 <div className="message-bubble">
                   {/* NEW: Render user uploaded image if it exists */}
                   {msg.image && (
-                    <img 
-                      src={msg.image} 
-                      alt="User upload" 
-                      style={{ maxWidth: "100%", borderRadius: "8px", marginTop: "5px", marginBottom: "5px", border: "1px solid #ddd" }} 
+                    <img
+                      src={msg.image}
+                      alt="User upload"
+                      style={{
+                        maxWidth: "100%",
+                        borderRadius: "8px",
+                        marginTop: "5px",
+                        marginBottom: "5px",
+                        border: "1px solid #ddd",
+                      }}
                     />
                   )}
-                  {msg.role === "assistant" ? formatMessageText(msg.text) : msg.text}
+                  {msg.role === "assistant"
+                    ? formatMessageText(msg.text)
+                    : msg.text}
                 </div>
                 {msg.sources?.length > 0 && (
                   <div className="sources-grid">
                     {msg.sources.map((src, idx) => (
-                      <a key={idx} href={src.uri} target="_blank" rel="noreferrer" className="source-card">
+                      <a
+                        key={idx}
+                        href={src.uri}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="source-card"
+                      >
                         <span className="source-icon">📄</span>
                         <div className="source-details">
                           <span className="source-title">{src.title}</span>
@@ -439,40 +463,82 @@ try {
 
           {/* NEW: Image Preview Area above input */}
           {imagePreview && (
-            <div style={{ padding: "5px 15px", display: "flex", alignItems: "center", background: "#f9f9f9", borderTop: "1px solid #eee" }}>
+            <div
+              style={{
+                padding: "5px 15px",
+                display: "flex",
+                alignItems: "center",
+                background: "#f9f9f9",
+                borderTop: "1px solid #eee",
+              }}
+            >
               <div style={{ position: "relative", display: "inline-block" }}>
-                <img src={imagePreview} alt="Preview" style={{ height: "50px", borderRadius: "4px", border: "1px solid #ccc" }} />
-                <button 
+                <img
+                  src={imagePreview}
+                  alt="Preview"
+                  style={{
+                    height: "50px",
+                    borderRadius: "4px",
+                    border: "1px solid #ccc",
+                  }}
+                />
+                <button
                   onClick={clearImage}
                   style={{
-                    position: "absolute", top: "-8px", right: "-8px", 
-                    background: "#ff4444", color: "white", border: "none", 
-                    borderRadius: "50%", width: "20px", height: "20px", cursor: "pointer",
-                    fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold"
+                    position: "absolute",
+                    top: "-8px",
+                    right: "-8px",
+                    background: "#ff4444",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "50%",
+                    width: "20px",
+                    height: "20px",
+                    cursor: "pointer",
+                    fontSize: "12px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "bold",
                   }}
                 >
                   ×
                 </button>
               </div>
-              <span style={{ marginLeft: "10px", fontSize: "0.8rem", color: "#666" }}>Image attached</span>
+              <span
+                style={{
+                  marginLeft: "10px",
+                  fontSize: "0.8rem",
+                  color: "#666",
+                }}
+              >
+                Image attached
+              </span>
             </div>
           )}
 
           <form className="chat-input-area" onSubmit={handleSendMessage}>
             {/* NEW: Hidden File Input */}
-            <input 
-              type="file" 
-              accept="image/*" 
-              ref={fileInputRef} 
-              style={{ display: "none" }} 
+            <input
+              type="file"
+              accept="image/*"
+              ref={fileInputRef}
+              style={{ display: "none" }}
               onChange={handleFileSelect}
             />
-            
+
             {/* NEW: Paperclip Button */}
-            <button 
-              type="button" 
+            <button
+              type="button"
               onClick={() => fileInputRef.current.click()}
-              style={{ marginRight: "8px", background: "none", border: "none", cursor: "pointer", fontSize: "1.2rem", padding: "0 5px" }}
+              style={{
+                marginRight: "8px",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                fontSize: "1.2rem",
+                padding: "0 5px",
+              }}
               title="Attach Photo"
             >
               📎
@@ -481,10 +547,17 @@ try {
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={imagePreview ? "Ask about this image..." : "Ex: 8813, SFIC core..."}
+              placeholder={
+                imagePreview
+                  ? "Ask about this image..."
+                  : "Ex: 8813, SFIC core..."
+              }
               disabled={isLoading}
             />
-            <button type="submit" disabled={isLoading || (!input.trim() && !selectedImage)}>
+            <button
+              type="submit"
+              disabled={isLoading || (!input.trim() && !selectedImage)}
+            >
               →
             </button>
           </form>

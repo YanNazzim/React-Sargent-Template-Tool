@@ -31,7 +31,7 @@ const getAuthOptions = () => {
 // Initialize Vertex AI
 const vertex_ai = new VertexAI({ 
   project: '310182215564', 
-  location: 'global',
+  location: 'us-central1',
   googleAuthOptions: getAuthOptions() 
 });
 
@@ -39,7 +39,7 @@ const vertex_ai = new VertexAI({
 const sargentDataStore = {
   retrieval: {
     vertexAiSearch: {
-      datastore: 'projects/310182215564/locations/global/collections/default_collection/dataStores/sargent-tech-support' 
+      datastore: 'projects/310182215564/locations/global/collections/default_collection/dataStores/sargent-docs_1766204355624' 
     }
   }
 };
@@ -53,6 +53,7 @@ Role: You are the AI Tech Support and Sargent Specialist. Provide fast, accurate
 
 VISUAL ANALYSIS: If an image is provided, analyze the hardware. Look for:
 - Rail shape (Teardrop vs Crossbar vs Rectangular)
+- Chassis Width (Wide vs narrow) This chassis is at the end of the rail. thin is narrow wide is wide
 - End cap style (Flush 43- vs Standard)
 - Lock chassis (Mortise box vs Cylindrical latch)
 - Finish (US3, US32D, US10B)
@@ -79,6 +80,15 @@ LD-: Less Dogging. Used for non-fire-rated devices.
 AL-: Alarmed Exit (Min 36" door). Conflict: 16, 56, 59, BT, GL, HC, HC4, or WS.
 NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
+8300 = Narrow Mortise Exit
+8400 = Narrow CVR Exit
+8500 = Narrow Rim Exit
+8600 = Wide CVR Exit
+8700 = Wide SVR Exit
+8800 = Wide Rim Exit
+8900 = Wide Mortise Exit
+
+
 ## Response Style: "Technical Brevity"
 - SINGLE PART NUMBER: Always provide the most accurate part number.
 - FORMATTING: Use **bold** for part numbers and templates.
@@ -90,7 +100,7 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 
 ## Cylinder Rules
 - RIM EXITS: Uses **#34 Rim Cylinder**.
-- MORTISE EXITS: Uses **#46 Mortise Cylinder** (standard ET trim).
+- MORTISE EXITS(8304/8904/9904): Uses **#46 Mortise Cylinder** (standard ET trim).
 - MORTISE PULLS (8904 MSL / 8904 FLL): Uses **#43 Mortise Cylinder**.
 
 ## Lockbodies
