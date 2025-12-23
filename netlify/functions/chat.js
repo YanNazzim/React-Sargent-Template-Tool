@@ -2,13 +2,11 @@
 const { VertexAI } = require('@google-cloud/vertexai');
 const path = require('path');
 
-// AUTHENTICATION LOGIC
-// This function decides whether to use the Live Secret or the Local File
+/* AUTHENTICATION LOGIC */
 const getAuthOptions = () => {
   // 1. LIVE MODE: Check if the Netlify Secret exists
   if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
     try {
-      // Parse the secret string back into a real object
       const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
       return {
         credentials: {
@@ -21,10 +19,12 @@ const getAuthOptions = () => {
     }
   }
 
-  // 2. LOCAL MODE: Fall back to your local file
-  // This path assumes the file is in the root of your project
+  // 2. LOCAL MODE: Look for the file in the project ROOT
+  // process.cwd() gets the folder you are running 'netlify dev' from
+  console.log("Looking for key at:", path.join(process.cwd(), 'sargent-key.json'));
+  
   return {
-    keyFilename: path.join(__dirname, '../../sargent-key.json') 
+    keyFilename: path.join(process.cwd(), 'sargent-key.json') 
   };
 };
 
@@ -32,7 +32,7 @@ const getAuthOptions = () => {
 const vertex_ai = new VertexAI({ 
   project: '310182215564', 
   location: 'global',
-  googleAuthOptions: getAuthOptions() // <--- Uses the smart logic above
+  googleAuthOptions: getAuthOptions() 
 });
 
 // Define your Sargent Data Store
@@ -43,10 +43,9 @@ const sargentDataStore = {
     }
   }
 };
-
 // Instantiate the model with the tool
 const model = vertex_ai.getGenerativeModel({
-  model: 'gemini-1.5-flash', 
+  model: 'gemini-2.5-flash', 
   tools: [sargentDataStore],
   systemInstruction: {
     parts: [{ text: `AI Tech Support and Sargent Specialist
