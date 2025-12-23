@@ -1,14 +1,41 @@
 // netlify/functions/chat.js
 const { VertexAI } = require('@google-cloud/vertexai');
+const path = require('path');
+
+// AUTHENTICATION LOGIC
+// This function decides whether to use the Live Secret or the Local File
+const getAuthOptions = () => {
+  // 1. LIVE MODE: Check if the Netlify Secret exists
+  if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+    try {
+      // Parse the secret string back into a real object
+      const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+      return {
+        credentials: {
+          client_email: credentials.client_email,
+          private_key: credentials.private_key,
+        }
+      };
+    } catch (error) {
+      console.error("Auth Error: Could not parse GOOGLE_SERVICE_ACCOUNT_JSON", error);
+    }
+  }
+
+  // 2. LOCAL MODE: Fall back to your local file
+  // This path assumes the file is in the root of your project
+  return {
+    keyFilename: path.join(__dirname, '../../sargent-key.json') 
+  };
+};
 
 // Initialize Vertex AI
-// Ensure you have authentication set up (e.g., GOOGLE_APPLICATION_CREDENTIALS) in Netlify
 const vertex_ai = new VertexAI({ 
   project: '310182215564', 
-  location: 'global' 
+  location: 'global',
+  googleAuthOptions: getAuthOptions() // <--- Uses the smart logic above
 });
 
-// Define your Sargent Data Store as a "Tool" for the model
+// Define your Sargent Data Store
 const sargentDataStore = {
   retrieval: {
     vertexAiSearch: {
@@ -204,6 +231,7 @@ NB-: Less Bottom Rod & Bolt. ONLY for 84/86/87 series.
 });
 
 exports.handler = async (event) => {
+  // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
@@ -212,7 +240,7 @@ exports.handler = async (event) => {
     const body = JSON.parse(event.body);
     const { query, history } = body;
     
-    // 1. Construct the "Content" parts for Gemini
+    // 1. Construct the "Content" parts
     const userContentParts = [];
     
     // Add text if present
@@ -225,14 +253,12 @@ exports.handler = async (event) => {
       userContentParts.push({
         inlineData: {
           mimeType: query.image.mimeType,
-          data: query.image.data // Base64 string from frontend
+          data: query.image.data 
         }
       });
     }
 
-    // 2. Start Chat Session
-    // Convert your existing simple history format to Vertex AI format if needed
-    // Simple mapping: 
+    // 2. Format History
     const chatHistory = (history || []).map(msg => ({
       role: msg.role === 'assistant' ? 'model' : 'user',
       parts: [{ text: msg.text }]
@@ -246,8 +272,7 @@ exports.handler = async (event) => {
     const result = await chat.sendMessage(userContentParts);
     const response = await result.response;
     
-    // 4. Extract Answer and Citations
-    // Note: Structure can vary slightly, handling safe defaults
+    // 4. Extract Answer
     const candidate = response.candidates[0];
     const answerText = candidate.content.parts[0].text;
     const citations = candidate.citationMetadata?.citations || [];
