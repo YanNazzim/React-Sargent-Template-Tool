@@ -13,23 +13,23 @@ function DisplayTemplates() {
   const navigate = useNavigate();
   const { category, series, device } = location.state || {};
 
-  const [expandedTemplate, setExpandedTemplate] = useState(null);
+  // Track the currently selected card index (for split view)
+  const [selectedGroupIndex, setSelectedGroupIndex] = useState(0);
+  
+  // Mobile specific state: Is the detail view open?
+  const [isMobileDetailOpen, setIsMobileDetailOpen] = useState(false);
+
   const [viewMode, setViewMode] = useState("templates");
-  // State to track selected links: { 'templateIndex-linkIndex': { url, text, templateTitle, templateIndex, linkIndex } }
   const [selectedLinks, setSelectedLinks] = useState({}); 
-  // State for copy status, scoped to the card where the button was pressed
   const [copyStatus, setCopyStatus] = useState(null); 
-  const [copyStatusIndex, setCopyStatusIndex] = useState(null);
 
-
-  // Redirect to home if critical state is not available (e.g., on refresh)
   useEffect(() => {
     if (!category || !series) {
       navigate("/");
     }
   }, [category, series, navigate]);
 
-  // Data Loading Logic (omitted for brevity, assume it works as before)
+  // --- Data Loading ---
   let dataStore = {};
   if (category === "Mortise Locks") dataStore = MortiseLocks;
   else if (category === "Exit Devices") dataStore = ExitDevices;
@@ -54,14 +54,14 @@ function DisplayTemplates() {
 
   const contentToShow =
     viewMode === "templates" ? filteredTemplates : filteredInstructions;
-    
-  // Helper to extract all link objects from a template in order (link0 to link10)
+
+  // --- Link Extraction Helper ---
   const extractLinks = (template) => {
     const links = [];
     if (template.link) {
       links.push({ text: template.text || "Document Link", url: template.link, isPrimary: true });
     } else {
-      links.push({ text: template.text || "Document Link", url: template.link, isPrimary: true });
+       if(template.text) links.push({ text: template.text, url: template.link || "#", isPrimary: true });
     }
 
     for (let i = 1; i <= 10; i++) {
@@ -78,7 +78,31 @@ function DisplayTemplates() {
     return links;
   };
 
-  // State Handler for Checkboxes (Global selection remains, keyed by index)
+  const contentWithLinks = contentToShow.map((template, index) => ({
+    ...template,
+    templateIndex: index,
+    links: extractLinks(template),
+  }));
+
+  // --- Selection Logic ---
+  const handleGroupSelect = (index) => {
+    setSelectedGroupIndex(index);
+    setIsMobileDetailOpen(true); 
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleMobileBack = () => {
+    setIsMobileDetailOpen(false);
+  };
+
+  const toggleView = (view) => {
+    if (view !== viewMode) {
+      setSelectedGroupIndex(0); 
+      setViewMode(view);
+      setIsMobileDetailOpen(false);
+    }
+  };
+
   const handleLinkToggle = (templateIndex, linkIndex, linkDetails) => {
     const key = `${templateIndex}-${linkIndex}`;
     setSelectedLinks((prev) => {
@@ -86,7 +110,6 @@ function DisplayTemplates() {
       if (newLinks[key]) {
         delete newLinks[key];
       } else {
-        // Store extra details needed for unique titles and sorting
         newLinks[key] = {
           ...linkDetails,
           templateTitle: contentToShow[templateIndex].title,
@@ -98,290 +121,224 @@ function DisplayTemplates() {
     });
   };
   
-  // Function to remove a link directly using its key from the navbar
-  const handleRemoveLink = (key, e) => {
-    e.stopPropagation();
+  const isLinkSelected = (templateIndex, linkIndex) => {
+    return !!selectedLinks[`${templateIndex}-${linkIndex}`];
+  };
+
+  // --- NEW: Select All Logic ---
+  const areAllSelectedInGroup = (groupIndex) => {
+    const group = contentWithLinks[groupIndex];
+    if (!group || group.links.length === 0) return false;
+    // Check if every link in this group has a corresponding key in selectedLinks
+    return group.links.every((_, i) => selectedLinks[`${groupIndex}-${i}`]);
+  };
+
+  const handleSelectAll = (groupIndex) => {
+    const group = contentWithLinks[groupIndex];
+    if (!group) return;
+
+    const allSelected = areAllSelectedInGroup(groupIndex);
+
     setSelectedLinks(prev => {
         const newState = { ...prev };
-        // Determine the indices from the key
-        const [tIndex, lIndex] = key.split("-").map(Number);
         
-        // Find the checkbox and uncheck it visually (important for UI consistency)
-        const checkbox = document.getElementById(`link-${tIndex}-${lIndex}`);
-        if (checkbox) {
-          checkbox.checked = false;
+        if (allSelected) {
+            // Deselect All: Remove keys for this group
+            group.links.forEach((_, i) => {
+                delete newState[`${groupIndex}-${i}`];
+            });
+        } else {
+            // Select All: Add keys for this group
+            group.links.forEach((link, i) => {
+                newState[`${groupIndex}-${i}`] = {
+                    ...link,
+                    templateTitle: group.title,
+                    templateIndex: groupIndex,
+                    linkIndex: i
+                };
+            });
         }
-
-        delete newState[key];
         return newState;
     });
   };
 
-
-  // MODIFIED: Memoized derivation to calculate total links AND list of selected links (sorted by index)
+  // --- Copy Logic ---
   const { totalLinks, sortedSelectedLinks } = useMemo(() => {
-    let totalLinks = 0;
+    let count = 0;
     const linksArray = Object.entries(selectedLinks).map(([key, linkDetails]) => {
-        totalLinks++;
-        return {
-            key, // Preserve the original key for removal
-            ...linkDetails
-        };
+        count++;
+        return { key, ...linkDetails };
     }).sort((a, b) => {
-        // Sort primarily by templateIndex and secondarily by linkIndex
-        if (a.templateIndex !== b.templateIndex) {
-            return a.templateIndex - b.templateIndex; // Sort by template index first
-        }
-        return a.linkIndex - b.linkIndex; // Then sort by link index
+        if (a.templateIndex !== b.templateIndex) return a.templateIndex - b.templateIndex;
+        return a.linkIndex - b.linkIndex;
     });
-
-    return { totalLinks, sortedSelectedLinks: linksArray };
+    return { totalLinks: count, sortedSelectedLinks: linksArray };
   }, [selectedLinks]);
 
-  
-  // MODIFIED: This function now correctly groups links by card title before formatting the output.
-  const handleCopyLinks = async (e) => {
-    e.stopPropagation();
-
+  const handleCopyLinks = async () => {
     if (totalLinks === 0) {
       setCopyStatus("None Selected");
-      setCopyStatusIndex(expandedTemplate); // Use the currently expanded card for status feedback
-      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+      setTimeout(() => setCopyStatus(null), 3000);
       return;
     }
 
-    // --- 1. Group links by their source card title (templateTitle) ---
     const groupedLinks = new Map();
     sortedSelectedLinks.forEach(link => {
-      const title = link.templateTitle;
-      if (!groupedLinks.has(title)) {
-        groupedLinks.set(title, []);
-      }
-      groupedLinks.get(title).push(link);
+      if (!groupedLinks.has(link.templateTitle)) groupedLinks.set(link.templateTitle, []);
+      groupedLinks.get(link.templateTitle).push(link);
     });
     
-    // --- 2. Build the final output string ---
     const outputBlocks = [];
-
     groupedLinks.forEach((linksInCard, title) => {
-      // 1. Create the card title header
       const header = `----${title}----`;
-
-      // 2. Create the list of links for this card
-      // Format: Link Text: URL
-      const linksList = linksInCard.map(link => 
-        `${link.text}: ${link.url}`
-      ).join('\n\n'); // Join individual links with a single newline
-
-      // 3. Combine header and links list
-      outputBlocks.push(`${header}\n${linksList}`);
+      const list = linksInCard.map(link => `${link.text}: ${link.url}`).join('\n\n');
+      outputBlocks.push(`${header}\n${list}`);
     });
 
-    // 4. Join all card blocks with a double newline
-    const copyOutput = outputBlocks.join('\n\n');
-
-    // --- 3. Copy data and clear the entire queue ---
     try {
-      // Use the new structured output string
-      await navigator.clipboard.writeText(copyOutput.trim());
+      await navigator.clipboard.writeText(outputBlocks.join('\n\n').trim());
       setCopyStatus("Links Copied!");
-      setCopyStatusIndex(expandedTemplate);
-      
-      // Clear all checkboxes visually
-      sortedSelectedLinks.forEach(link => {
-        const checkbox = document.getElementById(`link-${link.templateIndex}-${link.linkIndex}`);
-        if (checkbox) {
-          checkbox.checked = false;
-        }
-      });
-
-      // Clear the entire queue state
-      setSelectedLinks({});
-      
-      // Clear status after 3 seconds
-      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+      setSelectedLinks({}); 
+      setTimeout(() => setCopyStatus(null), 3000);
     } catch (err) {
-      console.error("Failed to copy text: ", err);
       setCopyStatus("Copy Failed");
-      setCopyStatusIndex(expandedTemplate);
-      setTimeout(() => {setCopyStatus(null); setCopyStatusIndex(null)}, 3000);
+      setTimeout(() => setCopyStatus(null), 3000);
     }
   };
 
-
-  const toggleTemplate = (index) => {
-    setExpandedTemplate(expandedTemplate === index ? null : index);
-    setCopyStatus(null);
-    setCopyStatusIndex(null); // Clear local copy status on card interaction
-  };
-
-  const toggleView = (view) => {
-    if (view !== viewMode) {
-      setExpandedTemplate(null);
-      setCopyStatus(null);
-      setCopyStatusIndex(null);
-      setViewMode(view);
-    }
-  };
-
-  // Re-map contentToShow to ensure we have the indexes and extracted links
-  const contentWithLinks = contentToShow.map((template, index) => ({
-    ...template,
-    templateIndex: index, // Add index for unique key generation
-    links: extractLinks(template),
-  }));
-
-  // Helper to determine if a link is selected
-  const isLinkSelected = (templateIndex, linkIndex) => {
-    const key = `${templateIndex}-${linkIndex}`;
-    return !!selectedLinks[key];
-  };
+  // --- Render Helpers ---
+  const currentGroup = contentWithLinks[selectedGroupIndex];
 
   return (
-    <div className="display-templates">
-      <h1 className="deviceHeading">
-        {category || "Category"} - {device || series}
-      </h1>
-      <h2 className="ToolTip">
-        Click/Tap on cards to expand details. Select links then use the 'Copy
-        Selected' button inside the card for an easy email output.
-      </h2>
-
+    <div className="display-templates-page">
       
-      {/* Toggle Buttons with Slider (UNCHANGED) */}
-      <div className="view-toggle">
-        <div
-          className={`slider ${viewMode === "templates" ? "left" : "right"}`}
-        ></div>
-        <button
-          className={viewMode === "templates" ? "active" : ""}
-          onClick={() => toggleView("templates")}
-          aria-label="View Templates"
-        >
-          Templates
-        </button>
-        <button
-          className={viewMode === "instructions" ? "active" : ""}
-          onClick={() => toggleView("instructions")}
-          aria-label="View Installation Instructions"
-        >
-          Installation/Parts
-        </button>
+      {/* Header Area */}
+      <div className="dt-header">
+        <h1 className="dt-title">
+            <span className="dt-category">{category}</span>
+            <span className="dt-divider">/</span>
+            <span className="dt-series">{device || series}</span>
+        </h1>
+        
+        <div className="dt-toggle-container">
+            <div className={`dt-toggle-pill ${viewMode}`}></div>
+            <button 
+                className={`dt-toggle-btn ${viewMode === 'templates' ? 'active' : ''}`}
+                onClick={() => toggleView('templates')}
+            >
+                Templates
+            </button>
+            <button 
+                className={`dt-toggle-btn ${viewMode === 'instructions' ? 'active' : ''}`}
+                onClick={() => toggleView('instructions')}
+            >
+                Installation
+            </button>
+        </div>
       </div>
 
-      {/* Content Display */}
-      <div
-        className={`template-grid ${
-          contentWithLinks.length === 1 ? "single-item" : ""
-        }`}
-      >
-        {contentWithLinks.map((template, templateIndex) => (
-          <div
-            key={templateIndex}
-            className={`template-card ${
-              expandedTemplate === templateIndex ? "selected" : ""
-            }`}
-            onClick={() => toggleTemplate(templateIndex)}
-            role="button"
-            tabIndex={0}
-            aria-label={`Template ${template.title}`}
-          >
-            {/* Local Copy Status Pop-up */}
-            {copyStatusIndex === templateIndex && copyStatus && (
-              <div 
-                className={`copy-links-status ${
-                  copyStatus === "Links Copied!" ? "success" : 
-                  copyStatus === "None Selected" ? "warning" : "error"
-                }`}
-              >
-                {copyStatus === "Links Copied!" ? "Links Copied to Clipboard!" : copyStatus}
-              </div>
+      <div className="dt-dashboard">
+        {/* Left Sidebar */}
+        <div className={`dt-sidebar ${isMobileDetailOpen ? 'mobile-hidden' : ''}`}>
+            {contentWithLinks.length > 0 ? (
+                contentWithLinks.map((item, index) => (
+                    <div 
+                        key={index} 
+                        className={`dt-menu-card ${selectedGroupIndex === index ? 'active' : ''}`}
+                        onClick={() => handleGroupSelect(index)}
+                    >
+                        <div className="dt-menu-thumb">
+                            <img src={item.image} alt="" />
+                        </div>
+                        <div className="dt-menu-info">
+                            <h3 className="dt-menu-title">{item.title}</h3>
+                            <span className="dt-menu-subtitle">{item.links.length} Documents</span>
+                        </div>
+                        <span className="dt-menu-arrow">›</span>
+                    </div>
+                ))
+            ) : (
+                <div className="dt-empty">No items found.</div>
             )}
-            
-            <img
-              src={template.image}
-              alt={template.title}
-              className="template-image"
-            />
-            <h2>{template.title}</h2>
-            {expandedTemplate === templateIndex && (
-              <div className="template-details">
-                {template.warning && (
-                  <h3 className="warning-text">⚠️ {template.warning}</h3>
-                )}
+        </div>
 
-                {/* Local Copy Button: Now copies the ENTIRE global queue */}
-                <button 
-                  className="copy-links-button" 
-                  // Note: Removed the local index arguments since the function is now global scope.
-                  onClick={(e) => handleCopyLinks(e)}
-                >
-                  Copy All {totalLinks > 0 ? `(${totalLinks}) ` : ''}Selected Link(s)
+        {/* Right Stage */}
+        <div className={`dt-stage ${isMobileDetailOpen ? 'mobile-active' : ''}`}>
+            {currentGroup ? (
+                <>
+                    <div className="dt-mobile-header">
+                        <button onClick={handleMobileBack} className="dt-back-btn">‹ Back</button>
+                        <span className="dt-mobile-title">Details</span>
+                    </div>
+
+                    <div className="dt-content-scroll">
+                        <div className="dt-hero">
+                            <img src={currentGroup.image} alt={currentGroup.title} className="dt-hero-image" />
+                            <h2 className="dt-hero-title">{currentGroup.title}</h2>
+                            {currentGroup.warning && (
+                                <div className="dt-warning-banner">⚠️ {currentGroup.warning}</div>
+                            )}
+                        </div>
+
+                        <div className="dt-actions">
+                            <div className="dt-links-header">
+                                <span className="dt-label-text">Available Documents</span>
+                                {/* NEW SELECT ALL BUTTON */}
+                                <button 
+                                    className="dt-select-all-btn" 
+                                    onClick={() => handleSelectAll(selectedGroupIndex)}
+                                >
+                                    {areAllSelectedInGroup(selectedGroupIndex) ? "Deselect All" : "Select All"}
+                                </button>
+                            </div>
+                            
+                            <div className="dt-links-list">
+                                {currentGroup.links.map((link, idx) => (
+                                    <label key={idx} className={`dt-link-row ${isLinkSelected(selectedGroupIndex, idx) ? 'selected' : ''}`}>
+                                        <div className="dt-checkbox-wrapper">
+                                            <input 
+                                                type="checkbox" 
+                                                checked={isLinkSelected(selectedGroupIndex, idx)}
+                                                onChange={() => handleLinkToggle(selectedGroupIndex, idx, link)}
+                                            />
+                                            <div className="dt-custom-checkbox"></div>
+                                        </div>
+                                        <span className="dt-link-text">{link.text}</span>
+                                        <a 
+                                            href={link.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="dt-open-btn"
+                                            onClick={(e) => e.stopPropagation()}
+                                            title="Open PDF"
+                                        >
+                                            ↗
+                                        </a>
+                                    </label>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </>
+            ) : (
+                <div className="dt-stage-empty">Select an item to view details</div>
+            )}
+        </div>
+      </div>
+
+      <div className={`dt-copy-bar ${totalLinks > 0 ? 'visible' : ''}`}>
+            <div className="dt-copy-info">
+                <span className="dt-copy-count">{totalLinks}</span>
+                <span className="dt-copy-label">Links Selected</span>
+            </div>
+            <div className="dt-copy-actions">
+                <button className="dt-copy-btn" onClick={handleCopyLinks}>
+                    {copyStatus || "Copy All"}
                 </button>
-
-                {/* List of links with checkboxes */}
-                <div className="link-selection-list">
-                  {template.links.map((linkDetails, linkIndex) => {
-                    return (
-                      <div key={linkIndex} className="link-item">
-                        <input
-                          type="checkbox"
-                          // IMPORTANT: Use the full key as the ID for easy lookup in handleRemoveLink
-                          id={`link-${templateIndex}-${linkIndex}`}
-                          checked={isLinkSelected(templateIndex, linkIndex)}
-                          onChange={(e) => {
-                            e.stopPropagation();
-                            handleLinkToggle(
-                              templateIndex,
-                              linkIndex,
-                              linkDetails
-                            );
-                          }}
-                          onClick={(e) => e.stopPropagation()} // Prevent card collapse on checkbox click
-                        />
-                        <a
-                          href={linkDetails.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`Open ${linkDetails.text}`}
-                          onClick={(e) => e.stopPropagation()} // Allow click to open document
-                        >
-                          {linkDetails.text}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-      
-      {/* NEW GLOBAL COPY QUEUE NAVBAR (Bottom Dock) */}
-      <div className={`copy-queue-navbar ${totalLinks === 0 ? 'hidden' : ''}`}>
-          <div className="navbar-header">
-              📝 Ready to Copy ({totalLinks} Links)
-          </div>
-          <div className="links-container">
-              {sortedSelectedLinks.map((link) => (
-                  <button
-                      key={link.key}
-                      className="queue-link-button"
-                      onClick={(e) => e.stopPropagation()} 
-                      title={`${link.templateTitle}: ${link.text}`}
-                  >
-                      {link.text}
-                      <button
-                          className="remove-link-btn"
-                          onClick={(e) => handleRemoveLink(link.key, e)}
-                          aria-label={`Remove ${link.text}`}
-                      >
-                          &times;
-                      </button>
-                  </button>
-              ))}
-          </div>
+                <button className="dt-clear-btn" onClick={() => setSelectedLinks({})}>
+                    Clear
+                </button>
+            </div>
       </div>
     </div>
   );

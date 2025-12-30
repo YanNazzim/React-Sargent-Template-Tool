@@ -1,140 +1,127 @@
 /* src/components/style/HamburgerMenu.css */
-:root {
-  --primary-bg: #1f2328;
-  --secondary-bg: #292d32;
-  --accent: #8ab4f8;
-  --accent-hover: #a3c1fa;
-  --text-primary: #e8eaed;
-  --text-secondary: #bdc1c6;
-  --card-radius: 12px;
-  --transition-duration: 0.3s;
-}
 
-/* New Dropdown Styles for Products Menu */
-.products-dropdown-container {
-  position: relative; /* Container is relative to position the dropdown */
-}
-
-.dropdown-content-wrapper {
-  position: absolute;
-  top: 100%; /* Position below the "Products" button */
-  right: 0;
-  min-width: 300px;
-  max-width: 400px;
-  background-color: var(--secondary-bg);
-  border: 1px solid var(--border-color);
-  border-top: none;
-  border-radius: 0 0 var(--card-radius) var(--card-radius);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  max-height: 80vh; /* Limit height for scrollability */
-  overflow-y: auto;
-}
+/* Re-skinning the internal content of the Product Dropdown to match the Glass/Navy theme */
 
 .product-dropdown-content {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dropdown-item {
-  border-bottom: 1px solid var(--primary-bg);
+  /* Remove old borders, use spacing instead */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 4px;
 }
 .dropdown-item:last-child {
   border-bottom: none;
+  margin-bottom: 0;
 }
 
-.product-menu-item, .product-submenu-item, .product-menu-item-nested {
+/* Main Menu Items */
+.product-menu-item, 
+.product-submenu-item, 
+.product-menu-item-nested {
   width: 100%;
-  padding: 12px 15px;
+  padding: 14px 16px; /* Larger tap targets */
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--text-primary);
-  background: none;
+  color: #e6f1ff; /* Bright text */
+  background: transparent;
   border: none;
   cursor: pointer;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
+  transition: all 0.2s ease;
   border-radius: 8px;
-  margin: 2px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: inherit;
 }
 
-.product-menu-item:hover, .product-submenu-item:hover, .product-menu-item-nested:hover {
-  background-color: var(--primary-bg);
-  color: var(--accent);
+/* Hover States */
+.product-menu-item:hover, 
+.product-submenu-item:hover, 
+.product-menu-item-nested:hover {
+  background-color: rgba(100, 255, 218, 0.1); /* Cyan tint */
+  color: #64ffda; /* Cyan text */
 }
 
-/* Style for immediate child buttons of the dropdown-submenu */
-/* This targets items like 7000, 6100, 7300 Series (Multipoints) */
-.dropdown-submenu > button:not(.product-submenu-item) {
-    background-color: var(--secondary-bg);
-    color: var(--text-primary);
-    font-size: 1em; /* Slightly smaller for sub-level */
-    padding: 10px 15px;
-    margin: 4px 0;
-    font-weight: 400;
-    justify-content: flex-start;
+.product-menu-item:active {
+    transform: scale(0.98);
 }
 
-.dropdown-submenu > button:not(.product-submenu-item):hover {
-    background-color: var(--primary-bg);
-    color: var(--accent);
-}
-
-
-.dropdown-submenu, .dropdown-nested-submenu {
+/* Submenu Containers */
+.dropdown-submenu, 
+.dropdown-nested-submenu {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  background-color: var(--primary-bg); /* Slight background for nested lists */
+  padding-left: 12px;
+  /* Darker inset for depth */
+  background-color: rgba(0, 0, 0, 0.2); 
   border-radius: 8px;
-  margin-top: 5px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  animation: slideInSubmenu 0.2s ease-out;
 }
+
+@keyframes slideInSubmenu {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .dropdown-nested-submenu {
     padding-left: 10px;
-    background-color: transparent;
+    background-color: transparent; /* No double background */
 }
+
+/* Child Buttons inside Submenus */
+.dropdown-submenu > button:not(.product-submenu-item),
 .dropdown-nested-submenu button {
-    font-size: 1em;
-    padding: 8px 10px;
+    font-size: 0.95rem;
+    padding: 12px 14px;
     margin: 2px 0;
     font-weight: 400;
-    /* Styles for the innermost items (e.g., Narrow/Wide 80 Series) */
-    background-color: var(--secondary-bg); 
-    color: var(--text-secondary);
+    color: #8b949e; /* Muted text */
+    background: transparent;
+    text-align: left;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: block;
+    width: 100%;
 }
 
+.dropdown-submenu > button:not(.product-submenu-item):hover,
 .dropdown-nested-submenu button:hover {
-    background-color: var(--primary-bg);
-    color: var(--accent);
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-
+/* Active / Expanded State Indicators */
 .arrow {
   font-size: 0.7em;
-  margin-left: 10px;
+  opacity: 0.6;
+  transition: transform 0.2s;
 }
 
-.product-menu-item.single-item {
-    font-weight: bold;
-    border-top: 1px solid var(--primary-bg);
-    margin-top: 5px;
-}
-.product-menu-item.active {
-    background-color: var(--accent);
-    color: var(--primary-bg);
-}
 .product-menu-item.active .arrow {
-    color: var(--primary-bg);
+  transform: rotate(180deg);
+  color: #64ffda;
+  opacity: 1;
 }
 
-/* Original Hamburger Menu CSS is now suppressed */
-.hamburger-icon {
-    display: none; 
+/* Single Item Styling (like 'Cylinders' if it has no submenu) */
+.product-menu-item.single-item {
+    font-weight: 600;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-top: 8px;
+    padding-top: 16px;
 }
-.side-pane {
-    display: none; 
-}
+
+/* Vestigial styling reset */
+.hamburger-icon, .side-pane { display: none; }

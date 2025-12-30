@@ -18,7 +18,7 @@ import CylindersInfo from "./components/CylindersInfo.js";
 import MultiPointSeries from'./components/MultiPointSeries.js';
 import EMProducts from './components/EMProducts.js';
 import ChatWidget from './components/ChatWidget';
-import TechSupportHubBanner from './components/TechSupportHubBanner'; // <--- Import the helper widget
+import TechSupportHubBanner from './components/TechSupportHubBanner'; 
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
       
       <Footer /> 
       <ChatWidget />
-      <TechSupportHubBanner /> {/* <--- Added the helper popup here */}
+      <TechSupportHubBanner />
     </Router>
   );
 }

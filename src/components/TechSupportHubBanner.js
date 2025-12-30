@@ -135,7 +135,7 @@ const TechSupportHubBanner = () => {
       
       <Title>More Tech Tools</Title>
       <Subtitle>
-        Access templates and cylinder pinouts at the Tech Support Hub.
+        Access Parts and more cylinder info at the Tech Support Hub.
       </Subtitle>
       
       <HubLink 

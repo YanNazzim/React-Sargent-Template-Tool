@@ -1,130 +1,153 @@
 /* src/components/style/Stile.css */
 .stile-page {
   display: grid;
-  /* Increased minimum size for better desktop layout and space usage */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-  gap: 30px; /* Increased gap */
-  padding: 40px;
-  max-width: 1600px; 
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 50px 40px;
+  max-width: 1400px;
   margin: 0 auto;
   align-content: start;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
+  animation: fadeScale 0.6s ease-out forwards;
 }
 
+/* Glass Card Design */
 .btn {
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; /* Align content to the top */
+  flex-direction: column;
+  justify-content: flex-start; /* Align to top to give image space */
   align-items: center;
-  background: var(--secondary-bg);
-  color: var(--text-primary);
+  
+  background: rgba(17, 34, 64, 0.65); /* Navy Glass */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  
+  color: #e6f1ff;
   width: 100%;
-  min-height: 280px; /* Taller card style for content */
-  height: auto; 
-  border: 1px solid var(--border-color);
-  border-radius: var(--card-radius);
-  padding: 24px; /* Increased padding */
+  min-height: 360px; /* Increased height to accommodate larger images */
+  border-radius: 24px; /* Slightly smoother card corners */
+  padding: 30px;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .btn:hover {
-  transform: translateY(-4px); /* Reduced vertical lift for smoother feel */
-  box-shadow: 0 0 0 2px var(--accent-hover), var(--shadow-hover); /* Blue highlight border + shadow */
-  background-color: #1a222c; /* Slightly darker on hover for depth */
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(23, 42, 69, 0.85);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
 }
 
-/* New Hover Effect: Subtle glow from the bottom */
-.btn:hover::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 3px;
-    background: var(--accent);
-    box-shadow: 0 0 10px var(--accent);
-    border-radius: 2px;
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #64ffda; /* Neon accent */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
 }
 
-/* Image styling */
+.btn:hover::after {
+  transform: scaleX(1);
+}
+
+/* --- IMAGE STYLING (FIXED) --- */
 .btn-image {
-  width: 160px; /* Increased image size */
-  height: 160px;
+  width: 180px;  /* Increased size for better visibility */
+  height: 180px; /* Kept square aspect ratio */
   object-fit: contain;
-  margin-bottom: 18px; 
-  border-radius: 8px; /* Slightly less rounded border */
-  background-color: #212831; /* Darker box behind image */
-  padding: 12px;
-  transition: transform 0.3s ease;
-  border: 1px solid var(--border-color);
+  margin-bottom: 25px;
+  padding: 15px;
+  
+  /* New Shape: Rounded Rectangle instead of Circle */
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px; 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  
+  transition: transform 0.4s ease, background 0.3s, border-color 0.3s;
 }
 
 .btn:hover .btn-image {
-  transform: scale(1.03); /* Subtle image scale */
-  border-color: var(--accent);
+  transform: scale(1.05); /* Gentle zoom, no rotation */
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #64ffda; /* Cyan border glow */
 }
 
-/* Text Styling inside buttons */
-.btn h3 {
-  margin: 0;
-  font-size: 1.5em; /* Larger header */
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.btn p, .btn span {
-  margin: 0;
-  font-size: 1.05em; /* Slightly larger body text */
-  color: var(--text-secondary);
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-/* Typography utilities for buttons that didn't use h3/p tags yet */
+/* Text Styling */
 .btn span {
-  font-size: 1.3em; /* Primary title text */
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--accent);
+  letter-spacing: 0.5px;
+  color: #e6f1ff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: color 0.3s;
 }
 
-/* Tooltip for ancillary info on some pages (Mortise/Bored) */
-.stile-page .ToolTip {
-    width: 100%;
-    grid-column: 1 / -1; /* Span entire grid width */
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 5px;
-    padding: 0 20px;
-    box-sizing: border-box;
+.btn:hover span {
+  color: #64ffda;
+  text-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
 }
 
-/* Responsive Adjustments */
+.btn p {
+  color: #8892b0;
+  font-size: 1rem;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* --- MOBILE OPTIMIZATION (< 768px) --- */
 @media (max-width: 768px) {
   .stile-page {
-    padding: 20px 10px;
-    gap: 15px;
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr; /* Single column */
+    padding: 20px 15px;
+    gap: 20px;
   }
   
   .btn {
-    min-height: 220px;
-    padding: 15px;
+    min-height: auto; 
+    padding: 20px;
+    flex-direction: row; /* Horizontal layout on mobile */
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    border-radius: 16px;
   }
-
+  
+  /* Smaller but still rounded images on mobile */
   .btn-image {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    margin-bottom: 0;
+    border-radius: 12px;
+    flex-shrink: 0;
   }
   
   .btn span {
-      font-size: 1.2em;
+    font-size: 1.1rem;
+    margin-top: 0;
+    display: block;
+  }
+  
+  .btn p {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: none; /* Hide description on mobile to save space? Or keep if short */
+  }
+  
+  .btn:hover {
+    transform: none;
   }
 }

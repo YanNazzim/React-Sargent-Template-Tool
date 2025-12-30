@@ -17,36 +17,44 @@ function Footer() {
     <footer className='footer'>
       <div className="footer-content-wrapper">
         
-        <div className="footer-section contact-info">
+        {/* Tech Support Section */}
+        <div className="footer-section glass-panel">
+          <div className="icon-wrapper">📞</div>
           <p className="section-title">Technical Support</p>
           <a 
             href="tel:1-800-727-5477" 
             onClick={handlePhoneClick}
-            className="contact-phone"
-            title="Call Technical Support"
+            className="contact-highlight"
           >
             1-800-727-5477
           </a>
-          <p className="contact-options">
-            Customer Support - Option 1 | Technical Support - Option 2
+          <p className="contact-subtext">
+            Option 1: Customer Support <br/> Option 2: Technical Support
           </p>
         </div>
 
-        <div className="footer-section contact-email">
-          <p className="section-title">Get in Touch</p>
+        {/* Email Section */}
+        <div className="footer-section glass-panel">
+          <div className="icon-wrapper">✉️</div>
+          <p className="section-title">Email Support</p>
           <a 
             href="mailto:techsupport.sargent@assaabloy.com" 
             onClick={handleEmailClick}
-            className="contact-email-link"
-            title="Email Technical Support"
+            className="contact-highlight email-text"
           >
             techsupport.sargent@assaabloy.com
           </a>
-          <p className="copyright">
-            © {new Date().getFullYear()} Sargent Manufacturing. All Rights Reserved.
+          <p className="contact-subtext">
+            We aim to respond within 4 hours.
           </p>
         </div>
 
+      </div>
+      
+      <div className="footer-bottom">
+        <p className="copyright">
+          © {new Date().getFullYear()} Sargent Manufacturing. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
