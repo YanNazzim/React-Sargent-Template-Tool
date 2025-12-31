@@ -211,6 +211,69 @@
 .clear-icon-btn { background: none; border: none; font-size: 1.2rem; color: #8b949e; cursor: pointer; padding: 5px; }
 .clear-icon-btn:hover { color: #fff; }
 
+/* --- FOOTER STYLES (Added Back) --- */
+.footer {
+  background: #0b0e14; /* Darker than header for contrast */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 60px 20px 30px;
+  color: #8b949e;
+  margin-top: auto;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  gap: 40px;
+}
+
+.glass-panel {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+  transform: translateY(-5px);
+  border-color: rgba(100, 255, 218, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.icon-wrapper { font-size: 2rem; margin-bottom: 15px; opacity: 0.8; }
+
+.section-title {
+  color: #e6f1ff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-highlight {
+  display: block;
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: text-shadow 0.3s ease;
+}
+.contact-highlight:hover { text-shadow: 0 0 15px rgba(100, 255, 218, 0.4); }
+.email-text { font-size: 1.1rem; word-break: break-all; }
+
+.contact-subtext { font-size: 0.9rem; line-height: 1.5; color: #8b949e; }
+
+.footer-bottom { text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 20px; }
+.copyright { font-size: 0.85rem; opacity: 0.6; }
+
 /* --- MOBILE (< 768px) --- */
 @media (max-width: 768px) {
   .header-top {
@@ -241,6 +304,11 @@
   .desktop-only { display: none; }
   .mobile-only { display: block; }
   .cancel-text-btn { background: none; border: none; color: #64ffda; font-size: 1rem; font-weight: 500; padding: 5px 0 5px 10px; }
+  
+  /* Footer Mobile */
+  .footer-content-wrapper { gap: 20px; }
+  .glass-panel { padding: 25px 15px; }
+  .contact-highlight { font-size: 1.3rem; }
 }
 
 @keyframes slideDown { from { transform: translateY(-20px) scale(0.98); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
