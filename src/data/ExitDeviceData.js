@@ -3423,13 +3423,12 @@ export const ExitDevices = {
       image: Images.Exit2727,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
-      text: "View Mounting Template with Knob or Lever Trim Doc# 4301-G",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
-      text1: "View LL Lever Trim Template Doc# 4485-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055965",
-      text2: "View 646/653/655 Strike Template Doc# 4413-B",
-      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
-      text3: "View HTB/GTB Trim Template",
+      text: "View Mounting Template when used with Knob or Lever Trim Doc# 4301-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
+      text2: "View LL Lever Trim Template Doc# 4485-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055965",
+      text4: "View 646/653/655 Strike Template Doc# 4413-B",
+
 
       installation: [
         {
@@ -3518,14 +3517,14 @@ export const ExitDevices = {
 
       image: Images.Exit2828,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056003",
-      text: "View Mounting Template with HTB or GTB pull Doc# 4302-D",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056002",
-      text1: "View Knob or Lever Trim Template Doc# 4304-F",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056002",
+      text: "View Mounting Template when used with Knob or Lever Trim Doc# 4304",
+            link1: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text1: "View Mounting Template when used with HTB/GTB Trim Doc# 4287",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
       text2: "View LL Lever Trim Template Doc# 4485-D",
-      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
-      text3: "View HTB/GTB Trim Template",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055997",
+      text3: "View HTB Trim Template Doc# 4520",
     },
     {
       device: "2828",
@@ -3548,13 +3547,15 @@ export const ExitDevices = {
       image: Images.strikes2828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text: "View 649 Standard Strike Template Doc# 4004-K",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055985",
-      text1: "View 613 Alternative Strike Template Doc# 3995-F",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text2: "View 644 Alternative Strike Template Doc# 3996-C",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
-      text3: "View 642 Alternative Strike Template Doc# 4007-E",
+      text: "View 649 Standard Strike (SINGLE DOOR) Template Doc# 4004-K",
+            link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text1: "View 649 Standard Strike (DOUBLE DOOR) Template Doc# 4300",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055985",
+      text2: "View 613 Alternative Strike Template Doc# 3995-F",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text3: "View 644 Alternative Strike Template Doc# 3996-C",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
+      text4: "View 642 Alternative Strike Template Doc# 4007-E",
     },
     {
       device: "2828",
@@ -3597,16 +3598,13 @@ export const ExitDevices = {
 
       image: Images.Exit3727,
 
+
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055991",
-      text: "View Mounting Template with Knob or Lever Trim Doc# 4301-G",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
-      text1: "View LL Lever Trim Template Doc# 4485-D",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055965",
-      text2: "View 646/653/655 Strike Template Doc# 4413-B",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055956",
-      text3: "View 624 Alternative Strike Template Doc# 4009-H",
-      link4: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
-      text4: "View HTB/GTB Trim Template",
+      text: "View Mounting Template when used with Knob or Lever Trim Doc# 4301-G",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
+      text2: "View LL Lever Trim Template Doc# 4485-D",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1055965",
+      text4: "View 646/653/655 Strike Template Doc# 4413-B",
       installation: [
         {
           device: "30Series",
@@ -3697,14 +3695,14 @@ export const ExitDevices = {
 
       image: Images.Exit3828,
 
-      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056004",
-      text: "View Mounting Template with HTB/GTB Trim Doc# 4287-E",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1056002",
-      text1: "View Mounting Template with Knob or Lever trim Doc# 4304-F",
+      link: "https://storage.googleapis.com/aa-americas/dam/AADSS1056002",
+      text: "View Mounting Template when used with Knob or Lever Trim Doc# 4304",
+            link1: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
+      text1: "View Mounting Template when used with HTB/GTB Trim Doc# 4287",
       link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1056001",
       text2: "View LL Lever Trim Template Doc# 4485-D",
-      link3: "https://www.sargentlock.com/en/view-pdf?id=AADSS1056004&page=1",
-      text3: "View HTB/GTB Trim Template",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055997",
+      text3: "View HTB Trim Template Doc# 4520",
     },
     {
       device: "30Series",
@@ -3725,13 +3723,15 @@ export const ExitDevices = {
       image: Images.strikes3828,
 
       link: "https://storage.googleapis.com/aa-americas/dam/AADSS1055896",
-      text: "View 649 Standard Strike Template Doc# 4004-K",
-      link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055985",
-      text1: "View 613 Alternative Strike Template Doc# 3995-F",
-      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
-      text2: "View 644 Alternative Strike Template Doc# 3996-C",
-      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
-      text3: "View 642 Alternative Strike Template Doc# 4007-E",
+      text: "View 649 Standard Strike (SINGLE DOOR) Template Doc# 4004-K",
+            link1: "https://storage.googleapis.com/aa-americas/dam/AADSS1055897",
+      text1: "View 649 Standard Strike (DOUBLE DOOR) Template Doc# 4300",
+      link2: "https://storage.googleapis.com/aa-americas/dam/AADSS1055985",
+      text2: "View 613 Alternative Strike Template Doc# 3995-F",
+      link3: "https://storage.googleapis.com/aa-americas/dam/AADSS1055986",
+      text3: "View 644 Alternative Strike Template Doc# 3996-C",
+      link4: "https://storage.googleapis.com/aa-americas/dam/AADSS1056005",
+      text4: "View 642 Alternative Strike Template Doc# 4007-E",
     },
     {
       device: "30Series",
