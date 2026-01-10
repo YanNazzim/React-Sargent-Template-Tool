@@ -12,6 +12,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@babel/plugin-proposal-private-property-in-object@^7.21.11",
+        "npm:@google-cloud/vertexai@^1.10.0",
         "npm:@testing-library/jest-dom@^5.17.0",
         "npm:@testing-library/react@^13.4.0",
         "npm:@testing-library/user-event@^13.5.0",
